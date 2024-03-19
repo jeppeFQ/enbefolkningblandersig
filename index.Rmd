@@ -14,3 +14,7 @@ description: "Skriv kort om bogen her ...."
 # Forord {-}
 
 Måske et forord her. 
+
+Samt en smart måde at præsenterer indholdsfortegnelse og over blik i dette format. Evt. korte summaries/abstracts til de enkelte kapitler?
+
+

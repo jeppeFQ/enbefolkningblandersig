@@ -6,6 +6,8 @@ bookdown::gitbook:
         <li><a href="./">En befolkning blander sig</a></li>
       after: |
         <li><a href="https://vbn.aau.dk/da/organisations/ccws-centre-for-comparative-welfare-studies-2" target="blank">CCWS - Centre for Comparative Welfare Studies</a></li>
+
+        <li><a href="https://github.com/JeppeFLarsen" target="blank">Layout og bogopsætning af Jeppe F. Larsen</a></li>
     edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
