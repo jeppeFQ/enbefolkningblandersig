@@ -1,6 +1,6 @@
 bookdown::gitbook:
   css: style.css
-  config:
+    config:
     toc:
       before: |
         <li><a href="./">En befolkning blander sig</a></li>
@@ -22,3 +22,10 @@ bookdown::pdf_book:
   keep_tex: yes
 bookdown::epub_book: default
 bookdown::bs4_book: default
+
+
+
+
+
+
+
