@@ -9,6 +9,9 @@ bookdown::gitbook:
 
         <li><a href="https://github.com/JeppeFLarsen" target="blank">Layout og bogopsætning af Jeppe F. Larsen</a></li>
     edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
+    sharing:
+      facebook: false
+      twitter: false
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
