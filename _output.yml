@@ -1,18 +1,21 @@
 bookdown::gitbook:
   css: style.css
-    config:
+  config:
     toc:
+      collapse: section
       before: |
         <li><a href="./">En befolkning blander sig</a></li>
       after: |
         <li><a href="https://vbn.aau.dk/da/organisations/ccws-centre-for-comparative-welfare-studies-2" target="blank">CCWS - Centre for Comparative Welfare Studies</a></li>
-        <br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/>
         <li><a href="https://github.com/JeppeFLarsen" target="blank">Layout og bogopsætning af:</a></li>
         <li><a href="https://github.com/JeppeFLarsen" target="blank">Jeppe F. Larsen</a></li>
-    edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
     sharing:
-      facebook: false
-      twitter: true
+      github: no
+      facebook: no
+      twitter: yes
+      all: no
+      linkedin: yes
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
@@ -22,10 +25,3 @@ bookdown::pdf_book:
   keep_tex: yes
 bookdown::epub_book: default
 bookdown::bs4_book: default
-
-
-
-
-
-
-

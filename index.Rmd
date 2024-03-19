@@ -10,6 +10,8 @@ biblio-style: apalike
 link-citations: yes
 github-repo: JeppeFLarsen/enbefolkningblandersig 
 description: "Skriv kort om bogen her ...."
+favicon: images/AAU_logo_2012.png
+cover-image: images/AAU_logo_2012.png
 ---
 # Forord {-}
 

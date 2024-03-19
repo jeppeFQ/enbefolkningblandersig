@@ -1,3 +1,14 @@
+/* ------------- New font ------------- */
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap')
+</style>
+
+ /*------------- Body and header text---------------- */
+
+.book.font-family-1 {
+  font-family: 'Lato', sans-serif;
+ }
+
 p.caption {
   color: #777;
   margin-top: 10px;
@@ -12,3 +23,19 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+
+/* The next two rules make the horizontal line go straight across in top navbar */
+
+.summary > li:first-child {
+    height: 50px;
+    padding-top: 10px;
+    border-bottom: 1px solid rgba(0,0,0,.07);
+}
+
+.book .book-summary ul.summary li.divider {
+    height: 0px;
+}
+
+
+
