@@ -1,7 +1,3 @@
-# Applications
+# Arbejdspladser som mødested {#kap4}
 
-Some _significant_ applications are demonstrated in this chapter.
 
-## Example one
-
-## Example two
