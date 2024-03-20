@@ -1,6 +1,22 @@
 book_filename: "en-befolkning-blander-sig"
 output_dir: "docs"
 language:
+  label:
+    fig: 'Figur '
+    tab: 'Tabel '
+    eq: 'Equation '
+    thm: 'Theorem '
+    lem: 'Lemma '
+    cor: 'Corollary '
+    prp: 'Proposition '
+    cnj: 'Conjecture '
+    def: 'Definition '
+    exm: 'Example '
+    exr: 'Exercise '
+    hyp: 'Hypothesis '
+    proof: 'Proof. '
+    remark: 'Remark. '
+    solution: 'Solution. '
   ui:
-    chapter_name: "Kapitel "
+    chapter_name: ""
 delete_merged_file: true

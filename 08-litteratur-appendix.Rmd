@@ -1,0 +1,13 @@
+# Litteraturliste {-} 
+
+<div id="refs"></div>
+
+# (APPENDIX) Bilag {-} 
+
+# Første bilag... {#bilag1}
+
+This will be Appendix A.
+
+# Andet bilag... {#bilag2}
+
+This will be Appendix B.

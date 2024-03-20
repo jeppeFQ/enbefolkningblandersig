@@ -104,8 +104,12 @@ Måske et forord her.
 
 Samt en smart måde at præsenterer indholdsfortegnelse og over blik i dette format. Evt. korte summaries/abstracts til de enkelte kapitler?
 
+Vi kan linke til andre \protect\hyperlink{kap1}{kapitler} og refencer i henhold til bibtex standarder \citep{xie2015}.
+
 \hypertarget{kap1}{%
 \chapter{En befolkning blander sig}\label{kap1}}
+
+test \citep{xie2015}.
 
 \hypertarget{kap2}{%
 \chapter{Partnerskabet og de blandede børn}\label{kap2}}
@@ -125,15 +129,25 @@ Samt en smart måde at præsenterer indholdsfortegnelse og over blik i dette for
 \hypertarget{kap7}{%
 \chapter{Integration i et kontaktperspektiv}\label{kap7}}
 
-\hypertarget{appendix}{%
+test \citep{xie2015}.
+
+\hypertarget{litteraturliste}{%
+\chapter*{Litteraturliste}\label{litteraturliste}}
+\addcontentsline{toc}{chapter}{Litteraturliste}
+
+\hypertarget{appendix-bilag}{%
 \appendix}
 
 
-\hypertarget{appendix-a}{%
-\chapter{Appendix A}\label{appendix-a}}
+\hypertarget{bilag1}{%
+\chapter{Første bilag\ldots{}}\label{bilag1}}
 
-\hypertarget{appendix-b}{%
-\chapter{Appendix B}\label{appendix-b}}
+This will be Appendix A.
+
+\hypertarget{bilag2}{%
+\chapter{Andet bilag\ldots{}}\label{bilag2}}
+
+This will be Appendix B.
 
   \bibliography{book.bib,packages.bib}
 
