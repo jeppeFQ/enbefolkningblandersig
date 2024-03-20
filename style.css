@@ -1,13 +1,31 @@
 /* ------------- New font ------------- */
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap')
-</style>
+  @import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Prata&display=swap');
 
  /*------------- Body and header text---------------- */
 
 .book.font-family-1 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Muli', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Prata', serif;
+  color: #2f5275;
+}
+
+.title {
+  font-family: 'Prata', serif;
+  font-size: 3em !important;
+  color: #5699cc;
  }
+
+.subtitle {
+  font-family: 'Prata', serif;
+  color: #2c6793;
+}
+
+
+ /*------------- ---------------- ---------------- */
 
 p.caption {
   color: #777;
