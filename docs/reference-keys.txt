@@ -1,9 +1,0 @@
-kap1
-kap2
-kap3
-kap4
-kap5
-kap6
-kap7
-appendix-a
-appendix-b

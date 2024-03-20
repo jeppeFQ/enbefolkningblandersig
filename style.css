@@ -72,5 +72,55 @@ pre code {
     height: 0px;
 }
 
+/*------------- Body Links ------------------*/
+/* hover links i teksten, fx krydsreferencer */
+.book .book-body .page-wrapper .page-inner section.normal a {
+  color: #3f88ca;
+}
 
+.book .book-body .page-wrapper .page-inner section.normal a:hover {
+color: #1f5386; /* darker color when hovering */
+text-decoration: none;
+}
+
+/*------------ TOC --------------*/
+
+.book .book-summary {
+  background: white;
+  border-right: none;
+}
+
+.summary{
+font-family: 'Muli', sans-serif;
+}
+
+.book .book-summary ul.summary li a,
+.book .book-summary ul.summary li span {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #2f5175;
+}
+
+/* hover links i TOC */
+.summary a:hover {
+  color: darkred !important;
+}
+
+/* highlight i TOC hvor vi er */
+.book .book-summary ul.summary li.active>a { /*active TOC links*/
+  color: darkred !important;
+  border-left: solid 4px;
+  border-color: darkred;
+  padding-left: 11px !important;
+}
+
+/* heading styles for PARTS, hvis relevant */
+li.appendix span, li.part span { /* for TOC part names */
+  margin-top: 1em;
+  color: color: #1c3046 !important;
+  opacity: 1 !important;
+  text-transform: uppercase;
+}
 
