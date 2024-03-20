@@ -4,7 +4,7 @@ bookdown::gitbook:
     toc:
       collapse: section
       before: |
-        <li><a href="./">En befolkning blander sig</a></li>
+        <li class="toc-logo"><a href="./"><img src="images/AAU_logo_2012.png"></a></li>
       after: |
         <li><a href="https://vbn.aau.dk/da/organisations/ccws-centre-for-comparative-welfare-studies-2" target="blank">CCWS - Centre for Comparative Welfare Studies</a></li>
         <br/><br/><br/><br/>
@@ -23,5 +23,3 @@ bookdown::pdf_book:
   latex_engine: xelatex
   citation_package: natbib
   keep_tex: yes
-bookdown::epub_book: default
-bookdown::bs4_book: default
