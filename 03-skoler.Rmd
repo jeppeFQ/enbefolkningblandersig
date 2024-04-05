@@ -1,5 +1,7 @@
 # Grundskoler som mødested {#kap3}
 
+```{r fig-schoolseg, fig.cap="Skolesegregering som det tolkes af en AI model"}
+knitr::include_graphics("images/dalle-schoolseg.png")
+```
 
-
-Figur: en AI models forståelse/illustration af skolesegregering. 
+Vi kan kryd-ref til figurer \@ref(fig:fig-schoolseg)
