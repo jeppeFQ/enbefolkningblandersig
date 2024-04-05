@@ -1,7 +1,7 @@
 --- 
 title: "En befolkning blander sig"
 author: 
-- *Christian* *Albrekt* *Larsen* og Hans-Peter Y. Qvist (Red.)
+- Christian Albrekt Larsen og Hans-Peter Y. Qvist (Red.)
 - Med bidrag fra Jeppe Fjeldgaard Larsen, Laciné E. Diop,... Anders? Anna?
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
