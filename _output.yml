@@ -7,7 +7,9 @@ bookdown::gitbook:
       before: |
         <li class="toc-logo"><a href="./"><img src="images/AAU_logo_2012.png"></a></li>
       after: |
-        <li><a href="https://vbn.aau.dk/da/organisations/ccws-centre-for-comparative-welfare-studies-2" target="blank">CCWS - Centre for Comparative Welfare Studies</a></li>
+        <li><a href="https://vbn.aau.dk/da/organisations/ccws-centre-for-comparative-welfare-studies-2" target="blank">ISBN: 978-87-89383-85-9</a></li>
+        <br/><br/>
+        <li><a href="https://vbn.aau.dk/da/organisations/ccws-centre-for-comparative-welfare-studies-2" target="blank">CCWS</a></li>
         <br/><br/><br/><br/>
         <li><a href="https://github.com/JeppeFLarsen" target="blank">Layout og opsætning af:</a></li>
         <li><a href="https://github.com/JeppeFLarsen" target="blank">Jeppe F. Larsen</a></li>
