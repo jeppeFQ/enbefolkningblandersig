@@ -1,11 +1,11 @@
 /* ------------- New font ------------- */
-  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital@0;1&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
  /*------------- Body and header text---------------- */
 
 .book.font-family-1 {
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Syne', sans-serif;
 }
 
 h1, h2, h3, h4 {
