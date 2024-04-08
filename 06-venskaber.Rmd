@@ -1,1 +1,7 @@
 # Venskaber – det første skridt {#kap6}
+
+```{r fig-friendships, echo=FALSE, fig.cap="Interetniske venskaber, tolket af en AI model"}
+knitr::include_graphics("images/dalle-friendships.png")
+```
+
+

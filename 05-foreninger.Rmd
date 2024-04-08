@@ -1,2 +1,5 @@
 # Foreninger som mødested {#kap5}
 
+```{r fig-civil, echo=FALSE, fig.cap="Minoriters deltagelse i civilsamfund, tolket af en AI model"}
+knitr::include_graphics("images/dalle-civil.png")
+```

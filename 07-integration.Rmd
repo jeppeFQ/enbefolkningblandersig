@@ -1,4 +1,8 @@
 # Integration i et kontaktperspektiv {#kap7}
 
+```{r fig-integration, echo=FALSE, fig.cap="Social integration, tolket af en AI model"}
+knitr::include_graphics("images/dalle-integration.png")
+```
+
 
 test [@xie2015].
