@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.5)  8 APR 2024 09:59
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.5)  8 APR 2024 11:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -793,13 +793,23 @@ LaTeX Warning: Float too large for page by 24.06657pt on input line 130.
 
 ] [12]
 Chapter 4.
+File: images/dalle-work.png Graphic file (type bmp)
+<images/dalle-work.png>
+
+Overfull \hbox (617.51155pt too wide) in paragraph at lines 138--138
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 24.06657pt on input line 139.
+
 [13
 
-] [14
-
-]
+] [14]
 Chapter 5.
-[15] [16
+[15
+
+] [16
 
 ]
 Chapter 6.
@@ -826,10 +836,10 @@ L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 18805 strings out of 476740
- 345252 string characters out of 5800571
+ 18825 strings out of 476740
+ 345754 string characters out of 5800571
  1922145 words of memory out of 5000000
- 40597 multiletter control sequences out of 15000+600000
+ 40616 multiletter control sequences out of 15000+600000
  561667 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,6n,121p,1022b,362s stack positions out of 10000i,1000n,20000p,200000b,200000s
