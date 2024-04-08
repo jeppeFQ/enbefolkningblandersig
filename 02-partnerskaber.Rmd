@@ -1,2 +1,6 @@
 # Partnerskabet og de blandede børn {#kap2}
 
+```{r fig-partner, echo=FALSE, fig.cap="Et blandet ægteskab, tolket af en AI model"}
+knitr::include_graphics("images/dalle-wedding.png")
+```
+
