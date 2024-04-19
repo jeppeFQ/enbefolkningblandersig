@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.5)  8 APR 2024 11:19
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.5)  19 APR 2024 09:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -743,7 +743,24 @@ Overfull \hbox (54.40404pt too wide) in paragraph at lines 94--94
 
 ] [2
 
-] (./en-befolkning-blander-sig.toc)
+] (./en-befolkning-blander-sig.toc
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00092pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00064pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00046pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 5.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 5.
+)
 \tf@toc=\write3
 \openout3 = `en-befolkning-blander-sig.toc'.
 
@@ -791,87 +808,87 @@ LaTeX Warning: Float too large for page by 24.06657pt on input line 130.
 
 [11
 
-] [12]
+] [12] [13] [14]
 Chapter 4.
 File: images/dalle-work.png Graphic file (type bmp)
 <images/dalle-work.png>
 
-Overfull \hbox (617.51155pt too wide) in paragraph at lines 138--138
+Overfull \hbox (617.51155pt too wide) in paragraph at lines 153--153
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 24.06657pt on input line 139.
-
-[13
-
-] [14]
-Chapter 5.
-File: images/dalle-civil.png Graphic file (type bmp)
-<images/dalle-civil.png>
-
-Overfull \hbox (617.51155pt too wide) in paragraph at lines 145--145
-[][] 
- []
-
-
-LaTeX Warning: Float too large for page by 24.06657pt on input line 146.
+LaTeX Warning: Float too large for page by 24.06657pt on input line 154.
 
 [15
 
 ] [16]
-Chapter 6.
-File: images/dalle-friendships.png Graphic file (type bmp)
-<images/dalle-friendships.png>
+Chapter 5.
+File: images/dalle-civil.png Graphic file (type bmp)
+<images/dalle-civil.png>
 
-Overfull \hbox (617.51155pt too wide) in paragraph at lines 152--152
+Overfull \hbox (617.51155pt too wide) in paragraph at lines 160--160
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 24.06657pt on input line 153.
+LaTeX Warning: Float too large for page by 24.06657pt on input line 161.
 
 [17
 
 ] [18]
-Chapter 7.
-File: images/dalle-integration.png Graphic file (type bmp)
-<images/dalle-integration.png>
+Chapter 6.
+File: images/dalle-friendships.png Graphic file (type bmp)
+<images/dalle-friendships.png>
 
-Overfull \hbox (617.51155pt too wide) in paragraph at lines 159--159
+Overfull \hbox (617.51155pt too wide) in paragraph at lines 167--167
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 24.06657pt on input line 160.
+LaTeX Warning: Float too large for page by 24.06657pt on input line 168.
 
 [19
 
-] [20] [21
+] [20]
+Chapter 7.
+File: images/dalle-integration.png Graphic file (type bmp)
+<images/dalle-integration.png>
 
-] [22
+Overfull \hbox (617.51155pt too wide) in paragraph at lines 174--174
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 24.06657pt on input line 175.
+
+[21
+
+] [22] [23
+
+] [24
 
 ]
 Appendix A.
-[23] [24
+[25] [26
 
 ]
 Appendix B.
-(./en-befolkning-blander-sig.bbl [25] [26
+(./en-befolkning-blander-sig.bbl [27] [28
 
-]) [27] (./en-befolkning-blander-sig.aux)
+]) [29] (./en-befolkning-blander-sig.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 18885 strings out of 476740
- 347560 string characters out of 5800571
- 1922145 words of memory out of 5000000
- 40673 multiletter control sequences out of 15000+600000
- 561667 words of font info for 70 fonts, out of 8000000 for 9000
+ 18954 strings out of 476740
+ 349506 string characters out of 5800571
+ 1933145 words of memory out of 5000000
+ 40720 multiletter control sequences out of 15000+600000
+ 564544 words of font info for 92 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,6n,121p,1022b,362s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,8n,121p,1654b,362s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on en-befolkning-blander-sig.pdf (27 pages).
+Output written on en-befolkning-blander-sig.pdf (29 pages).
