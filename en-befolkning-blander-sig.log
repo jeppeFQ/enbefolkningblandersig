@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.5)  19 APR 2024 09:36
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.5)  19 APR 2024 10:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -809,86 +809,97 @@ LaTeX Warning: Float too large for page by 24.06657pt on input line 128.
 [11
 
 ] [12] [13] [14]
+File: images/dalle-schoolseg.png Graphic file (type bmp)
+<images/dalle-schoolseg.png>
+
+Overfull \hbox (617.51155pt too wide) in paragraph at lines 164--164
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 48.50658pt on input line 165.
+
+[15] [16]
 Chapter 4.
 File: images/dalle-work.png Graphic file (type bmp)
 <images/dalle-work.png>
 
-Overfull \hbox (617.51155pt too wide) in paragraph at lines 149--149
+Overfull \hbox (617.51155pt too wide) in paragraph at lines 171--171
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 24.06657pt on input line 150.
-
-[15
-
-] [16]
-Chapter 5.
-File: images/dalle-civil.png Graphic file (type bmp)
-<images/dalle-civil.png>
-
-Overfull \hbox (617.51155pt too wide) in paragraph at lines 156--156
-[][] 
- []
-
-
-LaTeX Warning: Float too large for page by 24.06657pt on input line 157.
+LaTeX Warning: Float too large for page by 24.06657pt on input line 172.
 
 [17
 
 ] [18]
-Chapter 6.
-File: images/dalle-friendships.png Graphic file (type bmp)
-<images/dalle-friendships.png>
+Chapter 5.
+File: images/dalle-civil.png Graphic file (type bmp)
+<images/dalle-civil.png>
 
-Overfull \hbox (617.51155pt too wide) in paragraph at lines 163--163
+Overfull \hbox (617.51155pt too wide) in paragraph at lines 178--178
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 24.06657pt on input line 164.
+LaTeX Warning: Float too large for page by 24.06657pt on input line 179.
 
 [19
 
 ] [20]
-Chapter 7.
-File: images/dalle-integration.png Graphic file (type bmp)
-<images/dalle-integration.png>
+Chapter 6.
+File: images/dalle-friendships.png Graphic file (type bmp)
+<images/dalle-friendships.png>
 
-Overfull \hbox (617.51155pt too wide) in paragraph at lines 170--170
+Overfull \hbox (617.51155pt too wide) in paragraph at lines 185--185
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 24.06657pt on input line 171.
+LaTeX Warning: Float too large for page by 24.06657pt on input line 186.
 
 [21
 
-] [22] [23
+] [22]
+Chapter 7.
+File: images/dalle-integration.png Graphic file (type bmp)
+<images/dalle-integration.png>
 
-] [24
+Overfull \hbox (617.51155pt too wide) in paragraph at lines 192--192
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 24.06657pt on input line 193.
+
+[23
+
+] [24] [25
+
+] [26
 
 ]
 Appendix A.
-[25] [26
+[27] [28
 
 ]
 Appendix B.
-(./en-befolkning-blander-sig.bbl [27] [28
+(./en-befolkning-blander-sig.bbl [29] [30
 
-] [29]) [30] (./en-befolkning-blander-sig.aux)
+] [31]) [32] (./en-befolkning-blander-sig.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 18990 strings out of 476740
- 350211 string characters out of 5800571
+ 18999 strings out of 476740
+ 350412 string characters out of 5800571
  1933145 words of memory out of 5000000
- 40756 multiletter control sequences out of 15000+600000
- 564544 words of font info for 92 fonts, out of 8000000 for 9000
+ 40764 multiletter control sequences out of 15000+600000
+ 564552 words of font info for 93 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,8n,121p,1654b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,8n,121p,1767b,472s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on en-befolkning-blander-sig.pdf (30 pages).
+Output written on en-befolkning-blander-sig.pdf (32 pages).

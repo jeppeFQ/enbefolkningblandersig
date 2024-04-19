@@ -3,10 +3,12 @@
 \contentsline {chapter}{\numberline {2}Partnerskabet og de blandede børn}{9}{chapter.2}%
 \contentsline {chapter}{\numberline {3}Grundskoler som mødested}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introduktion}{11}{section.3.1}%
-\contentsline {chapter}{\numberline {4}Arbejdspladser som mødested}{15}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Foreninger som mødested}{17}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Venskaber -- det første skridt}{19}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Integration i et kontaktperspektiv}{21}{chapter.7}%
-\contentsline {chapter}{Litteraturliste}{23}{chapter*.3}%
-\contentsline {chapter}{\numberline {A}Første bilag\ldots {}}{25}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Andet bilag\ldots {}}{27}{appendix.B}%
+\contentsline {subsection}{\numberline {3.1.1}Betingelser for møder i grundskolen}{14}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Det danske skolelandskab}{14}{subsection.3.1.2}%
+\contentsline {chapter}{\numberline {4}Arbejdspladser som mødested}{17}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Foreninger som mødested}{19}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Venskaber -- det første skridt}{21}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Integration i et kontaktperspektiv}{23}{chapter.7}%
+\contentsline {chapter}{Litteraturliste}{25}{chapter*.3}%
+\contentsline {chapter}{\numberline {A}Første bilag\ldots {}}{27}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Andet bilag\ldots {}}{29}{appendix.B}%
