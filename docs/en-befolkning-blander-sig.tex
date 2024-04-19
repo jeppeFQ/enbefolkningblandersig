@@ -63,6 +63,29 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 \usepackage{booktabs}
 \usepackage{amsthm}
 \makeatletter
@@ -74,8 +97,6 @@
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\usepackage[]{natbib}
-\bibliographystyle{apalike}
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
@@ -104,7 +125,7 @@ Måske et forord her.
 
 Samt en smart \emph{måde} at præsenterer \textbf{indholdsfortegnelse} og \textbf{\emph{overblik}} i dette format. Evt. korte summaries/abstracts til de enkelte kapitler?
 
-Vi kan linke til andre \protect\hyperlink{kap1}{kapitler} og refencer i henhold til bibtex standarder \citep{xie2015}.
+Vi kan linke til andre \protect\hyperlink{kap1}{kapitler} og refencer i henhold til bibtex standarder (\protect\hyperlink{ref-xie2015}{Xie, 2015}).
 
 \hypertarget{kap1}{%
 \chapter{En befolkning blander sig}\label{kap1}}
@@ -134,22 +155,22 @@ Den danske grundskole er et centralt mødested mellem danskfødte, der er kendet
 
 Grundskolen i Danmark omfatter børn i alderen 6-16 år. Et særligt kendetegn ved den danske grundskole, sammenlignet med andre internationale skolesystemer, er fraværet af ``tracking''---elevdifferentiering--baseret på faglige evner. Det betyder, at børn ikke bliver placeret på bestemte skoler eller spor afhængigt af deres præstationer i de tidlige skoleår, som det er tilfældet i andre europæiske lande som Tyskland, Holland og England. I stedet fastlægger folkeskoleloven, at undervisningen i det danske skolesystem skal tilpasses til det pågældende klasserum gennem undervisningsdifferentiering.
 
-I den internationale kontakt- og integrationslitteratur fremhæves skoler ofte som steder med potentiale til at nedbryde fordomme og stereotyper. Dette potentiale skyldes flere faktorer: 1) Børnene befinder sig i en kontekst, hvor der er en autoritet (læreren), der strukturerer interaktioner og opgaver. 2) Børnene forventes at have et fælles mål (læring/eksamener). 3) De arbejder sammen om dette mål i overensstemmelse med skolens didaktiske principper. 4) Børnene har samme status\footnote{Det skal selvfølgelig ikke underkendes at der er både forskning og personlige historier, der beskriver tilfælde af diskrimination og fordomme mellem lærer og minoritetselever og elever imellem \citep{andersen2019}.} i klassen (alle er elever underlagt læreren) \citep{allport1979, pettigrew2006, tropp2005}. Optimal social kontakt i denne kontekst, som påpeget af \citet{pettigrew1998}, er også betinget af, 5) at interaktionerne har venskabspotentiale. Da børn i en klasse har samme alder, og der som regel er en nogenlunde lige kønsfordeling i de fleste skoler, er der et principielt højt venskabspotentiale i de danske grundskoler \citep{mcpherson2001}.
+I den internationale kontakt- og integrationslitteratur fremhæves skoler ofte som steder med potentiale til at nedbryde fordomme og stereotyper. Dette potentiale skyldes flere faktorer: 1) Børnene befinder sig i en kontekst, hvor der er en autoritet (læreren), der strukturerer interaktioner og opgaver. 2) Børnene forventes at have et fælles mål (læring/eksamener). 3) De arbejder sammen om dette mål i overensstemmelse med skolens didaktiske principper. 4) Børnene har samme status\footnote{Det skal selvfølgelig ikke underkendes at der er både forskning og personlige historier, der beskriver tilfælde af diskrimination og fordomme mellem lærer og minoritetselever og elever imellem (\protect\hyperlink{ref-andersen2019}{Andersen \& Guul, 2019}).} i klassen (alle er elever underlagt læreren) (\protect\hyperlink{ref-allport1979}{Allport, 1979}; \protect\hyperlink{ref-pettigrew2006}{Pettigrew \& Tropp, 2006}; \protect\hyperlink{ref-tropp2005}{Tropp \& Pettigrew, 2005}). Optimal social kontakt i denne kontekst, som påpeget af Pettigrew (\protect\hyperlink{ref-pettigrew1998}{1998}), er også betinget af, 5) at interaktionerne har venskabspotentiale. Da børn i en klasse har samme alder, og der som regel er en nogenlunde lige kønsfordeling i de fleste skoler, er der et principielt højt venskabspotentiale i de danske grundskoler (\protect\hyperlink{ref-mcpherson2001}{McPherson et al., 2001}).
 
-International forskning har vist, at børn i såkaldte ``blandede skoler'' har flere venskaber eller sociale relationer på tværs af etniske gruppeskel \citep{kruse2019, leszczensky2015}. En anden forventet effekt er de såkaldte klassekammerateffekter (peer effect), som antager, at ressourcestærke elever kan være med til at hæve det faglige niveau for deres mindre ressourcestærke klassekammerater. Der pågår dog samtidigt diskussioner om, at både kontakt- og klassekammerateffekter i en metodologisk forstand er svære at isolere kausalt, da der forventeligt er grundlæggende problemer med selvselektion. For eksempel vil familier med de allerede laveste fordomme være mere tilbøjelige til at vælge den etnisk diverse distriktsskole (se f.eks. \citet{hassan2022} eller \citet{hermansen2015} for en oversigt og diskussion).
+International forskning har vist, at børn i såkaldte ``blandede skoler'' har flere venskaber eller sociale relationer på tværs af etniske gruppeskel (\protect\hyperlink{ref-kruse2019}{Kruse \& Kroneberg, 2019}; \protect\hyperlink{ref-leszczensky2015}{Leszczensky \& Pink, 2015}). En anden forventet effekt er de såkaldte klassekammerateffekter (peer effect), som antager, at ressourcestærke elever kan være med til at hæve det faglige niveau for deres mindre ressourcestærke klassekammerater. Der pågår dog samtidigt diskussioner om, at både kontakt- og klassekammerateffekter i en metodologisk forstand er svære at isolere kausalt, da der forventeligt er grundlæggende problemer med selvselektion. For eksempel vil familier med de allerede laveste fordomme være mere tilbøjelige til at vælge den etnisk diverse distriktsskole (se f.eks. Hassan et al. (\protect\hyperlink{ref-hassan2022}{2022}) eller Hermansen \& Birkelund (\protect\hyperlink{ref-hermansen2015}{2015}) for en oversigt og diskussion).
 
-Med det danske princip om undervisningsdifferentiering i stedet for elevdifferentiering er den danske grundskole forventeligt et eksempel på optimal realisering af positive kontakt-effekter gennem sociale relationer på tværs af grænser i et barns formative år \citep{larsen2024a, larsen2016}, især i betragtning af, at børnene tilbringer 10 år sammen i alle fag. Den aktuelle udfordring er imidlertid, at Danmark har en meget liberal og generøs skolevalgspolitik, hvor omkring 75\% af omkostningerne for hvert enkelt barn er statsfinansierede, mens den resterende fjerdedel er brugerbetaling, hvilket gør privatskoler tilgængelige for en stor del af befolkningen - men samtidig utilgængelige for de laveste indkomstgrupper. Dette har skabt bekymringer for, at det socialdemokratiske princip om, at børn fra forskellige baggrunde går på samme skole, ikke længere bliver realiseret, fordi forældre frit kan vælge skoler til og fra.
+Med det danske princip om undervisningsdifferentiering i stedet for elevdifferentiering er den danske grundskole forventeligt et eksempel på optimal realisering af positive kontakt-effekter gennem sociale relationer på tværs af grænser i et barns formative år (\protect\hyperlink{ref-larsen2016}{C. A. Larsen, 2016}; \protect\hyperlink{ref-larsen2024a}{J. F. Larsen, 2024}), især i betragtning af, at børnene tilbringer 10 år sammen i alle fag. Den aktuelle udfordring er imidlertid, at Danmark har en meget liberal og generøs skolevalgspolitik, hvor omkring 75\% af omkostningerne for hvert enkelt barn er statsfinansierede, mens den resterende fjerdedel er brugerbetaling, hvilket gør privatskoler tilgængelige for en stor del af befolkningen - men samtidig utilgængelige for de laveste indkomstgrupper. Dette har skabt bekymringer for, at det socialdemokratiske princip om, at børn fra forskellige baggrunde går på samme skole, ikke længere bliver realiseret, fordi forældre frit kan vælge skoler til og fra.
 
 Historisk set går retten til at bestemme over sit barns skolegang i Danmark, under myndighedernes tilsyn, tilbage til Friskoleloven fra 1855. I dag tillader reglerne, at selvom hver adresse er tilknyttet et skoledistrikt, hvor barnet har garanteret ret til indskrivning, er familier frie til at søge en anden folke-, privat- eller friskole, enten inden for kommunen eller i en anden kommune. Det eneste lovlige grundlag, en folkeskole kan afvise et barns optagelse på, er, hvis skolen ikke har plads, hvilket defineres som 28 børn i hver klasse i den pågældende årgang\footnote{Kommuner kan dog sænke dette maksimum, for at begrænse mulighederne for anvendelsen af skolevalg. Grundet den decentrale finansiering af folkeskolen har de enkelte folkeskoler også store individuelle omkostninger ved at flytte et barn til et specialtilbud og kan i praksis ikke udelukke børn fra skolen. I modsætning har privatskolerne mindre udgifter i forbindelse med henvisninger til specialtilbud idet de søger disse midler hos staten, hvor folkeskolerne skal finde midlerne i deres kommunalt allokerede budget.}. Til forskel kan fri- og privatskoler permanent bortvise børn eller afvise optagelse baseret på en individuel vurdering, hvilket folkeskoler også kunne før 2005. Disse strukturelle forhold har affødt en grundlæggende bekymring for, at frit skolevalg og det private skolemarked vil føre til stigende ulighed og segregation mellem skoler på grund af socioøkonomiske forskelle i, hvem der i størst omfang vælger -- eller er i stand til -- at benytte sig af muligheden for frit skolevalg.
 
 \hypertarget{betingelser-for-muxf8der-i-grundskolen}{%
 \subsection{Betingelser for møder i grundskolen}\label{betingelser-for-muxf8der-i-grundskolen}}
 
-Den primære hindring for realiseringen af kontakt- eller klassekammerateffekter i barndommen er først og fremmest omfanget af skolesegregering, da det konkret forhindrer kontakt mellem grupper af børn, hvis de ikke møder hinanden i deres daglige liv \citep{kruse2017}.
+Den primære hindring for realiseringen af kontakt- eller klassekammerateffekter i barndommen er først og fremmest omfanget af skolesegregering, da det konkret forhindrer kontakt mellem grupper af børn, hvis de ikke møder hinanden i deres daglige liv (\protect\hyperlink{ref-kruse2017}{Kruse, 2017}).
 
 Segregering er et udtryk for en fysisk adskillelse af personer fra forskellige klassificerede grupper\footnote{Disse grupper kan være defineret som majoritet/minoritet status, social status, køn, og alle andre former for identitets-, økonomiske, eller sociale faktorer.}. Typisk er segregering blevet drøftet i forhold til (etnisk) boligsegregering, som angiver i hvilket omfang personer med indvandrerbaggrund bor i de samme boligområder som danskfødte personer -- og omvendt. På samme måde udtrykker etnisk skolesegregering i hvilket omfang danskfødte børn kun går på skoler med andre danskfødte børn, og vice versa. En vigtig pointe her er, at segregering refererer til fordelingen eller spredningen af de to grupper, der sammenlignes. Det vil sige, at minoritetsgruppen ikke kan være segregeret uden at majoritetsgruppen også er det.
 
-I det resterende af dette kapitel vil jeg beskrive og illustrere omfanget af segregering i det danske grundskolesystem fra 1985 til 2020. Selvom skolesegregering på mange måder er et velbeskrevet fænomen i den internationale litteratur (se \citet{larsen2024a} for et overblik), er disse beskrivelser fortsat ofte grovkornede, da de er baseret på aggregerede tabeldata, såsom survey-baserede census data. Med de danske registerdata er det muligt at lave en detaljeret og mere finkornet beskrivelse af fordelingen af børn mellem skoler, da disse data indeholder detaljeret information om hvert enkelt barn i alle skoler, inklusive privat- og friskoler, hvilket sjældent er tilgængeligt i den internationale segregeringslitteratur.
+I det resterende af dette kapitel vil jeg beskrive og illustrere omfanget af segregering i det danske grundskolesystem fra 1985 til 2020. Selvom skolesegregering på mange måder er et velbeskrevet fænomen i den internationale litteratur (se J. F. Larsen (\protect\hyperlink{ref-larsen2024a}{2024}) for et overblik), er disse beskrivelser fortsat ofte grovkornede, da de er baseret på aggregerede tabeldata, såsom survey-baserede census data. Med de danske registerdata er det muligt at lave en detaljeret og mere finkornet beskrivelse af fordelingen af børn mellem skoler, da disse data indeholder detaljeret information om hvert enkelt barn i alle skoler, inklusive privat- og friskoler, hvilket sjældent er tilgængeligt i den internationale segregeringslitteratur.
 
 Det resterende af kapitlet er opdelt i fire sektioner. Første sektion præsenterer det danske skolelandskabs geografi og demografi. Anden sektion måler graden af segregering på både nationalt og kommunalt niveau. Dette efterfølges af en præsentation og diskussion af, hvordan skolesegregering skal ses som et produkt af boligsegregering. Fjerde sektion konkluderer og diskuterer implikationer.
 
@@ -161,7 +182,7 @@ Når vi ser på det fysiske skolelandskab, det vil sige alle skoler og deres adr
 Fra et geografisk perspektiv er der stor variation i, hvor tæt skoler ligger på hinanden. Dette har en indirekte betydning for omfanget af frit skolevalg, da områder med få skoler inden for relativt kort afstand også har færre reelle muligheder for at vælge alternative til distriktskolen, som diskuteret ovenfor. Figur 3.1 visualiserer antallet af skoler inden for 2 km fra centroiden af bopælssognet\footnote{Centroiden, eller det geografiske midtpunkt, er punktet, der repræsenterer den gennemsnitlige position for et område, såsom et bopælssogn.}. Kortet fungerer på sin vis som en proxy for befolkningstæthed, da der naturligvis vil være flere skoler i områder med mange familier. Men grundet lave omkostninger ved etablering af private- eller friskoler vil nogle områder stadig have et relativt stort skolemarked, på trods af relativ lav befolkningstæthed\footnote{For at åbne en fri- eller privatskole er den eneste ikke-refunderbare direkte omkostning et gebyr på 20.000 kr. til ministeriet i forbindelse med anmeldelse om oprettelse af ny skole.}. Derfor er det sådan, at familier i urbane områder generelt har flere skoler, de potentielt kan vælge mellem. De fleste husstande i Danmark har to skoler inden for 2 km, men som strålende outliers er der i København og Frederiksberg henholdsvis 20 og 24 skoler inden for 2 km\footnote{Det skal bemærkes, at et skæringspunkt på 2 km for, hvornår skoler er tæt på bopælen, selvfølgelig delvist er et arbitrært skæringspunkt, da familier har forskellige behov, præferencer og muligheder for transport. Kortet ser dog grundlæggende ens ud, hvis vi hæver skæringsgrænserne, og der er blot et tilsvarende antal flere skoler i hver kategori.}.
 
 \begin{figure}
-\includegraphics[width=24.89in]{images/dalle-schoolseg} \caption{Gennemsnitligt antal skoler indenfor 2 km. af bopæls-adressen (A) og koncentration af børn med ikke-vestlig indvandrerbaggrund i skolealderen i 2020 (B)}\label{fig:fig-3-1}
+\includegraphics[width=24.89in]{images/dalle-schoolseg} \caption{Gennemsnitligt antal skoler indenfor 2 km. af bopæls-adressen (A) og koncentration af børn med ikke-vestlig indvandrerbaggrund i skolealderen i 2020 (B). <br> <br> Note: *Afstandene til skolen er baseret på den euclidiske afstand fra bopælssognets centroid til de geografiske koordinater for skolens adresse. Ikke-vestlig indvandrerbaggrund inkluderer børn, hvor begge eller én af forældrene er første generations immigrant fra et ikke-vestligt land.*}\label{fig:fig-3-1}
 \end{figure}
 
 \hypertarget{kap4}{%
@@ -192,11 +213,57 @@ Fra et geografisk perspektiv er der stor variation i, hvor tæt skoler ligger p�
 \includegraphics[width=24.89in]{images/dalle-integration} \caption{Social integration, tolket af en AI model}\label{fig:fig-integration}
 \end{figure}
 
-test \citep{xie2015}.
+test (\protect\hyperlink{ref-xie2015}{Xie, 2015}).
 
 \hypertarget{litteraturliste}{%
 \chapter*{Litteraturliste}\label{litteraturliste}}
 \addcontentsline{toc}{chapter}{Litteraturliste}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-allport1979}{}}%
+Allport, G. W. (1979). \emph{The nature of prejudice}. Addison-Wesley Pub. Co.
+
+\leavevmode\vadjust pre{\hypertarget{ref-andersen2019}{}}%
+Andersen, S. C., \& Guul, T. S. (2019). Reducing minority discrimination at the front line---combined survey and field experimental evidence. \emph{Journal of Public Administration Research and Theory}, \emph{29}(3), 429--444. \url{https://doi.org/10.1093/jopart/muy083}
+
+\leavevmode\vadjust pre{\hypertarget{ref-hassan2022}{}}%
+Hassan, S., Hvidtfeldt, C., Andersen, L. H., \& Udsen, R. O. (2022). Do refugee children impair the academic performance of native children in the school? Informative null results from danish register data. \emph{European Sociological Review}, \emph{39}(3), 352--365. \url{https://doi.org/10.1093/esr/jcac059}
+
+\leavevmode\vadjust pre{\hypertarget{ref-hermansen2015}{}}%
+Hermansen, A. S., \& Birkelund, G. E. (2015). The impact of immigrant classmates on educational outcomes. \emph{Social Forces}, \emph{94}(2), 615--646. \url{https://doi.org/10.1093/sf/sov073}
+
+\leavevmode\vadjust pre{\hypertarget{ref-kruse2017}{}}%
+Kruse, H. (2017). \emph{Close neighbors, separate lives}. University of Mannheim.
+
+\leavevmode\vadjust pre{\hypertarget{ref-kruse2019}{}}%
+Kruse, H., \& Kroneberg, C. (2019). More than a sorting machine: Ethnic boundary making in a stratified school system. \emph{American Journal of Sociology}, \emph{125}(2), 431--484.
+
+\leavevmode\vadjust pre{\hypertarget{ref-larsen2016}{}}%
+Larsen, C. A. (2016). \emph{Den danske republik: Forandringer i danskernes nationale forestillinger}. Hans Reitzels Forlag.
+
+\leavevmode\vadjust pre{\hypertarget{ref-larsen2024a}{}}%
+Larsen, J. F. (2024). \emph{Majority and minority exposure in childhood: Studies of ethnic segregation in early life in denmark and its consequences}. Aalborg Universitetsforlag.
+
+\leavevmode\vadjust pre{\hypertarget{ref-leszczensky2015}{}}%
+Leszczensky, L., \& Pink, S. (2015). Ethnic segregation of friendship networks in school: Testing a rational-choice argument of differences in ethnic homophily between classroom- and grade-level networks. \emph{Social Networks}, \emph{42}, 18--26. \url{https://doi.org/10.1016/j.socnet.2015.02.002}
+
+\leavevmode\vadjust pre{\hypertarget{ref-mcpherson2001}{}}%
+McPherson, M., Smith-Lovin, L., \& Cook, J. M. (2001). Birds of a feather: Homophily in social networks. \emph{Annual Review of Sociology}, \emph{27}(1), 415--444. \url{https://doi.org/10.1146/annurev.soc.27.1.415}
+
+\leavevmode\vadjust pre{\hypertarget{ref-pettigrew1998}{}}%
+Pettigrew, T. F. (1998). Reactions toward the new minorities of western europe. \emph{Annual Review of Sociology}, \emph{24}(1), 77--103. \url{https://doi.org/10.1146/annurev.soc.24.1.77}
+
+\leavevmode\vadjust pre{\hypertarget{ref-pettigrew2006}{}}%
+Pettigrew, T. F., \& Tropp, L. R. (2006). A meta-analytic test of intergroup contact theory. \emph{Journal of Personality and Social Psychology}, \emph{90}(5), 751--783. \url{https://doi.org/10.1037/0022-3514.90.5.751}
+
+\leavevmode\vadjust pre{\hypertarget{ref-tropp2005}{}}%
+Tropp, L. R., \& Pettigrew, T. F. (2005). Relationships between intergroup contact and prejudice among minority and majority status groups. \emph{Psychological Science}, \emph{16}(12), 951--957. \url{https://doi.org/10.1111/j.1467-9280.2005.01643.x}
+
+\leavevmode\vadjust pre{\hypertarget{ref-xie2015}{}}%
+Xie, Y. (2015). \emph{Dynamic documents with {R} and knitr} (2nd ed.). Chapman; Hall/CRC. \url{http://yihui.name/knitr/}
+
+\end{CSLReferences}
 
 \hypertarget{appendix-bilag}{%
 \appendix}
@@ -211,7 +278,5 @@ This will be Appendix A.
 \chapter{Andet bilag\ldots{}}\label{bilag2}}
 
 This will be Appendix B.
-
-  \bibliography{book.bib,packages.bib}
 
 \end{document}

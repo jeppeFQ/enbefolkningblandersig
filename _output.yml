@@ -1,7 +1,7 @@
 bookdown::gitbook:
   css: style.css
+  pandoc_args: [ "--csl", "university-of-gothenburg-apa-7th-edition-swedish-legislations.csl" ]
   bibliography: ["book.bib"]
-  biblio-style: "apalike"
   link-citations: true
   split_bib: no
   config:
@@ -27,8 +27,8 @@ bookdown::pdf_book:
   includes:
     in_header: preamble.tex
   latex_engine: xelatex
-  citation_package: natbib
+  citation_package: default
+  pandoc_args: [ "--csl", "university-of-gothenburg-apa-7th-edition-swedish-legislations.csl" ]
   bibliography: ["book.bib"]
-  biblio-style: "apalike"
   link-citations: true
   keep_tex: yes
