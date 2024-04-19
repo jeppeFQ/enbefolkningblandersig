@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.5)  19 APR 2024 10:27
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.5)  19 APR 2024 16:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -818,87 +818,120 @@ Overfull \hbox (617.51155pt too wide) in paragraph at lines 185--185
 LaTeX Warning: Float too large for page by 84.06657pt on input line 186.
 
 [15] [16]
+File: images/dalle-schoolseg.png Graphic file (type bmp)
+<images/dalle-schoolseg.png>
+
+Overfull \hbox (617.51155pt too wide) in paragraph at lines 201--201
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 24.06657pt on input line 202.
+
+[17] [18]
+File: images/dalle-schoolseg.png Graphic file (type bmp)
+<images/dalle-schoolseg.png>
+
+Overfull \hbox (617.51155pt too wide) in paragraph at lines 214--214
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 34.22658pt on input line 215.
+
+[19] [20]
+File: images/dalle-schoolseg.png Graphic file (type bmp)
+<images/dalle-schoolseg.png>
+
+Overfull \hbox (617.51155pt too wide) in paragraph at lines 229--229
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 84.50658pt on input line 230.
+
+[21] [22] [23] [24
+
+]
 Chapter 4.
 File: images/dalle-work.png Graphic file (type bmp)
 <images/dalle-work.png>
 
-Overfull \hbox (617.51155pt too wide) in paragraph at lines 192--192
+Overfull \hbox (617.51155pt too wide) in paragraph at lines 243--243
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 24.06657pt on input line 193.
+LaTeX Warning: Float too large for page by 24.06657pt on input line 244.
 
-[17
-
-] [18]
+[25] [26]
 Chapter 5.
 File: images/dalle-civil.png Graphic file (type bmp)
 <images/dalle-civil.png>
 
-Overfull \hbox (617.51155pt too wide) in paragraph at lines 199--199
+Overfull \hbox (617.51155pt too wide) in paragraph at lines 250--250
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 24.06657pt on input line 200.
+LaTeX Warning: Float too large for page by 24.06657pt on input line 251.
 
-[19
+[27
 
-] [20]
+] [28]
 Chapter 6.
 File: images/dalle-friendships.png Graphic file (type bmp)
 <images/dalle-friendships.png>
 
-Overfull \hbox (617.51155pt too wide) in paragraph at lines 206--206
+Overfull \hbox (617.51155pt too wide) in paragraph at lines 257--257
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 24.06657pt on input line 207.
+LaTeX Warning: Float too large for page by 24.06657pt on input line 258.
 
-[21
+[29
 
-] [22]
+] [30]
 Chapter 7.
 File: images/dalle-integration.png Graphic file (type bmp)
 <images/dalle-integration.png>
 
-Overfull \hbox (617.51155pt too wide) in paragraph at lines 213--213
+Overfull \hbox (617.51155pt too wide) in paragraph at lines 264--264
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 24.06657pt on input line 214.
+LaTeX Warning: Float too large for page by 24.06657pt on input line 265.
 
-[23
+[31
 
-] [24]
+] [32]
 Underfull \vbox (badness 2698) has occurred while \output is active []
 
-[25
+[33
 
-] [26]
+] [34] [35] [36
+
+]
 Appendix A.
-[27
-
-] [28
+[37] [38
 
 ]
 Appendix B.
-[29] (./en-befolkning-blander-sig.aux)
+[39] (./en-befolkning-blander-sig.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 18630 strings out of 476740
- 345422 string characters out of 5800571
- 1935145 words of memory out of 5000000
- 40402 multiletter control sequences out of 15000+600000
+ 18640 strings out of 476740
+ 345604 string characters out of 5800571
+ 1941145 words of memory out of 5000000
+ 40412 multiletter control sequences out of 15000+600000
  564552 words of font info for 93 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,8n,121p,1767b,414s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,8n,121p,1942b,414s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on en-befolkning-blander-sig.pdf (29 pages).
+Output written on en-befolkning-blander-sig.pdf (39 pages).
