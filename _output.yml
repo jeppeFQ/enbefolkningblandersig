@@ -1,5 +1,8 @@
 bookdown::gitbook:
   css: style.css
+  bibliography: ["book.bib"]
+  biblio-style: "apalike"
+  link-citations: true
   split_bib: no
   config:
     toc:
@@ -25,4 +28,7 @@ bookdown::pdf_book:
     in_header: preamble.tex
   latex_engine: xelatex
   citation_package: natbib
+  bibliography: ["book.bib"]
+  biblio-style: "apalike"
+  link-citations: true
   keep_tex: yes

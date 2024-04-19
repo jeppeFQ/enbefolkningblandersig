@@ -5,4 +5,3 @@
 knitr::include_graphics("images/dalle-smeltedige.png")
 ```
 
-test [@xie2015].
