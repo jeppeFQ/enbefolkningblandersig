@@ -40,7 +40,7 @@ Segregering er et udtryk for en fysisk adskillelse af personer fra forskellige k
 
 ### Det danske skolelandskab
 
-Når vi ser på det fysiske skolelandskab, det vil sige alle skoler og deres adresser, var det danske skolelandskab i 1985—det tidligste år, vi har data—bestående af 1327 skoler, hvoraf 246 var privat- eller friskoler[^4]. I 2020—det seneste år, vi har data for—var der samlet 1848 individuelle skoler[^5], hvoraf 545 var privat- eller friskoler[^6]. I 2020 havde XX% af alle børn, der startede i børnehaveklassen, enten første eller anden generation indvandrerbaggrund; heraf XX% fra et ikke-vestligt land. Til sammenligning var tallene i 1985 hhv. XX% og XX%.  
+Når vi ser på det fysiske skolelandskab, det vil sige alle skoler og deres adresser, var det danske skolelandskab i 1985—det tidligste år, vi har data—bestående af 1327 skoler, hvoraf 246 var privat- eller friskoler[^4]. I 2020—det seneste år, vi har data for—var der samlet 1848 individuelle skoler[^5], hvoraf 545 var privat- eller friskoler[^6]. I 2020 havde 12% af alle børn i niende klasse, enten første eller anden generation indvandrerbaggrund. Til sammenligning det kun under 2% i 1985.  
 
 [^4]: For skoler, der lukkede før institutionsregistreret blev centraliseret, er disse skoler manuelt kodet som hhv. folkeskole eller privat-/friskole.  
 
@@ -57,7 +57,7 @@ Fra et geografisk perspektiv er der stor variation i, hvor tæt skoler ligger p�
 [^9]: Det skal bemærkes, at et skæringspunkt på 2 km for, hvornår skoler er tæt på bopælen, selvfølgelig delvist er et arbitrært skæringspunkt, da familier har forskellige behov, præferencer og muligheder for transport. Kortet ser dog grundlæggende ens ud, hvis vi hæver skæringsgrænserne, og der er blot et tilsvarende antal flere skoler i hver kategori.   
 
 ```{r fig-3-1, echo=FALSE, fig.cap="Gennemsnitligt antal skoler indenfor 2 km. af bopæls-adressen (A) og koncentration af børn med ikke-vestlig indvandrerbaggrund i skolealderen i 2020 (B). <br> <br> Note: *Afstandene til skolen er baseret på den euclidiske afstand fra bopælssognets centroid til de geografiske koordinater for skolens adresse. Ikke-vestlig indvandrerbaggrund inkluderer børn, hvor begge eller én af forældrene er første generations immigrant fra et ikke-vestligt land.*"}
-knitr::include_graphics("images/dalle-schoolseg.png")
+knitr::include_graphics("images/figur_3_1c_distance_antal.svg")
 ```
 
 Det centrale her er, at fordi børnefamilier med indvandrerbaggrund er koncentreret i urbane områder (se [kapitel 1](#kap1)), er konsekvensen en stærk korrelation mellem store skolemarkeder (områder med mange skoler at vælge mellem) og områder med høj etnisk diversitet. Det betyder, at der i urbane områder på den ene side er et strukturelt potentiale for "blandede" skoler med høj gensidig eksponering. Samtidig er der dog også, på den anden side, et stort strukturelt potentiale for etnisk skolesegregering, der overstiger det niveau, der er betinget af etnisk boligsegregering, fordi der er nok skoler til, at familier realistisk kan undgå de mindre attraktive skoler ved at indskrive deres børn på andre skoler [@larsen2024b]. Disse mindre attraktive skoler er — rimeligt eller ej — ofte associeret med en høj andel elever fra ikke-vestlige immigrantbaggrunde[^10].   

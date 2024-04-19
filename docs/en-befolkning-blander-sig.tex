@@ -36,6 +36,46 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -59,6 +99,7 @@
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
+\usepackage{svg}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -88,6 +129,7 @@
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 \usepackage{booktabs}
 \usepackage{amsthm}
+\usepackage{svg}
 \makeatletter
 \def\thm@space@setup{%
   \thm@preskip=8pt plus 2pt minus 4pt
@@ -117,6 +159,12 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{options}\NormalTok{(}\AttributeTok{tinytex.engine\_args=}\StringTok{"{-}shell{-}escape"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
 \hypertarget{forord}{%
 \chapter*{Forord}\label{forord}}
 \addcontentsline{toc}{chapter}{Forord}
@@ -126,6 +174,9 @@ Måske et forord her.
 Samt en smart \emph{måde} at præsenterer \textbf{indholdsfortegnelse} og \textbf{\emph{overblik}} i dette format. Evt. korte summaries/abstracts til de enkelte kapitler?
 
 Vi kan linke til andre \protect\hyperlink{kap1}{kapitler} og refencer i henhold til bibtex standarder (\protect\hyperlink{ref-xie2015}{Xie, 2015}).
+```
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \hypertarget{kap1}{%
 \chapter{En befolkning blander sig}\label{kap1}}
@@ -177,12 +228,14 @@ Segregering er et udtryk for en fysisk adskillelse af personer fra forskellige k
 \hypertarget{det-danske-skolelandskab}{%
 \subsection{Det danske skolelandskab}\label{det-danske-skolelandskab}}
 
-Når vi ser på det fysiske skolelandskab, det vil sige alle skoler og deres adresser, var det danske skolelandskab i 1985---det tidligste år, vi har data---bestående af 1327 skoler, hvoraf 246 var privat- eller friskoler\footnote{For skoler, der lukkede før institutionsregistreret blev centraliseret, er disse skoler manuelt kodet som hhv. folkeskole eller privat-/friskole.}. I 2020---det seneste år, vi har data for---var der samlet 1848 individuelle skoler\footnote{En teknisk bemærkning er, at nogle skoler er blevet lagt sammen som afdelinger under den samme hovedskole. Selvom de er fysisk adskilte skoler, er de afdelinger af den samme institution og har fælles ledelse. I en teknisk forstand er de den samme institution. I forhold til skolevalg betyder det, at forældre kun kan vælge eller være indskrevet på hovedskolen, men principielt ikke frit kan vælge mellem afdelingerne, selv hvis de ligger nær hinanden.}, hvoraf 545 var privat- eller friskoler\footnote{Denne optælling ser bort fra alle specialtilbud, efterskoler og lignende og inkluderer kun institutioner, der i institutionsregistret er klassificeret som folkeskole eller privat- og friskole. Med denne begrænsning af data var der omkring 2,8 millioner børn, der på mindst ét tidspunkt har været registreret i det danske skolesystem på tværs af alle klassetrin.}. I 2020 havde XX\% af alle børn, der startede i børnehaveklassen, enten første eller anden generation indvandrerbaggrund; heraf XX\% fra et ikke-vestligt land. Til sammenligning var tallene i 1985 hhv. XX\% og XX\%.
+Når vi ser på det fysiske skolelandskab, det vil sige alle skoler og deres adresser, var det danske skolelandskab i 1985---det tidligste år, vi har data---bestående af 1327 skoler, hvoraf 246 var privat- eller friskoler\footnote{For skoler, der lukkede før institutionsregistreret blev centraliseret, er disse skoler manuelt kodet som hhv. folkeskole eller privat-/friskole.}. I 2020---det seneste år, vi har data for---var der samlet 1848 individuelle skoler\footnote{En teknisk bemærkning er, at nogle skoler er blevet lagt sammen som afdelinger under den samme hovedskole. Selvom de er fysisk adskilte skoler, er de afdelinger af den samme institution og har fælles ledelse. I en teknisk forstand er de den samme institution. I forhold til skolevalg betyder det, at forældre kun kan vælge eller være indskrevet på hovedskolen, men principielt ikke frit kan vælge mellem afdelingerne, selv hvis de ligger nær hinanden.}, hvoraf 545 var privat- eller friskoler\footnote{Denne optælling ser bort fra alle specialtilbud, efterskoler og lignende og inkluderer kun institutioner, der i institutionsregistret er klassificeret som folkeskole eller privat- og friskole. Med denne begrænsning af data var der omkring 2,8 millioner børn, der på mindst ét tidspunkt har været registreret i det danske skolesystem på tværs af alle klassetrin.}. I 2020 havde 12\% af alle børn i niende klasse, enten første eller anden generation indvandrerbaggrund. Til sammenligning det kun under 2\% i 1985.
 
 Fra et geografisk perspektiv er der stor variation i, hvor tæt skoler ligger på hinanden. Dette har en indirekte betydning for omfanget af frit skolevalg, da områder med få skoler inden for relativt kort afstand også har færre reelle muligheder for at vælge alternative til distriktskolen, som diskuteret ovenfor. Figur \ref{fig:fig-3-1} visualiserer antallet af skoler inden for 2 km fra centroiden af bopælssognet\footnote{Centroiden, eller det geografiske midtpunkt, er punktet, der repræsenterer den gennemsnitlige position for et område, såsom et bopælssogn.}. Kortet fungerer på sin vis som en proxy for befolkningstæthed, da der naturligvis vil være flere skoler i områder med mange familier. Men grundet lave omkostninger ved etablering af private- eller friskoler vil nogle områder stadig have et relativt stort skolemarked, på trods af relativ lav befolkningstæthed\footnote{For at åbne en fri- eller privatskole er den eneste ikke-refunderbare direkte omkostning et gebyr på 20.000 kr. til ministeriet i forbindelse med anmeldelse om oprettelse af ny skole.}. Derfor er det sådan, at familier i urbane områder generelt har flere skoler, de potentielt kan vælge mellem. De fleste husstande i Danmark har to skoler inden for 2 km, men som strålende outliers er der i København og Frederiksberg henholdsvis 20 og 24 skoler inden for 2 km\footnote{Det skal bemærkes, at et skæringspunkt på 2 km for, hvornår skoler er tæt på bopælen, selvfølgelig delvist er et arbitrært skæringspunkt, da familier har forskellige behov, præferencer og muligheder for transport. Kortet ser dog grundlæggende ens ud, hvis vi hæver skæringsgrænserne, og der er blot et tilsvarende antal flere skoler i hver kategori.}.
 
 \begin{figure}
-\includegraphics[width=24.89in]{images/dalle-schoolseg} \caption{Gennemsnitligt antal skoler indenfor 2 km. af bopæls-adressen (A) og koncentration af børn med ikke-vestlig indvandrerbaggrund i skolealderen i 2020 (B). <br> <br> Note: *Afstandene til skolen er baseret på den euclidiske afstand fra bopælssognets centroid til de geografiske koordinater for skolens adresse. Ikke-vestlig indvandrerbaggrund inkluderer børn, hvor begge eller én af forældrene er første generations immigrant fra et ikke-vestligt land.*}\label{fig:fig-3-1}
+\centering
+\includesvg{images/figur_3_1c_distance_antal.svg}
+\caption{\label{fig:fig-3-1}Gennemsnitligt antal skoler indenfor 2 km. af bopæls-adressen (A) og koncentration af børn med ikke-vestlig indvandrerbaggrund i skolealderen i 2020 (B). Note: \emph{Afstandene til skolen er baseret på den euclidiske afstand fra bopælssognets centroid til de geografiske koordinater for skolens adresse. Ikke-vestlig indvandrerbaggrund inkluderer børn, hvor begge eller én af forældrene er første generations immigrant fra et ikke-vestligt land.}}
 \end{figure}
 
 Det centrale her er, at fordi børnefamilier med indvandrerbaggrund er koncentreret i urbane områder (se \protect\hyperlink{kap1}{kapitel 1}), er konsekvensen en stærk korrelation mellem store skolemarkeder (områder med mange skoler at vælge mellem) og områder med høj etnisk diversitet. Det betyder, at der i urbane områder på den ene side er et strukturelt potentiale for ``blandede'' skoler med høj gensidig eksponering. Samtidig er der dog også, på den anden side, et stort strukturelt potentiale for etnisk skolesegregering, der overstiger det niveau, der er betinget af etnisk boligsegregering, fordi der er nok skoler til, at familier realistisk kan undgå de mindre attraktive skoler ved at indskrive deres børn på andre skoler (\protect\hyperlink{ref-larsen2024b}{J. F. Larsen, 2024c}). Disse mindre attraktive skoler er --- rimeligt eller ej --- ofte associeret med en høj andel elever fra ikke-vestlige immigrantbaggrunde\footnote{De fleste familier angiver, når de bliver spurgt, at det vigtigste kriterium i skolevalget er barnets trivsel og skolens ``faglige kvalitet'' (\protect\hyperlink{ref-epinion2017}{Epinion, 2017}). Denne kvalitet kan dog ofte være svær at vurdere i praksis, så det udefra observerbare elevgrundlag bliver ofte en proxy for vurderet kvalitet og skolens omdømme (\protect\hyperlink{ref-rambuxf8ll2011}{Rambøll, 2011}). Empiriske studier viser, at familier med de højeste uddannelser også er mest sensitive over for antallet af ``ikke-indfødte'' elever på en skole (\protect\hyperlink{ref-bjerrenielsen2020}{Bjerre-Nielsen \& Gandil, 2020}; \protect\hyperlink{ref-karsten2003}{Karsten et al., 2003}; \protect\hyperlink{ref-nielsen2019}{Nielsen \& Andersen, 2019}). Efter trivsel og ``faglig kvalitet'' er ``afstand til skolen'' fra bopælen også et kriterium for flere forældre (\protect\hyperlink{ref-epinion2017}{Epinion, 2017}).}.

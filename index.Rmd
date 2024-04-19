@@ -15,6 +15,12 @@ description: "Skriv kort om bogen her ...."
 favicon: images/AAU_logo_2012.png
 cover-image: images/AAU_logo_2012.png
 ---
+
+```{r}
+options(tinytex.engine_args="-shell-escape")
+```
+
+
 # Forord {-}
 
 Måske et forord her. 
@@ -23,3 +29,7 @@ Samt en smart *måde* at præsenterer **indholdsfortegnelse** og ***overblik*** 
 
 
 Vi kan linke til andre [kapitler](#kap1) og refencer i henhold til bibtex standarder [@xie2015].
+```
+
+
+--- 
