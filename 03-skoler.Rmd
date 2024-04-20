@@ -56,46 +56,47 @@ Fra et geografisk perspektiv er der stor variation i, hvor tæt skoler ligger p�
 
 [^9]: Det skal bemærkes, at et skæringspunkt på 2 km for, hvornår skoler er tæt på bopælen, selvfølgelig delvist er et arbitrært skæringspunkt, da familier har forskellige behov, præferencer og muligheder for transport. Kortet ser dog grundlæggende ens ud, hvis vi hæver skæringsgrænserne, og der er blot et tilsvarende antal flere skoler i hver kategori.   
 
-```{r fig-3-1, echo=FALSE, fig.cap="Gennemsnitligt antal skoler indenfor 2 km. af bopæls-adressen (A) og koncentration af børn med ikke-vestlig indvandrerbaggrund i skolealderen i 2020 (B). <br> <br> Note: *Afstandene til skolen er baseret på den euclidiske afstand fra bopælssognets centroid til de geografiske koordinater for skolens adresse. Ikke-vestlig indvandrerbaggrund inkluderer børn, hvor begge eller én af forældrene er første generations immigrant fra et ikke-vestligt land.*"}
-knitr::include_graphics("images/figur_3_1.svg")
+
+```{r fig-3-1, echo=FALSE, out.width= "100%", fig.cap="Gennemsnitligt antal skoler indenfor 2 km. af bopæls-adressen (A) og koncentration af børn med ikke-vestlig indvandrerbaggrund i skolealderen i 2020 (B). <br> <br> Note: *Afstandene til skolen er baseret på den euclidiske afstand fra bopælssognets centroid til de geografiske koordinater for skolens adresse. Ikke-vestlig indvandrerbaggrund inkluderer børn, hvor begge eller én af forældrene er første generations immigrant fra et ikke-vestligt land.*"}
+knitr::include_graphics("images/figur_3_1c_distance_antal.png")
 ```
+
 
 Det centrale her er, at fordi børnefamilier med indvandrerbaggrund er koncentreret i urbane områder (se [kapitel 1](#kap1)), er konsekvensen en stærk korrelation mellem store skolemarkeder (områder med mange skoler at vælge mellem) og områder med høj etnisk diversitet. Det betyder, at der i urbane områder på den ene side er et strukturelt potentiale for "blandede" skoler med høj gensidig eksponering. Samtidig er der dog også, på den anden side, et stort strukturelt potentiale for etnisk skolesegregering, der overstiger det niveau, der er betinget af etnisk boligsegregering, fordi der er nok skoler til, at familier realistisk kan undgå de mindre attraktive skoler ved at indskrive deres børn på andre skoler [@larsen2024b]. Disse mindre attraktive skoler er — rimeligt eller ej — ofte associeret med en høj andel elever fra ikke-vestlige immigrantbaggrunde[^10].   
 
 [^10]: De fleste familier angiver, når de bliver spurgt, at det vigtigste kriterium i skolevalget er barnets trivsel og skolens "faglige kvalitet" [@epinion2017]. Denne kvalitet kan dog ofte være svær at vurdere i praksis, så det udefra observerbare elevgrundlag bliver ofte en proxy for vurderet kvalitet og skolens omdømme [@rambøll2011]. Empiriske studier viser, at familier med de højeste uddannelser også er mest sensitive over for antallet af "ikke-indfødte" elever på en skole [@bjerrenielsen2020; @nielsen2019; @karsten2003]. Efter trivsel og "faglig kvalitet" er "afstand til skolen" fra bopælen også et kriterium for flere forældre [@epinion2017].   
 
-### Segregering i det danske skolelandskab
+## Segregering i det danske skolelandskab
 
 Når vi måler graden af segregering er det mest anvendte anvendte mål for (skole)segregering Dissimilarity ($D$) indekset, men også Separation ($S$) indekeset har en vis udbredelse[^11]. Den grundlæggende forskel mellem de to mål er at $D$ måler graden af ulige fordeling og $S$ måler graden af polarisering. Lidt simplifiseret vil det sige at $D$ måler hvor mange fra én af grupperne i sammenligningen, der hypotetisk skal flyttes til en ny skole for at fordelingen er “lige”. “Lige fordeling” er i denne kontekst et udtryk for en situation hvor samtlige skoler i en kommune har samme andel minoriteter som der er på kommunalt niveau. Igen en smule simplifiseret skal $S$, på den anden side, tolkes som omfanget af skoler der udelukkende har elever fra minoritets eller majoritetsbaggrund og kan dermed tolkes som et spektrum af polarisering. Begge mål kan have værdierne 0-1 og i empiriske cases vil de to mål essentielt altid være korrelerrede. $S$ er typisk noget lavere end $D$, da $S$ korregerer for størrelsen af skoler og grupper, mens $D$ ikke gør (se [bilag A](#bilag1) for yderlig information).  
 
 [^11]: S er også kendt under andre navne, såsom eta2, variansratioen eller korrelationsratioen. Se @fossett2017 for en detaljeret diskussion af forskellen mellem S og andre mål for segregering.
 
-#### National skala 
+### National skala 
 
 På landsplan måles segregeringen til $D = 0,44$ og $S = 0,16$ i 2020, se Figur \@ref(fig:fig-3-2). Præcis hvornår segregering er "for højt" er delvist et politisk og normativt spørgsmål. Ifølge den klassiske (amerikanske) segregeringslitteratur anses $D < 0,3$ som lavt, mens $D > 0,6$ betragtes som højt [@massey1994]. I en segregeringskontekst vil $S=0,6$ betragtes som meget højt, da der vil være en betydelig mængde skoler, der (næsten) udelukkende består af enten majoritets- eller minoritetsbaggrund.
 
-```{r fig-3-2, echo=FALSE, fig.cap="Etnisk skolesegregering i Danmark"}
-knitr::include_graphics("images/dalle-schoolseg.png")
+```{r fig-3-2, echo=FALSE, out.width= "100%", fig.cap="Etnisk skolesegregering i Danmark"}
+knitr::include_graphics("images/figur_3_2.png")
 ```
 
 Graden af segregering i Danmark vil derfor være at betragte som moderat i dag, hvilket kan være overraskende for nogle, givet den aktuelle offentlige debat. På nationalt plan har segregeringen faktisk været faldende. Selvom fordelingen har været skæv, især frem til årtusindskiftet, har der ikke været egentlig polarisering, hvor minoritetsgrupper har gået på skoler med meget begrænset kontakt til majoritetsgrupper. Graden af segregering har grundlæggende været strukturelt betinget idet der ikke har været tilstrækkeligt mange minoritetsbørn, og de har været koncentreret i for få kommuner til, at de praktisk kunne fordeles blandt alle skoler i Danmark. Fordelingen af denne gruppe børn ville altså være skæv, selv ved en tilfældig fordeling af børn mellem skolerne. Samtidig har vi dog set en stigning i S-indekset frem til omkring 2007. Denne stigning skal ses i lyset af bosættelsesmønstrene blandt immigranter. Når visse kommuner oplever en relativ koncentration af immigranter, vil der i numerisk forstand være "nok" børn med indvandrerbaggrund til at udgøre en større andel af elevgrundlaget på en skole. Især fremkomsten af muslimske friskoler bidrager til polarisering i en segregeringskontekst, især når der samtidig også er skoler, hvor alle børn er danskfødte.
 
-#### Lokal skala 
-
+### Lokal skala 
 
 Når segregering måles på en stor skala, som f.eks. på landsplan, skjules betydelige lokale variationer i gennemsnittet. Ved at måle skolesegregering i de enkelte kommuner over tid, med fokus på år 1985 og 2020 (se Figur \@ref(fig:fig-3-3)), ser vi i 1985, at i nogle kommuner lå segregeringsniveauet på $0,2-0,4$, mens det i andre kommuner var over $0,4$. Det er dog væsentligt at bemærke, at ingen af disse kommuner havde høj segregering, hvis det måles som polarisering ($S$. Alle kommuner havde et segregeringsniveau under $0,1$ målt som $S$ i 1985. Tolkningen af disse to dimensioner af segregering i sammenhæng er derfor, at selvom der isoleret set var relativt høje grader af segregering i flere kommuner i 1985, skyldtes dette i høj grad strukturelle forhold, som diskuteret ovenfor.
 
 
 I 2020 ændrer dette billede sig markant. Vi ser, at mange kommuner har både en høj grad af ulige fordeling af minoritetsbørn mellem skoler ($D$), og at børn med indvandrerbaggrund udgør en betydelig del af elevgrundlaget på visse skoler ($S$), og vice versa for danskfødte børn. Med andre ord begynder segregering, målt som både $D$ og $S$, at korrelere stærkere over tid, hvilket betyder, at skolesegregeringen i mange kommuner i dag er præget af ikke bare en ulige fordeling mellem skoler som en strukturel betingelse, men også polarisering mellem skoler, hvor der er stadig flere skoler, hvor børn med indvandrerbaggrund udgør store dele af elevgrundlaget, samtidig med at andre skoler stort set ingen elever med indvandrerbaggrund har. Denne udvikling skyldes delvist det private skolemarked, hvor for eksempel de Muslimske friskoler i høj grad bidrager til kommunal skolesegregering, da disse skoler både har en ren minoritetskoncentration og dermed er polariserede i forhold til de andre lokale skoler med få eller ingen minoritetsbørn. Derudover bidrager sådanne skoler til, at minoritetsbørn "trækkes ud" af omkringliggende lokale skoler og øger dermed koncentrationen af danskfødte børn på disse skoler, hvilket igen øger polariseringen yderligere mellem lokale skoler. Den samme proces gør sig selvfølgelig gældende for alle private og friskoler, der henvender sig til bestemte grupper, såsom kristne eller jødiske skoler.    
 
-```{r fig-3-3, echo=FALSE, fig.cap="Etnisk skolesegregering i Danmark på kommunalt niveau, 1985 og 2020"}
-knitr::include_graphics("images/dalle-schoolseg.png")
+```{r fig-3-3, echo=FALSE, out.width= "100%", fig.cap="Etnisk skolesegregering i Danmark på kommunalt niveau, 1985 og 2020"}
+knitr::include_graphics("images/Figur4.png")
 ```
 
 
 Det er blevet beskrevet mange steder i dansk såvel som i international forskning, at segregeringsniveauet er betydeligt højere blandt privat- og friskoler end det er blandt folkeskoler isoleret set (se @larsen2024a for overblik). I Danmark var skolesegregeringen blandt privat- og friskoler $D=XX$ og $S=XX$ i 1985 og $D=XX$ og $S=XX$ i 2020. Dette står i markant kontrast til segregeringen mellem folkeskolerne isoleret set, hvor skolesegregeringen var $D=XX$ og $S=XX$ i 1985 og $D=XX$ og $S=XX$ i 2020.
 
-### Skolesegregering som produkt af boligsegregering 
+## Skolesegregering som produkt af boligsegregering 
 
 Som det blev diskuteret i [afsnit 1.1][Det danske skolelandskab], er der stor variation i koncentrationen af familier med indvandrerbaggrund og afstanden mellem skoler. Som andre har vist, er koncentrationen af familier med indvandrerbaggrund ikke kun mellem kommuner, men også inden for kommuner, hvor nogle nabolag er kendetegnet ved høje koncentrationer af minoriteter—i særlig høj grad gældende for den almene boligsektor [@andersen2019a: @landsbyggefonden2020]. Bemærkelsesværdigt er også, at kommuner med få familier med indvandrerbaggrund angiver, at de ikke ser, at frit skolevalg fører til øget etnisk segregering, mens kommuner med mange familier med indvandrerbaggrund siger det modsatte [@rambøll2011].
 
@@ -105,7 +106,7 @@ Kigger vi på sammenhængen i segregering (målt som $D$) på henholdsvis bolig-
 
 [^12]: Skolesegregering kan også eksistere med lav boligsegregering—som @rangvid2007 også diskuterer og var aktuelt frem til tidlige 2000, som Figur \@ref(fig:fig-3-4) også illustrerer for 1985—ser vi en stærk sammenhæng mellem de to typer segregering i de fleste kommuner i 2020. Jeg understøtter dette med en dekomponeringsanalyse i @larsen2024b.
 
-```{r fig-3-4, echo=FALSE, fig.cap="Etnisk skole- og boligsegregering i Danmark (D indeks) <br> <br> Note: *Boligsegregering er målt som de personer der går i den danske grundskole og ikke den fulde population. Boligsegregering er målt på sogne inddelinger og ikke skoledistrikter, da disse kun er tilgængelig for 19 kommuner og årene 2007-2017 i Danmarks Statistiks registre. Måles segregering med afsæt i skoledistrikter er sammenhængen markant udpreget (se Larsen, 2023b).*"}
+```{r fig-3-4, echo=FALSE, out.width= "100%", fig.cap="Etnisk skole- og boligsegregering i Danmark (D indeks) <br> <br> Note: *Boligsegregering er målt som de personer der går i den danske grundskole og ikke den fulde population. Boligsegregering er målt på sogne inddelinger og ikke skoledistrikter, da disse kun er tilgængelig for 19 kommuner og årene 2007-2017 i Danmarks Statistiks registre. Måles segregering med afsæt i skoledistrikter er sammenhængen markant udpreget (se Larsen, 2023b).*"}
 knitr::include_graphics("images/dalle-schoolseg.png")
 ```
 

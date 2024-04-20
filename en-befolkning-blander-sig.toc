@@ -1,3 +1,4 @@
+\babel@toc {english}{}\relax 
 \contentsline {chapter}{Forord}{5}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}En befolkning blander sig}{7}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Partnerskabet og de blandede børn}{9}{chapter.2}%
@@ -5,11 +6,11 @@
 \contentsline {section}{\numberline {3.1}Introduktion}{11}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Betingelser for møder i grundskolen}{13}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Det danske skolelandskab}{14}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Segregering i det danske skolelandskab}{16}{subsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.2.1}National skala}{16}{subsubsection.3.2.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2.2}Lokal skala}{18}{subsubsection.3.2.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Skolesegregering som produkt af boligsegregering}{18}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Konklusion}{20}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Segregering i det danske skolelandskab}{16}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}National skala}{16}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Lokal skala}{17}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Skolesegregering som produkt af boligsegregering}{18}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Konklusion}{19}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Arbejdspladser som mødested}{23}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Foreninger som mødested}{25}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Venskaber -- det første skridt}{27}{chapter.6}%
