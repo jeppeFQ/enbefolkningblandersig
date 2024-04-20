@@ -107,7 +107,7 @@ Kigger vi på sammenhængen i segregering (målt som $D$) på henholdsvis bolig-
 [^12]: Skolesegregering kan også eksistere med lav boligsegregering—som @rangvid2007 også diskuterer og var aktuelt frem til tidlige 2000, som Figur \@ref(fig:fig-3-4) også illustrerer for 1985—ser vi en stærk sammenhæng mellem de to typer segregering i de fleste kommuner i 2020. Jeg understøtter dette med en dekomponeringsanalyse i @larsen2024b.
 
 ```{r fig-3-4, echo=FALSE, out.width= "100%", fig.cap="Etnisk skole- og boligsegregering i Danmark (D indeks) <br> <br> Note: *Boligsegregering er målt som de personer der går i den danske grundskole og ikke den fulde population. Boligsegregering er målt på sogne inddelinger og ikke skoledistrikter, da disse kun er tilgængelig for 19 kommuner og årene 2007-2017 i Danmarks Statistiks registre. Måles segregering med afsæt i skoledistrikter er sammenhængen markant udpreget (se Larsen, 2023b).*"}
-knitr::include_graphics("images/dalle-schoolseg.png")
+knitr::include_graphics("images/Figur5.png")
 ```
 
 ## Konklusion
