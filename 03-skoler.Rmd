@@ -94,7 +94,7 @@ knitr::include_graphics("images/Figur4.png")
 ```
 
 
-Det er blevet beskrevet mange steder i dansk såvel som i international forskning, at segregeringsniveauet er betydeligt højere blandt privat- og friskoler end det er blandt folkeskoler isoleret set (se @larsen2024a for overblik). I Danmark var skolesegregeringen blandt privat- og friskoler $D=XX$ og $S=XX$ i 1985 og $D=XX$ og $S=XX$ i 2020. Dette står i markant kontrast til segregeringen mellem folkeskolerne isoleret set, hvor skolesegregeringen var $D=XX$ og $S=XX$ i 1985 og $D=XX$ og $S=XX$ i 2020.
+Det er blevet beskrevet mange steder i dansk såvel som i international forskning, at segregeringsniveauet er betydeligt højere blandt privat- og friskoler end det er blandt folkeskoler isoleret set (se @larsen2024a for overblik). I Danmark var skolesegregeringen blandt privat- og friskoler $D=0,81$ og $S=0,07$ i 1985 og $D=0,44$ og $S=0,27$ i 2020. Dette står i kontrast til segregeringen mellem folkeskolerne isoleret set, hvor skolesegregeringen var $D=60$ og $S=0,16$ i 1985 og $D=0,58$ og $S=0,44$ i 2020.
 
 ## Skolesegregering som produkt af boligsegregering 
 
@@ -102,7 +102,7 @@ Som det blev diskuteret i [afsnit 1.1][Det danske skolelandskab], er der stor va
 
 Som jeg [@larsen2024c] og andre [@bunar2010; @butler2007; @boterman2019] også har diskuteret, giver det altså en forventning om, at skolesegregering skal forstås i direkte relation til boligsegregering. Fordi de skoler, en familie enten automatisk indskrives i—distriktsskolen—eller har mulighed for at vælge som alternativ, helt grundlæggende er betinget af de skoler, der er i nærheden af boligen.
 
-Kigger vi på sammenhængen i segregering (målt som $D$) på henholdsvis bolig- og skolemarkedet, ser vi i Figur \@ref(fig:fig-3-4), at der er en klar sammenhæng mellem graden af bolig- og skolesegregering i de fleste kommuner (Pearson's $r=XX$). Med andre ord har de kommuner med høj boligsegregering typisk også høj skolesegregering[^12]. Selvom skolevalget principielt er ubegrænset, er der nogle skoler, der logisk set er for langt væk fra hjemmet til, at hverdagen ville kunne hænge sammen. Når familier, der ligner hinanden, bor tættere på andre familier, der ligner dem selv, end de gør med familier, der er forskellige fra dem, vil der være en observerbar tendens til, at børn, som ligner hinanden, også kommer til at gå i skole sammen.
+Kigger vi på sammenhængen i segregering (målt som $D$) på henholdsvis bolig- og skolemarkedet, ser vi i Figur \@ref(fig:fig-3-4), at der er en klar sammenhæng mellem graden af bolig- og skolesegregering i de fleste kommuner og at denne sammenhæng er stigende (Pearson's $r=0,50$ i 2020 og $r=0,29$ i 1985). Med andre ord har de kommuner med høj boligsegregering typisk også høj skolesegregering[^12]. Selvom skolevalget principielt er ubegrænset, er der nogle skoler, der logisk set er for langt væk fra hjemmet til, at hverdagen ville kunne hænge sammen. Når familier, der ligner hinanden, bor tættere på andre familier, der ligner dem selv, end de gør med familier, der er forskellige fra dem, vil der være en observerbar tendens til, at børn, som ligner hinanden, også kommer til at gå i skole sammen.
 
 [^12]: Skolesegregering kan også eksistere med lav boligsegregering—som @rangvid2007 også diskuterer og var aktuelt frem til tidlige 2000, som Figur \@ref(fig:fig-3-4) også illustrerer for 1985—ser vi en stærk sammenhæng mellem de to typer segregering i de fleste kommuner i 2020. Jeg understøtter dette med en dekomponeringsanalyse i @larsen2024b.
 
