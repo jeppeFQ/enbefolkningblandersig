@@ -23,10 +23,11 @@ bookdown::gitbook:
       all: no
       linkedin: yes
     download: ["pdf"]
-bookdown::pdf_book:
+bookdown::pdf_document2:
   includes:
     in_header: preamble.tex
   latex_engine: xelatex
+  extra_dependencies: ["flafter"]
   citation_package: default
   pandoc_args: [ "--csl", "university-of-gothenburg-apa-7th-edition-swedish-legislations.csl" ]
   bibliography: ["book.bib"]

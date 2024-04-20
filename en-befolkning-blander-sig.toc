@@ -3,17 +3,17 @@
 \contentsline {chapter}{\numberline {2}Partnerskabet og de blandede børn}{9}{chapter.2}%
 \contentsline {chapter}{\numberline {3}Grundskoler som mødested}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introduktion}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Betingelser for møder i grundskolen}{14}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Betingelser for møder i grundskolen}{13}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Det danske skolelandskab}{14}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Segregering i det danske skolelandskab}{17}{subsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.2.1}National skala}{17}{subsubsection.3.2.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2.2}Lokal skala}{19}{subsubsection.3.2.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Skolesegregering som produkt af boligsegregering}{19}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Konklusion}{21}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Arbejdspladser som mødested}{25}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Foreninger som mødested}{27}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Venskaber -- det første skridt}{29}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Integration i et kontaktperspektiv}{31}{chapter.7}%
-\contentsline {chapter}{Litteraturliste}{33}{chapter*.3}%
-\contentsline {chapter}{\numberline {A}Første bilag\ldots {}}{37}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Andet bilag\ldots {}}{39}{appendix.B}%
+\contentsline {subsection}{\numberline {3.2.2}Segregering i det danske skolelandskab}{16}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}National skala}{16}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}Lokal skala}{18}{subsubsection.3.2.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Skolesegregering som produkt af boligsegregering}{18}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Konklusion}{20}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Arbejdspladser som mødested}{23}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Foreninger som mødested}{25}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Venskaber -- det første skridt}{27}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Integration i et kontaktperspektiv}{29}{chapter.7}%
+\contentsline {chapter}{Litteraturliste}{31}{chapter*.3}%
+\contentsline {chapter}{\numberline {A}Første bilag\ldots {}}{35}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Andet bilag\ldots {}}{37}{appendix.B}%
