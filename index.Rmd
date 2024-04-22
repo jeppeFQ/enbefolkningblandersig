@@ -25,6 +25,7 @@ options(tinytex.engine_args="-shell-escape")
 
 Måske et forord her. 
 
+
 I [kapitel 1](#kap1) af _____, ... 
 
 I [kapitel 2](#kap2) af _____, ... 
@@ -39,9 +40,3 @@ I [kapitel 6](#kap6) af _____, ...
 
 I [kapitel 7](#kap7) af _____, ... 
 
-
-Vi kan linke til andre [kapitler](#kap1) og refencer i henhold til bibtex standarder [@xie2015].
-```
-
-
---- 
