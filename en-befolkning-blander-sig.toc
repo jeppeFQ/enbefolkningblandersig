@@ -2,7 +2,7 @@
 \contentsline {chapter}{Forord}{5}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}En befolkning blander sig}{7}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Partnerskabet og de blandede børn}{9}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Grundskoler som mødested}{11}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Grundskoler som mødested (\textbf {WIP DO NOT CITE!})}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introduktion}{11}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Betingelser for møder i grundskolen}{13}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Det danske skolelandskab}{14}{subsection.3.2.1}%
