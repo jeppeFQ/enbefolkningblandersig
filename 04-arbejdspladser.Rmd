@@ -6,22 +6,22 @@ knitr::include_graphics("images/dalle-work.png")
 
 
 
-```{r fig-4-1, echo=FALSE, out.width= "100%", fig.cap="Beskæftigedes med dansk-dansk herkomst gennemsnitlige eksponering til indvandrere/efterkommere på deres arbejdspladsen i 1996 (venstre) og 2019 (højre). <br> <br> Note: *Opgjort på tværs af kommuner.*"}
+```{r fig-4-1, echo=FALSE, out.width= "100%", fig.cap="Beskæftigedes med dansk-dansk herkomst gennemsnitlige eksponering til indvandrere/efterkommere på deres arbejdspladsen i 1996 (venstre) og 2019 (højre). <br> <br> **Note**: *Opgjort på tværs af kommuner.*"}
 knitr::include_graphics("images/Figur_4_1.png")
 ```
 
-```{r fig-4-2, echo=FALSE, out.width= "100%", fig.cap="Andelen af beskæftigede med dansk-dansk herkomst, der ikke er eksponeret til én eneste indvandrer eller efterkommer på deres arbejdsplads i 1996(venstre) og 2019 (højre). <br> <br> Note: *Opgjort på tværs af kommuner. *"}
+```{r fig-4-2, echo=FALSE, out.width= "100%", fig.cap="Andelen af beskæftigede med dansk-dansk herkomst, der ikke er eksponeret til én eneste indvandrer eller efterkommer på deres arbejdsplads i 1996 (venstre) og 2019 (højre). <br> <br> **Note**: *Opgjort på tværs af kommuner. *"}
 knitr::include_graphics("images/Figur_4_2.png")
 ```
 
-```{r fig-4-3, echo=FALSE, out.width= "100%", fig.cap="Beskæftigedes med dansk-dansk herkomst gennemsnitlige eksponering til MENAPT indvandrere/efterkommer på deres arbejdsplads i 1996 (venstre) og 2019 (højre). <br> <br> Note: *Opgjort på tværs af kommuner. MENAPT dækker over ...*"}
+```{r fig-4-3, echo=FALSE, out.width= "100%", fig.cap="Beskæftigedes med dansk-dansk herkomst gennemsnitlige eksponering til MENAPT indvandrere/efterkommer på deres arbejdsplads i 1996 (venstre) og 2019 (højre). <br> <br> **Note**: *Opgjort på tværs af kommuner. MENAPT dækker over ...*"}
 knitr::include_graphics("images/Figur_4_3.png")
 ```
 
-```{r fig-4-4, echo=FALSE, out.width= "100%", fig.cap="Beskæftigede indvandreres/efterkommeres gennemsnitlige eksponering til beskæftigede med dansk-dansk herkomst på deres arbejdsplads i 1996 (venstre) og 2019 (højre). <br> <br> Note: *Opgjort på tværs af kommuner.*"}
+```{r fig-4-4, echo=FALSE, out.width= "100%", fig.cap="Beskæftigede indvandreres/efterkommeres gennemsnitlige eksponering til beskæftigede med dansk-dansk herkomst på deres arbejdsplads i 1996 (venstre) og 2019 (højre). <br> <br> **Note**: *Opgjort på tværs af kommuner.*"}
 knitr::include_graphics("images/Figur_4_4.png")
 ```
 
-```{r fig-4-5, echo=FALSE, out.width= "100%", fig.cap="Andelen af beskæftigede indvandrere/efterkommere der ikke er eksponeret til én eneste med dansk-dansk herkomst på deres arbejdsplads i 1996(venstre) og 2019(højre). <br> <br> Note: *Opgjort på tværs af kommuner.*"}
+```{r fig-4-5, echo=FALSE, out.width= "100%", fig.cap="Andelen af beskæftigede indvandrere/efterkommere der ikke er eksponeret til én eneste med dansk-dansk herkomst på deres arbejdsplads i 1996 (venstre) og 2019 (højre). <br> <br> **Note**: *Opgjort på tværs af kommuner.*"}
 knitr::include_graphics("images/Figur_4_5.png")
 ```
