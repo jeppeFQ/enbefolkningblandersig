@@ -1,11 +1,18 @@
+
+% Load packages
 \usepackage{booktabs}
 \usepackage{amsthm}
 \usepackage{svg}
 \usepackage[english]{babel}
 \usepackage{fancyhdr}
 
+% Change "Chapter" to "Kapitel" throughout document
 \addto\captionsenglish{\renewcommand{\chaptername}{Kapitel}}
+% Change "Content" to "Indholdsfortegnelse"
+\addto\captionsenglish{\renewcommand{\contentsname}{Indholdsfortegnelse}}
 
+
+% Page layout
 \makeatletter
 \def\thm@space@setup{%
   \thm@preskip=8pt plus 2pt minus 4pt

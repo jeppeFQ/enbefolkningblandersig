@@ -1,6 +1,6 @@
 # Grundskoler som mødested (**WIP DO NOT CITE!**) {#kap3}
 
-```{r fig-schoolseg, echo=FALSE, out.width= "100%", fig.cap="Skolesegregering som det tolkes af en AI model"}
+```{r fig-schoolseg, echo=FALSE, out.width= "100%"}
 knitr::include_graphics("images/dalle-schoolseg.png")
 ```
 

@@ -16,27 +16,11 @@ favicon: images/AAU_logo_2012.png
 cover-image: images/AAU_logo_2012.png
 ---
 
-```{r}
+
+```{r include=FALSE}
 options(tinytex.engine_args="-shell-escape")
 ```
 
 
-# Forord {-}
 
-Måske et forord her. 
-
-
-I [kapitel 1](#kap1) af _____, ... 
-
-I [kapitel 2](#kap2) af _____, ... 
-
-I [kapitel 3, "Grundskoler som mødested"](#kap3), af [Jeppe Fjeldgaard Larsen](https://vbn.aau.dk/da/persons/140717), ... 
-
-I [kapitel 4](#kap4) af _____, ... 
-
-I [kapitel 5](#kap5) af _____, ... 
-
-I [kapitel 6](#kap6) af _____, ... 
-
-I [kapitel 7](#kap7) af _____, ... 
 

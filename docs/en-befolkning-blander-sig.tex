@@ -36,46 +36,6 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -136,14 +96,21 @@
 \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+% Load packages
 \usepackage{booktabs}
 \usepackage{amsthm}
 \usepackage{svg}
 \usepackage[english]{babel}
 \usepackage{fancyhdr}
 
+% Change "Chapter" to "Kapitel" throughout document
 \addto\captionsenglish{\renewcommand{\chaptername}{Kapitel}}
+% Change "Content" to "Indholdsfortegnelse"
+\addto\captionsenglish{\renewcommand{\contentsname}{Indholdsfortegnelse}}
 
+
+% Page layout
 \makeatletter
 \def\thm@space@setup{%
   \thm@preskip=8pt plus 2pt minus 4pt
@@ -165,7 +132,7 @@
 
 \title{En befolkning blander sig}
 \author{Christian Albrekt Larsen og Hans-Peter Y. Qvist (Red.) \and Med bidrag fra Jeppe Fjeldgaard Larsen, Laciné E. Diop,\ldots{} Anders? Anna?}
-\date{2024-05-22}
+\date{2024-05-28}
 
 \begin{document}
 \maketitle
@@ -174,12 +141,6 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{options}\NormalTok{(}\AttributeTok{tinytex.engine\_args=}\StringTok{"{-}shell{-}escape"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
 \chapter*{Forord}\label{forord}
 \addcontentsline{toc}{chapter}{Forord}
 
@@ -201,21 +162,15 @@ I \hyperref[kap7]{kapitel 7} af \_\_\_\_\_, \ldots{}
 
 \chapter{En befolkning blander sig}\label{kap1}
 
-\begin{figure}
-\includegraphics[width=1\linewidth]{images/dalle-smeltedige} \caption{Smeltedigen, tolket af en AI model}\label{fig:fig-smelte}
-\end{figure}
+\includegraphics[width=1\linewidth]{images/dalle-smeltedige}
 
 \chapter{Partnerskabet og de blandede børn}\label{kap2}
 
-\begin{figure}
-\includegraphics[width=1\linewidth]{images/dalle-wedding} \caption{Et blandet ægteskab, tolket af en AI model}\label{fig:fig-partner}
-\end{figure}
+\includegraphics[width=1\linewidth]{images/dalle-wedding}
 
 \chapter{\texorpdfstring{Grundskoler som mødested (\textbf{WIP DO NOT CITE!})}{Grundskoler som mødested (WIP DO NOT CITE!)}}\label{kap3}
 
-\begin{figure}
-\includegraphics[width=1\linewidth]{images/dalle-schoolseg} \caption{Skolesegregering som det tolkes af en AI model}\label{fig:fig-schoolseg}
-\end{figure}
+\includegraphics[width=1\linewidth]{images/dalle-schoolseg}
 
 \section{Introduktion}\label{introduktion}
 
@@ -299,9 +254,7 @@ Som jeg har beskrevet i dette kapitel, er segregering i det danske grundskolesys
 
 \chapter{Arbejdspladser som mødested}\label{kap4}
 
-\begin{figure}
-\includegraphics[width=1\linewidth]{images/dalle-work} \caption{En multikulturel arbejdsplads, tolket af en AI model}\label{fig:fig-work}
-\end{figure}
+\includegraphics[width=1\linewidth]{images/dalle-work}
 
 \begin{figure}
 \includegraphics[width=1\linewidth]{images/Figur_4_1} \caption{Beskæftigedes med dansk-dansk herkomst gennemsnitlige eksponering til indvandrere/efterkommere på deres arbejdspladsen i 1996 (venstre) og 2019 (højre). <br> <br> **Note**: *Opgjort på tværs af kommuner.*}\label{fig:fig-4-1}
@@ -325,21 +278,15 @@ Som jeg har beskrevet i dette kapitel, er segregering i det danske grundskolesys
 
 \chapter{Foreninger som mødested}\label{kap5}
 
-\begin{figure}
-\includegraphics[width=1\linewidth]{images/dalle-civil} \caption{Minoriters deltagelse i civilsamfund, tolket af en AI model}\label{fig:fig-civil}
-\end{figure}
+\includegraphics[width=1\linewidth]{images/dalle-civil}
 
 \chapter{Venskaber -- det første skridt}\label{kap6}
 
-\begin{figure}
-\includegraphics[width=1\linewidth]{images/dalle-friendships} \caption{Interetniske venskaber, tolket af en AI model}\label{fig:fig-friendships}
-\end{figure}
+\includegraphics[width=1\linewidth]{images/dalle-friendships}
 
 \chapter{Integration i et kontaktperspektiv}\label{kap7}
 
-\begin{figure}
-\includegraphics[width=1\linewidth]{images/dalle-integration} \caption{Social integration, tolket af en AI model}\label{fig:fig-integration}
-\end{figure}
+\includegraphics[width=1\linewidth]{images/dalle-integration}
 
 test (\citeproc{ref-xie2015}{Xie, 2015}).
 

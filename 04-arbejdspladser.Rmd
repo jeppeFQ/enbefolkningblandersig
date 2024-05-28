@@ -1,6 +1,6 @@
 # Arbejdspladser som mødested {#kap4}
 
-```{r fig-work, echo=FALSE, out.width= "100%", fig.cap="En multikulturel arbejdsplads, tolket af en AI model"}
+```{r fig-work, echo=FALSE, out.width= "100%"}
 knitr::include_graphics("images/dalle-work.png")
 ```
 

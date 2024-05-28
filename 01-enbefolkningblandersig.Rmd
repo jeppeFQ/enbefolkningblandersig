@@ -1,7 +1,7 @@
 
 # En befolkning blander sig {#kap1}
 
-```{r fig-smelte, echo=FALSE, out.width= "100%", fig.cap="Smeltedigen, tolket af en AI model"}
+```{r fig-smelte, echo=FALSE, out.width= "100%"}
 knitr::include_graphics("images/dalle-smeltedige.png")
 ```
 
