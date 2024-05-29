@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.24)  28 MAY 2024 12:12
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.24)  29 MAY 2024 12:56
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -918,45 +918,66 @@ Overfull \hbox (8.55295pt too wide) has occurred while \output is active
  []
 
 [12] [13]
-File: images/figur_3_1c_distance_antal.pdf Graphic file (type pdf)
-<use images/figur_3_1c_distance_antal.pdf>
-
 Overfull \hbox (8.55295pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 14 \TU/lmr/m/sl/10 KAPITEL 3.  GRUNDSKOLER SOM MØDESTED (\TU/lmr/bx/sl/10 WIP DO NOT CITE!\TU/lmr/m/sl/10 )
  []
 
 [14] [15]
-File: images/figur_3_2.pdf Graphic file (type pdf)
-<use images/figur_3_2.pdf>
-
 Overfull \hbox (8.55295pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 16 \TU/lmr/m/sl/10 KAPITEL 3.  GRUNDSKOLER SOM MØDESTED (\TU/lmr/bx/sl/10 WIP DO NOT CITE!\TU/lmr/m/sl/10 )
  []
 
-[16] [17]
-File: images/Figur4.png Graphic file (type bmp)
-<images/Figur4.png>
+[16]
+File: images/figur_3_1c_distance_antal.pdf Graphic file (type pdf)
+<use images/figur_3_1c_distance_antal.pdf>
+[17]
+Underfull \hbox (badness 3407) in paragraph at lines 228--229
+\TU/lmr/m/n/10 Når vi måler graden af segregering, er det mest anvendte mål for
+ []
+
 
 Overfull \hbox (8.55295pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 18 \TU/lmr/m/sl/10 KAPITEL 3.  GRUNDSKOLER SOM MØDESTED (\TU/lmr/bx/sl/10 WIP DO NOT CITE!\TU/lmr/m/sl/10 )
  []
 
-[18]
-File: images/Figur5.png Graphic file (type bmp)
-<images/Figur5.png>
-[19]
+[18] [19]
+File: images/figur_3_2.pdf Graphic file (type pdf)
+<use images/figur_3_2.pdf>
+
 Overfull \hbox (8.55295pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 20 \TU/lmr/m/sl/10 KAPITEL 3.  GRUNDSKOLER SOM MØDESTED (\TU/lmr/bx/sl/10 WIP DO NOT CITE!\TU/lmr/m/sl/10 )
  []
 
 [20] [21]
+Underfull \vbox (badness 2698) has occurred while \output is active []
+
+
 Overfull \hbox (8.55295pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 22 \TU/lmr/m/sl/10 KAPITEL 3.  GRUNDSKOLER SOM MØDESTED (\TU/lmr/bx/sl/10 WIP DO NOT CITE!\TU/lmr/m/sl/10 )
  []
 
-[22
+[22]
+File: images/Figur4.png Graphic file (type bmp)
+<images/Figur4.png>
 
-]
+Overfull \hbox (1.56561pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 3.5.  SKOLESEGREGERING SOM PRODUKT AF BOLIGSEGREGERING \TU/lmr/m/n/10 23
+ []
+
+[23]
+File: images/Figur5.png Graphic file (type bmp)
+<images/Figur5.png>
+
+Overfull \hbox (8.55295pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 24 \TU/lmr/m/sl/10 KAPITEL 3.  GRUNDSKOLER SOM MØDESTED (\TU/lmr/bx/sl/10 WIP DO NOT CITE!\TU/lmr/m/sl/10 )
+ []
+
+[24] [25]
+Overfull \hbox (8.55295pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 26 \TU/lmr/m/sl/10 KAPITEL 3.  GRUNDSKOLER SOM MØDESTED (\TU/lmr/bx/sl/10 WIP DO NOT CITE!\TU/lmr/m/sl/10 )
+ []
+
+[26]
 Kapitel 4.
 File: images/dalle-work.png Graphic file (type bmp)
 <images/dalle-work.png>
@@ -970,47 +991,49 @@ File: images/Figur_4_4.png Graphic file (type bmp)
 <images/Figur_4_4.png>
 File: images/Figur_4_5.png Graphic file (type bmp)
 <images/Figur_4_5.png>
-[23] [24] [25] [26]
+[27
+
+] [28] [29] [30]
 Kapitel 5.
 File: images/dalle-civil.png Graphic file (type bmp)
 <images/dalle-civil.png>
-[27
+[31
 
-] [28
+] [32
 
 ]
 Kapitel 6.
 File: images/dalle-friendships.png Graphic file (type bmp)
 <images/dalle-friendships.png>
-[29] [30
+[33] [34
 
 ]
 Kapitel 7.
 File: images/dalle-integration.png Graphic file (type bmp)
 <images/dalle-integration.png>
-[31] [32
+[35] [36
 
-] [33] [34] [35] [36
-
-]
+] [37] [38]
 Appendix A.
-[37] [38
+[39
+
+] [40
 
 ]
 Appendix B.
-[39] (./en-befolkning-blander-sig.aux)
+[41] (./en-befolkning-blander-sig.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 22259 strings out of 476698
- 424402 string characters out of 5799442
- 1942145 words of memory out of 5000000
- 43910 multiletter control sequences out of 15000+600000
- 564552 words of font info for 93 fonts, out of 8000000 for 9000
+ 22249 strings out of 476698
+ 424111 string characters out of 5799442
+ 1940145 words of memory out of 5000000
+ 43906 multiletter control sequences out of 15000+600000
+ 564528 words of font info for 90 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 94i,8n,121p,1870b,461s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,6n,121p,2850b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on en-befolkning-blander-sig.pdf (39 pages).
+Output written on en-befolkning-blander-sig.pdf (41 pages).
