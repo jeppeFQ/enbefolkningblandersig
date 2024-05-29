@@ -97,6 +97,8 @@ Kigger vi på sammenhængen i segregering ($D$) på hhv. bolig- og skolemarkedet
 knitr::include_graphics("images/Figur5.png")
 ```
 
+\newpage
+
 ## Konklusion 
 
 Som bidrag til denne bogs undersøgelser og beskrivelser af mødet mellem den etnisk danske befolkning og befolkningen med indvandrerbaggrund i lyset af stigende immigration til Danmark har dette kapitel bidraget med en beskrivelse af, i hvilket omfang den danske grundskole danner et mødested for børn (og deres familier), som ikke ligner hinanden. 

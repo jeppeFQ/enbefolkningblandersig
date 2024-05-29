@@ -12,11 +12,11 @@
 \contentsline {subsection}{\numberline {3.4.1}National skala}{19}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Lokal skala}{21}{subsection.3.4.2}%
 \contentsline {section}{\numberline {3.5}Skolesegregering som produkt af boligsegregering}{23}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Konklusion}{24}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Arbejdspladser som mødested}{27}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Foreninger som mødested}{31}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Venskaber -- det første skridt}{33}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Integration i et kontaktperspektiv}{35}{chapter.7}%
-\contentsline {chapter}{Litteraturliste}{37}{chapter*.3}%
-\contentsline {chapter}{\numberline {A}Første bilag\ldots {}}{39}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Andet bilag\ldots {}}{41}{appendix.B}%
+\contentsline {section}{\numberline {3.6}Konklusion}{26}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Arbejdspladser som mødested}{29}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Foreninger som mødested}{33}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Venskaber -- det første skridt}{35}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Integration i et kontaktperspektiv}{37}{chapter.7}%
+\contentsline {chapter}{Litteraturliste}{39}{chapter*.3}%
+\contentsline {chapter}{\numberline {A}Første bilag\ldots {}}{41}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Andet bilag\ldots {}}{43}{appendix.B}%
