@@ -4,6 +4,87 @@
 knitr::include_graphics("images/dalle-work.png")
 ```
 
+```{r fig-0, echo=FALSE, out.width= "100%", fig.cap="Illustration af eksponering på arbejdspladsen."}
+
+p = "/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/person2.png"
+q = "/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/person1.png"
+
+x = c(1.15, 1.2, # A
+      1.15, 1.2, 1.25, 1.15, 1.2, 1.25, 1.15, 1.2, 1.25, 1.15, 1.2, 1.25, # A
+      1.15, 1.2, 1.25, 1.15, 1.2, 1.25, # A
+      1.42, 1.47, 1.52, 1.57, # B
+      1.42, 1.47, 1.52, 1.57, 1.42, 1.47, 1.52, 1.57, 1.42, 1.47, # B
+      1.42, 1.47, 1.52, 1.42, 1.47, 1.52, # B
+      1.75, 1.8, 1.85, # C
+      1.75, 1.8, 1.85, 1.75, 1.8, 1.85, 1.75, 1.8, 1.85, 1.75, 1.8, 1.85, # C
+      1.75, 1.8, 1.85, 1.75, 1.8, # C
+      1.95, 1.95 # Legend
+      )
+
+y = c(1.68, 1.68, # A
+      1.52, 1.52, 1.52, 1.47, 1.47, 1.47, 1.42, 1.42, 1.42, 1.37, 1.37, 1.37, # A
+      1.235, 1.235, 1.235, 1.175, 1.175, 1.175, # A
+      1.68, 1.68, 1.68, 1.68, # B
+      1.52, 1.52, 1.52, 1.52, 1.47, 1.47, 1.47, 1.47, 1.42, 1.42, # B
+      1.235, 1.235, 1.235, 1.175, 1.175, 1.175, # B
+      1.68, 1.68, 1.68, # C
+      1.52, 1.52, 1.52, 1.47, 1.47, 1.47, 1.42, 1.42, 1.42, 1.37, 1.37, 1.37, # C
+      1.235, 1.235, 1.235, 1.175, 1.175, # C
+      1.75, 1.65 # Legend
+      )
+
+z = c(p, p, # A
+      p, p, p, p, p, p, # A
+      p, p, p, p, p, p, p, p, p, p, p, p, # A
+      p, q, p, q, # B
+      p, p, p, p, p, p, p, p, p, q, # B
+      q, p, q, p, p, q, # B
+      p, p, p, # C
+      p, p, p, p, p, p, p, p, p, p, p, p, # C
+      q, q, q, q, q, # C
+      p, q # Legend
+      )
+
+data.frame(x = x, 
+           y = y, 
+           image = z) %>% 
+  ggplot(aes(x = x, y = y)) +
+  coord_cartesian(xlim = c(0.8, 2.2), ylim = c(1, 2)) + 
+  geom_image(aes(image = image), size = 0.04) +
+  annotate("rect", xmin = c(1.09, 1.09, 1.09), xmax = c(1.91, 1.91, 1.91),
+                   ymin = c(1.57, 1.11, 1.33), ymax = c(1.79, 1.32, 1.56),
+                   color = "darkgrey", 
+                   fill = c("#9e3547", "#8aa6c2", "pink"), 
+                   alpha = 0.2, 
+                   lwd = .5, lty = "23") +
+  annotate("rect", xmin = c(1.08, 1.38, 1.68), xmax = c(1.32, 1.62, 1.92),
+                   ymin = c(1.1, 1.1, 1.1), ymax = c(1.8, 1.8, 1.8),
+                   color = "black", 
+                   alpha = 0, 
+                   lwd = 1) +
+  annotate("text", x = c(1.2, 1.5, 1.8), y = c(1.83, 1.83, 1.83),
+                   label = c("Arbejdsplads A", "Arbejdsplads B",
+                             "Arbejdsplads C"),
+                   size = 3,
+                   fontface = "bold") +
+  annotate("text", x = c(1.07, 1.07, 1.07), y = c(1.68, 1.445, 1.215),
+                   label = c("Høj\n ", 
+                             "Medium\n ",
+                             "Lav\n "),
+                   lineheight = .85, angle = 90, size = 3) +
+  annotate("text", x = 1, y = 1.45, 
+                   label = "Færdighedsniveau",
+                   size = 3,
+                   angle = 90,
+                   fontface = "bold") + 
+  annotate("text", x = c(1.97, 1.97), y = c(1.75, 1.65),
+                   label = c("Dansk-dansk\nherkomst", "Indvandere,\nefterkommere"),
+                   size = 3,
+                   hjust = 0,
+                   lineheight = .85) +
+  theme_void()
+
+```
 
 
 ```{r fig-4-1, echo=FALSE, out.width= "100%", fig.cap="Beskæftigedes med dansk-dansk herkomst gennemsnitlige eksponering til indvandrere/efterkommere på deres arbejdspladsen i 1996 (venstre) og 2019 (højre). <br> <br> **Note**: *Opgjort på tværs af kommuner.*"}

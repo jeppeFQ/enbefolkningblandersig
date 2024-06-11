@@ -36,6 +36,46 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -132,7 +172,7 @@
 
 \title{En befolkning blander sig}
 \author{Christian Albrekt Larsen og Hans-Peter Y. Qvist (Red.) \and Med bidrag fra Jeppe Fjeldgaard Larsen, Laciné E. Diop,\ldots{} Anders? Anna?}
-\date{2024-05-29}
+\date{2024-06-11}
 
 \begin{document}
 \maketitle
@@ -282,6 +322,10 @@ Så selvom udviklingen ikke er så ekstrem som dele af den offentlige debat anle
 \includegraphics[width=1\linewidth]{images/dalle-work}
 
 \begin{figure}
+\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-0-1} \caption{Illustration af eksponering på arbejdspladsen.}\label{fig:fig-0}
+\end{figure}
+
+\begin{figure}
 \includegraphics[width=1\linewidth]{images/Figur_4_1} \caption{Beskæftigedes med dansk-dansk herkomst gennemsnitlige eksponering til indvandrere/efterkommere på deres arbejdspladsen i 1996 (venstre) og 2019 (højre). <br> <br> **Note**: *Opgjort på tværs af kommuner.*}\label{fig:fig-4-1}
 \end{figure}
 
@@ -415,7 +459,222 @@ Zetland. (2018). \emph{Fordel danske skolebørn efter en algoritme, siger en for
 \appendix
 
 
-\chapter{Første bilag\ldots{}}\label{bilag1}
+\chapter{Segregeringsmål}\label{bilag1}
+
+\section{Dissimilarity Index}\label{dissimilarity-index}
+
+\begin{itemize}
+\tightlist
+\item
+  Inkludér Harris' (2017) metode og argument for korregering.
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Load necessary libraries}
+\FunctionTok{library}\NormalTok{(tidyverse)}
+
+
+\CommentTok{\# Function to calculate the Dissimilarity Index}
+\NormalTok{calculate\_dissimilarity\_index }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(group\_counts, total\_counts) \{}
+\NormalTok{  total\_population }\OtherTok{\textless{}{-}} \FunctionTok{sum}\NormalTok{(total\_counts)}
+\NormalTok{  total\_group\_population }\OtherTok{\textless{}{-}} \FunctionTok{sum}\NormalTok{(group\_counts)}
+  
+\NormalTok{  index }\OtherTok{\textless{}{-}} \DecValTok{0}
+  \ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\FunctionTok{length}\NormalTok{(group\_counts)) \{}
+\NormalTok{    group\_proportion }\OtherTok{\textless{}{-}}\NormalTok{ group\_counts[i] }\SpecialCharTok{/}\NormalTok{ total\_group\_population}
+\NormalTok{    area\_proportion }\OtherTok{\textless{}{-}}\NormalTok{ total\_counts[i] }\SpecialCharTok{/}\NormalTok{ total\_population}
+\NormalTok{    index }\OtherTok{\textless{}{-}}\NormalTok{ index }\SpecialCharTok{+} \FunctionTok{abs}\NormalTok{(group\_proportion }\SpecialCharTok{{-}}\NormalTok{ area\_proportion)}
+\NormalTok{  \}}
+  
+  \FunctionTok{return}\NormalTok{(}\FloatTok{0.5} \SpecialCharTok{*}\NormalTok{ index)}
+\NormalTok{\}}
+
+\CommentTok{\# Parameters}
+\NormalTok{n\_simulations }\OtherTok{\textless{}{-}} \DecValTok{1000}
+\NormalTok{total\_population }\OtherTok{\textless{}{-}} \DecValTok{100}
+\NormalTok{n\_areas }\OtherTok{\textless{}{-}} \DecValTok{10}
+\NormalTok{distributions }\OtherTok{\textless{}{-}} \FunctionTok{list}\NormalTok{(}
+  \FunctionTok{c}\NormalTok{(}\DecValTok{50}\NormalTok{, }\DecValTok{50}\NormalTok{),   }\CommentTok{\# Equal distribution}
+  \FunctionTok{c}\NormalTok{(}\DecValTok{40}\NormalTok{, }\DecValTok{60}\NormalTok{),}
+  \FunctionTok{c}\NormalTok{(}\DecValTok{30}\NormalTok{, }\DecValTok{70}\NormalTok{),   }
+  \FunctionTok{c}\NormalTok{(}\DecValTok{20}\NormalTok{, }\DecValTok{80}\NormalTok{),}
+  \FunctionTok{c}\NormalTok{(}\DecValTok{15}\NormalTok{, }\DecValTok{85}\NormalTok{),}
+  \FunctionTok{c}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{90}\NormalTok{),}
+  \FunctionTok{c}\NormalTok{(}\DecValTok{5}\NormalTok{, }\DecValTok{95}\NormalTok{),}
+  \FunctionTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{, }\DecValTok{97}\NormalTok{)}
+\NormalTok{)}
+
+\CommentTok{\# Initialize dataframe to store results}
+\NormalTok{results }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}\AttributeTok{Index =} \FunctionTok{numeric}\NormalTok{(}\DecValTok{0}\NormalTok{), }\AttributeTok{Distribution =} \FunctionTok{factor}\NormalTok{())}
+
+\CommentTok{\# Simulation for each distribution}
+\ControlFlowTok{for}\NormalTok{ (distribution }\ControlFlowTok{in}\NormalTok{ distributions) \{}
+\NormalTok{  group\_1\_size }\OtherTok{\textless{}{-}}\NormalTok{ distribution[}\DecValTok{1}\NormalTok{]}
+\NormalTok{  group\_2\_size }\OtherTok{\textless{}{-}}\NormalTok{ distribution[}\DecValTok{2}\NormalTok{]}
+  
+\NormalTok{  dissimilarity\_indices }\OtherTok{\textless{}{-}} \FunctionTok{numeric}\NormalTok{(n\_simulations)}
+  
+  \ControlFlowTok{for}\NormalTok{ (sim }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\NormalTok{n\_simulations) \{}
+    \CommentTok{\# Randomly assign individuals to groups}
+\NormalTok{    population }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\FunctionTok{rep}\NormalTok{(}\DecValTok{1}\NormalTok{, group\_1\_size), }\FunctionTok{rep}\NormalTok{(}\DecValTok{2}\NormalTok{, group\_2\_size))}
+    
+    \CommentTok{\# Randomly assign individuals to areas}
+\NormalTok{    group\_counts }\OtherTok{\textless{}{-}} \FunctionTok{matrix}\NormalTok{(}\DecValTok{0}\NormalTok{, }\AttributeTok{nrow =} \DecValTok{2}\NormalTok{, }\AttributeTok{ncol =}\NormalTok{ n\_areas)}
+    \ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\NormalTok{total\_population) \{}
+\NormalTok{      area }\OtherTok{\textless{}{-}} \FunctionTok{sample}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\NormalTok{n\_areas, }\DecValTok{1}\NormalTok{)}
+\NormalTok{      group }\OtherTok{\textless{}{-}}\NormalTok{ population[i]}
+\NormalTok{      group\_counts[group, area] }\OtherTok{\textless{}{-}}\NormalTok{ group\_counts[group, area] }\SpecialCharTok{+} \DecValTok{1}
+\NormalTok{    \}}
+    
+    \CommentTok{\# Calculate total counts per area}
+\NormalTok{    total\_counts }\OtherTok{\textless{}{-}} \FunctionTok{colSums}\NormalTok{(group\_counts)}
+    
+    \CommentTok{\# Calculate Dissimilarity Index}
+\NormalTok{    dissimilarity\_indices[sim] }\OtherTok{\textless{}{-}} \FunctionTok{calculate\_dissimilarity\_index}\NormalTok{(group\_counts[}\DecValTok{1}\NormalTok{, ], total\_counts)}
+\NormalTok{  \}}
+  
+  \CommentTok{\# Store results}
+\NormalTok{  dist\_label }\OtherTok{\textless{}{-}} \FunctionTok{paste}\NormalTok{(group\_1\_size, }\StringTok{":"}\NormalTok{, group\_2\_size)}
+\NormalTok{  results }\OtherTok{\textless{}{-}} \FunctionTok{rbind}\NormalTok{(results, }\FunctionTok{data.frame}\NormalTok{(}\AttributeTok{Index =}\NormalTok{ dissimilarity\_indices, }
+                                       \AttributeTok{Distribution =}\NormalTok{ dist\_label))}
+\NormalTok{\}}
+
+\NormalTok{results[[}\StringTok{"Distribution\_sorted"}\NormalTok{]] }\OtherTok{\textless{}{-}} \FunctionTok{factor}\NormalTok{(results[[}\StringTok{"Distribution"}\NormalTok{]], }
+                                  \AttributeTok{levels =} \FunctionTok{c}\NormalTok{(}\StringTok{"50 : 50"}\NormalTok{, }
+                                             \StringTok{"40 : 60"}\NormalTok{, }
+                                             \StringTok{"30 : 70"}\NormalTok{, }
+                                             \StringTok{"20 : 80"}\NormalTok{, }
+                                             \StringTok{"15 : 85"}\NormalTok{,}
+                                             \StringTok{"10 : 90"}\NormalTok{, }
+                                             \StringTok{"5 : 95"}\NormalTok{,}
+                                             \StringTok{"3 : 97"}\NormalTok{))}
+
+\CommentTok{\# Visualize the distribution}
+\NormalTok{palette }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"\#1f77b4"}\NormalTok{, }\StringTok{"\#ff7f0e"}\NormalTok{, }
+             \StringTok{"\#2ca02c"}\NormalTok{, }\StringTok{"\#d62728"}\NormalTok{, }
+             \StringTok{"\#9467bd"}\NormalTok{, }\StringTok{"\#8c564b"}\NormalTok{, }
+             \StringTok{"\#e377c2"}\NormalTok{, }\StringTok{"\#7f7f7f"}\NormalTok{)}
+
+
+\FunctionTok{ggplot}\NormalTok{(results, }
+       \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Index, }
+           \AttributeTok{fill =}\NormalTok{ Distribution\_sorted)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_histogram}\NormalTok{(}\AttributeTok{binwidth =} \FloatTok{0.01}\NormalTok{, }
+                 \AttributeTok{alpha =} \FloatTok{0.9}\NormalTok{, }
+                 \AttributeTok{position =} \StringTok{\textquotesingle{}identity\textquotesingle{}}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{scale\_fill\_manual}\NormalTok{(}\AttributeTok{values =}\NormalTok{ palette) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Dissimilarity Index"}\NormalTok{,}
+       \AttributeTok{y =} \StringTok{"Frekvens"}\NormalTok{,}
+       \AttributeTok{fill =} \StringTok{"Gruppestørrelser}\SpecialCharTok{\textbackslash{}n}\StringTok{(minoritet/majoritet)"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-9-1-1} \caption{Simuleret fordeling af D index under forskellige relative gruppestørrelser i population på 100 personer}\label{fig:fig-9-1}
+\end{figure}
+
+\section{Separation Index}\label{separation-index}
+
+Også kendt som \emph{Variance Ratio Index}, \emph{Eta\textsuperscript{2}}, \emph{The Revised Isolation Index} (blandt andre navne\ldots)
+
+De høje værdier er for \texttt{3\ :\ 97}, \texttt{5\ :\ 95}, \texttt{10\ :\ 90}, \texttt{15\ :\ 85}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Load necessary libraries}
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\FunctionTok{set.seed}\NormalTok{(}\DecValTok{222}\NormalTok{)}
+
+\CommentTok{\# Function to calculate the Eta{-}squared Index}
+\NormalTok{calculate\_eta\_squared\_index }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(group\_counts, total\_counts) \{}
+\NormalTok{  total\_population }\OtherTok{\textless{}{-}} \FunctionTok{sum}\NormalTok{(total\_counts)}
+\NormalTok{  overall\_group\_proportion }\OtherTok{\textless{}{-}} \FunctionTok{sum}\NormalTok{(group\_counts) }\SpecialCharTok{/}\NormalTok{ total\_population}
+  
+  \CommentTok{\# Calculate weighted mean square between groups}
+\NormalTok{  between\_group\_variance }\OtherTok{\textless{}{-}} \FunctionTok{sum}\NormalTok{((total\_counts }\SpecialCharTok{/}\NormalTok{ total\_population) }\SpecialCharTok{*}\NormalTok{ (group\_counts }\SpecialCharTok{/}\NormalTok{ total\_counts }\SpecialCharTok{{-}}\NormalTok{ overall\_group\_proportion)}\SpecialCharTok{\^{}}\DecValTok{2}\NormalTok{)}
+  
+  \CommentTok{\# Calculate the overall variance}
+\NormalTok{  overall\_variance }\OtherTok{\textless{}{-}}\NormalTok{ overall\_group\_proportion }\SpecialCharTok{*}\NormalTok{ (}\DecValTok{1} \SpecialCharTok{{-}}\NormalTok{ overall\_group\_proportion)}
+  
+  \CommentTok{\# Eta{-}squared index}
+\NormalTok{  eta\_squared }\OtherTok{\textless{}{-}}\NormalTok{ between\_group\_variance }\SpecialCharTok{/}\NormalTok{ overall\_variance}
+  
+  \FunctionTok{return}\NormalTok{(eta\_squared)}
+\NormalTok{\}}
+
+\CommentTok{\# Parameters}
+\NormalTok{n\_simulations }\OtherTok{\textless{}{-}} \DecValTok{1000}
+\NormalTok{total\_population }\OtherTok{\textless{}{-}} \DecValTok{100}
+\NormalTok{n\_areas }\OtherTok{\textless{}{-}} \DecValTok{10}
+\NormalTok{distributions }\OtherTok{\textless{}{-}} \FunctionTok{list}\NormalTok{(}
+  \FunctionTok{c}\NormalTok{(}\DecValTok{50}\NormalTok{, }\DecValTok{50}\NormalTok{),   }\CommentTok{\# Equal distribution}
+  \FunctionTok{c}\NormalTok{(}\DecValTok{40}\NormalTok{, }\DecValTok{60}\NormalTok{),}
+  \FunctionTok{c}\NormalTok{(}\DecValTok{30}\NormalTok{, }\DecValTok{70}\NormalTok{),   }
+  \FunctionTok{c}\NormalTok{(}\DecValTok{20}\NormalTok{, }\DecValTok{80}\NormalTok{),}
+  \FunctionTok{c}\NormalTok{(}\DecValTok{15}\NormalTok{, }\DecValTok{85}\NormalTok{),}
+  \FunctionTok{c}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{90}\NormalTok{),}
+  \FunctionTok{c}\NormalTok{(}\DecValTok{5}\NormalTok{, }\DecValTok{95}\NormalTok{),}
+  \FunctionTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{, }\DecValTok{97}\NormalTok{))}
+
+\CommentTok{\# Initialize dataframe to store results}
+\NormalTok{results }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}\AttributeTok{Index =} \FunctionTok{numeric}\NormalTok{(}\DecValTok{0}\NormalTok{), }\AttributeTok{Distribution =} \FunctionTok{factor}\NormalTok{(}\AttributeTok{levels =} \FunctionTok{c}\NormalTok{()))}
+
+\CommentTok{\# Simulation for each distribution}
+\ControlFlowTok{for}\NormalTok{ (distribution }\ControlFlowTok{in}\NormalTok{ distributions) \{}
+\NormalTok{  group\_1\_size }\OtherTok{\textless{}{-}}\NormalTok{ distribution[}\DecValTok{1}\NormalTok{]}
+\NormalTok{  group\_2\_size }\OtherTok{\textless{}{-}}\NormalTok{ distribution[}\DecValTok{2}\NormalTok{]}
+  
+\NormalTok{  eta\_squared\_indices }\OtherTok{\textless{}{-}} \FunctionTok{numeric}\NormalTok{(n\_simulations)}
+  
+  \ControlFlowTok{for}\NormalTok{ (sim }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\NormalTok{n\_simulations) \{}
+    \CommentTok{\# Randomly assign individuals to groups}
+\NormalTok{    population }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\FunctionTok{rep}\NormalTok{(}\DecValTok{1}\NormalTok{, group\_1\_size), }\FunctionTok{rep}\NormalTok{(}\DecValTok{2}\NormalTok{, group\_2\_size))}
+    
+    \CommentTok{\# Randomly assign individuals to areas}
+\NormalTok{    group\_counts }\OtherTok{\textless{}{-}} \FunctionTok{matrix}\NormalTok{(}\DecValTok{0}\NormalTok{, }\AttributeTok{nrow =} \DecValTok{2}\NormalTok{, }\AttributeTok{ncol =}\NormalTok{ n\_areas)}
+    \ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\NormalTok{total\_population) \{}
+\NormalTok{      area }\OtherTok{\textless{}{-}} \FunctionTok{sample}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\NormalTok{n\_areas, }\DecValTok{1}\NormalTok{)}
+\NormalTok{      group }\OtherTok{\textless{}{-}}\NormalTok{ population[i]}
+\NormalTok{      group\_counts[group, area] }\OtherTok{\textless{}{-}}\NormalTok{ group\_counts[group, area] }\SpecialCharTok{+} \DecValTok{1}
+\NormalTok{    \}}
+    
+    \CommentTok{\# Calculate total counts per area}
+\NormalTok{    total\_counts }\OtherTok{\textless{}{-}} \FunctionTok{colSums}\NormalTok{(group\_counts)}
+    
+    \CommentTok{\# Calculate Eta{-}squared Index}
+\NormalTok{    eta\_squared\_indices[sim] }\OtherTok{\textless{}{-}} \FunctionTok{calculate\_eta\_squared\_index}\NormalTok{(group\_counts[}\DecValTok{1}\NormalTok{, ], total\_counts)}
+\NormalTok{  \}}
+  
+  \CommentTok{\# Store results}
+\NormalTok{  dist\_label }\OtherTok{\textless{}{-}} \FunctionTok{paste}\NormalTok{(group\_1\_size, }\StringTok{":"}\NormalTok{, group\_2\_size)}
+\NormalTok{  temp\_df }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}\AttributeTok{Index =}\NormalTok{ eta\_squared\_indices, }\AttributeTok{Distribution =} \FunctionTok{factor}\NormalTok{(dist\_label, }\AttributeTok{levels =} \FunctionTok{paste0}\NormalTok{(}\FunctionTok{sapply}\NormalTok{(distributions, }\ControlFlowTok{function}\NormalTok{(x) }\FunctionTok{paste}\NormalTok{(x, }\AttributeTok{collapse =} \StringTok{" : "}\NormalTok{)))))}
+\NormalTok{  results }\OtherTok{\textless{}{-}} \FunctionTok{rbind}\NormalTok{(results, temp\_df)}
+\NormalTok{\}}
+
+\CommentTok{\# Define a color palette}
+\NormalTok{palette }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"\#1f77b4"}\NormalTok{, }\StringTok{"\#ff7f0e"}\NormalTok{, }
+             \StringTok{"\#2ca02c"}\NormalTok{, }\StringTok{"\#d62728"}\NormalTok{, }
+             \StringTok{"\#9467bd"}\NormalTok{, }\StringTok{"\#8c564b"}\NormalTok{, }
+             \StringTok{"\#e377c2"}\NormalTok{, }\StringTok{"\#7f7f7f"}\NormalTok{)}
+
+\CommentTok{\# Visualize the distribution with log{-}scaled y{-}axis}
+\FunctionTok{ggplot}\NormalTok{(results, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Index, }\AttributeTok{fill =}\NormalTok{ Distribution)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_histogram}\NormalTok{(}\AttributeTok{binwidth =} \FloatTok{0.01}\NormalTok{, }\AttributeTok{alpha =} \FloatTok{0.7}\NormalTok{, }\AttributeTok{position =} \StringTok{\textquotesingle{}identity\textquotesingle{}}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{scale\_fill\_manual}\NormalTok{(}\AttributeTok{values =}\NormalTok{ palette) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{fill =} \StringTok{"Gruppestørrelser}\SpecialCharTok{\textbackslash{}n}\StringTok{(minoritet/majoritet)"}\NormalTok{,}
+       \AttributeTok{x =} \StringTok{"Separation Index"}\NormalTok{,}
+       \AttributeTok{y =} \StringTok{"Frekvens"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-9-2-1} \caption{Simuleret fordeling af S index under forskellige relative gruppestørrelser i population på 100 personer.}\label{fig:fig-9-2}
+\end{figure}
+
+\section{Sammenhæng mellem S og D}\label{sammenhuxe6ng-mellem-s-og-d}
 
 This will be Appendix A.
 

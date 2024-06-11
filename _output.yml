@@ -4,6 +4,7 @@ bookdown::gitbook:
   bibliography: ["book.bib"]
   link-citations: true
   split_bib: no
+  code_folding: hide
   config:
     toc:
       collapse: section
