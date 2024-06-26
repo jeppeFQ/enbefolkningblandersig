@@ -4,7 +4,7 @@
 knitr::include_graphics("images/dalle-friendships.png")
 ```
 
-```{r tab-9-1, echo=FALSE, message=FALSE}
+```{r tab-6-1, echo=FALSE, message=FALSE}
 knitr::kable(
   list(
     head(iris[, 1:2], 3),
@@ -15,7 +15,6 @@ knitr::kable(
 ```
 
 
-Test \@ref(tab:tab-9-1)
 
 
 ```{r fig-6-1, echo=FALSE, message=FALSE, out.width= "100%", fig.cap="Sammenhængen mellem alder på majoritetsbefolkning og nære venskaber med personer med indvandrerbaggrund. 2022. <br> Note: *Se note til tabel 6.1 for datagrundlag.*"}
