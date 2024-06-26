@@ -36,46 +36,6 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -148,7 +108,8 @@
 \addto\captionsenglish{\renewcommand{\chaptername}{Kapitel}}
 % Change "Content" to "Indholdsfortegnelse"
 \addto\captionsenglish{\renewcommand{\contentsname}{Indholdsfortegnelse}}
-
+% Change "Appendix" to "Bilag"
+\addto\captionsenglish{\renewcommand{\appendixname}{Bilag}}
 
 % Page layout
 \makeatletter
@@ -172,7 +133,7 @@
 
 \title{En befolkning blander sig}
 \author{Christian Albrekt Larsen og Hans-Peter Y. Qvist (Red.) \and Med bidrag fra Jeppe Fjeldgaard Larsen, Laciné E. Diop,\ldots{} Anders? Anna?}
-\date{2024-06-11}
+\date{2024-06-26}
 
 \begin{document}
 \maketitle
@@ -209,6 +170,8 @@ I \hyperref[kap7]{kapitel 7} af \_\_\_\_\_, \ldots{}
 \includegraphics[width=1\linewidth]{images/dalle-wedding}
 
 \chapter{\texorpdfstring{Grundskoler som mødested (\textbf{WIP DO NOT CITE!})}{Grundskoler som mødested (WIP DO NOT CITE!)}}\label{kap3}
+
+\emph{Jeppe Fjeldgaard Larsen}
 
 \includegraphics[width=1\linewidth]{images/dalle-schoolseg}
 
@@ -256,7 +219,7 @@ Fra et geografisk perspektiv er der stor variation i, hvor tæt skoler ligger p�
 Kortet fungerer på sin vis som en indikator for befolkningstæthed, da der naturligvis vil være flere skoler i områder med mange familier. Men på grund af lave omkostninger ved etablering af private- eller friskoler vil nogle områder stadig have et relativt stort skolemarked, på trods af relativ lav befolkningstæthed. For at åbne en fri- eller privatskole er den eneste ikke-refunderbare direkte omkostning et gebyr på 20.000 kr. til ministeriet i forbindelse med anmeldelse om oprettelse af ny skole. Derfor gælder det, at familier i urbane områder generelt har flere skoler, de potentielt kan vælge mellem. De fleste husstande i Danmark har to skoler inden for en realistisk pendleafstand på \(2 km\), men som bemærkelsesværdige afvigelser fra gennemsnittet er der i København og Frederiksberg henholdsvis \(20\) og \(24\) skoler inden for \(2 km\).
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{images/figur_3_1c_distance_antal} \caption{Gennemsnitligt antal skoler inden for 2 km af bopælsadressen (A) og koncentration af børn med ikke-vestlig indvandrerbaggrund i skolealderen i 2020 (B) (B). <br> <br> Note: * Afstandene til skolen er baseret på den euclidiske afstand fra bopælssognets centroid til de geografiske koordinater for skolens adresse. Ikke-vestlig indvandrerbaggrund inkluderer børn, hvor begge eller én af forældrene er første generations immigrant fra et ikke-vestligt land.*}\label{fig:fig-3-1}
+\includegraphics[width=1\linewidth]{images/figur_3_1c_distance_antal} \caption{Gennemsnitligt antal skoler inden for 2 km af bopælsadressen (A) og koncentration af børn med ikke-vestlig indvandrerbaggrund i skolealderen i 2020 (B). <br> <br> Note: * Afstandene til skolen er baseret på den euclidiske afstand fra bopælssognets centroid til de geografiske koordinater for skolens adresse. Ikke-vestlig indvandrerbaggrund inkluderer børn, hvor begge eller én af forældrene er første generations immigrant fra et ikke-vestligt land.*}\label{fig:fig-3-1}
 \end{figure}
 
 Det centrale her er, at fordi børnefamilier med indvandrerbaggrund er koncentreret i urbane områder (se \hyperref[kap1]{kapitel 1}), er konsekvensen en stærk korrelation mellem store skolemarkeder (områder med mange skoler at vælge mellem) og områder med høj etnisk diversitet. Figuren giver dermed et deskriptivt indblik i, hvordan det fysiske skolelandskab og demografiske forhold kan spille sammen. I urbane områder, såsom hovedstadsområdet, er der en høj koncentration af skoler, hvilket giver mange muligheder for skolevalg. Samtidig er der også en højere koncentration af børn med indvandrerbaggrunde, særligt fra ikke-vestlige baggrunde. Dette skaber et potentiale for både høj etnisk diversitet i skolerne og for etnisk skolesegregering, da familier har mulighed for at vælge skoler væk fra dem med høj andel af elever med ikke-vestlig baggrund. I forstæderne og mindre byer er der færre skoler, hvilket betyder flere strukturelle begrænsninger for skolevalg. Samtidig er koncentrationen af familier med indvandrerbaggrund tilsvarende lavere. I kontrast er der i landdistrikterne få skoler inden for pendleafstand fra bopælen og dermed begrænsede muligheder for skolevalg. Her er koncentrationen af familier med ikke-vestlige baggrunde meget lav, hvilket forventeligt leder til lav diversitet på skolerne og en høj grad af strukturelt betinget skolesegregering grundet en lille minoritetsgruppe. Sammenfattende illustrerer figuren hvordan forholdet mellem strukturelle betingelser givet ved det fysiske skolelandskab og demografiske forhold mellem forskellige geografiske områder kan påvirke mulighederne for skolevalg og niveauet af etnisk diversitet i skolerne, og understreger de strukturelle forhold, der kan føre til skolesegregering.
@@ -273,7 +236,7 @@ Med det samme eksempel for den hypotetiske kontekst er størrelsen af skolerne a
 
 \subsection{National skala}\label{national-skala}
 
-På landsplan måles segregeringen til \(D = 0,44\) og \(S = 0,16\) i 2020, se Figur \ref{fig:fig-3-2}. Som diskuteret indledningsvis, præcis hvornår segregering er ``for høj'' er delvist et politisk og normativt spørgsmål. Dog peger den klassiske (amerikanske) segregeringslitteratur på, at \(D<0,3\) anses som lavt, mens \(D>0,6\) betragtes som højt (\citeproc{ref-massey1994}{Massey \& Denton, 1994}). I en segregeringskontekst vil \(S=0,6\) betragtes som meget højt, da der vil være en betydelig mængde skoler, der (næsten) udelukkende består af enten majoritets- eller minoritetsbaggrund, og den gennemsnitlige eksponering til ens egen gruppe er markant større end den ville være under forudsætning af tilfældige fordelinger mellem skoler. Nedenfor i Figur \ref{fig:fig-3-2} ses udviklingen af begge mål for segregering. Grundlæggende har graden af skolesegregering på begge dimensioner været nogenlunde stabil siden starten af 00'erne. Bemærk, at som det er diskuteret ovenfor, er to grundlæggende forskellige dimensioner af fordeling af børn, der måles. Vi ser derfor, at de to mål for segregering tilsyneladende konvergerer frem mod 00'erne. Dette skyldes ændrede strukturelle forhold. Simpelt sagt, i 1985 var der for få børn med indvandrerbaggrund og for mange skoler til, at disse børn kunne have været ``ligeligt'' fordelt i henhold til \(D\)-indekset. En vis grad af skolesegregering har derfor været en strukturel betingelse. Til gengæld viser \(S\)-indekset, at denne gruppe af børn med indvandrerbaggrund i meget stort omfang har gået på skoler, hvor de har udgjort en numerisk minoritet. Igen en strukturel betingelse, når minoritetsgruppen udgør en lille gruppe i numerisk forstand. Gruppen har ikke været stor nok til, at den i praksis kunne have udgjort en numerisk majoritet på enkelte skoler. I takt med at gruppen af børn med indvandrerbaggrund bliver større relativt til gruppen af børn med dansk oprindelse, er der altså de nødvendige strukturelle betingelser for, at flere---hvis ikke de fleste---skoler kan optage børn med indvandrerbaggrund. Dette bliver til en vis grad realiseret. Men, som vi ser med et parallelt stigende \(S\)-indeks, kommer der fortsat flere skoler, hvor børn med indvandrerbaggrund udgør en relativt stor andel eller den numeriske majoritet på skolen. Dette har en klar strukturel tolkning. Indvandrerfamilier bosætter sig disproportionelt i hovedstadsområdet og de største kommuner (se se \hyperref[kap1]{kapitel 1}), hvilket muliggør eksistensen af skoler, hvor størstedelen udgøres af børn med indvandrerbaggrund. Konvergeringen, hvor det ene mål falder og det andet stiger, tolkes derfor som primært at være drevet af ændrede strukturelle betingelser for segregering---herunder historiske bosætningsmønstre blandt familier med indvandrerbaggrund.
+På landsplan måles segregeringen til \(D = 0,44\) og \(S = 0,16\) i 2020, se Figur \ref{fig:fig-3-2}. Som diskuteret indledningsvis, præcis hvornår segregering er ``for høj'' er delvist et politisk og normativt spørgsmål. Dog peger den klassiske (amerikanske) segregeringslitteratur på, at \(D<0,3\) anses som lavt, mens \(D>0,6\) betragtes som højt (\citeproc{ref-massey1994}{D. S. Massey \& Denton, 1994}). I en segregeringskontekst vil \(S=0,6\) betragtes som meget højt, da der vil være en betydelig mængde skoler, der (næsten) udelukkende består af enten majoritets- eller minoritetsbaggrund, og den gennemsnitlige eksponering til ens egen gruppe er markant større end den ville være under forudsætning af tilfældige fordelinger mellem skoler. Nedenfor i Figur \ref{fig:fig-3-2} ses udviklingen af begge mål for segregering. Grundlæggende har graden af skolesegregering på begge dimensioner været nogenlunde stabil siden starten af 00'erne. Bemærk, at som det er diskuteret ovenfor, er to grundlæggende forskellige dimensioner af fordeling af børn, der måles. Vi ser derfor, at de to mål for segregering tilsyneladende konvergerer frem mod 00'erne. Dette skyldes ændrede strukturelle forhold. Simpelt sagt, i 1985 var der for få børn med indvandrerbaggrund og for mange skoler til, at disse børn kunne have været ``ligeligt'' fordelt i henhold til \(D\)-indekset. En vis grad af skolesegregering har derfor været en strukturel betingelse. Til gengæld viser \(S\)-indekset, at denne gruppe af børn med indvandrerbaggrund i meget stort omfang har gået på skoler, hvor de har udgjort en numerisk minoritet. Igen en strukturel betingelse, når minoritetsgruppen udgør en lille gruppe i numerisk forstand. Gruppen har ikke været stor nok til, at den i praksis kunne have udgjort en numerisk majoritet på enkelte skoler. I takt med at gruppen af børn med indvandrerbaggrund bliver større relativt til gruppen af børn med dansk oprindelse, er der altså de nødvendige strukturelle betingelser for, at flere---hvis ikke de fleste---skoler kan optage børn med indvandrerbaggrund. Dette bliver til en vis grad realiseret. Men, som vi ser med et parallelt stigende \(S\)-indeks, kommer der fortsat flere skoler, hvor børn med indvandrerbaggrund udgør en relativt stor andel eller den numeriske majoritet på skolen. Dette har en klar strukturel tolkning. Indvandrerfamilier bosætter sig disproportionelt i hovedstadsområdet og de største kommuner (se se \hyperref[kap1]{kapitel 1}), hvilket muliggør eksistensen af skoler, hvor størstedelen udgøres af børn med indvandrerbaggrund. Konvergeringen, hvor det ene mål falder og det andet stiger, tolkes derfor som primært at være drevet af ændrede strukturelle betingelser for segregering---herunder historiske bosætningsmønstre blandt familier med indvandrerbaggrund.
 
 \begin{figure}
 \includegraphics[width=1\linewidth]{images/figur_3_2} \caption{Etnisk skolesegregering i Danmark}\label{fig:fig-3-2}
@@ -302,7 +265,7 @@ Som det blev diskuteret i \hyperref[det-danske-skolelandskab]{afsnit 1.1}, er de
 Kigger vi på sammenhængen i segregering (\(D\)) på hhv. bolig- og skolemarkedet ser vi i Figur \ref{fig:fig-3-4}, at der er en klar sammenhæng mellem graden af bolig- og skolesegregering i de fleste kommuner, og at denne er stigende over tid (Pearson's \(r=0,50\) i 2020 mod \(r=0,29\) i 1985). Altså, de kommuner med høj boligsegregering har også typisk høj skolesegregering. Skolesegregering kan eksistere med lav boligsegregering---som Rangvid (2007) også diskuterer og viser var aktuelt frem til tidlige 2000'ere i hovedstadsområdet, og som Figur \ref{fig:fig-3-4} også illustrerer for 1985. I de seneste år ser vi en stærk sammenhæng mellem de to typer segregering i de fleste kommuner. Jeg understøtter dette yderligere med en dekomponeringsanalyse i Larsen (\citeproc{ref-larsen2024b}{2024c}). Med andre ord, selvom skolevalget principielt er ubegrænset, er der nogle skoler, der logisk er for langt væk fra hjemmet til, at hverdagen ville kunne hænge sammen. Når familier, der ligner hinanden, bor tættere på andre familier, der ligner dem selv, end de gør med familier, der er forskellige fra dem, vil der være en observerbar tendens til, at børn, som ligner hinanden, også kommer til at gå i skole sammen. Denne tendens er forstærket af at mange forældre vælger skoler baseret på, hvad de opfatter som ``god kvalitet'' og barnets trivsel, kriterier, der ofte er knyttet til skolens omdømme og dets elevgrundlag. Dette fører til, at skoler med mange ressourcestærke elever tiltrækker endnu flere af samme type, mens skoler med mange elever fra mindre ressourcestærke ikke formår at tiltrække nye familier udenfor skoledistriktet. Derfor ser vi, at segregering på boligmarkedet direkte påvirker segregeringen på skolemarkedet, hvilket skaber en selvforstærkende skolesegregerings proces.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{images/Figur5} \caption{Etnisk skole- og boligsegregering i Danmark (D indeks) <br> <br> Note: * Boligsegregering er målt blandt personer, der går i den danske grundskole og ikke den fulde population. Boligsegregering er målt på sogneinddelinger og ikke skoledistrikter, da disse kun er tilgængelige for 19 kommuner og årene 2007-2017 i Danmarks Statistiks registre. Måles segregering med afsæt i skoledistrikter er sammenhængen markant mere udpræget (se @larsen2024b).*}\label{fig:fig-3-4}
+\includegraphics[width=1\linewidth]{images/Figur5} \caption{Etnisk skole- og boligsegregering i Danmark (D indeks) <br> <br> Note: *Boligsegregering er målt blandt personer, der går i den danske grundskole og ikke den fulde population. Boligsegregering er målt på sogneinddelinger og ikke skoledistrikter, da disse kun er tilgængelige for 19 kommuner og årene 2007-2017 i Danmarks Statistiks registre. Måles segregering med afsæt i skoledistrikter er sammenhængen markant mere udpræget (se @larsen2024b).*}\label{fig:fig-3-4}
 \end{figure}
 
 \newpage
@@ -353,6 +316,59 @@ Så selvom udviklingen ikke er så ekstrem som dele af den offentlige debat anle
 
 \includegraphics[width=1\linewidth]{images/dalle-friendships}
 
+\begin{table}
+\caption{\label{tab:tab-9-1}A Tale of Two Tables.}
+
+\centering
+\begin{tabular}[t]{rr}
+\toprule
+Sepal.Length & Sepal.Width\\
+\midrule
+5.1 & 3.5\\
+4.9 & 3.0\\
+4.7 & 3.2\\
+\bottomrule
+\end{tabular}
+\centering
+\begin{tabular}[t]{lrrr}
+\toprule
+  & mpg & cyl & disp\\
+\midrule
+Mazda RX4 & 21.0 & 6 & 160\\
+Mazda RX4 Wag & 21.0 & 6 & 160\\
+Datsun 710 & 22.8 & 4 & 108\\
+Hornet 4 Drive & 21.4 & 6 & 258\\
+Hornet Sportabout & 18.7 & 8 & 360\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Test \ref{tab:tab-9-1}
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-6-1-1} \caption{Sammenhængen mellem alder på majoritetsbefolkning og nære venskaber med personer med indvandrerbaggrund. 2022. <br> Note: *Se note til tabel 6.1 for datagrundlag.*}\label{fig:fig-6-1}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{images/Figur_6_2} \caption{Andelen af indvandrere og efterkommere i majoritetsbefolkningen mulige venskabspulje. Opgjort på kommunalt niveau på tværs af aldersgrupper (A: XX, B: XX) og kommunetype (A: XX, B: XX).}\label{fig:fig-6-2}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-6-3-1} \caption{Antallet af ikke-vestlige indvandrere og efterkommer i Danmark. På tværs af største grupper. 2000 og 2018.}\label{fig:fig-6-3}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-6-4-1} \caption{Andel af venner med dansk oprindelse blandt 10 forskellige indvandrergrupper. 2015.}\label{fig:fig-6-4}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-6-5-1} \caption{Majoritetens vurdering af, hvorvidt muslimer i Danmark identificerer sig mindre med landet end andre danskere. Opdelt på antal muslimske venner.}\label{fig:fig-6-5}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-6-6-1} \caption{Majoritetens vurdering af, hvorvidt muslimer i Danmark bekymrer sig mindre om andre danskernes anliggender og behov. Opdelt på antal muslimske venner.}\label{fig:fig-6-6}
+\end{figure}
+
 \chapter{Integration i et kontaktperspektiv}\label{kap7}
 
 \includegraphics[width=1\linewidth]{images/dalle-integration}
@@ -385,14 +401,23 @@ Bunar, N. (2010). The geographies of education and relationships in a multicultu
 \bibitem[\citeproctext]{ref-butler2007}
 Butler, T., \& Hamnett, C. (2007). The geography of education: introduction. \emph{Urban Studies}, \emph{44}(7), 1161--1174. \url{https://doi.org/10.1080/00420980701329174}
 
+\bibitem[\citeproctext]{ref-duncan1955}
+Duncan, O. D., \& Duncan, B. (1955). A methodological analysis of segregation indexes. \emph{American Sociological Review}, \emph{20}(2), 210. \url{https://doi.org/10.2307/2088328}
+
 \bibitem[\citeproctext]{ref-epinion2017}
 Epinion. (2017). \emph{Frit skolevalg---hovedrapport}. Undervisningsministeriet.
+
+\bibitem[\citeproctext]{ref-fossett2017}
+Fossett, M. (2017). \emph{New methods for measuring and analyzing segregation}. \url{https://doi.org/10.1007/978-3-319-41304-4}
 
 \bibitem[\citeproctext]{ref-hassan2022}
 Hassan, S., Hvidtfeldt, C., Andersen, L. H., \& Udsen, R. O. (2022). Do refugee children impair the academic performance of native children in the school? Informative null results from danish register data. \emph{European Sociological Review}, \emph{39}(3), 352--365. \url{https://doi.org/10.1093/esr/jcac059}
 
 \bibitem[\citeproctext]{ref-hermansen2015}
 Hermansen, A. S., \& Birkelund, G. E. (2015). The impact of immigrant classmates on educational outcomes. \emph{Social Forces}, \emph{94}(2), 615--646. \url{https://doi.org/10.1093/sf/sov073}
+
+\bibitem[\citeproctext]{ref-james1985}
+James, D. R., \& Taeuber, K. E. (1985). Measures of segregation. \emph{Sociological Methodology}, \emph{15}. \url{https://doi.org/10.2307/270845}
 
 \bibitem[\citeproctext]{ref-joel2022}
 Joel, J. (2002). \emph{Fællesskaberen}. Forlaget Riisvangen.
@@ -424,6 +449,9 @@ Larsen, J. F. (2024c). \emph{Structured school choice: Ethnic school segregation
 \bibitem[\citeproctext]{ref-leszczensky2015}
 Leszczensky, L., \& Pink, S. (2015). Ethnic segregation of friendship networks in school: Testing a rational-choice argument of differences in ethnic homophily between classroom- and grade-level networks. \emph{Social Networks}, \emph{42}, 18--26. \url{https://doi.org/10.1016/j.socnet.2015.02.002}
 
+\bibitem[\citeproctext]{ref-massey1988}
+Massey, Douglas S., \& Denton, N. A. (1988). The dimensions of residential segregation. \emph{Social Forces}, \emph{67}(2), 281. \url{https://doi.org/10.2307/2579183}
+
 \bibitem[\citeproctext]{ref-massey1994}
 Massey, D. S., \& Denton, N. A. (1994). \emph{American apartheid: Segregation and the making of the underclass}. Harvard University Press.
 
@@ -445,6 +473,9 @@ Rambøll. (2011). \emph{Evaluering af mere frit skolevalg (2.0)}.
 \bibitem[\citeproctext]{ref-rangvid2010}
 Rangvid, B. S. (2010). School choice, universal vouchers and native flight from local schools. \emph{European Sociological Review}, \emph{26}(3), 319--335. \url{https://doi.org/10.1093/esr/jcp024}
 
+\bibitem[\citeproctext]{ref-reardon2002}
+Reardon, S. F., \& Firebaugh, G. (2002). Measures of multigroup segregation. \emph{Sociological Methodology}, \emph{32}(1), 33--67. \url{https://doi.org/10.1111/1467-9531.00110}
+
 \bibitem[\citeproctext]{ref-tropp2005}
 Tropp, L. R., \& Pettigrew, T. F. (2005). Relationships between intergroup contact and prejudice among minority and majority status groups. \emph{Psychological Science}, \emph{16}(12), 951--957. \url{https://doi.org/10.1111/j.1467-9280.2005.01643.x}
 
@@ -459,224 +490,95 @@ Zetland. (2018). \emph{Fordel danske skolebørn efter en algoritme, siger en for
 \appendix
 
 
-\chapter{Segregeringsmål}\label{bilag1}
+\chapter{\texorpdfstring{Segregeringsmål (\textbf{WIP DO NOT CITE!})}{Segregeringsmål (WIP DO NOT CITE!)}}\label{bilag1}
 
-\section{Dissimilarity Index}\label{dissimilarity-index}
+\emph{Jeppe Fjeldgaard Larsen}
 
-\begin{itemize}
-\tightlist
-\item
-  Inkludér Harris' (2017) metode og argument for korregering.
-\end{itemize}
+Et kendt og ofte anvendt citat, der definerer segregering, er fra Massey og Dentons (\citeproc{ref-massey1988}{1988}) klassiske artikel, hvor de skriver: \emph{``At a general level, residential segregation is the degree to which two or more groups live separately from one another, in different parts of the urban environment''} (s. 282). Citatet indfanger den centrale logik, når vi taler om segregering. Segregering er en situation, hvor folk i en given kontekst---være det uddannelsessystemer(t), arbejdsmarkedet eller boligmarkedet---ikke møder hinanden eller er eksponerede for hinanden. Det vil sige, at under absolut segregering går folk fra forskellige baggrunde ikke på de samme skoler, arbejder ikke på de samme arbejdspladser og bor ikke i de samme nabolag.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Load necessary libraries}
-\FunctionTok{library}\NormalTok{(tidyverse)}
+Segregeringslitteraturen har en lang metodologisk tradition (\citeproc{ref-fossett2017}{Fossett, 2017}; \citeproc{ref-james1985}{James \& Taeuber, 1985}; \citeproc{ref-reardon2002}{Reardon \& Firebaugh, 2002}). Nogle mål for segregering er dog mere fremtrædende end andre i den empiriske litteratur. Mål for \emph{ulige fordeling} og \emph{eksponering}/\emph{isolering} er generelt de mest anvendte. Det er også disse mål, der har mest substantiel relevans i studiet af (minoritets)gruppers fordeling mellem skoler, arbejdspladser og nabolag. Dette bilag beskriver og diskuterer to mål for segregering: et, der måler fordeling (\textbf{dissimilaritetsindekset}), og et, der måler eksponering eller isolation (\textbf{separationsindekset}). Disse to mål anvendes på tværs af bogens kapitler og i de empiriske forskningsartikler, der ligger til grund for flere af kapitlerne.
 
+Eftersom nærværende bilag er en generaliseret introduktion til disse to mål for segregering og ikke er specifik til en enkelt empirisk analyse eller kontekst anvendes to generaliserede termer i det følgende: \emph{Enheder}, som referer til en given ''position''---det kan være en skole, en arbejdsplads eller et nabolag---og \emph{områder}, der referer til et givent ''sted'', der indeholder de pågældende enheder, såsom et kommunalt/nationalt skolelandskab, arbejdsmarked eller boligmarked.
 
-\CommentTok{\# Function to calculate the Dissimilarity Index}
-\NormalTok{calculate\_dissimilarity\_index }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(group\_counts, total\_counts) \{}
-\NormalTok{  total\_population }\OtherTok{\textless{}{-}} \FunctionTok{sum}\NormalTok{(total\_counts)}
-\NormalTok{  total\_group\_population }\OtherTok{\textless{}{-}} \FunctionTok{sum}\NormalTok{(group\_counts)}
-  
-\NormalTok{  index }\OtherTok{\textless{}{-}} \DecValTok{0}
-  \ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\FunctionTok{length}\NormalTok{(group\_counts)) \{}
-\NormalTok{    group\_proportion }\OtherTok{\textless{}{-}}\NormalTok{ group\_counts[i] }\SpecialCharTok{/}\NormalTok{ total\_group\_population}
-\NormalTok{    area\_proportion }\OtherTok{\textless{}{-}}\NormalTok{ total\_counts[i] }\SpecialCharTok{/}\NormalTok{ total\_population}
-\NormalTok{    index }\OtherTok{\textless{}{-}}\NormalTok{ index }\SpecialCharTok{+} \FunctionTok{abs}\NormalTok{(group\_proportion }\SpecialCharTok{{-}}\NormalTok{ area\_proportion)}
-\NormalTok{  \}}
-  
-  \FunctionTok{return}\NormalTok{(}\FloatTok{0.5} \SpecialCharTok{*}\NormalTok{ index)}
-\NormalTok{\}}
+\section{Dissimilaritetsindekset}\label{dissimkap}
 
-\CommentTok{\# Parameters}
-\NormalTok{n\_simulations }\OtherTok{\textless{}{-}} \DecValTok{1000}
-\NormalTok{total\_population }\OtherTok{\textless{}{-}} \DecValTok{100}
-\NormalTok{n\_areas }\OtherTok{\textless{}{-}} \DecValTok{10}
-\NormalTok{distributions }\OtherTok{\textless{}{-}} \FunctionTok{list}\NormalTok{(}
-  \FunctionTok{c}\NormalTok{(}\DecValTok{50}\NormalTok{, }\DecValTok{50}\NormalTok{),   }\CommentTok{\# Equal distribution}
-  \FunctionTok{c}\NormalTok{(}\DecValTok{40}\NormalTok{, }\DecValTok{60}\NormalTok{),}
-  \FunctionTok{c}\NormalTok{(}\DecValTok{30}\NormalTok{, }\DecValTok{70}\NormalTok{),   }
-  \FunctionTok{c}\NormalTok{(}\DecValTok{20}\NormalTok{, }\DecValTok{80}\NormalTok{),}
-  \FunctionTok{c}\NormalTok{(}\DecValTok{15}\NormalTok{, }\DecValTok{85}\NormalTok{),}
-  \FunctionTok{c}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{90}\NormalTok{),}
-  \FunctionTok{c}\NormalTok{(}\DecValTok{5}\NormalTok{, }\DecValTok{95}\NormalTok{),}
-  \FunctionTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{, }\DecValTok{97}\NormalTok{)}
-\NormalTok{)}
+I forskningslitteraturen er det mest anvendte mål for segregering dissimilaritetsindekset (\(D\)), der blev bredt introduceret af Duncan \& Duncan (\citeproc{ref-duncan1955}{1955}). Selvom \(D\) oprindeligt blev udviklet til at beskrive boligsegregering, har indekset også siden i vidt omfang været anvendt til at beskrive skolesegregering og segregerings på arbejdsmarkedet samt andre former for fordeling af personer og grupper.
 
-\CommentTok{\# Initialize dataframe to store results}
-\NormalTok{results }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}\AttributeTok{Index =} \FunctionTok{numeric}\NormalTok{(}\DecValTok{0}\NormalTok{), }\AttributeTok{Distribution =} \FunctionTok{factor}\NormalTok{())}
+Med James \& Taeuber (\citeproc{ref-james1985}{1985}) notationer er \(D\) udregnet som:
 
-\CommentTok{\# Simulation for each distribution}
-\ControlFlowTok{for}\NormalTok{ (distribution }\ControlFlowTok{in}\NormalTok{ distributions) \{}
-\NormalTok{  group\_1\_size }\OtherTok{\textless{}{-}}\NormalTok{ distribution[}\DecValTok{1}\NormalTok{]}
-\NormalTok{  group\_2\_size }\OtherTok{\textless{}{-}}\NormalTok{ distribution[}\DecValTok{2}\NormalTok{]}
-  
-\NormalTok{  dissimilarity\_indices }\OtherTok{\textless{}{-}} \FunctionTok{numeric}\NormalTok{(n\_simulations)}
-  
-  \ControlFlowTok{for}\NormalTok{ (sim }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\NormalTok{n\_simulations) \{}
-    \CommentTok{\# Randomly assign individuals to groups}
-\NormalTok{    population }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\FunctionTok{rep}\NormalTok{(}\DecValTok{1}\NormalTok{, group\_1\_size), }\FunctionTok{rep}\NormalTok{(}\DecValTok{2}\NormalTok{, group\_2\_size))}
-    
-    \CommentTok{\# Randomly assign individuals to areas}
-\NormalTok{    group\_counts }\OtherTok{\textless{}{-}} \FunctionTok{matrix}\NormalTok{(}\DecValTok{0}\NormalTok{, }\AttributeTok{nrow =} \DecValTok{2}\NormalTok{, }\AttributeTok{ncol =}\NormalTok{ n\_areas)}
-    \ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\NormalTok{total\_population) \{}
-\NormalTok{      area }\OtherTok{\textless{}{-}} \FunctionTok{sample}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\NormalTok{n\_areas, }\DecValTok{1}\NormalTok{)}
-\NormalTok{      group }\OtherTok{\textless{}{-}}\NormalTok{ population[i]}
-\NormalTok{      group\_counts[group, area] }\OtherTok{\textless{}{-}}\NormalTok{ group\_counts[group, area] }\SpecialCharTok{+} \DecValTok{1}
-\NormalTok{    \}}
-    
-    \CommentTok{\# Calculate total counts per area}
-\NormalTok{    total\_counts }\OtherTok{\textless{}{-}} \FunctionTok{colSums}\NormalTok{(group\_counts)}
-    
-    \CommentTok{\# Calculate Dissimilarity Index}
-\NormalTok{    dissimilarity\_indices[sim] }\OtherTok{\textless{}{-}} \FunctionTok{calculate\_dissimilarity\_index}\NormalTok{(group\_counts[}\DecValTok{1}\NormalTok{, ], total\_counts)}
-\NormalTok{  \}}
-  
-  \CommentTok{\# Store results}
-\NormalTok{  dist\_label }\OtherTok{\textless{}{-}} \FunctionTok{paste}\NormalTok{(group\_1\_size, }\StringTok{":"}\NormalTok{, group\_2\_size)}
-\NormalTok{  results }\OtherTok{\textless{}{-}} \FunctionTok{rbind}\NormalTok{(results, }\FunctionTok{data.frame}\NormalTok{(}\AttributeTok{Index =}\NormalTok{ dissimilarity\_indices, }
-                                       \AttributeTok{Distribution =}\NormalTok{ dist\_label))}
-\NormalTok{\}}
+\begin{equation}
+\label{eq:dissim}
+D=\frac{ {\textstyle \sum_{i=1}^{k} \left | p_{i} - P \right | } }{ 2TP \left ( 1-P \right ) }
+\end{equation}
 
-\NormalTok{results[[}\StringTok{"Distribution\_sorted"}\NormalTok{]] }\OtherTok{\textless{}{-}} \FunctionTok{factor}\NormalTok{(results[[}\StringTok{"Distribution"}\NormalTok{]], }
-                                  \AttributeTok{levels =} \FunctionTok{c}\NormalTok{(}\StringTok{"50 : 50"}\NormalTok{, }
-                                             \StringTok{"40 : 60"}\NormalTok{, }
-                                             \StringTok{"30 : 70"}\NormalTok{, }
-                                             \StringTok{"20 : 80"}\NormalTok{, }
-                                             \StringTok{"15 : 85"}\NormalTok{,}
-                                             \StringTok{"10 : 90"}\NormalTok{, }
-                                             \StringTok{"5 : 95"}\NormalTok{,}
-                                             \StringTok{"3 : 97"}\NormalTok{))}
+\(D\) er et to-gruppe mål, hvilket vil sige, at det kun kan sammenligne graden af segregering---eller fordeling---af to grupper. Det vil sige at hvis en population er udgjort af flere grupper, kan målet kun bestemme den \emph{parvise} segregering. Populationen i udregningen består derfor af to gensidigt udelukkende grupper \(g \in (A, B)\). Disse grupper kan være numeriske minoriteter/majoriteter eller enhver anden meningsfuld gruppering, såsom etniske klassifikationer, så længe de er gensidigt udelukkende. Majoriteten betegnes som \(A\) og minoriteten som \(B\), og den absolutte størrelse af henholdsvis gruppe \(A\) og \(B\) er udtrykt som \(N^{A}\) og \(N^{B}\), mens \(T=\left( N^{A} + N^{B} \right)\) er den samlede population i et område på tværs af enheder. Individuelle enheder, såsom skoler, arbejdspladser eller nabolag, refereres til som \(i \in (1, 2, \dots, k)\). Den totale populationsstørrelse i de individuelle enheder betegnes som \(n_{i}^{*}\). Andelen af personer i majoritetsgruppen i den individuelle enhed, \(p_{i}\), er givet som \(p_{i} = \frac{n_{i}^{A}}{n_{i}^{A} + n_{i}^{B}}\), mens \(P = \frac{N^{A}}{N^{A} + N^{B}}\) udtrykker den samlede andel af personer i majoritetsgruppen i hele området.
 
-\CommentTok{\# Visualize the distribution}
-\NormalTok{palette }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"\#1f77b4"}\NormalTok{, }\StringTok{"\#ff7f0e"}\NormalTok{, }
-             \StringTok{"\#2ca02c"}\NormalTok{, }\StringTok{"\#d62728"}\NormalTok{, }
-             \StringTok{"\#9467bd"}\NormalTok{, }\StringTok{"\#8c564b"}\NormalTok{, }
-             \StringTok{"\#e377c2"}\NormalTok{, }\StringTok{"\#7f7f7f"}\NormalTok{)}
+I ligning \eqref{eq:dissim} udtrykker tælleren summen af den absolutte afvigelse af hver enkelt enheds majoritetsandel fra den samlede andel i populationen i området \(\left( \left| p_{i} - P \right| \right)\). \(D\) bestemmes endeligt ved at dividere med nævneren, som er den maksimalt mulige \(D\)-score---den maksimalt mulige ulige fordeling---der er lig \(2TP \left( 1-P \right)\) (se Zoloth, 1976). Dette skalerer indekset til en score mellem 0 og 1 og udtrykker afvigelsen fra ``lige fordeling'' som en brøkdel af den maksimalt mulige ulige fordeling.
 
+\(D\) mest simpelt tolkes som den andel af elever fra én af grupperne, der skal flyttes til en ny enhed, mens der sendes samme andel fra den anden gruppe til afsenderenheden, for at \(p_{i}\) er lige for alle enheder i et givent område. Med andre ord måler \(D\) rent teknisk \emph{fordeling} (eng.: ``displacement'') udtrykt som fordelingen af personer i de to grupper mellem enheder, der er henholdsvis over eller under \emph{paritet} (lige fordeling). Med skolesegregering som eksempel, vil sige, hvor mange børn fra gruppe \(A\) går i skoler, hvor enten \(p_{i}>P\) eller \(p_{i}<P\), og vice versa for børn i gruppe \(B\). Mere konkret udtrykt, i en given kommune, måles, hvor mange børn med majoritetsbaggrund går i en skole, hvor andelen af majoritetsbørn er enten højere eller lavere end andelen af majoritetsbørn i hele kommunen. Ulige fordeling (segregering) er høj, når en stor andel af majoritetsbørnene går i skoler, hvor andelen af majoritetsbørn er højere end den samlede andel i kommunen (\(p_{i} > P\)), og en tilsvarende andel af minoritetsbørn går i skoler, hvor andelen af majoritetsbørn er lavere end den kommunale andel (\(p_{i} < P\)). Målet bygger på en binær opdeling af over/under paritet, således at personer i et område, hvor \(p_{i}>P\), scores \(1\), og personer, hvor \(p_{i}<P\), scores \(0\). Dette opsummeres til en skaleret værdi i ligning \eqref{eq:dissim}. I tilfælde af perfekt fordeling mellem enheder, hvor \(D=0\), gælder det, at \(p_{i}=P\) for hver enkelt enhed. For eksempel i en kommune, hvor \(10\%\) af alle børn har en minoritetsbaggrund, skal hver skole have en andel af minoritetsbørn på \(10\%\) (\(p_{i}=0.1\)) for at \(D=0\), uafhængigt af skolernes størrelse\footnote{Konceptuelt ligner \(D\) derfor den klassiske \href{https://da.wikipedia.org/wiki/Gini-koefficient}{\emph{Gini Koefficient}} (\(G\)) og \href{https://da.wikipedia.org/wiki/Lorenz-kurve}{\emph{Lorenz kurven}}, idet \(D\) udtrykker den gennemsnitlige afvigelse af majoritetsandelen for hver skole (\(p_{i}\)) fra populationsandelen af majoritetsgruppen (\(P\)), udtrykt som en brøkdel af den maksimalt mulige afvigelse. Det vil sige, at \(D\)-indekset rent teknisk måler den maksimale vertikale afstand mellem Lorenz-kurven og ''line of equity'' (perfekt lige fordeling) (Frankel and Volij, 2011; Allen and Vignoles, 2006). \(G\) måler på den anden side arealet mellem disse to linjer.}. Værdier over \(0\) frem mod maksimum, \(1\), udtrykker hvor stor en andel af en af grupperne, som befinder sig i enheder over eller under paritet.
 
-\FunctionTok{ggplot}\NormalTok{(results, }
-       \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Index, }
-           \AttributeTok{fill =}\NormalTok{ Distribution\_sorted)) }\SpecialCharTok{+}
-  \FunctionTok{geom\_histogram}\NormalTok{(}\AttributeTok{binwidth =} \FloatTok{0.01}\NormalTok{, }
-                 \AttributeTok{alpha =} \FloatTok{0.9}\NormalTok{, }
-                 \AttributeTok{position =} \StringTok{\textquotesingle{}identity\textquotesingle{}}\NormalTok{) }\SpecialCharTok{+}
-  \FunctionTok{scale\_fill\_manual}\NormalTok{(}\AttributeTok{values =}\NormalTok{ palette) }\SpecialCharTok{+}
-  \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Dissimilarity Index"}\NormalTok{,}
-       \AttributeTok{y =} \StringTok{"Frekvens"}\NormalTok{,}
-       \AttributeTok{fill =} \StringTok{"Gruppestørrelser}\SpecialCharTok{\textbackslash{}n}\StringTok{(minoritet/majoritet)"}\NormalTok{) }\SpecialCharTok{+}
-  \FunctionTok{theme\_minimal}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
+Det er en central pointe, at \(D\) måler, hvor ulige to grupper er fordelt mellem enheder, \emph{uafhængigt af gruppernes størrelse}---det er kun andelen af hver gruppe i hver enhed, der er af betydning for målet. Målet er derfor \emph{sammensætningsinvariant} (eng.: ''composition invariant''), hvilket vil sige, at målet ikke er påvirket af ændringer i de absolutte størrelser af grupperne, der sammenlignes. Det betyder, at selv hvis de relative størrelser af grupperne ændres i den samlede population (\(P\)), men fordelingen mellem enheder (\(p_{i}\)) er uændret, forbliver \(D\)-indekset uændret. Dermed opfylder indekset den egenskab, at \(D \left( \alpha A, \beta B \right) = D \left( A, B \right)\): Hvis størrelsen på den samlede gruppe, \(A\) eller \(B\), bliver skaleret op eller ned med skaleringsfaktorer \(\alpha\) og \(\beta\), vil indekset forblive det samme, så længe fordelingen af grupperne relativt til hinanden forbliver den samme. For eksempel, hvis en årgang af skolebørn består af to grupper---etnisk majoritet (\(A\)) og minoritet (\(B\))---og andelen af gruppe \(B\) stiger (andelen af \(A\) falder), vil \(D\) forblive uændret, hvis den relative andel af gruppe \(A\) og \(B\) på hver enkelt skole forbliver den samme. Denne egenskab gør det muligt at sammenligne graden af segregering mellem områder eller over tid, selv hvis den demografiske populationssammensætning er forskellig eller ændrer sig. På grund af denne egenskab bliver \(D\) ofte fremhævet som et robust mål for sammenligning af segregering mellem forskellige kontekster.
+
+Sammensætningsinvariansen betyder dog ikke, at de relative andele, grupperne udgør i et område, er uden betydning for den overordnede forventede grad af segregering i det pågældende område---særligt hvis minoritetsgruppen er markant mindre end majoritetsgruppen, og antallet af enheder sætter en strukturel betingelse for mulige fordelinger af de to grupper (se \hyperref[kap3]{kapitel 3} for et empirisk eksempel). I Figur \ref{fig:fig-9-1} vises simuleringer af \(1,000\) tilfældige fordelinger (\href{https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables}{iid}) af en gruppe på \(100\) personer inddelt i \(2\) grupper mellem \(10\) enheder og fordelingen af de \(1,000\) målte \(D\)-scores for otte forskellige relative gruppeandele. Som vi ser, kan segregering variere relativt meget for en given befolkningssammensætning som resultatet af rene tilfældigheder, men spændet af forventede minimums- og maksimumsværdier er strukturelt betinget af de relative andele, som grupperne udgør, når der er et fast antal enheder, som populationen kan fordeles mellem.
 
 \begin{figure}
 \includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-9-1-1} \caption{Simuleret fordeling af D index under forskellige relative gruppestørrelser i population på 100 personer}\label{fig:fig-9-1}
 \end{figure}
 
-\section{Separation Index}\label{separation-index}
+Dette leder til en pointe, der ofte overses i anvendelsen af \(D\). Populationssammensætningsinvarians og indeksets fokus på relativ fordeling---eller ubalance---mellem enheder gør indekset meget følsomt over for størrelsen og antallet af enheder. Denne egenskab kan gøre sammenligninger mellem forskellige kontekster problematiske. For eksempel, hvis det fysiske skolelandskab (antallet og størrelsen af skoler) varierer markant mellem to kommuner, vil forskellen i observeret \(D\) også udtrykke denne strukturelle forskel i skolelandskabet mellem kommunerne. Dette er et velkendt problem i den geografiske forskningslitteratur, kendt som \href{https://en.wikipedia.org/wiki/Modifiable_areal_unit_problem}{``the Modifiable Areal Unit Problem''} (\emph{MAUP}). Relateret hertil er også det klassiske problem i geografiske analyser kendt som ``the small-unit bias,'' hvor det mange steder er vist, at tilfældig fordeling mellem små enheder systematisk kan resultere i høj segregering (Carrington and Troske, 1997).
 
-Også kendt som \emph{Variance Ratio Index}, \emph{Eta\textsuperscript{2}}, \emph{The Revised Isolation Index} (blandt andre navne\ldots)
+Opsummeret betyder det, at selvom \(D\)-indekset principielt kan variere fra \(0\) til \(1\) (ingen \(\rightarrow\) komplet segregering), vil ``ingen segregering'' være tæt på umulig at opnå, hvis grupperne varierer markant i størrelse, som vi også ser i Figur \ref{fig:fig-9-1}. Der kan simpelthen være for få minoriteter og for mange enheder til, at deres fordeling mellem enheder kan matche majoritetens fordeling (Harris, 2017). Som diskuteret i \hyperref[kap3]{kapitel 3} er dette forhold aktuelt i den danske case, hvor andelen af minoriteter, selvom den er stigende, har været og fortsæt er relativt lille i mange kommuner.
 
-De høje værdier er for \texttt{3\ :\ 97}, \texttt{5\ :\ 95}, \texttt{10\ :\ 90}, \texttt{15\ :\ 85}.
+\subsection{Korrigeret D-indeks}\label{korrigeret-d-indeks}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Load necessary libraries}
-\FunctionTok{library}\NormalTok{(tidyverse)}
-\FunctionTok{set.seed}\NormalTok{(}\DecValTok{222}\NormalTok{)}
+En måde at tilgå denne begrænsning, at tilfældige fordelinger også kan producere relativt høje grader af segregering, er blevet præsenteret af Harris (2017). Blandt Harris' metodiske bidrag til segregeringslitteraturen er en udvidelse af \(D\)-indekset, der korrigerer målet for det gennemsnitlige niveau af segregering under forudsætning af tilfældig fordeling (\href{https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables}{iid}), givet de faktiske gruppestørrelser og enheder. Dette gennemsnit er afledt af simulerede fordelinger af en population mellem enheder, efter samme logik som Figur \ref{fig:fig-9-1}. Denne korrigering af \(D\) tager altså højde for, at selvom segregering måles til at være høj, kunne denne grad af segregering have opstået under tilfældig fordeling af grupperne under de givne strukturelle forhold. Diop \& Larsen (2024) anvender denne korrigering af den målte segregering for at kunne bidrage med en mere nuanceret beskrivelse af segregering på det danske arbejdsmarked i en kontekst med ændrende demografiske forhold over tid (se \hyperref[kap4]{kapitel 4}).
 
-\CommentTok{\# Function to calculate the Eta{-}squared Index}
-\NormalTok{calculate\_eta\_squared\_index }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(group\_counts, total\_counts) \{}
-\NormalTok{  total\_population }\OtherTok{\textless{}{-}} \FunctionTok{sum}\NormalTok{(total\_counts)}
-\NormalTok{  overall\_group\_proportion }\OtherTok{\textless{}{-}} \FunctionTok{sum}\NormalTok{(group\_counts) }\SpecialCharTok{/}\NormalTok{ total\_population}
-  
-  \CommentTok{\# Calculate weighted mean square between groups}
-\NormalTok{  between\_group\_variance }\OtherTok{\textless{}{-}} \FunctionTok{sum}\NormalTok{((total\_counts }\SpecialCharTok{/}\NormalTok{ total\_population) }\SpecialCharTok{*}\NormalTok{ (group\_counts }\SpecialCharTok{/}\NormalTok{ total\_counts }\SpecialCharTok{{-}}\NormalTok{ overall\_group\_proportion)}\SpecialCharTok{\^{}}\DecValTok{2}\NormalTok{)}
-  
-  \CommentTok{\# Calculate the overall variance}
-\NormalTok{  overall\_variance }\OtherTok{\textless{}{-}}\NormalTok{ overall\_group\_proportion }\SpecialCharTok{*}\NormalTok{ (}\DecValTok{1} \SpecialCharTok{{-}}\NormalTok{ overall\_group\_proportion)}
-  
-  \CommentTok{\# Eta{-}squared index}
-\NormalTok{  eta\_squared }\OtherTok{\textless{}{-}}\NormalTok{ between\_group\_variance }\SpecialCharTok{/}\NormalTok{ overall\_variance}
-  
-  \FunctionTok{return}\NormalTok{(eta\_squared)}
-\NormalTok{\}}
+\section{Separationsindekset}\label{separationsindekset}
 
-\CommentTok{\# Parameters}
-\NormalTok{n\_simulations }\OtherTok{\textless{}{-}} \DecValTok{1000}
-\NormalTok{total\_population }\OtherTok{\textless{}{-}} \DecValTok{100}
-\NormalTok{n\_areas }\OtherTok{\textless{}{-}} \DecValTok{10}
-\NormalTok{distributions }\OtherTok{\textless{}{-}} \FunctionTok{list}\NormalTok{(}
-  \FunctionTok{c}\NormalTok{(}\DecValTok{50}\NormalTok{, }\DecValTok{50}\NormalTok{),   }\CommentTok{\# Equal distribution}
-  \FunctionTok{c}\NormalTok{(}\DecValTok{40}\NormalTok{, }\DecValTok{60}\NormalTok{),}
-  \FunctionTok{c}\NormalTok{(}\DecValTok{30}\NormalTok{, }\DecValTok{70}\NormalTok{),   }
-  \FunctionTok{c}\NormalTok{(}\DecValTok{20}\NormalTok{, }\DecValTok{80}\NormalTok{),}
-  \FunctionTok{c}\NormalTok{(}\DecValTok{15}\NormalTok{, }\DecValTok{85}\NormalTok{),}
-  \FunctionTok{c}\NormalTok{(}\DecValTok{10}\NormalTok{, }\DecValTok{90}\NormalTok{),}
-  \FunctionTok{c}\NormalTok{(}\DecValTok{5}\NormalTok{, }\DecValTok{95}\NormalTok{),}
-  \FunctionTok{c}\NormalTok{(}\DecValTok{3}\NormalTok{, }\DecValTok{97}\NormalTok{))}
+Hvor sammensætningsinvariansen ofte fremhæves som en attraktiv egenskab ved \(D\), er det dog også en tilbagevendende diskussion i den metodiske litteratur, at det ikke i alle situationer er en attraktiv egenskab ved et segregeringsmål. Særligt ikke hvis vi eksplicit er interesserede i intergruppe interaktioner. Sammensætningsinvariansen gør nemlig, at \(D\) per definition ikke opfanger ændringer i strukturelle betingelser for intergruppe eksponering på individuelt niveau. Ulige fordeling mellem enheder betyder nemlig ikke nødvendigvis separering mellem grupper (se \hyperref[forskel]{næste sektion}). Med separering menes der fysisk adskillelse af grupperne i hverdagen og ikke blot om en person befinder sig i en enhed, hvor der er højere eller lavere andel af personer fra samme gruppe, relativt til det større område, da det kan indbefatte områder, som fortsat er relativt befolkningsmæssigt heterogene.
 
-\CommentTok{\# Initialize dataframe to store results}
-\NormalTok{results }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}\AttributeTok{Index =} \FunctionTok{numeric}\NormalTok{(}\DecValTok{0}\NormalTok{), }\AttributeTok{Distribution =} \FunctionTok{factor}\NormalTok{(}\AttributeTok{levels =} \FunctionTok{c}\NormalTok{()))}
+For at kunne svare på, om grupperne ikke bare er ulige fordelt mellem enheder, men faktisk separeret i deres daglige liv---det vil sige, at de ikke forventes at mødes tilfældigt en given dag---kræver det en beskrivelse af, om den ulige fordeling er \emph{koncentreret} i få enheder eller \emph{spredt} over flere enheder. Er ulige fordeling koncentreret, betyder det, at de to grupper befinder sig i enheder (skoler, nabolag, arbejdspladser, etc.), som er homogene. Det vil sige, at enten minoriteten eller majoriteten udgør hele eller størstedelen af populationen i hver enhed. Er ulige fordeling modsat spredt, betyder det, at minoritetsgruppen er tyndt spredt mellem nogle af enhederne i området. Dette betyder, at gruppen er ulige fordelt, fordi populationen ikke er lige repræsenteret i alle enheder, men samtidig varierer befolkningssammensætningen kun moderat mellem enheder. Dette er ofte tilfældet, hvis minoriteten er markant mindre end majoriteten og ikke udelukkende repræsenteret i enkelte enheder.
 
-\CommentTok{\# Simulation for each distribution}
-\ControlFlowTok{for}\NormalTok{ (distribution }\ControlFlowTok{in}\NormalTok{ distributions) \{}
-\NormalTok{  group\_1\_size }\OtherTok{\textless{}{-}}\NormalTok{ distribution[}\DecValTok{1}\NormalTok{]}
-\NormalTok{  group\_2\_size }\OtherTok{\textless{}{-}}\NormalTok{ distribution[}\DecValTok{2}\NormalTok{]}
-  
-\NormalTok{  eta\_squared\_indices }\OtherTok{\textless{}{-}} \FunctionTok{numeric}\NormalTok{(n\_simulations)}
-  
-  \ControlFlowTok{for}\NormalTok{ (sim }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\NormalTok{n\_simulations) \{}
-    \CommentTok{\# Randomly assign individuals to groups}
-\NormalTok{    population }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\FunctionTok{rep}\NormalTok{(}\DecValTok{1}\NormalTok{, group\_1\_size), }\FunctionTok{rep}\NormalTok{(}\DecValTok{2}\NormalTok{, group\_2\_size))}
-    
-    \CommentTok{\# Randomly assign individuals to areas}
-\NormalTok{    group\_counts }\OtherTok{\textless{}{-}} \FunctionTok{matrix}\NormalTok{(}\DecValTok{0}\NormalTok{, }\AttributeTok{nrow =} \DecValTok{2}\NormalTok{, }\AttributeTok{ncol =}\NormalTok{ n\_areas)}
-    \ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\NormalTok{total\_population) \{}
-\NormalTok{      area }\OtherTok{\textless{}{-}} \FunctionTok{sample}\NormalTok{(}\DecValTok{1}\SpecialCharTok{:}\NormalTok{n\_areas, }\DecValTok{1}\NormalTok{)}
-\NormalTok{      group }\OtherTok{\textless{}{-}}\NormalTok{ population[i]}
-\NormalTok{      group\_counts[group, area] }\OtherTok{\textless{}{-}}\NormalTok{ group\_counts[group, area] }\SpecialCharTok{+} \DecValTok{1}
-\NormalTok{    \}}
-    
-    \CommentTok{\# Calculate total counts per area}
-\NormalTok{    total\_counts }\OtherTok{\textless{}{-}} \FunctionTok{colSums}\NormalTok{(group\_counts)}
-    
-    \CommentTok{\# Calculate Eta{-}squared Index}
-\NormalTok{    eta\_squared\_indices[sim] }\OtherTok{\textless{}{-}} \FunctionTok{calculate\_eta\_squared\_index}\NormalTok{(group\_counts[}\DecValTok{1}\NormalTok{, ], total\_counts)}
-\NormalTok{  \}}
-  
-  \CommentTok{\# Store results}
-\NormalTok{  dist\_label }\OtherTok{\textless{}{-}} \FunctionTok{paste}\NormalTok{(group\_1\_size, }\StringTok{":"}\NormalTok{, group\_2\_size)}
-\NormalTok{  temp\_df }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}\AttributeTok{Index =}\NormalTok{ eta\_squared\_indices, }\AttributeTok{Distribution =} \FunctionTok{factor}\NormalTok{(dist\_label, }\AttributeTok{levels =} \FunctionTok{paste0}\NormalTok{(}\FunctionTok{sapply}\NormalTok{(distributions, }\ControlFlowTok{function}\NormalTok{(x) }\FunctionTok{paste}\NormalTok{(x, }\AttributeTok{collapse =} \StringTok{" : "}\NormalTok{)))))}
-\NormalTok{  results }\OtherTok{\textless{}{-}} \FunctionTok{rbind}\NormalTok{(results, temp\_df)}
-\NormalTok{\}}
+Implikationen er, at hvis ulige fordeling er spredt, vil der stadig være relativt høj gensidig eksponering mellem minoritets- og majoritetsgruppen i forhold til, hvor meget eksponering der strukturelt er muligt, idet minoriteten udgør en relativ lille del af de enheder, hvor de er til stede. I modsætning til ulige fordeling, der er koncentreret, hvor hver gruppe primært er eksponeret for deres egen gruppe. Det vil sige, at grupperne er isolerede og primært kun i kontakt med personer fra deres egen gruppe. I det første tilfælde er grupperne altså ikke separerede da grupperne stadig er eksponerede for hinanden i det omfang, det kan lade sig gøre under de strukturelle forudsætninger givet ved populationssammensætningen og antallet og størrelsen af enheder. \emph{Gruppeseparation} refererer således til en fordeling af to grupper, hvor fordelingen er sådan, at hver gruppe befinder sig i en enhed, hvor deres egen gruppe er disproportionalt koncentreret. Med andre ord er den typiske enhed i et område befolkningsmæssigt homogen. \(D\) kan ikke beskrive denne separation, idet ulige fordeling ikke per definition signalerer disproportional koncentration af grupper---hvilket til tider er en forfejlet opfattelse i empiriske segregeringsstudier (Fossett, 2017).
 
-\CommentTok{\# Define a color palette}
-\NormalTok{palette }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"\#1f77b4"}\NormalTok{, }\StringTok{"\#ff7f0e"}\NormalTok{, }
-             \StringTok{"\#2ca02c"}\NormalTok{, }\StringTok{"\#d62728"}\NormalTok{, }
-             \StringTok{"\#9467bd"}\NormalTok{, }\StringTok{"\#8c564b"}\NormalTok{, }
-             \StringTok{"\#e377c2"}\NormalTok{, }\StringTok{"\#7f7f7f"}\NormalTok{)}
+Separering kan i stedet beskrives med \emph{Separationsindekset}\footnote{Et problem gennem segregeringslitteraturen er, at Separationsindekset er kendt under mange navne, da metodiske artikler ofte har valgt at give indekset et nyt navn, som de finder mere korrekt. Indekset er derfor også kendt som \emph{The revised index of isolation} (Bell, 1954), \emph{The correlation ratio} eller \(eta^{2}\) (Duncan and Duncan, 1955), \(r_{ij}\) (Coleman et al., 1975), \emph{The variance ratio} (James and Taeuber 1985) og \emph{The segregation index} (Zoloth, 1976).} (\(S\)), som måler forskellen i den parvise majoritets-minoritets eksponering til majoritetsgruppen. Det vil sige at \(S\) måler den vægtede forskel mellem gruppe \(A\)'s eksponering til gruppe \(A\) og gruppe \(B\)'s eksponering til gruppe \(A\). \(S\) er ligesom \(D\) et to-gruppe mål for segregering, som måler den relative grad af segregering mellem to grupper. Men hvor \(D\) udtrykker \emph{fordeling}, udtrykker \(S\) \emph{sandsynlighed for eksponering} mellem to grupper.
 
-\CommentTok{\# Visualize the distribution with log{-}scaled y{-}axis}
-\FunctionTok{ggplot}\NormalTok{(results, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Index, }\AttributeTok{fill =}\NormalTok{ Distribution)) }\SpecialCharTok{+}
-  \FunctionTok{geom\_histogram}\NormalTok{(}\AttributeTok{binwidth =} \FloatTok{0.01}\NormalTok{, }\AttributeTok{alpha =} \FloatTok{0.7}\NormalTok{, }\AttributeTok{position =} \StringTok{\textquotesingle{}identity\textquotesingle{}}\NormalTok{) }\SpecialCharTok{+}
-  \FunctionTok{scale\_fill\_manual}\NormalTok{(}\AttributeTok{values =}\NormalTok{ palette) }\SpecialCharTok{+}
-  \FunctionTok{labs}\NormalTok{(}\AttributeTok{fill =} \StringTok{"Gruppestørrelser}\SpecialCharTok{\textbackslash{}n}\StringTok{(minoritet/majoritet)"}\NormalTok{,}
-       \AttributeTok{x =} \StringTok{"Separation Index"}\NormalTok{,}
-       \AttributeTok{y =} \StringTok{"Frekvens"}\NormalTok{) }\SpecialCharTok{+}
-  \FunctionTok{theme\_minimal}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
+Med de samme notationer som i \hyperref[dissimkap]{foregående sektion} kan \(S\) udregnes som
+
+\begin{equation}
+\label{eq:sep}
+S = \frac{{\textstyle \sum_{i=1}^{k}} n_{i}^{*} \left ( p_{i}-P \right )^{2} }{ TP \left ( 1-P \right ) } 
+\end{equation}
+
+Ligesom dissimilaritetsindekset, anvender separationsindekset også \(P\) som grundlag for sammenligning mellem enheder, men bestemmer afvigelsen af hver enkelt enheds gruppesammensætning (\(p_{i}\)) fra \(P\) med andre regler. Hvor \(D\) måler den absolutte afstand mellem \(p_{i}\) og \(P\), er \(S\) givet som den kvadrerede forskel mellem \(p_{i}\) og \(P\) vægtet i forhold til størrelsen af de enkelte enheder, \(n_{i}^{*}\). Målet er endeligt afledt ved at dividere med den maksimalt mulige score i nævneren for at standardisere målet til en \(0-1\) skala (se James and Taeuber, XXXX eller Zoloth, XXXX).
+
+Denne forskel i bestemmelsen af de summerede afvigelser fra ``lige fordeling'' har stor substantiel betydning for, hvad indekset faktisk måler, og tolkningen af segregering, selvom ligning \eqref{eq:sep} på mange måder ligner ligning \eqref{eq:dissim}. Som diskuteret udtrykker \(S\) derfor ikke \emph{(u)lige fordelinger}, men forskellen i parvis skaleret eksponering til majoritetspersoner mellem majoritets- (\(A\)) og minoritetsgruppen (\(B\)). \(S\) måler derfor \emph{sandsynligheder for intergruppeeksponering, korrigeret for den samlede populationssammensætning} (Bell, 1954; Fossett, 2017) udtrykt som en brøkdel af den maksimalt mulige værdi.
+
+Vægtningen af indekset relaterer sig til, at \(S\) er afledt af isolerings- og eksponeringsindeksene (\(P^{*}\)-indeks, se Farley, 1984), som udtrykker sandsynligheden for, at to tilfældigt udvalgte personer i en enhed tilhører samme eller forskellige grupper (Gorard and Taylor, 2002). \emph{Eksponeringsindekse}t, \(_{A}P^{*}_{B}\), udtrykker sandsynligheden for, at en tilfældig person fra \(A\) befinder sig i en enhed med en person fra \(B\). \emph{Isoleringsindekset}, \(_{A}P^{*}_{A}\), udtrykker derimod sandsynligheden for, at en tilfældig person fra \(A\) befinder sig i en enhed med en anden fra \(A\)\footnote{To meget forsimplede antagelser er nødvendige i denne tolkning (Bell, 1954). For det første antages det, at møder mellem personer foregår inden for den pågældende enhed (skoler, arbejdspladser, nabolag), og for det andet, at hver person i en pågældende enhed har lige sandsynlighed for at møde hver enkelt person inden for enheden. Det er veldokumenteret, at begge antagelser ikke er tilfældet i praksis (McPherson et al., 2001). \(P^{*}\) skal derfor tolkes som \emph{den minimale sandsynlige eksponering mellem personer fra samme/forskellige grupper}, under antagelse af at den faktiske intragruppe eksponering er højere.}. Begge mål kan tage værdier fra \(0\) til \(1\), og hvis populationen er inddelt i kun to grupper, gælder det, at \(_{A}P^{*}_{B} + _{A}P^{*}_{A} = 1\). Derudover er målene asymmetriske, hvilket betyder, at \(_{A}P^{*}_{B} = _{B}P^{*}_{A}\) kun i tilfælde, hvor \(A\) og \(B\) udgør lige store andele af befolkningssammensætningen, eller \(_{A}P^{*}_{B} \neq _{B}P^{*}_{A}\). Disse mål opfylder derfor ikke sammensætningsinvariansen, men er afhængige af størrelsen på de grupper, der sammenlignes (Massey and Denton, 1988), da sandsynligheden for eksponering eller isolering er summen af produktet af to sandsynligheder (se Bell, 1954): (1) sandsynligheden for, at en person fra gruppe \(A\) møder en anden person fra gruppe \(A\): \(\left( n_{i}^{A} - 1 \right) / \left( n_{i}^{B} - 1 \right)\), og (2) sandsynligheden for, at en tilfældig person fra gruppe \(A\) befinder sig i den pågældende enhed, \(i\): \(n_{i}^{A} / N^{A}\). Et produkt, der kan udtrykkes algebraisk som: \(P^{*}=\frac{1}{A} {\textstyle \sum_{i=1}^{k}\frac{n_{i}^{A \space 2}}{n_{i}^{B}}}\). Sandsynligheden for intergruppeeksponering---eller relativ isolation---tager altså afsæt i befolkningssammensætningen.
+
+Problemet ved at anvende \(P^{*}\) ukorrigeret i bestemmelsen af den relative isolation af grupperne, som diskuteret af Bell (1954), er, at den mindste værdi \(P^{*}\) kan tage, er den heterogene blanding af gruppe \(A\) i et pågældende område, givet som \(N^{A}/N^{B}\). Derfor gælder det også, at sandsynligheden for intragruppeeksponering i gruppe \(A\) er større end i gruppe \(B\), hvis gruppe \(A\) udgør en større andel af populationen, \emph{selv hvis populationen er ligeligt fordelt mellem enheder} (Bell, 1954). Hvis der ikke korrigeres for populationsstørrelser (\(T=N^{A}+N^{B}\)), kan komparative beskrivelser af forventet eksponering, givet alene som \(P^{*}\), mellem områder derfor være delvist vildledende i en substantiel tolkning. For eksempel, hvis vi forestiller os to kommuner: den ene kommune (\(X\)) består af \(30\%\) personer fra gruppe \(B\), mens den anden kommune (\(Y\)) består af \(2\%\) personer fra gruppe \(B\). Selv hvis minoritetsgruppen var ligeligt fordelt mellem alle enheder i hver kommune, således at alle enheder har den samme andel---altså ingen segregering i henhold til \(D\)---vil det i kommune \(X\) gælde, at \(P^{*}=0.3\), mens det i kommune \(Y\) gælder at \(P^{*}=0.02\). Med disse ``rå'' mål for eksponering er høje/lave grader af eksponering ikke nødvendigvis et udtryk for segregering, men kan blot reflektere, at der er flere personer fra gruppe \(B\) i den ene kommune sammenlignet med den anden. Med andre ord, med \(D\) ser vi ingen forskelle i segregeringsniveau mellem \(X\) og \(Y\), selvom der tydeligvis er substantielle forskelle i graden af intergruppeeksponering, mens vi med \(P^{*}\) kan ende med en beskrivelse, der grundlæggende ikke siger andet end ``der er flere minoriteter i \(X\) end i \(Y\)''---en forskel, der ikke nødvendigvis udtrykker en forskel i segregeringsprocesser mellem kommunerne, kun potentialet for omfanget af segregering (se \ref{fig:fig-9-1}).
+
+\(S\) imødegår disse begrænsninger. Forskellen på \(P^{*}\) og \(S\) er, at \(S\) er en standardisering---eller normalisering---af \(P^{*}\)-målene, der kontrollerer for befolkningssammensætningen og samtidig eliminerer asymmetrien i målene (Bell, 1954). Ved at normalisere med hensyn til størrelsen på enhederne (\(n_{i}^{*}\)) og den maksimalt mulige eksponering/isolering (\(TP(P-1)\)) udledes et mål, hvor den ekstreme minimumsværdi \(0\) repræsenterer en situation, hvor den sandsynlige eksponering mellem grupperne er lig \emph{den hypotetiske sandsynlige eksponering, hvis gruppe \(A\) var lige fordelt mellem enheder}. Den ekstreme maksimumsværdi \(1\) opnås i situationer, hvor sandsynligheden for tilfældig eksponering mellem gruppe \(A\)-medlemmer i en given enhed er \(100\%\) (Bell, 1954). \(S\) er altså udtrykt som en brøkdel af den maksimalt mulige eksponering.
+
+Denne korrigering for befolkningssammensætning har den implikation, at segregeringsmålets forventede spænd mellem minimum og maksimum ikke på samme måde er følsomt overfor relative gruppestørrelser (se Figur \ref{fig:fig-9-2}). \(S\) forventede spænd er dog strukturelt påvirket af antallet af enheder, som en population kan blive sorteret mellem (se Figur \ref{fig:fig-9-3}). Som Fossett (2017) har demonstreret, indeholder \(S\), i kombination med mål for fordeling såsom \(D\), dermed information om, hvorvidt ulige fordeling er koncentreret eller spredt---hvis \(S\) er lavt, mens \(D\) er højt, vil den ulige fordeling være karakteriseret som spredt, mens et højt \(S\) og højt \(D\) indikerer en koncentreret ulige fordeling. Som Fossett skriver, \(S\) \emph{``therefore serves as an indication of `prototypical segregation,' implying actual separation between groups rather than the mere uneven distribution of a minority group''} (s. XX).
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-9-2-1} \caption{Simuleret fordeling af S index under forskellige relative gruppestørrelser i population på 100 personer.}\label{fig:fig-9-2}
+\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-9-2-1} \caption{Simuleret fordeling af S index under forskellige relative gruppestørrelser i population på 100 personer (10 enheder).}\label{fig:fig-9-2}
 \end{figure}
 
-\section{Sammenhæng mellem S og D}\label{sammenhuxe6ng-mellem-s-og-d}
+\begin{figure}
+\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-9-3-1} \caption{Simuleret fordeling af S index under forskellige relative gruppestørrelser i population på 100 personer (30 enheder).}\label{fig:fig-9-3}
+\end{figure}
 
-This will be Appendix A.
+\section{Sammenhæng mellem S og D}\label{forskel}
+
+I praksis ser vi ofte, at \(S\) og \(D\) korrelerer, men graden af korrelation kan variere betydeligt mellem områder, fordi \(D\) ikke per definition signalerer polarisering og koncentreret fordeling mellem grupper. \(S\) og \(D\) kan have samme score, men kun i tilfælde hvor begge mål er \(1\), hvilket udtrykker en situation, hvor begge grupper befinder sig i homogene enheder, hvor de udgør \(100\%\). Altså, når koncentrationen mellem enheder i et område er ved deres maksimum, vil \(S=D\). Når \(S\) og \(D\) er identiske eller tilnærmelsesvis af samme størrelsesorden---lav-lav, medium-medium, eller høj-høj-scores---er segregering derfor karakteriseret som det, Fossett (2017) kalder ``prototypisk segregering.'' Når \(S\) og \(D\) derimod divergerer med en høj \(D\)-score men lav \(S\)-score, er fordelingen af majoriteter og minoriteter mellem enheder karakteriseret som en ``ulige men spredt fordeling'' (Fossett, 2017). Det vil sige, at selvom minoritetsgruppen ikke er repræsenteret i alle enheder i et givent område, udgør de fortsat en numerisk minoritet i de enheder, hvor de er repræsenteret. Minoritetsgruppen er simpelthen for lille---eller for ``tyndt spredt''---til at kunne udgøre numerisk overtal i nogen af enhederne i et område. Selvom \(D\) i sådanne situationer vil være relativt højt, er det en strukturel betingelse givet af den relative størrelse af grupperne og antallet af enheder (se Figur \ref{fig:fig-9-1}), og ikke nødvendigvis produktet af segregeringsprocesser. Disse forhold er indfanget af \(S\), som i denne situation vil være lav og afvige relativt meget fra \(D\), fordi \(S\) kun tager høje værdier, når enhederne i et område er homogene. Dette er ikke muligt rent strukturelt, hvis minoritetsgruppen er markant mindre end majoritetsgruppen, og kun forventeligt i områder, hvor grupperne nærmer sig relativt lige andele af populationen. I absolutte værdier kan \(S\) derfor heller ikke være større end \(D\). Derfor er tommelfingerreglen, at når grupper varierer meget i relative størrelser og/eller antallet af enheder er højt, kan \(S\) strukturelt være nævneværdigt lavere end \(D\) (se Figur \ref{fig:fig-9-2} og Figur \ref{fig:fig-9-3}). Se Figur \ref{fig:fig-9-4} for stiliserede beskrivelser af de tre mulige idealtypiske kombinationer af \(S\) og \(D\).
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-9-4-1} \caption{Mulige kombinationer af (absolutte) S-D værdier efter Fossett (2017, s. 85).}\label{fig:fig-9-4}
+\end{figure}
+
+En anden teknisk forskel mellem de to mål er, at \(S\) er mere sensitivt end \(D\), fordi \(S\) opfanger et helt spektrum af eksponering mellem grupper, mens \(D\) kun opfanger, hvor mange der befinder sig i enheder, som er binært grupperet som under/over paritet. Det vil sige, at i \(D\), ligning \eqref{eq:dissim}, gør det ingen forskel, hvor langt fra paritet en given enhed er. Det gør det modsat i \(S\), ligning \eqref{eq:sep}. Ved et segregeringsreducerende flyt, forstået som et flyt til en enhed med relativt lavere andel af personer fra egen gruppe, eller et segregeringsøgende flyt, forstået som et flyt til en enhed med en relativt større andel af personer fra egen gruppe, vil \(S\)-indekset reagere ``stærkere'' (ændre sig mere) for flyt mellem to homogene enheder---hvor den ene har en andel minoriteter på \(100\%\) og den anden en andel på \(0\%\)---end flyt mellem områder, som er relativt blandede, selvom de to enheder formelt er over og under paritet (for eksempel, hvor den ene enhed har en andel på \(49\%\) og den anden en andel på \(51\%\)). \(D\) vil modsat opfange disse to flyt med identisk påvirkning på den målte grad af segregering (se Fossett, 2017, s. XXX-XXX for teknisk forklaring og eksempler). Det betyder altså også, at der vil være flytninger, som kun bliver registreret i \(S\), der registrerer alle ændringer, men ikke i \(D\), hvis flytningen er mellem to enheder, der selvom de har forskellig befolkningssammensætning, men begge enheder er over/under paritet i forhold til det større områdes befolkningssammensætning. Dette gør sig særligt relevant på store skalaer, såsom national skala, hvor flytninger indenfor kommuner med relativt høje eller lave andele af minoriteter ikke registreres som ændringer i \(D\), selvom disse flyt kan påvirke graden af eksponering/isolering mellem minoriteter og majoriteter. Derfor ses det også empirisk, at der kan være situationer, hvor \(D\)-indekset giver en indikation af faldende segregering, mens \(S\) vil vise det modsatte. Det er for eksempel tilfældet ved udviklingen i skolesegregering på national skala (se Figur \ref{fig:fig-3-2}).
 
 \chapter{Andet bilag\ldots{}}\label{bilag2}
 

@@ -4,4 +4,115 @@
 knitr::include_graphics("images/dalle-friendships.png")
 ```
 
+```{r tab-9-1, echo=FALSE, message=FALSE}
+knitr::kable(
+  list(
+    head(iris[, 1:2], 3),
+    head(mtcars[, 1:3], 5)
+  ),
+  caption = 'A Tale of Two Tables.', booktabs = TRUE
+)
+```
+
+
+Test \@ref(tab:tab-9-1)
+
+
+```{r fig-6-1, echo=FALSE, message=FALSE, out.width= "100%", fig.cap="Sammenhængen mellem alder på majoritetsbefolkning og nære venskaber med personer med indvandrerbaggrund. 2022. <br> Note: *Se note til tabel 6.1 for datagrundlag.*"}
+
+read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_1.csv") %>% 
+  pivot_longer(!gruppe, names_to = "kategori", values_to = "pct") %>% 
+  ggplot(aes(x = gruppe, y = pct, fill = factor(kategori, levels = c("Ingen", "1-2 personer", "3 eller flere", "Ved ikke")))) +
+  geom_bar(stat = "identity", position = "fill") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_manual(values = c("#434e87", "#ad5b9c", "#52b6b6", "#d3d3d3")) +
+  labs(y = " ", x = " ", fill = " ") +
+  theme_classic()
+
+
+```
+
+```{r fig-6-2, echo=FALSE, out.width= "100%", fig.cap="Andelen af indvandrere og efterkommere i majoritetsbefolkningen mulige venskabspulje. Opgjort på kommunalt niveau på tværs af aldersgrupper (A: XX, B: XX) og kommunetype (A: XX, B: XX)."}
+knitr::include_graphics("images/Figur_6_2.jpg")
+```
+
+
+
+```{r fig-6-3, echo=FALSE, message=FALSE, out.width= "100%", fig.cap="Antallet af ikke-vestlige indvandrere og efterkommer i Danmark. På tværs af største grupper. 2000 og 2018."}
+
+df <- read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_3.csv") %>% 
+  pivot_longer(cols = c(`2018`, `2010`), names_to = "Year", values_to = "Value") %>% 
+  mutate(Country = reorder(Country, Value))
+
+ggplot(df, aes(x = reorder(Country, -Value), y = Value, fill = factor(Year, levels = c("2010", "2018")))) +
+  coord_cartesian(xlim = c(1, 33), ylim = c(0, 65000), clip = "off") +
+  geom_col(data = df %>% filter(Year == "2018"), aes(x = Country, y = Value), position = position_dodge(width = 0.9), width = 0.7) +
+  geom_point(data = df %>% filter(Year == "2010"), aes(x = Country, y = Value), shape = 18, size = 3, color = "#434e87") +
+  scale_fill_manual(values = c("#ad5b9c", "#434e87")) +
+  labs(y = "", x = "", fill = "") +
+  guides(fill = "none", shape = "none") +
+  annotate("point", x = c(34.5, 34.5), y = c(60000, 55000), shape = c(18, 15), size = c(3, 4), color = c("#434e87", "#ad5b9c")) +
+  annotate("text", x = c(35.2, 35.2), y = c(60000, 55000), label = c("2010", "2018"), hjust = 0) +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 50, hjust = 1, vjust = 1),
+        plot.margin = unit(c(0,5,0,0), "lines"))
+
+```
+
+
+
+```{r fig-6-4, echo=FALSE, message=FALSE, out.width= "100%", fig.cap="Andel af venner med dansk oprindelse blandt 10 forskellige indvandrergrupper. 2015."}
+
+read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_4.csv") %>% 
+  pivot_longer(!Country, names_to = "kategori", values_to = "pct") %>% 
+  ggplot(aes(x = Country, y = pct, fill = factor(kategori, levels = c("Ingen", "Nogle få", "Mange", "De fleste", "Alle")))) +
+  geom_bar(stat = "identity", position = "fill") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_manual(values = c("#434e87", "#ad5b9c", "#52b6b6", "#ad3b6b", "wheat")) +
+  labs(y = " ", x = " ", fill = " ") +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 50, hjust = 1, vjust = 1))
+
+```
+
+```{r fig-6-5, echo=FALSE, message=FALSE, out.width= "100%", fig.cap="Majoritetens vurdering af, hvorvidt muslimer i Danmark identificerer sig mindre med landet end andre danskere. Opdelt på antal muslimske venner."}
+
+read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_5.csv") %>% 
+  pivot_longer(!Gruppe, names_to = "kategori", values_to = "pct") %>% 
+  filter(Gruppe != "Don't know" & kategori %in% c("Meget mindre end andre danskere", "Noget mindre end andre danskere")) %>% 
+  ggplot(aes(x = Gruppe, y = pct/100, fill = factor(kategori, levels = c("Meget mindre end andre danskere", "Noget mindre end andre danskere")))) +
+  coord_cartesian(ylim = c(0, 1)) +
+  geom_bar(position="stack", stat="identity") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_manual(values = c("#434e87", "#ad5b9c")) +
+  labs(y = " ", x = " ", fill = " ") +
+  theme_classic()  +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1, vjust = 1),
+        legend.position = c(.8, .98))
+  
+```
+
+```{r fig-6-6, echo=FALSE, message=FALSE, out.width= "100%", fig.cap="Majoritetens vurdering af, hvorvidt muslimer i Danmark bekymrer sig mindre om andre danskernes anliggender og behov. Opdelt på antal muslimske venner."}
+
+read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_6.csv") %>% 
+  pivot_longer(!Gruppe, names_to = "kategori", values_to = "pct") %>% 
+  filter(Gruppe != "Don't know" & kategori %in% c("Meget mindre end andre danskere", "Noget mindre end andre danskere")) %>% 
+  ggplot(aes(x = Gruppe, y = pct/100, fill = factor(kategori, levels = c("Meget mindre end andre danskere", "Noget mindre end andre danskere")))) +
+  coord_cartesian(ylim = c(0, 1)) +
+  geom_bar(position="stack", stat="identity") +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_manual(values = c("#434e87", "#ad5b9c")) +
+  labs(y = " ", x = " ", fill = " ") +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1, vjust = 1),
+        legend.position = c(.8, .98))
+  
+```
+
+
+
+
+
+
+
 
