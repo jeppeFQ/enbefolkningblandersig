@@ -1,26 +1,31 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Forord}{5}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}En befolkning blander sig}{7}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Partnerskabet og de blandede børn}{9}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Grundskoler som mødested (\textbf {WIP DO NOT CITE!})}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introduktion}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}NY OVERSKRIFT}{13}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Den danske grundskole}{14}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Betingelser for møder i grundskolen}{15}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Det danske skolelandskab}{16}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Segregering i det danske skolelandskab}{18}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}National skala}{19}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Lokal skala}{21}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Skolesegregering som produkt af boligsegregering}{23}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Konklusion}{26}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Arbejdspladser som mødested}{29}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Foreninger som mødested}{33}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Venskaber -- det første skridt}{35}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Integration i et kontaktperspektiv}{41}{chapter.7}%
-\contentsline {chapter}{Litteraturliste}{43}{chapter*.3}%
-\contentsline {chapter}{\numberline {A}Segregeringsmål (\textbf {WIP DO NOT CITE!})}{47}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Dissimilaritetsindekset}{48}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Korrigeret D-indeks}{51}{subsection.A.1.1}%
-\contentsline {section}{\numberline {A.2}Separationsindekset}{51}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Sammenhæng mellem S og D}{57}{section.A.3}%
-\contentsline {chapter}{\numberline {B}Andet bilag\ldots {}}{61}{appendix.B}%
+\contentsline {section}{\numberline {1.1}Integration og assimilering---en tovejsproces}{9}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Drivkraften mod sine egne og tvungne mødepladser}{10}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Det menneskelige møde og dets effekt på betydning af etniske distinktioner}{13}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Betydningen af størrelsesforholdene mellem majoritet og minoritet}{15}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Den danske versus den amerikanske kontekst}{17}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Bogens plan}{18}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Partnerskabet og de blandede børn}{21}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Titel}{23}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Grundskoler som mødested (\textbf {WIP DO NOT CITE!})}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}NY OVERSKRIFT}{27}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Den danske grundskole}{28}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Betingelser for møder i grundskolen}{29}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Det danske skolelandskab}{30}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Segregering i det danske skolelandskab}{32}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}National skala}{33}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Lokal skala}{35}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Skolesegregering som produkt af boligsegregering}{37}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Konklusion}{40}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Arbejdspladser som mødested}{43}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Venskaber -- det første skridt}{47}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Integration i et kontaktperspektiv}{53}{chapter.7}%
+\contentsline {chapter}{Litteraturliste}{55}{chapter*.21}%
+\contentsline {chapter}{\numberline {A}Segregeringsmål (\textbf {WIP DO NOT CITE!})}{59}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Dissimilaritetsindekset}{60}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Korrigeret D-indeks}{63}{subsection.A.1.1}%
+\contentsline {section}{\numberline {A.2}Separationsindekset}{63}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Sammenhæng mellem S og D}{67}{section.A.3}%
+\contentsline {chapter}{\numberline {B}Andet bilag\ldots {}}{71}{appendix.B}%

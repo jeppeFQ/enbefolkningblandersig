@@ -1,5 +1,0 @@
-# Foreninger som mødested {#kap5}
-
-```{r fig-civil, echo=FALSE, out.width= "100%"}
-knitr::include_graphics("images/dalle-civil.png")
-```

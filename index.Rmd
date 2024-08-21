@@ -1,8 +1,7 @@
 --- 
 title: "En befolkning blander sig"
 author: 
-- Christian Albrekt Larsen og Hans-Peter Y. Qvist (Red.)
-- Med bidrag fra Jeppe Fjeldgaard Larsen, Laciné E. Diop,... Anders? Anna?
+- Lanciné Diop-Christensen, Christian Albrekt Larsen (red.), Jeppe Fjeldgaard Larsen og Hans-Peter Y. Qvist
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -22,6 +21,11 @@ options(tinytex.engine_args="-shell-escape")
 
 library(tidyverse)
 library(ggimage)
+library(gt)
+library(sf)
+library(cowplot)
+library(leaflet)
+library(leaflet.extras)
 
 ```
 

@@ -1,0 +1,6 @@
+
+# Titel {#kap3}
+
+```{r fig-partner222, echo=FALSE, out.width= "100%"}
+knitr::include_graphics("images/dalle-wedding.png")
+```

@@ -1,19 +1,33 @@
 
 # Forord {-}
 
-Måske et forord her. 
+Bogen er baseret på forskningsprojektet *”Measuring intense migrant-native contact and its concequences”* (MNcontact), der var finansieret af Den Fri Forskningsfond i perioden fra 2019 til 2024. Bogen er en formidlingsbog, der er baseret på projektets datamateriale og forskningsresultater. 
+
+Projektgruppen har bestået af undertegnet, [Jeppe Fjeldgaard Larsen](https://vbn.aau.dk/da/persons/jeppefl), [Lanciné Eric Diop-Christensen](https://vbn.aau.dk/en/persons/led), [Hans-Peter Y. Qvist](https://vbn.aau.dk/da/persons/hpq), [Jeevitha Y. Qvist](https://vbn.aau.dk/en/persons/jy), [Troels Fage Hedegaard](https://vbn.aau.dk/en/persons/troelsfh) og [Anna Diop-Christensen](https://dk.linkedin.com/in/anna-diop-christensen-58b5ba282) (i tilfældig rækkefølje). Gruppen har i forskellige konstellationer publiceret en række videnskabelige publikationer og flere er på vej. De er samlet på [projektets hjemmeside](https://www.politics-society.aau.dk/research/projects/mncontact). 
+
+Undervejs har vi arbejdet tæt sammen [Anders Bastrup Jørgensen]( https://vbn.aau.dk/en/persons/anbajo), der skrev Ph.D-afhandling om indvandrere og efterkommeres deltagelse i frivillige foreninger. Vi har også arbejdet sammen med [Rolf Lyneborg Lund]( https://vbn.aau.dk/en/persons/rolfll) og [Anja Jørgensen]( https://vbn.aau.dk/en/persons/anjaj), der i samme periode analyserede spørgsmålet om indvandrere- og efterkommeres boligmæssige placering. 
+
+Vi ønsker alle en god læselyst 
+
+Aalborg 2024
 
 
-I [kapitel 1](#kap1) af _____, ... 
+[Christian Albrekt Larsen](https://vbn.aau.dk/en/persons/albrekt)    \ 
+Forskningsleder på MNcontact. \
+Professor, Institut for Politik og Samfund\
+Aalborg Universitet\
 
-I [kapitel 2](#kap2) af _____, ... 
+<br/><br/><br/><br/>
 
-I [kapitel 3, "Grundskoler som mødested"](#kap3), af [Jeppe Fjeldgaard Larsen](https://vbn.aau.dk/da/persons/140717), ... 
+ISSN: xxxx-xxxx      
+ISBN: xxx-xx-xxxx-xxx-x    
+       
+Published by:  
+Aalborg University Press  
+Skjernvej 4A, 2nd floor    
+DK – 9220 Aalborg Ø     
+Phone: +45 99407140   
+aauf@forlag.aau.dk     
+forlag.aau.dk      
 
-I [kapitel 4](#kap4) af _____, ... 
-
-I [kapitel 5](#kap5) af _____, ... 
-
-I [kapitel 6](#kap6) af _____, ... 
-
-I [kapitel 7](#kap7) af _____, ... 
+© Copyright by author

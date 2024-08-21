@@ -1,12 +1,10 @@
-# Grundskoler som mødested (**WIP DO NOT CITE!**) {#kap3}
+# Grundskoler som mødested (**WIP DO NOT CITE!**) {#kap4}
 
-*Jeppe Fjeldgaard Larsen*
+*[Jeppe Fjeldgaard Larsen](https://vbn.aau.dk/da/persons/jeppefl)*
 
 ```{r fig-schoolseg, echo=FALSE, out.width= "100%"}
 knitr::include_graphics("images/dalle-schoolseg.png")
 ```
-
-## Introduktion
 
 Jens Joel (MF, Socialdemokratiet) skriver i sin bog *Fællesskaberen*, at "tilliden, forståelsen og samhørigheden" i Danmark er truet. Denne trussel mod den danske sammenhængskraft skyldes blandt andet, at vi ikke længere "mødes [...] i det, der før var 'folkets skole'. I hvert fald ikke i tilstrækkelig grad" [@joel2022, s. 11]. Joel formår fortrinligt at tegne det grundlæggende solidariske og socialdemokratiske ideal for en fælles grundskole, hvor der er en tro på, at møder på tværs af forskellige baggrunde—hvad enten det er klasse eller etnisk tilhørsforhold—skaber tillid og tryghed i samfundet. I den socialdemokratiske forståelse af staten og samfundet er grundskolen dermed en helt fundamental "byggesten i samfundet" (Ibid., s. 11), fordi grundskolen er en institution, hvor børn kan interagere med hinanden, uanset deres ligheder med andre børn og deres forældre.
 

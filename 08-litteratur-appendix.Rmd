@@ -6,7 +6,7 @@
 
 # Segregeringsmål (**WIP DO NOT CITE!**) {#bilag1}
 
-*Jeppe Fjeldgaard Larsen*
+*[Jeppe Fjeldgaard Larsen](https://vbn.aau.dk/da/persons/jeppefl)*
 
 Et kendt og ofte anvendt citat, der definerer segregering, er fra Massey og Dentons [-@massey1988] klassiske artikel, hvor de skriver: *“At a general level, residential segregation is the degree to which two or more groups live separately from one another, in different parts of the urban environment”* (s. 282). Citatet indfanger den centrale logik, når vi taler om segregering. Segregering er en situation, hvor folk i en given kontekst---være det uddannelsessystemer(t), arbejdsmarkedet eller boligmarkedet---ikke møder hinanden eller er eksponerede for hinanden. Det vil sige, at under absolut segregering går folk fra forskellige baggrunde ikke på de samme skoler, arbejder ikke på de samme arbejdspladser og bor ikke i de samme nabolag.
 
