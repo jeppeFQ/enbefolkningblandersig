@@ -4,3 +4,110 @@
 ```{r fig-partner222, echo=FALSE, out.width= "100%"}
 knitr::include_graphics("images/dalle-wedding.png")
 ```
+
+
+
+
+```{r tab-3-1, echo=FALSE, message=FALSE}
+
+read_csv2("data/tabel_2_1.csv") %>% 
+  rename(`Forældre 1` = f1,
+         `Forældre 2` = f2) %>% 
+  gt() %>% 
+  tab_spanner(
+    label = md(""),
+    columns = c(2,3)
+  ) %>% 
+  cols_align(
+    align = "left",
+    columns = c(2,3)
+  ) %>%
+  tab_style(
+    style = list(
+      cell_text(style = "italic")
+      ),
+    locations = cells_body(
+      columns = c(`Forældre 1`, `Forældre 2`),
+    )
+  ) %>% 
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_body(
+      columns = c(Gruppe, Betegnelse),
+    )
+  ) %>% 
+  tab_caption(caption = md("Udfaldsrum for oprindelse baseret på eksisterende klassifikationer fra Danmarks Statistik.\n"))
+
+```
+
+
+
+
+
+```{r tab-3-2, echo=FALSE, message=FALSE}
+
+read_csv2("data/tabel_2_2.csv") %>% 
+  gt(rowname_col = "Gruppe") %>% 
+  tab_spanner(
+    label = md("1985"),
+    columns = c(2:3)
+  ) %>% 
+  cols_label(
+    n_1 = "n",
+    pct_1 = "%",
+    n_2 = "n",
+    pct_2 = "%"
+  ) %>% 
+  tab_spanner(
+    label = md("2019"),
+    columns = c(4:5)
+  ) %>% 
+  tab_style(
+    style = cell_text(weight = "bold"),
+    locations = cells_body(
+      columns = c(Gruppe),
+    )
+  ) %>%
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+      ),
+    locations = cells_body(
+      columns = c(n_1, pct_1, n_2, pct_2),
+      rows = n_1 >= 1000000
+    )
+  ) %>% 
+  fmt_number(
+    columns = c(n_1, n_2),
+    sep_mark = ".",
+    decimals = 0,
+    scale_by = 1
+  ) %>% 
+  sub_missing(
+    columns = everything(),
+    missing_text = " "
+  ) %>% 
+  tab_caption(caption = md("Gruppestørrelser. 0-16-årige opgjort i 1995 og 2019.\n"))
+
+```
+
+
+
+
+
+```{r tab-3-3, echo=FALSE, message=FALSE}
+
+read_csv2("data/tabel_2_3.csv") %>% 
+  gt(groupname_col = "Klassfikation") %>% 
+  cols_label(
+    n = "n",
+    pct = "%"
+  ) %>% 
+  tab_source_note(
+    source_note = md(
+      "*Note*: Partnerskab opgjort i registre via DST-standardklassifikation (E_FAELLE_ID)."
+    )
+  ) %>%
+  tab_caption(caption = md("Andel med partner med dansk herkomst. Opgjort i 2019 for årgangen, der var 16 år i 2009 og levede i parforhold i 2019. Opdelt på henholdsvis standard og udvidet klassifikation.\n\n\n"))
+
+```
