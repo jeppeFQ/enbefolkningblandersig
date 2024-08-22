@@ -1,11 +1,19 @@
 
-# Titel {#kap3}
+# De blandede børn {#kap3}
+
+*[Jeppe Fjeldgaard Larsen](https://vbn.aau.dk/da/persons/jeppefl)* og *[Christian Albrekt Larsen](https://vbn.aau.dk/en/persons/albrekt)*
 
 ```{r fig-partner222, echo=FALSE, out.width= "100%"}
 knitr::include_graphics("images/dalle-wedding.png")
 ```
 
+I dette kapitel beskriver vi fremkomsten og omfanget af en ny kategori af børn med blandet etisk baggrund. Disse børn medvirker naturligt til at udviske etniske grænsedragninger, da de ikke kan placeres i gamle ”os” og ”dem” kategorier.[^31] Opgaven besværliggøres af, at kategorien ikke findes hos Danmark Statistik. Kapitlet starter med en introduktion til de eksisterende kategorier, som Danmark Statistik bruger til at dele befolkningen op i danskere, indvandrere og efterkommere. En opdeling som vi lidt lemfældigt har brugt i de forudgående kapitler. Dernæst udvikler vi en ny kategorisering, der kan indfange fremkomsten af børn med blandet etnisk herkomst. Disse kategorier bruges i det tredje afsnit til at beskrive udviklingen i antallet af disse børn. Vi beskriver de 0-16 årige i perioden fra 1985 til 2019.  I det tredje afsnit beskriver vi, hvordan partnerskabsmønstrene ser ud hos disse ”blandede” børn. I det afsluttende afsnit diskuterer vi kort resultater i relation til konklusionerne fra [kapital 2](#kap2). 
 
+[^31]: Dele af teksten er direkte baseret på Larsen, J. F., & Larsen, C. A. (2022). Herkomst blandt 0 – 16-årige bosat i Danmark: Stigende etnisk diversitet og koncentration fra 1985 til 2019. *Metode & Forskningsdesign*, (4), 47-68. Vi takker tidsskriftet for lov til at genoptrykke dele af teksten. 
+
+## Hidtidige statistiske begreber 
+
+Det danske CPR-register og de eksisterende klassifikationer foretaget af DST giver et godt udgangspunkt for at give en beskrivelse af integrationsprocesser. Andre lande, for eksempel USA og Storbritannien, har haft en spørgeskematradition [@mendez2013]. I forhold til etnicitet har spørgeskematraditionen den fordel, at der kan laves kategorier, hvor befolkningen selv kan angive deres tilhørsforhold, herunder tilhørsforhold på tværs af etniske grupper. Den registerbaseret tradition er mindre sensitiv over for egne klassifikationer. Derfor kan det være vanskeligt at ”opdage” de blandede børn og deres udviskning af etniske distinktioner. 
 
 
 ```{r tab-3-1, echo=FALSE, message=FALSE}
