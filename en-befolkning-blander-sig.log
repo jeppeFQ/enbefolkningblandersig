@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.8.26)  26 AUG 2024 13:55
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.8.26)  26 AUG 2024 14:10
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1246,8 +1246,8 @@ LaTeX Warning: Hyper reference `indledning' on page 60 undefined on input line 6
 
 [60]
 Kapitel 6.
-File: images/kap6.jpg Graphic file (type bmp)
-<images/kap6.jpg>
+File: images/kap71.jpg Graphic file (type bmp)
+<images/kap71.jpg>
 
 
 [61
@@ -1318,8 +1318,8 @@ File: en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf Graphic file (t
 
 ]
 Kapitel 7.
-File: images/kap71.jpg Graphic file (type bmp)
-<images/kap71.jpg>
+File: images/kap7.jpg Graphic file (type bmp)
+<images/kap7.jpg>
 
 
 [73]
