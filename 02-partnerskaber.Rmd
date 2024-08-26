@@ -7,6 +7,8 @@
 knitr::include_graphics("images/kap2.jpg")
 ```
 
+\newpage
+
 Et fast forhold eller ægteskab er den dybeste og mest forpligtende sociale forbindelse, man kan have med en anden person. Derfor er det at vælge en fast partner en af de vigtigste beslutninger, vi træffer. Vælger vi den rette partner, kan det berige vores liv markant. Omvendt kan et forkert valg føre til dybe materielle, følelsesmæssige og sociale tab, især hvis det ender i skilsmisse.  De betydelige konsekvenser af at vælge en partner fører sandsynligvis til, at mange mennesker foretrækker en følelse af sikkerhed i deres valg. Modsat den populære forestilling om, at modsætninger tiltrækker hinanden, viser omfattende samfundsvidenskabelig forskning nemlig, at vi mennesker typisk vælger en partner, der ligner os selv på en lang række områder. Det gælder socioøkonomiske faktorer som uddannelse, job og indkomst såvel som kulturelle faktorer som etnicitet, religion, værdier [@kalmijn1998]. 
 
 I lyset af tendensen til at folk typisk vælger partnere, der ligner dem selv, er det ikke overraskende, at indvandrere og deres efterkommere i Danmark og andre lande ofte foretrækker partnere fra deres egne oprindelseslande. Der er imidlertid store forskelle på hvor udbredt denne tendens er imellem forskellige indvandrergrupper. I nogle indvandrergrupper er det nok mere hyppigt, at man danner par indenfor gruppen end tilfældigheder ville tilsige, men der er omvendt også mange der danner par udenfor gruppen. I andre indvandrergrupper er tendensen til at vælge partnere inden for gruppen meget stærkere, og tværetniske forhold er derfor sjældnere.
@@ -17,7 +19,7 @@ I dette kapitel giver jeg i det først afsnit en kort introduktion til den socio
 
 I sociologien er der en lang tradition for at undersøge årsager og konsekvenser af forskelle i minoritetsgrupper tendens til, at danne par inden- eller udenfor egen gruppe. Det skyldes en forventning om, at udbredelsen af tværetniske ægteskaber, især mellem repræsentanter for indvandrergrupper og majoritetsbefolkningen, kan give en klar indikation på, hvor socialt integrerede indvandrergrupper er i destinationslandet. En af de mest markante repræsentanter for dette perspektiv, den amerikanske sociolog Milton M. Gordon [-@gordon1964], argumenterede således for, at udbredelsen af tværetniske parfold er den ultimative indikation på, at barrierer mellem etniske grupper nedbrydes og at den sociale sammenhængskraft styrkes. 
 
-Ægteskabets rolle i at forene mennesker er et velkendt fænomen gennem historien. Traditionelt har ægteskaber ofte været brugt til at skabe alliancer mellem familier eller endda hele kongeriger. I den tidlige middelalder var det fx almindeligt, at den romerske elite i Vesteuropa indgik ægteskaber med ledere af indvandrende stammer. Dette førte til en kulturel fusion mellem den romerske kultur og stammernes traditioner (OBS Wickham, 2009 OBS). Samtidig kunne det være en måde at skabe mere fred og mindre konflikt.
+Ægteskabets rolle i at forene mennesker er et velkendt fænomen gennem historien. Traditionelt har ægteskaber ofte været brugt til at skabe alliancer mellem familier eller endda hele kongeriger. I den tidlige middelalder var det fx almindeligt, at den romerske elite i Vesteuropa indgik ægteskaber med ledere af indvandrende stammer. Dette førte til en kulturel fusion mellem den romerske kultur og stammernes traditioner (***OBS Wickham, 2009 OBS***). Samtidig kunne det være en måde at skabe mere fred og mindre konflikt.
 
 I vore dage kan tværetniske ægteskaber mellem helt almindelige mennesker stadig have stor betydning. Det er der flere forskellige grunde til. For det første indikerer dannelsen af tværetniske parforhold, at fordomme og sociale grænsedragninger mellem etniske grupper ikke er stærke nok til at forhindre dannelsen af intime og tillidsfulde relationer mellem to personer fra forskellige etniske grupper. Dette kan være afgørende for, at barriere nedbrydes yderligere mellem grupperne. For det andet forener et blandet par typisk ikke kun to individer, men også deres familie og venner. Personer der indgår i blandede par kan således agere brobyggere mellem sociale netværk eller grupper, som ellers ikke ville have megen kontakt med hinanden. For det tredje har børn fra  blandede parforhold en unik position, når det kommer til at udviske kulturelle forskelle, hvilket vil blive udforsket yderligere i [kapitel 3](#kap3).
 
@@ -31,7 +33,7 @@ I det følgende skal vi derfor se nærmere på omfanget af tværetniske partners
 knitr::include_graphics("images/figur_intergruppepartnerskaber_alle.png")
 ```
 
-Det velkendte mønster er, at hovedparten af partnerskaber både i 1985 og 2020 er etableret blandt personer med samme oprindelsesland. Ikke desto mindre viser opgørelsen, at andelen af tværetniske partnerskaber er stigende. Fra femXXX procent i 1985 til 10XXX procent i 2020. 
+Det velkendte mønster er, at hovedparten af partnerskaber både i 1985 og 2020 er etableret blandt personer med samme oprindelsesland. Ikke desto mindre viser opgørelsen, at andelen af tværetniske partnerskaber er stigende. Fra ***femXXX procent*** i 1985 til ***10XXX procent*** i 2020. 
 
 I Figur \@ref(fig:fig-2-2)  viser den øverste bjælke partnerskabsmønstrene i 2020 blandt alle indvandrere, mens de underliggende bjælker viser mønstrene for ti største indvandrergrupper (der er i partnerskaber med bosatte i Danmark i 2020). 
 	
@@ -39,7 +41,7 @@ I Figur \@ref(fig:fig-2-2)  viser den øverste bjælke partnerskabsmønstrene i 
 knitr::include_graphics("images/figur_intergruppepartnerskaber_2020.png")
 ```
 
-I 2020 var XXX procent af indvandrere (i partnerskab) i parforhold mellem en person fra samme oprindelsesland, som dem selv. XX procent havde en partner med dansk oprindelse. Endeligt havde et mindretal på XXX procent en partner fra et andet oprindelsesland, end deres eget (og Danmark).  Næste del af figuren viser, at der i nogle indvandrergrupper er en stærkere tendens til at danne par med personer fra eget oprindelsesland. Dette pardannelsesmønster er mest udbredt blandt indvandrere med Tyrkisk, Pakistansk og Somalisk baggrund. Omvendt er partnerskab med danskere mest udbredt blandt indvandrere fra Ukraine, Iran og Bosnien-Herzegovina. 
+I 2020 var ***XXX procent*** af indvandrere (i partnerskab) i parforhold mellem en person fra samme oprindelsesland, som dem selv. ***XX procent*** havde en partner med dansk oprindelse. Endeligt havde et mindretal på ***XXX procent*** en partner fra et andet oprindelsesland, end deres eget (og Danmark).  Næste del af figuren viser, at der i nogle indvandrergrupper er en stærkere tendens til at danne par med personer fra eget oprindelsesland. Dette pardannelsesmønster er mest udbredt blandt indvandrere med Tyrkisk, Pakistansk og Somalisk baggrund. Omvendt er partnerskab med danskere mest udbredt blandt indvandrere fra Ukraine, Iran og Bosnien-Herzegovina. 
 
 ## Forklaringer på mønstre i tværetniske partnerskaber 
 

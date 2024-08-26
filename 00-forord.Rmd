@@ -19,7 +19,7 @@ Forskningsleder på MNcontact. \
 Professor, Institut for Politik og Samfund\
 Aalborg Universitet\
 
-<br/><br/><br/><br/>
+\newpage
 
 ISSN: xxxx-xxxx      
 ISBN: xxx-xx-xxxx-xxx-x    
@@ -32,4 +32,4 @@ Phone: +45 99407140
 aauf@forlag.aau.dk     
 forlag.aau.dk      
 
-© Copyright by author
+© Copyright by author(s)
