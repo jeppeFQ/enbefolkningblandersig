@@ -3,7 +3,7 @@
 *[Christian Albrekt Larsen](https://vbn.aau.dk/en/persons/albrekt)*, [Laciné E. N. Diop]( https://vbn.aau.dk/en/persons/led) og *[Jeppe Fjeldgaard Larsen](https://vbn.aau.dk/da/persons/jeppefl)*
 
 ```{r fig-work, echo=FALSE, out.width= "100%"}
-knitr::include_graphics("images/dalle-work.png")
+knitr::include_graphics("images/kap5.jpg")
 ```
 
 Indvandrernes og efterkommerens succes, eller manglende succes, på arbejdsmarkedet har været centralt i både politiske og akademiske diskussioner. Med god ret, da økonomiske ressourcer er centralt for at skabe gode liv for indvandrere og deres efterkommere. Men ansigt-til-ansigt interaktionen på arbejdspladserne er også centralt for at opbygge sociale relationer og nedbryde eventuelle fordomme på tværs af etniske skel, se [kapitel 1](#kap1) og [kapitel 6](#kap6). Arbejdspladserne har således ikke bare potentiel til at forandre indvandrere og efterkommere. De har også potentiale til at forandre majoriteten. 

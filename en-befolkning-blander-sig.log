@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.6.14)  23 AUG 2024 15:33
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.6.14)  26 AUG 2024 10:37
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -933,8 +933,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--168
 
 [6]
 Kapitel 1.
-File: images/dalle-smeltedige.png Graphic file (type bmp)
-<images/dalle-smeltedige.png>
+File: images/kap1.jpg Graphic file (type bmp)
+<images/kap1.jpg>
 
 
 [7
@@ -954,6 +954,9 @@ Underfull \hbox (badness 1939) in paragraph at lines 210--210
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [10]
 File: en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf Graphic file (type pdf)
@@ -968,9 +971,6 @@ Overfull \hbox (0.85342pt too wide) has occurred while \output is active
 [11]
 
 [12]
-Underfull \vbox (badness 1331) has occurred while \output is active []
-
-
 
 
 Overfull \hbox (147.81905pt too wide) has occurred while \output is active
@@ -981,16 +981,15 @@ Overfull \hbox (147.81905pt too wide) has occurred while \output is active
 
 [14]
 
-LaTeX Warning: Reference `fig:fig-1-2' on page 15 undefined on input line 246.
-
-
-
 
 Overfull \hbox (111.34343pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 1.4.  BETYDNINGEN AF STØRRELSESFORHOLDENE MELLEM MAJORITET OG MINORITET \TU/lmr/m/n/10 15
  []
 
 [15]
+
+LaTeX Warning: Reference `fig:fig-1-2' on page 16 undefined on input line 246.
+
 File: en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf>
 
@@ -1012,8 +1011,8 @@ Underfull \hbox (badness 1484) in paragraph at lines 252--253
 
 ]
 Kapitel 2.
-File: images/dalle-wedding.png Graphic file (type bmp)
-<images/dalle-wedding.png>
+File: images/kap2.jpg Graphic file (type bmp)
+<images/kap2.jpg>
 
 
 [21]
@@ -1021,12 +1020,11 @@ File: images/dalle-wedding.png Graphic file (type bmp)
 [22]
 File: images/figur_intergruppepartnerskaber_alle.png Graphic file (type bmp)
 <images/figur_intergruppepartnerskaber_alle.png>
-
-
-[23]
 File: images/figur_intergruppepartnerskaber_2020.png Graphic file (type bmp)
 <images/figur_intergruppepartnerskaber_2020.png>
 
+
+[23]
 
 [24]
 
@@ -1045,8 +1043,8 @@ Overfull \hbox (16.12454pt too wide) has occurred while \output is active
 
 ]
 Kapitel 3.
-File: images/dalle-wedding.png Graphic file (type bmp)
-<images/dalle-wedding.png>
+File: images/kap3.jpg Graphic file (type bmp)
+<images/kap3.jpg>
 
 
 [29]
@@ -1059,8 +1057,6 @@ LaTeX Warning: Reference `tab:tab-3-1' on page 31 undefined on input line 358.
 Overfull \hbox (92.48003pt too wide) in alignment at lines 360--375
  [] [] [] [] 
  []
-
-
 
 [31]
 
@@ -1095,14 +1091,18 @@ LaTeX Warning: Reference `fig:fig-1-2' on page 32 undefined on input line 407.
 
 
 [32]
+
+LaTeX Warning: Reference `fig:fig-3-1' on page 33 undefined on input line 411.
+
 File: images/figur_3_1.png Graphic file (type bmp)
 <images/figur_3_1.png>
 
-LaTeX Warning: Reference `tab:tab-3-3' on page 33 undefined on input line 421.
-
-
 
 [33]
+
+LaTeX Warning: Reference `tab:tab-3-3' on page 34 undefined on input line 421.
+
+
 Underfull \hbox (badness 7540) in paragraph at lines 447--448
 []\TU/lmr/m/it/10 Note\TU/lmr/m/n/10 : Partnerskab opgjort i registre via DST-standardklassifikation
  []
@@ -1125,197 +1125,184 @@ LaTeX Warning: Reference `tab:tab-3-3' on page 34 undefined on input line 450.
 
 ]
 Kapitel 4.
-File: images/dalle-schoolseg.png Graphic file (type bmp)
-<images/dalle-schoolseg.png>
+File: images/kap4.jpg Graphic file (type bmp)
+<images/kap4.jpg>
 
 
 [37]
 
 [38]
 
-LaTeX Warning: Citation `ref-allport1979' on page 39 undefined on input line 477.
-
-
-
 [39]
 
+LaTeX Warning: Citation `ref-bjerrenielsen2020' on page 40 undefined on input line 486.
+
+
+
 [40]
-
-LaTeX Warning: Citation `ref-bjerrenielsen2020' on page 41 undefined on input line 495.
-
-
-
-[41]
 File: images/figur_3_1c_distance_antal.pdf Graphic file (type pdf)
 <use images/figur_3_1c_distance_antal.pdf>
 
 
-[42]
+[41]
 
-LaTeX Warning: Citation `ref-bjerrenielsen2020' on page 43 undefined on input line 511.
-
-
-LaTeX Warning: Citation `ref-nielsen2019' on page 43 undefined on input line 511.
+LaTeX Warning: Citation `ref-bjerrenielsen2020' on page 42 undefined on input line 498.
 
 
+LaTeX Warning: Citation `ref-nielsen2019' on page 42 undefined on input line 498.
 
-[43]
-Underfull \hbox (badness 3407) in paragraph at lines 515--516
+
+Underfull \hbox (badness 3407) in paragraph at lines 502--503
 \TU/lmr/m/n/10 Når vi måler graden af segregering, er det mest anvendte mål for
  []
 
 
 
-[44]
+[42]
 
-[45]
+[43]
 File: images/figur_3_2.pdf Graphic file (type pdf)
 <use images/figur_3_2.pdf>
 
 
-[46]
+[44]
 
-[47]
+[45]
 File: images/Figur4.png Graphic file (type bmp)
 <images/Figur4.png>
 
 
-[48]
+[46]
+
+LaTeX Warning: Reference `fig:fig-4-4' on page 47 undefined on input line 539.
+
+
 
 
 Overfull \hbox (1.56561pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 4.4.  SKOLESEGREGERING SOM PRODUKT AF BOLIGSEGREGERING \TU/lmr/m/n/10 49
+\TU/lmr/m/sl/10 4.6.  SKOLESEGREGERING SOM PRODUKT AF BOLIGSEGREGERING \TU/lmr/m/n/10 47
  []
 
-[49]
+[47]
 File: images/Figur5.png Graphic file (type bmp)
 <images/Figur5.png>
 
 
-[50]
+[48]
 
+[49]
 
-Overfull \hbox (1.56561pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 4.4.  SKOLESEGREGERING SOM PRODUKT AF BOLIGSEGREGERING \TU/lmr/m/n/10 51
- []
-
-[51]
-
-[52]
-
-[53]
-
-[54
+[50
 
 ]
 Kapitel 5.
-File: images/dalle-work.png Graphic file (type bmp)
-<images/dalle-work.png>
+File: images/kap5.jpg Graphic file (type bmp)
+<images/kap5.jpg>
 
 
-[55]
-Underfull \hbox (badness 3158) in paragraph at lines 579--579
+[51]
+Underfull \hbox (badness 3158) in paragraph at lines 565--565
 []\TU/lmr/bx/n/14.4 Den etniske sammensætning af arbejd-
  []
 
 
 
-[56]
+[52]
 
-LaTeX Warning: Hyper reference `bilagA' on page 57 undefined on input line 585.
+LaTeX Warning: Hyper reference `bilagA' on page 53 undefined on input line 571.
 
 File: en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf>
 
-LaTeX Warning: Hyper reference `bilagA' on page 57 undefined on input line 597.
+LaTeX Warning: Hyper reference `bilagA' on page 53 undefined on input line 583.
 
 
 
-[57]
+[53]
 
-[58]
+[54]
 File: images/Figur_4_1.png Graphic file (type bmp)
 <images/Figur_4_1.png>
 
-Underfull \hbox (badness 1460) in paragraph at lines 615--616
+Underfull \hbox (badness 1460) in paragraph at lines 601--602
 \TU/lmr/m/n/10 herkomst kan nuanceres på mange forskellige måder. For gruppen af
+ []
+
+
+Underfull \hbox (badness 3417) in paragraph at lines 603--604
+\TU/lmr/m/n/10 med dansk-dansk herkomst (gennemsnitlige) eksponering til MENAPT-
  []
 
 
 
 
 Overfull \hbox (171.65234pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 5.2.  GENNEMSNITLIG EKSPONERING TIL INDVANDRERE OG EFTERKOMMERE PÅ ARBEJDSPLADSER \TU/lmr/m/n/10 59
+\TU/lmr/m/sl/10 5.2.  GENNEMSNITLIG EKSPONERING TIL INDVANDRERE OG EFTERKOMMERE PÅ ARBEJDSPLADSER \TU/lmr/m/n/10 55
  []
 
-[59]
-Underfull \hbox (badness 3417) in paragraph at lines 617--618
-\TU/lmr/m/n/10 med dansk-dansk herkomst (gennemsnitlige) eksponering til MENAPT-
- []
-
+[55]
 File: images/Figur_4_2.png Graphic file (type bmp)
 <images/Figur_4_2.png>
 File: images/Figur_4_3.png Graphic file (type bmp)
 <images/Figur_4_3.png>
 
-Underfull \hbox (badness 1442) in paragraph at lines 637--638
+
+[56]
+
+[57]
+Underfull \hbox (badness 1442) in paragraph at lines 623--624
 \TU/lmr/m/n/10 Beskæftigede indvandrere og efterkommere er i høj grad eksponeret til
  []
 
 
-Underfull \hbox (badness 1810) in paragraph at lines 637--638
+Underfull \hbox (badness 1810) in paragraph at lines 623--624
 \TU/lmr/m/n/10 beskæftigede med dansk-dansk herkomst på deres arbejdsplads. Diop-
  []
 
-
-
-[60]
-
-[61]
 File: images/Figur_4_4.png Graphic file (type bmp)
 <images/Figur_4_4.png>
 
 
-[62]
+[58]
 File: images/Figur_4_5.png Graphic file (type bmp)
 <images/Figur_4_5.png>
 
 
 
 Overfull \hbox (10.41672pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 5.5.  MINORITETERS ”ISOLATION” FRA MAJORITETSBEFOLKNINGEN \TU/lmr/m/n/10 63
+\TU/lmr/m/sl/10 5.5.  MINORITETERS ”ISOLATION” FRA MAJORITETSBEFOLKNINGEN \TU/lmr/m/n/10 59
  []
 
-[63]
+[59]
 
-LaTeX Warning: Hyper reference `indledning' on page 64 undefined on input line 661.
+LaTeX Warning: Hyper reference `indledning' on page 60 undefined on input line 647.
 
 
 
-[64]
+[60]
 Kapitel 6.
-File: images/dalle-friendships.png Graphic file (type bmp)
-<images/dalle-friendships.png>
+File: images/kap6.jpg Graphic file (type bmp)
+<images/kap6.jpg>
 
 
-[65
+[61
 
 ]
 
-LaTeX Warning: Reference `tab:tab-6-1' on page 66 undefined on input line 683.
+[62]
+
+LaTeX Warning: Reference `tab:tab-6-1' on page 63 undefined on input line 669.
 
 
-LaTeX Warning: Reference `tab:tab-6-1' on page 66 undefined on input line 683.
+LaTeX Warning: Reference `tab:tab-6-1' on page 63 undefined on input line 669.
 
 
-
-[66]
-Overfull \hbox (50.3pt too wide) in alignment at lines 686--697
+Overfull \hbox (50.3pt too wide) in alignment at lines 672--683
  [] [] [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 699--702
+Underfull \hbox (badness 10000) in paragraph at lines 685--688
 
  []
 
@@ -1325,39 +1312,50 @@ File: en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf Graphic file (t
 
 
 Overfull \hbox (48.22453pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 6.2.  MAJORITETENS VENSKABER MED INDVANDRERE OG EFTERKOMMERE \TU/lmr/m/n/10 67
+\TU/lmr/m/sl/10 6.2.  MAJORITETENS VENSKABER MED INDVANDRERE OG EFTERKOMMERE \TU/lmr/m/n/10 63
  []
 
-[67]
+[63]
 
-[68]
+[64]
 File: images/Figur_6_2.jpg Graphic file (type bmp)
 <images/Figur_6_2.jpg>
-
-Underfull \vbox (badness 6477) has occurred while \output is active []
-
 
 
 
 Overfull \hbox (48.22453pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 6.2.  MAJORITETENS VENSKABER MED INDVANDRERE OG EFTERKOMMERE \TU/lmr/m/n/10 69
+\TU/lmr/m/sl/10 6.2.  MAJORITETENS VENSKABER MED INDVANDRERE OG EFTERKOMMERE \TU/lmr/m/n/10 65
  []
 
-[69]
+[65]
 
-[70]
+[66]
 File: en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf>
 File: en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf>
 
 
-[71]
+[67]
 File: en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf>
 
 
-[72]
+[68]
+
+[69]
+
+[70]
+
+[71]
+
+[72
+
+]
+Kapitel 7.
+File: images/kap7.jpg Graphic file (type bmp)
+<images/kap7.jpg>
+
 
 [73]
 
@@ -1365,36 +1363,34 @@ File: en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf Graphic file (t
 
 [75]
 
-[76
-
-]
-Kapitel 7.
-File: images/dalle-integration.png Graphic file (type bmp)
-<images/dalle-integration.png>
-
-LaTeX Warning: Citation `ref-nielsen2024' on page 77 undefined on input line 760.
-
-
+[76]
 
 [77]
-
-[78]
-
-[79]
-
-[80]
-
-[81]
-Overfull \hbox (4.81201pt too wide) in paragraph at lines 787--788
+Overfull \hbox (4.81201pt too wide) in paragraph at lines 773--774
 []\TU/lmr/m/n/10 Diop-Christensen et al. ([]2024[]) viser, at (ikke-vestlige) indvandrere/efterkommere,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 789--789
+Underfull \hbox (badness 10000) in paragraph at lines 775--775
 []\TU/lmr/bx/n/14.4 Kontaktperspektivets begrænsninger og
  []
 
 
+
+[78]
+
+
+Overfull \hbox (41.90562pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 7.4.  KONTAKTPERSPEKTIVETS BEGRÆNSNINGER OG VIDERE FORSKNING \TU/lmr/m/n/10 79
+ []
+
+[79]
+
+[80
+
+]
+
+[81]
 
 [82]
 
@@ -1405,86 +1401,62 @@ Overfull \hbox (41.90562pt too wide) has occurred while \output is active
 
 [83]
 
-[84
-
-]
-
-[85]
-
-[86]
+[84]
 
 
 Overfull \hbox (41.90562pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 7.4.  KONTAKTPERSPEKTIVETS BEGRÆNSNINGER OG VIDERE FORSKNING \TU/lmr/m/n/10 87
+\TU/lmr/m/sl/10 7.4.  KONTAKTPERSPEKTIVETS BEGRÆNSNINGER OG VIDERE FORSKNING \TU/lmr/m/n/10 85
  []
+
+[85]
+
+[86
+
+]
+Bilag A.
+
+LaTeX Warning: Citation `ref-duncan1955' on page 87 undefined on input line 1030.
+
+
 
 [87]
 
 [88]
 
-
-Overfull \hbox (41.90562pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 7.4.  KONTAKTPERSPEKTIVETS BEGRÆNSNINGER OG VIDERE FORSKNING \TU/lmr/m/n/10 89
- []
-
 [89]
-
-[90
-
-]
-Bilag A.
-
-
-[91]
-
-LaTeX Warning: Citation `ref-duncan1955' on page 92 undefined on input line 1047.
-
-
-
-[92]
-
-[93]
 File: en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf>
 
 
-[94]
+[90]
 
-[95]
+[91]
 
-[96]
+[92]
 
-[97]
+[93]
 File: en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf>
 File: en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[94]
+Underfull \vbox (badness 4569) has occurred while \output is active []
 
 
 
-[98]
-Underfull \vbox (badness 3271) has occurred while \output is active []
-
-
-
-[99]
+[95]
 File: en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf>
 
-
-[100]
-
-[101]
-
-[102
-
-]
-Bilag B.
+LaTeX Warning: Reference `fig:fig-3-2' on page 96 undefined on input line 1106.
 
 
-[103] (./en-befolkning-blander-sig.aux)
+
+[96]
+
+[97] (./en-befolkning-blander-sig.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 1
 L3 programming layer <2024-05-27>
@@ -1494,12 +1466,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 23977 strings out of 476194
- 463678 string characters out of 5784677
- 1943557 words of memory out of 5000000
- 46101 multiletter control sequences out of 15000+600000
- 564576 words of font info for 96 fonts, out of 8000000 for 9000
+ 24020 strings out of 476194
+ 463334 string characters out of 5784677
+ 1942557 words of memory out of 5000000
+ 46145 multiletter control sequences out of 15000+600000
+ 564568 words of font info for 95 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 94i,8n,123p,2856b,533s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,8n,123p,2681b,533s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on en-befolkning-blander-sig.pdf (103 pages).
+Output written on en-befolkning-blander-sig.pdf (97 pages).

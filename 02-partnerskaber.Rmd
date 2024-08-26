@@ -4,7 +4,7 @@
 *[Hans-Peter Y. Qvist](https://vbn.aau.dk/da/persons/hpq)*
 
 ```{r fig-partner, echo=FALSE, out.width= "100%"}
-knitr::include_graphics("images/dalle-wedding.png")
+knitr::include_graphics("images/kap2.jpg")
 ```
 
 Et fast forhold eller ægteskab er den dybeste og mest forpligtende sociale forbindelse, man kan have med en anden person. Derfor er det at vælge en fast partner en af de vigtigste beslutninger, vi træffer. Vælger vi den rette partner, kan det berige vores liv markant. Omvendt kan et forkert valg føre til dybe materielle, følelsesmæssige og sociale tab, især hvis det ender i skilsmisse.  De betydelige konsekvenser af at vælge en partner fører sandsynligvis til, at mange mennesker foretrækker en følelse af sikkerhed i deres valg. Modsat den populære forestilling om, at modsætninger tiltrækker hinanden, viser omfattende samfundsvidenskabelig forskning nemlig, at vi mennesker typisk vælger en partner, der ligner os selv på en lang række områder. Det gælder socioøkonomiske faktorer som uddannelse, job og indkomst såvel som kulturelle faktorer som etnicitet, religion, værdier [@kalmijn1998]. 

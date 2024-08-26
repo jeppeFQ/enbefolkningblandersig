@@ -3,7 +3,7 @@
 *[Christian Albrekt Larsen](https://vbn.aau.dk/en/persons/albrekt)* og *[Jeppe Fjeldgaard Larsen](https://vbn.aau.dk/da/persons/jeppefl)*
 
 ```{r fig-friendships, echo=FALSE, out.width= "100%"}
-knitr::include_graphics("images/dalle-friendships.png")
+knitr::include_graphics("images/kap6.jpg")
 ```
 
 Bogen har indtil videre vist, at der i familier, skoler og på arbejdspladser er et stigende potentiale for, at majoriteten og minoriteter kan mødes ansigt-til-ansigt. I det kapitel beskriver, hvorvidt det også afspejler sig i venskaber mellem majoritet og minoriteter. Jævnfør [kapitel 1](#kap1) er vores antagelse, at der er relativt mange tværetniske venskaber. 

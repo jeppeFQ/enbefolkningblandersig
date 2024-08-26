@@ -4,7 +4,7 @@
 *[Christian Albrekt Larsen](https://vbn.aau.dk/en/persons/albrekt)*
 
 ```{r fig-smelte, echo=FALSE, out.width= "100%"}
-knitr::include_graphics("images/dalle-smeltedige.png")
+knitr::include_graphics("images/kap1.jpg")
 ```
 
 Denne bog bygger på to centrale antagelser. For det første, at tilstedeværelsen af sociale relationer og tillidsbånd på tværs af etniske grupper er afgørende for at sikre et velfungerende og trygt samfund. For det andet, at disse sociale relationer og tillidsbånd primært opstår, når mennesker mødes ansigt-til-ansigt i forskellige sammenhænge fx i familier, skoler og på arbejdspladser. Med det udgangspunkt fokuserer denne bog på forudsætningerne for, at der kan dannes sociale relationer og tillidsbånd mellem personer med dansk oprindelse og indvandrere og efterkommere i Danmark. Det har vi gjort ved at se nærmere på i hvilket omfang indvandrere og efterkommere og personer med dansk oprindelse er blandede med hinanden i familier og på skoler og arbejdspladser. Derudover har vi også undersøgt om der faktisk dannes sociale relationer mellem indvandrere og deres efterkommere og personer med dansk oprindelse i form af venskaber og parforhold.     
