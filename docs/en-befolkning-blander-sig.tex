@@ -138,6 +138,14 @@
 \fancyhead[L]{\footnotesize \nouppercase{\leftmark}} % Chapter title in footnotesize
 \fancyhead[R]{\footnotesize \thepage} % Page number in footnotesize
 
+\pagenumbering{roman}
+\pagestyle{empty}  % Suppress page numbering initially
+\AtBeginDocument{
+      \addtocounter{page}{6}  % Skip 6 pages
+      \pagestyle{plain}  % Start numbering from page 7
+      \pagenumbering{arabic}  % Set page numbering to Arabic numerals
+    }
+
 % Change "Chapter" to "Kapitel" throughout document
 \addto\captionsenglish{\renewcommand{\chaptername}{Kapitel}}
 % Change "Content" to "Indholdsfortegnelse"
@@ -179,7 +187,7 @@
 
 \title{En befolkning blander sig}
 \author{Christian Albrekt Larsen (red.) \and Jeppe Fjeldgaard Larsen \and Hans-Peter Y. Qvist (red.) \and Lanciné Diop-Christensen}
-\date{2024-08-29}
+\date{2024-08-29 15:15:17}
 
 \begin{document}
 \maketitle
