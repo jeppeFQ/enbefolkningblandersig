@@ -1,10 +1,10 @@
 --- 
 title: "En befolkning blander sig"
 author: 
-- Lanciné Diop-Christensen 
 - Christian Albrekt Larsen (red.) 
 - Jeppe Fjeldgaard Larsen
 - Hans-Peter Y. Qvist (red.)
+- Lanciné Diop-Christensen 
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -20,15 +20,18 @@ cover-image: images/AAU_logo_2012.png
 
 
 ```{r include=FALSE}
+
 options(tinytex.engine_args="-shell-escape")
+gdtools::register_gfont(family = "Fira Sans")
 
 library(tidyverse)
 library(ggimage)
-library(gt)
-library(sf)
 library(cowplot)
+library(sf)
 library(leaflet)
 library(leaflet.extras)
+library(flextable)
+library(gt)
 
 ```
 

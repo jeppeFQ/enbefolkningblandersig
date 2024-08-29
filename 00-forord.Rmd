@@ -33,3 +33,9 @@ aauf@forlag.aau.dk
 forlag.aau.dk      
 
 © Copyright by author(s)
+
+\newpage
+
+```{=latex}
+\tableofcontents
+```

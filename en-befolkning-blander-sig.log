@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.8.26)  26 AUG 2024 14:10
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.8.29)  29 AUG 2024 14:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
 **en-befolkning-blander-sig.tex
 (./en-befolkning-blander-sig.tex
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-07-20>
+L3 programming layer <2024-08-16>
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2024/02/08 v1.4n Standard LaTeX document class
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo
@@ -98,7 +98,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-07-20 L3 programming layer (loader) 
+Package: expl3 2024-08-16 L3 programming layer (loader) 
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2024-05-08 L3 backend support: XeTeX
 \g__graphics_track_int=\count277
@@ -110,9 +110,9 @@ Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
 Package: unicode-math-xetex 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2024-05-08 L3 Experimental document command parser
+Package: xparse 2024-08-16 L3 Experimental document command parser
 ) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2024-05-08 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
 ) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
@@ -446,47 +446,422 @@ Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 )) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
-) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip68
+\multirow@cntb=\count321
+\multirow@dima=\skip69
+\bigstrutjot=\dimen189
+) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen190
+\WF@size=\dimen191
+\c@WF@wrappedlines=\count322
+\WF@box=\box66
+\WF@everypar=\toks40
+Package: wrapfig 2003/01/31  v 3.6
+) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/floatrow/floatrow.sty
+Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
+(/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen192
+\captionmargin=\dimen193
+\caption@leftmargin=\dimen194
+\caption@rightmargin=\dimen195
+\caption@width=\dimen196
+\caption@indent=\dimen197
+\caption@parindent=\dimen198
+\caption@hangindent=\dimen199
+Package caption Info: Standard document class detected.
+)
+\c@float@type=\count323
+\float@exts=\toks41
+\float@box=\box67
+\@floatcapt=\box68
+Package floatrow Info: Modified float package code loaded on input line 455.
+Package floatrow Info: Modified rotfloat package code loaded on input line 473.
+\FR@everyfloat=\toks42
+\flrow@foot=\insert252
+\FB@wd=\dimen256
+\FBo@wd=\dimen257
+\FBc@wd=\dimen258
+\FBo@ht=\skip70
+\FBc@ht=\skip71
+\FBf@ht=\skip72
+\FBo@max=\skip73
+\FBc@max=\skip74
+\FBf@max=\skip75
+\c@FBl@b=\count324
+\floatbox@depth=\count325
+\c@FRobj=\count326
+\c@FRsobj=\count327
+\Xhsize=\skip76
+\sXhsize=\skip77
+\Zhsize=\skip78
+\sZhsize=\skip79
+\flrow@rowbox=\box69
+\FR@Zunitlength=\dimen259
+\c@FBcnt=\count328
+\FPOScnt=\count329
+\LTleft=\skip80
+\LTright=\skip81
+\LTleft=\skip82
+\LTright=\skip83
+\flrow@types=\toks43
+) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+\everycr=\toks44
+\minrowclearance=\skip84
+\rownum=\count330
+) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+(/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+(/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+)) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
+(/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box70
+\sift@deathcycles=\count331
+\@vwid@loff=\dimen260
+\@vwid@roff=\dimen261
+)
+\c@taburow=\count332
+\tabu@nbcols=\count333
+\tabu@cnt=\count334
+\tabu@Xcol=\count335
+\tabu@alloc=\count336
+\tabu@nested=\count337
+\tabu@target=\dimen262
+\tabu@spreadtarget=\dimen263
+\tabu@naturalX=\dimen264
+\tabucolX=\dimen265
+\tabu@Xsum=\dimen266
+\extrarowdepth=\dimen267
+\abovetabulinesep=\dimen268
+\belowtabulinesep=\dimen269
+\tabustrutrule=\dimen270
+\tabu@thebody=\toks45
+\tabu@footnotes=\toks46
+\tabu@box=\box71
+\tabu@arstrutbox=\box72
+\tabu@hleads=\box73
+\tabu@vleads=\box74
+\tabu@cellskip=\skip85
+) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box75
+) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/threeparttablex/threeparttablex.sty
+Package: threeparttablex 2013/07/23 v0.3 by daleif
+(/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+)
+\TPTL@width=\skip86
+) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box76
+\UL@hyphenbox=\box77
+\UL@skip=\skip87
+\UL@hook=\toks47
+\UL@height=\dimen271
+\UL@pe=\count338
+\UL@pixel=\dimen272
+\ULC@box=\box78
+Package: ulem 2019/11/18
+\ULdepth=\dimen273
+) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen274
+\c@nlinenum=\count339
+\TeXr@lab=\toks48
+) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+\c@caption@flags=\count340
+\c@continuedfloat=\count341
+Package caption Info: float package is loaded.
+Package caption Info: floatrow package is loaded.
+Package caption Info: floatrow package is loaded.
+Package caption Info: longtable package is loaded.
+(/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: threeparttable package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.8178333178912258.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.8178333178912258.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.8178333178912258.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans SemiBold scale = 0.8132042770525879.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans SemiBold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans SemiBold scale = 0.8132042770525879.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans SemiBold scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans Italic scale = 0.8178333178912258.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans Italic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans Italic scale = 0.8178333178912258.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans Italic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans SemiBold Italic scale = 0.8132042770525879.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans SemiBold Italic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans SemiBold Italic scale = 0.8132042770525879.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans SemiBold Italic scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraSans(0)' created for font 'Fira Sans'
+(fontspec)             with options
+(fontspec)             [Scale=MatchLowercase,Ligatures=TeX,Scale=1,BoldFont={Fira
+(fontspec)             Sans SemiBold},ItalicFont={Fira Sans
+(fontspec)             Italic},BoldItalicFont={Fira Sans SemiBold Italic}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[1]"Fira
+(fontspec)             Sans/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->s*[1]"Fira
+(fontspec)             Sans/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[1]"Fira Sans
+(fontspec)             SemiBold/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"Fira Sans
+(fontspec)             SemiBold/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->s*[1]"Fira Sans
+(fontspec)             Italic/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"Fira Sans
+(fontspec)             Italic/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->s*[1]"Fira
+(fontspec)             Sans SemiBold
+(fontspec)             Italic/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"Fira Sans SemiBold
+(fontspec)             Italic/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 134.
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans SemiBold scale = 0.9943369935107186.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans SemiBold scale = 0.9943369935107186.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans Italic scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans Italic scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans SemiBold Italic scale = 0.9943369935107186.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans SemiBold Italic scale = 0.9943369935107186.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraSans(1)' created for font 'Fira Sans'
+(fontspec)             with options [Scale=MatchLowercase,BoldFont={Fira Sans
+(fontspec)             SemiBold},ItalicFont={Fira Sans
+(fontspec)             Italic},BoldItalicFont={Fira Sans SemiBold Italic}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999971046048366]"Fira
+(fontspec)             Sans/OT:script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[0.9999971046048366]"Fira
+(fontspec)             Sans/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9943369935107186]"Fira Sans
+(fontspec)             SemiBold/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[0.9943369935107186]"Fira Sans
+(fontspec)             SemiBold/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.9999971046048366]"Fira Sans
+(fontspec)             Italic/OT:script=latn;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[0.9999971046048366]"Fira Sans
+(fontspec)             Italic/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.9943369935107186]"Fira Sans SemiBold
+(fontspec)             Italic/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[0.9943369935107186]"Fira Sans SemiBold
+(fontspec)             Italic/OT:script=latn;language=dflt;+smcp;"
+
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/FiraSans(1)/m/n on input line 134.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> TU/FiraSans(1)/m/it on input line 134.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> TU/FiraSans(1)/b/n on input line 134.
+(/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip68
-\f@nch@O@elh=\skip69
-\f@nch@O@erh=\skip70
-\f@nch@O@olh=\skip71
-\f@nch@O@orh=\skip72
-\f@nch@O@elf=\skip73
-\f@nch@O@erf=\skip74
-\f@nch@O@olf=\skip75
-\f@nch@O@orf=\skip76
+\f@nch@headwidth=\skip88
+\f@nch@O@elh=\skip89
+\f@nch@O@erh=\skip90
+\f@nch@O@olh=\skip91
+\f@nch@O@orh=\skip92
+\f@nch@O@elf=\skip93
+\f@nch@O@erf=\skip94
+\f@nch@O@olf=\skip95
+\f@nch@O@orf=\skip96
 ) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/base/flafter.sty
 Package: flafter 2021/07/31 v1.4e Standard LaTeX floats after reference (FMi)
 Applying: [2015/01/01] float order in 2-column on input line 49.
 Already applied: [0000/00/00] float order in 2-column on input line 151.
-) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
-(/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen189
-\captionmargin=\dimen190
-\caption@leftmargin=\dimen191
-\caption@rightmargin=\dimen192
-\caption@width=\dimen193
-\caption@indent=\dimen194
-\caption@parindent=\dimen195
-\caption@hangindent=\dimen196
-Package caption Info: Standard document class detected.
+) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2024/05/23 v1.9h multicolumn formatting (FMi)
+\c@tracingmulticols=\count342
+\mult@box=\box79
+\multicol@leftmargin=\dimen275
+\c@unbalance=\count343
+\c@collectmore=\count344
+\doublecol@number=\count345
+\multicoltolerance=\count346
+\multicolpretolerance=\count347
+\full@width=\dimen276
+\page@free=\dimen277
+\premulticols=\dimen278
+\postmulticols=\dimen279
+\multicolsep=\skip97
+\multicolbaselineskip=\skip98
+\partial@page=\box80
+\last@line=\box81
+\mc@boxedresult=\box82
+\maxbalancingoverflow=\dimen280
+\mult@rightbox=\box83
+\mult@grightbox=\box84
+\mult@firstbox=\box85
+\mult@gfirstbox=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\c@minrows=\count348
+\c@columnbadness=\count349
+\c@finalcolumnbadness=\count350
+\last@try=\dimen281
+\multicolovershoot=\dimen282
+\multicolundershoot=\dimen283
+\mult@nat@firstbox=\box123
+\colbreak@box=\box124
+\mc@col@check@num=\count351
+) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/tools/hhline.sty
+Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
 )
-\c@caption@flags=\count321
-\c@continuedfloat=\count322
-Package caption Info: longtable package is loaded.
-(/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
-)) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
-\everycr=\toks40
-\minrowclearance=\skip77
-\rownum=\count323
-) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty
-Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
+\Oldarrayrulewidth=\skip99
+\Oldtabcolsep=\skip100
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-07-10 v7.01j Hypertext links for LaTeX
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
@@ -502,19 +877,19 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count324
+\c@section@level=\count352
 ) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen197
-\Hy@linkcounter=\count325
-\Hy@pagecounter=\count326
+\@linkdim=\dimen284
+\Hy@linkcounter=\count353
+\Hy@pagecounter=\count354
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-07-10 v7.01j Hyperref: PDFDocEncoding definition (HO)
 ) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count327
+\Hy@SavedSpaceFactor=\count355
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-07-10 v7.01j Hyperref: PDF Unicode definition (HO)
 )
@@ -526,21 +901,21 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count328
+\c@Hy@tempcnt=\count356
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip19
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen198
+\XeTeXLinkMargin=\dimen285
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count329
-\Field@Width=\dimen199
-\Fld@charsize=\dimen256
+\Fld@menulength=\count357
+\Field@Width=\dimen286
+\Fld@charsize=\dimen287
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -552,18 +927,18 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count330
-\c@Item=\count331
-\c@Hfootnote=\count332
+\Hy@abspage=\count358
+\c@Item=\count359
+\c@Hfootnote=\count360
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
 File: hxetex.def 2024-07-10 v7.01j Hyperref driver for XeTeX
-\pdfm@box=\box66
-\c@Hy@AnnotLevel=\count333
-\HyField@AnnotCount=\count334
-\Fld@listcount=\count335
-\c@bookmark@seq@number=\count336
+\pdfm@box=\box125
+\c@Hy@AnnotLevel=\count361
+\HyField@AnnotCount=\count362
+\Fld@listcount=\count363
+\c@bookmark@seq@number=\count364
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
@@ -574,58 +949,54 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip78
-) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
+\Hy@SectionHShift=\skip101
+) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
+(/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
 File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
-\BKM@id=\count337
+\BKM@id=\count365
 )) (./en-befolkning-blander-sig.aux)
 \openout1 = `en-befolkning-blander-sig.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 143.
-LaTeX Font Info:    ... okay on input line 143.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 143.
-LaTeX Font Info:    ... okay on input line 143.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 143.
-LaTeX Font Info:    ... okay on input line 143.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 143.
-LaTeX Font Info:    ... okay on input line 143.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 143.
-LaTeX Font Info:    ... okay on input line 143.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 143.
-LaTeX Font Info:    ... okay on input line 143.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 143.
-LaTeX Font Info:    ... okay on input line 143.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 143.
-LaTeX Font Info:    ... okay on input line 143.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 143.
-LaTeX Font Info:    ... okay on input line 143.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 143.
-LaTeX Font Info:    ... okay on input line 143.
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 143.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 143.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 143.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 184.
+LaTeX Font Info:    ... okay on input line 184.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 143.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 184.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 143.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 184.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 143.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 184.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 143.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 184.
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.222735174059428.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.222735174059428.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.222735174059428.
 
 
 Package fontspec Info: 
@@ -637,31 +1008,31 @@ Package fontspec Info:
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             <->s*[1.222735174059428]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             <->s*[1.222735174059428]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 143.
+(Font)              scaled to size 12.22733pt on input line 184.
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.222735174059428.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.222735174059428.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.222735174059428.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.222735174059428.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.222735174059428.
 
 
 Package fontspec Info: 
@@ -673,205 +1044,217 @@ Package fontspec Info:
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <8.5->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             <8.5->s*[1.222735174059428]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[1.222735174059428]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[1.222735174059428]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[0.9999964596882403]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             <->s*[1.222735174059428]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 143.
+(Font)              scaled to size 12.22733pt on input line 184.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 143.
+(Font)              `operators' in the math version `normal' on input line 184.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 143.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 184.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 143.
+(Font)              `operators' in the math version `bold' on input line 184.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 143.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 184.
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.000096459334209.
+(fontspec)             latinmodern-math scale = 1.222735174059428.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.222857447576834.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.000096459334209.
+(fontspec)             latinmodern-math scale = 1.222735174059428.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.222857447576834.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.000096459334209.
+(fontspec)             latinmodern-math scale = 1.222735174059428.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.222857447576834.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.000096459334209.
+(fontspec)             latinmodern-math scale = 1.222735174059428.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.222857447576834.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 1.000096459334209.
+(fontspec)             latinmodern-math scale = 1.222735174059428.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.222857447576834.
 
 
 Package fontspec Info: 
 (fontspec)             Font family 'latinmodern-math.otf(2)' created for font
 (fontspec)             'latinmodern-math.otf' with options
 (fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmodern-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=1.0001,FontAdjustment={\fontdimen
-(fontspec)             8\font =6.77pt\relax \fontdimen 9\font =3.94pt\relax
-(fontspec)             \fontdimen 10\font =4.44pt\relax \fontdimen 11\font
-(fontspec)             =6.86pt\relax \fontdimen 12\font =3.45pt\relax
-(fontspec)             \fontdimen 13\font =3.63pt\relax \fontdimen 14\font
-(fontspec)             =3.63pt\relax \fontdimen 15\font =2.89pt\relax
-(fontspec)             \fontdimen 16\font =2.47pt\relax \fontdimen 17\font
-(fontspec)             =2.47pt\relax \fontdimen 18\font =2.5pt\relax
-(fontspec)             \fontdimen 19\font =2.0pt\relax \fontdimen 22\font
-(fontspec)             =2.5pt\relax \fontdimen 20\font =0pt\relax \fontdimen
-(fontspec)             21\font =0pt\relax }].
+(fontspec)             8\font =8.2779pt\relax \fontdimen 9\font
+(fontspec)             =4.81757pt\relax \fontdimen 10\font =5.42894pt\relax
+(fontspec)             \fontdimen 11\font =8.38794pt\relax \fontdimen 12\font
+(fontspec)             =4.21843pt\relax \fontdimen 13\font =4.43852pt\relax
+(fontspec)             \fontdimen 14\font =4.43852pt\relax \fontdimen 15\font
+(fontspec)             =3.53369pt\relax \fontdimen 16\font =3.02016pt\relax
+(fontspec)             \fontdimen 17\font =3.02016pt\relax \fontdimen 18\font
+(fontspec)             =3.05684pt\relax \fontdimen 19\font =2.44547pt\relax
+(fontspec)             \fontdimen 22\font =3.05684pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax }].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <8.5->s*[1.000096459334209]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[1.000096459334209]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[1.000096459334209]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             <8.5->s*[1.222857447576834]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[1.222857447576834]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[1.222857447576834]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[1.000096459334209]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             <->s*[1.222857447576834]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 143.
+(Font)              `symbols' in the math version `normal' on input line 184.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 143.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 184.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 143.
+(Font)              `symbols' in the math version `bold' on input line 184.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 143.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 184.
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
-
-
-Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9998964600422715.
+(fontspec)             latinmodern-math scale = 1.222735174059428.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.222612900542022.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9998964600422715.
+(fontspec)             latinmodern-math scale = 1.222735174059428.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.222612900542022.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9998964600422715.
+(fontspec)             latinmodern-math scale = 1.222735174059428.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.222612900542022.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9998964600422715.
+(fontspec)             latinmodern-math scale = 1.222735174059428.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9999964596882403.
+(fontspec)             latinmodern-math scale = 1.222612900542022.
 
 
 Package fontspec Info: 
-(fontspec)             latinmodern-math scale = 0.9998964600422715.
+(fontspec)             latinmodern-math scale = 1.222735174059428.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.222612900542022.
 
 
 Package fontspec Info: 
 (fontspec)             Font family 'latinmodern-math.otf(3)' created for font
 (fontspec)             'latinmodern-math.otf' with options
 (fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6-8.5,Font=latinmodern-math.otf,Style=MathScript},{Size=-6,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontAdjustment={\fontdimen
-(fontspec)             8\font =0.4pt\relax \fontdimen 9\font =2.0pt\relax
-(fontspec)             \fontdimen 10\font =1.67pt\relax \fontdimen 11\font
-(fontspec)             =1.11pt\relax \fontdimen 12\font =6.0pt\relax
-(fontspec)             \fontdimen 13\font =0pt\relax }].
+(fontspec)             8\font =0.48909pt\relax \fontdimen 9\font
+(fontspec)             =2.44547pt\relax \fontdimen 10\font =2.04196pt\relax
+(fontspec)             \fontdimen 11\font =1.35724pt\relax \fontdimen 12\font
+(fontspec)             =7.3364pt\relax \fontdimen 13\font =0pt\relax }].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <8.5->s*[0.9998964600422715]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[0.9998964600422715]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[0.9998964600422715]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             <8.5->s*[1.222612900542022]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<6-8.5>s*[1.222612900542022]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-6>s*[1.222612900542022]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->s*[0.9998964600422715]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             <->s*[1.222612900542022]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 143.
+(Font)              `largesymbols' in the math version `normal' on input line 184.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 143.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 184.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 143.
+(Font)              `largesymbols' in the math version `bold' on input line 184.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 143.
-LaTeX Info: Redefining \microtypecontext on input line 143.
-Package microtype Info: Applying patch `item' on input line 143.
-Package microtype Info: Applying patch `toc' on input line 143.
-Package microtype Info: Applying patch `eqnum' on input line 143.
-Package microtype Info: Applying patch `footnote' on input line 143.
-Package microtype Info: Applying patch `verbatim' on input line 143.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 184.
+LaTeX Info: Redefining \microtypecontext on input line 184.
+Package microtype Info: Applying patch `item' on input line 184.
+Package microtype Info: Applying patch `toc' on input line 184.
+Package microtype Info: Applying patch `eqnum' on input line 184.
+Package microtype Info: Applying patch `footnote' on input line 184.
+Package microtype Info: Applying patch `verbatim' on input line 184.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
-(/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
-File: mt-LatinModernRoman.cfg 2021/02/21 v1.1 microtype config. file: Latin Modern Roman (RS)
-)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `FiraSans' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: Fixing longtable code of `floatrow' package.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 143.
+(/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/floatrow/fr-longtable.sty
+Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
+\flrow@LT@lasthead=\box126
+\flrow@LT@prelastfoot=\box127
+\c@FBLTpage=\count366
+)
+Package hyperref Info: Link coloring OFF on input line 184.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 17.28pt on input line 186.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 186.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 145.
+(Font)              scaled to size 14.67279pt on input line 186.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 145.
+(Font)              scaled to size 9.78186pt on input line 186.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 145.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 145.
+(Font)              scaled to size 7.3364pt on input line 186.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 186.
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.0011pt on input line 145.
+(Font)              scaled to size 14.67426pt on input line 186.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.00073pt on input line 145.
+(Font)              scaled to size 9.78284pt on input line 186.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00055pt on input line 145.
+(Font)              scaled to size 7.33713pt on input line 186.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.99872pt on input line 145.
+(Font)              scaled to size 14.67133pt on input line 186.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.99915pt on input line 145.
+(Font)              scaled to size 9.78088pt on input line 186.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 145.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 145.
+(Font)              scaled to size 7.33566pt on input line 186.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 186.
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 145.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 186.
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -883,51 +1266,62 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ]
 
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 187.
 [2
 
-] (./en-befolkning-blander-sig.toc
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 4.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 4.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 4.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 4.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 4.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 4.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 4.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 4.
+]
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 24.88pt on input line 187.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
+(Font)              scaled to size 24.88pt on input line 187.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
+(Font)              scaled to size 10.0pt on input line 190.
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--205
+
+ []
 
 
-[3])
+
+[3]
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 8.55913pt on input line 216.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.11366pt on input line 216.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 12.22855pt on input line 216.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.55998pt on input line 216.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.11427pt on input line 216.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 12.2261pt on input line 216.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 8.55827pt on input line 216.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.11305pt on input line 216.
+
+
+[4] (./en-befolkning-blander-sig.toc
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
+(Font)              scaled to size 10.0pt on input line 2.
+
+
+[5
+
+])
 \tf@toc=\write4
 \openout4 = `en-befolkning-blander-sig.toc'.
 
 
 
-[4]
-Underfull \hbox (badness 1902) in paragraph at lines 157--158
-\TU/lmr/m/n/10 Ph.D-afhandling om indvandrere og efterkommeres deltagelse i frivillige
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--168
-
- []
-
-
-
-[5
-
-]
-
 [6]
 Kapitel 1.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 20.74pt on input line 225.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
+(Font)              scaled to size 20.74pt on input line 225.
 File: images/kap1.jpg Graphic file (type bmp)
 <images/kap1.jpg>
 
@@ -937,55 +1331,99 @@ File: images/kap1.jpg Graphic file (type bmp)
 ]
 
 [8]
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 14.4pt on input line 245.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
+(Font)              scaled to size 14.4pt on input line 245.
+
 
 [9]
-Underfull \hbox (badness 1874) in paragraph at lines 210--211
-[]\TU/lmr/m/n/10 Vores perspektiv er, at integration/assimilation som hovedregel \TU/lmr/m/it/10 ikke \TU/lmr/m/n/10 er
+Underfull \hbox (badness 2990) in paragraph at lines 249--250
+[]\TU/FiraSans(0)/m/n/10 Den amerikanske forskning bruger primært termen \TU/FiraSans(0)/m/it/10 assimilering \TU/FiraSans(0)/m/n/10 til at
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 255--256
+\TU/FiraSans(0)/m/n/10 ressourcer. Det gælder i særdeleshed for indvandrerne, da de typisk
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 255--256
+\TU/FiraSans(0)/m/n/10 majoritetsbefolkningen dominerer. Indvandrere har også et betydeligt
  []
 
 
 
 [10]
-Underfull \hbox (badness 1939) in paragraph at lines 214--214
-[]\TU/lmr/bx/n/14.4 Drivkraften mod sine egne og tvungne
- []
-
 File: en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf>
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 264.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
+(Font)              scaled to size 9.0pt on input line 264.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
+(Font)              scaled to size 9.0pt on input line 264.
 
-
-
-Overfull \hbox (0.85342pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 1.2.  DRIVKRAFTEN MOD SINE EGNE OG TVUNGNE MØDEPLADSER \TU/lmr/m/n/10 11
- []
 
 [11]
+Underfull \vbox (badness 6775) has occurred while \output is active []
+
+
 
 [12]
 
-
-Overfull \hbox (147.81905pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 1.3.  DET MENNESKELIGE MØDE OG DETS EFFEKT PÅ BETYDNING AF ETNISKE DISTINKTIONER \TU/lmr/m/n/10 13
+[13]
+Underfull \hbox (badness 1803) in paragraph at lines 277--278
+\TU/FiraSans(0)/m/n/10 giens udgangspunkt er, at negative opfattelser af såkaldte ud-grupper
  []
 
-[13]
+
+Underfull \hbox (badness 1635) in paragraph at lines 277--278
+\TU/FiraSans(0)/m/n/10 skoleklasser ofte negative billeder af deres søsterklasser, og for store
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 277--278
+\TU/FiraSans(0)/m/n/10 internt sammenhold og identitet ved at etablere et negativt billede af
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 283--284
+\TU/FiraSans(0)/m/n/10 Verdenskrig, havde markant færre fordomme om hinanden ([]Stouffer et
+ []
+
+
 
 [14]
-
-
-Overfull \hbox (111.34343pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 1.4.  BETYDNINGEN AF STØRRELSESFORHOLDENE MELLEM MAJORITET OG MINORITET \TU/lmr/m/n/10 15
+Underfull \hbox (badness 5288) in paragraph at lines 287--287
+[]\TU/FiraSans(0)/b/n/14.4 Betydningen af størrelsesforholdene mellem
  []
 
+
+Underfull \hbox (badness 1360) in paragraph at lines 289--290
+\TU/FiraSans(0)/m/n/10 mennesker, så har makrosociologske teoretikere som Blau ([]Blau et al.,
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 289--290
+\TU/FiraSans(0)/m/n/10 således markant mere for majoriteten end majoriteten eksponeres for
+ []
+
+
+
 [15]
-
-LaTeX Warning: Reference `fig:fig-1-2' on page 16 undefined on input line 250.
-
 File: en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf>
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
+(Font)              scaled to size 8.0pt on input line 301.
 
-Underfull \hbox (badness 1484) in paragraph at lines 256--257
-\TU/lmr/m/n/10 fremhæver også, at post-moderne økonomier skaber en segmentering af
+Underfull \hbox (badness 1721) in paragraph at lines 304--305
+[]\TU/FiraSans(0)/m/n/10 Hvorvidt indvandreres større mulighed for at møde andre indvandrere
+ []
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 304--305
+\TU/FiraSans(0)/m/n/10 amerikanske erfaringer er dog problematiseret af nyere teoriretninger.
  []
 
 
@@ -993,22 +1431,49 @@ Underfull \hbox (badness 1484) in paragraph at lines 256--257
 [16]
 
 [17]
+Underfull \hbox (badness 1838) in paragraph at lines 308--309
+\TU/FiraSans(0)/m/n/10 Bogen bygger på en antagelse om, at de grundlæggende mekanismer
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 308--309
+\TU/FiraSans(0)/m/n/10 end det er tilfældet i USA. Disse flygtninge og familiesammenførte har
+ []
+
+
 
 [18]
+Underfull \hbox (badness 1147) in paragraph at lines 322--323
+[][]\TU/FiraSans(0)/m/n/10 Kapitel 4[] beskriver den etniske sammensætning af danske grundskoler.
+ []
+
+
 
 [19]
 
-[20
-
-]
+[20]
 Kapitel 2.
 File: images/kap2.jpg Graphic file (type bmp)
 <images/kap2.jpg>
 
 
-[21]
+[21
+
+]
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/it' will be
+(Font)              scaled to size 10.0pt on input line 348.
+
 
 [22]
+Underfull \hbox (badness 1609) in paragraph at lines 352--353
+[]\TU/FiraSans(0)/m/n/10 Det er afgørende at forstå, at den sociologiske forskning, som under-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
+\TU/FiraSans(0)/m/n/10 søger konsekvenserne af etnisk blandende parforhold—eller mangel
+ []
+
 File: images/figur_intergruppepartnerskaber_alle.png Graphic file (type bmp)
 <images/figur_intergruppepartnerskaber_alle.png>
 File: images/figur_intergruppepartnerskaber_2020.png Graphic file (type bmp)
@@ -1019,12 +1484,25 @@ File: images/figur_intergruppepartnerskaber_2020.png Graphic file (type bmp)
 
 [24]
 
-
-Overfull \hbox (16.12454pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 2.3.  FORKLARINGER PÅ MØNSTRE I TVÆRETNISKE PARTNERSKABER \TU/lmr/m/n/10 25
+[25]
+Underfull \hbox (badness 1675) in paragraph at lines 378--379
+\TU/FiraSans(0)/m/n/10 indvandrergruppen og majoritetsbefolkningen i Danmark, desto mindre
  []
 
-[25]
+
+Underfull \hbox (badness 1931) in paragraph at lines 380--381
+[]\TU/FiraSans(0)/m/n/10 Når der statistisk justeres for en lang række socioøkonomiske og de-
+ []
+
+
+Underfull \hbox (badness 1831) in paragraph at lines 382--383
+[]\TU/FiraSans(0)/m/n/10 Udover betydningen af religion kaster studiet også lys over den rolle
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [26]
 
@@ -1039,52 +1517,1308 @@ File: images/kap3.jpg Graphic file (type bmp)
 
 
 [29]
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 402.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 402.
+
+Underfull \hbox (badness 1009) in paragraph at lines 408--409
+\TU/FiraSans(0)/m/n/10 erskab samt individets eget fødested til at afgrænse ”dansk herkomst”,
+ []
+
+
 
 [30]
 
-LaTeX Warning: Reference `tab:tab-3-1' on page 31 undefined on input line 366.
-
-
-Overfull \hbox (92.48003pt too wide) in alignment at lines 368--383
- [] [] [] [] 
- []
-
 [31]
 
-LaTeX Warning: Reference `tab:tab-3-2' on page 32 undefined on input line 387.
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
 
 
-LaTeX Warning: Reference `tab:tab-3-2' on page 32 undefined on input line 387.
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
 
 
-LaTeX Warning: Reference `fig:fig-1-2' on page 32 undefined on input line 407.
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans/B scale = 0.992465452288382.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans/B scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans/B scale = 0.992465452288382.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans/B scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans/I scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans/I scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans/I scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans/I scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans/BI scale = 0.992465452288382.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans/BI scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans/BI scale = 0.992465452288382.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans/BI scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraSans(2)' created for font 'Fira Sans'
+(fontspec)             with options
+(fontspec)             [Scale=MatchLowercase,Ligatures=TeX,Scale=1].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[1]"Fira
+(fontspec)             Sans/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->s*[1]"Fira
+(fontspec)             Sans/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[1]"Fira
+(fontspec)             Sans/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"Fira
+(fontspec)             Sans/B/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->s*[1]"Fira
+(fontspec)             Sans/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"Fira
+(fontspec)             Sans/I/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->s*[1]"Fira
+(fontspec)             Sans/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"Fira
+(fontspec)             Sans/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+
+LaTeX Font Info:    Font shape `TU/FiraSans(2)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 441.
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+LaTeX Font Info:    Font shape `TU/FiraSans(2)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 466.
+LaTeX Font Info:    Font shape `TU/FiraSans(2)/b/n' will be
+(Font)              scaled to size 9.0pt on input line 466.
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Overfull \hbox (0.85501pt too wide) in paragraph at lines 622--622
+ []|[]\TU/FiraSans(2)/m/n/9 1.088.833[]|
+ []
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
 
 
 
 [32]
-
-LaTeX Warning: Reference `fig:fig-3-1' on page 33 undefined on input line 411.
-
 File: images/figur_3_1.png Graphic file (type bmp)
 <images/figur_3_1.png>
 
 
 [33]
 
-LaTeX Warning: Reference `tab:tab-3-3' on page 34 undefined on input line 421.
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
 
 
-Underfull \hbox (badness 7540) in paragraph at lines 447--448
-[]\TU/lmr/m/it/10 Note\TU/lmr/m/n/10 : Partnerskab opgjort i registre via DST-standardklassifikation
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Overfull \hbox (3.44241pt too wide) in alignment at lines 668--676
+ [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--448
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
 
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999971046048366.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Overfull \hbox (3.44241pt too wide) in alignment at lines 676--682
+ [] [] [] [] 
  []
 
 
-LaTeX Warning: Reference `tab:tab-3-3' on page 34 undefined on input line 450.
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Overfull \hbox (2.14178pt too wide) in paragraph at lines 686--686
+ []|[]\TU/FiraSans(2)/m/n/9 29,967[]|
+ []
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Overfull \hbox (1.23279pt too wide) in paragraph at lines 704--704
+ []|[]\TU/FiraSans(2)/m/n/9 27,057[]|
+ []
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Overfull \hbox (3.44241pt too wide) in alignment at lines 682--752
+ [] [] [] [] 
+ []
 
 
 
@@ -1092,33 +2826,55 @@ LaTeX Warning: Reference `tab:tab-3-3' on page 34 undefined on input line 450.
 
 [35]
 
-[36
-
-]
+[36]
 Kapitel 4.
 File: images/kap4.jpg Graphic file (type bmp)
 <images/kap4.jpg>
 
 
-[37]
+[37
+
+]
+Underfull \hbox (badness 1859) in paragraph at lines 784--785
+[]\TU/FiraSans(2)/m/n/10 Kapitlet er inddelt i 7 afsnit. I første afsnit opridses kontaktteorien,
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 784--785
+\TU/FiraSans(2)/m/n/10 der blev introduceret i []kapitel 1[], i relation til teoriens relevans i en
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 784--785
+\TU/FiraSans(2)/m/n/10 (grund)skolekontekst. Dernæst præsenteres \TU/FiraSans(0)/m/it/10 det danske skolelandskab\TU/FiraSans(2)/m/n/10 ,
+ []
+
+
 
 [38]
+Underfull \hbox (badness 2626) in paragraph at lines 796--797
+[]\TU/FiraSans(2)/m/n/10 Et særligt kendetegn ved den danske grundskole, sammenlignet med
+ []
+
+
 
 [39]
 File: images/figur_3_1c_distance_antal.pdf Graphic file (type pdf)
 <use images/figur_3_1c_distance_antal.pdf>
 
-LaTeX Warning: Citation `ref-bjerrenielsen2020' on page 40 undefined on input line 490.
-
-
-LaTeX Warning: Citation `ref-nielsen2019' on page 40 undefined on input line 490.
-
-
 
 [40]
-Underfull \hbox (badness 3407) in paragraph at lines 494--495
-\TU/lmr/m/n/10 Når vi måler graden af segregering, er det mest anvendte mål for
+Underfull \hbox (badness 4266) in paragraph at lines 817--818
+\TU/FiraSans(2)/m/n/10 Når vi måler graden af segregering, er det mest anvendte mål for
  []
+
+
+Underfull \hbox (badness 1902) in paragraph at lines 817--818
+\TU/FiraSans(2)/m/n/10 (skole)segregering \TU/FiraSans(0)/m/it/10 Dissimilarity \TU/FiraSans(2)/m/n/10 ($[]$) indekset, men også \TU/FiraSans(0)/m/it/10 Separation \TU/FiraSans(2)/m/n/10 ($[]$)
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -1135,21 +2891,23 @@ File: images/figur_3_2.pdf Graphic file (type pdf)
 File: images/Figur4.png Graphic file (type bmp)
 <images/Figur4.png>
 
-Underfull \vbox (badness 6927) has occurred while \output is active []
-
-
 
 [45]
+Underfull \hbox (badness 7238) in paragraph at lines 851--851
+[]\TU/FiraSans(0)/b/n/14.4 Skolesegregering som produkt af boligseg-
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 853--854
+\TU/FiraSans(2)/m/n/10 af minoriteter—særligt i den almene boligsektor ([]H. S. Andersen, 2019[];
+ []
+
+
 
 [46]
 File: images/Figur5.png Graphic file (type bmp)
 <images/Figur5.png>
 
-
-
-Overfull \hbox (1.56561pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 4.6.  SKOLESEGREGERING SOM PRODUKT AF BOLIGSEGREGERING \TU/lmr/m/n/10 47
- []
 
 [47]
 
@@ -1166,155 +2924,588 @@ File: images/kap5.jpg Graphic file (type bmp)
 
 
 [51]
-Underfull \hbox (badness 3158) in paragraph at lines 560--560
-[]\TU/lmr/bx/n/14.4 Den etniske sammensætning af arbejd-
+Underfull \hbox (badness 2073) in paragraph at lines 888--889
+\TU/FiraSans(2)/m/n/10 til indvandrere/efterkommere. Afsnit to beskriver den gennemsnitlige
  []
 
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
+(Font)              scaled to size 8.0pt on input line 892.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/it' will be
+(Font)              scaled to size 8.0pt on input line 892.
 
 
 [52]
 
-LaTeX Warning: Hyper reference `bilagA' on page 53 undefined on input line 566.
+LaTeX Warning: Hyper reference `bilagA' on page 53 undefined on input line 896.
 
 File: en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf>
 
-LaTeX Warning: Hyper reference `bilagA' on page 53 undefined on input line 578.
+LaTeX Warning: Hyper reference `bilagA' on page 53 undefined on input line 906.
 
 
 
 [53]
+Underfull \hbox (badness 1337) in paragraph at lines 914--915
+\TU/FiraSans(2)/m/n/10 eksponeret til én eneste indvandrer eller efterkommer på arbejdsplad-
+ []
+
+
 
 [54]
 File: images/Figur_4_1.png Graphic file (type bmp)
 <images/Figur_4_1.png>
 
-Underfull \hbox (badness 1460) in paragraph at lines 596--597
-\TU/lmr/m/n/10 herkomst kan nuanceres på mange forskellige måder. For gruppen af
+Underfull \hbox (badness 1009) in paragraph at lines 931--932
+[]\TU/FiraSans(2)/m/n/10 Mere interessant er det måske, hvor meget majoriteten på deres arbe-
  []
 
 
-Underfull \hbox (badness 3417) in paragraph at lines 598--599
-\TU/lmr/m/n/10 med dansk-dansk herkomst (gennemsnitlige) eksponering til MENAPT-
+Underfull \hbox (badness 2726) in paragraph at lines 931--932
+\TU/FiraSans(2)/m/n/10 jdsplads der blevet eksponeret til indvandrere og efterkommere med
  []
 
 
-
-
-Overfull \hbox (171.65234pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 5.2.  GENNEMSNITLIG EKSPONERING TIL INDVANDRERE OG EFTERKOMMERE PÅ ARBEJDSPLADSER \TU/lmr/m/n/10 55
+Underfull \hbox (badness 1242) in paragraph at lines 931--932
+\TU/FiraSans(2)/m/n/10 MENAPT-indvandrere/efterkommere på arbejdspladsen i 1996 var $[][] [][]$.
  []
+
+
 
 [55]
 File: images/Figur_4_2.png Graphic file (type bmp)
 <images/Figur_4_2.png>
-File: images/Figur_4_3.png Graphic file (type bmp)
-<images/Figur_4_3.png>
 
 
 [56]
+File: images/Figur_4_3.png Graphic file (type bmp)
+<images/Figur_4_3.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 959--959
+[]\TU/FiraSans(0)/b/n/14.4 Minoriteters eksponering til majoritetsbe-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [57]
-Underfull \hbox (badness 1442) in paragraph at lines 618--619
-\TU/lmr/m/n/10 Beskæftigede indvandrere og efterkommere er i høj grad eksponeret til
- []
-
-
-Underfull \hbox (badness 1810) in paragraph at lines 618--619
-\TU/lmr/m/n/10 beskæftigede med dansk-dansk herkomst på deres arbejdsplads. Diop-
- []
-
 File: images/Figur_4_4.png Graphic file (type bmp)
 <images/Figur_4_4.png>
 
+Underfull \hbox (badness 1546) in paragraph at lines 972--973
+\TU/FiraSans(2)/m/n/10 ind på arbejdspladserne, så falder den gennemsnitlige eksponering til
+ []
+
+
 
 [58]
+Underfull \hbox (badness 10000) in paragraph at lines 974--974
+[]\TU/FiraSans(0)/b/n/14.4 Minoriteters ”isolation” fra majoritetsbe-
+ []
+
 File: images/Figur_4_5.png Graphic file (type bmp)
 <images/Figur_4_5.png>
 
 
-
-Overfull \hbox (10.41672pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 5.5.  MINORITETERS ”ISOLATION” FRA MAJORITETSBEFOLKNINGEN \TU/lmr/m/n/10 59
+[59]
+Underfull \hbox (badness 1448) in paragraph at lines 989--989
+[][][]\TU/FiraSans(0)/m/n/8 Andelen af beskæftigede MENAPT-indvandrere/efterkommere, der ikke har en kollega
  []
 
-[59]
 
-LaTeX Warning: Hyper reference `indledning' on page 60 undefined on input line 642.
+Underfull \hbox (badness 1107) in paragraph at lines 989--989
+\TU/FiraSans(0)/m/n/8 procent. Mønstret er således, at mens dele af majoriteten ikke eksponeres til MENAPT-
+ []
 
 
 
 [60]
+
+LaTeX Warning: Hyper reference `indledning' on page 61 undefined on input line 995.
+
+
+
+[61]
+
+[62
+
+]
 Kapitel 6.
 File: images/kap71.jpg Graphic file (type bmp)
 <images/kap71.jpg>
 
 
-[61
-
-]
-
-[62]
-
-LaTeX Warning: Reference `tab:tab-6-1' on page 63 undefined on input line 664.
-
-
-LaTeX Warning: Reference `tab:tab-6-1' on page 63 undefined on input line 664.
-
-
-Overfull \hbox (50.3pt too wide) in alignment at lines 667--678
- [] [] [] [] [] [] [] 
+[63]
+Underfull \hbox (badness 2762) in paragraph at lines 1009--1010
+\TU/FiraSans(2)/m/n/10 mellem majoritetsbefolkningens alder og geografiske placering og det
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 680--683
-
+Underfull \hbox (badness 1424) in paragraph at lines 1015--1016
+\TU/FiraSans(2)/m/n/10 formuleringer forsøger man at afgrænse sig til mere intime venskaber,
  []
 
+
+Underfull \hbox (badness 3291) in paragraph at lines 1017--1017
+[]\TU/FiraSans(0)/b/n/14.4 Majoritetens venskaber med indvandrere og
+ []
+
+
+
+[64]
+
+[65]
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 0.9999967828901227.
+
+
+Package fontspec Info: 
+(fontspec)             Fira Sans scale = 1.
+
+
+
+[66]
 File: en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf>
 
 
-
-Overfull \hbox (48.22453pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 6.2.  MAJORITETENS VENSKABER MED INDVANDRERE OG EFTERKOMMERE \TU/lmr/m/n/10 63
- []
-
-[63]
-
-[64]
+[67]
 File: images/Figur_6_2.jpg Graphic file (type bmp)
 <images/Figur_6_2.jpg>
 
-
-
-Overfull \hbox (48.22453pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 6.2.  MAJORITETENS VENSKABER MED INDVANDRERE OG EFTERKOMMERE \TU/lmr/m/n/10 65
+Underfull \hbox (badness 1194) in paragraph at lines 1136--1137
+\TU/FiraSans(2)/m/n/10 i deres venskabspulje er i gennemsnit kun fire procent. Endvidere er
  []
 
-[65]
 
-[66]
+Underfull \hbox (badness 1527) in paragraph at lines 1136--1137
+\TU/FiraSans(2)/m/n/10 dansk-dansk-herkomst har meget forskellige mulighedsstrukturer for at
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 1138--1139
+\TU/FiraSans(2)/m/n/10 størrelsen af disse venskabspuljer og omfanget af majoritetsbefolknin-
+ []
+
+
+Underfull \hbox (badness 4084) in paragraph at lines 1138--1139
+\TU/FiraSans(2)/m/n/10 mulighedsstruktur har betydning for den voksne majoritetsbefolkning.
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[68]
+
+[69]
+Underfull \hbox (badness 5446) in paragraph at lines 1148--1149
+[]\TU/FiraSans(2)/m/n/10 Interessen samler sig ofte om venskabsrelationerne for ikke-vestlige
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 1148--1149
+\TU/FiraSans(2)/m/n/10 Grupper er vidt forskellige på for eksempel opholdstid, hvilket gør, at
+ []
+
 File: en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf>
 File: en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf>
 
 
-[67]
+[70]
+
+[71]
 File: en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf>
 
 
-[68]
+[72]
 
-[69]
+[73]
 
-[70]
-
-[71]
-
-[72
+[74
 
 ]
 Kapitel 7.
@@ -1322,121 +3513,118 @@ File: images/kap7.jpg Graphic file (type bmp)
 <images/kap7.jpg>
 
 
-[73]
-
-[74]
-
 [75]
 
 [76]
 
 [77]
-Overfull \hbox (4.81201pt too wide) in paragraph at lines 768--769
-[]\TU/lmr/m/n/10 Diop-Christensen et al. ([]2024[]) viser, at (ikke-vestlige) indvandrere/efterkommere,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 770--770
-[]\TU/lmr/bx/n/14.4 Kontaktperspektivets begrænsninger og
- []
-
-
 
 [78]
 
-
-Overfull \hbox (41.90562pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 7.4.  KONTAKTPERSPEKTIVETS BEGRÆNSNINGER OG VIDERE FORSKNING \TU/lmr/m/n/10 79
+[79]
+Overfull \hbox (14.71558pt too wide) in paragraph at lines 1209--1210
+[]\TU/FiraSans(2)/m/n/10 Diop-Christensen et al. ([]2024[]) viser, at (ikke-vestlige) indvandrere/efterkommere,
  []
 
-[79]
 
-[80
+Underfull \hbox (badness 1728) in paragraph at lines 1209--1210
+\TU/FiraSans(2)/m/n/10 For gruppen, der føler sig diskrimineret, finder studiet den omvendte
+ []
 
-]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[80]
 
 [81]
 
 [82]
 
+[83
 
-Overfull \hbox (41.90562pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 7.4.  KONTAKTPERSPEKTIVETS BEGRÆNSNINGER OG VIDERE FORSKNING \TU/lmr/m/n/10 83
- []
-
-[83]
+]
 
 [84]
 
-
-Overfull \hbox (41.90562pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 7.4.  KONTAKTPERSPEKTIVETS BEGRÆNSNINGER OG VIDERE FORSKNING \TU/lmr/m/n/10 85
- []
-
 [85]
 
-[86
+[86]
+
+[87]
+
+[88
 
 ]
 Bilag A.
 
-LaTeX Warning: Citation `ref-duncan1955' on page 87 undefined on input line 1025.
-
-
-
-[87]
-
-[88]
 
 [89]
-File: en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf Graphic file (type pdf)
-<use en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf>
-
 
 [90]
 
 [91]
+File: en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf Graphic file (type pdf)
+<use en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf>
+
+Underfull \hbox (badness 1442) in paragraph at lines 1500--1501
+\TU/FiraSans(2)/m/n/10 landskab (antallet og størrelsen af skoler) varierer markant mellem to
+ []
+
+
 
 [92]
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 1504.
+
 
 [93]
+Underfull \hbox (badness 2359) in paragraph at lines 1514--1515
+\TU/FiraSans(2)/m/n/10 forudsætninger givet ved populationssammensætningen og antallet og
+ []
+
+
+
+[94]
+
+[95]
+
+[96]
 File: en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf>
 File: en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf>
 
 
-[94]
-Underfull \vbox (badness 4569) has occurred while \output is active []
+[97]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[95]
+[98]
 File: en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf>
 
-LaTeX Warning: Reference `fig:fig-3-2' on page 96 undefined on input line 1101.
 
+[99]
 
-
-[96]
-
-[97] (./en-befolkning-blander-sig.aux)
+[100] (./en-befolkning-blander-sig.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-07-20>
+L3 programming layer <2024-08-16>
  ***********
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 24015 strings out of 476173
- 463300 string characters out of 5784203
- 1942609 words of memory out of 5000000
- 46161 multiletter control sequences out of 15000+600000
- 564568 words of font info for 95 fonts, out of 8000000 for 9000
+ 26109 strings out of 476173
+ 499155 string characters out of 5784203
+ 1946609 words of memory out of 5000000
+ 48193 multiletter control sequences out of 15000+600000
+ 564834 words of font info for 116 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 94i,8n,123p,2681b,533s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,13n,131p,2681b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on en-befolkning-blander-sig.pdf (97 pages).
+Output written on en-befolkning-blander-sig.pdf (100 pages).

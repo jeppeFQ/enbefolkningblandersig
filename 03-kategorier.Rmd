@@ -3,6 +3,8 @@
 
 *[Jeppe Fjeldgaard Larsen](https://vbn.aau.dk/da/persons/jeppefl)* og *[Christian Albrekt Larsen](https://vbn.aau.dk/en/persons/albrekt)*
 
+&nbsp;&nbsp;&nbsp;&nbsp;
+
 ```{r fig-partner222, echo=FALSE, out.width= "100%"}
 knitr::include_graphics("images/kap3.jpg")
 ```
@@ -37,96 +39,78 @@ Når de to kategorier kombineres, anvender DST opgørelsen ”dansk herkomst”,
 
 Vores udbyggede klassificering af de 0--16-årige tager udgangspunkt i forældrene. Hvis de to forældre klassificeres med de hidtidige klassifikationer, fremkommer udfaldsrummet i Tabel \@ref(tab:tab-3-1).
 
-```{r tab-3-1, echo=FALSE, message=FALSE, fig.cap="The cars data."}
+\newpage
+
+```{r tab-3-1, echo=FALSE, message=FALSE}
+
+typology <- data.frame(
+  col_keys = c(
+    "Gruppe", "f1", "f2", "Betegnelse"
+  ),
+  what = c("Gruppe", "Personens forældre", "Personens forældre", "Betegnelse"),
+  measure = c("Gruppe", "Forældre 1", "Forældre 2", "Betegnelse"),
+  stringsAsFactors = FALSE
+)
 
 read_csv2("data/tabel_2_1.csv") %>% 
-  rename(`Forældre 1` = f1,
-         `Forældre 2` = f2) %>% 
-  gt() %>% 
-  tab_spanner(
-    label = md(""),
-    columns = c(2,3)
-  ) %>% 
-  cols_align(
-    align = "left",
-    columns = c(2,3)
-  ) %>%
-  tab_style(
-    style = list(
-      cell_text(style = "italic")
-      ),
-    locations = cells_body(
-      columns = c(`Forældre 1`, `Forældre 2`),
-    )
-  ) %>% 
-  tab_style(
-    style = cell_text(weight = "bold"),
-    locations = cells_body(
-      columns = c(Gruppe, Betegnelse),
-    )
-  ) %>% 
-  tab_caption(caption = md("Udfaldsrum for oprindelse baseret på eksisterende klassifikationer fra Danmarks Statistik.\n"))
+  flextable() %>% 
+  set_header_df(mapping = typology, key = "col_keys") %>% 
+  merge_h(part = "header") %>% 
+  merge_v(j = c("Gruppe", "Betegnelse"), part = "header") %>% 
+  theme_booktabs() %>% 
+  bold(j = c(1, 4), bold = TRUE, part = "body") %>% 
+  width(j = c(2:4), width = 1) %>% 
+  width(j = c(1), width = 1) %>% 
+  fontsize(size = 10, part = "header") %>% 
+  fontsize(size = 9, j = c(1:4)) %>% 
+  font(fontname = "Fira Sans", part = "all") %>% 
+  set_caption("Udfaldsrum for oprindelse baseret på eksisterende klassifikationer fra Danmarks Statistik.\n")
 
+  
 ```
 
 Udfaldsrummet har otte muligheder, hvis man ligesom Danmarks Statistik undlader af skelne mellem mors eller fars herkomst. I første omgang er vi interesseret i fremkomsten af børn med én forældre med dansk herkomst og én med anden herkomst. Dvs. vi skelner ikke mellem indvandrer- og efterkommerstatus. For at forsimple beskrivelsen har vi foretaget en opdeling i dansk/vestlig (**C**), hvor én af forældrene har dansk herkomst, mens den anden er vestlig indvandrer eller efterkommer. Den gruppe har erfaring med etnisk diversitet i familien, men vil typisk ikke være en synlig minoritet på grund af hudfarve. En opdeling på dansk/ikke-vestlig (**D**), hvor gruppen også har erfaring med etnisk diversitet i familien, men vil i modsætning typisk være en synlig minoritet via hudfarve. 
 
-I 1985 var der 37.504 i alderen 0--16 år i C-gruppen, svarende til 3,48 procent af gruppen, se Tabel \@ref(tab:tab-3-2). I 2019 var antallet vokset til 45.911, svarende til 4,22 procent af de 0--16-årige. Men det er imidlertid i D-gruppen---dem med én dansk og én ikke-vestlig forældre---at den største stigning er sket. I 1985 var der 9.912 i D-gruppen, svarende til 0,9 procent af de 0--16-årige, hvilket i 2019 er vokset til 42.933, svarende til 3,9 procent af de 0--16-årige. Samlet set udgør de cirka 89.000 ”blandede” børn således 8,16 procent af alle 0--16-årige i 2019, se Tabel \@ref(tab:tab-3-2). 
+I 1985 var der 37.504 i alderen 0--16 år i C-gruppen, svarende til 3,5 procent af gruppen, se Tabel \@ref(tab:tab-3-2). I 2019 var antallet vokset til 45.911, svarende til 4,2 procent af de 0--16-årige. Men det er imidlertid i D-gruppen---dem med én dansk og én ikke-vestlig forældre---at den største stigning er sket. I 1985 var der 9.912 i D-gruppen, svarende til 0,9 procent af de 0--16-årige, hvilket i 2019 er vokset til 42.933, svarende til 3,9 procent af de 0--16-årige. Samlet set udgør de cirka 89.000 ”blandede” børn således 8,16 procent af alle 0--16-årige i 2019, se Tabel \@ref(tab:tab-3-2). 
 
 ```{r tab-3-2, echo=FALSE, message=FALSE, warning=FALSE}
 
+typology <- data.frame(
+  col_keys = c(
+    "Gruppe", "n_1", "pct_1", "n_2", "pct_2"
+  ),
+  what = c("Gruppe", "1985", "1985", "2019", "2019"),
+  measure = c("Gruppe", "n", "%", "n", "%"),
+  stringsAsFactors = FALSE
+)
+
+
+
 read_csv2("data/tabel_2_2.csv") %>% 
-  gt(rowname_col = "Gruppe") %>% 
-  tab_spanner(
-    label = md("1985"),
-    columns = c(2:3)
-  ) %>% 
-  cols_label(
-    n_1 = "n",
-    pct_1 = "%",
-    n_2 = "n",
-    pct_2 = "%"
-  ) %>% 
-  tab_spanner(
-    label = md("2019"),
-    columns = c(4:5)
-  ) %>% 
-  tab_style(
-    style = cell_text(weight = "bold"),
-    locations = cells_body(
-      columns = c(Gruppe),
-    )
-  ) %>%
-  tab_style(
-    style = list(
-      cell_text(weight = "bold")
-      ),
-    locations = cells_body(
-      columns = c(n_1, pct_1, n_2, pct_2),
-      rows = n_1 >= 1000000
-    )
-  ) %>% 
-  fmt_number(
-    columns = c(n_1, n_2),
-    sep_mark = ".",
-    decimals = 0,
-    scale_by = 1
-  ) %>% 
-  sub_missing(
-    columns = everything(),
-    missing_text = " "
-  ) %>% 
-  tab_caption(caption = md("Gruppestørrelser. 0-16-årige opgjort i 1995 og 2019.\n"))
+  flextable() %>% 
+  colformat_double(big.mark = ".", digits = 0) %>%
+  set_header_df(mapping = typology, key = "col_keys") %>% 
+  merge_h(part = "header") %>% 
+  merge_v(j = c("Gruppe"), part = "header") %>% 
+  theme_booktabs() %>% 
+  bold(j = c(1), bold = TRUE, part = "body") %>% 
+  width(j = c(2:4), width = .5) %>% 
+  width(j = c(1), width = .5) %>% 
+  fontsize(size = 10, part = "header") %>% 
+  fontsize(size = 9, j = c(1:5)) %>% 
+  font(fontname = "Fira Sans", part = "all") %>% 
+  set_caption("Gruppestørrelser. 0-16-årige opgjort i 1995 og 2019.\n") %>% 
+  align(align = "center", part = "header")
 
 ```
 
-Samtidigt er andelen, hvor begge forældre har dansk herkomst faldet. I bogen arbejder vi primært videre med kategorien dansk/dansk (**A**), hvor begge forældre har dansk herkomst. Det er den kategori, der blev anvendt til at lave Figur \@ref(fig:fig-1-2) i [kapitel 1](#kap1). Det er ensbetydende med, at mindst to af bedsteforældrene både har dansk statsborgerskab og er født i Danmark. Den gruppe har ingen eller ringe erfaring med etnisk diversitet i familien. Det samme gør sig formentlig gældende for kategorien ”dansk/ukendt” (**B**), hvor én af forældrene har dansk herkomst, mens den anden forælder er ukendt. Der er typisk tale om en mor, der får et barn med en ukendt far, herunder en donorfar. Vi bruger klassifikationerne **A** og **B** samlet til at beskrive børn og unge fra majoritetsbefolkningen. Denne kategorisering af majoritetsbefolkningen omtales herefter ”dansk-dansk herkomst” for at udtrykke *begge* forældres herkomst. 
+Samtidigt er andelen, hvor begge forældre har dansk herkomst faldet. I bogen arbejder vi primært videre med kategorien dansk/dansk (**A**), hvor begge forældre har dansk herkomst. Det er den kategori, der blev anvendt til at lave Figur \@ref(fig:fig-1-22) i [kapitel 1](#kap1). Det er ensbetydende med, at mindst to af bedsteforældrene både har dansk statsborgerskab og er født i Danmark. Den gruppe har ingen eller ringe erfaring med etnisk diversitet i familien. Det samme gør sig formentlig gældende for kategorien ”dansk/ukendt” (**B**), hvor én af forældrene har dansk herkomst, mens den anden forælder er ukendt. Der er typisk tale om en mor, der får et barn med en ukendt far, herunder en donorfar. Vi bruger klassifikationerne **A** og **B** samlet til at beskrive børn og unge fra majoritetsbefolkningen. Denne kategorisering af majoritetsbefolkningen omtales herefter ”dansk-dansk herkomst” for at udtrykke *begge* forældres herkomst. 
 
 ”Dansk-dansk herkomst” gruppen karakteriseres ved kombinationen af dansk sprog, dansk statsborgerskab, kristen/ateist og hvid hudfarve. Hermed har vi lavet en strammere definition på ”dansk herkomst” end den eksisterende klassifikation, hvor blot én af forældrene skal være dansk. I 1985 udgjorde gruppen med dansk-dansk-herkomst 92,82 procent af de 0--16-årige. I 2019 udgør gruppen med dansk-dansker-herkomst kun 76,59 procent af 0--16-årige. 
 
-De andre gruppeklassificeringer baseret på begge forældres herkomst betegnes som: vestlig/vestlig (**E**), vestlig/ikke-vestlig (**F**), ikke-vestlig/ikke-vestlig (**G**) og øvrige (**H**). Her vil (**E**) typisk ikke være en synlig minoritet på hudfarve, mens det vil være tilfældet for **F** og **G**. På grund af det danske CPR-register kan man med rimelighed antage, at gruppe (**H**) udelukkende består af 0-16-årige, hvor forældrene ikke er født og opvokset i Danmark. Figur \@ref(fig:fig-3-1) viser denne langsomme transformation af børn og unge befolkningen i Danmark over tid.
+De andre gruppeklassificeringer baseret på begge forældres herkomst betegnes som: vestlig/vestlig (**E**), vestlig/ikke-vestlig (**F**), ikke-vestlig/ikke-vestlig (**G**) og øvrige (**H**). Her vil (**E**) typisk ikke være en synlig minoritet på hudfarve, mens det vil være tilfældet for **F** og **G**. På grund af det danske CPR-register kan man med rimelighed antage, at gruppe (**H**) udelukkende består af 0-16-årige, hvor forældrene ikke er født og opvokset i Danmark. Figur \@ref(fig:fig-3-01) viser denne langsomme transformation af børn og unge befolkningen i Danmark over tid.
 
-```{r fig-3-01, echo=FALSE, out.width= "100%", fig.cap=" Procentandel 0-16-årige inddelt efter ny inddeling."}
+```{r fig-3-01, echo=FALSE, out.width= "100%", fig.cap=" Procentandel 0-16-årige inddelt efter ny inddeling.", fig.topcaption=TRUE}
 knitr::include_graphics("images/figur_3_1.png")
 ```
 
@@ -138,21 +122,27 @@ Hvordan de ”blandede børn” klarer sig i skolen og videre på arbejdsmarkede
 
 ```{r tab-3-3, echo=FALSE, message=FALSE}
 
+std_border <- officer::fp_border(color = "black")
+
 read_csv2("data/tabel_2_3.csv") %>% 
-  gt(groupname_col = "Klassfikation") %>% 
-  cols_label(
-    n = "n",
-    pct = "%"
-  ) %>% 
-  tab_source_note(
-    source_note = md(
-      "*Note*: Partnerskab opgjort i registre via DST-standardklassifikation (E_FAELLE_ID)."
-    )
-  ) %>%
-  tab_caption(caption = md("Andel med partner med dansk herkomst. Opgjort i 2019 for årgangen, der var 16 år i 2009 og levede i parforhold i 2019. Opdelt på henholdsvis standard og udvidet klassifikation.\n\n\n"))
+  rename(Klassifikation = Klassfikation,
+         `%` = pct) %>% 
+  flextable() %>% 
+  merge_v(j = "Klassifikation") %>% 
+  valign(j = "Klassifikation", valign = "top", part = "all") %>% 
+  bold(j = c(1), bold = TRUE, part = "body") %>% 
+  width(j = c(3:4), width = .3) %>% 
+  width(j = c(1:2), width = 2) %>% 
+  fontsize(size = 10, part = "header") %>% 
+  fontsize(size = 9, j = c(1:4)) %>% 
+  theme_booktabs() %>% 
+  font(fontname = "Fira Sans", part = "all") %>% 
+  hline(i = 3, j = NULL, border = std_border, part = "body") %>% 
+  set_caption("Andel med partner med dansk herkomst. Opgjort i 2019 for årgangen, der var 16 år i 2009 og levede i parforhold i 2019.")
+
 ```
 
-Resultaterne for den udvidede klassifikation, vist i bunden af Tabel \@ref(tab:tab-3-3) giver dog et mere nuanceret billede. Blandt dem med dansk-dansk-herkomst (A-gruppen) er det rigtigt, at majoritetsbefolkningen nærmest udelukkende danner par med majoritetsbefolkningen. Med vores udvidede klassifikation viser der sig også grupper af indvandrere/efterkommere, hvor partneren typisk er dansk. Det gælder for gruppen med vestlig/vestlig-herkomst (E), hvor andelen der har partnere med dansk-herkomst er oppe på 86 procent. Blandt gruppen med vestlig/ikke-vestlig baggrund er andelen på 60 procent. Igen er der tale om begrænsede, men voksende grupper. Det er således kun blandt gruppen med ikke-vestlig/ikke-vestlig herkomst, hvor det hyppigste er, at partneren ikke har dansk herkomst (se Qvist & Qvist, -@qvistqvist2023, for nærmere analyse).
+Resultaterne for den udvidede klassifikation, vist i bunden af Tabel \@ref(tab:tab-3-3) giver dog et mere nuanceret billede. Blandt dem med dansk-dansk-herkomst (A-gruppen) er det rigtigt, at majoritetsbefolkningen nærmest udelukkende danner par med majoritetsbefolkningen. Med vores udvidede klassifikation viser der sig også grupper af indvandrere/efterkommere, hvor partneren typisk er dansk. Det gælder for gruppen med vestlig/vestlig-herkomst (E), hvor andelen der har partnere med dansk-herkomst er oppe på 86 procent. Blandt gruppen med vestlig/ikke-vestlig baggrund er andelen på 60 procent. Igen er der tale om begrænsede, men voksende grupper. Det er således kun blandt gruppen med ikke-vestlig/ikke-vestlig herkomst, hvor det hyppigste er, at partneren ikke har dansk herkomst (se Qvist & Qvist, [-@qvistqvist2023], for nærmere analyse).
 
 Mest interessant er det imidlertid, hvordan de blandede børn danner partnerskaber. Blandt gruppen med én dansk forældre og én vestlige forældre---der levede i parforhold---havde 92 procent en partner med dansk-herkomst. Blandt gruppen med én dansk forældre og én ikke-vestlig forældre var andel med partner med dansk herkomst på 85 procent. Det typiske er således, at de blandede børn finder partnere med dansk herkomst. Det er en indikation på, at de ”blandede børn” ikke kun udfordrer ”os” og ”dem” klassifikationer, men også udviser en integrerende adfærd på ”partnerskabsmarkedet”. 
 

@@ -3,6 +3,8 @@
 
 *[Hans-Peter Y. Qvist](https://vbn.aau.dk/da/persons/hpq)*
 
+&nbsp;&nbsp;&nbsp;&nbsp;
+
 ```{r fig-partner, echo=FALSE, out.width= "100%"}
 knitr::include_graphics("images/kap2.jpg")
 ```
@@ -29,7 +31,7 @@ Det er afgørende at forstå, at den sociologiske forskning, som undersøger kon
 
 I det følgende skal vi derfor se nærmere på omfanget af tværetniske partnerskaber i Danmark. I Figur \@ref(fig:fig-2-1) vises andelen af samtlige partnerskaber blandt bosatte i Danmark, hvor partnerne har samme oprindelsesland og eller andet oprindelsesland. 
 
-```{r fig-2-1, echo=FALSE, out.width= "100%", fig.cap=" Partnerskaber med samme og forskelligt oprindelsesland. Opgjort i 1985 og 2020."}
+```{r fig-2-1, echo=FALSE, out.width= "100%", fig.cap=" Partnerskaber med samme og forskelligt oprindelsesland. Opgjort i 1985 og 2020.", fig.topcaption=TRUE}
 knitr::include_graphics("images/figur_intergruppepartnerskaber_alle.png")
 ```
 
@@ -37,7 +39,7 @@ Det velkendte mønster er, at hovedparten af partnerskaber både i 1985 og 2020 
 
 I Figur \@ref(fig:fig-2-2)  viser den øverste bjælke partnerskabsmønstrene i 2020 blandt alle indvandrere, mens de underliggende bjælker viser mønstrene for ti største indvandrergrupper (der er i partnerskaber med bosatte i Danmark i 2020). 
 	
-```{r fig-2-2, echo=FALSE, out.width= "100%", fig.cap="Tværetniske partnerskab i 2020."}
+```{r fig-2-2, echo=FALSE, out.width= "100%", fig.cap="Tværetniske partnerskab i 2020.", fig.topcaption=TRUE}
 knitr::include_graphics("images/figur_intergruppepartnerskaber_2020.png")
 ```
 

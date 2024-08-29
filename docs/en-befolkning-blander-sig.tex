@@ -102,7 +102,41 @@
 \usepackage{amsthm}
 \usepackage{svg}
 \usepackage[english]{babel}
+
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+
+\usepackage{floatrow}
+\floatsetup[figure]{capposition=top}
+
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+\usepackage{caption}
+\captionsetup[figure]{name=Figur, labelfont=bf, textfont=it, font=small}
+\captionsetup[table]{name=Tabel, labelfont=bf, textfont=it, font=small}
+
+\usepackage{fontspec}
+% Set Fira Sans as the main font
+\setmainfont[
+    BoldFont={Fira Sans SemiBold},
+    ItalicFont={Fira Sans Italic},
+    BoldItalicFont={Fira Sans SemiBold Italic}
+]{Fira Sans}
+
 \usepackage{fancyhdr}
+\pagestyle{fancy}
+% Customize header
+\fancyhead[L]{\footnotesize \nouppercase{\leftmark}} % Chapter title in footnotesize
+\fancyhead[R]{\footnotesize \thepage} % Page number in footnotesize
 
 % Change "Chapter" to "Kapitel" throughout document
 \addto\captionsenglish{\renewcommand{\chaptername}{Kapitel}}
@@ -119,11 +153,18 @@
 }
 \makeatother
 \usepackage{flafter}
-\usepackage{booktabs}
-\usepackage{caption}
-\usepackage{longtable}
+\usepackage{fontspec}
+\usepackage{multirow}
+\usepackage{multicol}
 \usepackage{colortbl}
+\usepackage{hhline}
+\newlength\Oldarrayrulewidth
+\newlength\Oldtabcolsep
+\usepackage{longtable}
 \usepackage{array}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{wrapfig}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -132,21 +173,17 @@
 \urlstyle{same}
 \hypersetup{
   pdftitle={En befolkning blander sig},
-  pdfauthor={Lanciné Diop-Christensen; Christian Albrekt Larsen (red.); Jeppe Fjeldgaard Larsen; Hans-Peter Y. Qvist (red.)},
+  pdfauthor={Christian Albrekt Larsen (red.); Jeppe Fjeldgaard Larsen; Hans-Peter Y. Qvist (red.); Lanciné Diop-Christensen},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
 \title{En befolkning blander sig}
-\author{Lanciné Diop-Christensen \and Christian Albrekt Larsen (red.) \and Jeppe Fjeldgaard Larsen \and Hans-Peter Y. Qvist (red.)}
-\date{2024-08-26}
+\author{Christian Albrekt Larsen (red.) \and Jeppe Fjeldgaard Larsen \and Hans-Peter Y. Qvist (red.) \and Lanciné Diop-Christensen}
+\date{2024-08-29}
 
 \begin{document}
 \maketitle
 
-{
-\setcounter{tocdepth}{1}
-\tableofcontents
-}
 \chapter*{\texorpdfstring{Forord (\textbf{WIP DO NOT CITE ANY CONTENT})}{Forord (WIP DO NOT CITE ANY CONTENT)}}\label{forord-wip-do-not-cite-any-content}
 \addcontentsline{toc}{chapter}{Forord (\textbf{WIP DO NOT CITE ANY CONTENT})}
 
@@ -181,9 +218,15 @@ forlag.aau.dk
 
 © Copyright by author(s)
 
+\newpage
+
+\tableofcontents
+
 \chapter{En befolkning blander sig}\label{kap1}
 
 \emph{\href{https://vbn.aau.dk/en/persons/albrekt}{Christian Albrekt Larsen}}
+
+~~~~
 
 \includegraphics[width=1\linewidth]{images/kap1}
 
@@ -247,11 +290,16 @@ Mens socialpsykologien har været optaget af dynamikker i mødet mellem menneske
 
 De sidste fire årtiers stigende indvandring har ændret disse størrelsesforhold i Danmark. I 2023 udgjorde indvandrere og efterkommere 15 procent af befolkningen ifølge definitioner fra Danmark Statistik. Under antagelse om lige fordeling på mødepladser, er danskernes sandsynlighed for næste gang at møde en indvandrer eller efterkommer således steget fra tre til 15 procent. Omvendt er minoritetens sandsynlighed for næste gang at møde en dansker reduceret fra 97 til 85 procent. Følger man ovenstående logik vil det betyde, at majoriteten ændres lidt hurtigere og minoriteten lidt langsommere end det var tilfældet tidligere.
 
-Effekterne af disse størrelsesforhold på antallet af møder mellem minoritet og majoritet begrænses selvfølgelig af de strukturelle forhold, der typisk koncentrerer indvandrere i byområder, jf. ovenstående. I Figur \ref{fig:fig-1-2} vises andelen af indbyggere, der ikke har to forældre med dansk herkomst. Med vores strammere kriterier for at være dansk-dansk (se næste kapitel for definitioner) illustrerer kortet med alt tydelighed, at der også i Danmark er en betydelig koncentration af minoriteter i byområderne. I kapitel 5 vil det nærmere blive beskrevet, hvordan danskere i nogle kommuner har ret begrænsede muligheder for at danne sociale relationer med indvandrere; specielt hvis man også medtænker et alderskriterium ift. hvem man forventeligt danner sociale relationer med.
+Effekterne af disse størrelsesforhold på antallet af møder mellem minoritet og majoritet begrænses selvfølgelig af de strukturelle forhold, der typisk koncentrerer indvandrere i byområder, jf. ovenstående. I Figur \ref{fig:fig-1-22} vises andelen af indbyggere, der ikke har to forældre med dansk herkomst. Med vores strammere kriterier for at være dansk-dansk (se næste kapitel for definitioner) illustrerer kortet med alt tydelighed, at der også i Danmark er en betydelig koncentration af minoriteter i byområderne. I kapitel 5 vil det nærmere blive beskrevet, hvordan danskere i nogle kommuner har ret begrænsede muligheder for at danne sociale relationer med indvandrere; specielt hvis man også medtænker et alderskriterium ift. hvem man forventeligt danner sociale relationer med.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-1-22-1} \caption{Andelen af indbyggere, hvor begge forældre ikke har dansk herkomst. 2024. <br> Note: *Baseret på FOLK1B 2024K2*.}\label{fig:fig-1-22}
+\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-1-22-1} \caption{Andelen af indbyggere, hvor begge forældre ikke har dansk herkomst. 2024.}\label{fig:fig-1-22}
 \end{figure}
+
+\begin{footnotesize}\textit{\textcolor{gray}{
+Note: Baseret på FOLK1B 2024K2.
+}}
+\end{footnotesize}
 
 Hvorvidt indvandreres større mulighed for at møde andre indvandrere reelt begrænser antallet af møder med majoritetsbefolkningen er omstridt. Den dominerende hypotese i den amerikanske integrationslitteratur er, at en større gruppe fra ens egen nationalitet, fx italienere eller mexicanere, kan virke som en trædesten, der gør det nemmere for en nytilkommen indvandrer at få kontakt med majoriteten, og de heraf følgende ofte forberede livsmuligheder. Denne optimistiske udlægning baseret på historiske amerikanske erfaringer er dog problematiseret af nyere teoriretninger. Såkaldt segmenteret assimileringsteori (\citeproc{ref-portes1993}{Portes \& Zhou, 1993}) fremhæver, at den effekt afhænger af ''kvaliteten'' af indvandrere med ens egen nationalitet, der er i landet. Hvis ens nationalitet klarer sig dårligt i uddannelsessystemet og på arbejdsmarkedet kan det virke hæmmende og ikke befordrende for en nytilkomnes livsmuligheder. Teorien fremhæver også, at post-moderne økonomier skaber en segmentering af arbejdsmarkedet, hvilket gør det vanskeligt tale om en majoritetsbefolkning med rimeligt ensartede livsvilkår, som indvandrere langsomt integreres i. Den alternative hypotese er, at indvandrere lige så vel kan integreres ind i et underklasse- eller overklassesegment i destinationslandet.
 
@@ -280,6 +328,8 @@ Endeligt diskuterer vi det afsluttende \hyperref[kap7]{kapitel}, hvordan bogens 
 \chapter{Tværetniske partnerskaber}\label{kap2}
 
 \emph{\href{https://vbn.aau.dk/da/persons/hpq}{Hans-Peter Y. Qvist}}
+
+~~~~
 
 \includegraphics[width=1\linewidth]{images/kap2}
 
@@ -343,6 +393,8 @@ Lidt populært kan man sige at der er tale om en diskussion af, hvorvidt glasset
 
 \emph{\href{https://vbn.aau.dk/da/persons/jeppefl}{Jeppe Fjeldgaard Larsen}} og \emph{\href{https://vbn.aau.dk/en/persons/albrekt}{Christian Albrekt Larsen}}
 
+~~~~
+
 \includegraphics[width=1\linewidth]{images/kap3}
 
 \newpage
@@ -365,50 +417,231 @@ Når de to kategorier kombineres, anvender DST opgørelsen ''dansk herkomst'', '
 
 Vores udbyggede klassificering af de 0--16-årige tager udgangspunkt i forældrene. Hvis de to forældre klassificeres med de hidtidige klassifikationer, fremkommer udfaldsrummet i Tabel \ref{tab:tab-3-1}.
 
-\begin{longtable}{llll}
-\toprule
- & \multicolumn{2}{c}{} &  \\ 
-\cmidrule(lr){2-3}
-Gruppe & Forældre 1 & Forældre 2 & Betegnelse \\ 
-\midrule\addlinespace[2.5pt]
-\textbf{A} & Dansk herkomst & Dansk herkomst & \textbf{dansk/dansk} \\ 
-\textbf{B} & Dansk herkomst & Ukendt & \textbf{dansk/ukendt} \\ 
-\textbf{C} & Dansk herkomst & Vestlig indvandrer/eft. & \textbf{dansk/vestlig} \\ 
-\textbf{D} & Dansk herkomst & Ikke-vestlig indvandrer/eft. & \textbf{dansk/vestlig} \\ 
-\textbf{E} & Vestlig indvandrer/eft. & Vestlig indvandrer/eft. & \textbf{vestlig/vestlig} \\ 
-\textbf{F} & Vestlig indvandrer/eft. & Ikke-vestlig indvandrer/eft. & \textbf{vestlig/ikke-vestlig} \\ 
-\textbf{G} & Ikke-vestlig indvandrer/eft. & Ikke-vestlig indvandrer/eft. & \textbf{ikke-vestlig/ikke-vestlig} \\ 
-\textbf{H} & Ukendt & Ukendt & \textbf{Ukendt} \\ 
-\bottomrule
+\newpage
+
+\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}
+
+\global\setlength{\Oldtabcolsep}{\tabcolsep}
+
+\setlength{\tabcolsep}{2pt}
+
+\renewcommand*{\arraystretch}{1.5}
+
+
+
+\providecommand{\ascline}[3]{\noalign{\global\arrayrulewidth #1}\arrayrulecolor[HTML]{#2}\cline{#3}}
+
+\begin{longtable}[c]{|p{1.00in}|p{1.00in}|p{1.00in}|p{1.00in}}
+
+\caption{Udfaldsrum\ for\ oprindelse\ baseret\ på\ eksisterende\ klassifikationer\ fra\ Danmarks\ Statistik.
+}\label{tab:tab-3-1}\\
+
+\ascline{1.5pt}{666666}{1-4}
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{} & \multicolumn{2}{>{\raggedright}m{\dimexpr 2in+2\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{Personens\ forældre}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{1in}{\raggedright \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{Gruppe}}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{Forældre\ 1}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{Forældre\ 2}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{1in}{\raggedright \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{Betegnelse}}}}}} \\
+
+\ascline{1.5pt}{666666}{1-4}\endfirsthead \caption[]{Udfaldsrum\ for\ oprindelse\ baseret\ på\ eksisterende\ klassifikationer\ fra\ Danmarks\ Statistik.
+}\label{tab:tab-3-1}\\
+
+\ascline{1.5pt}{666666}{1-4}
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{} & \multicolumn{2}{>{\raggedright}m{\dimexpr 2in+2\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{Personens\ forældre}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{1in}{\raggedright \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{Gruppe}}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{Forældre\ 1}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{Forældre\ 2}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{1in}{\raggedright \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{Betegnelse}}}}}} \\
+
+\ascline{1.5pt}{666666}{1-4}\endhead
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{A}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Dansk\ herkomst}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Dansk\ herkomst}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{dansk/dansk}}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{B}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Dansk\ herkomst}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Ukendt}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{dansk/ukendt}}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{C}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Dansk\ herkomst}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Vestlig\ indvandrer/eft.}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{dansk/vestlig}}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{D}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Dansk\ herkomst}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Ikke-vestlig\ indvandrer/eft.}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{dansk/vestlig}}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{E}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Vestlig\ indvandrer/eft.}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Vestlig\ indvandrer/eft.}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{vestlig/vestlig}}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{F}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Vestlig\ indvandrer/eft.}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Ikke-vestlig\ indvandrer/eft.}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{vestlig/ikke-vestlig}}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{G}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Ikke-vestlig\ indvandrer/eft.}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Ikke-vestlig\ indvandrer/eft.}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{ikke-vestlig/ikke-vestlig}}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{H}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Ukendt}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Ukendt}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{Ukendt}}}}} \\
+
+\ascline{1.5pt}{666666}{1-4}
+
+
+
 \end{longtable}
+
+
+
+\arrayrulecolor[HTML]{000000}
+
+\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}
+
+\global\setlength{\tabcolsep}{\Oldtabcolsep}
+
+\renewcommand*{\arraystretch}{1}
 
 Udfaldsrummet har otte muligheder, hvis man ligesom Danmarks Statistik undlader af skelne mellem mors eller fars herkomst. I første omgang er vi interesseret i fremkomsten af børn med én forældre med dansk herkomst og én med anden herkomst. Dvs. vi skelner ikke mellem indvandrer- og efterkommerstatus. For at forsimple beskrivelsen har vi foretaget en opdeling i dansk/vestlig (\textbf{C}), hvor én af forældrene har dansk herkomst, mens den anden er vestlig indvandrer eller efterkommer. Den gruppe har erfaring med etnisk diversitet i familien, men vil typisk ikke være en synlig minoritet på grund af hudfarve. En opdeling på dansk/ikke-vestlig (\textbf{D}), hvor gruppen også har erfaring med etnisk diversitet i familien, men vil i modsætning typisk være en synlig minoritet via hudfarve.
 
-I 1985 var der 37.504 i alderen 0--16 år i C-gruppen, svarende til 3,48 procent af gruppen, se Tabel \ref{tab:tab-3-2}. I 2019 var antallet vokset til 45.911, svarende til 4,22 procent af de 0--16-årige. Men det er imidlertid i D-gruppen---dem med én dansk og én ikke-vestlig forældre---at den største stigning er sket. I 1985 var der 9.912 i D-gruppen, svarende til 0,9 procent af de 0--16-årige, hvilket i 2019 er vokset til 42.933, svarende til 3,9 procent af de 0--16-årige. Samlet set udgør de cirka 89.000 ''blandede'' børn således 8,16 procent af alle 0--16-årige i 2019, se Tabel \ref{tab:tab-3-2}.
+I 1985 var der 37.504 i alderen 0--16 år i C-gruppen, svarende til 3,5 procent af gruppen, se Tabel \ref{tab:tab-3-2}. I 2019 var antallet vokset til 45.911, svarende til 4,2 procent af de 0--16-årige. Men det er imidlertid i D-gruppen---dem med én dansk og én ikke-vestlig forældre---at den største stigning er sket. I 1985 var der 9.912 i D-gruppen, svarende til 0,9 procent af de 0--16-årige, hvilket i 2019 er vokset til 42.933, svarende til 3,9 procent af de 0--16-årige. Samlet set udgør de cirka 89.000 ''blandede'' børn således 8,16 procent af alle 0--16-årige i 2019, se Tabel \ref{tab:tab-3-2}.
 
-\begin{longtable}{l|rrrr}
-\toprule
-\multicolumn{1}{l}{} & \multicolumn{2}{c}{1985} & \multicolumn{2}{c}{2019} \\ 
-\cmidrule(lr){2-3} \cmidrule(lr){4-5}
-\multicolumn{1}{l}{} & n & \% & n & \% \\ 
-\midrule\addlinespace[2.5pt]
-A & $959.143$ & 89,06\% & $807.198$ & 74,13\% \\ 
-B & $40.524$ & 3,76\% & $26.752$ & 2,46\% \\ 
-C & $37.504$ & 3,48\% & $45.911$ & 4,22\% \\ 
-D & $9.912$ & 0,92\% & $42.933$ & 3,94\% \\ 
-E & $3.990$ & 0,37\% & $24.646$ & 2,26\% \\ 
-F & $878$ & 0,08\% & $7.229$ & 0,66\% \\ 
-G & $19.465$ & 1,81\% & $113.566$ & 10,43\% \\ 
-H & $5.607$ & 0,52\% & $20.598$ & 1,89\% \\ 
-Total & \textbf{$1.077.023$} & \textbf{100\%} & \textbf{$1.088.833$} & \textbf{100\%} \\ 
-\bottomrule
+\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}
+
+\global\setlength{\Oldtabcolsep}{\tabcolsep}
+
+\setlength{\tabcolsep}{2pt}
+
+\renewcommand*{\arraystretch}{1.5}
+
+
+
+\providecommand{\ascline}[3]{\noalign{\global\arrayrulewidth #1}\arrayrulecolor[HTML]{#2}\cline{#3}}
+
+\begin{longtable}[c]{|p{0.50in}|p{0.50in}|p{0.50in}|p{0.50in}|p{0.75in}}
+
+\caption{Gruppestørrelser.\ 0-16-årige\ opgjort\ i\ 1995\ og\ 2019.
+}\label{tab:tab-3-2}\\
+
+\ascline{1.5pt}{666666}{1-5}
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.5in+0\tabcolsep}}{} & \multicolumn{2}{>{\centering}m{\dimexpr 1in+2\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{1985}}}} & \multicolumn{2}{>{\centering}m{\dimexpr 1.25in+2\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{2019}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.5in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.5in}{\centering \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{Gruppe}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{n}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{\%}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{n}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{\%}}}} \\
+
+\ascline{1.5pt}{666666}{1-5}\endfirsthead \caption[]{Gruppestørrelser.\ 0-16-årige\ opgjort\ i\ 1995\ og\ 2019.
+}\label{tab:tab-3-2}\\
+
+\ascline{1.5pt}{666666}{1-5}
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.5in+0\tabcolsep}}{} & \multicolumn{2}{>{\centering}m{\dimexpr 1in+2\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{1985}}}} & \multicolumn{2}{>{\centering}m{\dimexpr 1.25in+2\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{2019}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\centering}m{\dimexpr 0.5in+0\tabcolsep}}{\multirow[c]{-2}{*}{\parbox{0.5in}{\centering \textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{Gruppe}}}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{n}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{\%}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{n}}}} & \multicolumn{1}{>{\centering}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{\%}}}} \\
+
+\ascline{1.5pt}{666666}{1-5}\endhead
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{A}}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{959.143}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{89,06\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{807.198}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{74,13\%}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{B}}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{40.524}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{3,76\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{26.752}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{2,46\%}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{C}}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{37.504}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{3,48\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{45.911}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{4,22\%}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{D}}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{9.912}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{0,92\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{42.933}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{3,94\%}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{E}}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{3.990}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{0,37\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{24.646}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{2,26\%}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{F}}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{878}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{0,08\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{7.229}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{0,66\%}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{G}}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{19.465}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{1,81\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{113.566}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{10,43\%}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{H}}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{5.607}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{0,52\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{20.598}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{1,89\%}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{Total}}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{1.077.023}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{100\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{1.088.833}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{100\%}}}} \\
+
+\ascline{1.5pt}{666666}{1-5}
+
+
+
 \end{longtable}
 
-Samtidigt er andelen, hvor begge forældre har dansk herkomst faldet. I bogen arbejder vi primært videre med kategorien dansk/dansk (\textbf{A}), hvor begge forældre har dansk herkomst. Det er den kategori, der blev anvendt til at lave Figur \ref{fig:fig-1-2} i \hyperref[kap1]{kapitel 1}. Det er ensbetydende med, at mindst to af bedsteforældrene både har dansk statsborgerskab og er født i Danmark. Den gruppe har ingen eller ringe erfaring med etnisk diversitet i familien. Det samme gør sig formentlig gældende for kategorien ''dansk/ukendt'' (\textbf{B}), hvor én af forældrene har dansk herkomst, mens den anden forælder er ukendt. Der er typisk tale om en mor, der får et barn med en ukendt far, herunder en donorfar. Vi bruger klassifikationerne \textbf{A} og \textbf{B} samlet til at beskrive børn og unge fra majoritetsbefolkningen. Denne kategorisering af majoritetsbefolkningen omtales herefter ''dansk-dansk herkomst'' for at udtrykke \emph{begge} forældres herkomst.
+
+
+\arrayrulecolor[HTML]{000000}
+
+\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}
+
+\global\setlength{\tabcolsep}{\Oldtabcolsep}
+
+\renewcommand*{\arraystretch}{1}
+
+Samtidigt er andelen, hvor begge forældre har dansk herkomst faldet. I bogen arbejder vi primært videre med kategorien dansk/dansk (\textbf{A}), hvor begge forældre har dansk herkomst. Det er den kategori, der blev anvendt til at lave Figur \ref{fig:fig-1-22} i \hyperref[kap1]{kapitel 1}. Det er ensbetydende med, at mindst to af bedsteforældrene både har dansk statsborgerskab og er født i Danmark. Den gruppe har ingen eller ringe erfaring med etnisk diversitet i familien. Det samme gør sig formentlig gældende for kategorien ''dansk/ukendt'' (\textbf{B}), hvor én af forældrene har dansk herkomst, mens den anden forælder er ukendt. Der er typisk tale om en mor, der får et barn med en ukendt far, herunder en donorfar. Vi bruger klassifikationerne \textbf{A} og \textbf{B} samlet til at beskrive børn og unge fra majoritetsbefolkningen. Denne kategorisering af majoritetsbefolkningen omtales herefter ''dansk-dansk herkomst'' for at udtrykke \emph{begge} forældres herkomst.
 
 ''Dansk-dansk herkomst'' gruppen karakteriseres ved kombinationen af dansk sprog, dansk statsborgerskab, kristen/ateist og hvid hudfarve. Hermed har vi lavet en strammere definition på ''dansk herkomst'' end den eksisterende klassifikation, hvor blot én af forældrene skal være dansk. I 1985 udgjorde gruppen med dansk-dansk-herkomst 92,82 procent af de 0--16-årige. I 2019 udgør gruppen med dansk-dansker-herkomst kun 76,59 procent af 0--16-årige.
 
-De andre gruppeklassificeringer baseret på begge forældres herkomst betegnes som: vestlig/vestlig (\textbf{E}), vestlig/ikke-vestlig (\textbf{F}), ikke-vestlig/ikke-vestlig (\textbf{G}) og øvrige (\textbf{H}). Her vil (\textbf{E}) typisk ikke være en synlig minoritet på hudfarve, mens det vil være tilfældet for \textbf{F} og \textbf{G}. På grund af det danske CPR-register kan man med rimelighed antage, at gruppe (\textbf{H}) udelukkende består af 0-16-årige, hvor forældrene ikke er født og opvokset i Danmark. Figur \ref{fig:fig-3-1} viser denne langsomme transformation af børn og unge befolkningen i Danmark over tid.
+De andre gruppeklassificeringer baseret på begge forældres herkomst betegnes som: vestlig/vestlig (\textbf{E}), vestlig/ikke-vestlig (\textbf{F}), ikke-vestlig/ikke-vestlig (\textbf{G}) og øvrige (\textbf{H}). Her vil (\textbf{E}) typisk ikke være en synlig minoritet på hudfarve, mens det vil være tilfældet for \textbf{F} og \textbf{G}. På grund af det danske CPR-register kan man med rimelighed antage, at gruppe (\textbf{H}) udelukkende består af 0-16-årige, hvor forældrene ikke er født og opvokset i Danmark. Figur \ref{fig:fig-3-01} viser denne langsomme transformation af børn og unge befolkningen i Danmark over tid.
 
 \begin{figure}
 \includegraphics[width=1\linewidth]{images/figur_3_1} \caption{ Procentandel 0-16-årige inddelt efter ny inddeling.}\label{fig:fig-3-01}
@@ -420,34 +653,115 @@ Det er primært G-gruppen (ikke-vestlig/ikke-vestlig), der er vokset i perioden.
 
 Hvordan de ''blandede børn'' klarer sig i skolen og videre på arbejdsmarkedet findes der nærmest ingen analyser af eftersom de har været usynlige i Danmark Statistisks kategorier. Men vi vil kort illustrere, hvordan en udvidet klassifikation kan give nye indsigter i integrationsprocesserne mellem indvandrere, efterkommere og danskere. Det gøres ved at se på partnerskaber i 2019 blandt den årgang, der var 16 år i 2009 (n=70482), dvs. dem der var 26 år i 2019. Af de 70.482 16-årige i 2009, var 32.081 samboende med en partner i 2019. I Tabel \ref{tab:tab-3-3} vises den andel blandt denne gruppe af unge, der har en partner med ''dansk herkomst``. Resultaterne for standardklassifikation vises i den øverste del af tabellen. Blandt gruppen med dansk-herkomst, der i 2019 levede i parforhold, havde 95 procent en partner, der også havde dansk herkomst. Den tilsvarende andel var 43 procent og 31 procent blandt indvandrere og efterkommere. Baseret på de resultater kunne man slutte, at danskerne næsten udelukkende danner par med andre danskere. Indvandrerne og efterkommerne danner hyppigst par med andre indvandrere og efterkommere, men blander sig dog mere op end det er tilfældet for danskerne.
 
-\setlength{\LTpost}{0mm}
-\begin{longtable}{lrr}
-\toprule
-Gruppe & \% & n \\ 
-\midrule\addlinespace[2.5pt]
-\multicolumn{3}{l}{Standardklassifikation} \\ 
-\midrule\addlinespace[2.5pt]
-Dansk herkomst & 95\% & 29967 \\ 
-Indvandrere & 43\% & 697 \\ 
-Efterkommere & 31\% & 1417 \\ 
-\midrule\addlinespace[2.5pt]
-\multicolumn{3}{l}{Udvidet klassifikation} \\ 
-\midrule\addlinespace[2.5pt]
-A: Dansk/dansk & 95\% & 27057 \\ 
-B: Dansk/ukendt & 94\% & 1452 \\ 
-C: Dansk/vestlig & 92\% & 852 \\ 
-D: Dansk/ikke-vestlig & 85\% & 468 \\ 
-E: Vestlig/vestlig & 86\% & 131 \\ 
-F: Vestlig/ikke-vestlig & 60\% & 42 \\ 
-G: Ikke-vestlig/ikke-vestlig & 25\% & 1604 \\ 
-H: Øvrige & 63\% & 475 \\ 
-\bottomrule
-\end{longtable}
-\begin{minipage}{\linewidth}
-\emph{Note}: Partnerskab opgjort i registre via DST-standardklassifikation (E\_FAELLE\_ID).\\
-\end{minipage}
+\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}
 
-Resultaterne for den udvidede klassifikation, vist i bunden af Tabel \ref{tab:tab-3-3} giver dog et mere nuanceret billede. Blandt dem med dansk-dansk-herkomst (A-gruppen) er det rigtigt, at majoritetsbefolkningen nærmest udelukkende danner par med majoritetsbefolkningen. Med vores udvidede klassifikation viser der sig også grupper af indvandrere/efterkommere, hvor partneren typisk er dansk. Det gælder for gruppen med vestlig/vestlig-herkomst (E), hvor andelen der har partnere med dansk-herkomst er oppe på 86 procent. Blandt gruppen med vestlig/ikke-vestlig baggrund er andelen på 60 procent. Igen er der tale om begrænsede, men voksende grupper. Det er således kun blandt gruppen med ikke-vestlig/ikke-vestlig herkomst, hvor det hyppigste er, at partneren ikke har dansk herkomst (se Qvist \& Qvist, -Qvist \& Qvist (\citeproc{ref-qvistqvist2023}{2023}), for nærmere analyse).
+\global\setlength{\Oldtabcolsep}{\tabcolsep}
+
+\setlength{\tabcolsep}{2pt}
+
+\renewcommand*{\arraystretch}{1.5}
+
+
+
+\providecommand{\ascline}[3]{\noalign{\global\arrayrulewidth #1}\arrayrulecolor[HTML]{#2}\cline{#3}}
+
+\begin{longtable}[c]{|p{2.00in}|p{2.00in}|p{0.30in}|p{0.30in}}
+
+\caption{Andel\ med\ partner\ med\ dansk\ herkomst.\ Opgjort\ i\ 2019\ for\ årgangen,\ der\ var\ 16\ år\ i\ 2009\ og\ levede\ i\ parforhold\ i\ 2019.}\label{tab:tab-3-3}\\
+
+\ascline{1.5pt}{666666}{1-4}
+
+\multicolumn{1}{>{\raggedright}p{\dimexpr 2in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{Klassifikation}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 2in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{Gruppe}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{n}}}} \\
+
+\ascline{1.5pt}{666666}{1-4}\endfirsthead \caption[]{Andel\ med\ partner\ med\ dansk\ herkomst.\ Opgjort\ i\ 2019\ for\ årgangen,\ der\ var\ 16\ år\ i\ 2009\ og\ levede\ i\ parforhold\ i\ 2019.}\label{tab:tab-3-3}\\
+
+\ascline{1.5pt}{666666}{1-4}
+
+\multicolumn{1}{>{\raggedright}p{\dimexpr 2in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{Klassifikation}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 2in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{Gruppe}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{10}{10}\selectfont{\global\setmainfont{Fira Sans}{n}}}} \\
+
+\ascline{1.5pt}{666666}{1-4}\endhead
+
+
+
+\multicolumn{1}{>{\raggedright}p{\dimexpr 2in+0\tabcolsep}}{} & \multicolumn{1}{>{\raggedright}m{\dimexpr 2in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Dansk\ herkomst}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{95\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{29,967}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}p{\dimexpr 2in+0\tabcolsep}}{} & \multicolumn{1}{>{\raggedright}m{\dimexpr 2in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Indvandrere}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{43\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{697}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}p{\dimexpr 2in+0\tabcolsep}}{\multirow[t]{-3}{*}{\parbox{2in}{\raggedright \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{Standardklassifikation}}}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 2in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Efterkommere}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{31\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{1,417}}}} \\
+
+\ascline{1pt}{000000}{1-4}
+
+
+
+\multicolumn{1}{>{\raggedright}p{\dimexpr 2in+0\tabcolsep}}{} & \multicolumn{1}{>{\raggedright}m{\dimexpr 2in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{A:\ Dansk/dansk}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{95\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{27,057}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}p{\dimexpr 2in+0\tabcolsep}}{} & \multicolumn{1}{>{\raggedright}m{\dimexpr 2in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{B:\ Dansk/ukendt}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{94\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{1,452}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}p{\dimexpr 2in+0\tabcolsep}}{} & \multicolumn{1}{>{\raggedright}m{\dimexpr 2in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{C:\ Dansk/vestlig}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{92\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{852}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}p{\dimexpr 2in+0\tabcolsep}}{} & \multicolumn{1}{>{\raggedright}m{\dimexpr 2in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{D:\ Dansk/ikke-vestlig}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{85\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{468}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}p{\dimexpr 2in+0\tabcolsep}}{} & \multicolumn{1}{>{\raggedright}m{\dimexpr 2in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{E:\ Vestlig/vestlig}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{86\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{131}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}p{\dimexpr 2in+0\tabcolsep}}{} & \multicolumn{1}{>{\raggedright}m{\dimexpr 2in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{F:\ Vestlig/ikke-vestlig}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{60\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{42}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}p{\dimexpr 2in+0\tabcolsep}}{} & \multicolumn{1}{>{\raggedright}m{\dimexpr 2in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{G:\ Ikke-vestlig/ikke-vestlig}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{25\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{1,604}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}p{\dimexpr 2in+0\tabcolsep}}{\multirow[t]{-8}{*}{\parbox{2in}{\raggedright \textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{Udvidet\ klassifikation}}}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 2in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{H:\ Øvrige}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{63\%}}}} & \multicolumn{1}{>{\raggedleft}m{\dimexpr 0.3in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{475}}}} \\
+
+\ascline{1.5pt}{666666}{1-4}
+
+
+
+\end{longtable}
+
+
+
+\arrayrulecolor[HTML]{000000}
+
+\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}
+
+\global\setlength{\tabcolsep}{\Oldtabcolsep}
+
+\renewcommand*{\arraystretch}{1}
+
+Resultaterne for den udvidede klassifikation, vist i bunden af Tabel \ref{tab:tab-3-3} giver dog et mere nuanceret billede. Blandt dem med dansk-dansk-herkomst (A-gruppen) er det rigtigt, at majoritetsbefolkningen nærmest udelukkende danner par med majoritetsbefolkningen. Med vores udvidede klassifikation viser der sig også grupper af indvandrere/efterkommere, hvor partneren typisk er dansk. Det gælder for gruppen med vestlig/vestlig-herkomst (E), hvor andelen der har partnere med dansk-herkomst er oppe på 86 procent. Blandt gruppen med vestlig/ikke-vestlig baggrund er andelen på 60 procent. Igen er der tale om begrænsede, men voksende grupper. Det er således kun blandt gruppen med ikke-vestlig/ikke-vestlig herkomst, hvor det hyppigste er, at partneren ikke har dansk herkomst (se Qvist \& Qvist, (\citeproc{ref-qvistqvist2023}{2023}), for nærmere analyse).
 
 Mest interessant er det imidlertid, hvordan de blandede børn danner partnerskaber. Blandt gruppen med én dansk forældre og én vestlige forældre---der levede i parforhold---havde 92 procent en partner med dansk-herkomst. Blandt gruppen med én dansk forældre og én ikke-vestlig forældre var andel med partner med dansk herkomst på 85 procent. Det typiske er således, at de blandede børn finder partnere med dansk herkomst. Det er en indikation på, at de ''blandede børn'' ikke kun udfordrer ''os'' og ''dem'' klassifikationer, men også udviser en integrerende adfærd på ''partnerskabsmarkedet''.
 
@@ -459,7 +773,11 @@ Partnerskabet er et tveægget sværd for integrationsprocesser. På den ene side
 
 \emph{\href{https://vbn.aau.dk/da/persons/jeppefl}{Jeppe Fjeldgaard Larsen}}
 
+~~~~
+
 \includegraphics[width=1\linewidth]{images/kap4}
+
+\newpage
 
 Jens Joel (MF, Socialdemokratiet) skriver i sin bog \emph{Fællesskaberen}, at ``tilliden, forståelsen og samhørigheden'' i Danmark er truet. Denne trussel mod den danske sammenhængskraft skyldes blandt andet, at vi ikke længere ``mødes {[}\ldots{]} i det, der før var `folkets skole'. I hvert fald ikke i tilstrækkelig grad'' (\citeproc{ref-joel2022}{Joel, 2002}, s. 11). Joel formår fortrinligt at udtrykke forestillingen om grundskolen, som et sted, hvor befolkningen bør mødes på tværs af forskellige baggrunde---hvad enten det er klasse eller etnisk tilhørsforhold---for at skabe det langsigtede fundament for et samfund præget af tillid, tryghed og tolerance. Der har således været bred politisk enighed om at forhindre, at specielt de ikke-vestlige indvandrere og efterkommere blev koncentreret på specifikke skoler. I dette kapitel vil jeg ikke tage stilling til, hvornår segregering er problematisk---og om det i alle situationer er ikke-ønskværdigt. I stedet vil jeg beskrive grundtrækkene i omfanget af skolesegregering i den danske grundskole fra 1985 til 2020. Med disse beskrivelser er det hensigten at nuancere og kvalificere de pågående debatter vedrørende den danske grundskole og dens rolle i de danske målsætninger for integration.
 
@@ -484,34 +802,39 @@ Der er således en bekymring for, at kombinationen af frit skolevalg kan udfordr
 Der er stor variation i, hvor tæt skoler ligger på hinanden. Dette har en indirekte betydning for omfanget af frit skolevalg, da områder med få skoler inden for relativt kort afstand også har færre reelle muligheder for at vælge alternative til distriktskolen, som diskuteret ovenfor. Figur \ref{fig:fig-4-1} visualiserer antallet af skoler inden for 2 km fra det geografiske centrum af bopælssognet. Kortet fungerer på sin vis som en indikator for befolkningstæthed, da der naturligvis vil være flere skoler i områder med mange familier. Derfor gælder det, at familier i urbane områder generelt har flere skoler, de potentielt kan vælge mellem. I Figur \ref{fig:fig-4-1}.A ser vi at de fleste husstande i Danmark har to skoler inden for en realistisk pendleafstand på 2 km, men som bemærkelsesværdige afvigelser fra gennemsnittet er der i København og Frederiksberg henholdsvis 20 og 24 skoler inden for 2 km.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{images/figur_3_1c_distance_antal} \caption{Gennemsnitligt antal skoler inden for 2 km af bopælsadressen (A) og koncentration af børn med ikke-vestlig indvandrerbaggrund i skolealderen i 2020 (B) (B). <br> <br> Note: * Afstandene til skolen er baseret på den euclidiske afstand fra bopælssognets centroid til de geografiske koordinater for skolens adresse. Ikke-vestlig indvandrerbaggrund inkluderer børn, hvor begge eller én af forældrene er første generations immigrant fra et ikke-vestligt land.*}\label{fig:fig-4-1}
+\includegraphics[width=1\linewidth]{images/figur_3_1c_distance_antal} \caption{Gennemsnitligt antal skoler inden for 2 km af bopælsadressen (A) og koncentration af børn med ikke-vestlig indvandrerbaggrund i skolealderen i 2020 (B).}\label{fig:fig-4-1}
 \end{figure}
 
-Det centrale her er, at fordi børnefamilier med indvandrerbaggrund er koncentreret i urbane områder som vi ser i Figur \ref{fig:fig-4-1}, er konsekvensen en stærk korrelation mellem store skolemarkeder (\ref{fig:fig-4-1}.A) (områder med mange skoler at vælge mellem) og områder med høj etnisk diversitet (\ref{fig:fig-4-1}.B). Med andre ord, i urbane områder er der på den ene side et strukturelt potentiale for ``blandede'' skoler med høj gensidig eksponering mellem majoritets- og minoritetsgrupper, fordi der er en relativ høj koncentration af familier med indvandrerbaggrunde. Det vil sige, at de fleste familier med dansk oprindelse har en stor sandsynlighed for at møde andre familier, der ikke ligner dem selv. Samtidig er der dog også et stort strukturelt potentiale for etnisk skolesegregering. Dette skyldes, at der er nok skoler til, at familier realistisk kan undgå de mindre attraktive skoler ved at indskrive deres børn på andre skoler, såsom privat- eller friskoler (\citeproc{ref-larsen2024b}{J. F. Larsen, 2024c}). Disse mindre attraktive skoler er---rimeligt eller ej---ofte associeret med en høj andel elever fra ikke-vestlige immigrantbaggrunde. Selvom de fleste familier angiver, når de bliver spurgt, at det vigtigste kriterium i skolevalget er barnets trivsel og skolens faglige kvalitet (\citeproc{ref-epinion2017}{Epinion, 2017}). Denne kvalitet kan dog ofte være svær at vurdere i praksis, så det observerbare elevgrundlag bliver ofte en målestok for vurderet kvalitet og skolens omdømme (\citeproc{ref-rambuxf8ll2011}{Rambøll, 2011}). Empiriske studier viser, at familier med de højeste uddannelser også er mest sensitive over for antallet af ``ikke-indfødte'' elever på en skole (\citeproc{ref-karsten2003}{Karsten et al., 2003}; \citeproc{ref-bjerrenielsen2020}{\textbf{bjerrenielsen2020?}}; \citeproc{ref-nielsen2019}{\textbf{nielsen2019?}}). Efter trivsel og faglig kvalitet er afstand til skolen fra bopælen også et vigtigt kriterium for mange forældre (\citeproc{ref-epinion2017}{Epinion, 2017}). Derfor kan sammenhængen mellem antallet af skoler og koncentrationen af børn med ikke-vestlig indvandrerbaggrund være med til at forstå de udfordringer og muligheder, der eksisterer for integration og skolevalg i forskellige geografiske områder. Urbane områder med mange skoler og høj diversitet står over for udfordringen med at sikre, at kontakt- og klassekammerateffekter kan realiseres på grund af segregeringsprocesser af ledt af mulighederne for at anvende det frie skolevalg, mens landdistrikter kan være udfordret af \emph{begrænsede} skolevalgmuligheder.
+\begin{footnotesize}\textit{\textcolor{gray}{
+Note: Afstandene til skolen er baseret på den euclidiske afstand fra bopælssognets centroid til de geografiske koordinater for skolens adresse. Ikke-vestlig indvandrerbaggrund inkluderer børn, hvor begge eller én af forældrene er første generations immigrant fra et ikke-vestligt land.
+}}
+\end{footnotesize}
+
+Det centrale her er, at fordi børnefamilier med indvandrerbaggrund er koncentreret i urbane områder som vi ser i Figur \ref{fig:fig-4-1}, er konsekvensen en stærk korrelation mellem store skolemarkeder (\ref{fig:fig-4-1}.A) (områder med mange skoler at vælge mellem) og områder med høj etnisk diversitet (\ref{fig:fig-4-1}.B). Med andre ord, i urbane områder er der på den ene side et strukturelt potentiale for ``blandede'' skoler med høj gensidig eksponering mellem majoritets- og minoritetsgrupper, fordi der er en relativ høj koncentration af familier med indvandrerbaggrunde. Det vil sige, at de fleste familier med dansk oprindelse har en stor sandsynlighed for at møde andre familier, der ikke ligner dem selv. Samtidig er der dog også et stort strukturelt potentiale for etnisk skolesegregering. Dette skyldes, at der er nok skoler til, at familier realistisk kan undgå de mindre attraktive skoler ved at indskrive deres børn på andre skoler, såsom privat- eller friskoler (\citeproc{ref-larsen2024b}{J. F. Larsen, 2024c}). Disse mindre attraktive skoler er---rimeligt eller ej---ofte associeret med en høj andel elever fra ikke-vestlige immigrantbaggrunde. Selvom de fleste familier angiver, når de bliver spurgt, at det vigtigste kriterium i skolevalget er barnets trivsel og skolens faglige kvalitet (\citeproc{ref-epinion2017}{Epinion, 2017}). Denne kvalitet kan dog ofte være svær at vurdere i praksis, så det observerbare elevgrundlag bliver ofte en målestok for vurderet kvalitet og skolens omdømme (\citeproc{ref-rambuxf8ll2011}{Rambøll, 2011}). Empiriske studier viser, at familier med de højeste uddannelser også er mest sensitive over for antallet af ``ikke-indfødte'' elever på en skole (\citeproc{ref-bjerre-nielsen2020}{Bjerre-Nielsen \& Gandil, 2020}; \citeproc{ref-karsten2003}{Karsten et al., 2003}). Efter trivsel og faglig kvalitet er afstand til skolen fra bopælen også et vigtigt kriterium for mange forældre (\citeproc{ref-epinion2017}{Epinion, 2017}). Derfor kan sammenhængen mellem antallet af skoler og koncentrationen af børn med ikke-vestlig indvandrerbaggrund være med til at forstå de udfordringer og muligheder, der eksisterer for integration og skolevalg i forskellige geografiske områder. Urbane områder med mange skoler og høj diversitet står over for udfordringen med at sikre, at kontakt- og klassekammerateffekter kan realiseres på grund af segregeringsprocesser af ledt af mulighederne for at anvende det frie skolevalg, mens landdistrikter kan være udfordret af \emph{begrænsede} skolevalgmuligheder.
 
 \section{Hvordan måler vi segrering?}\label{hvordan-muxe5ler-vi-segrering}
 
-Når vi måler graden af segregering, er det mest anvendte mål for (skole)segregering \emph{Dissimilarity} (\(D\)) indekset, men også \emph{Separation} (\(S\)) indekset har en vis udbredelse\footnote{\(S\) er også kendt under andre navne, såsom \(\eta^2\), variansratioen eller korrelationsratioen. Se Fossett (\citeproc{ref-fossett2017}{2017}) for en detaljeret diskussion af forskellen mellem \(S\) og andre mål for segregering.}. Begge mål kan tage værdierne 0-1, og vil oftest være korrelerede. \(S\) er typisk noget lavere end \(D\), da \(S\) korrigerer for størrelsen af skoler og grupper, mens \(D\) ikke gør (se \hyperref[bilag1]{bilag A} for tekniske detaljer). Den grundlæggende forskel mellem de to mål er, at \(D\) måler graden af ulige, eller uens, fordeling, mens \(S\) måler graden af polarisering. De måler altså to forskellige dimensioner af segregering {[}Douglas S. Massey \& Denton (\citeproc{ref-massey1988}{1988}); @ damm2022{]}.
+Når vi måler graden af segregering, er det mest anvendte mål for (skole)segregering \emph{Dissimilarity} (\(D\)) indekset, men også \emph{Separation} (\(S\)) indekset har en vis udbredelse\footnote{\(S\) er også kendt under andre navne, såsom \(\eta^2\), variansratioen eller korrelationsratioen. Se Fossett (\citeproc{ref-fossett2017}{2017}) for en detaljeret diskussion af forskellen mellem \(S\) og andre mål for segregering.}. Begge mål kan tage værdierne 0-1, og vil oftest være korrelerede. \(S\) er typisk noget lavere end \(D\), da \(S\) korrigerer for størrelsen af skoler og grupper, mens \(D\) ikke gør (se \hyperref[bilag1]{bilag A} for tekniske detaljer). Den grundlæggende forskel mellem de to mål er, at \(D\) måler graden af ulige, eller uens, fordeling, mens \(S\) måler graden af polarisering. De måler altså to forskellige dimensioner af segregering (\citeproc{ref-damm2022}{Damm et al., 2022}; \citeproc{ref-massey1988}{Massey \& Denton, 1988}).
 
 Lidt simplificeret vil det sige, at \(D\) måler, hvor mange fra én af grupperne i sammenligningen, der skulle flyttes til en ny skole for, at fordelingen er ``lige''. ``Lige fordeling'' er i denne kontekst et udtryk for en situation, hvor samtlige skoler i en kommune/nation har samme andel minoriteter som på kommunalt/nationalt niveau. Det vil sige, at indekset måler i hvilket omfang andelene på de enkelte skoler ligner den overordnede befolkningssammensætning i kommunen/nationen. Et lavt \(D\)-indeks udtrykker altså, at de fleste skoler har en andel af hver gruppe, der spejler størrelserne af grupperne i populationen. Begrænsningerne i anvendelsen af \(D\) er at det ikke er påvirket af den absolutte størrelser af de grupper, der sammenlignes, da det kun er den relative fordeling, der indgår i målet. Det betyder at \(D\) ikke fortæller noget om potentiel kontakt mellem minoritets og majoritets gruppen. Derudover er målet meget sensitivt overfor antallet og størrelsen af skoler, hvilket er en begrænsning når der sammenlignes mellem områder og over tid.
 
-Modsat er størrelsen af skolerne af betydning for \(S\) indekset, idet det udtrykker hvilket omfang børn fra forskellige grupper er isoleret fra hinanden, da det er en standardisering af det såkaldte isoleringsindeks {[}se damm2022: 85--86{]}.\footnote{Standardiseringen gør det muligt at sammenligne på tværs af områder med forskellige befolkningssammensætninger, da isolationsindekset er meget sensitivt overfor størrelsesforholdet mellem majoritets- og minoritetsgruppen (\citeproc{ref-bell1954}{Bell, 1954}; \citeproc{ref-damm2022}{Damm et al., 2022}).} \(S=0\) udtrykker en fordeling mellem skoler, hvor børn på alle skoler har den samme grad af intergruppe eksponering. Fx, hvis der er 10\% børn med indvandererbaggrund i en kommune, har det gennemsnitlige barn en eksponering til børn med indvandererbaggrund på 10\%. \(S=1\) er i kontrast en situation hvor børn i en skolekontekst \emph{udelukkende} er eksponerede til andre børn fra deres egen gruppe. Derfor, og igen en smule simplifiseret skal \(S\), tolkes som omfanget af potentiel eksponering mellem to grupper og kan dermed også tolkes som et spektrum af polarisering mellem to grupper. Se \hyperref[bilag1]{bilag A} for tekniske og detaljeret beskrivelse og diskussion.
+Modsat er størrelsen af skolerne af betydning for \(S\) indekset, idet det udtrykker hvilket omfang børn fra forskellige grupper er isoleret fra hinanden, da det er en standardisering af det såkaldte isoleringsindeks (se \citeproc{ref-damm2022}{Damm et al., 2022}: 85--86).\footnote{Standardiseringen gør det muligt at sammenligne på tværs af områder med forskellige befolkningssammensætninger, da isolationsindekset er meget sensitivt overfor størrelsesforholdet mellem majoritets- og minoritetsgruppen (\citeproc{ref-bell1954}{Bell, 1954}; \citeproc{ref-damm2022}{Damm et al., 2022}).} \(S=0\) udtrykker en fordeling mellem skoler, hvor børn på alle skoler har den samme grad af intergruppe eksponering. Fx, hvis der er 10\% børn med indvandererbaggrund i en kommune, har det gennemsnitlige barn en eksponering til børn med indvandererbaggrund på 10\%. \(S=1\) er i kontrast en situation hvor børn i en skolekontekst \emph{udelukkende} er eksponerede til andre børn fra deres egen gruppe. Derfor, og igen en smule simplifiseret skal \(S\), tolkes som omfanget af potentiel eksponering mellem to grupper og kan dermed også tolkes som et spektrum af polarisering mellem to grupper. Se \hyperref[bilag1]{bilag A} for tekniske og detaljeret beskrivelse og diskussion.
 
-Præcis hvornår segregering er ``for høj'' er et politisk og normativt spørgsmål. Dog peger den klassiske (amerikanske) segregeringslitteratur på, at \(D<0,3\) anses som lavt, mens \(D>0,6\) betragtes som højt og værdierne imellem reflekterer moderat segregering (\citeproc{ref-massey1994}{D. S. Massey \& Denton, 1994}). Da \(S\) af tekniske årsager altid vil være lig eller lavere end \(D\) og aldrig højere, vil \(S=0,6\) betragtes som højt, da der vil være en betydelig mængde skoler, der (næsten) udelukkende består af enten majoritets- eller minoritetsbaggrund, og den gennemsnitlige eksponering til ens egen gruppe er markant større end den ville være under forudsætning af tilfældige fordelinger mellem skoler.
+Præcis hvornår segregering er ``for høj'' er et politisk og normativt spørgsmål. Dog peger den klassiske (amerikanske) segregeringslitteratur på, at \(D<0,3\) anses som lavt, mens \(D>0,6\) betragtes som højt og værdierne imellem reflekterer moderat segregering (\citeproc{ref-massey1994}{Massey \& Denton, 1994}). Da \(S\) af tekniske årsager altid vil være lig eller lavere end \(D\) og aldrig højere, vil \(S=0,6\) betragtes som højt, da der vil være en betydelig mængde skoler, der (næsten) udelukkende består af enten majoritets- eller minoritetsbaggrund, og den gennemsnitlige eksponering til ens egen gruppe er markant større end den ville være under forudsætning af tilfældige fordelinger mellem skoler.
 
 \section{Segregering på national skala}\label{segregering-puxe5-national-skala}
 
-På tværs af hele landet kan segregeringen opgøres til \(D = 0,44\) og \(S = 0,16\) i 2020, se Figur \ref{fig:fig-4-2}. I Figur \ref{fig:fig-4-2} ses udviklingen af begge mål for segregering. Grundlæggende har graden af skolesegregering på begge dimensioner været nogenlunde stabil siden starten af 00'erne. Bemærk, at som det er diskuteret ovenfor, er det to grundlæggende forskellige dimensioner af fordeling af børn, der måles. Vi ser derfor, at de to mål for segregering tilsyneladende konvergerer frem mod 00'erne. Dette skyldes ændrede strukturelle forhold: I 1985 var der for få børn med indvandrerbaggrund og for mange skoler til, at disse børn kunne have været ``ligeligt'' fordelt. En vis grad af skolesegregering, i henhold til \(D\)-indekset, har derfor været en strukturel betingelse. Til gengæld viser \(S\)-indekset, at denne gruppe af børn med indvandrerbaggrund i meget stort omfang har gået på skoler, hvor de har udgjort en numerisk minoritet, set ved at \(S\) har været lavt ift. \(D\), om end det har været stigende frem mod 2010'erne. Dette er en basal strukturel betingelse, når minoritetsgruppen numerisk udgør en lille gruppe. Gruppen har simpelthen ikke været stor nok til, at den i praksis kunne have udgjort en numerisk majoritet på enkelte skoler. I takt med at gruppen af børn med indvandrerbaggrund bliver større relativt til gruppen af børn med dansk oprindelse, er der altså de nødvendige strukturelle betingelser for, at flere---hvis ikke de fleste---skoler kan optage børn med indvandrerbaggrund. Dette bliver til en vis grad realiseret, illustreret Figur \ref{fig:fig-4-2} ved et faldende \(D\) indeks. Men, som vi ser med et parallelt stigende \(S\)-indeks, kommer der fortsat flere skoler, hvor børn med indvandrerbaggrund udgør en relativt stor andel eller den numeriske majoritet på skolen. Dette har en klar strukturel tolkning. Indvandrerfamilier bosætter sig disproportionelt i hovedstadsområdet og de største kommuner (se se \hyperref[kap1]{kapitel 1}), hvilket muliggør eksistensen af skoler, hvor relativt store andele udgøres af børn med indvandrerbaggrund. Konvergeringen, hvor det ene mål falder og det andet stiger, tolkes derfor som primært at være drevet af ændrede strukturelle betingelser for segregering; herunder historiske bosætningsmønstre blandt familier med indvandrerbaggrund.
+På tværs af hele landet kan segregeringen opgøres til \(D = 0,44\) og \(S = 0,16\) i 2020, se Figur \ref{fig:fig-4-2}. I Figur \ref{fig:fig-4-2} ses udviklingen af begge mål for segregering. Grundlæggende har graden af skolesegregering på begge dimensioner været nogenlunde stabil siden starten af 00'erne. Bemærk, at som det er diskuteret ovenfor, er det to grundlæggende forskellige dimensioner af fordeling af børn, der måles. Vi ser derfor, at de to mål for segregering tilsyneladende konvergerer frem mod 00'erne. Dette skyldes ændrede strukturelle forhold: I 1985 var der for få børn med indvandrerbaggrund og for mange skoler til, at disse børn kunne have været ``ligeligt'' fordelt. En vis grad af skolesegregering, i henhold til \(D\)-indekset, har derfor været en strukturel betingelse. Til gengæld viser \(S\)-indekset, at denne gruppe af børn med indvandrerbaggrund i meget stort omfang har gået på skoler, hvor de har udgjort en numerisk minoritet, set ved at \(S\) har været lavt ift. \(D\), om end det har været stigende frem mod 2010'erne. Dette er en basal strukturel betingelse, når minoritetsgruppen numerisk udgør en lille gruppe. Gruppen har simpelthen ikke været stor nok til, at den i praksis kunne have udgjort en numerisk majoritet på enkelte skoler. I takt med at gruppen af børn med indvandrerbaggrund bliver større relativt til gruppen af børn med dansk oprindelse, er der altså de nødvendige strukturelle betingelser for, at flere---hvis ikke de fleste---skoler kan optage børn med indvandrerbaggrund. Dette bliver til en vis grad realiseret, illustreret Figur \ref{fig:fig-4-2} ved et faldende \(D\) indeks. Men, som vi ser med et parallelt stigende \(S\)-indeks, kommer der fortsat flere skoler, hvor børn med indvandrerbaggrund udgør en relativt stor andel eller den numeriske majoritet på skolen. Dette har en klar strukturel tolkning. Indvandrerfamilier bosætter sig disproportionelt i hovedstadsområdet og de største kommuner (se \hyperref[kap1]{kapitel 1}), hvilket muliggør eksistensen af skoler, hvor relativt store andele udgøres af børn med indvandrerbaggrund. Konvergeringen, hvor det ene mål falder og det andet stiger, tolkes derfor som primært at være drevet af ændrede strukturelle betingelser for segregering; herunder historiske bosætningsmønstre blandt familier med indvandrerbaggrund.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{images/figur_3_2} \caption{Etnisk skolesegregering i Danmark}\label{fig:fig-4-2}
+\includegraphics[width=1\linewidth]{images/figur_3_2} \caption{Etnisk skolesegregering i Danmark.}\label{fig:fig-4-2}
 \end{figure}
 
 Graden af segregering i Danmark vil derfor være at betragte som moderat i dag, hvilket kan være overraskende for nogle, givet den aktuelle offentlige debat, hvor man kunne tro, at den har været voldsomt stigende. Selvom fordelingen har været skæv, især frem til årtusindskiftet, har der ikke været egentlig polarisering, hvor minoritetsgrupper har gået på skoler med meget begrænset kontakt til majoritetsgrupper.\footnote{Med andre ord, den høje grad af segregering (\(D\)) har tidligere grundlæggende været strukturelt betinget, idet der ikke har været tilstrækkeligt mange minoritetsbørn, og de har været koncentreret i for få kommuner til, at de praktisk kunne fordeles blandt alle skoler i Danmark. Fordelingen af denne gruppe børn ville altså være skæv, selv ved en tilfældig fordeling af børn mellem skolerne. Samtidig har vi dog set en stigning i \(S\)-indekset frem til omkring 2007. Denne stigning skal særligt ses i lyset af bosættelsesmønstrene blandt immigranter. Når visse kommuner oplever en relativ koncentration af immigranter, vil der i numerisk forstand være ``nok'' børn med indvandrerbaggrund til at udgøre en større andel af elevgrundlaget på en skole. Særligt hvis gruppen i de pågældende kommuner er boligmæssigt segregerede. Ydermere bidrager fremkomsten af muslimske friskoler til polarisering i en segregeringskontekst, især når der samtidig også er skoler, hvor alle børn har dansk oprindelse.} I en substantiel tolkning kan denne grad af segregering oversættes til potentiel intergruppe eksponering. I 1985, har det gennemsnitlige barn med indvandererbaggrund en \emph{potentiel} eksponering til børn andre børn med indvandererbaggrunde på deres skole på 16 procent. I 2020, er denne \emph{potentielle} eksponering steget til 35 procent. For det gennemsnitlige barn med dansk oprindelse, var eksponeringen til børn med indvandererbaggrunde 7 procent i 1985 og 19 procent i 2020.
 
 Det er blevet beskrevet mange steder i dansk såvel som i international forskning, at segregeringsniveauet er betydeligt højere blandt privat- og friskoler end det er blandt folkeskoler (se J. F. Larsen (\citeproc{ref-larsen2024a}{2024a}) for overblik). I Danmark var skolesegregeringen blandt privat- og friskoler \(D=0,81\) og \(S=0,07\) i 1985 og \(D=0,44\) og \(S=0,27\) i 2020. Dette står i kontrast til segregeringen mellem folkeskolerne alene, hvor skolesegregeringen var \(D=0,60\) og \(S=0,16\) i 1985 og \(D=0,58\) og \(S=0,44\) i 2020.
 
-De omkring 30 procent af børnefamilier som i dag vælger et alternativ til distriktskolen ved skolestart, hvoraf ca. 15 procent vælger en privatskole {[}J. F. Larsen (\citeproc{ref-larsen2024b}{2024c}); @ privatskoleforening2021{]}, bidrager altså også til skolesegregering, der går udover basale strukturelle betingelser. Det er dog ikke disse ``skolevælgere'', der er den primære forklaring på det observerede omfang af segregering. Det er i særlig grad koncentration af immigrantfamilier i kommuner og nabolag indenfor kommunerne, der kommer til udtryk som boligsegregering, som betinger de observerede grader af skolesegregering over tid, som vil blive beskrevet nedenfor (\citeproc{ref-larsen2024b}{J. F. Larsen, 2024c}).
+De omkring 30 procent af børnefamilier som i dag vælger et alternativ til distriktskolen ved skolestart, hvoraf ca. 15 procent vælger en privatskole (\citeproc{ref-larsen2024b}{J. F. Larsen, 2024c}; \citeproc{ref-privatskoleforening2021}{Privatskoleforening, 2021}), bidrager altså også til skolesegregering, der går udover basale strukturelle betingelser. Det er dog ikke disse ``skolevælgere'', der er den primære forklaring på det observerede omfang af segregering. Det er i særlig grad koncentration af immigrantfamilier i kommuner og nabolag indenfor kommunerne, der kommer til udtryk som boligsegregering, som betinger de observerede grader af skolesegregering over tid, som vil blive beskrevet nedenfor (\citeproc{ref-larsen2024b}{J. F. Larsen, 2024c}).
 
 \section{Segregering på kommunal skala}\label{segregering-puxe5-kommunal-skala}
 
@@ -520,24 +843,27 @@ Når segregering måles på en stor skala, som landsplan, skjules betydelige lok
 Ved at måle skolesegregering i de enkelte kommuner over tid, med fokus på år 1985 og 2020, ser vi i 1985, at segregeringsniveauet lå mellem \(D=0,2-0,4\) i nogle kommuner, mens det i andre kommuner var \(D>0,4\). Det er dog væsentligt at bemærke, at ingen af disse kommuner havde høj segregering, hvis det måles som polarisering (\(S\)). Alle kommuner havde et segregeringsniveau under 0,1 målt som \(S\) i 1985. Tolkningen af disse to dimensioner af segregering i sammenhæng er derfor, at selvom der isoleret set var relativt høje grader af segregering i flere kommuner i 1985, skyldtes dette i høj grad strukturelle forhold, som diskuteret ovenfor. Med andre ord, selvom \(D\)-indekset viste en ulige fordeling af elever med indvandrerbaggrund, viste \(S\)-indekset, at der ikke var en høj grad af polarisering, hvilket betyder, at eleverne havde en høj grad af kontakt på tværs af grupper, når vi tager den maksimalt forventede kontakt i betragtning.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{images/Figur4} \caption{Etnisk skolesegregering i Danmark på kommunalt niveau, 1985 og 2020}\label{fig:fig-4-3}
+\includegraphics[width=1\linewidth]{images/Figur4} \caption{Etnisk skolesegregering i Danmark på kommunalt niveau, 1985 og 2020.}\label{fig:fig-4-3}
 \end{figure}
 
 Mønstret ændrer sig dog frem mod 2020, hvor vi ser, at mange kommuner har både en høj grad af ulige fordeling af minoritetsbørn mellem skoler (\(D\)) og at børn med indvandrerbaggrund udgør en relativ stor del af elevgrundlaget på bestemte skoler (\(S\)) og vice versa for børn med dansk oprindelse. Med andre ord, segregering målt som henholdsvis \(D\) og \(S\) begynder at korrelere stærkere over tid, hvilket betyder, at skolesegregeringen i mange kommuner i dag er præget af ikke bare ulige fordeling mellem skoler som en strukturel betingelse, men også polarisering mellem skoler. Dette indebærer, at der er stadig flere skoler, hvor børn med indvandrerbaggrund udgør en større del af elevgrundlaget, samtidigt med at andre skoler stort set ingen elever med indvandrerbaggrund har.\footnote{relation til konsekvenserne af frit skolevalg skyldes udviklingen også delvist det private skolemarked, hvor for eksempel de muslimske friskoler i høj grad bidrager til kommunal skolesegregering. Disse skoler har både en ren minoritetskoncentration og er dermed polariserede i forhold til de andre lokale skoler med få eller ingen minoritetsbørn. Derudover bidrager sådanne skoler til, at minoritetsbørn ``trækkes ud'' af omkringliggende lokale skoler, hvilket øger koncentrationen af børn med dansk oprindelse på disse skoler, hvilket igen øger polariseringen yderligere mellem lokale skoler. Den samme proces gør sig selvfølgelig gældende for alle privat- og friskoler, der henvender sig til bestemte grupper, såsom kristne eller jødiske skoler. Disse skoler tiltrækker bestemte befolkningsgrupper, hvilket medfører en yderligere segregering og polarisering blandt de lokale skoler.} Min fortolkning er, at selvom den overordnede segregering er moderat og faldende på nationalt plan, så er der stadig lokalt betingede udfordringer med polarisering, især i områder med høj koncentration af indvandrere. Dermed sagt, at de nationale tendenser ikke nødvendigvis afspejler sig lokalt.
 
 \section{Skolesegregering som produkt af boligsegregering}\label{skolesegregering-som-produkt-af-boligsegregering}
 
-Som det blev diskuteret i {[}afsnit 1.1{]}{[}Det danske skolelandskab{]} og illustreret i Figur \ref{fig:fig-4-1}, er der stor variation i koncentrationen af familier med indvandrerbaggrund og afstand mellem skoler. Som andre har vist, er koncentrationen af familier med indvandrerbaggrund ikke kun mellem kommuner, men også inden for kommuner, hvor nogle nabolag er kendetegnet ved høje koncentrationer af minoriteter---særligt i den almene boligsektor (\citeproc{ref-andersen2019a}{H. S. Andersen, 2019}; \citeproc{ref-landsbyggefonden2020}{Landsbyggefonden, 2020}). Som jeg J. F. Larsen (\citeproc{ref-larsen2024c}{2024b}) og andre (\citeproc{ref-boterman2019}{Boterman et al., 2019}; e.g., \citeproc{ref-bunar2010}{Bunar, 2010}; \citeproc{ref-butler2007}{Butler \& Hamnett, 2007}) også har diskuteret, giver det en forventning om, at skolesegregering skal forstås i direkte relation til boligsegregering. De skoler, en familie enten automatisk indskrives i---distriktskolen---eller har mulighed for at vælge som alternativ, er betinget af de skoler, der er i nærheden af boligen. Dette understreger, at mens frit skolevalg har en direkte indflydelse på graden af skolesegregering, er det ikke den primære drivkraft. Boligsegregering betyder, at fordi børn med indvandrerbaggrund ofte går i skoler i deres nærområder, hvor der er en højere koncentration af børn med samme baggrund, hvilket bidrager til skolesegregeringen. Kommuner med mange indvandrerfamilier oplever derfor større udfordringer med etnisk skolesegregering, da det frie skolevalg ofte resulterer i, at børn med dansk oprindelse vælger skoler uden for de nærområder med høj koncentration af indvandrerfamilier, hvilket yderligere forstærker segregationen. Bemærkelsesværdigt er også, at kommuner med få familier med indvandrerbaggrund angiver, at de ikke ser, at frit skolevalg fører til øget etnisk segregering, mens kommuner med mange familier med indvandrerbaggrund angiver det modsatte (\citeproc{ref-rambuxf8ll2011}{Rambøll, 2011}).
+Som det blev diskuteret i i indledende afsnit og illustreret i Figur \ref{fig:fig-4-1}, er der stor variation i koncentrationen af familier med indvandrerbaggrund og afstand mellem skoler. Som andre har vist, er koncentrationen af familier med indvandrerbaggrund ikke kun mellem kommuner, men også inden for kommuner, hvor nogle nabolag er kendetegnet ved høje koncentrationer af minoriteter---særligt i den almene boligsektor (\citeproc{ref-andersen2019a}{H. S. Andersen, 2019}; \citeproc{ref-landsbyggefonden2020}{Landsbyggefonden, 2020}). Som jeg J. F. Larsen (\citeproc{ref-larsen2024c}{2024b}) og andre (\citeproc{ref-boterman2019}{Boterman et al., 2019}; e.g., \citeproc{ref-bunar2010}{Bunar, 2010}; \citeproc{ref-butler2007}{Butler \& Hamnett, 2007}) også har diskuteret, giver det en forventning om, at skolesegregering skal forstås i direkte relation til boligsegregering. De skoler, en familie enten automatisk indskrives i---distriktskolen---eller har mulighed for at vælge som alternativ, er betinget af de skoler, der er i nærheden af boligen. Dette understreger, at mens frit skolevalg har en direkte indflydelse på graden af skolesegregering, er det ikke den primære drivkraft. Boligsegregering betyder, at fordi børn med indvandrerbaggrund ofte går i skoler i deres nærområder, hvor der er en højere koncentration af børn med samme baggrund, hvilket bidrager til skolesegregeringen. Kommuner med mange indvandrerfamilier oplever derfor større udfordringer med etnisk skolesegregering, da det frie skolevalg ofte resulterer i, at børn med dansk oprindelse vælger skoler uden for de nærområder med høj koncentration af indvandrerfamilier, hvilket yderligere forstærker segregationen. Bemærkelsesværdigt er også, at kommuner med få familier med indvandrerbaggrund angiver, at de ikke ser, at frit skolevalg fører til øget etnisk segregering, mens kommuner med mange familier med indvandrerbaggrund angiver det modsatte (\citeproc{ref-rambuxf8ll2011}{Rambøll, 2011}).
 
 Ser vi på sammenhængen i segregering (\(D\)) på hhv. bolig- og skolemarkedet ser vi i Figur \ref{fig:fig-4-4}, at der er en klar sammenhæng mellem graden af bolig- og skolesegregering i de fleste kommuner. Altså, de kommuner med høj boligsegregering har også typisk høj skolesegregering. I de seneste år ser vi en stærk sammenhæng mellem de to typer segregering i de fleste kommuner.\footnote{Denne korrelation er ydermere stigende over tid (Pearson's \(r=0,50\) i 2020 mod \(r=0,29\) i 1985). Jeg understøtter dette yderligere med en dekomponeringsanalyse i Larsen (\citeproc{ref-larsen2024b}{J. F. Larsen, 2024c}).} Når familier, der ligner hinanden, bor tættere på andre familier, der ligner dem selv, end de gør med familier, der er forskellige fra dem, vil der være en observerbar tendens til, at børn, som ligner hinanden, også kommer til at gå i skole sammen. Denne tendens er forstærket af at mange forældre vælger skoler baseret på, hvad de opfatter som ``god kvalitet'' og barnets trivsel, kriterier, der ofte er knyttet til skolens omdømme og dets elevgrundlag. Dette fører til, at skoler med mange ressourcestærke elever tiltrækker endnu flere af samme type, mens skoler med mange elever fra mindre ressourcestærke ikke formår at tiltrække nye familier udenfor skoledistriktet.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{images/Figur5} \caption{Etnisk skole- og boligsegregering i Danmark (D indeks) <br> <br> Note: *Boligsegregering er målt blandt personer, der går i den danske grundskole og ikke den fulde population. Boligsegregering er målt på sogneinddelinger og ikke skoledistrikter, da disse kun er tilgængelige for 19 kommuner og årene 2007-2017 i Danmarks Statistiks registre. Måles segregering med afsæt i skoledistrikter er sammenhængen markant mere udpræget (se @larsen2024b).*}\label{fig:fig-4-4}
+\includegraphics[width=1\linewidth]{images/Figur5} \caption{Etnisk skole- og boligsegregering i Danmark (D indeks).}\label{fig:fig-4-4}
 \end{figure}
 
-Betydning af boligmæssig segregering studeres nærmere i Larsen (\citeproc{ref-larsen2024b}{2024c}, \citeproc{ref-larsen2024c}{2024b}), hvor jeg argumenter for, at det særligt er mekanismer på boligmarkedet, der driver skolesegregering, og ikke kun aktivt til- og fravalg af bestemte skoler, som ellers er den meget omtalte diagnose i den offentlige debat. For det første observerer vi, at børnefamilier gradvist bliver mere bosætningsmæssigt segregerede fra barnets fødsel indtil barnet begynder i børnehaveklassen. Dette indikerer, at familier, når eller hvis de flytter med børn i førskolealderen, er tilbøjelige til at bosætte sig i nabolag, hvor de andre beboere ligner dem selv (\citeproc{ref-larsen2024c}{J. F. Larsen, 2024b}).
+\begin{footnotesize}\textit{\textcolor{gray}{
+Note: Boligsegregering er målt blandt personer, der går i den danske grundskole og ikke den fulde population. Boligsegregering er målt på sogneinddelinger og ikke skoledistrikter, da disse kun er tilgængelige for 19 kommuner og årene 2007-2017 i Danmarks Statistiks registre. Måles segregering med afsæt i skoledistrikter er sammenhængen markant mere udpræget (se J. F. Larsen, 2024b).
+}}
+\end{footnotesize}
 
-\newpage
+Betydning af boligmæssig segregering studeres nærmere i Larsen (\citeproc{ref-larsen2024b}{2024c}, \citeproc{ref-larsen2024c}{2024b}), hvor jeg argumenter for, at det særligt er mekanismer på boligmarkedet, der driver skolesegregering, og ikke kun aktivt til- og fravalg af bestemte skoler, som ellers er den meget omtalte diagnose i den offentlige debat. For det første observerer vi, at børnefamilier gradvist bliver mere bosætningsmæssigt segregerede fra barnets fødsel indtil barnet begynder i børnehaveklassen. Dette indikerer, at familier, når eller hvis de flytter med børn i førskolealderen, er tilbøjelige til at bosætte sig i nabolag, hvor de andre beboere ligner dem selv (\citeproc{ref-larsen2024c}{J. F. Larsen, 2024b}).
 
 \section{Skolesegregering i Danmark}\label{skolesegregering-i-danmark}
 
@@ -547,9 +873,13 @@ Med hensyn til forklaring på skolesegregering er mit centrale budskab, at probl
 
 \chapter{Arbejdspladser som mødested}\label{kap5}
 
-\emph{\href{https://vbn.aau.dk/en/persons/albrekt}{Christian Albrekt Larsen}}, \href{https://vbn.aau.dk/en/persons/led}{Laciné E. N. Diop} og \emph{\href{https://vbn.aau.dk/da/persons/jeppefl}{Jeppe Fjeldgaard Larsen}}
+\emph{\href{https://vbn.aau.dk/en/persons/albrekt}{Christian Albrekt Larsen}}, \emph{\href{https://vbn.aau.dk/en/persons/led}{Laciné E. N. Diop}} og \emph{\href{https://vbn.aau.dk/da/persons/jeppefl}{Jeppe Fjeldgaard Larsen}}
+
+~~~~
 
 \includegraphics[width=1\linewidth]{images/kap5}
+
+\newpage
 
 Indvandrernes og efterkommerens succes, eller manglende succes, på arbejdsmarkedet har været centralt i både politiske og akademiske diskussioner. Med god ret, da økonomiske ressourcer er centralt for at skabe gode liv for indvandrere og deres efterkommere. Men ansigt-til-ansigt interaktionen på arbejdspladserne er også centralt for at opbygge sociale relationer og nedbryde eventuelle fordomme på tværs af etniske skel, se \hyperref[kap1]{kapitel 1} og \hyperref[kap6]{kapitel 6}. Arbejdspladserne har således ikke bare potentiel til at forandre indvandrere og efterkommere. De har også potentiale til at forandre majoriteten.
 
@@ -559,39 +889,42 @@ I dette kapitel beskrives, hvor meget majoritet og minoritet er eksponeret overf
 
 \section{Den etniske sammensætning af arbejdspladser}\label{den-etniske-sammensuxe6tning-af-arbejdspladser}
 
-Den etniske sammensætning af arbejdspladser er ret ubeskrevet både nationalt og internationalt. Men de opgørelser der findes, hæfter sig normalt ved en stærk etnisk opdeling af arbejdsmarkedet. I den amerikanske assimileringslitteratur har man ikke haft datamaterialet til at lave detaljerede beskrivelser af den etniske komposition af arbejdspladser.\footnote{Men i forlængelse af borgerrettighedsbevægelsen i 1960erne blev alle arbejdspladser med \(100\) ansatte og derover dog forpligtet til at indrapportere den racemæssige komposition af amerikanske arbejdspladser. Disse data viser, at afroamerikanernes større succes på det amerikanske arbejdsmarked \emph{ikke} omsætter sig til mere racemæssig diversitet på arbejdspladsen. Tværtimod har segregering været stigende på tværs af racer i USA (OBS OBS OBS Hellerstein, Judith et al, 2008; Hellerstein, Judith K. \& Neumark, 2008 OBS OBS OBS)} I en europæisk kontekst viser et svensk studie, at majoritetsbefolkningen og indvandrere og efterkommere i perioden fra 1985 til 2001 blev mere ulige fordelt på arbejdspladser; målt som større sandsynlighed for at være eksponeret for sin egen gruppe på arbejdspladsen. Det gælder efter, at man har taget højde for forandringer i gruppestørrelse og en række andre forhold (\citeproc{ref-uxe5slund2010}{Åslund \& Skans, 2010}). Et tysk studie viser ligeledes, at den etniske sammensætning af arbejdspladser er meget skæv, men dog blev en smule bedre i perioden fra 1980 til 2008 (\citeproc{ref-glitz2014}{Glitz, 2014}).
+Den etniske sammensætning af arbejdspladser er ret ubeskrevet både nationalt og internationalt. Men de opgørelser der findes, hæfter sig normalt ved en stærk etnisk opdeling af arbejdsmarkedet. I den amerikanske assimileringslitteratur har man ikke haft datamaterialet til at lave detaljerede beskrivelser af den etniske komposition af arbejdspladser.\footnote{Men i forlængelse af borgerrettighedsbevægelsen i 1960erne blev alle arbejdspladser med 100 ansatte og derover dog forpligtet til at indrapportere den racemæssige komposition af amerikanske arbejdspladser. Disse data viser, at afroamerikanernes større succes på det amerikanske arbejdsmarked \emph{ikke} omsætter sig til mere racemæssig diversitet på arbejdspladsen. Tværtimod har segregering været stigende på tværs af racer i USA (\textbf{\emph{OBS OBS OBS Hellerstein, Judith et al, 2008; Hellerstein, Judith K. \& Neumark, 2008 OBS OBS OBS}})} I en europæisk kontekst viser et svensk studie, at majoritetsbefolkningen og indvandrere og efterkommere i perioden fra 1985 til 2001 blev mere ulige fordelt på arbejdspladser; målt som større sandsynlighed for at være eksponeret for sin egen gruppe på arbejdspladsen. Det gælder efter, at man har taget højde for forandringer i gruppestørrelse og en række andre forhold (\citeproc{ref-uxe5slund2010}{Åslund \& Skans, 2010}). Et tysk studie viser ligeledes, at den etniske sammensætning af arbejdspladser er meget skæv, men dog blev en smule bedre i perioden fra 1980 til 2008 (\citeproc{ref-glitz2014}{Glitz, 2014}).
 
 Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) har lavet et nyligt studie af sammensætningen i Danmark, hvilket er udgangspunkt for dette kapitel. De danske registrer gør det muligt at sammenkøre data om personers herkomst, se \hyperref[kap3]{kapitel 3}, med \href{https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=659482655935&fo=0&ext=kvaldel}{Danmark Statistisks klassifikation} af såkaldte arbejdssteder. Sidstnævnte er produktionsenheder, der er afgrænset til én fysisk adresse. Det er vigtigt da store virksomheder som f.eks. Arla og Novo Nordisk har mange arbejdssteder i og udenfor Danmark. Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) starter opgørelsen i 1996, da det er det første år, hvor Danmarks Statistik har opgjort den type af job, som en person er beskæftiget i (\href{https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=2299282738&fo=0&ext=kvaldel}{DISKO-klassifikation}). Det er vigtigt, da man godt kan forestille sig arbejdspladser, hvor indvandrere og efterkommere varetager funktioner, som majoriteten ikke varetager.
 
-Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) finder, at det danske arbejdsmarked i perioden fra 1996 til 2019 er blevet mere segregeret; målt med et såkaldt justeret Dissimilarity Index (D) (se \hyperref[kap4]{kapitel 4} eller \hyperref[bilagA]{Bilag A}). Deres estimat er, at segregeringen blev målt som \(D=0,21\) i 1996. Tolkningen af dette er, at i 1996 skulle man flytte \(21\%\) af alle beskæftigede indvandrere/efterkommere, eller \(21\%\) af alle beskæftigede med dansk-dansk herkomst (se \hyperref[kap3]{kapitel 3}) til en arbejdsplads med hhv. lavere eller højere andel beskæftigede med indvandrerbaggrund for at få en fordeling, der matcher resultatet fra en tilfældig fordeling af de to grupper på alle danske arbejdspladser. I 2019 er den andel vokset til \(33\%\) (\(D=0,33\)). I tråd med andre analyser indikerer resultatet en stigende etniske segmentering af det danske arbejdsmarked.
+Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) finder, at det danske arbejdsmarked i perioden fra 1996 til 2019 er blevet mere segregeret; målt med et såkaldt justeret Dissimilarity Index (D) (se \hyperref[kap4]{kapitel 4} eller \hyperref[bilagA]{Bilag A}). Deres estimat er, at segregeringen blev målt som \(D=0,21\) i 1996. Tolkningen af dette er, at i 1996 skulle man flytte 21 procent af alle beskæftigede indvandrere/efterkommere, eller 21 procent af alle beskæftigede med dansk-dansk herkomst (se \hyperref[kap3]{kapitel 3}) til en arbejdsplads med hhv. lavere eller højere andel beskæftigede med indvandrerbaggrund for at få en fordeling, der matcher resultatet fra en tilfældig fordeling af de to grupper på alle danske arbejdspladser. I 2019 er den andel vokset til 33 procent (\(D=0,33\)). I tråd med andre analyser indikerer resultatet en stigende etniske segmentering af det danske arbejdsmarked.
 
 Koncentration af indvandrere, typisk i de manuelle jobs, betyder imidlertid ikke, at arbejdspladser er blevet mindre relevante for mødet mellem majoriteten og etniske minoriteter. Tværtimod viser Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}), at samtidigt med, at arbejdsmarkedet segregeres, så stiger sandsynligheden for, at majoriteten arbejder på en arbejdsplads med indvandrere og efterkommere.
 
 Figur \ref{fig:fig-5-1} illustrerer, Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) beregner arbejdsstedseksponeringen for de beskæftigede. Målet for eksponering kan variere mellem \(0\), hvor ingen andre på arbejdspladsen tilhører den ''anden'' gruppe (majoritet/minoriteter), og \(100\%\), hvor alle andre på arbejdspladsen tilhører den ''anden'' gruppe (majoritet/minoriteter).
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-5-1-1} \caption{Illustration af eksponering på arbejdspladsen.}\label{fig:fig-5-1}
+\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-5-1-1} \caption{Illustration af eksponering på arbejdspladsen..}\label{fig:fig-5-1}
 \end{figure}
 
-Arbejdsplads \textbf{A} i Figur \ref{fig:fig-5-1} er en illustration på, hvordan de \(20\) beskæftigede med dansk-dansk herkomst ikke er eksponeret for én eneste indvandrer eller efterkommer på deres arbejdsplads, dvs. eksponeringen er \(0\).
-
-På arbejdsplads \textbf{B} i Figur \ref{fig:fig-5-1} er seks af de ansatte indvandrere eller efterkommere. Dermed er en person med dansk-dansk herkomst eksponeret til \(6\) personer fra ''den anden'' grupper. Det svarer til \(32\%\), hvilket vi betegner graden af eksponering.\footnote{I eksemplet er gruppen med dansk-dansk herkomst eksponeret til \(13\) fra egen gruppe ---det samlede antal minus personen selv---eller \(\approx 74\%\), hvilket kan betegnes som grade af isolation kaldet \emph{isolation}, Bell (\citeproc{ref-bell1954}{1954}), se \hyperref[bilagA]{Bilag A}).} Omvendt er en indvandrer/efterkommer eksponeret til \(14\) med dansk-dansk herkomst og \(5\) fra sin indgruppe, svarende til en eksponering på \(\approx 74\%\).
+Arbejdsplads \textbf{A} i Figur \ref{fig:fig-5-1} er en illustration på, hvordan de 20 beskæftigede med dansk-dansk herkomst ikke er eksponeret for én eneste indvandrer eller efterkommer på deres arbejdsplads, dvs. eksponeringen er 0. På arbejdsplads \textbf{B} i Figur \ref{fig:fig-5-1} er seks af de ansatte indvandrere eller efterkommere. Dermed er en person med dansk-dansk herkomst eksponeret til 6 personer fra ''den anden'' grupper. Det svarer til 32 procent, hvilket vi betegner graden af eksponering.\footnote{I eksemplet er gruppen med dansk-dansk herkomst eksponeret til 13 fra egen gruppe ---det samlede antal minus personen selv---eller \$\approx\$74 procent, hvilket kan betegnes som grade af isolation kaldet \emph{isolation}, Bell (\citeproc{ref-bell1954}{1954}), se \hyperref[bilagA]{Bilag A}).} Omvendt er en indvandrer/efterkommer eksponeret til 14 med dansk-dansk herkomst og 5 fra sin indgruppe, svarende til en eksponering på \$\approx\$74 procent.
 
 Eksponering kan således tolkes som sandsynligheden for, at den næste man interagerer med på arbejdspladsen, er en fra den modsatte gruppe. Arbejdsplads \textbf{B} er et eksempel på det typiske forhold, at indvandrere og efterkommere har større sandsynlighed for at blive eksponeret for den modsatte gruppe end det er tilfælde for majoritetsgruppen.
 
-Arbejdsplads \textbf{C} i Figur \ref{fig:fig-5-1} er en illustration på en situation, hvor arbejdspladsen er meget internt opdelt mellem stillinger, der har forskelligt færdighedsniveauer. Her arbejder de fem medarbejdere med indvandrerbaggrund i det Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) benævner lavt færdighedsniveau.\footnote{DISKO-klassifikation 9, i Danmarks Statistiks registrer.} Det er typisk ufaglærte jobs, som for eksempel rengøringsarbejde eller andet manuelt arbejde i primære erhverv. På arbejdsplads \textbf{C} er dem med dansk-dansk herkomst i højere interne stillinger, hvilket formentligt gør samarbejdet på tværs af etniske skel mindre sandsynligt og mindre intensivt. Derfor supplerer Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) de generelle eksponeringsmål med et *beskæftigelsesspecifik-eksponeringsmål.\footnote{Det vil sige eksponeringen indenfor faglighedsniveauer på de enkelte arbejdspladser. På arbejdsplads \textbf{C} vil det mål være \(0\) for begge grupper, da hverken dem med dansk-dansk herkomst eller indvandrerne/efterkommerne er eksponeret for den anden gruppe i den samme beskæftigelsesgruppe. På Arbejdsplads \textbf{B} derimod, er indvandrere/efterkommere i stillinger med lavt faglighedsniveau eksponeret for \(3\) fra majoriteten og to andre minoriteter, hvilket giver en beskæftigelsesspecifik eksponering på \(60\%\), hvilket er \emph{lavere} end eksponering udregnet på baggrund af hele arbejdsstedet (\(74\%\)). En beskæftiget med dansk-dansk herkomst i en stilling med lavt faglighedsniveau på arbejdsplads \textbf{B} har ligeledes en beskæftigelsesspecifik eksponering på \(60\%\), hvilket er \emph{højere} end eksponeringsgraden udregnet på baggrund af hele arbejdsstedet (\(32\%\)). Diop \& Larsen (2024) viser, at den generelle og beskæftigelsesspecifikke eksponering varierer for det begrænsede antal i stillinger med lavt faglighedsniveau, typisk ufaglærte jobs, mens forskellene er ubetydelige for det samlede arbejdsmarkedet. Derfor anvender vi i det kapitel primært det simple mål for eksponering på arbejdspladsen.}
+Arbejdsplads \textbf{C} i Figur \ref{fig:fig-5-1} er en illustration på en situation, hvor arbejdspladsen er meget internt opdelt mellem stillinger, der har forskelligt færdighedsniveauer. Her arbejder de fem medarbejdere med indvandrerbaggrund i det Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) benævner lavt færdighedsniveau.\footnote{DISKO-klassifikation 9, i Danmarks Statistiks registrer.} Det er typisk ufaglærte jobs, som for eksempel rengøringsarbejde eller andet manuelt arbejde i primære erhverv. På arbejdsplads \textbf{C} er dem med dansk-dansk herkomst i højere interne stillinger, hvilket formentligt gør samarbejdet på tværs af etniske skel mindre sandsynligt og mindre intensivt. Derfor supplerer Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) de generelle eksponeringsmål med et \emph{beskæftigelsesspecifik-eksponeringsmål}.\footnote{Det vil sige eksponeringen indenfor faglighedsniveauer på de enkelte arbejdspladser. På arbejdsplads \textbf{C} vil det mål være 0 for begge grupper, da hverken dem med dansk-dansk herkomst eller indvandrerne/efterkommerne er eksponeret for den anden gruppe i den samme beskæftigelsesgruppe. På Arbejdsplads \textbf{B} derimod, er indvandrere/efterkommere i stillinger med lavt faglighedsniveau eksponeret for 3 fra majoriteten og to andre minoriteter, hvilket giver en beskæftigelsesspecifik eksponering på 60 procent, hvilket er \emph{lavere} end eksponering udregnet på baggrund af hele arbejdsstedet (74\(\%\)). En beskæftiget med dansk-dansk herkomst i en stilling med lavt faglighedsniveau på arbejdsplads \textbf{B} har ligeledes en beskæftigelsesspecifik eksponering på 60 procent, hvilket er \emph{højere} end eksponeringsgraden udregnet på baggrund af hele arbejdsstedet (32\(\%\)). Diop \& Larsen (2024) viser, at den generelle og beskæftigelsesspecifikke eksponering varierer for det begrænsede antal i stillinger med lavt faglighedsniveau, typisk ufaglærte jobs, mens forskellene er ubetydelige for det samlede arbejdsmarkedet. Derfor anvender vi i det kapitel primært det simple mål for eksponering på arbejdspladsen.}
 
 \section{Gennemsnitlig eksponering til indvandrere og efterkommere på arbejdspladser}\label{gennemsnitlig-eksponering-til-indvandrere-og-efterkommere-puxe5-arbejdspladser}
 
 Det stigende antal indvandrere og efterkommere på arbejdsmarkedet fra 1996 til 2019 har bevirket, at størstedelen af beskæftigede med dansk-dansk herkomst er kommet til at arbejde sammen med indvandrere og efterkommere. Der er selvfølgelig stor variation i eksponeringen. Nogle er ikke eksponeret til én eneste indvandrer eller efterkommer på arbejdspladsen, se nedenstående beskrivelse af graden af ''isolation'', mens andre er eksponeret for mange.
 
-Majoritetens gennemsnitlige eksponering til indvandrere og efterkommere på arbejdspladsen giver en god fornemmelse af udviklingen over tid. Diop \& Larsen estimerer, at majoritetens gennemsnitlig eksponering er steget fra \(3,1\%\) i 1996 til \(13,3\%\) i 2019.
+Majoritetens gennemsnitlige eksponering til indvandrere og efterkommere på arbejdspladsen giver en god fornemmelse af udviklingen over tid. Diop \& Larsen estimerer, at majoritetens gennemsnitlig eksponering er steget fra 3,1 procent i 1996 til 13,3 procent i 2019.
 
-I Figur \ref{fig:fig-5-2} er den gennemsnitlig eksponering opdelt på kommunalt niveau. I 1996, kortet placeret til venstre i 5.2, var til kun i hovedstadsområdet, Aarhus og enkelte grænselandskommuner, at det var typisk at være eksponeret til 3 -- 7 procent indvandrere/efterkommere på arbejdspladsen (markeret med blåt). I 2019, kortet placeret il højre i figur 5.2, ser situationen helt anderledes ud. I alle kommuner er det nu normalen, at majoriteten er eksponeret til 3 -- 7 procent indvandrere/efterkommere på deres arbejdsplads. I store del af landet ligger den gennemsnitlige eksponering nu over 7 procenter, markeret med gullige/grønlige farver.
+I Figur \ref{fig:fig-5-2} er den gennemsnitlig eksponering opdelt på kommunalt niveau. I 1996, kortet placeret til venstre i \ref{fig:fig-5-2}, var til kun i hovedstadsområdet, Aarhus og enkelte grænselandskommuner, at det var typisk at være eksponeret til 3--7 procent indvandrere/efterkommere på arbejdspladsen (markeret med blåt). I 2019, kortet placeret il højre i Figur \ref{fig:fig-5-2} , ser situationen helt anderledes ud. I alle kommuner er det nu normalen, at majoriteten er eksponeret til 3--7 procent indvandrere/efterkommere på deres arbejdsplads. I store del af landet ligger den gennemsnitlige eksponering nu over 7 procent, markeret med gullige/grønlige farver.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{images/Figur_4_1} \caption{Beskæftigedes med dansk-dansk herkomst gennemsnitlige eksponering til indvandrere/efterkommere på deres arbejdspladsen i 1996 (venstre) og 2019 (højre). <br> <br> **Note**: *Opgjort på tværs af kommuner.*}\label{fig:fig-5-2}
+\includegraphics[width=1\linewidth]{images/Figur_4_1} \caption{Beskæftigedes med dansk-dansk herkomst gennemsnitlige eksponering til indvandrere/efterkommere på deres arbejdspladsen i 1996 (venstre) og 2019 (højre).}\label{fig:fig-5-2}
 \end{figure}
+
+\begin{footnotesize}\textit{\textcolor{gray}{
+Note: Opgjort på tværs af kommuner.
+}}
+\end{footnotesize}
 
 Dette billede af stigende eksponering af de beskæftigede med dansk-dansk herkomst kan nuanceres på mange forskellige måder. For gruppen af majoriteten beskæftiget i stillinger med lavt færdighedsniveau er den gennemsnitlige eksponering cirka to procentpoint højere i 2019, når der måles på beskæftigelsesspecifik eksponering, frem for generel eksponering. Det gør således en forskel, hvordan man måler, men det rykker ikke ved det overordnet billede.
 
@@ -600,40 +933,60 @@ Mere interessant er det måske, hvor meget majoriteten på deres arbejdsplads de
 I 1996, det venstre kort Figur \ref{fig:fig-5-3}, var det kun på Sjælland, i Odense og Aarhus, at det var typisk, at majoriteten var eksponeret til en til to procent indvandrere/efterkommere fra MENAPT-lande på deres arbejdsplads. Markeret med blå farver. I 2019, det højre kort, er det nu typisk i hele landet at have et sådant eksponeringsniveau til muslimske minoriteter, med undtagelse af Lemvig kommune. Men det stadigt tydeligt, at eksponering til minoriteter fra muslimske oprindelseslande er højst omkring hovedstadsregionen, Odense og Aarhus, se gullige og grønlige farver i Figur \ref{fig:fig-5-3}.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{images/Figur_4_2} \caption{Andelen af beskæftigede med dansk-dansk herkomst, der ikke er eksponeret til én eneste indvandrer eller efterkommer på deres arbejdsplads i 1996 (venstre) og 2019 (højre). <br> <br> **Note**: *Opgjort på tværs af kommuner. *}\label{fig:fig-5-3}
+\includegraphics[width=1\linewidth]{images/Figur_4_2} \caption{Andelen af beskæftigede med dansk-dansk herkomst, der ikke er eksponeret til én eneste indvandrer eller efterkommer på deres arbejdsplads i 1996 (venstre) og 2019 (højre).}\label{fig:fig-5-3}
 \end{figure}
+
+\begin{footnotesize}\textit{\textcolor{gray}{
+Note: Opgjort på tværs af kommuner.
+}}
+\end{footnotesize}
 
 \section{Majoritetens ''isolation'' fra minoriteterne}\label{majoritetens-isolation-fra-minoriteterne}
 
-En anden måde at opgøre det på, er at se på andelen af beskæftigede med dansk-dansk herkomst, der ikke har én eneste indvandrere eller efterkommere på deres arbejdsplads. En sådan ''isolation'' er selvfølgelig langt mere sandsynlig på små end på store arbejdspladser. Ikke desto mindre giver andelen med \emph{nul-eksponering} også en god fornemmelse af forandringer over tid. Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) estimerer, at andelen af beskæftigede med dansk-dansk herkomst, som er ''isolerede'' på deres arbejdsplads er faldet fra \(45\%\) i 1996 til \(29\%\) i 2019.
+En anden måde at opgøre det på, er at se på andelen af beskæftigede med dansk-dansk herkomst, der ikke har én eneste indvandrere eller efterkommere på deres arbejdsplads. En sådan ''isolation'' er selvfølgelig langt mere sandsynlig på små end på store arbejdspladser. Ikke desto mindre giver andelen med \emph{nul-eksponering} også en god fornemmelse af forandringer over tid. Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) estimerer, at andelen af beskæftigede med dansk-dansk herkomst, som er ''isolerede'' på deres arbejdsplads er faldet fra 45 procent i 1996 til 29 procent i 2019.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{images/Figur_4_3} \caption{Beskæftigedes med dansk-dansk herkomst gennemsnitlige eksponering til MENAPT indvandrere/efterkommer på deres arbejdsplads i 1996 (venstre) og 2019 (højre). <br> <br> **Note**: *Opgjort på tværs af kommuner. MENAPT dækker over ...*}\label{fig:fig-5-4}
+\includegraphics[width=1\linewidth]{images/Figur_4_3} \caption{Beskæftigedes med dansk-dansk herkomst gennemsnitlige eksponering til MENAPT indvandrere/efterkommer på deres arbejdsplads i 1996 (venstre) og 2019 (højre).}\label{fig:fig-5-4}
 \end{figure}
+
+\begin{footnotesize}\textit{\textcolor{gray}{
+Note: Opgjort på tværs af kommuner.
+}}
+\end{footnotesize}
 
 I Figur \ref{fig:fig-5-4} er ''isolationen'' opdelt på tværs af kommunerne. Andelen med \emph{nul-eksponering} er faldet i stort set hele landet. I 1996, det venstre kort i Figur \ref{fig:fig-5-4}, var situationen i største parten af landet, at \(43\) procent eller flere, af de beskæftigede fra majoriteten, i en given kommune, ikke arbejdede sammen med en eneste indvandrer eller efterkommer. Det er markeret med gullige og grønlige farver i figuren. I 2019 ser situationen helt anderledes ud. I størsteparten af landet er det nu atypisk at have så mange ''isolerede'' i en kommune, se Figur \ref{fig:fig-5-4}.
 
 \section{Minoriteters eksponering til majoritetsbefolkningen}\label{minoriteters-eksponering-til-majoritetsbefolkningen}
 
-Beskæftigede indvandrere og efterkommere er i høj grad eksponeret til beskæftigede med dansk-dansk herkomst på deres arbejdsplads. Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) estimerer, at den gennemsnitlige eksponering var \(74\%\) i 1996. Opdelt på kommuner viser den venstre del af Figur \ref{fig:fig-5-5}, at den (gennemsnitlige) høje eksponering til majoritetsbefolkningen i 1996 gjorde sig gældende i hele landet. Med undtagelse af et par enkelte kommuner i hovedstadsområdet var den gennemsnitlige eksponering på \(67\) procent eller derover. Det er markeret med grønlige og gullige farver i Figur \ref{fig:fig-5-5}.
+Beskæftigede indvandrere og efterkommere er i høj grad eksponeret til beskæftigede med dansk-dansk herkomst på deres arbejdsplads. Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) estimerer, at den gennemsnitlige eksponering var 74 procent i 1996. Opdelt på kommuner viser den venstre del af Figur \ref{fig:fig-5-5}, at den (gennemsnitlige) høje eksponering til majoritetsbefolkningen i 1996 gjorde sig gældende i hele landet. Med undtagelse af et par enkelte kommuner i hovedstadsområdet var den gennemsnitlige eksponering på 67 procent eller derover. Det er markeret med grønlige og gullige farver i Figur \ref{fig:fig-5-5}.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{images/Figur_4_4} \caption{Beskæftigede indvandreres/efterkommeres gennemsnitlige eksponering til beskæftigede med dansk-dansk herkomst på deres arbejdsplads i 1996 (venstre) og 2019 (højre). <br> <br> **Note**: *Opgjort på tværs af kommuner.*}\label{fig:fig-5-5}
+\includegraphics[width=1\linewidth]{images/Figur_4_4} \caption{Beskæftigede indvandreres/efterkommeres gennemsnitlige eksponering til beskæftigede med dansk-dansk herkomst på deres arbejdsplads i 1996 (venstre) og 2019 (højre).}\label{fig:fig-5-5}
 \end{figure}
 
-Efterhånden som der kommer flere og flere indvandrere og efterkommere ind på arbejdspladserne, så falder den gennemsnitlige eksponering til beskæftigede med dansk-dansk herkomst. Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) estimerer, at den (gennemsnitlige) eksponering i 2019 er \(57\%\). I den nederste del af Figur \ref{fig:fig-5-5} ses den eksponeringen på tværs af beskæftigede bosat i forskellige kommuner. Den lysere farve indikerer, at eksponeringen falder. Det er dog værd at bemærke, at eksponeringen til kolleger med dansk-dansk herkomst stadig er højere end eksponeringen til indvandrere og efterkommere på arbejdspladsen. Det typiske er således fortsat, at indvandrere og efterkommere har større sandsynlighed for at arbejde sammen med en fra majoriteten end en med minoritetsbaggrund.
+\begin{footnotesize}\textit{\textcolor{gray}{
+Note: Opgjort på tværs af kommuner.
+}}
+\end{footnotesize}
+
+Efterhånden som der kommer flere og flere indvandrere og efterkommere ind på arbejdspladserne, så falder den gennemsnitlige eksponering til beskæftigede med dansk-dansk herkomst. Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) estimerer, at den (gennemsnitlige) eksponering i 2019 er 57 procent. I den nederste del af Figur \ref{fig:fig-5-5} ses den eksponeringen på tværs af beskæftigede bosat i forskellige kommuner. Den lysere farve indikerer, at eksponeringen falder. Det er dog værd at bemærke, at eksponeringen til kolleger med dansk-dansk herkomst stadig er højere end eksponeringen til indvandrere og efterkommere på arbejdspladsen. Det typiske er således fortsat, at indvandrere og efterkommere har større sandsynlighed for at arbejde sammen med en fra majoriteten end en med minoritetsbaggrund.
 
 \section{Minoriteters ''isolation'' fra majoritetsbefolkningen}\label{minoriteters-isolation-fra-majoritetsbefolkningen}
 
-Ligesom for majoriteten, beregner Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) også andelen af beskæftigede indvandrere og efterkommere, der ikke er eksponeret til én eneste med dansk-dansk herkomst. Andelen af minoriteter i ''isolation'' er markant mindre end det er tilfældet for majoriteten. Studiet estimerer andelen af ''isolerede'' indvandrere/efterkommere til at være \(13\%\) i 1996 og \(14\%\) i 2019. Fra 1996 til 2019 er der således stort set ikke sket nogen stigning i andelen af indvandrere/efterkommere, der arbejder på en arbejdsplads, der ikke minimum er én ansat fra majoriteten.
+Ligesom for majoriteten, beregner Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) også andelen af beskæftigede indvandrere og efterkommere, der ikke er eksponeret til én eneste med dansk-dansk herkomst. Andelen af minoriteter i ''isolation'' er markant mindre end det er tilfældet for majoriteten. Studiet estimerer andelen af ''isolerede'' indvandrere/efterkommere til at være 13 procent i 1996 og 14 procent i 2019. Fra 1996 til 2019 er der således stort set ikke sket nogen stigning i andelen af indvandrere/efterkommere, der arbejder på en arbejdsplads, der ikke minimum er én ansat fra majoriteten.
 
-I Figur \ref{fig:fig-5-6} vises andelen af ''isolerede'' på tværs af kommuner i 1996 (venstre) og 2019 (højre). I 1996, det venstre kort, var der ikke noget klart mønster i, hvor der \(18\) procent eller flere ''isolerede''; markeret med grøn og gullige farver. I 2019, det højre kort, viser det sig, en højre andel ''isolerede'' udelukkende forekommer på Sjælland og Fyn, men det er ikke et klart mønster.\footnote{Beregninger på Løsø kommune er meget usikre pga. et meget begrænset antal indvandrere/efterkommere.}
+I Figur \ref{fig:fig-5-6} vises andelen af ''isolerede'' på tværs af kommuner i 1996 (venstre) og 2019 (højre). I 1996, det venstre kort, var der ikke noget klart mønster i, hvor der 18 procent eller flere ''isolerede''; markeret med grøn og gullige farver. I 2019, det højre kort, viser det sig, en højre andel ''isolerede'' udelukkende forekommer på Sjælland og Fyn, men det er ikke et klart mønster.\footnote{Beregninger på Løsø kommune er meget usikre pga. et meget begrænset antal indvandrere/efterkommere.}
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{images/Figur_4_5} \caption{Andelen af beskæftigede indvandrere/efterkommere der ikke er eksponeret til én eneste med dansk-dansk herkomst på deres arbejdsplads i 1996 (venstre) og 2019 (højre). <br> <br> **Note**: *Opgjort på tværs af kommuner.*}\label{fig:fig-5-6}
+\includegraphics[width=1\linewidth]{images/Figur_4_5} \caption{Andelen af beskæftigede indvandrere/efterkommere der ikke er eksponeret til én eneste med dansk-dansk herkomst på deres arbejdsplads i 1996 (venstre) og 2019 (højre).}\label{fig:fig-5-6}
 \end{figure}
 
-For indvandrere og efterkommere ansat i stillinger, der kræver lavt færdighedsniveau, er eksponeringen til gruppen med dansk-dansk herkomst mindre. Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) estimerer, at gruppen beskæftigelsesspecifikke eksponering i 2019 er på \(37\%\), hvilket er markant mindre end for den samlede gruppe af indvandrere og efterkommere. Endeligt er gruppen fra MENAPT-lande generelt en smule mindre eksponeret til kolleger med dansk-dansk-herkomst end indvandrere og efterkommere generelt. I 1996 var den gennemsnitlige eksponering \(60\%\), hvilket i 2019 var faldet til \(55\%\).\footnote{Andelen af beskæftigede MENAPT-indvandrere/efterkommere, der ikke har en kollega med dansk-dansk herkomst estimeres til \(24\%\) i 1996, hvilket i 2019 er faldet til \(20\%\). Mønstret er således, at mens dele af majoriteten ikke eksponeres til MENAPT-indvandrere/efterkommere på deres arbejdsplads, så det er atypisk, hvis beskæftigede MENAPT-indvandrere/efterkommere ikke eksponeres til majoriteten på deres arbejdsplads.}
+\begin{footnotesize}\textit{\textcolor{gray}{
+Note: Opgjort på tværs af kommuner.
+}}
+\end{footnotesize}
+
+For indvandrere og efterkommere ansat i stillinger, der kræver lavt færdighedsniveau, er eksponeringen til gruppen med dansk-dansk herkomst mindre. Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) estimerer, at gruppen beskæftigelsesspecifikke eksponering i 2019 er på 37 procent, hvilket er markant mindre end for den samlede gruppe af indvandrere og efterkommere. Endeligt er gruppen fra MENAPT-lande generelt en smule mindre eksponeret til kolleger med dansk-dansk-herkomst end indvandrere og efterkommere generelt. I 1996 var den gennemsnitlige eksponering 60 procent, hvilket i 2019 var faldet til 55 procent.\footnote{Andelen af beskæftigede MENAPT-indvandrere/efterkommere, der ikke har en kollega med dansk-dansk herkomst estimeres til 24 procent i 1996, hvilket i 2019 er faldet til 20 procent. Mønstret er således, at mens dele af majoriteten ikke eksponeres til MENAPT-indvandrere/efterkommere på deres arbejdsplads, så det er atypisk, hvis beskæftigede MENAPT-indvandrere/efterkommere ikke eksponeres til majoriteten på deres arbejdsplads.}
 
 \section{Arbejdspladsen som mødested}\label{arbejdspladsen-som-muxf8dested}
 
@@ -645,7 +998,11 @@ Det stigende antal ansigt-til-ansigt møder mellem majoriteten og minoriteter p�
 
 \emph{\href{https://vbn.aau.dk/en/persons/albrekt}{Christian Albrekt Larsen}} og \emph{\href{https://vbn.aau.dk/da/persons/jeppefl}{Jeppe Fjeldgaard Larsen}}
 
+~~~~
+
 \includegraphics[width=1\linewidth]{images/kap71}
+
+\newpage
 
 Bogen har indtil videre vist, at der i familier, skoler og på arbejdspladser er et stigende potentiale for, at majoriteten og minoriteter kan mødes ansigt-til-ansigt. I det kapitel beskriver, hvorvidt det også afspejler sig i venskaber mellem majoritet og minoriteter. Jævnfør \hyperref[kap1]{kapitel 1} er vores antagelse, at der er relativt mange tværetniske venskaber.
 
@@ -661,50 +1018,130 @@ Denne noget brede definition af venskab giver nogle problemer med at måle omfan
 
 Omfanget af majoritetsbefolkningen, der har venner med indvandrerbaggrund, er lidt afhængigt af, hvordan man måler. De danske ministerielle medborgerskabsundersøgelser fra 2012 til 2016 viser, at 55 procent af den voksne befolkning med dansk-dansk herkomst, se \hyperref[kap3]{kapitel 3}, angiver, at de har mindst én ven med indvandrerbaggrund (Larsen \& Larsen, 2023). Denne ven med indvandrerbaggrund behøver ikke at være en ''nær ven'' eller en ven, man kan tale fortroligt med, hvilket alt andet lige øger sandsynligheden for tværetniske venskaber. Målt på den måde vidner studiet om, at lidt over halvdelen af befolkningen med dansk-dansk herkomst har en venskabelig relation til en indvandrere/efterkommer, trods et grundlæggende ønske om at danne venskaber med ligesindede, se \hyperref[kap1]{kapitel 1}. Det er således kun 45 procent af majoritetsbefolkningen, der udelukkende har venner blandt majoritetsbefolkningen (\citeproc{ref-larsen2023}{J. F. Larsen \& Larsen, 2023}).
 
-I en undersøgelse fra 2022 blev gruppen af voksne (+18 år) med dansk-dansk herkomst spurgt, hvor mange af deres ''nære'' venner, der kom fra forskellige baggrunde. Resultat ses i Tabel \ref{tab:tab-6-1}. Adspurgt om ''nære'' venner angiver 59 procent, at ingen af deres nære venner har indvandrerbaggrund. 25 procent og 12 procent angiver henholdsvis ''1--2'' og ''3 eller flere''. Tre procent angiver, at de ikke ved, hvorvidt nogle af deres nære venner har indvandrerbaggrund. Spørger man mere specifikt om nære venner med muslimsk baggrund viser undersøgelsen, at 66 procent af majoriteten ikke har et sådan nært venskab. 20 og 10 procent har henholdsvis ''1-2'' og ''3 eller flere'' nære venner med muslimsk baggrund. Spørger man til nære venner med østeuropæisk baggrund ses nogenlunde samme fordeling. Hvis man spørger til venner med afrikansk baggrund, stiger andelen uden nogen nære venner til 77 procent, se Tabel \ref{tab:tab-6-1}.
+I en undersøgelse fra 2022 blev gruppen af voksne (+18 år) med dansk-dansk herkomst spurgt, hvor mange af deres ''nære'' venner, der kom fra forskellige baggrunde. Resultat ses i Tabel \ref{tab:tab-6-01}. Adspurgt om ''nære'' venner angiver 59 procent, at ingen af deres nære venner har indvandrerbaggrund. 25 procent og 12 procent angiver henholdsvis ''1--2'' og ''3 eller flere''. Tre procent angiver, at de ikke ved, hvorvidt nogle af deres nære venner har indvandrerbaggrund. Spørger man mere specifikt om nære venner med muslimsk baggrund viser undersøgelsen, at 66 procent af majoriteten ikke har et sådan nært venskab. 20 og 10 procent har henholdsvis ''1-2'' og ''3 eller flere'' nære venner med muslimsk baggrund. Spørger man til nære venner med østeuropæisk baggrund ses nogenlunde samme fordeling. Hvis man spørger til venner med afrikansk baggrund, stiger andelen uden nogen nære venner til 77 procent, se Tabel \ref{tab:tab-6-01}.
 
-\setlength{\LTpost}{0mm}
-\begin{longtable}{l|ccccrr}
-\toprule
-\multicolumn{1}{l}{} & \multicolumn{4}{c}{\emph{Antal nære venskaber med person fra\ldots{}}} &  &  \\ 
-\cmidrule(lr){2-5}
-\multicolumn{1}{l}{} & Ingen & 1-2 personer & 3 eller flere & Ved ikke & \% & N \\ 
-\midrule\addlinespace[2.5pt]
-Indvandrer-baggrund & $59\%$ & $25\%$ & $12\%$ & $3\%$ & $100\%$ & 1340 \\ 
-Muslimsk baggrund & $66\%$ & $20\%$ & $10\%$ & $4\%$ & $100\%$ & 1340 \\ 
-Østeuropæisk baggrund & $67\%$ & $21\%$ & $8\%$ & $4\%$ & $100\%$ & 1342 \\ 
-Afrikansk baggrund & $77\%$ & $14\%$ & $6\%$ & $3\%$ & $100\%$ & 1341 \\ 
-\bottomrule
+\newpage
+
+\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}
+
+\global\setlength{\Oldtabcolsep}{\tabcolsep}
+
+\setlength{\tabcolsep}{2pt}
+
+\renewcommand*{\arraystretch}{1.5}
+
+
+
+\providecommand{\ascline}[3]{\noalign{\global\arrayrulewidth #1}\arrayrulecolor[HTML]{#2}\cline{#3}}
+
+\begin{longtable}[c]{|p{1.00in}|p{0.50in}|p{0.50in}|p{0.50in}|p{0.50in}|p{0.50in}|p{0.50in}}
+
+\caption{Majoritetsbefolkningens\ nære\ venskaber.
+}\label{tab:tab-6-01}\\
+
+\ascline{1.5pt}{666666}{1-7}
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Oprindelse}}}} & \multicolumn{4}{>{\raggedright}m{\dimexpr 2in+6\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Antal\ nære\ venskaber\ med\ personer\ fra:}}}} & \multicolumn{2}{>{\raggedright}m{\dimexpr 1in+2\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{I\ alt}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\ }}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Ingen}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{1-2\ personer}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{3\ eller\ flere}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Ved\ ikke}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\%}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{N}}}} \\
+
+\ascline{1.5pt}{666666}{1-7}\endfirsthead \caption[]{Majoritetsbefolkningens\ nære\ venskaber.
+}\label{tab:tab-6-01}\\
+
+\ascline{1.5pt}{666666}{1-7}
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Oprindelse}}}} & \multicolumn{4}{>{\raggedright}m{\dimexpr 2in+6\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Antal\ nære\ venskaber\ med\ personer\ fra:}}}} & \multicolumn{2}{>{\raggedright}m{\dimexpr 1in+2\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{I\ alt}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\ }}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Ingen}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{1-2\ personer}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{3\ eller\ flere}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Ved\ ikke}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\%}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{N}}}} \\
+
+\ascline{1.5pt}{666666}{1-7}\endhead
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{Indvandrer-baggrund}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{59}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{25}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{12}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{3}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{100}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{1,340}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{Muslimsk\ baggrund}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{66}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{20}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{10}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{4}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{100}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{1,340}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{Østeuropæisk\ baggrund}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{67}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{21}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{8}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{4}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{100}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{1,342}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{Afrikansk\ baggrund}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{77}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{14}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{6}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{3}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{100}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{1,341}}}} \\
+
+\ascline{1.5pt}{666666}{1-7}
+
+
+
 \end{longtable}
-\begin{minipage}{\linewidth}
-\emph{Spørgsmål}: Når du nu tænker på dine \textbf{nære venner}, hvor mange kommer så fra følgende baggrunde?\\
-\emph{Note}: Blandt respondenter med begge forældre født i Danmark. Vægtet data.\\
-\emph{Kilde}: Egne beregner på Allison Harell, Keith Banting, Will Kymlicka, Christian Albrekt Larsen, Robert Ford, Gina Gustavsson, Pierangelo Isernia and Stuart Soroka. 2022. Intergroup Relations and the Foundations of Solidarity (IRFS) Survey. Data Set, Montreal (Canada).\\
-\end{minipage}
+
+
+
+\arrayrulecolor[HTML]{000000}
+
+\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}
+
+\global\setlength{\tabcolsep}{\Oldtabcolsep}
+
+\renewcommand*{\arraystretch}{1}
+
+\begin{footnotesize}\textit{\textcolor{gray}{
+\textit{Spørgsmål}: Når du nu tænker på dine    extbf{nære venner}, hvor mange kommer så fra følgende baggrunde?
+\textit{Note}: Blandt respondenter med begge forældre født i Danmark. Vægtet data.
+\textit{Kilde}: Egne beregner på Allison Harell, Keith Banting, Will Kymlicka, Christian Albrekt Larsen, Robert Ford, Gina Gustavsson, Pierangelo Isernia and Stuart Soroka. 2022. Intergroup Relations and the Foundations of Solidarity (IRFS) Survey. Data Set, Montreal (Canada).
+}}
+\end{footnotesize}
+
+\newpage
 
 Både medborgerskabsundersøgelserne og undersøgelsen fra 2022 viser et klart mønster mellem majoritetsbefolkningens alder og omfanget af venskaber med indvandrere og efterkommere. Det illustreres i Figur \ref{fig:fig-6-1}. I 2022-undersøgelsen svarer cirka 70 procent af de 50-årige og derover, at de ikke har en nær ven med indvandrerbaggrund. Blandt de 40-49-årige og 30 -- 39-årige er andelen uden en nær ven med indvandrerbaggrund henholdsvis 59 og 51 procent. Endeligt er det kun cirka hver tredje af de 18 -- 29-årige, der ikke har en nær ven med indvandrerbaggrund, se Figur \ref{fig:fig-6-1}.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-6-1-1} \caption{Sammenhængen mellem alder på majoritetsbefolkning og nære venskaber med personer med indvandrerbaggrund. 2022. <br> Note: *Se note til tabel 6.1 for datagrundlag.*}\label{fig:fig-6-1}
+\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-6-1-1} \caption{Sammenhængen mellem alder på majoritetsbefolkning og nære venskaber med personer med indvandrerbaggrund. 2022.}\label{fig:fig-6-1}
 \end{figure}
 
-En oplagt forklaring på mønsteret i Figur @(fig:fig-6-1) er, at den yngre del af majoritetsbefolkningen har bedre mulighedsbetingelser for at danne nære venskaber med indvandrere og efterkommere. I en dansk kontekst har J. F. Larsen \& Larsen (\citeproc{ref-larsen2023}{2023}) beregnet andelen af indvandrere og efterkommere i den mulige venskabspulje. Studiet beregner hver enkelt svarpersons mulige venskabspulje som antallet er personer af samme køn, der er fem år yngre/ældre end svarpersonen, og som er bosat i samme boligkvarter, sogn eller kommune som svarpersonen. Logikken er, at der skal være nogle af samme aldersgruppe og af samme køn i et geografisk område før tværetniske venskaber kan opstå.\footnote{Blau har udtrykt det på følgende måde: \emph{''We cannot have Buddhist friends if there are no Buddhist around''} (\citeproc{ref-blau1997}{Blau \& Schwartz, 1997}).} I Figur @(fig:fig-6-2) vises andele af ikke-danske i venskabspuljen på tværs af kommunerne og aldersgrupper. De 18-39-årige svarpersoner, der bor i hovedstadskommunerne, har gode muligheder for at etablere tværetniske venskaber. Andelen af ikke-danske i deres beregnede venskabspulje er i gennemsnit 31 procent, se venstre side i Figur @(fig:fig-6-2). Blandt disse unge har alle en ikke-dansk i deres mulighedspulje, dvs. er ingen med nul procent i, se Figur @(fig:fig-6-2). Omvendt er der heller ikke nogle, hvor med samme alder og køn i deres kommune er ikke-danske, dvs. ingen har 100 procent.
+\begin{footnotesize}\textit{\textcolor{gray}{
+Note: se note til Tabel 6.1 for datagrundlag.
+}}
+\end{footnotesize}
+
+En oplagt forklaring på mønsteret i Figur \ref{fig:fig-6-1} er, at den yngre del af majoritetsbefolkningen har bedre mulighedsbetingelser for at danne nære venskaber med indvandrere og efterkommere. I en dansk kontekst har J. F. Larsen \& Larsen (\citeproc{ref-larsen2023}{2023}) beregnet andelen af indvandrere og efterkommere i den mulige venskabspulje. Studiet beregner hver enkelt svarpersons mulige venskabspulje som antallet er personer af samme køn, der er fem år yngre/ældre end svarpersonen, og som er bosat i samme boligkvarter, sogn eller kommune som svarpersonen. Logikken er, at der skal være nogle af samme aldersgruppe og af samme køn i et geografisk område før tværetniske venskaber kan opstå.\footnote{Blau har udtrykt det på følgende måde: \emph{''We cannot have Buddhist friends if there are no Buddhist around''} (\citeproc{ref-blau1997}{Blau \& Schwartz, 1997}).} I Figur \ref{fig:fig-6-2} vises andele af ikke-danske i venskabspuljen på tværs af kommunerne og aldersgrupper. De 18-39-årige svarpersoner, der bor i hovedstadskommunerne, har gode muligheder for at etablere tværetniske venskaber. Andelen af ikke-danske i deres beregnede venskabspulje er i gennemsnit 31 procent, se venstre side i Figur \ref{fig:fig-6-2}. Blandt disse unge har alle en ikke-dansk i deres mulighedspulje, dvs. er ingen med nul procent i, se Figur \ref{fig:fig-6-2}. Omvendt er der heller ikke nogle, hvor med samme alder og køn i deres kommune er ikke-danske, dvs. ingen har 100 procent.
 
 \begin{figure}
-\includegraphics[width=1\linewidth]{images/Figur_6_2} \caption{Andelen af indvandrere og efterkommere i majoritetsbefolkningen mulige venskabspulje. Opgjort på kommunalt niveau på tværs af aldersgrupper (A: XX, B: XX) og kommunetype (A: XX, B: XX).}\label{fig:fig-6-2}
+\includegraphics[width=1\linewidth]{images/Figur_6_2} \caption{Andelen af indvandrere og efterkommere i majoritetsbefolkningen mulige venskabspulje.}\label{fig:fig-6-2}
 \end{figure}
 
-Omvendt ser det ud for de ældre svarpersoner (60 år eller derover), der bor i en landkommune, se højre side af Figur @(fig:fig-6-2) . Andelen af ikke-danske i deres venskabspulje er i gennemsnit kun fire procent. Endvidere er fordelingen venstreskæv, hvilket medfører, at flertallet har under de fire procent---og mange essentielt ingen. Ældre i landkommuner har således begrænsede muligheder for at finde en ven, der ikke har dansk-dansk herkomst. Konklusionen i studiet er således, at den voksne befolkning med dansk-dansk-herkomst har meget forskellige mulighedsstrukturer for at danne venskaber med personer, der ikke har dansk-dansk herkomst. Det skyldes både geografi og det faktum, at indvandrere og efterkommere i gennemsnit er yngre end gruppen med dansk-dansk-herkomst.
+\begin{footnotesize}\textit{\textcolor{gray}{
+Note: Opgjort på kommunalt niveau på tværs af aldersgrupper (A: XX, B: XX) og kommunetype (A: XX, B: XX).
+}}
+\end{footnotesize}
+
+Omvendt ser det ud for de ældre svarpersoner (60 år eller derover), der bor i en landkommune, se højre side af Figur \ref{fig:fig-6-2} . Andelen af ikke-danske i deres venskabspulje er i gennemsnit kun fire procent. Endvidere er fordelingen venstreskæv, hvilket medfører, at flertallet har under de fire procent---og mange essentielt ingen. Ældre i landkommuner har således begrænsede muligheder for at finde en ven, der ikke har dansk-dansk herkomst. Konklusionen i studiet er således, at den voksne befolkning med dansk-dansk-herkomst har meget forskellige mulighedsstrukturer for at danne venskaber med personer, der ikke har dansk-dansk herkomst. Det skyldes både geografi og det faktum, at indvandrere og efterkommere i gennemsnit er yngre end gruppen med dansk-dansk-herkomst.
 
 J. F. Larsen \& Larsen (\citeproc{ref-larsen2023}{2023}) viser også, at der er en sammenhæng mellem størrelsen af disse venskabspuljer og omfanget af majoritetsbefolkningens venskaber med indvandrere og efterkommere. Dette indikerer, at mulighedsstruktur har betydning for den voksne majoritetsbefolkning. Udtrykt anderledes, fraværet af tværetniske venskaber i nogle kontekster og demografiske segmenter af samfundet er en strukturel betingelse og ikke nødvendigvis et udtryk for bevidst ''venskabsisolation''.
 
 \section{Indvandrere og efterkommeres venskaber med majoriteten}\label{indvandrere-og-efterkommeres-venskaber-med-majoriteten}
 
-Mulighedsstrukturerne for at danne venskaber ser anderledes ud for indvandrere og efterkommere. For minoriteterne er det typiske, at der er rigeligt af mulige majoritetsmedlemmer at danne venskaber med. Det gør sig gældende på skoler, se \hyperref[kap4]{kapitel 4}, og arbejdspladser, se \hyperref[kap5]{kapitel 5}. ''Problemet'' for indvandrere og efterkommere er snarere, at der kan være for få fra deres egen etniske gruppe til at danne sociale relationer med. Det kan gøre det svært at få opfyldt det naturlige ønsket om at finde venner, der ligner sig selv (\citeproc{ref-mcpherson2001}{McPherson et al., 2001}).{[}63{]} Ligesom for majoritetsbefolkningen er indvandreres/efterkommeres venskaber vanskelige at beskrive og studere. C. A. Larsen (\citeproc{ref-calarsen2024}{2024}) har dog brugt ministerielle medborgerskabsundersøgelser til at beskrive ikke-vestlige indvandreres og efterkommers venskaber (blandt voksne, der minimum har levet tre år i Danmark).
+Mulighedsstrukturerne for at danne venskaber ser anderledes ud for indvandrere og efterkommere. For minoriteterne er det typiske, at der er rigeligt af mulige majoritetsmedlemmer at danne venskaber med. Det gør sig gældende på skoler, se \hyperref[kap4]{kapitel 4}, og arbejdspladser, se \hyperref[kap5]{kapitel 5}. ''Problemet'' for indvandrere og efterkommere er snarere, at der kan være for få fra deres egen etniske gruppe til at danne sociale relationer med. Det kan gøre det svært at få opfyldt det naturlige ønsket om at finde venner, der ligner sig selv (\citeproc{ref-mcpherson2001}{McPherson et al., 2001}).\footnote{Selvom det er et veletableret menneskeligt forhold, at mennesker har en præference for relationer med andre, der ligner en selv på et eller flere parametre, ved vi ikke hvorvidt indvandrere og efterkommere har større ønske om at etablere venskaber med majoriteten end omvendt. I udgangspunktet kunne man forvente et større ønske om tværetnisk venskab, da indvandrere og efterkommere har stærkere incitamenter til at danne sådanne venskaber, se \hyperref[kap1]{kapitel 1}.} Ligesom for majoritetsbefolkningen er indvandreres/efterkommeres venskaber vanskelige at beskrive og studere. C. A. Larsen (\citeproc{ref-calarsen2024}{2024}) har dog brugt ministerielle medborgerskabsundersøgelser til at beskrive ikke-vestlige indvandreres og efterkommers venskaber (blandt voksne, der minimum har levet tre år i Danmark).
 
 Studiet viser, at langt hovedparten af ikke-vestlige indvandrere angiver, at de har en dansk ven. Det er således kun fem procent, der angiver, at de udelukkende har venner med indvandrerbaggrund. Risikoen for en sådan ''venskabsisolation'' er større blandt kvinder, ældre og gruppen med lavere uddannelse og indkomst. Det typiske mønster er, at cirka halvdelen af de ikke-vestlige indvandreres venner har indvandrerbaggrund.\footnote{Målt på andel med indvandrerbaggrund er mønstret igen, at andelen med indvandrerbaggrund er større blandt kvinder, ældre og lavt uddannede, mens der ikke er en selvstændig effekt fra lav indkomst (i modsætning til mønstret for ''venskabsisolation'').} For voksne ikke-vestlige efterkommere angiver kun tre procent, at de udelukkende har venner med indvandrerbaggrund. For disse relativt unge voksne kunne studiet ikke finde sammenhænge mellem baggrundsvariable som køn, alder, uddannelse, indkomst og ''venskabsisolation''. Blandt ikke-vestlige efterkommere er det typiske mønster også, at omkring halvdelen af deres venner har indvandrerbaggrund.\footnote{Måler man på den samlede indvandrerandel blandt vennerne er det eneste klare mønster for efterkommerne, at de højtuddannede har færre venner med indvandrerbaggrund. Der er ikke tydelige sammenhænge med køn, alder og indkomst.}
-
-{[}63{]}: Selvom det er et veletableret menneskeligt forhold, at mennesker har en præference for relationer med andre, der ligner en selv på et eller flere parametre, ved vi ikke hvorvidt indvandrere og efterkommere har større ønske om at etablere venskaber med majoriteten end omvendt. I udgangspunktet kunne man forvente et større ønske om tværetnisk venskab, da indvandrere og efterkommere har stærkere incitamenter til at danne sådanne venskaber, se \hyperref[kap1]{kapitel 1}.
 
 Et centralt spørgsmål i studiet er, hvorvidt størrelsen af egen gruppe påvirker venskabsrelationerne. Størrelsen på egen gruppe er i målt som antallet af indvandrere og efterkommere fra samme oprindelsesland. Indvandrerne kommer fra 122 forskellige lande, mens efterkommerne kommer fra 61 forskellige. Nogle af indvandrerne og efterkommerne har næsten ingen mulighed for at finde venner fra eget oprindelsesland, da de nærmest er de eneste fra et givent land bosat i Danmark. Andre har langt bedre muligheder. Sidstnævnte gælder for eksempel for indvandrere og efterkommere med tyrkisk og syrisk oprindelse, da der er cirka 60.000 personer med tyrkisk og 40.000 med syrisk oprindelse. Studiet viser, at jo større ens egen gruppe er, jo større er andelen af venner med indvandrerbaggrund, og jo mindre er gruppen af venner med dansk baggrund. Størrelsen på egen gruppen forøger også ''risikoen'' for udelukkende at have venner med indvandrerbaggrund. Mønstret ser lidt anderledes ud blandt de ikke-vestlige efterkommere. Det gælder stadig, at jo større antal indvandrere og efterkommere fra deres eget oprindelsesland, jo mindre andel danske venner. Til gengæld er det ikke statistisk sikkert, at et større antal fra samme oprindelsesland påvirker efterkommernes ''risiko'' for udelukkende at have venner med indvandrerbaggrund.
 
@@ -736,7 +1173,11 @@ Vi opfatter de præsenterede studier som et første skridt i et spirende forskni
 
 \emph{\href{https://vbn.aau.dk/en/persons/albrekt}{Christian Albrekt Larsen}}
 
+~~~~
+
 \includegraphics[width=1\linewidth]{images/kap7}
+
+\newpage
 
 ''En befolkning blander sig'' er inspireret af den lange amerikanske sociologiske forskningstradition, der handler om, hvordan indvandrere klarede sig i USA, og hvordan det formåede USA som nation. Udgangspunktet for meget af den amerikanske forskning er, at integrationen/assimileringen i det store hele lykkes. Ikke blot for den enkelte indvandrer og hendes efterkommere, men også for USA som samfund. Opgaven for de tidlige amerikanske sociologer var således været at forklare, hvorfor det var gået så godt. Hvad var de magiske ingredienser i den amerikanske smeltedigel? Udgangspunktet for meget af den samtidige europæiske forskning om integration er anderledes. Vi lever et samfund, hvor grundfortællingen er, at integrationen i det store hele er mislykkes. Det gør i særdeleshed gældende i Danmark. En nærlæsning af de politiske partiprogrammer viser, at fra den yderste højrefløj til den yderste venstrefløj er man enige om, at integrationen er mislykkes (\citeproc{ref-nielsen2024}{Nielsen et al., under udgivelse}). Uenigheden starter først, når det kommer til løsningsforslagene. Det omgivende samfund er således typisk interesseret i en forklaring på, hvorfor integrationen er mislykkes, og hvad man kan gøre ved det. Det bliver tit til et spørgsmål om, hvad den enkelt indvandrer eller efterkommer gør galt, hvad majoritetsbefolkningen gør galt eller, hvad der er galt med samfundsindretningen. I bogen har vi forsøgt at løfte spørgsmålet om integration udover denne øvelse i fejlfinding og problemløsning. I tråd med den amerikanske tradition har forfatteren til denne bog mere været interesseret i de positive forklaringer på, hvordan integration egentlig foregår. Bogens bud er, at ansigt-til-ansigt møder mellem majoriteten og minoriteter er en vigtig forudsætning for integration.
 
@@ -769,7 +1210,7 @@ Diop-Christensen et al. (\citeproc{ref-diopchristensen2024b}{2024}) viser, at (i
 
 \section{Kontaktperspektivets begrænsninger og videre forskning}\label{kontaktperspektivets-begruxe6nsninger-og-videre-forskning}
 
-Det underliggende forskningsprojekt har fokuseret på arbejdspladserne og ikke nærmere studeret, hvad der sker i blandede familier\footnote{H..Y. Qvist, J.Y. Qvist og M. Dahlberg arbejder dog på at færdiggøre et studie om, hvorledes tværetnisk partnerskab påvirker politisk deltagelse.} og i blandede skoler. Der er dog et spirende forskningsfelt om venskabsrelationerne i skoleklasser. I det dominerede europæiske studie af klasserum bedes eleverne nominere deres bedste venner i klassen (op til maksimalt fem stk.).\footnote{Children of immigrants longitudional survey in four European Countries'' Home -- Cils4eu} Sådanne klasserumsdata er indsamlet i Tyskland, Holland, Storbritannien, Sverige og Norge. Det giver mulighed for 1) at beregne venskaber, hvor begge partner nominerer hinanden, 2) at få nøjagtig information om vennens etnicitet, og 3) lave beregner på selve netværket i stedet for på personerne.
+Det underliggende forskningsprojekt har fokuseret på arbejdspladserne og ikke nærmere studeret, hvad der sker i blandede familier\footnote{H-P.Y. Qvist, J.Y. Qvist og M. Dahlberg arbejder dog på at færdiggøre et studie om, hvorledes tværetnisk partnerskab påvirker politisk deltagelse.} og i blandede skoler. Der er dog et spirende forskningsfelt om venskabsrelationerne i skoleklasser. I det dominerede europæiske studie af klasserum bedes eleverne nominere deres bedste venner i klassen (op til maksimalt fem stk.).\footnote{Children of immigrants longitudional survey in four European Countries'' Home -- Cils4eu} Sådanne klasserumsdata er indsamlet i Tyskland, Holland, Storbritannien, Sverige og Norge. Det giver mulighed for 1) at beregne venskaber, hvor begge partner nominerer hinanden, 2) at få nøjagtig information om vennens etnicitet, og 3) lave beregner på selve netværket i stedet for på personerne.
 
 Et af hovedresultaterne fra skolerumsdata er, at der er etniske opdelinger internt i skoleklasser. Børn med majoritetsbaggrund i Tyskland, Holland, Storbritannien og Sverige har typisk bedste venner i klassen, der også har majoritetsbaggrund. Analyser på de europæiske skolerumsdata også viser, at det både skyldes, at der er en præference for sådanne etnisk homogene venskaber, jævnfør \hyperref[kap1]{kapitel 1}, og det simple forhold, at majoriteten netop er en majoritet (se Van Tubergen \& Smith (\citeproc{ref-tubergen2018}{2018}) for et overblik). Omvendt har indvandrerbørn i blandede klasser ofte tendens til at danne venskaber med andre indvandrerbørn. To mindre kvalitative danske undersøgelser i etnisk diverse syvendeklaser (\citeproc{ref-jensen2018}{Jensen, 2018}) førsteklasser (\citeproc{ref-vertelyte2019}{Vertelyte, 2019}) indikerer også, at børn af majoritetsbefolkningen primært er venner med andre børn af majoritetsbefolkningen.
 
@@ -804,6 +1245,9 @@ Andersson, H., \& Dehdari, S. H. (2021). Workplace contact and support for anti-
 \bibitem[\citeproctext]{ref-bell1954}
 Bell, W. (1954). A probability model for the measurement of ecological segregation. \emph{Social Forces}, \emph{32}(4), 357--364. \url{https://doi.org/10.2307/2574118}
 
+\bibitem[\citeproctext]{ref-bjerre-nielsen2020}
+Bjerre-Nielsen, A., \& Gandil, M. H. (2020). \emph{Attendance boundary policies and the limits to combating school segregation}.
+
 \bibitem[\citeproctext]{ref-blau1994}
 Blau, P. M. (1994). \emph{Structural contexts of opportunities}. University of Chicago Press.
 
@@ -836,6 +1280,9 @@ Diop-Christensen, L. E., Hedegaard, T. F., \& Diop-Christensen, A. (2024). Is em
 
 \bibitem[\citeproctext]{ref-diopchristensen2024}
 Diop-Christensen, L. E., \& Larsen, C. A. (2024). Working together or apart? Exposure between natives and migrants at danish workplaces from 1996 to 2019. \emph{Journal of Ethnic and Migration Studies}.
+
+\bibitem[\citeproctext]{ref-duncan1955}
+Duncan, O. D., \& Duncan, B. (1955). A methodological analysis of segregation indexes. \emph{American Sociological Review}, \emph{20}(2), 210--217. \url{https://doi.org/10.2307/2088328}
 
 \bibitem[\citeproctext]{ref-epinion2017}
 Epinion. (2017). \emph{Frit skolevalg---hovedrapport}. Undervisningsministeriet.
@@ -931,7 +1378,7 @@ Leszczensky, L., \& Pink, S. (2019). What drives ethnic homophily? A relational 
 Mancini, T., Caricati, L., \& Marletta, G. (2018). Does contact at work extend its influence beyond prejudice? Evidence from healthcare settings. \emph{The Journal of Social Psychology}, \emph{158}(2), 173--186.
 
 \bibitem[\citeproctext]{ref-massey1988}
-Massey, Douglas S., \& Denton, N. A. (1988). The dimensions of residential segregation. \emph{Social Forces}, \emph{67}(2), 281. \url{https://doi.org/10.2307/2579183}
+Massey, D. S., \& Denton, N. A. (1988). The dimensions of residential segregation. \emph{Social Forces}, \emph{67}(2), 281. \url{https://doi.org/10.2307/2579183}
 
 \bibitem[\citeproctext]{ref-massey1994}
 Massey, D. S., \& Denton, N. A. (1994). \emph{American apartheid: Segregation and the making of the underclass}. Harvard University Press.
@@ -962,6 +1409,9 @@ Pettigrew, T. F., \& Tropp, L. R. (2006). A meta-analytic test of intergroup con
 
 \bibitem[\citeproctext]{ref-portes1993}
 Portes, A., \& Zhou, M. (1993). The new second generation: Segmented assimilation and its variants. \emph{The Annals of the American Academy of Political and Social Science}, \emph{530}(1), 74--96.
+
+\bibitem[\citeproctext]{ref-privatskoleforening2021}
+Privatskoleforening, D. (2021). \emph{Fordomme og fakta om privatskoler}. Danmarks Privatskoleforening.
 
 \bibitem[\citeproctext]{ref-qvistqvist2023}
 Qvist, H.-P. Y., \& Qvist, J. Y. (2023). Interethnic union formation among 1.5- and second-generation immigrants: The role of cultural proximity. \emph{International Migration Review}, \emph{0}(0). \url{https://doi.org/10.1177/01979183231177969}
@@ -1014,6 +1464,8 @@ Zoloth, B. S. (1976). Alternative measures of school segregation. \emph{Land Eco
 
 \emph{\href{https://vbn.aau.dk/da/persons/jeppefl}{Jeppe Fjeldgaard Larsen}}
 
+~~~~
+
 Et kendt og ofte anvendt citat, der definerer segregering, er fra Massey og Dentons (\citeproc{ref-massey1988}{1988}) klassiske artikel, hvor de skriver: \emph{``At a general level, residential segregation is the degree to which two or more groups live separately from one another, in different parts of the urban environment''} (s. 282). Citatet indfanger den centrale logik, når vi taler om segregering. Segregering er en situation, hvor folk i en given kontekst---være det uddannelsessystemer(t), arbejdsmarkedet eller boligmarkedet---ikke møder hinanden eller er eksponerede for hinanden. Det vil sige, at under absolut segregering går folk fra forskellige baggrunde ikke på de samme skoler, arbejder ikke på de samme arbejdspladser og bor ikke i de samme nabolag.
 
 Segregeringslitteraturen har en lang metodologisk tradition (\citeproc{ref-fossett2017}{Fossett, 2017}; \citeproc{ref-james1985}{James \& Taeuber, 1985}; \citeproc{ref-reardon2002}{Reardon \& Firebaugh, 2002}). Nogle mål for segregering er dog mere fremtrædende end andre i den empiriske litteratur. Mål for \emph{ulige fordeling} og \emph{eksponering}/\emph{isolering} er generelt de mest anvendte. Det er også disse mål, der har mest substantiel relevans i studiet af (minoritets)gruppers fordeling mellem skoler, arbejdspladser og nabolag. Dette bilag beskriver og diskuterer to mål for segregering: et, der måler fordeling (\textbf{dissimilaritetsindekset}), og et, der måler eksponering eller isolation (\textbf{separationsindekset}). Disse to mål anvendes på tværs af bogens kapitler og i de empiriske forskningsartikler, der ligger til grund for flere af kapitlerne.
@@ -1022,7 +1474,7 @@ Eftersom nærværende bilag er en generaliseret introduktion til disse to mål f
 
 \section{Dissimilaritetsindekset}\label{dissimkap}
 
-I forskningslitteraturen er det mest anvendte mål for segregering dissimilaritetsindekset (\(D\)), der blev bredt introduceret af (\citeproc{ref-duncan1955}{\textbf{duncan1955?}}). Selvom \(D\) oprindeligt blev udviklet til at beskrive boligsegregering, har indekset også siden i vidt omfang været anvendt til at beskrive skolesegregering og segregerings på arbejdsmarkedet samt andre former for fordeling af personer og grupper.
+I forskningslitteraturen er det mest anvendte mål for segregering dissimilaritetsindekset (\(D\)), der blev bredt introduceret af Duncan \& Duncan (\citeproc{ref-duncan1955}{1955}). Selvom \(D\) oprindeligt blev udviklet til at beskrive boligsegregering, har indekset også siden i vidt omfang været anvendt til at beskrive skolesegregering og segregerings på arbejdsmarkedet samt andre former for fordeling af personer og grupper.
 
 Med James \& Taeuber (\citeproc{ref-james1985}{1985}) notationer er \(D\) udregnet som:
 
@@ -1074,7 +1526,7 @@ Ligesom dissimilaritetsindekset, anvender separationsindekset også \(P\) som gr
 
 Denne forskel i bestemmelsen af de summerede afvigelser fra ``lige fordeling'' har stor substantiel betydning for, hvad indekset faktisk måler, og tolkningen af segregering, selvom ligning \eqref{eq:sep} på mange måder ligner ligning \eqref{eq:dissim}. Som diskuteret udtrykker \(S\) derfor ikke \emph{(u)lige fordelinger}, men forskellen i parvis skaleret eksponering til majoritetspersoner mellem majoritets- (\(A\)) og minoritetsgruppen (\(B\)). \(S\) måler derfor \emph{sandsynligheder for intergruppeeksponering, korrigeret for den samlede populationssammensætning} (\citeproc{ref-bell1954}{Bell, 1954}; \citeproc{ref-fossett2017}{Fossett, 2017}) udtrykt som en brøkdel af den maksimalt mulige værdi.
 
-Vægtningen af indekset relaterer sig til, at \(S\) er afledt af isolerings- og eksponeringsindeksene (\(P^{*}\)-indeks, se Farley (\citeproc{ref-farley1984}{1984})), som udtrykker sandsynligheden for, at to tilfældigt udvalgte personer i en enhed tilhører samme eller forskellige grupper (\citeproc{ref-gorard2002}{Gorard \& Taylor, 2002}). \emph{Eksponeringsindekse}t, \(_{A}P^{*}_{B}\), udtrykker sandsynligheden for, at en tilfældig person fra \(A\) befinder sig i en enhed med en person fra \(B\). \emph{Isoleringsindekset}, \(_{A}P^{*}_{A}\), udtrykker derimod sandsynligheden for, at en tilfældig person fra \(A\) befinder sig i en enhed med en anden fra \(A\)\footnote{To meget forsimplede antagelser er nødvendige i denne tolkning (\citeproc{ref-bell1954}{Bell, 1954}). For det første antages det, at møder mellem personer foregår inden for den pågældende enhed (skoler, arbejdspladser, nabolag), og for det andet, at hver person i en pågældende enhed har lige sandsynlighed for at møde hver enkelt person inden for enheden. Det er veldokumenteret, at begge antagelser ikke er tilfældet i praksis (\citeproc{ref-mcpherson2001}{McPherson et al., 2001}). \(P^{*}\) skal derfor tolkes som \emph{den minimale sandsynlige eksponering mellem personer fra samme/forskellige grupper}, under antagelse af at den faktiske intragruppe eksponering er højere.}. Begge mål kan tage værdier fra \(0\) til \(1\), og hvis populationen er inddelt i kun to grupper, gælder det, at \(_{A}P^{*}_{B} + _{A}P^{*}_{A} = 1\). Derudover er målene asymmetriske, hvilket betyder, at \(_{A}P^{*}_{B} = _{B}P^{*}_{A}\) kun i tilfælde, hvor \(A\) og \(B\) udgør lige store andele af befolkningssammensætningen, eller \(_{A}P^{*}_{B} \neq _{B}P^{*}_{A}\). Disse mål opfylder derfor ikke sammensætningsinvariansen, men er afhængige af størrelsen på de grupper, der sammenlignes (\citeproc{ref-massey1988}{Douglas S. Massey \& Denton, 1988}), da sandsynligheden for eksponering eller isolering er summen af produktet af to sandsynligheder (se Bell (\citeproc{ref-bell1954}{1954})): (1) sandsynligheden for, at en person fra gruppe \(A\) møder en anden person fra gruppe \(A\): \(\left( n_{i}^{A} - 1 \right) / \left( n_{i}^{B} - 1 \right)\), og (2) sandsynligheden for, at en tilfældig person fra gruppe \(A\) befinder sig i den pågældende enhed, \(i\): \(n_{i}^{A} / N^{A}\). Et produkt, der kan udtrykkes algebraisk som: \(P^{*}=\frac{1}{A} {\textstyle \sum_{i=1}^{k}\frac{n_{i}^{A \space 2}}{n_{i}^{B}}}\). Sandsynligheden for intergruppeeksponering---eller relativ isolation---tager altså afsæt i befolkningssammensætningen.
+Vægtningen af indekset relaterer sig til, at \(S\) er afledt af isolerings- og eksponeringsindeksene (\(P^{*}\)-indeks, se Farley (\citeproc{ref-farley1984}{1984})), som udtrykker sandsynligheden for, at to tilfældigt udvalgte personer i en enhed tilhører samme eller forskellige grupper (\citeproc{ref-gorard2002}{Gorard \& Taylor, 2002}). \emph{Eksponeringsindekse}t, \(_{A}P^{*}_{B}\), udtrykker sandsynligheden for, at en tilfældig person fra \(A\) befinder sig i en enhed med en person fra \(B\). \emph{Isoleringsindekset}, \(_{A}P^{*}_{A}\), udtrykker derimod sandsynligheden for, at en tilfældig person fra \(A\) befinder sig i en enhed med en anden fra \(A\)\footnote{To meget forsimplede antagelser er nødvendige i denne tolkning (\citeproc{ref-bell1954}{Bell, 1954}). For det første antages det, at møder mellem personer foregår inden for den pågældende enhed (skoler, arbejdspladser, nabolag), og for det andet, at hver person i en pågældende enhed har lige sandsynlighed for at møde hver enkelt person inden for enheden. Det er veldokumenteret, at begge antagelser ikke er tilfældet i praksis (\citeproc{ref-mcpherson2001}{McPherson et al., 2001}). \(P^{*}\) skal derfor tolkes som \emph{den minimale sandsynlige eksponering mellem personer fra samme/forskellige grupper}, under antagelse af at den faktiske intragruppe eksponering er højere.}. Begge mål kan tage værdier fra \(0\) til \(1\), og hvis populationen er inddelt i kun to grupper, gælder det, at \(_{A}P^{*}_{B} + _{A}P^{*}_{A} = 1\). Derudover er målene asymmetriske, hvilket betyder, at \(_{A}P^{*}_{B} = _{B}P^{*}_{A}\) kun i tilfælde, hvor \(A\) og \(B\) udgør lige store andele af befolkningssammensætningen, eller \(_{A}P^{*}_{B} \neq _{B}P^{*}_{A}\). Disse mål opfylder derfor ikke sammensætningsinvariansen, men er afhængige af størrelsen på de grupper, der sammenlignes (\citeproc{ref-massey1988}{Massey \& Denton, 1988}), da sandsynligheden for eksponering eller isolering er summen af produktet af to sandsynligheder (se Bell (\citeproc{ref-bell1954}{1954})): (1) sandsynligheden for, at en person fra gruppe \(A\) møder en anden person fra gruppe \(A\): \(\left( n_{i}^{A} - 1 \right) / \left( n_{i}^{B} - 1 \right)\), og (2) sandsynligheden for, at en tilfældig person fra gruppe \(A\) befinder sig i den pågældende enhed, \(i\): \(n_{i}^{A} / N^{A}\). Et produkt, der kan udtrykkes algebraisk som: \(P^{*}=\frac{1}{A} {\textstyle \sum_{i=1}^{k}\frac{n_{i}^{A \space 2}}{n_{i}^{B}}}\). Sandsynligheden for intergruppeeksponering---eller relativ isolation---tager altså afsæt i befolkningssammensætningen.
 
 Problemet ved at anvende \(P^{*}\) ukorrigeret i bestemmelsen af den relative isolation af grupperne, som diskuteret af Bell (\citeproc{ref-bell1954}{1954}), er, at den mindste værdi \(P^{*}\) kan tage, er den heterogene blanding af gruppe \(A\) i et pågældende område, givet som \(N^{A}/N^{B}\). Derfor gælder det også, at sandsynligheden for intragruppeeksponering i gruppe \(A\) er større end i gruppe \(B\), hvis gruppe \(A\) udgør en større andel af populationen, \emph{selv hvis populationen er ligeligt fordelt mellem enheder}. Hvis der ikke korrigeres for populationsstørrelser (\(T=N^{A}+N^{B}\)), kan komparative beskrivelser af forventet eksponering, givet alene som \(P^{*}\), mellem områder derfor være delvist vildledende i en substantiel tolkning. For eksempel, hvis vi forestiller os to kommuner: den ene kommune (\(X\)) består af \(30\%\) personer fra gruppe \(B\), mens den anden kommune (\(Y\)) består af \(2\%\) personer fra gruppe \(B\). Selv hvis minoritetsgruppen var ligeligt fordelt mellem alle enheder i hver kommune, således at alle enheder har den samme andel---altså ingen segregering i henhold til \(D\)---vil det i kommune \(X\) gælde, at \(P^{*}=0.3\), mens det i kommune \(Y\) gælder at \(P^{*}=0.02\). Med disse ``rå'' mål for eksponering er høje/lave grader af eksponering ikke nødvendigvis et udtryk for segregering, men kan blot reflektere, at der er flere personer fra gruppe \(B\) i den ene kommune sammenlignet med den anden. Med andre ord, med \(D\) ser vi ingen forskelle i segregeringsniveau mellem \(X\) og \(Y\), selvom der tydeligvis er substantielle forskelle i graden af intergruppeeksponering, mens vi med \(P^{*}\) kan ende med en beskrivelse, der grundlæggende ikke siger andet end ``der er flere minoriteter i \(X\) end i \(Y\)''---en forskel, der ikke nødvendigvis udtrykker en forskel i segregeringsprocesser mellem kommunerne, kun potentialet for omfanget af segregering (se \ref{fig:fig-9-1}).
 
@@ -1098,6 +1550,6 @@ I praksis ser vi ofte, at \(S\) og \(D\) korrelerer, men graden af korrelation k
 \includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-9-4-1} \caption{Mulige kombinationer af (absolutte) S-D værdier efter Fossett (2017, s. 85).}\label{fig:fig-9-4}
 \end{figure}
 
-En anden teknisk forskel mellem de to mål er, at \(S\) er mere sensitivt end \(D\), fordi \(S\) opfanger et helt spektrum af eksponering mellem grupper, mens \(D\) kun opfanger, hvor mange der befinder sig i enheder, som er binært grupperet som under/over paritet. Det vil sige, at i \(D\), ligning \eqref{eq:dissim}, gør det ingen forskel, hvor langt fra paritet en given enhed er. Det gør det modsat i \(S\), ligning \eqref{eq:sep}. Ved et segregeringsreducerende flyt, forstået som et flyt til en enhed med relativt lavere andel af personer fra egen gruppe, eller et segregeringsøgende flyt, forstået som et flyt til en enhed med en relativt større andel af personer fra egen gruppe, vil \(S\)-indekset reagere ``stærkere'' (ændre sig mere) for flyt mellem to homogene enheder---hvor den ene har en andel minoriteter på \(100\%\) og den anden en andel på \(0\%\)---end flyt mellem områder, som er relativt blandede, selvom de to enheder formelt er over og under paritet (for eksempel, hvor den ene enhed har en andel på \(49\%\) og den anden en andel på \(51\%\)). \(D\) vil modsat opfange disse to flyt med identisk påvirkning på den målte grad af segregering (se Fossett (\citeproc{ref-fossett2017}{2017}, s. 90--96) for teknisk forklaring og eksempler). Det betyder altså også, at der vil være flytninger, som kun bliver registreret i \(S\), der registrerer alle ændringer, men ikke i \(D\), hvis flytningen er mellem to enheder, der selvom de har forskellig befolkningssammensætning, men begge enheder er over/under paritet i forhold til det større områdes befolkningssammensætning. Dette gør sig særligt relevant på store skalaer, såsom national skala, hvor flytninger indenfor kommuner med relativt høje eller lave andele af minoriteter ikke registreres som ændringer i \(D\), selvom disse flyt kan påvirke graden af eksponering/isolering mellem minoriteter og majoriteter. Derfor ses det også empirisk, at der kan være situationer, hvor \(D\)-indekset giver en indikation af faldende segregering, mens \(S\) vil vise det modsatte. Det er for eksempel tilfældet ved udviklingen i skolesegregering på national skala (se Figur \ref{fig:fig-3-2}).
+En anden teknisk forskel mellem de to mål er, at \(S\) er mere sensitivt end \(D\), fordi \(S\) opfanger et helt spektrum af eksponering mellem grupper, mens \(D\) kun opfanger, hvor mange der befinder sig i enheder, som er binært grupperet som under/over paritet. Det vil sige, at i \(D\), ligning \eqref{eq:dissim}, gør det ingen forskel, hvor langt fra paritet en given enhed er. Det gør det modsat i \(S\), ligning \eqref{eq:sep}. Ved et segregeringsreducerende flyt, forstået som et flyt til en enhed med relativt lavere andel af personer fra egen gruppe, eller et segregeringsøgende flyt, forstået som et flyt til en enhed med en relativt større andel af personer fra egen gruppe, vil \(S\)-indekset reagere ``stærkere'' (ændre sig mere) for flyt mellem to homogene enheder---hvor den ene har en andel minoriteter på \(100\%\) og den anden en andel på \(0\%\)---end flyt mellem områder, som er relativt blandede, selvom de to enheder formelt er over og under paritet (for eksempel, hvor den ene enhed har en andel på \(49\%\) og den anden en andel på \(51\%\)). \(D\) vil modsat opfange disse to flyt med identisk påvirkning på den målte grad af segregering (se Fossett (\citeproc{ref-fossett2017}{2017}: 90--96) for teknisk forklaring og eksempler). Det betyder altså også, at der vil være flytninger, som kun bliver registreret i \(S\), der registrerer alle ændringer, men ikke i \(D\), hvis flytningen er mellem to enheder, der selvom de har forskellig befolkningssammensætning, men begge enheder er over/under paritet i forhold til det større områdes befolkningssammensætning. Dette gør sig særligt relevant på store skalaer, såsom national skala, hvor flytninger indenfor kommuner med relativt høje eller lave andele af minoriteter ikke registreres som ændringer i \(D\), selvom disse flyt kan påvirke graden af eksponering/isolering mellem minoriteter og majoriteter. Derfor ses det også empirisk, at der kan være situationer, hvor \(D\)-indekset giver en indikation af faldende segregering, mens \(S\) vil vise det modsatte. Det er for eksempel tilfældet ved udviklingen i skolesegregering på national skala (se Figur \ref{fig:fig-4-2}).
 
 \end{document}

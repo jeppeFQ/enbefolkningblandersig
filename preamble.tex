@@ -4,7 +4,41 @@
 \usepackage{amsthm}
 \usepackage{svg}
 \usepackage[english]{babel}
+
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+
+\usepackage{floatrow}
+\floatsetup[figure]{capposition=top}
+
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+\usepackage{caption}
+\captionsetup[figure]{name=Figur, labelfont=bf, textfont=it, font=small}
+\captionsetup[table]{name=Tabel, labelfont=bf, textfont=it, font=small}
+
+\usepackage{fontspec}
+% Set Fira Sans as the main font
+\setmainfont[
+    BoldFont={Fira Sans SemiBold},
+    ItalicFont={Fira Sans Italic},
+    BoldItalicFont={Fira Sans SemiBold Italic}
+]{Fira Sans}
+
 \usepackage{fancyhdr}
+\pagestyle{fancy}
+% Customize header
+\fancyhead[L]{\footnotesize \nouppercase{\leftmark}} % Chapter title in footnotesize
+\fancyhead[R]{\footnotesize \thepage} % Page number in footnotesize
 
 % Change "Chapter" to "Kapitel" throughout document
 \addto\captionsenglish{\renewcommand{\chaptername}{Kapitel}}

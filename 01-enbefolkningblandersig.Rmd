@@ -3,6 +3,8 @@
 
 *[Christian Albrekt Larsen](https://vbn.aau.dk/en/persons/albrekt)*
 
+&nbsp;&nbsp;&nbsp;&nbsp;
+
 ```{r fig-smelte, echo=FALSE, out.width= "100%"}
 knitr::include_graphics("images/kap1.jpg")
 ```
@@ -37,7 +39,7 @@ En etnisk distinktion skal have betydning før, at den kan miste sin betydning. 
 
 Men der er også en lang række mere praktiske ting, der gør, at indvandrere og majoritetsbefolkning i udgangspunktet er opdelte. Det meste oplagte forhold er, at indvandrere typisk ankommer til større byer, hvor de besætter sig i de billigste boligkvarterer. New York og Chicago er de klassiske historiske amerikanske eksempler. Den samme dynamik udspiller sig i Europa. Indvandrere er således typisk koncentreret ved ankomsten, da de typisk bosætter sig steder, hvor de kan få job, hvor huslejerne er overkommelige og, hvor de kender nogle, der kan hjælpe dem i gang i det nye land. Meget af den amerikanske assimileringslitterature handler således om at beskrive, hvordan indvandrere fysisk placerer sig i forhold til majoritetsbefolkningen. Den europæisk forskning og ikke mindst politiske debat har overtaget den samme optagethed af indvandrernes bosætningsmønstre. Ansigt-til-ansigt-møder kan dog ske på mange andre mødepladser end i boligkvarteret; særligt i et moderne samfund, hvor mindre af livet er bundet til nabolaget end det var da klassiske sociologiske studier beskrev vigtigheden af nabolaget for personer og familiers sociale liv. 
 
-```{r fig-1-1, echo=FALSE, warning=FALSE, out.width= "100%", fig.cap="Idealtypiske mødepladser."}
+```{r fig-1-1, echo=FALSE, warning=FALSE, out.width= "100%", fig.cap="Idealtypiske mødepladser.", fig.topcaption=TRUE}
 
 data.frame(x = c(-1,1), 
            y = c(-1,1)) %>% 
@@ -98,7 +100,7 @@ Mens socialpsykologien har været optaget af dynamikker i mødet mellem menneske
 
 De sidste fire årtiers stigende indvandring har ændret disse størrelsesforhold i Danmark. I 2023 udgjorde indvandrere og efterkommere 15 procent af befolkningen ifølge definitioner fra Danmark Statistik. Under antagelse om lige fordeling på mødepladser, er danskernes sandsynlighed for næste gang at møde en indvandrer eller efterkommer således steget fra tre til 15 procent. Omvendt er minoritetens sandsynlighed for næste gang at møde en dansker reduceret fra 97 til 85 procent. Følger man ovenstående logik vil det betyde, at majoriteten ændres lidt hurtigere og minoriteten lidt langsommere end det var tilfældet tidligere.   
 
-Effekterne af disse størrelsesforhold på antallet af møder mellem minoritet og majoritet begrænses selvfølgelig af de strukturelle forhold, der typisk koncentrerer indvandrere i byområder, jf. ovenstående. I Figur \@ref(fig:fig-1-2) vises andelen af indbyggere, der ikke har to forældre med dansk herkomst. Med vores strammere kriterier for at være dansk-dansk (se næste kapitel for definitioner) illustrerer kortet med alt tydelighed, at der også i Danmark er en betydelig koncentration af minoriteter i byområderne. I kapitel 5 vil det nærmere blive beskrevet, hvordan danskere i nogle kommuner har ret begrænsede muligheder for at danne sociale relationer med indvandrere; specielt hvis man også medtænker et alderskriterium ift. hvem man forventeligt danner sociale relationer med.
+Effekterne af disse størrelsesforhold på antallet af møder mellem minoritet og majoritet begrænses selvfølgelig af de strukturelle forhold, der typisk koncentrerer indvandrere i byområder, jf. ovenstående. I Figur \@ref(fig:fig-1-22) vises andelen af indbyggere, der ikke har to forældre med dansk herkomst. Med vores strammere kriterier for at være dansk-dansk (se næste kapitel for definitioner) illustrerer kortet med alt tydelighed, at der også i Danmark er en betydelig koncentration af minoriteter i byområderne. I kapitel 5 vil det nærmere blive beskrevet, hvordan danskere i nogle kommuner har ret begrænsede muligheder for at danne sociale relationer med indvandrere; specielt hvis man også medtænker et alderskriterium ift. hvem man forventeligt danner sociale relationer med.
 
 ```{r include=FALSE}
 
@@ -115,23 +117,8 @@ dk_kom <- st_read("data/dk_kom.shp")%>%
 rm(koms, df)
 ```
 
-<!---
-```{r fig-1-2, echo=FALSE, warning=FALSE, out.width= "100%", fig.cap="Andelen af indbyggere, hvor begge forældre ikke har dansk herkomst. 2024. <br> Note: *Baseret på FOLK1B 2024K2*."}
 
-ggplot() +
-  #Main map 
-  geom_sf(data = dk_kom, aes(fill = non_native), 
-          color = "white", lwd = .2) + 
-  theme_void() +
-  scale_fill_gradient(low = "wheat", high = "steelblue", 
-                      limits = c(0, .265), labels = scales::label_percent()) +
-  labs(fill = "Personer med to\nikke-danskfødte\nforældre") +
-  theme(legend.position = c(.95, .8))
-
-```
----->
-
-```{r fig-1-22, echo=FALSE, warning=FALSE, out.width= "100%", fig.cap="Andelen af indbyggere, hvor begge forældre ikke har dansk herkomst. 2024. <br> Note: *Baseret på FOLK1B 2024K2*."}
+```{r fig-1-22, echo=FALSE, warning=FALSE, out.width= "100%", fig.cap="Andelen af indbyggere, hvor begge forældre ikke har dansk herkomst. 2024.", fig.topcaption=TRUE}
 
 pal <- colorNumeric("PiYG", domain = dk_kom$non_native)
 
@@ -148,6 +135,20 @@ leaflet(dk_kom) %>%
             labFormat = labelFormat(suffix = '%', between = '% - ',
                                                   transform = function(x) 100 * x)) %>% 
   setMapWidgetStyle(list(background= "white"))
+
+```
+
+```{r, results="asis", echo=FALSE}
+
+if (knitr::is_html_output()) {
+  cat('<p style="text-align:left; font-style:italic; color:gray; font-size: 0.85em;">\n')
+  cat('Note: Baseret på FOLK1B 2024K2.\n')
+  cat('</p>\n')
+} else if (knitr::is_latex_output()) {
+  cat('\\begin{footnotesize}\\textit{\\textcolor{gray}{\n')
+  cat('Note: Baseret på FOLK1B 2024K2.\n')
+  cat('}}\n\\end{footnotesize}\n')
+}
 
 ```
 

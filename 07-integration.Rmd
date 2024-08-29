@@ -1,10 +1,16 @@
+
+
 # Integration i et kontaktperspektiv {#kap7}
 
 *[Christian Albrekt Larsen](https://vbn.aau.dk/en/persons/albrekt)*
 
+&nbsp;&nbsp;&nbsp;&nbsp;
+
 ```{r fig-integration, echo=FALSE, out.width= "100%"}
 knitr::include_graphics("images/kap7.jpg")
 ```
+
+\newpage 
 
 ”En befolkning blander sig” er inspireret af den lange amerikanske sociologiske forskningstradition, der handler om, hvordan indvandrere klarede sig i USA, og hvordan det formåede USA som nation. Udgangspunktet for meget af den amerikanske forskning er, at integrationen/assimileringen i det store hele lykkes. Ikke blot for den enkelte indvandrer og hendes efterkommere, men også for USA som samfund. Opgaven for de tidlige amerikanske sociologer var således været at forklare, hvorfor det var gået så godt. Hvad var de magiske ingredienser i den amerikanske smeltedigel? Udgangspunktet for meget af den samtidige europæiske forskning om integration er anderledes. Vi lever et samfund, hvor grundfortællingen er, at integrationen i det store hele er mislykkes. Det gør i særdeleshed gældende i Danmark. En nærlæsning af de politiske partiprogrammer viser, at fra den yderste højrefløj til den yderste venstrefløj er man enige om, at integrationen er mislykkes [@nielsen2024]. Uenigheden starter først, når det kommer til løsningsforslagene. Det omgivende samfund er således typisk interesseret i en forklaring på, hvorfor integrationen er mislykkes, og hvad man kan gøre ved det. Det bliver tit til et spørgsmål om, hvad den enkelt indvandrer eller efterkommer gør galt, hvad majoritetsbefolkningen gør galt eller, hvad der er galt med samfundsindretningen. I bogen har vi forsøgt at løfte spørgsmålet om integration udover denne øvelse i fejlfinding og problemløsning. I tråd med den amerikanske tradition har forfatteren til denne bog mere været interesseret i de positive forklaringer på, hvordan integration egentlig foregår. Bogens bud er, at ansigt-til-ansigt møder mellem majoriteten og minoriteter er en vigtig forudsætning for integration. 
 
@@ -45,7 +51,7 @@ Bogen har vist, at tværetniske ansigt-til-ansigt møder er blevet hyppigere i f
 
 Det underliggende forskningsprojekt har fokuseret på arbejdspladserne og ikke nærmere studeret, hvad der sker i blandede familier[^74] og i blandede skoler. Der er dog et spirende forskningsfelt om venskabsrelationerne i skoleklasser. I det dominerede europæiske studie af klasserum bedes eleverne nominere deres bedste venner i klassen (op til maksimalt fem stk.).[^75] Sådanne klasserumsdata er indsamlet i Tyskland, Holland, Storbritannien, Sverige og Norge. Det giver mulighed for 1) at beregne venskaber, hvor begge partner nominerer hinanden, 2) at få nøjagtig information om vennens etnicitet, og 3) lave beregner på selve netværket i stedet for på personerne.
 
-[^74]: H..Y. Qvist, J.Y. Qvist og M. Dahlberg arbejder dog på at færdiggøre et studie om, hvorledes tværetnisk partnerskab påvirker politisk deltagelse.
+[^74]: H-P.Y. Qvist, J.Y. Qvist og M. Dahlberg arbejder dog på at færdiggøre et studie om, hvorledes tværetnisk partnerskab påvirker politisk deltagelse.
 
 [^75]: Children of immigrants longitudional survey in four European Countries” Home – Cils4eu
 
