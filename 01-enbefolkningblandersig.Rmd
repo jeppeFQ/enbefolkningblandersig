@@ -1,5 +1,9 @@
 
+
+
 # En befolkning blander sig {#kap1}
+
+\pagenumbering{arabic}
 
 *[Christian Albrekt Larsen](https://vbn.aau.dk/en/persons/albrekt)*
 

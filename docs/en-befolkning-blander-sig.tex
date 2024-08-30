@@ -138,13 +138,7 @@
 \fancyhead[L]{\footnotesize \nouppercase{\leftmark}} % Chapter title in footnotesize
 \fancyhead[R]{\footnotesize \thepage} % Page number in footnotesize
 
-\pagenumbering{roman}
-\pagestyle{empty}  % Suppress page numbering initially
-\AtBeginDocument{
-      \addtocounter{page}{6}  % Skip 6 pages
-      \pagestyle{plain}  % Start numbering from page 7
-      \pagenumbering{arabic}  % Set page numbering to Arabic numerals
-    }
+\pagenumbering{gobble}
 
 % Change "Chapter" to "Kapitel" throughout document
 \addto\captionsenglish{\renewcommand{\chaptername}{Kapitel}}
@@ -187,10 +181,12 @@
 
 \title{En befolkning blander sig}
 \author{Christian Albrekt Larsen (red.) \and Jeppe Fjeldgaard Larsen \and Hans-Peter Y. Qvist (red.) \and Lanciné Diop-Christensen}
-\date{2024-08-29 15:15:17}
+\date{2024-08-30 11:27:29}
 
 \begin{document}
 \maketitle
+
+\pagenumbering{roman}
 
 \chapter*{\texorpdfstring{Forord (\textbf{WIP DO NOT CITE ANY CONTENT})}{Forord (WIP DO NOT CITE ANY CONTENT)}}\label{forord-wip-do-not-cite-any-content}
 \addcontentsline{toc}{chapter}{Forord (\textbf{WIP DO NOT CITE ANY CONTENT})}
@@ -231,6 +227,8 @@ forlag.aau.dk
 \tableofcontents
 
 \chapter{En befolkning blander sig}\label{kap1}
+
+\pagenumbering{arabic}
 
 \emph{\href{https://vbn.aau.dk/en/persons/albrekt}{Christian Albrekt Larsen}}
 

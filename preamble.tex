@@ -40,13 +40,7 @@
 \fancyhead[L]{\footnotesize \nouppercase{\leftmark}} % Chapter title in footnotesize
 \fancyhead[R]{\footnotesize \thepage} % Page number in footnotesize
 
-\pagenumbering{roman}
-\pagestyle{empty}  % Suppress page numbering initially
-\AtBeginDocument{
-      \addtocounter{page}{6}  % Skip 6 pages
-      \pagestyle{plain}  % Start numbering from page 7
-      \pagenumbering{arabic}  % Set page numbering to Arabic numerals
-    }
+\pagenumbering{gobble}
 
 % Change "Chapter" to "Kapitel" throughout document
 \addto\captionsenglish{\renewcommand{\chaptername}{Kapitel}}
