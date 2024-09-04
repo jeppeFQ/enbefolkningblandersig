@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.8.29)  4 SEP 2024 10:21
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.8.29)  4 SEP 2024 14:54
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1266,48 +1266,55 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 
 ]
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 190.
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 24.88pt on input line 190.
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 193.
+File: images/kap1.jpg Graphic file (type bmp)
+<images/kap1.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--208
+
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 192.
+[1]
+
+[2
+
+]
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 24.88pt on input line 192.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
+(Font)              scaled to size 24.88pt on input line 192.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
+(Font)              scaled to size 10.0pt on input line 195.
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--210
 
  []
 
 
 
-[1
-
-]
+[3]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.55913pt on input line 219.
+(Font)              scaled to size 8.55913pt on input line 221.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.11366pt on input line 219.
+(Font)              scaled to size 6.11366pt on input line 221.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.22855pt on input line 219.
+(Font)              scaled to size 12.22855pt on input line 221.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.55998pt on input line 219.
+(Font)              scaled to size 8.55998pt on input line 221.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.11427pt on input line 219.
+(Font)              scaled to size 6.11427pt on input line 221.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 12.2261pt on input line 219.
+(Font)              scaled to size 12.2261pt on input line 221.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.55827pt on input line 219.
+(Font)              scaled to size 8.55827pt on input line 221.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.11305pt on input line 219.
+(Font)              scaled to size 6.11305pt on input line 221.
 
 
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 224.
-[2] (./en-befolkning-blander-sig.toc
+[4] (./en-befolkning-blander-sig.toc
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
 (Font)              scaled to size 10.0pt on input line 2.
 
 
-[3
+[5
 
 ])
 \tf@toc=\write4
@@ -1315,14 +1322,14 @@ LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
 
 
 
-[4]
+[6]
 Kapitel 1.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 228.
+(Font)              scaled to size 20.74pt on input line 230.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 20.74pt on input line 228.
-File: images/kap1.jpg Graphic file (type bmp)
-<images/kap1.jpg>
+(Font)              scaled to size 20.74pt on input line 230.
+File: images/kap0.jpg Graphic file (type bmp)
+<images/kap0.jpg>
 
 
 [1
@@ -1331,23 +1338,23 @@ File: images/kap1.jpg Graphic file (type bmp)
 
 [2]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 250.
+(Font)              scaled to size 14.4pt on input line 252.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 250.
+(Font)              scaled to size 14.4pt on input line 252.
 
 
 [3]
-Underfull \hbox (badness 2990) in paragraph at lines 254--255
+Underfull \hbox (badness 2990) in paragraph at lines 256--257
 []\TU/FiraSans(0)/m/n/10 Den amerikanske forskning bruger primært termen \TU/FiraSans(0)/m/it/10 assimilering \TU/FiraSans(0)/m/n/10 til at
  []
 
 
-Underfull \hbox (badness 1552) in paragraph at lines 260--261
+Underfull \hbox (badness 1552) in paragraph at lines 262--263
 \TU/FiraSans(0)/m/n/10 ressourcer. Det gælder i særdeleshed for indvandrerne, da de typisk
  []
 
 
-Underfull \hbox (badness 1742) in paragraph at lines 260--261
+Underfull \hbox (badness 1742) in paragraph at lines 262--263
 \TU/FiraSans(0)/m/n/10 majoritetsbefolkningen dominerer. Indvandrere har også et betydeligt
  []
 
@@ -1357,11 +1364,11 @@ Underfull \hbox (badness 1742) in paragraph at lines 260--261
 File: en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf>
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 269.
+(Font)              scaled to size 9.0pt on input line 271.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 269.
+(Font)              scaled to size 9.0pt on input line 271.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 269.
+(Font)              scaled to size 9.0pt on input line 271.
 
 
 [5]
@@ -1372,39 +1379,39 @@ Underfull \vbox (badness 6775) has occurred while \output is active []
 [6]
 
 [7]
-Underfull \hbox (badness 1803) in paragraph at lines 282--283
+Underfull \hbox (badness 1803) in paragraph at lines 284--285
 \TU/FiraSans(0)/m/n/10 giens udgangspunkt er, at negative opfattelser af såkaldte ud-grupper
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 282--283
+Underfull \hbox (badness 1635) in paragraph at lines 284--285
 \TU/FiraSans(0)/m/n/10 skoleklasser ofte negative billeder af deres søsterklasser, og for store
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 282--283
+Underfull \hbox (badness 1087) in paragraph at lines 284--285
 \TU/FiraSans(0)/m/n/10 internt sammenhold og identitet ved at etablere et negativt billede af
  []
 
 
-Underfull \hbox (badness 1237) in paragraph at lines 288--289
+Underfull \hbox (badness 1237) in paragraph at lines 290--291
 \TU/FiraSans(0)/m/n/10 Verdenskrig, havde markant færre fordomme om hinanden ([]Stouffer et
  []
 
 
 
 [8]
-Underfull \hbox (badness 5288) in paragraph at lines 292--292
+Underfull \hbox (badness 5288) in paragraph at lines 294--294
 []\TU/FiraSans(0)/b/n/14.4 Betydningen af størrelsesforholdene mellem
  []
 
 
-Underfull \hbox (badness 1360) in paragraph at lines 294--295
+Underfull \hbox (badness 1360) in paragraph at lines 296--297
 \TU/FiraSans(0)/m/n/10 mennesker, så har makrosociologske teoretikere som Blau ([]Blau et al.,
  []
 
 
-Underfull \hbox (badness 1817) in paragraph at lines 294--295
+Underfull \hbox (badness 1817) in paragraph at lines 296--297
 \TU/FiraSans(0)/m/n/10 således markant mere for majoriteten end majoriteten eksponeres for
  []
 
@@ -1414,14 +1421,14 @@ Underfull \hbox (badness 1817) in paragraph at lines 294--295
 File: en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf>
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 306.
+(Font)              scaled to size 8.0pt on input line 308.
 
-Underfull \hbox (badness 1721) in paragraph at lines 309--310
+Underfull \hbox (badness 1721) in paragraph at lines 311--312
 []\TU/FiraSans(0)/m/n/10 Hvorvidt indvandreres større mulighed for at møde andre indvandrere
  []
 
 
-Underfull \hbox (badness 2809) in paragraph at lines 309--310
+Underfull \hbox (badness 2809) in paragraph at lines 311--312
 \TU/FiraSans(0)/m/n/10 amerikanske erfaringer er dog problematiseret af nyere teoriretninger.
  []
 
@@ -1430,19 +1437,19 @@ Underfull \hbox (badness 2809) in paragraph at lines 309--310
 [10]
 
 [11]
-Underfull \hbox (badness 1838) in paragraph at lines 313--314
+Underfull \hbox (badness 1838) in paragraph at lines 315--316
 \TU/FiraSans(0)/m/n/10 Bogen bygger på en antagelse om, at de grundlæggende mekanismer
  []
 
 
-Underfull \hbox (badness 1048) in paragraph at lines 313--314
+Underfull \hbox (badness 1048) in paragraph at lines 315--316
 \TU/FiraSans(0)/m/n/10 end det er tilfældet i USA. Disse flygtninge og familiesammenførte har
  []
 
 
 
 [12]
-Underfull \hbox (badness 1147) in paragraph at lines 327--328
+Underfull \hbox (badness 1147) in paragraph at lines 329--330
 [][]\TU/FiraSans(0)/m/n/10 Kapitel 4[] beskriver den etniske sammensætning af danske grundskoler.
  []
 
@@ -1460,16 +1467,16 @@ File: images/kap2.jpg Graphic file (type bmp)
 
 ]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/it' will be
-(Font)              scaled to size 10.0pt on input line 353.
+(Font)              scaled to size 10.0pt on input line 355.
 
 
 [16]
-Underfull \hbox (badness 1609) in paragraph at lines 357--358
+Underfull \hbox (badness 1609) in paragraph at lines 359--360
 []\TU/FiraSans(0)/m/n/10 Det er afgørende at forstå, at den sociologiske forskning, som under-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
 \TU/FiraSans(0)/m/n/10 søger konsekvenserne af etnisk blandende parforhold—eller mangel
  []
 
@@ -1484,17 +1491,17 @@ File: images/figur_intergruppepartnerskaber_2020.png Graphic file (type bmp)
 [18]
 
 [19]
-Underfull \hbox (badness 1675) in paragraph at lines 383--384
+Underfull \hbox (badness 1675) in paragraph at lines 385--386
 \TU/FiraSans(0)/m/n/10 indvandrergruppen og majoritetsbefolkningen i Danmark, desto mindre
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 385--386
+Underfull \hbox (badness 1931) in paragraph at lines 387--388
 []\TU/FiraSans(0)/m/n/10 Når der statistisk justeres for en lang række socioøkonomiske og de-
  []
 
 
-Underfull \hbox (badness 1831) in paragraph at lines 387--388
+Underfull \hbox (badness 1831) in paragraph at lines 389--390
 []\TU/FiraSans(0)/m/n/10 Udover betydningen af religion kaster studiet også lys over den rolle
  []
 
@@ -1517,11 +1524,11 @@ File: images/kap3.jpg Graphic file (type bmp)
 
 [23]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 407.
+(Font)              scaled to size 7.0pt on input line 409.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 407.
+(Font)              scaled to size 6.0pt on input line 409.
 
-Underfull \hbox (badness 1009) in paragraph at lines 413--414
+Underfull \hbox (badness 1009) in paragraph at lines 415--416
 \TU/FiraSans(0)/m/n/10 erskab samt individets eget fødested til at afgrænse ”dansk herkomst”,
  []
 
@@ -1632,7 +1639,7 @@ Package fontspec Info:
 (fontspec)             Sans/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
 
 LaTeX Font Info:    Font shape `TU/FiraSans(2)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 446.
+(Font)              scaled to size 10.0pt on input line 448.
 
 Package fontspec Info: 
 (fontspec)             Fira Sans scale = 0.9999971046048366.
@@ -1714,9 +1721,9 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 LaTeX Font Info:    Font shape `TU/FiraSans(2)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 471.
+(Font)              scaled to size 9.0pt on input line 473.
 LaTeX Font Info:    Font shape `TU/FiraSans(2)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 471.
+(Font)              scaled to size 9.0pt on input line 473.
 
 Package fontspec Info: 
 (fontspec)             Fira Sans scale = 0.9999967828901227.
@@ -2430,7 +2437,7 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 
-Overfull \hbox (0.85501pt too wide) in paragraph at lines 627--627
+Overfull \hbox (0.85501pt too wide) in paragraph at lines 629--629
  []|[]\TU/FiraSans(2)/m/n/9 1.088.833[]|
  []
 
@@ -2483,7 +2490,7 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 
-Overfull \hbox (3.44241pt too wide) in alignment at lines 673--681
+Overfull \hbox (3.44241pt too wide) in alignment at lines 675--683
  [] [] [] [] 
  []
 
@@ -2520,7 +2527,7 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 
-Overfull \hbox (3.44241pt too wide) in alignment at lines 681--687
+Overfull \hbox (3.44241pt too wide) in alignment at lines 683--689
  [] [] [] [] 
  []
 
@@ -2549,7 +2556,7 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 
-Overfull \hbox (2.14178pt too wide) in paragraph at lines 691--691
+Overfull \hbox (2.14178pt too wide) in paragraph at lines 693--693
  []|[]\TU/FiraSans(2)/m/n/9 29,967[]|
  []
 
@@ -2634,7 +2641,7 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 
-Overfull \hbox (1.23279pt too wide) in paragraph at lines 709--709
+Overfull \hbox (1.23279pt too wide) in paragraph at lines 711--711
  []|[]\TU/FiraSans(2)/m/n/9 27,057[]|
  []
 
@@ -2815,7 +2822,7 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 
-Overfull \hbox (3.44241pt too wide) in alignment at lines 687--757
+Overfull \hbox (3.44241pt too wide) in alignment at lines 689--759
  [] [] [] [] 
  []
 
@@ -2834,24 +2841,24 @@ File: images/kap4.jpg Graphic file (type bmp)
 [31
 
 ]
-Underfull \hbox (badness 1859) in paragraph at lines 789--790
+Underfull \hbox (badness 1859) in paragraph at lines 791--792
 []\TU/FiraSans(2)/m/n/10 Kapitlet er inddelt i 7 afsnit. I første afsnit opridses kontaktteorien,
  []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 789--790
+Underfull \hbox (badness 2103) in paragraph at lines 791--792
 \TU/FiraSans(2)/m/n/10 der blev introduceret i []kapitel 1[], i relation til teoriens relevans i en
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 789--790
+Underfull \hbox (badness 1755) in paragraph at lines 791--792
 \TU/FiraSans(2)/m/n/10 (grund)skolekontekst. Dernæst præsenteres \TU/FiraSans(0)/m/it/10 det danske skolelandskab\TU/FiraSans(2)/m/n/10 ,
  []
 
 
 
 [32]
-Underfull \hbox (badness 2626) in paragraph at lines 801--802
+Underfull \hbox (badness 2626) in paragraph at lines 803--804
 []\TU/FiraSans(2)/m/n/10 Et særligt kendetegn ved den danske grundskole, sammenlignet med
  []
 
@@ -2859,10 +2866,10 @@ Underfull \hbox (badness 2626) in paragraph at lines 801--802
 
 [33]
 
-LaTeX Warning: Citation `ref-bjerrenielsen2020' on page 34 undefined on input line 809.
+LaTeX Warning: Citation `ref-bjerrenielsen2020' on page 34 undefined on input line 811.
 
 
-LaTeX Warning: Citation `ref-nielsen2019' on page 34 undefined on input line 809.
+LaTeX Warning: Citation `ref-nielsen2019' on page 34 undefined on input line 811.
 
 
 
@@ -2870,12 +2877,12 @@ LaTeX Warning: Citation `ref-nielsen2019' on page 34 undefined on input line 809
 File: images/figur_3_1c_distance_antal.pdf Graphic file (type pdf)
 <use images/figur_3_1c_distance_antal.pdf>
 
-Underfull \hbox (badness 4266) in paragraph at lines 826--827
+Underfull \hbox (badness 4266) in paragraph at lines 828--829
 \TU/FiraSans(2)/m/n/10 Når vi måler graden af segregering, er det mest anvendte mål for
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 826--827
+Underfull \hbox (badness 1902) in paragraph at lines 828--829
 \TU/FiraSans(2)/m/n/10 (skole)segregering \TU/FiraSans(0)/m/it/10 Dissimilarity \TU/FiraSans(2)/m/n/10 ($[]$) indekset, men også \TU/FiraSans(0)/m/it/10 Separation \TU/FiraSans(2)/m/n/10 ($[]$)
  []
 
@@ -2907,7 +2914,7 @@ File: images/Figur4.png Graphic file (type bmp)
 [39]
 
 [40]
-Underfull \hbox (badness 7238) in paragraph at lines 860--860
+Underfull \hbox (badness 7238) in paragraph at lines 862--862
 []\TU/FiraSans(0)/b/n/14.4 Skolesegregering som produkt af boligseg-
  []
 
@@ -2930,29 +2937,29 @@ File: images/kap5.jpg Graphic file (type bmp)
 
 
 [45]
-Underfull \hbox (badness 2073) in paragraph at lines 897--898
+Underfull \hbox (badness 2073) in paragraph at lines 899--900
 \TU/FiraSans(2)/m/n/10 til indvandrere/efterkommere. Afsnit to beskriver den gennemsnitlige
  []
 
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 901.
+(Font)              scaled to size 8.0pt on input line 903.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/it' will be
-(Font)              scaled to size 8.0pt on input line 901.
+(Font)              scaled to size 8.0pt on input line 903.
 
 
 [46]
 
-LaTeX Warning: Hyper reference `bilagA' on page 47 undefined on input line 905.
+LaTeX Warning: Hyper reference `bilagA' on page 47 undefined on input line 907.
 
 File: en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf>
 
-LaTeX Warning: Hyper reference `bilagA' on page 47 undefined on input line 915.
+LaTeX Warning: Hyper reference `bilagA' on page 47 undefined on input line 917.
 
 
 
 [47]
-Underfull \hbox (badness 1337) in paragraph at lines 923--924
+Underfull \hbox (badness 1337) in paragraph at lines 925--926
 \TU/FiraSans(2)/m/n/10 eksponeret til én eneste indvandrer eller efterkommer på arbejdsplad-
  []
 
@@ -2962,17 +2969,17 @@ Underfull \hbox (badness 1337) in paragraph at lines 923--924
 File: images/Figur_4_1.png Graphic file (type bmp)
 <images/Figur_4_1.png>
 
-Underfull \hbox (badness 1009) in paragraph at lines 940--941
+Underfull \hbox (badness 1009) in paragraph at lines 942--943
 []\TU/FiraSans(2)/m/n/10 Mere interessant er det måske, hvor meget majoriteten på deres arbe-
  []
 
 
-Underfull \hbox (badness 2726) in paragraph at lines 940--941
+Underfull \hbox (badness 2726) in paragraph at lines 942--943
 \TU/FiraSans(2)/m/n/10 jdsplads der blevet eksponeret til indvandrere og efterkommere med
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 940--941
+Underfull \hbox (badness 1242) in paragraph at lines 942--943
 \TU/FiraSans(2)/m/n/10 MENAPT-indvandrere/efterkommere på arbejdspladsen i 1996 var $[][] [][]$.
  []
 
@@ -2992,7 +2999,7 @@ Underfull \vbox (badness 4096) has occurred while \output is active []
 File: images/Figur_4_3.png Graphic file (type bmp)
 <images/Figur_4_3.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 968--968
+Underfull \hbox (badness 10000) in paragraph at lines 970--970
 []\TU/FiraSans(0)/b/n/14.4 Minoriteters eksponering til majoritetsbe-
  []
 
@@ -3002,26 +3009,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 968--968
 File: images/Figur_4_4.png Graphic file (type bmp)
 <images/Figur_4_4.png>
 
-Underfull \hbox (badness 1546) in paragraph at lines 981--982
+Underfull \hbox (badness 1546) in paragraph at lines 983--984
 \TU/FiraSans(2)/m/n/10 ind på arbejdspladserne, så falder den gennemsnitlige eksponering til
  []
 
 
 
 [53]
-Underfull \hbox (badness 10000) in paragraph at lines 983--983
+Underfull \hbox (badness 10000) in paragraph at lines 985--985
 []\TU/FiraSans(0)/b/n/14.4 Minoriteters ”isolation” fra majoritetsbe-
  []
 
 File: images/Figur_4_5.png Graphic file (type bmp)
 <images/Figur_4_5.png>
 
-Underfull \hbox (badness 1448) in paragraph at lines 998--998
+Underfull \hbox (badness 1448) in paragraph at lines 1000--1000
 [][][]\TU/FiraSans(0)/m/n/8 Andelen af beskæftigede MENAPT-indvandrere/efterkommere, der ikke har en kollega
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 998--998
+Underfull \hbox (badness 1107) in paragraph at lines 1000--1000
 \TU/FiraSans(0)/m/n/8 procent. Mønstret er således, at mens dele af majoriteten ikke eksponeres til MENAPT-
  []
 
@@ -3034,7 +3041,7 @@ Underfull \vbox (badness 2057) has occurred while \output is active []
 
 [55]
 
-LaTeX Warning: Hyper reference `indledning' on page 56 undefined on input line 1004.
+LaTeX Warning: Hyper reference `indledning' on page 56 undefined on input line 1006.
 
 
 
@@ -3047,17 +3054,17 @@ File: images/kap71.jpg Graphic file (type bmp)
 [57
 
 ]
-Underfull \hbox (badness 2762) in paragraph at lines 1018--1019
+Underfull \hbox (badness 2762) in paragraph at lines 1020--1021
 \TU/FiraSans(2)/m/n/10 mellem majoritetsbefolkningens alder og geografiske placering og det
  []
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 1024--1025
+Underfull \hbox (badness 1424) in paragraph at lines 1026--1027
 \TU/FiraSans(2)/m/n/10 formuleringer forsøger man at afgrænse sig til mere intime venskaber,
  []
 
 
-Underfull \hbox (badness 3291) in paragraph at lines 1026--1026
+Underfull \hbox (badness 3291) in paragraph at lines 1028--1028
 []\TU/FiraSans(0)/b/n/14.4 Majoritetens venskaber med indvandrere og
  []
 
@@ -3461,22 +3468,22 @@ File: en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf Graphic file (t
 File: images/Figur_6_2.jpg Graphic file (type bmp)
 <images/Figur_6_2.jpg>
 
-Underfull \hbox (badness 1194) in paragraph at lines 1145--1146
+Underfull \hbox (badness 1194) in paragraph at lines 1147--1148
 \TU/FiraSans(2)/m/n/10 i deres venskabspulje er i gennemsnit kun fire procent. Endvidere er
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 1145--1146
+Underfull \hbox (badness 1527) in paragraph at lines 1147--1148
 \TU/FiraSans(2)/m/n/10 dansk-dansk-herkomst har meget forskellige mulighedsstrukturer for at
  []
 
 
-Underfull \hbox (badness 2065) in paragraph at lines 1147--1148
+Underfull \hbox (badness 2065) in paragraph at lines 1149--1150
 \TU/FiraSans(2)/m/n/10 størrelsen af disse venskabspuljer og omfanget af majoritetsbefolknin-
  []
 
 
-Underfull \hbox (badness 4084) in paragraph at lines 1147--1148
+Underfull \hbox (badness 4084) in paragraph at lines 1149--1150
 \TU/FiraSans(2)/m/n/10 mulighedsstruktur har betydning for den voksne majoritetsbefolkning.
  []
 
@@ -3488,12 +3495,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [62]
 
 [63]
-Underfull \hbox (badness 5446) in paragraph at lines 1157--1158
+Underfull \hbox (badness 5446) in paragraph at lines 1159--1160
 []\TU/FiraSans(2)/m/n/10 Interessen samler sig ofte om venskabsrelationerne for ikke-vestlige
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 1157--1158
+Underfull \hbox (badness 1215) in paragraph at lines 1159--1160
 \TU/FiraSans(2)/m/n/10 Grupper er vidt forskellige på for eksempel opholdstid, hvilket gør, at
  []
 
@@ -3531,12 +3538,12 @@ File: images/kap7.jpg Graphic file (type bmp)
 [72]
 
 [73]
-Overfull \hbox (14.71558pt too wide) in paragraph at lines 1218--1219
+Overfull \hbox (14.71558pt too wide) in paragraph at lines 1220--1221
 []\TU/FiraSans(2)/m/n/10 Diop-Christensen et al. ([]2024[]) viser, at (ikke-vestlige) indvandrere/efterkommere,
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 1218--1219
+Underfull \hbox (badness 1728) in paragraph at lines 1220--1221
 \TU/FiraSans(2)/m/n/10 For gruppen, der føler sig diskrimineret, finder studiet den omvendte
  []
 
@@ -3577,7 +3584,7 @@ Bilag A.
 File: en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf>
 
-Underfull \hbox (badness 1442) in paragraph at lines 1503--1504
+Underfull \hbox (badness 1442) in paragraph at lines 1505--1506
 \TU/FiraSans(2)/m/n/10 landskab (antallet og størrelsen af skoler) varierer markant mellem to
  []
 
@@ -3585,11 +3592,11 @@ Underfull \hbox (badness 1442) in paragraph at lines 1503--1504
 
 [86]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 1507.
+(Font)              scaled to size 12.0pt on input line 1509.
 
 
 [87]
-Underfull \hbox (badness 2359) in paragraph at lines 1517--1518
+Underfull \hbox (badness 2359) in paragraph at lines 1519--1520
 \TU/FiraSans(2)/m/n/10 forudsætninger givet ved populationssammensætningen og antallet og
  []
 
@@ -3628,12 +3635,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 26108 strings out of 476173
- 499119 string characters out of 5784203
+ 26131 strings out of 476173
+ 499577 string characters out of 5784203
  1946609 words of memory out of 5000000
- 48192 multiletter control sequences out of 15000+600000
+ 48214 multiletter control sequences out of 15000+600000
  564834 words of font info for 116 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  94i,13n,131p,2681b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on en-befolkning-blander-sig.pdf (99 pages).
+Output written on en-befolkning-blander-sig.pdf (101 pages).

@@ -10,7 +10,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;
 
 ```{r fig-smelte, echo=FALSE, out.width= "100%"}
-knitr::include_graphics("images/kap1.jpg")
+knitr::include_graphics("images/kap0.jpg")
 ```
 
 \newpage 
