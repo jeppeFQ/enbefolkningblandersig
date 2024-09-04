@@ -23,15 +23,15 @@
 \contentsline {section}{\numberline {4.3}Hvordan måler vi segrering?}{36}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Segregering på national skala}{37}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Segregering på kommunal skala}{39}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Skolesegregering som produkt af boligsegregering}{40}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Skolesegregering i Danmark}{42}{section.4.7}%
+\contentsline {section}{\numberline {4.6}Skolesegregering som produkt af boligsegregering}{41}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Skolesegregering i Danmark}{43}{section.4.7}%
 \contentsline {chapter}{\numberline {5}Arbejdspladser som mødested}{45}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Den etniske sammensætning af arbejdspladser}{46}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Gennemsnitlig eksponering til indvandrere og efterkommere på arbejdspladser}{49}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Majoritetens ''isolation'' fra minoriteterne}{50}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Minoriteters eksponering til majoritetsbefolkningen}{52}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Minoriteters ''isolation'' fra majoritetsbefolkningen}{53}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Arbejdspladsen som mødested}{54}{section.5.6}%
+\contentsline {section}{\numberline {5.3}Majoritetens ''isolation'' fra minoriteterne}{52}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Minoriteters eksponering til majoritetsbefolkningen}{53}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Minoriteters ''isolation'' fra majoritetsbefolkningen}{54}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Arbejdspladsen som mødested}{56}{section.5.6}%
 \contentsline {chapter}{\numberline {6}Tværetniske venskaber --- det første skridt}{57}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Hvad er venskaber og hvordan måles det}{58}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Majoritetens venskaber med indvandrere og efterkommere}{58}{section.6.2}%
