@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.8.29)  4 SEP 2024 14:54
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.8.29)  13 SEP 2024 08:49
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3624,6 +3624,9 @@ File: en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf Graphic file (t
 
 
 [93]
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
+(Font)              scaled to size 7.0pt on input line 1560.
+
 
 [94] (./en-befolkning-blander-sig.aux)
  ***********
@@ -3635,11 +3638,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 26131 strings out of 476173
- 499577 string characters out of 5784203
+ 26134 strings out of 476173
+ 499691 string characters out of 5784203
  1946609 words of memory out of 5000000
- 48214 multiletter control sequences out of 15000+600000
- 564834 words of font info for 116 fonts, out of 8000000 for 9000
+ 48216 multiletter control sequences out of 15000+600000
+ 564842 words of font info for 117 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  94i,13n,131p,2681b,625s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
