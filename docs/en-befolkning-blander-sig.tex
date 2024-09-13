@@ -104,15 +104,10 @@
 \usepackage{amsthm}
 \usepackage{svg}
 \usepackage[english]{babel}
-
 \usepackage{longtable}
 \usepackage{array}
 \usepackage{multirow}
 \usepackage{wrapfig}
-
-\usepackage{floatrow}
-\floatsetup[figure]{capposition=top}
-
 \usepackage{colortbl}
 \usepackage{pdflscape}
 \usepackage{tabu}
@@ -122,18 +117,36 @@
 \usepackage{makecell}
 \usepackage{xcolor}
 
+% Set figure title above figure (default is below)
+\usepackage{floatrow}
+\floatsetup[figure]{capposition=top}
+
+% Set title headings (i.e., English to Danish)
 \usepackage{caption}
 \captionsetup[figure]{name=Figur, labelfont=bf, textfont=it, font=small}
 \captionsetup[table]{name=Tabel, labelfont=bf, textfont=it, font=small}
+\addto\captionsenglish{\renewcommand{\chaptername}{Kapitel}}
+\addto\captionsenglish{\renewcommand{\contentsname}{Indholdsfortegnelse}}
+\addto\captionsenglish{\renewcommand{\appendixname}{Bilag}}
 
-\usepackage{fontspec}
+% Remove gutter
+\usepackage[inner=0.5in,outer=0.5in]{geometry}
+
+% Add title page image
+\usepackage{titling}
+\pretitle{\begin{center}
+\includegraphics[width=5in,height=5in]{images/kap1.jpg}\LARGE\\}
+\posttitle{\end{center}}
+
 % Set Fira Sans as the main font
+\usepackage{fontspec}
 \setmainfont[
     BoldFont={Fira Sans SemiBold},
     ItalicFont={Fira Sans Italic},
     BoldItalicFont={Fira Sans SemiBold Italic}
 ]{Fira Sans}
 
+% Set overall page format to fancy
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 % Customize header
@@ -142,12 +155,7 @@
 
 \pagenumbering{gobble}
 
-% Change "Chapter" to "Kapitel" throughout document
-\addto\captionsenglish{\renewcommand{\chaptername}{Kapitel}}
-% Change "Content" to "Indholdsfortegnelse"
-\addto\captionsenglish{\renewcommand{\contentsname}{Indholdsfortegnelse}}
-% Change "Appendix" to "Bilag"
-\addto\captionsenglish{\renewcommand{\appendixname}{Bilag}}
+
 
 % Page layout
 \makeatletter
@@ -180,14 +188,12 @@
 
 \title{En befolkning blander sig}
 \author{Christian Albrekt Larsen (red.) \and Jeppe Fjeldgaard Larsen \and Hans-Peter Y. Qvist (red.) \and Lanciné Diop-Christensen}
-\date{2024-09-13 09:45:59}
+\date{2024-09-13 10:16:05}
 
 \begin{document}
 \maketitle
 
 \pagenumbering{roman}
-
-\includegraphics[width=1\linewidth]{images/kap1}
 
 \chapter*{\texorpdfstring{Forord (\textbf{WIP DO NOT CITE ANY CONTENT})}{Forord (WIP DO NOT CITE ANY CONTENT)}}\label{forord-wip-do-not-cite-any-content}
 \addcontentsline{toc}{chapter}{Forord (\textbf{WIP DO NOT CITE ANY CONTENT})}

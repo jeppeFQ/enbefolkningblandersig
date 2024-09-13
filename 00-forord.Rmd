@@ -1,9 +1,11 @@
 
 \pagenumbering{roman}
 
+<!---
 ```{r fig-forord, echo=FALSE, out.width= "100%"}
 knitr::include_graphics("images/kap1.jpg")
 ```
+----->
 
 # Forord (**WIP DO NOT CITE ANY CONTENT**) {-}
 
