@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.13)  13 SEP 2024 10:16
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.13)  17 SEP 2024 08:32
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -985,34 +985,34 @@ LaTeX Warning: Label `tab:tab-3-2' multiply defined.
 )
 \openout1 = `en-befolkning-blander-sig.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 193.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 195.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 193.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 195.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 193.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 195.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 193.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 195.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.222735174059428.
@@ -1040,7 +1040,7 @@ Package fontspec Info:
 (fontspec)             <->s*[1.222735174059428]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 12.22733pt on input line 193.
+(Font)              scaled to size 12.22733pt on input line 195.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.222735174059428.
@@ -1076,15 +1076,15 @@ Package fontspec Info:
 (fontspec)             <->s*[1.222735174059428]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.22733pt on input line 193.
+(Font)              scaled to size 12.22733pt on input line 195.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 193.
+(Font)              `operators' in the math version `normal' on input line 195.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 193.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 195.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 193.
+(Font)              `operators' in the math version `bold' on input line 195.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 193.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 195.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.222735174059428.
@@ -1150,13 +1150,13 @@ Package fontspec Info:
 (fontspec)             <->s*[1.222857447576834]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 193.
+(Font)              `symbols' in the math version `normal' on input line 195.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 193.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 195.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 193.
+(Font)              `symbols' in the math version `bold' on input line 195.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 193.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 195.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.222735174059428.
@@ -1216,19 +1216,19 @@ Package fontspec Info:
 (fontspec)             <->s*[1.222612900542022]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 193.
+(Font)              `largesymbols' in the math version `normal' on input line 195.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 193.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 195.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 193.
+(Font)              `largesymbols' in the math version `bold' on input line 195.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 193.
-LaTeX Info: Redefining \microtypecontext on input line 193.
-Package microtype Info: Applying patch `item' on input line 193.
-Package microtype Info: Applying patch `toc' on input line 193.
-Package microtype Info: Applying patch `eqnum' on input line 193.
-Package microtype Info: Applying patch `footnote' on input line 193.
-Package microtype Info: Applying patch `verbatim' on input line 193.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 195.
+LaTeX Info: Redefining \microtypecontext on input line 195.
+Package microtype Info: Applying patch `item' on input line 195.
+Package microtype Info: Applying patch `toc' on input line 195.
+Package microtype Info: Applying patch `eqnum' on input line 195.
+Package microtype Info: Applying patch `footnote' on input line 195.
+Package microtype Info: Applying patch `verbatim' on input line 195.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: No adjustment of tracking.
@@ -1282,42 +1282,42 @@ Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 193.
+Package hyperref Info: Link coloring OFF on input line 195.
 File: images/kap1.jpg Graphic file (type bmp)
 <images/kap1.jpg>
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 195.
+(Font)              scaled to size 17.28pt on input line 197.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 195.
+(Font)              scaled to size 12.0pt on input line 197.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 14.67279pt on input line 195.
+(Font)              scaled to size 14.67279pt on input line 197.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 9.78186pt on input line 195.
+(Font)              scaled to size 9.78186pt on input line 197.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.3364pt on input line 195.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 195.
+(Font)              scaled to size 7.3364pt on input line 197.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 197.
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.67426pt on input line 195.
+(Font)              scaled to size 14.67426pt on input line 197.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.78284pt on input line 195.
+(Font)              scaled to size 9.78284pt on input line 197.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.33713pt on input line 195.
+(Font)              scaled to size 7.33713pt on input line 197.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 14.67133pt on input line 195.
+(Font)              scaled to size 14.67133pt on input line 197.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.78088pt on input line 195.
+(Font)              scaled to size 9.78088pt on input line 197.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.33566pt on input line 195.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 195.
+(Font)              scaled to size 7.33566pt on input line 197.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 197.
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 195.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 197.
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1329,13 +1329,13 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 198.
+(Font)              scaled to size 24.88pt on input line 200.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 24.88pt on input line 198.
+(Font)              scaled to size 24.88pt on input line 200.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 201.
+(Font)              scaled to size 10.0pt on input line 203.
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--216
+Underfull \hbox (badness 10000) in paragraph at lines 215--218
 
  []
 
@@ -1345,25 +1345,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--216
 
 ]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.55913pt on input line 227.
+(Font)              scaled to size 8.55913pt on input line 229.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.11366pt on input line 227.
+(Font)              scaled to size 6.11366pt on input line 229.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.22855pt on input line 227.
+(Font)              scaled to size 12.22855pt on input line 229.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.55998pt on input line 227.
+(Font)              scaled to size 8.55998pt on input line 229.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.11427pt on input line 227.
+(Font)              scaled to size 6.11427pt on input line 229.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 12.2261pt on input line 227.
+(Font)              scaled to size 12.2261pt on input line 229.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.55827pt on input line 227.
+(Font)              scaled to size 8.55827pt on input line 229.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.11305pt on input line 227.
+(Font)              scaled to size 6.11305pt on input line 229.
 
 
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 232.
+(Font)              scaled to size 8.0pt on input line 234.
 [2] (./en-befolkning-blander-sig.toc
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
 (Font)              scaled to size 10.0pt on input line 2.
@@ -1380,9 +1380,9 @@ LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
 [4]
 Kapitel 1.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 236.
+(Font)              scaled to size 20.74pt on input line 238.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 20.74pt on input line 236.
+(Font)              scaled to size 20.74pt on input line 238.
 File: images/kap0.jpg Graphic file (type bmp)
 <images/kap0.jpg>
 
@@ -1398,20 +1398,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [3]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 258.
+(Font)              scaled to size 14.4pt on input line 260.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 258.
+(Font)              scaled to size 14.4pt on input line 260.
 
 
 [4]
 File: en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf>
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 277.
+(Font)              scaled to size 9.0pt on input line 279.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 277.
+(Font)              scaled to size 9.0pt on input line 279.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 277.
+(Font)              scaled to size 9.0pt on input line 279.
 
 
 [5]
@@ -1424,7 +1424,7 @@ LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
 File: en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf>
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 314.
+(Font)              scaled to size 8.0pt on input line 316.
 
 
 [9]
@@ -1448,7 +1448,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [14]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/it' will be
-(Font)              scaled to size 10.0pt on input line 361.
+(Font)              scaled to size 10.0pt on input line 363.
 
 
 [15]
@@ -1457,7 +1457,7 @@ File: images/figur_intergruppepartnerskaber_alle.png Graphic file (type bmp)
 File: images/figur_intergruppepartnerskaber_2020.png Graphic file (type bmp)
 <images/figur_intergruppepartnerskaber_2020.png>
 
-LaTeX Warning: Float too large for page by 179.20602pt on input line 381.
+LaTeX Warning: Float too large for page by 179.20602pt on input line 383.
 
 
 
@@ -1484,9 +1484,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [22]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 415.
+(Font)              scaled to size 7.0pt on input line 417.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 415.
+(Font)              scaled to size 6.0pt on input line 417.
 
 
 [23]
@@ -1594,7 +1594,7 @@ Package fontspec Info:
 (fontspec)             Sans/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
 
 LaTeX Font Info:    Font shape `TU/FiraSans(2)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 454.
+(Font)              scaled to size 10.0pt on input line 456.
 
 Package fontspec Info: 
 (fontspec)             Fira Sans scale = 0.9999971046048366.
@@ -1676,9 +1676,9 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 LaTeX Font Info:    Font shape `TU/FiraSans(2)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 479.
+(Font)              scaled to size 9.0pt on input line 481.
 LaTeX Font Info:    Font shape `TU/FiraSans(2)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 479.
+(Font)              scaled to size 9.0pt on input line 481.
 
 Package fontspec Info: 
 (fontspec)             Fira Sans scale = 0.9999967828901227.
@@ -2392,7 +2392,7 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 
-Overfull \hbox (0.85501pt too wide) in paragraph at lines 635--635
+Overfull \hbox (0.85501pt too wide) in paragraph at lines 637--637
  []|[]\TU/FiraSans(2)/m/n/9 1.088.833[]|
  []
 
@@ -2501,7 +2501,7 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 
-Overfull \hbox (2.14178pt too wide) in paragraph at lines 699--699
+Overfull \hbox (2.14178pt too wide) in paragraph at lines 701--701
  []|[]\TU/FiraSans(2)/m/n/9 29,967[]|
  []
 
@@ -2586,7 +2586,7 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 
-Overfull \hbox (1.23279pt too wide) in paragraph at lines 717--717
+Overfull \hbox (1.23279pt too wide) in paragraph at lines 719--719
  []|[]\TU/FiraSans(2)/m/n/9 27,057[]|
  []
 
@@ -2795,10 +2795,10 @@ Underfull \vbox (badness 4832) has occurred while \output is active []
 
 [33]
 
-LaTeX Warning: Citation `ref-bjerrenielsen2020' on page 34 undefined on input line 817.
+LaTeX Warning: Citation `ref-bjerrenielsen2020' on page 34 undefined on input line 819.
 
 
-LaTeX Warning: Citation `ref-nielsen2019' on page 34 undefined on input line 817.
+LaTeX Warning: Citation `ref-nielsen2019' on page 34 undefined on input line 819.
 
 
 
@@ -2845,23 +2845,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [44]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 909.
+(Font)              scaled to size 8.0pt on input line 911.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/it' will be
-(Font)              scaled to size 8.0pt on input line 909.
+(Font)              scaled to size 8.0pt on input line 911.
 
-LaTeX Warning: Hyper reference `bilagA' on page 45 undefined on input line 913.
+LaTeX Warning: Hyper reference `bilagA' on page 45 undefined on input line 915.
 
 
 
 [45]
-Underfull \hbox (badness 1728) in paragraph at lines 917--918
+Underfull \hbox (badness 1728) in paragraph at lines 919--920
 []\TU/FiraSans(2)/m/n/10 Figur []5.1[] illustrerer, Diop-Christensen & Larsen ([]2024[]) beregner arbejdsstedseksponeringen for de beskæftigede.
  []
 
 File: en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf>
 
-LaTeX Warning: Hyper reference `bilagA' on page 46 undefined on input line 923.
+LaTeX Warning: Hyper reference `bilagA' on page 46 undefined on input line 925.
 
 
 Underfull \vbox (badness 1924) has occurred while \output is active []
@@ -2869,7 +2869,7 @@ Underfull \vbox (badness 1924) has occurred while \output is active []
 
 
 [46]
-Underfull \hbox (badness 3503) in paragraph at lines 929--929
+Underfull \hbox (badness 3503) in paragraph at lines 931--931
 []\TU/FiraSans(0)/b/n/14.4 Gennemsnitlig eksponering til indvandrere og efterkommere på arbejd-
  []
 
@@ -2898,7 +2898,7 @@ File: images/Figur_4_4.png Graphic file (type bmp)
 File: images/Figur_4_5.png Graphic file (type bmp)
 <images/Figur_4_5.png>
 
-LaTeX Warning: Hyper reference `indledning' on page 53 undefined on input line 1012.
+LaTeX Warning: Hyper reference `indledning' on page 53 undefined on input line 1014.
 
 
 
@@ -3390,7 +3390,7 @@ Bilag A.
 File: en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf>
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 1515.
+(Font)              scaled to size 12.0pt on input line 1517.
 
 
 [81]
@@ -3416,7 +3416,7 @@ File: en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf Graphic file (t
 
 [88]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 7.0pt on input line 1566.
+(Font)              scaled to size 7.0pt on input line 1568.
 
 
 [89] (./en-befolkning-blander-sig.aux)
