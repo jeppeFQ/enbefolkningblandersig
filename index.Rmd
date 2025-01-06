@@ -4,6 +4,7 @@ author:
 - Christian Albrekt Larsen (red.) 
 - Jeppe Fjeldgaard Qvist
 - Hans-Peter Y. Qvist (red.)
+- Jeevitha Yogachandiran Qvist 
 - Lanciné Diop-Christensen 
 date: '`r Sys.time()`'
 site: bookdown::bookdown_site
@@ -12,7 +13,7 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: true
-github-repo: JeppeFLarsen/enbefolkningblandersig 
+github-repo: JeppeFQ/enbefolkningblandersig 
 description: "Bogen er baseret på forskningsprojektet *”Measuring intense migrant-native contact and its concequences”* (MNcontact), der var finansieret af Den Fri Forskningsfond i perioden fra 2019 til 2024. Bogen er en formidlingsbog, der er baseret på projektets datamateriale og forskningsresultater. "
 favicon: images/AAU_logo_2012.png
 cover-image: images/AAU_logo_2012.png

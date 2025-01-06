@@ -16,6 +16,7 @@
 \usepackage[normalem]{ulem}
 \usepackage{makecell}
 \usepackage{xcolor}
+\usepackage{hyperref}
 
 % Set figure title above figure (default is below)
 \usepackage{floatrow}
@@ -25,12 +26,32 @@
 \usepackage{caption}
 \captionsetup[figure]{name=Figur, labelfont=bf, textfont=it, font=small}
 \captionsetup[table]{name=Tabel, labelfont=bf, textfont=it, font=small}
-\addto\captionsenglish{\renewcommand{\chaptername}{Kapitel}}
+\usepackage{titlesec}
+\titleformat{\chapter}[display] % 'display' places content on separate lines
+  {\normalfont\Huge\bfseries}  % Formatting for the chapter heading
+  {Kapitel \thechapter}        % "Kapitel X" on the first line
+  {0pt}                        % Spacing between "Kapitel X" and the title
+  {\Huge}                      % Formatting for the title
+  [\vspace{-10pt}]             % Adjust vertical spacing after the title
+% Reduce space between title and first line of text
+\titlespacing*{\chapter}{0pt}{0pt}{10pt}
+
 \addto\captionsenglish{\renewcommand{\contentsname}{Indholdsfortegnelse}}
 \addto\captionsenglish{\renewcommand{\appendixname}{Bilag}}
 
+% Page layout with gutter
+\usepackage[a4paper, top=1in, bottom=1in, left=1.5in, right=1in, bindingoffset=0.5in]{geometry}
+
+% Custom spacing for theorem environments
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt % Space before the theorem
+  \thm@postskip=\thm@preskip         % Space after the theorem
+}
+\makeatother
+
 % Remove gutter
-\usepackage[inner=0.5in,outer=0.5in]{geometry}
+% \usepackage[inner=0.5in,outer=0.5in]{geometry}
 
 % Add title page image
 \usepackage{titling}
@@ -59,10 +80,4 @@
 
 
 
-% Page layout
-\makeatletter
-\def\thm@space@setup{%
-  \thm@preskip=8pt plus 2pt minus 4pt
-  \thm@postskip=\thm@preskip
-}
-\makeatother
+
