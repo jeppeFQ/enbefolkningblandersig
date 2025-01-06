@@ -1,11 +1,12 @@
 ---
 title: "En befolkning blander sig"
+subtitle: "*Danskernes og indvandrernes kontakt i familier og på skoler og arbejdspladser*"
 author: 
 - Christian Albrekt Larsen (red.) 
 - Jeppe Fjeldgaard Qvist
 - Hans-Peter Y. Qvist (red.)
-- Jeevitha Yogachandiran Qvist 
 - Lanciné Diop-Christensen 
+- Jeevitha Yogachandiran Qvist 
 date: '`r Sys.time()`'
 site: bookdown::bookdown_site
 output: bookdown::gitbook

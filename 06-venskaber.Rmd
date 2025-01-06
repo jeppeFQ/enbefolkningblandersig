@@ -28,8 +28,6 @@ Omfanget af majoritetsbefolkningen, der har venner med indvandrerbaggrund, er li
 
 I en undersøgelse fra 2022 blev gruppen af voksne (+18 år) med dansk-dansk herkomst spurgt, hvor mange af deres ”nære” venner, der kom fra forskellige baggrunde. Resultat ses i Tabel \@ref(tab:tab-6-01). Adspurgt om ”nære” venner angiver 59 procent, at ingen af deres nære venner har indvandrerbaggrund. 25 procent og 12 procent angiver henholdsvis ”1--2” og ”3 eller flere”. Tre procent angiver, at de ikke ved, hvorvidt nogle af deres nære venner har indvandrerbaggrund. Spørger man mere specifikt om nære venner med muslimsk baggrund viser undersøgelsen, at 66 procent af majoriteten ikke har et sådan nært venskab. 20 og 10 procent har henholdsvis ”1-2” og ”3 eller flere” nære venner med muslimsk baggrund. Spørger man til nære venner med østeuropæisk baggrund ses nogenlunde samme fordeling. Hvis man spørger til venner med afrikansk baggrund, stiger andelen uden nogen nære venner til 77 procent, se Tabel \@ref(tab:tab-6-01). 
 
-\newpage
-
 ```{r tab-6-01, echo=FALSE, message=FALSE, warning=FALSE}
 
 typology <- data.frame(
