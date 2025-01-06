@@ -32,7 +32,7 @@ Koncentration af indvandrere, typisk i de manuelle jobs, betyder imidlertid ikke
 
 Figur \@ref(fig:fig-5-1) illustrerer, @diopchristensen2024 beregner arbejdsstedseksponeringen for de beskæftigede. Målet for eksponering kan variere mellem $0$, hvor ingen andre på arbejdspladsen tilhører den ”anden” gruppe (majoritet/minoriteter), og $100\%$, hvor alle andre på arbejdspladsen tilhører den ”anden” gruppe (majoritet/minoriteter). 
 
-```{r fig-5-1, echo=FALSE, out.width= "100%", fig.cap="Illustration af eksponering på arbejdspladsen..", fig.topcaption=TRUE}
+```{r fig-5-1, echo=FALSE, out.width= "100%", fig.cap="Illustration af eksponering på arbejdspladsen.", fig.topcaption=TRUE}
 
 p = "/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/person2.png"
 q = "/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/person1.png"
@@ -134,7 +134,9 @@ Majoritetens gennemsnitlige eksponering til indvandrere og efterkommere på arbe
 
 I Figur \@ref(fig:fig-5-2) er den gennemsnitlig eksponering opdelt på kommunalt niveau. I 1996, kortet placeret til venstre i \@ref(fig:fig-5-2), var til kun i hovedstadsområdet, Aarhus og enkelte grænselandskommuner, at det var typisk at være eksponeret til 3--7 procent indvandrere/efterkommere på arbejdspladsen (markeret med blåt). I 2019, kortet placeret il højre i Figur \@ref(fig:fig-5-2) , ser situationen helt anderledes ud. I alle kommuner er det nu normalen, at majoriteten er eksponeret til 3--7 procent indvandrere/efterkommere på deres arbejdsplads. I store del af landet ligger den gennemsnitlige eksponering nu over 7 procent, markeret med gullige/grønlige farver. 
 
-```{r fig-5-2, echo=FALSE, out.width= "100%", fig.cap="Beskæftigedes med dansk-dansk herkomst gennemsnitlige eksponering til indvandrere/efterkommere på deres arbejdspladsen i 1996 (venstre) og 2019 (højre).", fig.topcaption=TRUE}
+\newpage
+
+```{r fig-5-2, echo=FALSE, out.width= "70%", fig.cap="Beskæftigedes med dansk-dansk herkomst gennemsnitlige eksponering til indvandrere/efterkommere på deres arbejdspladsen i 1996 (venstre) og 2019 (højre).", fig.topcaption=TRUE}
 knitr::include_graphics("images/Figur_4_1.png")
 ```
 
@@ -158,7 +160,7 @@ Mere interessant er det måske, hvor meget majoriteten på deres arbejdsplads de
 
 I 1996, det venstre kort Figur \@ref(fig:fig-5-3), var det kun på Sjælland, i Odense og Aarhus, at det var typisk, at majoriteten var eksponeret til en til to procent indvandrere/efterkommere fra MENAPT-lande på deres arbejdsplads. Markeret med blå farver.  I 2019, det højre kort, er det nu typisk i hele landet at have et sådant eksponeringsniveau til muslimske minoriteter, med undtagelse af Lemvig kommune. Men det stadigt tydeligt, at eksponering til minoriteter fra muslimske oprindelseslande er højst omkring hovedstadsregionen, Odense og Aarhus, se gullige og grønlige farver i Figur \@ref(fig:fig-5-3). 
 
-```{r fig-5-3, echo=FALSE, out.width= "100%", fig.cap="Andelen af beskæftigede med dansk-dansk herkomst, der ikke er eksponeret til én eneste indvandrer eller efterkommer på deres arbejdsplads i 1996 (venstre) og 2019 (højre).", fig.topcaption=TRUE}
+```{r fig-5-3, echo=FALSE, out.width= "70%", fig.cap="Andelen af beskæftigede med dansk-dansk herkomst, der ikke er eksponeret til én eneste indvandrer eller efterkommer på deres arbejdsplads i 1996 (venstre) og 2019 (højre).", fig.topcaption=TRUE}
 knitr::include_graphics("images/Figur_4_2.png")
 ```
 
@@ -179,7 +181,7 @@ if (knitr::is_html_output()) {
 
 En anden måde at opgøre det på, er at se på andelen af beskæftigede med dansk-dansk herkomst, der ikke har én eneste indvandrere eller efterkommere på deres arbejdsplads. En sådan ”isolation” er selvfølgelig langt mere sandsynlig på små end på store arbejdspladser. Ikke desto mindre giver andelen med *nul-eksponering* også en god fornemmelse af forandringer over tid. @diopchristensen2024 estimerer, at andelen af beskæftigede med dansk-dansk herkomst, som er ”isolerede” på deres arbejdsplads er faldet fra 45 procent i 1996 til 29 procent i 2019. 
 
-```{r fig-5-4, echo=FALSE, out.width= "100%", fig.cap="Beskæftigedes med dansk-dansk herkomst gennemsnitlige eksponering til MENAPT indvandrere/efterkommer på deres arbejdsplads i 1996 (venstre) og 2019 (højre).", fig.topcaption=TRUE}
+```{r fig-5-4, echo=FALSE, out.width= "70%", fig.cap="Beskæftigedes med dansk-dansk herkomst gennemsnitlige eksponering til MENAPT indvandrere/efterkommer på deres arbejdsplads i 1996 (venstre) og 2019 (højre).", fig.topcaption=TRUE}
 knitr::include_graphics("images/Figur_4_3.png")
 ```
 
@@ -203,7 +205,7 @@ I Figur \@ref(fig:fig-5-4) er ”isolationen” opdelt på tværs af kommunerne.
 
 Beskæftigede indvandrere og efterkommere er i høj grad eksponeret til beskæftigede med dansk-dansk herkomst på deres arbejdsplads. @diopchristensen2024 estimerer, at den gennemsnitlige eksponering var 74 procent i 1996. Opdelt på kommuner viser den venstre del af Figur \@ref(fig:fig-5-5), at den (gennemsnitlige) høje eksponering til majoritetsbefolkningen i 1996 gjorde sig gældende i hele landet. Med undtagelse af et par enkelte kommuner i hovedstadsområdet var den gennemsnitlige eksponering på 67 procent eller derover. Det er markeret med grønlige og gullige farver i Figur \@ref(fig:fig-5-5). 
 
-```{r fig-5-5, echo=FALSE, out.width= "100%", fig.cap="Beskæftigede indvandreres/efterkommeres gennemsnitlige eksponering til beskæftigede med dansk-dansk herkomst på deres arbejdsplads i 1996 (venstre) og 2019 (højre).", fig.topcaption=TRUE}
+```{r fig-5-5, echo=FALSE, out.width= "70%", fig.cap="Beskæftigede indvandreres/efterkommeres gennemsnitlige eksponering til beskæftigede med dansk-dansk herkomst på deres arbejdsplads i 1996 (venstre) og 2019 (højre).", fig.topcaption=TRUE}
 knitr::include_graphics("images/Figur_4_4.png")
 ```
 
@@ -231,7 +233,7 @@ I Figur \@ref(fig:fig-5-6) vises andelen af ”isolerede” på tværs af kommun
 
 [^55]: Beregninger på Løsø kommune er meget usikre pga. et meget begrænset antal indvandrere/efterkommere.
 
-```{r fig-5-6, echo=FALSE, out.width= "100%", fig.cap="Andelen af beskæftigede indvandrere/efterkommere der ikke er eksponeret til én eneste med dansk-dansk herkomst på deres arbejdsplads i 1996 (venstre) og 2019 (højre).", fig.topcaption=TRUE}
+```{r fig-5-6, echo=FALSE, out.width= "70%", fig.cap="Andelen af beskæftigede indvandrere/efterkommere der ikke er eksponeret til én eneste med dansk-dansk herkomst på deres arbejdsplads i 1996 (venstre) og 2019 (højre).", fig.topcaption=TRUE}
 knitr::include_graphics("images/Figur_4_5.png")
 ```
 

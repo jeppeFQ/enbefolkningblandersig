@@ -83,7 +83,7 @@ if (knitr::is_html_output()) {
 Både medborgerskabsundersøgelserne og undersøgelsen fra 2022 viser et klart mønster mellem majoritetsbefolkningens alder og omfanget af venskaber med indvandrere og efterkommere. Det illustreres i Figur \@ref(fig:fig-6-1). I 2022-undersøgelsen svarer cirka 70 procent af de 50-årige og derover, at de ikke har en nær ven med indvandrerbaggrund. Blandt de 40-49-årige og 30 – 39-årige er andelen uden en nær ven med indvandrerbaggrund henholdsvis 59 og 51 procent. Endeligt er det kun cirka hver tredje af de 18 – 29-årige, der ikke har en nær ven med indvandrerbaggrund, se Figur \@ref(fig:fig-6-1).
 
 
-```{r fig-6-1, echo=FALSE, message=FALSE, out.width= "100%", fig.cap="Sammenhængen mellem alder på majoritetsbefolkning og nære venskaber med personer med indvandrerbaggrund. 2022.", fig.topcaption=TRUE}
+```{r fig-6-1, echo=FALSE, fig.cap="Sammenhængen mellem alder på majoritetsbefolkning og nære venskaber med personer med indvandrerbaggrund. 2022.", fig.topcaption=TRUE, message=FALSE, warning=FALSE, out.width="100%"}
 
 read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_1.csv") %>% 
   pivot_longer(!gruppe, names_to = "kategori", values_to = "pct") %>% 
@@ -115,7 +115,9 @@ En oplagt forklaring på mønsteret i Figur \@ref(fig:fig-6-1) er, at den yngre 
 
 [^62]: Blau har udtrykt det på følgende måde: *”We cannot have Buddhist friends if there are no Buddhist around”* [@blau1997].
 
-```{r fig-6-2, echo=FALSE, out.width= "100%", fig.cap="Andelen af indvandrere og efterkommere i majoritetsbefolkningen mulige venskabspulje.", fig.topcaption=TRUE}
+\newpage
+
+```{r fig-6-2, echo=FALSE, fig.cap="Andelen af indvandrere og efterkommere i majoritetsbefolkningen mulige venskabspulje.", fig.topcaption=TRUE, message=FALSE, warning=FALSE, out.width="100%"}
 knitr::include_graphics("images/Figur_6_2.jpg")
 ```
 
@@ -153,7 +155,7 @@ Et centralt spørgsmål i studiet er, hvorvidt størrelsen af egen gruppe påvir
 
 Interessen samler sig ofte om venskabsrelationerne for ikke-vestlige indvandrere og efterkommere. I Udlændinge- og Integrationsministeriets undersøgelser er det kun ikke-vestlige indvandrere/efterkommere, der bliver spurgt. Det efterlader et spørgsmål om, hvorvidt vestlige indvandrere bosat i Danmark egentlig har flere venskabsrelationer med majoritetsbefolkningen end det er tilfældet for ikke-vestlige indvandrere. En ældre undersøgelse fra 2015 kan give en vis indikation. Undersøgelsen blev gennemført blandt voksne (+18) indvandrere fra ti forskellige lande, der havde boet minimum et år i Danmark. Herunder vestlige grupper fra Polen, Rumænien og Spanien, hvor mange var kommet som vandrerne EU-arbejdstagere i perioden fra 2005 og frem, og fra USA og Storbritannien, hvor mange havde levet længere i Danmark. I Figur \@ref(fig:fig-6-3) er grupperne arrangeret efter andelen fra de ti grupper, der angiver, at de ingen danske venner har. For alle grupper er der tale om en lille andel, der slet ingen danske venner har. Lægger man andelen, der har ”ingen” eller kun ”nogle få” danske venner sammen, så er det indvandrere med kinesisk oprindelse, der har færrest danske venner, se Figur \@ref(fig:fig-6-3). Derefter kommer indvandrerne med rumænsk og filippinsk herkomst. Indvandrerne med britisk og amerikansk oprindelse har flest danske venner. Grupper er vidt forskellige på for eksempel opholdstid, hvilket gør, at man skal være varsom med at sammenligne omfanget af venskaber med majoritetsbefolkningen. Men 2015-undersøgelsen giver en indikation på, at forskelle mellem vestlige og ikke-vestlige indvandrere er begrænset; i det mindste vurderet på andelen uden én eneste ven med dansk baggrund.
 
-```{r fig-6-3, echo=FALSE, message=FALSE, out.width= "100%", fig.cap="Andel af venner med dansk oprindelse blandt 10 forskellige indvandrergrupper. 2015.", fig.topcaption=TRUE}
+```{r fig-6-3, echo=FALSE, fig.cap="Andel af venner med dansk oprindelse blandt 10 forskellige indvandrergrupper. 2015.", fig.topcaption=TRUE, message=FALSE, warning=FALSE, out.width="100%"}
 
 read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_4.csv") %>% 
   pivot_longer(!Country, names_to = "kategori", values_to = "pct") %>% 
@@ -174,7 +176,7 @@ read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_4
 
 Bogens position er, at venskaber nok er svære at studere, men ikke desto mindre er de værd at beskæftige sig med. Etablering af venskaber mellem majoriteten og indvandrere/efterkommere er den oplagte første tværetniske social relation og der er mange indikationer på, at sådanne venskabsrelationer kan have effekter. Figur \@ref(fig:fig-6-4) og Figur \@ref(fig:fig-6-5) illustrerer sammenhængen mellem venskabsrelationer og fordomme på danske data. 
 
-```{r fig-6-4, echo=FALSE, message=FALSE, out.width= "100%", fig.cap="Majoritetens vurdering af, hvorvidt muslimer i Danmark identificerer sig mindre med landet end andre danskere. Opdelt på antal muslimske venner.", fig.topcaption=TRUE}
+```{r fig-6-4, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Majoritetens vurdering af hvorvidt muslimer i Danmark identificerer sig mindre med landet end andre danskere. Opdelt på antal muslimske venner.", fig.topcaption=TRUE, out.width="100%"}
 
 read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_5.csv") %>% 
   pivot_longer(!Gruppe, names_to = "kategori", values_to = "pct") %>% 
@@ -193,7 +195,7 @@ read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_5
 
 Figur \@ref(fig:fig-6-4) viser, at majoritetsbefolkningen uden én eneste muslimsk ven er langt mere tilbøjelig til at svarere, at muslimer i Danmark identificerer sig mindre med Danmark. 40 procent siger ”meget mindre” og 41 procent siger ”noget mindre”. Blandt majoritetsbefolkningen, der har tre eller flere venner med muslimsk baggrund, er de tilsvarende andele 15 og 28 procent. Figur \@ref(fig:fig-6-5) viser en lignende sammenhæng mellem det at have muslimske venner og opfattelsen af, at muslimer i Danmark bekymrer sig mindre om andre danskere. 
 
-```{r fig-6-5, echo=FALSE, message=FALSE, out.width= "100%", fig.cap="Majoritetens vurdering af, hvorvidt muslimer i Danmark bekymrer sig mindre om andre danskernes anliggender og behov. Opdelt på antal muslimske venner.", fig.topcaption=TRUE}
+```{r fig-6-5, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Majoritetens vurdering af hvorvidt muslimer i Danmark bekymrer sig mindre om andre danskernes anliggender og behov. Opdelt på antal muslimske venner.", fig.topcaption=TRUE, out.width="100%"}
 
 read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_6.csv") %>% 
   pivot_longer(!Gruppe, names_to = "kategori", values_to = "pct") %>% 

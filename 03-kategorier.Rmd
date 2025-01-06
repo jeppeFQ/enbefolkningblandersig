@@ -73,6 +73,9 @@ Udfaldsrummet har otte muligheder, hvis man ligesom Danmarks Statistik undlader 
 
 I 1985 var der 37.504 i alderen 0--16 år i C-gruppen, svarende til 3,5 procent af gruppen, se Tabel \@ref(tab:tab-3-2). I 2019 var antallet vokset til 45.911, svarende til 4,2 procent af de 0--16-årige. Men det er imidlertid i D-gruppen---dem med én dansk og én ikke-vestlig forældre---at den største stigning er sket. I 1985 var der 9.912 i D-gruppen, svarende til 0,9 procent af de 0--16-årige, hvilket i 2019 er vokset til 42.933, svarende til 3,9 procent af de 0--16-årige. Samlet set udgør de cirka 89.000 ”blandede” børn således 8,16 procent af alle 0--16-årige i 2019, se Tabel \@ref(tab:tab-3-2). 
 
+\newpage
+
+
 ```{r tab-3-2, echo=FALSE, message=FALSE, warning=FALSE}
 
 typology <- data.frame(
