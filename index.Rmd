@@ -1,4 +1,4 @@
---- 
+---
 title: "En befolkning blander sig"
 author: 
 - Christian Albrekt Larsen (red.) 
@@ -18,7 +18,6 @@ favicon: images/AAU_logo_2012.png
 cover-image: images/AAU_logo_2012.png
 ---
 
-
 ```{r include=FALSE}
 
 options(tinytex.engine_args="-shell-escape")
@@ -34,7 +33,3 @@ library(flextable)
 library(gt)
 
 ```
-
-
-
-

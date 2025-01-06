@@ -1,4 +1,7 @@
 
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+```
 
 
 # En befolkning blander sig {#kap1}
