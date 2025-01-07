@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  7 JAN 2025 11:51
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.7)  7 JAN 2025 13:42
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1380,6 +1380,10 @@ LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
 (Font)              scaled to size 24.88pt on input line 239.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
 (Font)              scaled to size 10.0pt on input line 242.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 244.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 244.
 
 Underfull \hbox (badness 10000) in paragraph at lines 254--257
 
@@ -1518,11 +1522,6 @@ File: images/kap3.jpg Graphic file (type bmp)
 [17
 
 ]
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 458.
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 458.
-
 Underfull \hbox (badness 1975) in paragraph at lines 466--466
 [][][]\TU/FiraSans(0)/m/n/8 Hvis dette er Danmark, bruges statsborgerskabslandet. Når ingen af forældrene kendes, er
  []
