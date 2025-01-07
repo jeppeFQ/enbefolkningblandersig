@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.6)  6 JAN 2025 16:11
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.6)  7 JAN 2025 11:05
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1450,9 +1450,6 @@ Underfull \hbox (badness 1389) in paragraph at lines 330--331
 Underfull \hbox (badness 5147) in paragraph at lines 332--332
 |[]\TU/FiraSans(0)/b/n/14.4 Betydningen af størrelsesforholdene mellem ma-
  []
-
-
-LaTeX Warning: Reference `fig:fig-1-2' on page 8 undefined on input line 338.
 
 File: en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf>
@@ -3457,6 +3454,8 @@ Underfull \hbox (badness 2961) in paragraph at lines 1322--1323
 [61
 
 ]
+Missing character: There is no ‐ (U+2010) in font Fira Sans Regular/OT:script=latn;language=dflt;mapping=tex-text;!
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3471,12 +3470,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [64]
 Bilag A.
 
-Underfull \hbox (badness 1097) in paragraph at lines 1568--1569
+Underfull \hbox (badness 1097) in paragraph at lines 1580--1581
 \TU/FiraSans(2)/m/n/10 segregering—eller fordeling—af to grupper. Det vil sige at hvis en population
  []
 
 
-Underfull \hbox (badness 1048) in paragraph at lines 1568--1569
+Underfull \hbox (badness 1048) in paragraph at lines 1580--1581
 \TU/FiraSans(2)/m/n/10 er udgjort af flere grupper, kan målet kun bestemme den \TU/FiraSans(0)/m/it/10 parvise \TU/FiraSans(2)/m/n/10 segregering.
  []
 
@@ -3492,29 +3491,26 @@ File: en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf Graphic file (t
 
 
 [67]
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 1586.
-
 
 [68]
-Underfull \hbox (badness 3240) in paragraph at lines 1598--1599
+Underfull \hbox (badness 3240) in paragraph at lines 1610--1611
 []\TU/FiraSans(2)/m/n/10 Separering kan i stedet beskrives med \TU/FiraSans(0)/m/it/10 Separationsindekset[][][] \TU/FiraSans(2)/m/n/10 ($[]$), som måler
  []
 
 
 
 [69]
-Underfull \hbox (badness 2744) in paragraph at lines 1615--1616
+Underfull \hbox (badness 2744) in paragraph at lines 1627--1628
 []$[]$ \TU/FiraSans(2)/m/n/10 imødegår disse begrænsninger. Forskellen på $[][]$ og $[]$ er, at $[]$ er en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1615--1616
+Underfull \hbox (badness 10000) in paragraph at lines 1627--1628
 \TU/FiraSans(2)/m/n/10 standardisering—eller normalisering—af $[][]$-målene, der kontrollerer for be-
  []
 
 
-Underfull \hbox (badness 1577) in paragraph at lines 1617--1618
+Underfull \hbox (badness 1577) in paragraph at lines 1629--1630
 []\TU/FiraSans(2)/m/n/10 Denne korrigering for befolkningssammensætning har den implikation, at seg-
  []
 
@@ -3530,11 +3526,11 @@ File: en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf Graphic file (t
 File: en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf>
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [72]
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 7.0pt on input line 1637.
-
 
 [73] (./en-befolkning-blander-sig.aux)
  ***********
@@ -3546,11 +3542,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 27138 strings out of 475827
- 515366 string characters out of 5773061
- 1125470 words of memory out of 5000000
- 49540 multiletter control sequences out of 15000+600000
- 564826 words of font info for 115 fonts, out of 8000000 for 9000
+ 27132 strings out of 475827
+ 515140 string characters out of 5773061
+ 1124613 words of memory out of 5000000
+ 49536 multiletter control sequences out of 15000+600000
+ 564810 words of font info for 113 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  94i,13n,131p,3947b,626s stack positions out of 10000i,1000n,20000p,200000b,200000s
 

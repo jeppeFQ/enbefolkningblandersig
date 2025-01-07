@@ -30,7 +30,7 @@ Aalborg Universitet\
 \newpage
 
 ISSN: xxxx-xxxx      
-ISBN: xxx-xx-xxxx-xxx-x    
+ISBN: 978-87-89383-85-9
        
 Published by:  
 Aalborg University Press  

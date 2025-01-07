@@ -45,6 +45,6 @@
 \contentsline {chapter}{Litteraturliste}{61}{chapter*.23}%
 \contentsline {chapter}{\numberline {A}Segregeringsmål}{65}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Dissimilaritetsindekset}{65}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Korrigeret D-indeks}{68}{subsection.A.1.1}%
-\contentsline {section}{\numberline {A.2}Separationsindekset}{68}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Sammenhæng mellem S og D}{70}{section.A.3}%
+\contentsline {section}{\numberline {A.2}Korrigeret D-indeks}{68}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Separationsindekset}{68}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Sammenhæng mellem S og D}{72}{section.A.4}%
