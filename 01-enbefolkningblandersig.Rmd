@@ -115,7 +115,7 @@ Mens socialpsykologien har været optaget af dynamikker i mødet mellem menneske
 
 De sidste fire årtiers stigende indvandring har ændret disse størrelsesforhold i Danmark. I 2023 udgjorde indvandrere og efterkommere 15 procent af befolkningen ifølge definitioner fra Danmark Statistik. Under antagelse om lige fordeling på mødepladser, er danskernes sandsynlighed for næste gang at møde en indvandrer eller efterkommer således steget fra tre til 15 procent. Omvendt er minoritetens sandsynlighed for næste gang at møde en dansker reduceret fra 97 til 85 procent. Følger man ovenstående logik vil det betyde, at majoriteten ændres lidt hurtigere og minoriteten lidt langsommere end det var tilfældet tidligere.   
 
-Effekterne af disse størrelsesforhold på antallet af møder mellem minoritet og majoritet begrænses selvfølgelig af de strukturelle forhold, der typisk koncentrerer indvandrere i byområder, jf. ovenstående. I figur \@ref(fig:fig-1-22) vises andelen af indbyggere, der ikke har to forældre med dansk herkomst. Med vores strammere kriterier for at være dansk-dansk (se næste kapitel for definitioner) illustrerer kortet med alt tydelighed, at der også i Danmark er en betydelig koncentration af minoriteter i byområderne. I kapitel 5 vil det nærmere blive beskrevet, hvordan danskere i nogle kommuner har ret begrænsede muligheder for at danne sociale relationer med indvandrere; specielt hvis man også medtænker et alderskriterium ift. hvem man forventeligt danner sociale relationer med.
+Effekterne af disse størrelsesforhold på antallet af møder mellem minoritet og majoritet begrænses selvfølgelig af de strukturelle forhold, der typisk koncentrerer indvandrere i byområder, jf. ovenstående. Figur \@ref(fig:fig-1-22) viser andelen af indbyggere, der ikke har to forældre med dansk herkomst. Med vores strammere kriterier for at være dansk-dansk (se [næste kapitel](#kap2) for definitioner) illustrerer kortet med alt tydelighed, at der også i Danmark er en betydelig koncentration af minoriteter i byområderne. I [kapitel 5](#kap5) vil det nærmere blive beskrevet, hvordan danskere i nogle kommuner har ret begrænsede muligheder for at danne sociale relationer med indvandrere; specielt hvis man også medtænker et alderskriterium ift. hvem man forventeligt danner sociale relationer med.
 
 ```{r include=FALSE}
 
@@ -137,6 +137,7 @@ rm(koms, df)
 
 pal <- colorNumeric("PiYG", domain = dk_kom$non_native)
 
+if (knitr::is_html_output()) {
 leaflet(dk_kom) %>%
   #addTiles() %>%
   addPolygons(data = dk_kom %>% st_transform('+proj=longlat +datum=WGS84'),
@@ -150,6 +151,10 @@ leaflet(dk_kom) %>%
             labFormat = labelFormat(suffix = '%', between = '% - ',
                                                   transform = function(x) 100 * x)) %>% 
   setMapWidgetStyle(list(background= "white"))
+
+} else if (knitr::is_latex_output()) {
+  cat('DER KOMMER EN FIGUR HER!')
+}
 
 ```
 
@@ -173,7 +178,7 @@ Hvorvidt indvandreres større mulighed for at møde andre indvandrere reelt begr
 
 Bogen bygger på en antagelse om, at de grundlæggende mekanismer omkring indvandrere og majoritetsbefolkning er de samme i Danmark som i USA. Mekanismerne er knyttet til grundlæggende egenskaber ved den menneskelige natur, ved en verden opdelt i nationalstater og ved markedsøkonomier. Ikke desto mindre er der åbenlyse forskelle med den danske kontekst og den amerikanske både historiske og nuværende kontekst. Én markant forskel er, at Danmark har en større andel humanitære indvandrere end det er tilfældet i USA. Disse flygtninge og familiesammenførte har ofte sværere ved at klare sig på arbejdsmarked end indvandrere, hvor den primære motivation til at skifte land netop har været ønsket om arbejde. Til gengæld har humanitære indvandrere typisk ikke noget ønske om at vende tilbage til et oprindelsesland. Der er således ikke anden udvej end at forsøge at klare sig i destinationslandet. Dermed har de humanitære indvandrere større incitament til at lade sig integrere end arbejdsimmigranter. 
 
-Én anden markant forskel er, at Danmark har et mere reguleret arbejdsmarked end det er tilfældet i USA. Det skaber bedre løn– og arbejdsvilkår, også for indvandrere, hvilket alt andet lige må antages at lette integrationen. Men samtidigt kan reguleringerne gøre det vanskeligere for indvandrere at komme ind på arbejdsmarkedet, fx ved ikke at kunne acceptere lavere løn- og arbejdsvilkår end majoritetsbefolkningen. Risikoen ved et reguleret arbejdsmarked er således, at flere indvandrere slet ikke kommer ind på arbejdsmarkedet end det er tilfældet på det mere uregulerede amerikansk arbejdsmarked. 
+Én anden markant forskel er, at Danmark har et mere reguleret arbejdsmarked end det er tilfældet i USA. Det skaber bedre løn- og arbejdsvilkår, også for indvandrere, hvilket alt andet lige må antages at lette integrationen. Men samtidigt kan reguleringerne gøre det vanskeligere for indvandrere at komme ind på arbejdsmarkedet, fx ved ikke at kunne acceptere lavere løn- og arbejdsvilkår end majoritetsbefolkningen. Risikoen ved et reguleret arbejdsmarked er således, at flere indvandrere slet ikke kommer ind på arbejdsmarkedet end det er tilfældet på det mere uregulerede amerikansk arbejdsmarked. 
 
 Én tredje forskel er, at Danmark har en mere udbygget velfærdsstat, der leverer sygesikring, børnepasning og skoleundervisning af relativt høj kvalitet for alle; inklusive indvandrere uden statsborgerskab. Det letter presset for at klare sig på arbejdsmarkedet, men forøger samtidigt majoritetsbefolkningens bekymring for at indvandrere bliver en økonomisk byrde.
 

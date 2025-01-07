@@ -38,3 +38,5 @@ bookdown::pdf_document2:
   bibliography: ["book.bib"]
   link-citations: true
   keep_tex: yes
+  documentclass: book
+  classoption: openright
