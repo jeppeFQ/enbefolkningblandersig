@@ -1,6 +1,5 @@
 ---
-title: "En befolkning blander sig"
-subtitle: "*Danskernes og indvandrernes kontakt i familier og på skoler og arbejdspladser*"
+title: "En befolkning blander sig---*Danskernes og indvandrernes kontakt i familier og på skoler og arbejdspladser*"
 author: 
 - Christian Albrekt Larsen (red.) 
 - Jeppe Fjeldgaard Qvist
@@ -17,8 +16,9 @@ link-citations: true
 github-repo: JeppeFQ/enbefolkningblandersig 
 description: "Bogen er baseret på forskningsprojektet *”Measuring intense migrant-native contact and its concequences”* (MNcontact), der var finansieret af Den Fri Forskningsfond i perioden fra 2019 til 2024. Bogen er en formidlingsbog, der er baseret på projektets datamateriale og forskningsresultater. "
 favicon: images/AAU_logo_2012.png
-cover-image: images/AAU_logo_2012.png
+cover-image: images/kap1.png
 ---
+
 
 ```{r include=FALSE}
 
@@ -35,3 +35,4 @@ library(flextable)
 library(gt)
 
 ```
+

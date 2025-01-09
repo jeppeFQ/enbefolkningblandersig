@@ -23,13 +23,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="pt"
-     inkscape:zoom="2.1113937"
-     inkscape:cx="254.33437"
-     inkscape:cy="488.30305"
-     inkscape:window-width="1224"
-     inkscape:window-height="625"
+     inkscape:zoom="1.8997173"
+     inkscape:cx="190.02828"
+     inkscape:cy="91.329379"
+     inkscape:window-width="1424"
+     inkscape:window-height="854"
      inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-y="56"
      inkscape:window-maximized="0"
      inkscape:current-layer="g1949" />
   <defs
@@ -11897,26 +11897,70 @@
          y="54.117889" /></text>
     <text
        xml:space="preserve"
-       style="font-size:8px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';stroke-width:0.75"
+       style="font-size:7px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';stroke-width:0.75"
        x="76.563583"
-       y="46.10281"
+       y="46.497604"
        id="text1952"><tspan
          sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.75"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.75"
          x="76.563583"
-         y="46.10281"
-         id="tspan1953">Interetniske </tspan></text>
+         y="46.497604"
+         id="tspan1953">Partner fra samme </tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.75"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.75"
        x="76.151962"
-       y="54.335449"
+       y="53.545856"
        id="text1973"><tspan
          sodipodi:role="line"
          id="tspan1973"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.75"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.75"
          x="76.151962"
-         y="54.335449">forhold</tspan></text>
+         y="53.545856">oprindelsesland</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';white-space:pre;stroke-width:0.75"
+       x="154.46178"
+       y="59.734905"
+       id="text1973-9"><tspan
+         sodipodi:role="line"
+         id="tspan1973-0"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.75"
+         x="154.46178"
+         y="59.734905">oprindelsesland</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';white-space:pre;stroke-width:0.75"
+       x="154.48195"
+       y="46.141449"
+       id="text1952-1"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.75"
+         x="154.48195"
+         y="46.141449"
+         id="tspan1953-5">Partner fra andet </tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';white-space:pre;stroke-width:0.75"
+       x="234.76935"
+       y="47.011337"
+       id="text1952-1-5"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.75"
+         x="234.76935"
+         y="47.011337"
+         id="tspan1953-5-6">Dansk partner</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';white-space:pre;stroke-width:0.75"
+       x="154.46512"
+       y="53.189705"
+       id="text1973-5"><tspan
+         sodipodi:role="line"
+         id="tspan1973-8"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.75"
+         x="154.46512"
+         y="53.189705">ikke-dansk</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:9px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';white-space:pre;stroke-width:0.75"
@@ -11928,72 +11972,6 @@
          x="76.256477"
          y="70.799683"
          id="tspan1953-4" /></text>
-    <text
-       xml:space="preserve"
-       style="font-size:8px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';white-space:pre;stroke-width:0.75"
-       x="154.80519"
-       y="45.754898"
-       id="text1952-7"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.75"
-         x="154.80519"
-         y="45.754898"
-         id="tspan1953-9">Intraetniske </tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';white-space:pre;stroke-width:0.75"
-       x="154.39357"
-       y="53.987537"
-       id="text1973-8"><tspan
-         sodipodi:role="line"
-         id="tspan1973-4"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.75"
-         x="154.39357"
-         y="53.987537">forhold m. anden</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:8px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';white-space:pre;stroke-width:0.75"
-       x="154.49808"
-       y="62.126774"
-       id="text1952-5-5"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.75"
-         x="154.49808"
-         y="62.126774"
-         id="tspan1953-4-8">indvandrer</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:8px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';white-space:pre;stroke-width:0.75"
-       x="234.42668"
-       y="46.03352"
-       id="text1952-7-7"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.75"
-         x="234.42668"
-         y="46.03352"
-         id="tspan1953-9-5">Intraetniske </tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';white-space:pre;stroke-width:0.75"
-       x="234.01506"
-       y="54.266155"
-       id="text1973-8-3"><tspan
-         sodipodi:role="line"
-         id="tspan1973-4-9"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.75"
-         x="234.01506"
-         y="54.266155">forhold m. etnisk</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:8px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';white-space:pre;stroke-width:0.75"
-       x="234.11957"
-       y="62.405392"
-       id="text1952-5-5-9"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.75"
-         x="234.11957"
-         y="62.405392"
-         id="tspan1953-4-8-4">dansker</tspan></text>
     <g
        id="g1979"
        transform="translate(1.8875224)">
@@ -12006,9 +11984,9 @@
          transform="rotate(-39.355578,65.847195,-76.68881)"><tspan
            x="6.7794948"
            y="17.700184"
-           id="tspan2"><tspan
+           id="tspan5"><tspan
              style="font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';fill:#808080"
-             id="tspan1">Ægtepar</tspan></tspan></text>
+             id="tspan3">Ægtepar</tspan></tspan></text>
       <g
          id="g1977"
          transform="translate(-0.55056856)">
@@ -12104,5 +12082,14 @@
          xlink:href="#g1977-1"
          id="use1979-9-9" />
     </g>
+    <text
+       xml:space="preserve"
+       style="font-size:9.99998px;line-height:1.25;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif';stroke-width:0.75"
+       x="175.68404"
+       y="68.299637"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="stroke-width:0.75"></tspan></text>
   </g>
 </svg>

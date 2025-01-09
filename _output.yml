@@ -31,7 +31,7 @@ bookdown::pdf_document2:
   toc: no
   includes:
     in_header: preamble.tex
-  latex_engine: xelatex
+  latex_engine: lualatex
   extra_dependencies: ["flafter"]
   citation_package: default
   pandoc_args: [ "--csl", "university-of-gothenburg-apa-7th-edition-swedish-legislations.csl" ]
