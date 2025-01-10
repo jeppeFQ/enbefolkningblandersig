@@ -2,6 +2,8 @@
 
 # Integration i et kontaktperspektiv {#kap7}
 
+\thispagestyle{empty}
+
 *[Christian Albrekt Larsen](https://vbn.aau.dk/en/persons/albrekt)* og *[Hans-Peter Y. Qvist](https://vbn.aau.dk/en/persons/hpq)* 
 
 &nbsp;&nbsp;&nbsp;&nbsp;

@@ -77,3 +77,6 @@
 
 % Roman page numbering before chapter 1
 \pagenumbering{gobble}
+
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
