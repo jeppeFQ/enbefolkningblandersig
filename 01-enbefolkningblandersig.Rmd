@@ -1,8 +1,6 @@
 
-```{r message=FALSE, warning=FALSE, include=FALSE}
-library(tidyverse)
-```
-
+\clearpage
+\pagestyle{fancy}
 
 # En befolkning blander sig {#kap1}
 
@@ -117,6 +115,8 @@ De sidste fire årtiers stigende indvandring har ændret disse størrelsesforhol
 
 Effekterne af disse størrelsesforhold på antallet af møder mellem minoritet og majoritet begrænses selvfølgelig af de strukturelle forhold, der typisk koncentrerer indvandrere i byområder, jf. ovenstående. Figur \@ref(fig:fig-1-22) viser andelen af indbyggere, der ikke har to forældre med dansk herkomst. Med vores strammere kriterier for at være dansk-dansk (to danske forældre, se [næste kapitel](#kap2) for definitioner) illustrerer kortet med alt tydelighed, at der også i Danmark er en betydelig koncentration af minoriteter i byområderne. I [kapitel 5](#kap5) vil det nærmere blive beskrevet, hvordan danskere i nogle kommuner har ret begrænsede muligheder for at danne sociale relationer med indvandrere; specielt hvis man også medtænker et alderskriterium ift. hvem man forventeligt danner sociale relationer med.
 
+\newpage
+
 ```{r include=FALSE}
 
 koms <- read_csv2("data/kommunekoder.txt")
@@ -153,7 +153,21 @@ leaflet(dk_kom) %>%
   setMapWidgetStyle(list(background= "white"))
 
 } else if (knitr::is_latex_output()) {
-  cat('DER KOMMER EN FIGUR HER!')
+
+leaflet(dk_kom) %>%
+  #addTiles() %>%
+  addPolygons(data = dk_kom %>% st_transform('+proj=longlat +datum=WGS84'),
+              stroke = FALSE,
+              smoothFactor = 0.2,
+              weight = 1,
+              fillOpacity = .7,
+              color= ~pal(non_native)) %>% 
+  addLegend("bottomright", pal = pal, values = ~dk_kom$non_native, 
+            title = "Personer med to</br>ikke-danskfødte</br>forældre",
+            labFormat = labelFormat(suffix = '%', between = '% - ',
+                                                  transform = function(x) 100 * x)) %>% 
+  setMapWidgetStyle(list(background= "white"))
+  
 }
 
 ```

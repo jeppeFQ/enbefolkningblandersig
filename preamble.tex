@@ -1,5 +1,4 @@
-
-% Load packages
+% Load essential packages
 \usepackage{booktabs}
 \usepackage{amsthm}
 \usepackage{svg}
@@ -18,49 +17,48 @@
 \usepackage{xcolor}
 \usepackage{hyperref}
 
-% Set figure title above figure (default is below)
+% Figure title above figures
 \usepackage{floatrow}
 \floatsetup[figure]{capposition=top}
 
-% Set title headings (i.e., English to Danish)
+% Customize captions
 \usepackage{caption}
 \captionsetup[figure]{name=Figur, labelfont=bf, textfont=it, font=small}
 \captionsetup[table]{name=Tabel, labelfont=bf, textfont=it, font=small}
+
+% Customize chapter titles
 \usepackage{titlesec}
-\titleformat{\chapter}[display] % 'display' places content on separate lines
-  {\normalfont\Huge\bfseries}  % Formatting for the chapter heading
-  {Kapitel \thechapter}        % "Kapitel X" on the first line
-  {0pt}                        % Spacing between "Kapitel X" and the title
-  {\Huge}                      % Formatting for the title
-  [\vspace{-10pt}]             % Adjust vertical spacing after the title
-% Reduce space between title and first line of text
+\titleformat{\chapter}[display]
+  {\normalfont\Huge\bfseries} % Formatting for the chapter block
+  {\Large\bfseries Kapitel \thechapter} % Small size for "Kapitel" and bold for consistency
+  {0pt} % Space between "Kapitel X" and the title
+  {\Huge} % Larger size for the title
+  [\vspace{-10pt}] % Adjust vertical spacing
 \titlespacing*{\chapter}{0pt}{0pt}{10pt}
 
+
+% Rename table of contents and appendix
 \addto\captionsenglish{\renewcommand{\contentsname}{Indholdsfortegnelse}}
 \addto\captionsenglish{\renewcommand{\appendixname}{Bilag}}
 
-% Page layout with gutter
+% Page layout
 \usepackage[a4paper, top=1in, bottom=1in, left=1.5in, right=1in, bindingoffset=0.5in]{geometry}
 
 % Custom spacing for theorem environments
 \makeatletter
-\def\thm@space@setup{%
-  \thm@preskip=8pt plus 2pt minus 4pt % Space before the theorem
-  \thm@postskip=\thm@preskip         % Space after the theorem
+\def\thm@space@setup{
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
 }
 \makeatother
 
-% Remove gutter
-% \usepackage[inner=0.5in,outer=0.5in]{geometry}
-
-% Add title page image
+% Title page with image
 \usepackage{titling}
 \pretitle{\begin{center}
 \includegraphics[width=5in,height=5in]{images/kap1.jpg}\LARGE\\}
 \posttitle{\end{center}}
 
-
-% Set Fira Sans as the main font
+% Font setup
 \usepackage{fontspec}
 \setmainfont[
     BoldFont={Fira Sans SemiBold},
@@ -68,17 +66,14 @@
     BoldItalicFont={Fira Sans SemiBold Italic}
 ]{Fira Sans}
 
-% Set overall page format to fancy
+% Page format
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 
-% Customize header
-\fancyhead[L]{\footnotesize \nouppercase{\leftmark}} % Chapter title in footnotesize
-\fancyhead[R]{\footnotesize \thepage} % Page number in footnotesize
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 
-% Allows roman numbers before chap. 1 and start latin numbers from chap. 1
+\fancyhead[L]{\footnotesize Kapitel \thechapter: \leftmark}
+\fancyhead[R]{\footnotesize \thepage} % Page number
+
+% Roman page numbering before chapter 1
 \pagenumbering{gobble}
-
-
-
-

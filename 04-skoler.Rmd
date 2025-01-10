@@ -118,6 +118,8 @@ Ser vi på sammenhængen i segregering ($D$) på hhv. bolig- og skolemarkedet se
 	
 [^48]: Denne korrelation er ydermere stigende over tid (Pearson's $r=0,50$ i 2020 mod $r=0,29$ i 1985). Jeg understøtter dette yderligere med en dekomponeringsanalyse i Larsen [@larsen2024b].
 
+\newpage
+
 ```{r fig-4-4, echo=FALSE, out.width= "100%", fig.cap="Etnisk skole- og boligsegregering i Danmark (D indeks).", fig.topcaption=TRUE}
 knitr::include_graphics("images/Figur5.png")
 ```

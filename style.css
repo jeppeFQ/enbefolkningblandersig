@@ -1,51 +1,54 @@
-/* ------------- New font ------------- */
-  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
- /*------------- Body and header text---------------- */
-
+/* Body and header text */
 .book.font-family-1 {
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
-  font-style: normal;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, .title {
+  line-height: 1.1;
   font-family: 'Bebas Neue', serif;
   color: #2f5275;
 }
 
+h1 {
+  font-size: 3em !important;
+}
+
 .title {
+  line-height: 1.1;
   font-family: 'Bebas Neue', serif;
   font-size: 3em !important;
-  color: #5699cc;
- }
+  color: #2f5275;
+  margin-bottom: 0.0em; /* Reduce space below the title */
+}
 
 .subtitle {
   font-family: 'Bebas Neue', serif;
   color: #2c6793;
+  margin-top: 0; /* Remove extra space above the subtitle */
 }
 
-
- /*------------- ---------------- ---------------- */
-
+/* Captions */
 p.caption {
   color: #777;
   margin-top: 10px;
 }
-p code {
+
+/* Code blocks */
+p code, pre code {
   white-space: inherit;
 }
+
 pre {
   word-break: normal;
   word-wrap: normal;
 }
-pre code {
-  white-space: inherit;
-}
 
-/*------------- LOGO -------------*/
-
+/* Logo in Table of Contents (TOC) */
 .toc-logo {
   width: 200px !important;
   object-fit: contain;
@@ -58,71 +61,42 @@ pre code {
   margin-bottom: 10px;
 }
 
-.summary > li:first-child {
-  height: auto !important;
-}
-
-/* The next two rules make the horizontal line go straight across in top navbar */
-
-.summary > li:first-child {
-    height: 50px;
-    padding-top: 10px;
-    border-bottom: 1px solid rgba(0,0,0,.07);
-}
-
-.book .book-summary ul.summary li.divider {
-    height: 0px;
-}
-
-/*------------- Body Links ------------------*/
-/* hover links i teksten, fx krydsreferencer */
-.book .book-body .page-wrapper .page-inner section.normal a {
-  color: #3f88ca;
-}
-
-.book .book-body .page-wrapper .page-inner section.normal a:hover {
-color: #1f5386; /* darker color when hovering */
-text-decoration: none;
-}
-
-/*------------ TOC --------------*/
-
+/* TOC adjustments */
 .book .book-summary {
   background: white;
   border-right: none;
 }
 
-.summary{
-font-family: 'Muli', sans-serif;
-}
-
 .book .book-summary ul.summary li a,
 .book .book-summary ul.summary li span {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 8px 15px;
   color: #2f5175;
 }
 
-/* hover links i TOC */
 .summary a:hover {
   color: darkred !important;
+  text-decoration: none;
 }
 
-/* highlight i TOC hvor vi er */
-.book .book-summary ul.summary li.active>a { /*active TOC links*/
+.book .book-summary ul.summary li.active > a {
   color: darkred !important;
-  border-left: solid 4px;
-  border-color: darkred;
+  border-left: 4px solid darkred;
   padding-left: 11px !important;
 }
 
-/* heading styles for PARTS, hvis relevant */
-li.appendix span, li.part span { /* for TOC part names */
-  margin-top: 1em;
-  color: color: #1c3046 !important;
-  opacity: 1 !important;
+/* Styling for TOC parts */
+li.appendix span, li.part span {
+  color: #1c3046 !important;
   text-transform: uppercase;
+  opacity: 1 !important;
 }
 
+/* Body links */
+.book .book-body .page-wrapper .page-inner section.normal a {
+  color: #3f88ca;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal a:hover {
+  color: #1f5386;
+  text-decoration: none;
+}

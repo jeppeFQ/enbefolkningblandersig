@@ -1,3 +1,5 @@
+\pagestyle{empty}
+
 ISBN: 978-87-89383-85-9   
        
 Published by:  
@@ -25,7 +27,7 @@ Printed in Denmark by Rosendahls, 2015
 
 if (knitr::is_html_output()) {
 
-  knitr::include_graphics("images/kap1.jpg")
+  knitr::include_graphics("images/kap-temp.jpg")
   
 }
 
@@ -48,7 +50,7 @@ Aalborg 2024
 [Christian Albrekt Larsen](https://vbn.aau.dk/en/persons/albrekt)
 
 
-Forskningsleder på MNcontact. \
+Forskningsleder på MNcontact.\
 Professor, Institut for Politik og Samfund\
 Aalborg Universitet\
 
@@ -57,3 +59,4 @@ Aalborg Universitet\
 ```{=latex}
 \tableofcontents
 ```
+

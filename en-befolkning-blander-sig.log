@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.9)  9 JAN 2025 16:55
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.9)  10 JAN 2025 11:42
  system commands enabled.
 **en-befolkning-blander-sig.tex
 (./en-befolkning-blander-sig.tex
@@ -862,7 +862,7 @@ Package fontspec Info:
 (fontspec)             Italic:mode=node;script=latn;language=dflt;+tlig;+smcp;"
 
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 170.
+(Font)              scaled to size 10.0pt on input line 168.
 
 Package fontspec Info: 
 (fontspec)             Fira Sans scale = 0.9999971046048366.
@@ -936,11 +936,11 @@ Package fontspec Info:
 (fontspec)             Italic:mode=base;script=latn;language=dflt;+smcp;"
 
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/FiraSans(1)/m/n on input line 170.
+(Font)                  OT1/lmr/m/n --> TU/FiraSans(1)/m/n on input line 168.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/FiraSans(1)/m/it on input line 170.
+(Font)                  OT1/lmr/m/it --> TU/FiraSans(1)/m/it on input line 168.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/FiraSans(1)/b/n on input line 170.
+(Font)                  OT1/lmr/bx/n --> TU/FiraSans(1)/b/n on input line 168.
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/01/06 v5.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip95
@@ -1044,34 +1044,34 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 )) (./en-befolkning-blander-sig.aux)
 \openout1 = en-befolkning-blander-sig.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 211.
-LaTeX Font Info:    ... okay on input line 211.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 211.
-LaTeX Font Info:    ... okay on input line 211.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 211.
-LaTeX Font Info:    ... okay on input line 211.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 211.
-LaTeX Font Info:    ... okay on input line 211.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 211.
-LaTeX Font Info:    ... okay on input line 211.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 211.
-LaTeX Font Info:    ... okay on input line 211.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 211.
-LaTeX Font Info:    ... okay on input line 211.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 211.
-LaTeX Font Info:    ... okay on input line 211.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 211.
-LaTeX Font Info:    ... okay on input line 211.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 211.
-LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 213.
+LaTeX Font Info:    ... okay on input line 213.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 211.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 213.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 211.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 213.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 211.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 213.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 211.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 213.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.222735174059428.
@@ -1099,7 +1099,7 @@ Package fontspec Info:
 (fontspec)             <->s*[1.222735174059428]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 12.22733pt on input line 211.
+(Font)              scaled to size 12.22733pt on input line 213.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.222735174059428.
@@ -1135,15 +1135,15 @@ Package fontspec Info:
 (fontspec)             <->s*[1.222735174059428]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.22733pt on input line 211.
+(Font)              scaled to size 12.22733pt on input line 213.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 211.
+(Font)              `operators' in the math version `normal' on input line 213.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 211.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 213.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 211.
+(Font)              `operators' in the math version `bold' on input line 213.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 211.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 213.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.222735174059428.
@@ -1179,13 +1179,13 @@ Package fontspec Info:
 (fontspec)             <->s*[1.222735174059428]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex2;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 211.
+(Font)              `symbols' in the math version `normal' on input line 213.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 211.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 213.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 211.
+(Font)              `symbols' in the math version `bold' on input line 213.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 211.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 213.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 1.222735174059428.
@@ -1221,58 +1221,58 @@ Package fontspec Info:
 (fontspec)             <->s*[1.222735174059428]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex3;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 211.
+(Font)              `largesymbols' in the math version `normal' on input line 213.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 211.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 213.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 211.
+(Font)              `largesymbols' in the math version `bold' on input line 213.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 211.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 213.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.55913pt on input line 211.
+(Font)              scaled to size 8.55913pt on input line 213.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.11366pt on input line 211.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 211.
+(Font)              scaled to size 6.11366pt on input line 213.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 213.
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 12.22733pt on input line 211.
+(Font)              scaled to size 12.22733pt on input line 213.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.55913pt on input line 211.
+(Font)              scaled to size 8.55913pt on input line 213.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.11366pt on input line 211.
+(Font)              scaled to size 6.11366pt on input line 213.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 12.22733pt on input line 211.
+(Font)              scaled to size 12.22733pt on input line 213.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.55913pt on input line 211.
+(Font)              scaled to size 8.55913pt on input line 213.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.11366pt on input line 211.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 211.
+(Font)              scaled to size 6.11366pt on input line 213.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 213.
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 211.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 213.
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package microtype Info: Patching varwidth to enable character protrusion.
 \MT@vwid@leftmargin=\dimen300
 \MT@vwid@rightmargin=\dimen301
-LaTeX Info: Redefining \microtypecontext on input line 211.
-Package microtype Info: Applying patch `item' on input line 211.
-Package microtype Info: Applying patch `toc' on input line 211.
-Package microtype Info: Applying patch `eqnum' on input line 211.
-Package microtype Info: Applying patch `footnote' on input line 211.
-Package microtype Info: Applying patch `verbatim' on input line 211.
-LaTeX Info: Redefining \microtypesetup on input line 211.
+LaTeX Info: Redefining \microtypecontext on input line 213.
+Package microtype Info: Applying patch `item' on input line 213.
+Package microtype Info: Applying patch `toc' on input line 213.
+Package microtype Info: Applying patch `eqnum' on input line 213.
+Package microtype Info: Applying patch `footnote' on input line 213.
+Package microtype Info: Applying patch `verbatim' on input line 213.
+LaTeX Info: Redefining \microtypesetup on input line 213.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 211.
+LaTeX Info: Redefining \showhyphens on input line 213.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
@@ -1286,7 +1286,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 211.
+Package hyperref Info: Link coloring OFF on input line 213.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: Fixing longtable code of `floatrow' package.
 Package caption Info: End \AtBeginDocument code.
@@ -1331,35 +1331,37 @@ Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/kap1.jpg, id=7, 480.79625pt x 322.20375pt>
+<images/kap1.jpg, id=7, 250.96838pt x 250.96838pt>
 File: images/kap1.jpg Graphic file (type jpg)
 <use images/kap1.jpg>
-Package luatex.def Info: images/kap1.jpg  used on input line 212.
-(luatex.def)             Requested size: 361.35927pt x 361.3672pt.
+Package luatex.def Info: images/kap1.jpg  used on input line 214.
+(luatex.def)             Requested size: 361.39035pt x 361.39035pt.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 212.
+(Font)              scaled to size 17.28pt on input line 214.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
+(Font)              scaled to size 17.28pt on input line 214.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 214.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
-(Font)              scaled to size 17.28pt on input line 212.
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 212.
+(Font)              scaled to size 12.0pt on input line 214.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 14.67279pt on input line 212.
+(Font)              scaled to size 14.67279pt on input line 214.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 9.78186pt on input line 212.
+(Font)              scaled to size 9.78186pt on input line 214.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.3364pt on input line 212.
+(Font)              scaled to size 7.3364pt on input line 214.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.67279pt on input line 212.
+(Font)              scaled to size 14.67279pt on input line 214.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.78186pt on input line 212.
+(Font)              scaled to size 9.78186pt on input line 214.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.3364pt on input line 212.
+(Font)              scaled to size 7.3364pt on input line 214.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 14.67279pt on input line 212.
+(Font)              scaled to size 14.67279pt on input line 214.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.78186pt on input line 212.
+(Font)              scaled to size 9.78186pt on input line 214.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.3364pt on input line 212.
+(Font)              scaled to size 7.3364pt on input line 214.
 (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (/Users/jeppefl/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1371,23 +1373,23 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 {/Users/jeppefl/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./images/kap1.jpg>]
 
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 227.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.'
 [2]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 233.
+(Font)              scaled to size 24.88pt on input line 237.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 24.88pt on input line 233.
+(Font)              scaled to size 24.88pt on input line 237.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 236.
+(Font)              scaled to size 10.0pt on input line 240.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 238.
+(Font)              scaled to size 7.0pt on input line 242.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 238.
+(Font)              scaled to size 8.0pt on input line 242.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 242.
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--251
+Underfull \hbox (badness 10000) in paragraph at lines 252--255
 
  []
 
@@ -1412,22 +1414,23 @@ LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
 
 [4]
 Chapter 1.
-<images/kap0.jpg, id=158, 480.79625pt x 320.19624pt>
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
+(Font)              scaled to size 14.4pt on input line 263.
+<images/kap0.jpg, id=158, 1387.584pt x 925.056pt>
 File: images/kap0.jpg Graphic file (type jpg)
 <use images/kap0.jpg>
-Package luatex.def Info: images/kap0.jpg  used on input line 264.
-(luatex.def)             Requested size: 380.69789pt x 253.53854pt.
+Package luatex.def Info: images/kap0.jpg  used on input line 271.
+(luatex.def)             Requested size: 380.69789pt x 253.79129pt.
 
 
 [1
+
 
 <./images/kap0.jpg>]
 
 [2]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 282.
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 282.
+(Font)              scaled to size 14.4pt on input line 289.
 
 
 [3]
@@ -1436,14 +1439,14 @@ LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
 <en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf, id=204, 469.755pt x 325.215pt>
 File: en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf  used on input line 303.
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf  used on input line 310.
 (luatex.def)             Requested size: 380.69789pt x 263.56165pt.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 303.
+(Font)              scaled to size 9.0pt on input line 310.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 303.
+(Font)              scaled to size 9.0pt on input line 310.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 303.
+(Font)              scaled to size 9.0pt on input line 310.
 
 
 [5<./en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf>]
@@ -1452,72 +1455,78 @@ LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
 
 [7]
 
-LaTeX Warning: Reference `fig:fig-1-22' on page 8 undefined on input line 334.
-
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 342.
-
-
 [8]
+<en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf, id=264, 401.5pt x 301.125pt>
+File: en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf Graphic file (type pdf)
+<use en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf>
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf  used on input line 346.
+(luatex.def)             Requested size: 380.69789pt x 285.5433pt.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
+(Font)              scaled to size 8.0pt on input line 351.
 
-[9]
+
+[9<./en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf>]
 
 [10]
+
+[11]
+
+[12
+
+]
 Chapter 2.
-<images/kap2.jpg, id=285, 479.7925pt x 320.19624pt>
+<images/kap2.jpg, id=364, 1255.089pt x 836.6457pt>
 File: images/kap2.jpg Graphic file (type jpg)
 <use images/kap2.jpg>
-Package luatex.def Info: images/kap2.jpg  used on input line 375.
-(luatex.def)             Requested size: 380.69789pt x 254.06621pt.
+Package luatex.def Info: images/kap2.jpg  used on input line 384.
+(luatex.def)             Requested size: 380.69789pt x 253.77867pt.
 
 
-[11
+[13<./images/kap2.jpg>]
 
-<./images/kap2.jpg>]
-
-[12]
-<images/figur_intergruppepartnerskaber_alle.pdf, id=305, 264.79929pt x 184.94093pt>
+[14]
+<images/figur_intergruppepartnerskaber_alle.pdf, id=383, 264.79929pt x 184.94093pt>
 File: images/figur_intergruppepartnerskaber_alle.pdf Graphic file (type pdf)
 <use images/figur_intergruppepartnerskaber_alle.pdf>
-Package luatex.def Info: images/figur_intergruppepartnerskaber_alle.pdf  used on input line 401.
+Package luatex.def Info: images/figur_intergruppepartnerskaber_alle.pdf  used on input line 410.
 (luatex.def)             Requested size: 285.5234pt x 199.42563pt.
 
 
-[13<./images/figur_intergruppepartnerskaber_alle.pdf>]
+[15<./images/figur_intergruppepartnerskaber_alle.pdf>]
 
-[14]
-<images/figur_intergruppepartnerskaber_2020.pdf, id=341, 312.97928pt x 376.42632pt>
+[16]
+<images/figur_intergruppepartnerskaber_2020.pdf, id=420, 312.97928pt x 376.42632pt>
 File: images/figur_intergruppepartnerskaber_2020.pdf Graphic file (type pdf)
 <use images/figur_intergruppepartnerskaber_2020.pdf>
-Package luatex.def Info: images/figur_intergruppepartnerskaber_2020.pdf  used on input line 422.
+Package luatex.def Info: images/figur_intergruppepartnerskaber_2020.pdf  used on input line 431.
 (luatex.def)             Requested size: 380.69789pt x 457.88388pt.
 
 Underfull \vbox (badness 4060) has occurred while \output is active []
 
 
 
-[15<./images/figur_intergruppepartnerskaber_2020.pdf>]
+[17<./images/figur_intergruppepartnerskaber_2020.pdf>]
 
-[16]
+[18]
 
-[17]
+[19]
 
-[18
+[20
 
 ]
 Chapter 3.
-<images/kap3.jpg, id=387, 481.8pt x 321.2pt>
+<images/kap3.jpg, id=466, 1256.2935pt x 837.6093pt>
 File: images/kap3.jpg Graphic file (type jpg)
 <use images/kap3.jpg>
-Package luatex.def Info: images/kap3.jpg  used on input line 462.
-(luatex.def)             Requested size: 380.69789pt x 253.80403pt.
+Package luatex.def Info: images/kap3.jpg  used on input line 471.
+(luatex.def)             Requested size: 380.69789pt x 253.81534pt.
 
 
-[19<./images/kap3.jpg>]
+[21<./images/kap3.jpg>]
 
-[20]
+[22]
 
-[21]
+[23]
 
 Package fontspec Info: 
 (fontspec)             Fira Sans scale = 0.9999971046048366.
@@ -1622,7 +1631,7 @@ Package fontspec Info:
 (fontspec)             Sans/BI:mode=node;script=latn;language=dflt;+tlig;+smcp;"
 
 LaTeX Font Info:    Font shape `TU/FiraSans(2)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 505.
+(Font)              scaled to size 10.0pt on input line 514.
 
 Package fontspec Info: 
 (fontspec)             Fira Sans scale = 0.9999971046048366.
@@ -1704,9 +1713,9 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 LaTeX Font Info:    Font shape `TU/FiraSans(2)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 530.
+(Font)              scaled to size 9.0pt on input line 539.
 LaTeX Font Info:    Font shape `TU/FiraSans(2)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 530.
+(Font)              scaled to size 9.0pt on input line 539.
 
 Package fontspec Info: 
 (fontspec)             Fira Sans scale = 0.9999967828901227.
@@ -1957,7 +1966,7 @@ Package fontspec Info:
 
 
 
-[22]
+[24]
 
 Package fontspec Info: 
 (fontspec)             Fira Sans scale = 0.9999971046048366.
@@ -2431,16 +2440,16 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 
-LaTeX Warning: Reference `fig:fig-1-2' on page 23 undefined on input line 706.
+LaTeX Warning: Reference `fig:fig-1-2' on page 25 undefined on input line 715.
 
-<images/figur_3_1.png, id=431, 361.1091pt x 177.5433pt>
+<images/figur_3_1.png, id=509, 361.1091pt x 177.5433pt>
 File: images/figur_3_1.png Graphic file (type png)
 <use images/figur_3_1.png>
-Package luatex.def Info: images/figur_3_1.png  used on input line 713.
+Package luatex.def Info: images/figur_3_1.png  used on input line 724.
 (luatex.def)             Requested size: 380.69789pt x 187.18178pt.
 
 
-[23]
+[25]
 
 Package fontspec Info: 
 (fontspec)             Fira Sans scale = 0.9999971046048366.
@@ -2530,7 +2539,7 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 
-Overfull \hbox (1.62393pt too wide) in paragraph at lines 752--752
+Overfull \hbox (1.62393pt too wide) in paragraph at lines 761--761
  []|[]\TU/FiraSans(2)/m/n/9 29,967[]|
  []
 
@@ -2615,7 +2624,7 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 
-Overfull \hbox (0.72556pt too wide) in paragraph at lines 770--770
+Overfull \hbox (0.72556pt too wide) in paragraph at lines 779--779
  []|[]\TU/FiraSans(2)/m/n/9 27,057[]|
  []
 
@@ -2797,186 +2806,187 @@ Package fontspec Info:
 
 
 
-[24<./images/figur_3_1.png>]
+[26<./images/figur_3_1.png>]
 
-[25]
+[27]
 
-[26
+[28
 
 ]
 Chapter 4.
-<images/kap4.jpg, id=461, 480.79625pt x 358.33875pt>
+<images/kap4.jpg, id=539, 1591.8672pt x 1183.3008pt>
 File: images/kap4.jpg Graphic file (type jpg)
 <use images/kap4.jpg>
-Package luatex.def Info: images/kap4.jpg  used on input line 844.
-(luatex.def)             Requested size: 380.69789pt x 283.74065pt.
+Package luatex.def Info: images/kap4.jpg  used on input line 853.
+(luatex.def)             Requested size: 380.69789pt x 282.98688pt.
 
 
-[27<./images/kap4.jpg>]
+[29<./images/kap4.jpg>]
 
-[28]
+[30]
 
-LaTeX Warning: Citation `ref-bjerrenielsen2020' on page 29 undefined on input line 870.
-
-
-LaTeX Warning: Citation `ref-nielsen2019' on page 29 undefined on input line 870.
+LaTeX Warning: Citation `ref-bjerrenielsen2020' on page 31 undefined on input line 879.
 
 
+LaTeX Warning: Citation `ref-nielsen2019' on page 31 undefined on input line 879.
 
-[29]
-<images/figur_3_1c_distance_antal.pdf, id=515, 569.05598pt x 284.52296pt>
+
+
+[31]
+<images/figur_3_1c_distance_antal.pdf, id=594, 569.05598pt x 284.52296pt>
 File: images/figur_3_1c_distance_antal.pdf Graphic file (type pdf)
 <use images/figur_3_1c_distance_antal.pdf>
-Package luatex.def Info: images/figur_3_1c_distance_antal.pdf  used on input line 875.
+Package luatex.def Info: images/figur_3_1c_distance_antal.pdf  used on input line 884.
 (luatex.def)             Requested size: 380.69789pt x 190.35152pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[30<./images/figur_3_1c_distance_antal.pdf>]
+[32<./images/figur_3_1c_distance_antal.pdf>]
 
-[31]
-<images/figur_3_2.pdf, id=582, 551.99223pt x 240.35799pt>
+[33]
+<images/figur_3_2.pdf, id=660, 551.99223pt x 240.35799pt>
 File: images/figur_3_2.pdf Graphic file (type pdf)
 <use images/figur_3_2.pdf>
-Package luatex.def Info: images/figur_3_2.pdf  used on input line 902.
+Package luatex.def Info: images/figur_3_2.pdf  used on input line 911.
 (luatex.def)             Requested size: 380.69789pt x 165.77383pt.
 
 
-[32<./images/figur_3_2.pdf>]
-<images/Figur4.png, id=610, 304.5779pt x 229.4974pt>
+[34<./images/figur_3_2.pdf>]
+<images/Figur4.png, id=688, 304.5779pt x 229.4974pt>
 File: images/Figur4.png Graphic file (type png)
 <use images/Figur4.png>
-Package luatex.def Info: images/Figur4.png  used on input line 916.
+Package luatex.def Info: images/Figur4.png  used on input line 925.
 (luatex.def)             Requested size: 380.69789pt x 286.86404pt.
 
 Underfull \vbox (badness 4846) has occurred while \output is active []
 
 
 
-[33]
-<images/Figur5.png, id=631, 301.928pt x 230.0595pt>
+[35]
+
+[36<./images/Figur4.png>]
+<images/Figur5.png, id=727, 301.928pt x 230.0595pt>
 File: images/Figur5.png Graphic file (type png)
 <use images/Figur5.png>
-Package luatex.def Info: images/Figur5.png  used on input line 928.
+Package luatex.def Info: images/Figur5.png  used on input line 939.
 (luatex.def)             Requested size: 380.69789pt x 290.09764pt.
 
 
-[34<./images/Figur4.png>]
+[37<./images/Figur5.png>]
 
-[35<./images/Figur5.png>]
-
-[36]
+[38]
 Chapter 5.
-<images/kap5.jpg, id=668, 480.79625pt x 335.2525pt>
+<images/kap5.jpg, id=748, 1563.9228pt x 1090.3134pt>
 File: images/kap5.jpg Graphic file (type jpg)
 <use images/kap5.jpg>
-Package luatex.def Info: images/kap5.jpg  used on input line 950.
-(luatex.def)             Requested size: 380.69789pt x 265.46043pt.
+Package luatex.def Info: images/kap5.jpg  used on input line 961.
+(luatex.def)             Requested size: 380.69789pt x 265.40721pt.
 
 
-[37
+[39
 
 <./images/kap5.jpg>]
 
-LaTeX Warning: Hyper reference `bilagA' on page 38 undefined on input line 966.
+LaTeX Warning: Hyper reference `bilagA' on page 40 undefined on input line 977.
 
 
 
-[38]
-<en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf, id=724, 469.755pt x 325.215pt>
+[40]
+<en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf, id=802, 469.755pt x 325.215pt>
 File: en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf  used on input line 973.
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf  used on input line 984.
 (luatex.def)             Requested size: 380.69789pt x 263.56165pt.
 
-LaTeX Warning: Hyper reference `bilagA' on page 39 undefined on input line 976.
+LaTeX Warning: Hyper reference `bilagA' on page 41 undefined on input line 987.
 
 
 
-[39<./en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf>]
+[41<./en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf>]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 980.
+(Font)              scaled to size 8.0pt on input line 991.
 
-Underfull \hbox (badness 10000) in paragraph at lines 982--982
+Underfull \hbox (badness 10000) in paragraph at lines 993--993
 |[]\TU/FiraSans(0)/b/n/14.4 Gen-nem-snitlig ek-sponer-ing til in-d-van-drere og
  []
 
 
 
-[40]
-<images/Figur_4_1.png, id=885, 281.1303pt x 207.4149pt>
+[42]
+<images/Figur_4_1.png, id=963, 281.1303pt x 207.4149pt>
 File: images/Figur_4_1.png Graphic file (type png)
 <use images/Figur_4_1.png>
-Package luatex.def Info: images/Figur_4_1.png  used on input line 993.
+Package luatex.def Info: images/Figur_4_1.png  used on input line 1004.
 (luatex.def)             Requested size: 266.48735pt x 196.6126pt.
-<images/Figur_4_2.png, id=890, 283.0575pt x 208.6194pt>
+
+
+[43<./images/Figur_4_1.png>]
+<images/Figur_4_2.png, id=975, 283.0575pt x 208.6194pt>
 File: images/Figur_4_2.png Graphic file (type png)
 <use images/Figur_4_2.png>
-Package luatex.def Info: images/Figur_4_2.png  used on input line 1008.
+Package luatex.def Info: images/Figur_4_2.png  used on input line 1021.
 (luatex.def)             Requested size: 266.48735pt x 196.42377pt.
-<images/Figur_4_3.png, id=892, 280.52805pt x 202.8378pt>
+
+
+[44<./images/Figur_4_2.png>]
+<images/Figur_4_3.png, id=983, 280.52805pt x 202.8378pt>
 File: images/Figur_4_3.png Graphic file (type png)
 <use images/Figur_4_3.png>
-Package luatex.def Info: images/Figur_4_3.png  used on input line 1021.
+Package luatex.def Info: images/Figur_4_3.png  used on input line 1036.
 (luatex.def)             Requested size: 266.48735pt x 192.70409pt.
 
 
-[41<./images/Figur_4_1.png>]
-
-[42<./images/Figur_4_2.png><./images/Figur_4_3.png>]
-<images/Figur_4_4.png, id=913, 281.49165pt x 207.77625pt>
+[45<./images/Figur_4_3.png>]
+<images/Figur_4_4.png, id=999, 281.49165pt x 207.77625pt>
 File: images/Figur_4_4.png Graphic file (type png)
 <use images/Figur_4_4.png>
-Package luatex.def Info: images/Figur_4_4.png  used on input line 1036.
+Package luatex.def Info: images/Figur_4_4.png  used on input line 1053.
 (luatex.def)             Requested size: 266.48735pt x 196.71417pt.
 
-Underfull \hbox (badness 6396) in paragraph at lines 1036--1036
+Underfull \hbox (badness 6396) in paragraph at lines 1053--1053
 []\TU/FiraSans(0)/b/n/9 Figur 5.5: |\TU/FiraSans(0)/m/it/9 Beskæftigede in-d-van-dr-eres/efterkom-meres gen-nem-snitlige ek-sponer-ing til
  []
 
 
 
-[43<./images/Figur_4_4.png>]
-<images/Figur_4_5.png, id=926, 282.0939pt x 207.53535pt>
+[46<./images/Figur_4_4.png>]
+<images/Figur_4_5.png, id=1011, 282.0939pt x 207.53535pt>
 File: images/Figur_4_5.png Graphic file (type png)
 <use images/Figur_4_5.png>
-Package luatex.def Info: images/Figur_4_5.png  used on input line 1053.
+Package luatex.def Info: images/Figur_4_5.png  used on input line 1072.
 (luatex.def)             Requested size: 266.48735pt x 196.07443pt.
 
-
-[44<./images/Figur_4_5.png>]
-
-LaTeX Warning: Hyper reference `indledning' on page 45 undefined on input line 1067.
+LaTeX Warning: Hyper reference `indledning' on page 47 undefined on input line 1086.
 
 
 
-[45]
+[47<./images/Figur_4_5.png>]
 
-[46
+[48
 
 ]
 Chapter 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1069--1069
+Underfull \hbox (badness 10000) in paragraph at lines 1088--1088
 |\TU/FiraSans(0)/b/n/24.88 Tværet-niske ven-sk-aber --- det
  []
 
 
 warning  (file images/kap71.jpg) (readjpg): Exif resolution 220dpi x 220dpi differs from the input resolution 72dpi x 72dpi
-<images/kap71.jpg, id=953, 573.561pt x 411.6105pt>
+<images/kap71.jpg, id=1029, 573.561pt x 411.6105pt>
 File: images/kap71.jpg Graphic file (type jpg)
 <use images/kap71.jpg>
-Package luatex.def Info: images/kap71.jpg  used on input line 1075.
+Package luatex.def Info: images/kap71.jpg  used on input line 1094.
 (luatex.def)             Requested size: 380.69789pt x 273.21509pt.
 
 
-[47<./images/kap71.jpg
+[49<./images/kap71.jpg
 warning  (readjpg): Exif resolution 220dpi x 220dpi differs from the input resolution 72dpi x 72dpi
 >]
 
-[48]
+[50]
 
 Package fontspec Info: 
 (fontspec)             Fira Sans scale = 0.9999967828901227.
@@ -3361,138 +3371,143 @@ Package fontspec Info:
 Package fontspec Info: 
 (fontspec)             Fira Sans scale = 1.
 
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/it' will be
+(Font)              scaled to size 8.0pt on input line 1198.
 
 
-[49]
-<en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf, id=987, 469.755pt x 325.215pt>
+[51]
+<en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf, id=1063, 469.755pt x 325.215pt>
 File: en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf  used on input line 1187.
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf  used on input line 1206.
 (luatex.def)             Requested size: 380.69789pt x 263.56165pt.
 
 
-[50<./en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf>]
-<images/Figur_6_2.jpg, id=1007, 569.0058pt x 142.3719pt>
+[52<./en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf>]
+<images/Figur_6_2.jpg, id=1084, 569.0058pt x 142.3719pt>
 File: images/Figur_6_2.jpg Graphic file (type jpg)
 <use images/Figur_6_2.jpg>
-Package luatex.def Info: images/Figur_6_2.jpg  used on input line 1200.
+Package luatex.def Info: images/Figur_6_2.jpg  used on input line 1219.
 (luatex.def)             Requested size: 380.69789pt x 95.25397pt.
 
 
-[51<./images/Figur_6_2.jpg>]
-<en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf, id=1027, 469.755pt x 325.215pt>
+[53<./images/Figur_6_2.jpg>]
+<en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf, id=1097, 469.755pt x 325.215pt>
 File: en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf  used on input line 1223.
-(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
-<en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf, id=1030, 469.755pt x 325.215pt>
-File: en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf Graphic file (type pdf)
-<use en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf  used on input line 1231.
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf  used on input line 1242.
 (luatex.def)             Requested size: 380.69789pt x 263.56165pt.
 
-
-[52]
-
-[53<./en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf><./en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf>]
-<en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf, id=1055, 469.755pt x 325.215pt>
-File: en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf Graphic file (type pdf)
-<use en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf  used on input line 1237.
-(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
-
-
-[54<./en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf>]
-Chapter 7.
-<images/kap7.jpg, id=1071, 478.78876pt x 320.19624pt>
-File: images/kap7.jpg Graphic file (type jpg)
-<use images/kap7.jpg>
-Package luatex.def Info: images/kap7.jpg  used on input line 1250.
-(luatex.def)             Requested size: 380.69789pt x 254.59875pt.
-
-
-[55
-
-<./images/kap7.jpg>]
-
-[56]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[57]
+[54<./en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf>]
+<en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf, id=1112, 469.755pt x 325.215pt>
+File: en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf Graphic file (type pdf)
+<use en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf>
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf  used on input line 1252.
+(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
+<en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf, id=1115, 469.755pt x 325.215pt>
+File: en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf Graphic file (type pdf)
+<use en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf>
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf  used on input line 1258.
+(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
+
+
+[55<./en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf>]
+
+[56<./en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf>]
+Chapter 7.
+<images/kap7.jpg, id=1141, 2616.174pt x 1744.116pt>
+File: images/kap7.jpg Graphic file (type jpg)
+<use images/kap7.jpg>
+Package luatex.def Info: images/kap7.jpg  used on input line 1271.
+(luatex.def)             Requested size: 380.69789pt x 253.78188pt.
+
+
+[57
+
+<./images/kap7.jpg>]
 
 [58]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [59]
 
 [60]
 
-[61
+[61]
+
+[62]
+
+[63
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[62
+[64
 Missing character: There is no ‐ (U+2010) in font "name:Fira Sans:mode=node;script=latn;language=dflt;+tlig;"!
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[63]
+[65]
 
-[64]
+[66]
 Bilag A.
 
 
-[65
+[67
 
 ]
 
-[66]
-<en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf, id=1258, 469.755pt x 325.215pt>
+[68]
+<en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf, id=1327, 469.755pt x 325.215pt>
 File: en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf  used on input line 1604.
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf  used on input line 1622.
 (luatex.def)             Requested size: 380.69789pt x 263.56165pt.
 
 
-[67<./en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf>]
-
-[68]
-
-[69]
-<en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf, id=1321, 469.755pt x 325.215pt>
-File: en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf Graphic file (type pdf)
-<use en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf  used on input line 1645.
-(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
-<en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf, id=1322, 469.755pt x 325.215pt>
-File: en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf Graphic file (type pdf)
-<use en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf  used on input line 1649.
-(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
-
+[69<./en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf>]
 
 [70]
 
-[71<./en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf><./en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf>]
-<en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf, id=1354, 469.755pt x 325.215pt>
+[71]
+<en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf, id=1390, 469.755pt x 325.215pt>
+File: en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf Graphic file (type pdf)
+<use en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf>
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf  used on input line 1663.
+(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
+<en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf, id=1391, 469.755pt x 325.215pt>
+File: en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf Graphic file (type pdf)
+<use en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf>
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf  used on input line 1667.
+(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
+
+
+[72]
+
+[73<./en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf><./en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf>]
+<en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf, id=1423, 469.755pt x 325.215pt>
 File: en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf  used on input line 1659.
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf  used on input line 1677.
 (luatex.def)             Requested size: 380.69789pt x 263.56165pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[72<./en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf>]
+[74<./en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf>]
 
-[73] (./en-befolkning-blander-sig.aux)
+[75] (./en-befolkning-blander-sig.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
@@ -3503,19 +3518,19 @@ LaTeX Warning: There were undefined references.
 )
 
 Here is how much of LuaTeX's memory you used:
- 28166 strings out of 475518
- 156364,1648299 words of node,token memory allocated
- 1628 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 local_par, 41 glue, 5 kern, 1 penalty, 1 margin_kern, 4 glyph, 167 attribute, 78 glue_spec, 85 attribute_list, 2 write, 35 pdf_action nodes
-   avail lists: 1:7,2:2120,3:492,4:298,5:2386,6:118,7:12769,8:55,9:1308,10:29,11:995
- 50178 multiletter control sequences out of 65536+600000
- 96 fonts using 35141079 bytes
+ 28177 strings out of 475518
+ 156368,1648299 words of node,token memory allocated
+ 1525 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 local_par, 34 glue, 5 kern, 1 penalty, 1 margin_kern, 4 glyph, 151 attribute, 78 glue_spec, 77 attribute_list, 2 write, 34 pdf_action nodes
+   avail lists: 1:8,2:2143,3:492,4:298,5:2386,6:119,7:12767,8:55,9:1307,10:31,11:995
+ 50187 multiletter control sequences out of 65536+600000
+ 97 fonts using 35871975 bytes
  94i,13n,131p,4004b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</Users/jeppefl/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></Users/jeppefl/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></Users/jeppefl/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></Users/jeppefl/Library/Fonts/FiraSans-Bold.ttf></Users/jeppefl/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></Users/jeppefl/Library/Fonts/FiraSans-SemiBold.ttf></Users/jeppefl/Library/Fonts/FiraSans-Italic.ttf></Users/jeppefl/Library/Fonts/FiraSans-Regular.ttf>
-Output written on en-befolkning-blander-sig.pdf (79 pages, 6412374 bytes).
+</Users/jeppefl/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></Users/jeppefl/Library/Fonts/FiraSans-SemiBoldItalic.ttf></Users/jeppefl/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></Users/jeppefl/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></Users/jeppefl/Library/Fonts/FiraSans-Bold.ttf></Users/jeppefl/Library/Fonts/FiraSans-Regular.ttf></Users/jeppefl/Library/Fonts/FiraSans-Italic.ttf></Users/jeppefl/Library/Fonts/FiraSans-SemiBold.ttf>
+Output written on en-befolkning-blander-sig.pdf (81 pages, 68237941 bytes).
 
-PDF statistics: 1589 PDF objects out of 1728 (max. 8388607)
- 1272 compressed objects within 13 object streams
- 280 named destinations out of 1000 (max. 131072)
+PDF statistics: 1660 PDF objects out of 1728 (max. 8388607)
+ 1313 compressed objects within 14 object streams
+ 279 named destinations out of 1000 (max. 131072)
  408 words of extra memory for PDF output out of 10000 (max. 100000000)
 

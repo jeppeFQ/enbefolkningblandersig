@@ -98,8 +98,7 @@
 \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
-
-% Load packages
+% Load essential packages
 \usepackage{booktabs}
 \usepackage{amsthm}
 \usepackage{svg}
@@ -118,49 +117,48 @@
 \usepackage{xcolor}
 \usepackage{hyperref}
 
-% Set figure title above figure (default is below)
+% Figure title above figures
 \usepackage{floatrow}
 \floatsetup[figure]{capposition=top}
 
-% Set title headings (i.e., English to Danish)
+% Customize captions
 \usepackage{caption}
 \captionsetup[figure]{name=Figur, labelfont=bf, textfont=it, font=small}
 \captionsetup[table]{name=Tabel, labelfont=bf, textfont=it, font=small}
+
+% Customize chapter titles
 \usepackage{titlesec}
-\titleformat{\chapter}[display] % 'display' places content on separate lines
-  {\normalfont\Huge\bfseries}  % Formatting for the chapter heading
-  {Kapitel \thechapter}        % "Kapitel X" on the first line
-  {0pt}                        % Spacing between "Kapitel X" and the title
-  {\Huge}                      % Formatting for the title
-  [\vspace{-10pt}]             % Adjust vertical spacing after the title
-% Reduce space between title and first line of text
+\titleformat{\chapter}[display]
+  {\normalfont\Huge\bfseries} % Formatting for the chapter block
+  {\Large\bfseries Kapitel \thechapter} % Small size for "Kapitel" and bold for consistency
+  {0pt} % Space between "Kapitel X" and the title
+  {\Huge} % Larger size for the title
+  [\vspace{-10pt}] % Adjust vertical spacing
 \titlespacing*{\chapter}{0pt}{0pt}{10pt}
 
+
+% Rename table of contents and appendix
 \addto\captionsenglish{\renewcommand{\contentsname}{Indholdsfortegnelse}}
 \addto\captionsenglish{\renewcommand{\appendixname}{Bilag}}
 
-% Page layout with gutter
+% Page layout
 \usepackage[a4paper, top=1in, bottom=1in, left=1.5in, right=1in, bindingoffset=0.5in]{geometry}
 
 % Custom spacing for theorem environments
 \makeatletter
-\def\thm@space@setup{%
-  \thm@preskip=8pt plus 2pt minus 4pt % Space before the theorem
-  \thm@postskip=\thm@preskip         % Space after the theorem
+\def\thm@space@setup{
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
 }
 \makeatother
 
-% Remove gutter
-% \usepackage[inner=0.5in,outer=0.5in]{geometry}
-
-% Add title page image
+% Title page with image
 \usepackage{titling}
 \pretitle{\begin{center}
 \includegraphics[width=5in,height=5in]{images/kap1.jpg}\LARGE\\}
 \posttitle{\end{center}}
 
-
-% Set Fira Sans as the main font
+% Font setup
 \usepackage{fontspec}
 \setmainfont[
     BoldFont={Fira Sans SemiBold},
@@ -168,20 +166,17 @@
     BoldItalicFont={Fira Sans SemiBold Italic}
 ]{Fira Sans}
 
-% Set overall page format to fancy
+% Page format
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 
-% Customize header
-\fancyhead[L]{\footnotesize \nouppercase{\leftmark}} % Chapter title in footnotesize
-\fancyhead[R]{\footnotesize \thepage} % Page number in footnotesize
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
 
-% Allows roman numbers before chap. 1 and start latin numbers from chap. 1
+\fancyhead[L]{\footnotesize Kapitel \thechapter: \leftmark}
+\fancyhead[R]{\footnotesize \thepage} % Page number
+
+% Roman page numbering before chapter 1
 \pagenumbering{gobble}
-
-
-
-
 \usepackage{flafter}
 \usepackage{fontspec}
 \usepackage{multirow}
@@ -199,17 +194,26 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={En befolkning blander sig---Danskernes og indvandrernes kontakt i familier og på skoler og arbejdspladser},
+  pdftitle={En befolkning blander sig},
   pdfauthor={Christian Albrekt Larsen (red.); Jeppe Fjeldgaard Qvist; Hans-Peter Y. Qvist (red.); Lanciné Diop-Christensen; Jeevitha Yogachandiran Qvist},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{En befolkning blander sig---\emph{Danskernes og indvandrernes kontakt i familier og på skoler og arbejdspladser}}
+\title{\textbf{En befolkning blander sig}}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{\emph{Danskernes og indvandrernes kontakt i familier og på skoler og arbejdspladser}}
 \author{Christian Albrekt Larsen (red.) \and Jeppe Fjeldgaard Qvist \and Hans-Peter Y. Qvist (red.) \and Lanciné Diop-Christensen \and Jeevitha Yogachandiran Qvist}
-\date{2025-01-09 16:54:58}
+\date{2025-01-10 11:42:00}
 
 \begin{document}
 \maketitle
+
+\pagestyle{empty}
 
 ISBN: 978-87-89383-85-9
 
@@ -252,6 +256,9 @@ Aalborg Universitet\\
 \newpage
 
 \tableofcontents
+
+\clearpage
+\pagestyle{fancy}
 
 \chapter{En befolkning blander sig}\label{kap1}
 
@@ -333,9 +340,11 @@ De sidste fire årtiers stigende indvandring har ændret disse størrelsesforhol
 
 Effekterne af disse størrelsesforhold på antallet af møder mellem minoritet og majoritet begrænses selvfølgelig af de strukturelle forhold, der typisk koncentrerer indvandrere i byområder, jf. ovenstående. Figur \ref{fig:fig-1-22} viser andelen af indbyggere, der ikke har to forældre med dansk herkomst. Med vores strammere kriterier for at være dansk-dansk (to danske forældre, se \hyperref[kap2]{næste kapitel} for definitioner) illustrerer kortet med alt tydelighed, at der også i Danmark er en betydelig koncentration af minoriteter i byområderne. I \hyperref[kap5]{kapitel 5} vil det nærmere blive beskrevet, hvordan danskere i nogle kommuner har ret begrænsede muligheder for at danne sociale relationer med indvandrere; specielt hvis man også medtænker et alderskriterium ift. hvem man forventeligt danner sociale relationer med.
 
-\begin{verbatim}
-## DER KOMMER EN FIGUR HER!
-\end{verbatim}
+\newpage
+
+\begin{figure}
+\includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-1-22-1} \caption{Andelen af indbyggere, hvor begge forældre ikke har dansk herkomst. 2024.}\label{fig:fig-1-22}
+\end{figure}
 
 \begin{footnotesize}\textit{\textcolor{gray}{
 Note: Baseret på FOLK1B 2024K2.
@@ -709,11 +718,11 @@ Samtidigt er andelen, hvor begge forældre har dansk herkomst faldet. I bogen ar
 
 De andre gruppeklassificeringer baseret på begge forældres herkomst betegnes som: vestlig/vestlig (\textbf{E}), vestlig/ikke-vestlig (\textbf{F}), ikke-vestlig/ikke-vestlig (\textbf{G}) og øvrige (\textbf{H}). Her vil (\textbf{E}) typisk ikke være en synlig minoritet på hudfarve, mens det vil være tilfældet for \textbf{F} og \textbf{G}. På grund af det danske CPR-register kan man med rimelighed antage, at gruppe (\textbf{H}) udelukkende består af 0-16-årige, hvor forældrene ikke er født og opvokset i Danmark. Figur \ref{fig:fig-3-01} viser denne langsomme transformation af børn og unge befolkningen i Danmark over tid.
 
+Det er særligt G-gruppen (ikke-vestlig/ikke-vestlig), der er vokset i perioden. Børn og unge, hvor begge forældre er ikke-vestlige er steget fra 1,8 procent i 1985 til 10,4 procent i 2019. E-gruppen (vestlig-vestlig) er steget fra 0,4 til 2,3 procent.
+
 \begin{figure}
 \includegraphics[width=1\linewidth]{images/figur_3_1} \caption{ Procentandel 0-16-årige inddelt efter ny inddeling.}\label{fig:fig-3-01}
 \end{figure}
-
-Det er særligt G-gruppen (ikke-vestlig/ikke-vestlig), der er vokset i perioden. Børn og unge, hvor begge forældre er ikke-vestlige er steget fra 1,8 procent i 1985 til 10,4 procent i 2019. E-gruppen (vestlig-vestlig) er steget fra 0,4 til 2,3 procent.
 
 \section{Herkomst og fremtidige partnerskaber}\label{herkomst-og-fremtidige-partnerskaber}
 
@@ -924,6 +933,8 @@ Som det blev diskuteret i {[}afsnit 1.1{]}{[}Det danske skolelandskab{]} og illu
 
 Ser vi på sammenhængen i segregering (\(D\)) på hhv. bolig- og skolemarkedet ser vi i Figur \ref{fig:fig-4-4}, at der er en klar sammenhæng mellem graden af bolig- og skolesegregering i de fleste kommuner. Altså, de kommuner med høj boligsegregering har også typisk høj skolesegregering. I de seneste år ser vi en stærk sammenhæng mellem de to typer segregering i de fleste kommuner.\footnote{Denne korrelation er ydermere stigende over tid (Pearson's \(r=0,50\) i 2020 mod \(r=0,29\) i 1985). Jeg understøtter dette yderligere med en dekomponeringsanalyse i Larsen (\citeproc{ref-larsen2024b}{J. F. Larsen, 2024c}).} Når familier, der ligner hinanden, bor tættere på andre familier, der ligner dem selv, end de gør med familier, der er forskellige fra dem, vil der være en observerbar tendens til, at børn, som ligner hinanden, også kommer til at gå i skole sammen.
 
+\newpage
+
 \begin{figure}
 \includegraphics[width=1\linewidth]{images/Figur5} \caption{Etnisk skole- og boligsegregering i Danmark (D indeks).}\label{fig:fig-4-4}
 \end{figure}
@@ -959,33 +970,33 @@ I dette kapitel beskrives, hvor meget majoritet og minoritet er eksponeret overf
 
 \section{Den etniske sammensætning af arbejdspladser}\label{den-etniske-sammensuxe6tning-af-arbejdspladser}
 
-Den etniske sammensætning af arbejdspladser er ret ubeskrevet både nationalt og internationalt.\footnote{Den internationale litteratur har i stedet særligt fokuseret på etnisk segregering mellem brancher og virksomheder (der kan bestå af flere arbejdssteder).} Men de opgørelser der findes, hæfter sig normalt ved en stærk etnisk opdeling af arbejdsmarkedet. I den amerikanske assimileringslitteratur har man ikke haft datamaterialet til at lave detaljerede beskrivelser af den etniske komposition af arbejdspladser.\footnote{Men i forlængelse af borgerrettighedsbevægelsen i 1960erne blev alle arbejdspladser med \(100\) ansatte og derover dog forpligtet til at indrapportere den racemæssige komposition af amerikanske arbejdspladser. Disse data viser, at afroamerikanernes større succes på det amerikanske arbejdsmarked \emph{ikke} omsætter sig til mere racemæssig diversitet på arbejdspladsen. Tværtimod har segregering været stigende på tværs af racer i USA (\citeproc{ref-hellerstein2008}{Hellerstein et al., 2008}).} I en europæisk kontekst viser et svensk studie, at majoritetsbefolkningen og indvandrere og efterkommere i perioden fra 1985 til 2001 blev mere ulige fordelt på arbejdspladser; målt som større sandsynlighed for at være eksponeret for sin egen gruppe på arbejdspladsen. Det gælder efter, at man har taget højde for forandringer i gruppestørrelse og en række andre forhold (\citeproc{ref-uxe5slund2010}{Åslund \& Skans, 2010}). Et tysk studie viser ligeledes, at den etniske sammensætning af arbejdspladser er meget skæv, men dog blev en smule bedre i perioden fra 1980 til 2008 (\citeproc{ref-glitz2014}{Glitz, 2014, p. 2014}).
+Den etniske sammensætning af arbejdspladser er ret ubeskrevet både nationalt og internationalt.\footnote{Den internationale litteratur har i stedet særligt fokuseret på etnisk segregering mellem brancher og virksomheder (der kan bestå af flere arbejdssteder).} Men de opgørelser der findes, hæfter sig normalt ved en stærk etnisk opdeling af arbejdsmarkedet. I den amerikanske assimileringslitteratur har man ikke haft datamaterialet til at lave detaljerede beskrivelser af den etniske komposition af arbejdspladser.\footnote{Men i forlængelse af borgerrettighedsbevægelsen i 1960erne blev alle arbejdspladser med 100 ansatte og derover dog forpligtet til at indrapportere den racemæssige komposition af amerikanske arbejdspladser. Disse data viser, at afroamerikanernes større succes på det amerikanske arbejdsmarked \emph{ikke} omsætter sig til mere racemæssig diversitet på arbejdspladsen. Tværtimod har segregering været stigende på tværs af racer i USA (\citeproc{ref-hellerstein2008}{Hellerstein et al., 2008}).} I en europæisk kontekst viser et svensk studie, at majoritetsbefolkningen og indvandrere og efterkommere i perioden fra 1985 til 2001 blev mere ulige fordelt på arbejdspladser; målt som større sandsynlighed for at være eksponeret for sin egen gruppe på arbejdspladsen. Det gælder efter, at man har taget højde for forandringer i gruppestørrelse og en række andre forhold (\citeproc{ref-uxe5slund2010}{Åslund \& Skans, 2010}). Et tysk studie viser ligeledes, at den etniske sammensætning af arbejdspladser er meget skæv, men dog blev en smule bedre i perioden fra 1980 til 2008 (\citeproc{ref-glitz2014}{Glitz, 2014, p. 2014}).
 
-Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) har lavet et nyligt studie af sammensætningen i Danmark, hvilket er udgangspunkt for dette kapitel. De danske registrer gør det muligt at sammenkøre data om personers herkomst, se \hyperref[kap3]{kapitel 3}, med \href{https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=659482655935&fo=0&ext=kvaldel}{Danmark Statistisks klassifikation} af såkaldte arbejdssteder. Sidstnævnte er produktionsenheder, der er afgrænset til én fysisk adresse. Det er vigtigt da store virksomheder som fx Arla og Novo Nordisk har mange arbejdssteder i og udenfor Danmark. Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) starter opgørelsen i 1996, da det er det første år, hvor Danmarks Statistik har opgjort den type af job, som en person er beskæftiget i (\href{https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=2299282738&fo=0&ext=kvaldel}{DISKO-klassifikation}). Det er vigtigt, da man godt kan forestille sig arbejdspladser, hvor indvandrere og efterkommere varetager funktioner, som majoriteten ikke varetager.
+Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) har lavet et nyligt studie af sammensætningen i Danmark, hvilket er udgangspunkt for dette kapitel. De danske registrer gør det muligt at sammenkøre data om personers herkomst, se \hyperref[kap2]{kapitel 3}, med \href{https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=659482655935&fo=0&ext=kvaldel}{Danmark Statistisks klassifikation} af såkaldte arbejdssteder. Sidstnævnte er produktionsenheder, der er afgrænset til én fysisk adresse. Det er vigtigt da store virksomheder som fx Arla og Novo Nordisk har mange arbejdssteder i og udenfor Danmark. Diop \& Larsen (2024) starter opgørelsen i 1996, da det er det første år, hvor Danmarks Statistik har opgjort den type af job, som en person er beskæftiget i (\href{https://www.dst.dk/Site/Dst/SingleFiles/GetArchiveFile.aspx?fi=2299282738&fo=0&ext=kvaldel}{DISKO-klassifikation}). Det er vigtigt, da man godt kan forestille sig arbejdspladser, hvor indvandrere og efterkommere varetager funktioner, som majoriteten ikke varetager.
 
-Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) finder, at det danske arbejdsmarked i perioden fra 1996 til 2019 er blevet mere segregeret; målt med et såkaldt justeret Dissimilarity Index (D) (se \hyperref[kap4]{kapitel 4} eller \hyperref[bilagA]{Bilag A}). Deres estimat er, at segregeringen blev målt som \(D=0,21\) i 1996. Tolkningen af dette er, at i 1996 skulle man flytte 21 procent af alle beskæftigede indvandrere/efterkommere, eller 21 procent af alle beskæftigede med dansk-dansk herkomst (se \hyperref[kap3]{kapitel 3}) til en arbejdsplads med hhv. lavere eller højere andel beskæftigede med indvandrerbaggrund for at få en fordeling, der matcher resultatet fra en tilfældig fordeling af de to grupper på alle danske arbejdspladser. I 2019 er den andel vokset til 33 procent (\(D=0,33\)). I tråd med andre analyser indikerer resultatet en stigende etniske segmentering af det danske arbejdsmarked.
+Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) finder, at det danske arbejdsmarked i perioden fra 1996 til 2019 er blevet mere segregeret; målt med et såkaldt justeret Dissimilarity Index (\(D\)) (se \hyperref[kap4]{kapitel 4} eller \hyperref[bilagA]{Bilag A}). Deres estimat er, at segregeringen blev målt som \(D\) = 0,21 i 1996. Tolkningen af dette er, at i 1996 skulle man flytte 21 procent af alle beskæftigede indvandrere/efterkommere, eller 21 procent af alle beskæftigede med dansk-dansk herkomst (to danske forældre, se \hyperref[kap2]{kapitel 3}) til en arbejdsplads med hhv. lavere eller højere andel beskæftigede med indvandrerbaggrund for at få en fordeling, der matcher resultatet fra en tilfældig fordeling af de to grupper på alle danske arbejdspladser. I 2019 er den andel vokset til 33 procent (\(D\) = 0,33). I tråd med andre analyser indikerer resultatet en stigende etniske segmentering af det danske arbejdsmarked.
 
 Koncentration af indvandrere, typisk i de manuelle jobs, betyder imidlertid ikke, at arbejdspladser er blevet mindre relevante for mødet mellem majoriteten og etniske minoriteter. Tværtimod viser Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}), at samtidigt med, at arbejdsmarkedet segregeres, så stiger sandsynligheden for, at majoriteten arbejder på en arbejdsplads med indvandrere og efterkommere.
 
-Figur \ref{fig:fig-5-1} illustrerer, Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) beregner arbejdsstedseksponeringen for de beskæftigede. Målet for eksponering kan variere mellem \(0\), hvor ingen andre på arbejdspladsen tilhører den ''anden'' gruppe (majoritet/minoriteter), og \(100\%\), hvor alle andre på arbejdspladsen tilhører den ''anden'' gruppe (majoritet/minoriteter).
+Figur \ref{fig:fig-5-1} illustrerer, hvorledes Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) beregner eksponering til ud-gruppen på arbejdssteder for de beskæftigede. Målet for eksponering kan variere mellem 0, hvor ingen andre på arbejdspladsen tilhører den ''anden'' gruppe (majoritet/minoriteter), og 100 procent, hvor alle andre på arbejdspladsen tilhører den ''anden'' gruppe (majoritet/minoriteter).
 
 \begin{figure}
 \includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-5-1-1} \caption{Illustration af eksponering på arbejdspladsen.}\label{fig:fig-5-1}
 \end{figure}
 
-Arbejdsplads \textbf{A} i Figur \ref{fig:fig-5-1} er en illustration på, hvordan de 20 beskæftigede med dansk-dansk herkomst ikke er eksponeret for én eneste indvandrer eller efterkommer på deres arbejdsplads, dvs. eksponeringen er 0. På arbejdsplads \textbf{B} i Figur \ref{fig:fig-5-1} er seks af de ansatte indvandrere eller efterkommere. Dermed er en person med dansk-dansk herkomst eksponeret til 6 personer fra ''den anden'' grupper. Det svarer til 32 procent, hvilket vi betegner graden af eksponering.\footnote{I eksemplet er gruppen med dansk-dansk herkomst eksponeret til 13 fra egen gruppe ---det samlede antal minus personen selv---eller \$\approx\$74 procent, hvilket kan betegnes som grade af isolation kaldet \emph{isolation}, Bell (\citeproc{ref-bell1954}{1954}), se \hyperref[bilagA]{Bilag A}).} Omvendt er en indvandrer/efterkommer eksponeret til 14 med dansk-dansk herkomst og 5 fra sin indgruppe, svarende til en eksponering på \$\approx\$74 procent.
+Arbejdsplads \textbf{A} i figur \ref{fig:fig-5-1} er en illustration på, hvordan en hypotetisk arbejdsplads med 20 beskæftigede med dansk-dansk herkomst som ikke er eksponeret for én eneste indvandrer eller efterkommer på deres arbejdsplads, dvs. eksponeringen er \(0\). På arbejdsplads \textbf{B} i figur \ref{fig:fig-5-1} er seks af de 20 ansatte indvandrere eller efterkommere. Dermed er en person med dansk-dansk herkomst eksponeret til 6 personer fra ''den anden'' gruppe. Det svarer til 32 procent, hvilket vi betegner graden af eksponering.\footnote{I eksemplet er gruppen med dansk-dansk herkomst eksponeret til \(13\) fra egen gruppe---det samlede antal minus personen selv---eller \(\approx\) 74 procent, hvilket kan betegnes som grade af isolation (Bell (\citeproc{ref-bell1954}{1954}), se \hyperref[bilagA]{Bilag A}).} Omvendt er en indvandrer/efterkommer eksponeret til 14 med dansk-dansk herkomst og 5 fra sin ind-gruppe, svarende til en eksponering på \(\approx\) 74 procent.
 
 Eksponering kan således tolkes som sandsynligheden for, at den næste man interagerer med på arbejdspladsen, er en fra den modsatte gruppe. Arbejdsplads \textbf{B} er et eksempel på det typiske forhold, at indvandrere og efterkommere har større sandsynlighed for at blive eksponeret for den modsatte gruppe end det er tilfælde for majoritetsgruppen.
 
-Arbejdsplads \textbf{C} i Figur \ref{fig:fig-5-1} er en illustration på en situation, hvor arbejdspladsen er meget internt opdelt mellem stillinger, der har forskelligt færdighedsniveauer. Her arbejder de fem medarbejdere med indvandrerbaggrund i det Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) benævner lavt færdighedsniveau.\footnote{DISKO-klassifikation 9, i Danmarks Statistiks registrer.} Det er typisk ufaglærte jobs, som for eksempel rengøringsarbejde eller andet manuelt arbejde i primære erhverv. På arbejdsplads \textbf{C} er dem med dansk-dansk herkomst i højere interne stillinger, hvilket formentligt gør samarbejdet på tværs af etniske skel mindre sandsynligt og mindre intensivt. Derfor supplerer Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) de generelle eksponeringsmål med et \emph{beskæftigelsesspecifik-eksponeringsmål}.\footnote{Det vil sige eksponeringen indenfor faglighedsniveauer på de enkelte arbejdspladser. På arbejdsplads \textbf{C} vil det mål være 0 for begge grupper, da hverken dem med dansk-dansk herkomst eller indvandrerne/efterkommerne er eksponeret for den anden gruppe i den samme beskæftigelsesgruppe. På Arbejdsplads \textbf{B} derimod, er indvandrere/efterkommere i stillinger med lavt faglighedsniveau eksponeret for 3 fra majoriteten og to andre minoriteter, hvilket giver en beskæftigelsesspecifik eksponering på 60 procent, hvilket er \emph{lavere} end eksponering udregnet på baggrund af hele arbejdsstedet (74\(\%\)). En beskæftiget med dansk-dansk herkomst i en stilling med lavt faglighedsniveau på arbejdsplads \textbf{B} har ligeledes en beskæftigelsesspecifik eksponering på 60 procent, hvilket er \emph{højere} end eksponeringsgraden udregnet på baggrund af hele arbejdsstedet (32\(\%\)). Diop \& Larsen (2024) viser, at den generelle og beskæftigelsesspecifikke eksponering varierer for det begrænsede antal i stillinger med lavt faglighedsniveau, typisk ufaglærte jobs, mens forskellene er ubetydelige for det samlede arbejdsmarkedet. Derfor anvender vi i det kapitel primært det simple mål for eksponering på arbejdspladsen.}
+Arbejdsplads \textbf{C} i figur \ref{fig:fig-4-1} er en illustration på en situation, hvor arbejdspladsen er meget internt opdelt mellem stillinger, der har forskelligt færdighedsniveauer. Her arbejder de fem medarbejdere med indvandrerbaggrund i det Diop \& Larsen (2024) benævner lavt færdighedsniveau.\footnote{DISKO-klassifikation 9, i Danmarks Statistiks registrer.} Det er typisk ufaglærte jobs, som for eksempel rengøringsarbejde eller andet manuelt arbejde i primære erhverv. På arbejdsplads \textbf{C} er dem med dansk-dansk herkomst i højere interne stillinger, hvilket formentligt gør samarbejdet på tværs af etniske skel mindre sandsynligt og mindre intensivt. Derfor supplerer Diop og Larsens (2024) de generelle eksponeringsmål med et *beskæftigelsesspecifik-eksponeringsmål.\footnote{Det vil sige eksponeringen indenfor faglighedsniveauer på de enkelte arbejdspladser. På arbejdsplads \textbf{C} vil det mål være 0 for begge grupper, da hverken dem med dansk-dansk herkomst eller indvandrerne/efterkommerne er eksponeret for den anden gruppe i den samme beskæftigelsesgruppe. På Arbejdsplads \textbf{B} derimod, er indvandrere/efterkommere i stillinger med lavt faglighedsniveau eksponeret for tre fra majoriteten og to andre minoriteter, hvilket giver en beskæftigelsesspecifik eksponering på 60 procent, hvilket er \emph{lavere} end eksponering udregnet på baggrund af hele arbejdsstedet (74\%). En beskæftiget med dansk-dansk herkomst i en stilling med lavt faglighedsniveau på arbejdsplads \textbf{B} har ligeledes en beskæftigelsesspecifik eksponering på 60 procent, hvilket er \emph{højere} end eksponeringsgraden udregnet på baggrund af hele arbejdsstedet (32\%). Diop \& Larsen (2024) viser, at den generelle og beskæftigelsesspecifikke eksponering varierer for det begrænsede antal i stillinger med lavt faglighedsniveau, typisk ufaglærte jobs, mens forskellene er ubetydelige for det samlede arbejdsmarkedet. Derfor anvender vi i det kapitel primært det simple mål for eksponering på arbejdspladsen.}
 
 \section{Gennemsnitlig eksponering til indvandrere og efterkommere på arbejdspladser}\label{gennemsnitlig-eksponering-til-indvandrere-og-efterkommere-puxe5-arbejdspladser}
 
 Det stigende antal indvandrere og efterkommere på arbejdsmarkedet fra 1996 til 2019 har bevirket, at størstedelen af beskæftigede med dansk-dansk herkomst er kommet til at arbejde sammen med indvandrere og efterkommere. Der er selvfølgelig stor variation i eksponeringen. Nogle er ikke eksponeret til én eneste indvandrer eller efterkommer på arbejdspladsen, se nedenstående beskrivelse af graden af ''isolation'', mens andre er eksponeret for mange.
 
-Majoritetens gennemsnitlige eksponering til indvandrere og efterkommere på arbejdspladsen giver en god fornemmelse af udviklingen over tid. Diop \& Larsen estimerer, at majoritetens gennemsnitlig eksponering er steget fra 3,1 procent i 1996 til 13,3 procent i 2019.
+Majoritetens gennemsnitlige eksponering til indvandrere og efterkommere på arbejdspladsen giver en god fornemmelse af udviklingen over tid. Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) estimerer, at majoritetens gennemsnitlig eksponering er steget fra 3,1 procent i 1996 til 13,3 procent i 2019.
 
-I Figur \ref{fig:fig-5-2} er den gennemsnitlig eksponering opdelt på kommunalt niveau. I 1996, kortet placeret til venstre i \ref{fig:fig-5-2}, var til kun i hovedstadsområdet, Aarhus og enkelte grænselandskommuner, at det var typisk at være eksponeret til 3--7 procent indvandrere/efterkommere på arbejdspladsen (markeret med blåt). I 2019, kortet placeret il højre i Figur \ref{fig:fig-5-2} , ser situationen helt anderledes ud. I alle kommuner er det nu normalen, at majoriteten er eksponeret til 3--7 procent indvandrere/efterkommere på deres arbejdsplads. I store del af landet ligger den gennemsnitlige eksponering nu over 7 procent, markeret med gullige/grønlige farver.
+I figur \ref{fig:fig-5-2} er den gennemsnitlig eksponering opdelt på kommunalt niveau. I 1996, kortet placeret til venstre i figur \ref{fig:fig-5-2}, var det kun i hovedstadsområdet, Aarhus og enkelte grænselandskommuner, at det var typisk at være eksponeret til 3--7 procent indvandrere/efterkommere på arbejdspladsen (markeret med blåt). I 2019, kortet placeret til højre i figur \ref{fig:fig-5-2}, ser situationen helt anderledes ud. I alle kommuner er det nu normalen, at majoriteten er eksponeret til 3--7 procent indvandrere/efterkommere på deres arbejdsplads. I store del af landet ligger den gennemsnitlige eksponering nu over 7 procenter, markeret med gullige/grønlige farver.
 
 \newpage
 
@@ -1000,9 +1011,11 @@ Note: Opgjort på tværs af kommuner.
 
 Dette billede af stigende eksponering af de beskæftigede med dansk-dansk herkomst kan nuanceres på mange forskellige måder. For gruppen af majoriteten beskæftiget i stillinger med lavt færdighedsniveau er den gennemsnitlige eksponering cirka to procentpoint højere i 2019, når der måles på beskæftigelsesspecifik eksponering, frem for generel eksponering. Det gør således en forskel, hvordan man måler, men det rykker ikke ved det overordnet billede.
 
-Mere interessant er det måske, hvor meget majoriteten på deres arbejdsplads der blevet eksponeret til indvandrere og efterkommere med muslimsk baggrund. Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) estimerer, at de beskæftigede med dansk-dansk herkomst (gennemsnitlige) eksponering til MENAPT-indvandrere/efterkommere på arbejdspladsen i 1996 var \(0,6\%\). Den (gennemsnitlige) eksponering er i 2019 steget til \(2,5\%\). Den mindre eksponering til muslimske minoriteter skyldes primært, at der er tale om en mindre gruppe, men det skyldes også en koncentration af muslimske minoriteter i de store bykommuner, hvilket illustreres i Figur \ref{fig:fig-5-3}.
+Mere interessant er det måske, hvor meget majoriteten på deres arbejdsplads er blevet eksponeret til indvandrere og efterkommere med muslimsk baggrund. Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) estimerer, at de beskæftigede med dansk-dansk herkomst (gennemsnitlige) eksponering til MENAPT-indvandrere/efterkommere på arbejdspladsen i 1996 var 0,6 procent. Den (gennemsnitlige) eksponering er i 2019 steget til 2,5 procent. Den mindre eksponering til muslimske minoriteter skyldes primært, at der er tale om en mindre gruppe, men det skyldes også en koncentration af muslimske minoriteter i de store bykommuner, hvilket illustreres i figur \ref{fig:fig-5-3}.
 
-I 1996, det venstre kort Figur \ref{fig:fig-5-3}, var det kun på Sjælland, i Odense og Aarhus, at det var typisk, at majoriteten var eksponeret til en til to procent indvandrere/efterkommere fra MENAPT-lande på deres arbejdsplads. Markeret med blå farver. I 2019, det højre kort, er det nu typisk i hele landet at have et sådant eksponeringsniveau til muslimske minoriteter, med undtagelse af Lemvig kommune. Men det stadigt tydeligt, at eksponering til minoriteter fra muslimske oprindelseslande er højst omkring hovedstadsregionen, Odense og Aarhus, se gullige og grønlige farver i Figur \ref{fig:fig-5-3}.
+I 1996, det venstre kort i figur \ref{fig:fig-5-3}, var det kun på Sjælland, i Odense og Aarhus, at det var typisk, at majoriteten var eksponeret til en til to procent indvandrere/efterkommere fra MENAPT-lande på deres arbejdsplads. Markeret med blå farver. I 2019, det højre kort, er det nu typisk i hele landet at have et sådant eksponeringsniveau til muslimske minoriteter, med undtagelse af Lemvig kommune. Men det stadigt tydeligt, at eksponering til minoriteter fra muslimske oprindelseslande er højst omkring hovedstadsregionen, Odense og Aarhus, se gullige og grønlige farver i figur \ref{fig:fig-5-3}.
+
+\newpage
 
 \begin{figure}
 \includegraphics[width=0.7\linewidth]{images/Figur_4_2} \caption{Andelen af beskæftigede med dansk-dansk herkomst, der ikke er eksponeret til én eneste indvandrer eller efterkommer på deres arbejdsplads i 1996 (venstre) og 2019 (højre).}\label{fig:fig-5-3}
@@ -1017,6 +1030,8 @@ Note: Opgjort på tværs af kommuner.
 
 En anden måde at opgøre det på, er at se på andelen af beskæftigede med dansk-dansk herkomst, der ikke har én eneste indvandrere eller efterkommere på deres arbejdsplads. En sådan ''isolation'' er selvfølgelig langt mere sandsynlig på små end på store arbejdspladser. Ikke desto mindre giver andelen med \emph{nul-eksponering} også en god fornemmelse af forandringer over tid. Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) estimerer, at andelen af beskæftigede med dansk-dansk herkomst, som er ''isolerede'' på deres arbejdsplads er faldet fra 45 procent i 1996 til 29 procent i 2019.
 
+\newpage
+
 \begin{figure}
 \includegraphics[width=0.7\linewidth]{images/Figur_4_3} \caption{Beskæftigedes med dansk-dansk herkomst gennemsnitlige eksponering til MENAPT indvandrere/efterkommer på deres arbejdsplads i 1996 (venstre) og 2019 (højre).}\label{fig:fig-5-4}
 \end{figure}
@@ -1026,11 +1041,13 @@ Note: Opgjort på tværs af kommuner.
 }}
 \end{footnotesize}
 
-I Figur \ref{fig:fig-5-4} er ''isolationen'' opdelt på tværs af kommunerne. Andelen med \emph{nul-eksponering} er faldet i stort set hele landet. I 1996, det venstre kort i Figur \ref{fig:fig-5-4}, var situationen i største parten af landet, at \(43\) procent eller flere, af de beskæftigede fra majoriteten, i en given kommune, ikke arbejdede sammen med en eneste indvandrer eller efterkommer. Det er markeret med gullige og grønlige farver i figuren. I 2019 ser situationen helt anderledes ud. I størsteparten af landet er det nu atypisk at have så mange ''isolerede'' i en kommune, se Figur \ref{fig:fig-5-4}.
+I figur \ref{fig:fig-5-4} er ''isolationen'' opdelt på tværs af kommunerne. Andelen med \emph{nul-eksponering} er faldet i stort set hele landet. I 1996, det venstre kort i figur \ref{fig:fig-5-4}, var situationen i største parten af landet, at 43 procent eller flere, af de beskæftigede fra majoriteten, i en given kommune, ikke arbejdede sammen med en eneste indvandrer eller efterkommer. Det er markeret med gullige og grønlige farver i figuren. I 2019 ser situationen helt anderledes ud. I størsteparten af landet er det nu atypisk at have så mange ''isolerede'' i en kommune, se figur \ref{fig:fig-5-4}.
 
 \section{Minoriteters eksponering til majoritetsbefolkningen}\label{minoriteters-eksponering-til-majoritetsbefolkningen}
 
-Beskæftigede indvandrere og efterkommere er i høj grad eksponeret til beskæftigede med dansk-dansk herkomst på deres arbejdsplads. Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) estimerer, at den gennemsnitlige eksponering var 74 procent i 1996. Opdelt på kommuner viser den venstre del af Figur \ref{fig:fig-5-5}, at den (gennemsnitlige) høje eksponering til majoritetsbefolkningen i 1996 gjorde sig gældende i hele landet. Med undtagelse af et par enkelte kommuner i hovedstadsområdet var den gennemsnitlige eksponering på 67 procent eller derover. Det er markeret med grønlige og gullige farver i Figur \ref{fig:fig-5-5}.
+Beskæftigede indvandrere og efterkommere er i høj grad eksponeret til beskæftigede med dansk-dansk herkomst på deres arbejdsplads. Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) estimerer, at den gennemsnitlige eksponering var 74 procent i 1996. Opdelt på kommuner viser den venstre del af figur \ref{fig:fig-5-5}, at den (gennemsnitlige) høje eksponering til majoritetsbefolkningen i 1996 gjorde sig gældende i hele landet. Med undtagelse af et par enkelte kommuner i hovedstadsområdet var den gennemsnitlige eksponering på 67 procent eller derover. Det er markeret med grønlige og gullige farver i figur \ref{fig:fig-5-5}.
+
+\newpage
 
 \begin{figure}
 \includegraphics[width=0.7\linewidth]{images/Figur_4_4} \caption{Beskæftigede indvandreres/efterkommeres gennemsnitlige eksponering til beskæftigede med dansk-dansk herkomst på deres arbejdsplads i 1996 (venstre) og 2019 (højre).}\label{fig:fig-5-5}
@@ -1041,13 +1058,15 @@ Note: Opgjort på tværs af kommuner.
 }}
 \end{footnotesize}
 
-Efterhånden som der kommer flere og flere indvandrere og efterkommere ind på arbejdspladserne, så falder den gennemsnitlige eksponering til beskæftigede med dansk-dansk herkomst. Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) estimerer, at den (gennemsnitlige) eksponering i 2019 er 57 procent. I den nederste del af Figur \ref{fig:fig-5-5} ses den eksponeringen på tværs af beskæftigede bosat i forskellige kommuner. Den lysere farve indikerer, at eksponeringen falder. Det er dog værd at bemærke, at eksponeringen til kolleger med dansk-dansk herkomst stadig er højere end eksponeringen til indvandrere og efterkommere på arbejdspladsen. Det typiske er således fortsat, at indvandrere og efterkommere har større sandsynlighed for at arbejde sammen med en fra majoriteten end en med minoritetsbaggrund.
+Efterhånden som der kommer flere og flere indvandrere og efterkommere ind på arbejdspladserne, så falder den gennemsnitlige eksponering til beskæftigede med dansk-dansk herkomst. Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) estimerer, at den (gennemsnitlige) eksponering i 2019 er 57 procent. I den nederste del af \ref{fig:fig-5-5} ses den eksponeringen på tværs af beskæftigede bosat i forskellige kommuner. Den lysere farve indikerer, at eksponeringen falder. Det er dog værd at bemærke, at eksponeringen til kolleger med dansk-dansk herkomst stadig er højere end eksponeringen til indvandrere og efterkommere på arbejdspladsen. Det typiske er således fortsat, at indvandrere og efterkommere har større sandsynlighed for at arbejde sammen med en fra majoriteten end en med minoritetsbaggrund.
 
 \section{Minoriteters ''isolation'' fra majoritetsbefolkningen}\label{minoriteters-isolation-fra-majoritetsbefolkningen}
 
 Ligesom for majoriteten, beregner Diop-Christensen \& Larsen (\citeproc{ref-diopchristensen2024}{2024}) også andelen af beskæftigede indvandrere og efterkommere, der ikke er eksponeret til én eneste med dansk-dansk herkomst. Andelen af minoriteter i ''isolation'' er markant mindre end det er tilfældet for majoriteten. Studiet estimerer andelen af ''isolerede'' indvandrere/efterkommere til at være 13 procent i 1996 og 14 procent i 2019. Fra 1996 til 2019 er der således stort set ikke sket nogen stigning i andelen af indvandrere/efterkommere, der arbejder på en arbejdsplads, der ikke minimum er én ansat fra majoriteten.
 
-I Figur \ref{fig:fig-5-6} vises andelen af ''isolerede'' på tværs af kommuner i 1996 (venstre) og 2019 (højre). I 1996, det venstre kort, var der ikke noget klart mønster i, hvor der 18 procent eller flere ''isolerede''; markeret med grøn og gullige farver. I 2019, det højre kort, viser det sig, en højre andel ''isolerede'' udelukkende forekommer på Sjælland og Fyn, men det er ikke et klart mønster.\footnote{Beregninger på Løsø kommune er meget usikre pga. et meget begrænset antal indvandrere/efterkommere.}
+I figur \ref{fig:fig-5-6} vises andelen af ''isolerede'' på tværs af kommuner i 1996 (venstre) og 2019 (højre). I 1996, det venstre kort, var der ikke noget klart mønster i, hvor der 18 procent eller flere ''isolerede''; markeret med grøn og gullige farver. I 2019, det højre kort, viser det sig, en højre andel ''isolerede'' udelukkende forekommer på Sjælland og Fyn, men det er ikke et klart mønster.
+
+\newpage
 
 \begin{figure}
 \includegraphics[width=0.7\linewidth]{images/Figur_4_5} \caption{Andelen af beskæftigede indvandrere/efterkommere der ikke er eksponeret til én eneste med dansk-dansk herkomst på deres arbejdsplads i 1996 (venstre) og 2019 (højre).}\label{fig:fig-5-6}
@@ -1062,7 +1081,7 @@ For indvandrere og efterkommere ansat i stillinger, der kræver lavt færdigheds
 
 \section{Arbejdspladsen som mødested}\label{arbejdspladsen-som-muxf8dested}
 
-I kapitlet og i det underliggende studie (\citeproc{ref-diopchristensen2024}{Diop-Christensen \& Larsen, 2024}) har vi vist, at forholdene på det danske arbejdsmarked forandres i takt med den etniske diversitet i befolkningen. Det har givet et mere opdelt arbejdsmarked, hvor indvandrere og efterkommere, ligesom i andre lande, ofte ender med at tage de hårdeste og mest usikre jobs, mens majoritetsbefolkningen søger mod bedre beskæftigelse. Men på trods af disse segmenteringstendenser har vi også vist, at arbejdspladserne er blevet et centralt sted, hvor brede grupper af majoritetsbefolkningen eksponeres for både vestlige og ikke-vestlige indvandrere. Det gør sig ikke kun gældende i byerne. Det opleves i hele landet. Og vi har vist, at arbejdspladserne fortsat er et sted, hvor beskæftigede indvandrere og efterkommere typisk interagerer med kolleger med dansk-dansk herkomst.
+I kapitlet og i det underliggende studie (\citeproc{ref-diopchristensen2024}{Diop-Christensen \& Larsen, 2024}) har vi vist, at forholdene på det danske arbejdsmarked forandres i takt med den etniske diversitet i befolkningen. Det har givet et mere opdelt arbejdsmarked, hvor indvandrere og efterkommere, ligesom i andre lande, ofte ender med at tage de hårdeste og mest usikre jobs, mens majoritetsbefolkningen ender i bedre beskæftigelse. Men på trods af disse segmenteringstendenser har vi også vist, at arbejdspladserne er blevet et centralt sted, hvor store dele af majoritetsbefolkningen eksponeres for både vestlige og ikke-vestlige indvandrere. Det gør sig ikke kun gældende i byerne. Det opleves i hele landet. Og vi har vist, at arbejdspladserne fortsat er et sted, hvor beskæftigede indvandrere og efterkommere typisk interagerer med kolleger med dansk-dansk herkomst.
 
 Det stigende antal ansigt-til-ansigt møder mellem majoriteten og minoriteter på arbejdspladserne skaber et potentiale for flere tværetniske sociale relationer og færre fordomme på tværs af grupperne. Et sådant sammenfald er da også vist i tidligere studier, se \hyperref[indledning]{indledningen}. Men opfølgende studier, der har anvendt ovenstående eksponeringsdata, viser, at interaktionen på arbejdspladser ikke altid fører til bedre relationer mellem majoritet og minoriteter. Det diskuterer vi nærmere i det afsluttende \hyperref[kap7]{kapitel 7}.
 
@@ -1076,21 +1095,21 @@ Det stigende antal ansigt-til-ansigt møder mellem majoriteten og minoriteter p�
 
 \newpage
 
-Bogen har indtil videre vist, at der i familier, skoler og på arbejdspladser er et stigende potentiale for, at majoriteten og minoriteter kan mødes ansigt-til-ansigt. I det kapitel beskriver, hvorvidt det også afspejler sig i venskaber mellem majoritet og minoriteter. Jævnfør \hyperref[kap1]{kapitel 1} er vores antagelse, at der er relativt mange tværetniske venskaber.
+Bogen har indtil videre vist, at der i familier, skoler og på arbejdspladser er et stigende potentiale for, at majoriteten og minoriteter kan mødes ansigt-til-ansigt. I dette kapitel beskriver vi, hvorvidt det også afspejler sig i venskaber mellem majoritet og minoriteter. Jævnfør \hyperref[kap1]{kapitel 1} er vores antagelse, at der er relativt mange tværetniske venskaber.
 
-Kapitlet er opdelt i fire afsnit. Det første afsnit definerer venskaber og diskuterer nogle af problemerne ved at måle venskaber. Det næste afsnit beskriver tværetniske venskaber målt fra majoritetsbefolkningens perspektiv. Specielt afrapporterer vi et studie, der undersøger sammenhængen mellem majoritetsbefolkningens alder og geografiske placering og det at have mindst én ven med indvandrerbaggrund (\citeproc{ref-larsen2023}{J. F. Larsen \& Larsen, 2023}). Det tredje afsnit beskriver tværetniske venskaber målt fra indvandreres/efterkommeres perspektiv (\citeproc{ref-calarsen2024}{C. A. Larsen, 2024}). Kapitlet afsluttes med en kort opsummering og diskussionen, herunder kausalitetsproblemer.
+Kapitlet er opdelt i fire afsnit. Det første afsnit definerer venskaber og diskuterer nogle af problemerne ved at måle venskaber. Det næste afsnit beskriver tværetniske venskaber målt fra majoritetsbefolkningens perspektiv. Specielt afrapporterer vi et studie, der undersøger sammenhængen mellem majoritetsbefolkningens alder og geografiske placering og det at have mindst én ven med indvandrerbaggrund (\citeproc{ref-larsen2023}{J. F. Larsen \& Larsen, 2023}). Det tredje afsnit beskriver tværetniske venskaber målt fra indvandreres/efterkommeres perspektiv. Kapitlet afsluttes med en kort opsummering og diskussionen, herunder kausalitetsproblemer.
 
-\section{Hvad er venskaber og hvordan måles det}\label{hvad-er-venskaber-og-hvordan-muxe5les-det}
+\section{Hvad er venskab og hvordan måles det}\label{hvad-er-venskab-og-hvordan-muxe5les-det}
 
 Venskab er et almindeligt træk ved menneskelivet og udtrykket ven findes på tværs af kulturer. Venskab defineres typisk som en social relation, der ligger imellem de stærke familiebånd og de svage bånd person, som man bare kender (\citeproc{ref-rybak2006}{Rybak \& McAndrew, 2006}). Vores arbejdsdefinition er, at venskab er et frivilligt forhold mellem to personer uden for den nære familie med en vis grad af intimitet. Dermed også sagt, at nogle venskaber kan være ganske intime, mens andre kan være flygtige.
 
-Denne noget brede definition af venskab giver nogle problemer med at måle omfanget af venskaber. I de to studier, vi afrapporterer, beder man spørgeskemarespondenter om at angive, hvor stor en andel af deres venner, der henholdsvis har dansk eller udenlandsk baggrund. Man overlader det således til svarpersonerne selv at definere, hvad en ven er. Andre undersøgelser har brugt formuleringen ''gode venner'' eller ''personer udenfor familien, som man kan have fortrolige samtaler med''. Ved de sidste to formuleringer forsøger man at afgrænse sig til mere intime venskaber, hvilket, på grund af et mindre antal, gør det muligt at spørge ind til de intime venners karakteristika, som køn, alder og etnicitet.
+Denne noget brede definition af venskab giver nogle problemer med at måle omfanget af venskaber. I nogle studier beder man spørgeskemarespondenter om at angive, hvor stor en andel af deres venner, der henholdsvis har dansk eller udenlandsk baggrund. Man overlader det således til svarpersonerne selv at definere, hvad en ven er. Andre undersøgelser har brugt formuleringen ''gode venner'' eller ''personer udenfor familien, som man kan have fortrolige samtaler med''. Ved de sidste to formuleringer forsøger man at afgrænse sig til mere intime venskaber, hvilket, på grund af et mindre antal, gør det muligt at spørge ind til de intime venners karakteristika, som køn, alder og etnicitet.
 
 \section{Majoritetens venskaber med indvandrere og efterkommere}\label{majoritetens-venskaber-med-indvandrere-og-efterkommere}
 
-Omfanget af majoritetsbefolkningen, der har venner med indvandrerbaggrund, er lidt afhængigt af, hvordan man måler. De danske ministerielle medborgerskabsundersøgelser fra 2012 til 2016 viser, at 55 procent af den voksne befolkning med dansk-dansk herkomst, se \hyperref[kap3]{kapitel 3}, angiver, at de har mindst én ven med indvandrerbaggrund (Larsen \& Larsen, 2023). Denne ven med indvandrerbaggrund behøver ikke at være en ''nær ven'' eller en ven, man kan tale fortroligt med, hvilket alt andet lige øger sandsynligheden for tværetniske venskaber. Målt på den måde vidner studiet om, at lidt over halvdelen af befolkningen med dansk-dansk herkomst har en venskabelig relation til en indvandrere/efterkommer, trods et grundlæggende ønske om at danne venskaber med ligesindede, se \hyperref[kap1]{kapitel 1}. Det er således kun 45 procent af majoritetsbefolkningen, der udelukkende har venner blandt majoritetsbefolkningen (\citeproc{ref-larsen2023}{J. F. Larsen \& Larsen, 2023}).
+Omfanget af majoritetsbefolkningen, der har venner med indvandrerbaggrund, er lidt afhængigt af, hvordan man måler. De danske ministerielle medborgerskabsundersøgelser fra 2012 til 2016 viser, at 55 procent af den voksne befolkning med dansk-dansk herkomst, se \hyperref[kap3]{kapitel 3}, angiver, at de har mindst én ven med indvandrerbaggrund J. F. Larsen \& Larsen (\citeproc{ref-larsen2023}{2023}). Denne ven med indvandrerbaggrund behøver ikke at være en ''nær ven'' eller en ven, man kan tale fortroligt med, hvilket alt andet lige øger sandsynligheden for tværetniske venskaber. Målt på den måde vidner studiet om, at lidt over halvdelen af befolkningen med dansk-dansk herkomst har en venskabelig relation til en indvandrere/efterkommer, trods et grundlæggende ønske om at danne venskaber med ligesindede, se \hyperref[kap1]{kapitel 1}. Det er således kun 45 procent af majoritetsbefolkningen, der udelukkende har venner blandt majoritetsbefolkningen (\citeproc{ref-larsen2023}{J. F. Larsen \& Larsen, 2023}).
 
-I en undersøgelse fra 2022 blev gruppen af voksne (+18 år) med dansk-dansk herkomst spurgt, hvor mange af deres ''nære'' venner, der kom fra forskellige baggrunde. Resultat ses i Tabel \ref{tab:tab-6-01}. Adspurgt om ''nære'' venner angiver 59 procent, at ingen af deres nære venner har indvandrerbaggrund. 25 procent og 12 procent angiver henholdsvis ''1--2'' og ''3 eller flere''. Tre procent angiver, at de ikke ved, hvorvidt nogle af deres nære venner har indvandrerbaggrund. Spørger man mere specifikt om nære venner med muslimsk baggrund viser undersøgelsen, at 66 procent af majoriteten ikke har et sådan nært venskab. 20 og 10 procent har henholdsvis ''1-2'' og ''3 eller flere'' nære venner med muslimsk baggrund. Spørger man til nære venner med østeuropæisk baggrund ses nogenlunde samme fordeling. Hvis man spørger til venner med afrikansk baggrund, stiger andelen uden nogen nære venner til 77 procent, se Tabel \ref{tab:tab-6-01}.
+I en undersøgelse fra 2022 blev gruppen af voksne (18+ år) med dansk-dansk herkomst spurgt, hvor mange af deres ''nære'' venner, der kom fra forskellige baggrunde. Resultat ses i tabel \ref{tab:tab-6-01}. Adspurgt om ''nære'' venner angiver 59 procent, at ingen af deres nære venner har indvandrerbaggrund. 25 procent og 12 procent angiver henholdsvis ''1--2'' og ''3 eller flere''. Tre procent angiver, at de ikke ved, hvorvidt nogle af deres nære venner har indvandrerbaggrund. Spørger man mere specifikt om nære venner med muslimsk baggrund viser undersøgelsen, at 66 procent af majoriteten ikke har et sådan nært venskab. 20 og 10 procent har henholdsvis ''1-2'' og ''3 eller flere'' nære venner med muslimsk baggrund. Spørger man til nære venner med østeuropæisk baggrund ses nogenlunde samme fordeling. Hvis man spørger til venner med afrikansk baggrund, stiger andelen uden nogen nære venner til 77 procent, se Tabel \ref{tab:tab-6-01}.
 
 \global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}
 
@@ -1173,26 +1192,26 @@ I en undersøgelse fra 2022 blev gruppen af voksne (+18 år) med dansk-dansk her
 \renewcommand*{\arraystretch}{1}
 
 \begin{footnotesize}\textit{\textcolor{gray}{
-\textit{Spørgsmål}: Når du nu tænker på dine    extbf{nære venner}, hvor mange kommer så fra følgende baggrunde?
-\textit{Note}: Blandt respondenter med begge forældre født i Danmark. Vægtet data.
-\textit{Kilde}: Egne beregner på Allison Harell, Keith Banting, Will Kymlicka, Christian Albrekt Larsen, Robert Ford, Gina Gustavsson, Pierangelo Isernia and Stuart Soroka. 2022. Intergroup Relations and the Foundations of Solidarity (IRFS) Survey. Data Set, Montreal (Canada).
+\textit{\textbf{Spørgsmål}}: Når du nu tænker på dine   extbf{nære venner}, hvor mange kommer så fra følgende baggrunde?
+\textit{\textbf{Note}}: Blandt respondenter med begge forældre født i Danmark. Vægtet data.
+\textit{\textbf{Kilde}}: Egne beregner på Allison Harell, Keith Banting, Will Kymlicka, Christian Albrekt Larsen, Robert Ford, Gina Gustavsson, Pierangelo Isernia and Stuart Soroka. 2022. Intergroup Relations and the Foundations of Solidarity (IRFS) Survey. Data Set, Montreal (Canada).
 }}
 \end{footnotesize}
 
 \newpage
 
-Både medborgerskabsundersøgelserne og undersøgelsen fra 2022 viser et klart mønster mellem majoritetsbefolkningens alder og omfanget af venskaber med indvandrere og efterkommere. Det illustreres i Figur \ref{fig:fig-6-1}. I 2022-undersøgelsen svarer cirka 70 procent af de 50-årige og derover, at de ikke har en nær ven med indvandrerbaggrund. Blandt de 40-49-årige og 30 -- 39-årige er andelen uden en nær ven med indvandrerbaggrund henholdsvis 59 og 51 procent. Endeligt er det kun cirka hver tredje af de 18 -- 29-årige, der ikke har en nær ven med indvandrerbaggrund, se Figur \ref{fig:fig-6-1}.
+Både medborgerskabsundersøgelserne og undersøgelsen fra 2022 viser et klart mønster mellem majoritetsbefolkningens alder og omfanget af venskaber med indvandrere og efterkommere. Det illustreres i figur \ref{fig:fig-6-1}. I 2022-undersøgelsen svarer cirka 70 procent af de 50-årige og derover, at de ikke har en nær ven med indvandrerbaggrund. Blandt de 40--49-årige og 30--39-årige er andelen uden en nær ven med indvandrerbaggrund henholdsvis 59 og 51 procent. Endeligt er det kun cirka hver tredje af de 18--29-årige, der ikke har en nær ven med indvandrerbaggrund, se figur \ref{fig:fig-6-1}.
 
 \begin{figure}
 \includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-6-1-1} \caption{Sammenhængen mellem alder på majoritetsbefolkning og nære venskaber med personer med indvandrerbaggrund. 2022.}\label{fig:fig-6-1}
 \end{figure}
 
 \begin{footnotesize}\textit{\textcolor{gray}{
-Note: se note til Tabel 6.1 for datagrundlag.
+Note: se note til tabel 6.1 for datagrundlag.
 }}
 \end{footnotesize}
 
-En oplagt forklaring på mønsteret i Figur \ref{fig:fig-6-1} er, at den yngre del af majoritetsbefolkningen har bedre mulighedsbetingelser for at danne nære venskaber med indvandrere og efterkommere. I en dansk kontekst har J. F. Larsen \& Larsen (\citeproc{ref-larsen2023}{2023}) beregnet andelen af indvandrere og efterkommere i den mulige venskabspulje. Studiet beregner hver enkelt svarpersons mulige venskabspulje som antallet er personer af samme køn, der er fem år yngre/ældre end svarpersonen, og som er bosat i samme boligkvarter, sogn eller kommune som svarpersonen. Logikken er, at der skal være nogle af samme aldersgruppe og af samme køn i et geografisk område før tværetniske venskaber kan opstå.\footnote{Blau har udtrykt det på følgende måde: \emph{''We cannot have Buddhist friends if there are no Buddhist around''} (\citeproc{ref-blau1997}{Blau \& Schwartz, 1997}).} I Figur \ref{fig:fig-6-2} vises andele af ikke-danske i venskabspuljen på tværs af kommunerne og aldersgrupper. De 18-39-årige svarpersoner, der bor i hovedstadskommunerne, har gode muligheder for at etablere tværetniske venskaber. Andelen af ikke-danske i deres beregnede venskabspulje er i gennemsnit 31 procent, se venstre side i Figur \ref{fig:fig-6-2}. Blandt disse unge har alle en ikke-dansk i deres mulighedspulje, dvs. er ingen med nul procent i, se Figur \ref{fig:fig-6-2}. Omvendt er der heller ikke nogle, hvor med samme alder og køn i deres kommune er ikke-danske, dvs. ingen har 100 procent.
+En oplagt forklaring på mønsteret i figur \ref{fig:fig-6-1} er, at den yngre del af majoritetsbefolkningen har bedre mulighedsbetingelser for at danne nære venskaber med indvandrere og efterkommere. I en dansk kontekst har J. F. Larsen \& Larsen (\citeproc{ref-larsen2023}{2023}) beregnet andelen af indvandrere og efterkommere i den mulige venskabspulje. Studiet beregner hver enkelt svarpersons mulige venskabspulje som antallet er personer af samme køn, der er fem år yngre/ældre end svarpersonen, og som er bosat i samme boligkvarter, sogn eller kommune som svarpersonen. Logikken er, at der skal være nogle af samme aldersgruppe og af samme køn i et geografisk område før tværetniske venskaber kan opstå.\footnote{Blau har udtrykt det på følgende måde: \emph{''We cannot have Buddhist friends if there are no Buddhist around''} (\citeproc{ref-blau1997}{Blau \& Schwartz, 1997}).} I figur \ref{fig:fig-6-2} vises andele af indvandrere og efterkommere i venskabspuljen på tværs af kommunerne og aldersgrupper. De 18-39-årige svarpersoner, der bor i hovedstadskommunerne, har gode muligheder for at etablere tværetniske venskaber. Andelen af indvandrere/efterkommere i deres beregnede venskabspulje er i gennemsnit 31 procent, se venstre side i figur \ref{fig:fig-6-1}. Blandt disse unge har alle en indvandrer/efterkommer i deres mulighedspulje, dvs. der er ingen med nul procent indvandrere/efterkommere i mulighedspuljen, se figur \ref{fig:fig-6-2}.
 
 \newpage
 
@@ -1205,27 +1224,29 @@ Note: Opgjort på kommunalt niveau på tværs af aldersgrupper (A: XX, B: XX) og
 }}
 \end{footnotesize}
 
-Omvendt ser det ud for de ældre svarpersoner (60 år eller derover), der bor i en landkommune, se højre side af Figur \ref{fig:fig-6-2} . Andelen af ikke-danske i deres venskabspulje er i gennemsnit kun fire procent. Endvidere er fordelingen venstreskæv, hvilket medfører, at flertallet har under de fire procent---og mange essentielt ingen. Ældre i landkommuner har således begrænsede muligheder for at finde en ven, der ikke har dansk-dansk herkomst. Konklusionen i studiet er således, at den voksne befolkning med dansk-dansk-herkomst har meget forskellige mulighedsstrukturer for at danne venskaber med personer, der ikke har dansk-dansk herkomst. Det skyldes både geografi og det faktum, at indvandrere og efterkommere i gennemsnit er yngre end gruppen med dansk-dansk-herkomst.
+Omvendt ser det ud for de ældre svarpersoner (60 år eller derover), der bor i en landkommune, se højre side af figur @(fig:fig-6-2) . Andelen af indvandrere og efterkommere i deres venskabspulje er i gennemsnit kun fire procent. Endvidere er fordelingen venstreskæv, hvilket medfører, at flertallet har under de fire procent---og mange essentielt ingen. Ældre i landkommuner har således begrænsede muligheder for at finde en ven, der er indvandrer eller efterkommer. Konklusionen i studiet er således, at den voksne befolkning med dansk-dansk-herkomst har meget forskellige mulighedsstrukturer for at danne venskaber med indvandrere og efterkommere. Det skyldes både geografi og det faktum, at indvandrere og efterkommere i gennemsnit er yngre end gruppen med dansk-dansk-herkomst.
 
 J. F. Larsen \& Larsen (\citeproc{ref-larsen2023}{2023}) viser også, at der er en sammenhæng mellem størrelsen af disse venskabspuljer og omfanget af majoritetsbefolkningens venskaber med indvandrere og efterkommere. Dette indikerer, at mulighedsstruktur har betydning for den voksne majoritetsbefolkning. Udtrykt anderledes, fraværet af tværetniske venskaber i nogle kontekster og demografiske segmenter af samfundet er en strukturel betingelse og ikke nødvendigvis et udtryk for bevidst ''venskabsisolation''.
 
 \section{Indvandrere og efterkommeres venskaber med majoriteten}\label{indvandrere-og-efterkommeres-venskaber-med-majoriteten}
 
-Mulighedsstrukturerne for at danne venskaber ser anderledes ud for indvandrere og efterkommere. For minoriteterne er det typiske, at der er rigeligt af mulige majoritetsmedlemmer at danne venskaber med. Det gør sig gældende på skoler, se \hyperref[kap4]{kapitel 4}, og arbejdspladser, se \hyperref[kap5]{kapitel 5}. ''Problemet'' for indvandrere og efterkommere er snarere, at der kan være for få fra deres egen etniske gruppe til at danne sociale relationer med. Det kan gøre det svært at få opfyldt det naturlige ønsket om at finde venner, der ligner sig selv (\citeproc{ref-mcpherson2001}{McPherson et al., 2001}).\footnote{Selvom det er et veletableret menneskeligt forhold, at mennesker har en præference for relationer med andre, der ligner en selv på et eller flere parametre, ved vi ikke hvorvidt indvandrere og efterkommere har større ønske om at etablere venskaber med majoriteten end omvendt. I udgangspunktet kunne man forvente et større ønske om tværetnisk venskab, da indvandrere og efterkommere har stærkere incitamenter til at danne sådanne venskaber, se \hyperref[kap1]{kapitel 1}.} Ligesom for majoritetsbefolkningen er indvandreres/efterkommeres venskaber vanskelige at beskrive og studere. C. A. Larsen (\citeproc{ref-calarsen2024}{2024}) har dog brugt ministerielle medborgerskabsundersøgelser til at beskrive ikke-vestlige indvandreres og efterkommers venskaber (blandt voksne, der minimum har levet tre år i Danmark).
+Mulighedsstrukturerne for at danne venskaber ser anderledes ud for indvandrere og efterkommere. For minoriteterne er det typiske, at der er rigeligt af mulige majoritetsmedlemmer at danne venskaber med. Det gør sig gældende på skoler, se \hyperref[kap4]{kapitel 4}, og arbejdspladser, se \hyperref[kap5]{kapitel 5}. ''Problemet'' for indvandrere og efterkommere er snarere, at der kan være for få fra deres egen etniske gruppe til at danne sociale relationer med. Det kan gøre det svært at få opfyldt det naturlige ønsket om at finde venner, der ligner sig selv (\citeproc{ref-mcpherson2001}{McPherson et al., 2001}).\footnote{Selvom det er et veletableret menneskeligt forhold, at mennesker har en præference for relationer med andre, der ligner en selv på et eller flere parametre, ved vi ikke hvorvidt indvandrere og efterkommere har større ønske om at etablere venskaber med majoriteten end omvendt. I udgangspunktet kunne man forvente et større ønske om tværetnisk venskab, da indvandrere og efterkommere har stærkere incitamenter til at danne sådanne venskaber, se \hyperref[kap1]{kapitel 1}.} Ligesom for majoritetsbefolkningen er indvandreres/efterkommeres venskaber vanskelige at beskrive og studere. I den seneste danske ministerielle medborgerskabsundersøgelse fra 2024 bliver ikke-vestlige indvandrere og efterkommere spurgt om, hvor stor en del af deres nære venner er personer med dansk baggrund. Tabel 6.1 viser resultaterne opgjort på tværs af muslimske (MENAP-lande og Tyrkiet) og andre ikke-vestlige oprindelseslande og på tværs af yngre (18--29-årige) og ældre (30+).
 
-Studiet viser, at langt hovedparten af ikke-vestlige indvandrere angiver, at de har en dansk ven. Det er således kun fem procent, der angiver, at de udelukkende har venner med indvandrerbaggrund. Risikoen for en sådan ''venskabsisolation'' er større blandt kvinder, ældre og gruppen med lavere uddannelse og indkomst. Det typiske mønster er, at cirka halvdelen af de ikke-vestlige indvandreres venner har indvandrerbaggrund.\footnote{Målt på andel med indvandrerbaggrund er mønstret igen, at andelen med indvandrerbaggrund er større blandt kvinder, ældre og lavt uddannede, mens der ikke er en selvstændig effekt fra lav indkomst (i modsætning til mønstret for ''venskabsisolation'').} For voksne ikke-vestlige efterkommere angiver kun tre procent, at de udelukkende har venner med indvandrerbaggrund. For disse relativt unge voksne kunne studiet ikke finde sammenhænge mellem baggrundsvariable som køn, alder, uddannelse, indkomst og ''venskabsisolation''. Blandt ikke-vestlige efterkommere er det typiske mønster også, at omkring halvdelen af deres venner har indvandrerbaggrund.\footnote{Måler man på den samlede indvandrerandel blandt vennerne er det eneste klare mønster for efterkommerne, at de højtuddannede har færre venner med indvandrerbaggrund. Der er ikke tydelige sammenhænge med køn, alder og indkomst.}
+\begin{quote}
+INDSÆT TABEL 6.2 HER!
+\end{quote}
 
-Et centralt spørgsmål i studiet er, hvorvidt størrelsen af egen gruppe påvirker venskabsrelationerne. Størrelsen på egen gruppe er i målt som antallet af indvandrere og efterkommere fra samme oprindelsesland. Indvandrerne kommer fra 122 forskellige lande, mens efterkommerne kommer fra 61 forskellige. Nogle af indvandrerne og efterkommerne har næsten ingen mulighed for at finde venner fra eget oprindelsesland, da de nærmest er de eneste fra et givent land bosat i Danmark. Andre har langt bedre muligheder. Sidstnævnte gælder for eksempel for indvandrere og efterkommere med tyrkisk og syrisk oprindelse, da der er cirka 60.000 personer med tyrkisk og 40.000 med syrisk oprindelse. Studiet viser, at jo større ens egen gruppe er, jo større er andelen af venner med indvandrerbaggrund, og jo mindre er gruppen af venner med dansk baggrund. Størrelsen på egen gruppen forøger også ''risikoen'' for udelukkende at have venner med indvandrerbaggrund. Mønstret ser lidt anderledes ud blandt de ikke-vestlige efterkommere. Det gælder stadig, at jo større antal indvandrere og efterkommere fra deres eget oprindelsesland, jo mindre andel danske venner. Til gengæld er det ikke statistisk sikkert, at et større antal fra samme oprindelsesland påvirker efterkommernes ''risiko'' for udelukkende at have venner med indvandrerbaggrund.
-
-Interessen samler sig ofte om venskabsrelationerne for ikke-vestlige indvandrere og efterkommere. I Udlændinge- og Integrationsministeriets undersøgelser er det kun ikke-vestlige indvandrere/efterkommere, der bliver spurgt. Det efterlader et spørgsmål om, hvorvidt vestlige indvandrere bosat i Danmark egentlig har flere venskabsrelationer med majoritetsbefolkningen end det er tilfældet for ikke-vestlige indvandrere. En ældre undersøgelse fra 2015 kan give en vis indikation. Undersøgelsen blev gennemført blandt voksne (+18) indvandrere fra ti forskellige lande, der havde boet minimum et år i Danmark. Herunder vestlige grupper fra Polen, Rumænien og Spanien, hvor mange var kommet som vandrerne EU-arbejdstagere i perioden fra 2005 og frem, og fra USA og Storbritannien, hvor mange havde levet længere i Danmark. I Figur \ref{fig:fig-6-3} er grupperne arrangeret efter andelen fra de ti grupper, der angiver, at de ingen danske venner har. For alle grupper er der tale om en lille andel, der slet ingen danske venner har. Lægger man andelen, der har ''ingen'' eller kun ''nogle få'' danske venner sammen, så er det indvandrere med kinesisk oprindelse, der har færrest danske venner, se Figur \ref{fig:fig-6-3}. Derefter kommer indvandrerne med rumænsk og filippinsk herkomst. Indvandrerne med britisk og amerikansk oprindelse har flest danske venner. Grupper er vidt forskellige på for eksempel opholdstid, hvilket gør, at man skal være varsom med at sammenligne omfanget af venskaber med majoritetsbefolkningen. Men 2015-undersøgelsen giver en indikation på, at forskelle mellem vestlige og ikke-vestlige indvandrere er begrænset; i det mindste vurderet på andelen uden én eneste ven med dansk baggrund.
+Langt de fleste ikke-vestlige indvandrere og efterkommere angiver, at de har en nær dansk ven. I undersøgelsens fire undergrupper er det under ti procent, der angiver, at de ingen nær dansk ven har, se Tabel 6.2. Målt på den andel, er der ikke nogen nævneværdig forskel på, hvorvidt man er mellem 18-29 år eller 30+. Der er heller ikke nogen tydelig forskel på, hvorvidt man kommer fra et muslimsk oprindelsesland eller et andet ikke-vestligt land. I kapitel 2 viste vi, at de fleste indvandrere ikke har en dansk partner, hvilket i særdeleshed gjorde sig gældende for indvandrere fra muslimske lande. Omvendt ser det ud for venskaber. Her er det atypisk ikke at have en nær dansk ven. Det gælder også for indvandrere og efterkommere fra muslimske lande. Inkluderer man gruppen, der angiver ''næsten igen nære danske venner'' udvides omfanget af, hvad man kunne venskabsisolation. Men det er stadig ikke mindre tal i de fire grupper, der angiver ingen eller næsten ingen danske venner, se tabel 6.2.
 
 \begin{figure}
 \includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-6-3-1} \caption{Andel af venner med dansk oprindelse blandt 10 forskellige indvandrergrupper. 2015.}\label{fig:fig-6-3}
 \end{figure}
 
+Interessen samler sig ofte om venskabsrelationerne for ikke-vestlige indvandrere og efterkommere. I Udlændinge- og Integrationsministeriets undersøgelser er det kun ikke-vestlige indvandrere/efterkommere, der bliver spurgt. Det efterlader et spørgsmål om, hvorvidt vestlige indvandrere bosat i Danmark egentlig har flere venskabsrelationer med majoritetsbefolkningen end det er tilfældet for ikke-vestlige indvandrere. En ældre undersøgelse fra 2015 kan give en vis indikation. Undersøgelsen blev gennemført blandt voksne (18+) indvandrere fra ti forskellige lande, der havde boet minimum et år i Danmark. Herunder vestlige grupper fra Polen, Rumænien og Spanien, hvor mange var kommet som vandrerne EU-arbejdstagere i perioden fra 2005 og frem, og fra USA og Storbritannien, hvor mange havde levet længere i Danmark. I figur \ref{fig:fig-6-3} er grupperne arrangeret efter andelen fra de ti grupper, der angiver, at de ingen danske venner har. For alle grupper er der tale om en lille andel, der slet ingen danske venner har. Lægger man andelen, der har ''ingen'' eller kun ''nogle få'' danske venner sammen, så er det indvandrere med kinesisk oprindelse, der har færrest danske venner, se figur \ref{fig:fig-6-3}. Derefter kommer indvandrerne med rumænsk og filippinsk herkomst. Indvandrerne med britisk og amerikansk oprindelse har flest danske venner. Grupper er vidt forskellige på for eksempel opholdstid, hvilket gør, at man skal være varsom med at sammenligne omfanget af venskaber med majoritetsbefolkningen. Men 2015-undersøgelsen giver en indikation på, at forskelle mellem vestlige og ikke-vestlige indvandrere er begrænset; i det mindste vurderet på andelen uden én eneste ven med dansk baggrund.
+
 \section{Tværetniske venskaber og deres effekter}\label{tvuxe6retniske-venskaber-og-deres-effekter}
 
-Bogens position er, at venskaber nok er svære at studere, men ikke desto mindre er de værd at beskæftige sig med. Etablering af venskaber mellem majoriteten og indvandrere/efterkommere er den oplagte første tværetniske social relation og der er mange indikationer på, at sådanne venskabsrelationer kan have effekter. Figur \ref{fig:fig-6-4} og Figur \ref{fig:fig-6-5} illustrerer sammenhængen mellem venskabsrelationer og fordomme på danske data.
+Bogens position er, at venskaber nok er svære at studere, men ikke desto mindre er de værd at beskæftige sig med. Etablering af venskaber mellem majoriteten og indvandrere/efterkommere er den oplagte første tværetniske sociale relation og der er mange indikationer på, at sådanne venskabsrelationer kan have effekter. Figur \ref{fig:fig-6-4} og figur \ref{fig:fig-6-5} illustrerer sammenhængen mellem venskabsrelationer og fordomme på danske data.
 
 \begin{figure}
 \includegraphics[width=1\linewidth]{en-befolkning-blander-sig_files/figure-latex/fig-6-4-1} \caption{Majoritetens vurdering af hvorvidt muslimer i Danmark identificerer sig mindre med landet end andre danskere. Opdelt på antal muslimske venner.}\label{fig:fig-6-4}
@@ -1239,7 +1260,7 @@ Figur \ref{fig:fig-6-4} viser, at majoritetsbefolkningen uden én eneste muslims
 
 Man skal dog tage sammenhænge mellem venskabsrelationer og fordomme med en række forbehold. Det vigtigste er, at kausaliteten kan gå begge veje. Venskaber kan lede til færre fordomme, for eksempel om muslimer i Danmark, men færre fordomme kan også lede til flere venskaber med den muslimske minoritet. Problemer med at isolere den kausale effekt fra venskabsrelationer diskuteres i næste \hyperref[kap7]{kapitel}.
 
-Vi opfatter de præsenterede studier som et første skridt i et spirende forskningsfelt. Deres ydmyge bidrag er at påpege, at størrelsesforhold har effekt på tværetniske venskabsrelationer. På grund af alder og geografi har dele af majoritetsbefolkningen begrænsede muligheder for at etablere venskaber med indvandrere/efterkommere. Andre har bedre mulighedsstrukturer. Det gælder de unge og dem i byerne. Det gør (tilsyneladende) en forskel for sandsynligheden for at have en ven med indvandrerbaggrund. Selv blandt dem, der mener, at indvandring er et problem for Danmark (\citeproc{ref-larsen2023}{J. F. Larsen \& Larsen, 2023}). Indvandrere og efterkommere er ikke på samme måde begrænset af, at der ikke er danskere nok. Men antallet fra eget hjemland kan virke som en begrænsning på deres venskabsmuligheder, hvilket for indvandrere tilsyneladende øger sandsynligheden for at etablere venskaber med majoritetsbefolkningen. Effekten er dog svag og kunne ikke findes for efterkommerne. Mens tværetniske partnerskaber er undtagelsen, se \hyperref[kap2]{kapitel 2}, så vidner ovenstående om, at tværetniske venskaber er typiske. Venskab er det naturlige første skridt.
+Vi opfatter de præsenterede resultater som et første skridt i et spirende forskningsfelt. Det ydmyge bidrag er at påpege, at størrelsesforhold har effekt på tværetniske venskabsrelationer. På grund af alder og geografi har dele af majoritetsbefolkningen begrænsede muligheder for at etablere venskaber med indvandrere/efterkommere. Andre har bedre mulighedsstrukturer. Det gælder de unge og dem i byerne. Det gør (tilsyneladende) en forskel for sandsynligheden for at have en ven med indvandrerbaggrund. Selv blandt dem, der mener, at indvandring er et problem for Danmark (\citeproc{ref-larsen2023}{J. F. Larsen \& Larsen, 2023}). Indvandrere og efterkommere er ikke på samme måde begrænset af, at der ikke er danskere nok. Mens tværetniske partnerskaber er undtagelsen, se \hyperref[kap2]{kapitel 2}, så vidner ovenstående om, at tværetniske venskaber er typiske. Venskab er det naturlige første skridt.
 
 \chapter{Integration i et kontaktperspektiv}\label{kap7}
 
@@ -1441,9 +1462,6 @@ Landsbyggefonden. (2020). \emph{Beboere i den almene boligsektor 2020 - statisti
 
 \bibitem[\citeproctext]{ref-larsen2016}
 Larsen, C. A. (2016). \emph{Den danske republik: Forandringer i danskernes nationale forestillinger}. Hans Reitzel.
-
-\bibitem[\citeproctext]{ref-calarsen2024}
-Larsen, C. A. (2024). \emph{Do numbers matter? Exploring the relationship between diaspora size and friendship composition of non-western immigrants and descendants in denmark}.
 
 \bibitem[\citeproctext]{ref-larsen2013}
 Larsen, C. A., Ringgaard, M., Kantharooban, P., Senthilnathan, A. A., Johansen, T. S., \& Holbøll, J. L. (2013). Når hudfarven forsvinder: Hvordan etnisk blandede folkeskoler skaber tillid til indvandrere. \emph{Dansk Sociologi}, \emph{24}(2).
