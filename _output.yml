@@ -30,11 +30,12 @@ bookdown::gitbook:
 bookdown::pdf_document2:
   toc: no
   includes:
+    before_body: before-body.tex
     in_header: preamble.tex
   latex_engine: lualatex
   extra_dependencies: ["flafter"]
   citation_package: default
-  pandoc_args: [ "--csl", "university-of-gothenburg-apa-7th-edition-swedish-legislations.csl" ]
+  pandoc_args: [ "--csl", "university-of-gothenburg-apa-7th-edition-swedish-legislations.csl", "--metadata", "title="]
   bibliography: ["book.bib"]
   link-citations: true
   keep_tex: yes
