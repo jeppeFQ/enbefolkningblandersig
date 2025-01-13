@@ -211,3 +211,6 @@ I [kapitel 2](#kap2) beskriver vi, hvordan partnerskaber i Danmark typisk etable
 Efter disse kapitler, der primært beskriver forudsætningerne for at etablere sociale relationer mellem danskere, indvandrere og efterkommere, beskriver [kapitel 6](#kap6) omfanget af venskabsrelationer på tværs af etniske skel. Kapitlet viser, at langt de fleste indvandrere og efterkommere har danskere i deres omgangskreds, og langt de fleste danskere har indvandrere og efterkommere i deres omgangskreds. Undtagelsen er ældre danskere bosat i landkommuner, hvor muligheden for at mødes med indvandrere og efterkommere er begrænset. 
 
 Endeligt diskuterer vi i det afsluttende [kapitel](#kap7), hvordan bogens fokus på tværetniske sociale relationer adskiller sig fra andre forståelser af integration. Bogen er en formidlingsbog, der sammenfatter resultater fra en større dansk forskningsprojekt, som allerede nævnt forordet. Ikke desto mindre inkluderer bogen et teknisk appendiks, der omhandler de statistiske metoder og mål, der anvendes til at beskrive skillelinjer på tværs af etniske skel.
+
+\newpage
+\thispagestyle{empty}

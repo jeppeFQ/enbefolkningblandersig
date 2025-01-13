@@ -64,7 +64,7 @@ forlag.aau.dk
 
 if (knitr::is_html_output()) {
 
-  knitr::include_graphics("images/kap-temp.jpg")
+  knitr::include_graphics("images/00-forsid-web.jpg")
   
 }
 

@@ -18,12 +18,11 @@
 \contentsline {section}{\numberline {3.4}De blandede børn og integrationen}{27}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Grundskoler som mødested}{29}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Betydningen af intergruppe-eksponering}{30}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Den danske grundskole}{31}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Hvordan måler vi segrering?}{33}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Segregering på national skala}{33}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Segregering på kommunal skala}{35}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Skolesegregering som produkt af boligsegregering}{36}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Skolesegregering i Danmark}{37}{section.4.7}%
+\contentsline {section}{\numberline {4.2}Hvordan måler vi segrering?}{32}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Segregering på national skala}{33}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Segregering på kommunal skala}{34}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Skolesegregering som produkt af boligsegregering}{35}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Skolesegregering i Danmark}{37}{section.4.6}%
 \contentsline {chapter}{\numberline {5}Arbejdspladser som mødested}{39}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Den etniske sammensætning af arbejdspladser}{40}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Gennemsnitlig eksponering til indvandrere og efterkommere på arbejdspladser}{42}{section.5.2}%

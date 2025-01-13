@@ -105,4 +105,5 @@ I den danske offentlige debat fremhæves der ofte forskellige aspekter af virkel
 
 Lidt populært kan man sige, at der er tale om en diskussion af, hvorvidt glasset er halvt tomt eller halvt fuldt. På den ene side er det rigtigt, at der blandt nogle indvandrergrupper er en stærk tendens til at danne par indenfor egen gruppe både i første og anden generation. På den anden side er det også rigtigt, at der indenfor grupperne sker en udvikling over tid og generationer, hvor tværetniske pardannelse bliver hyppigere. Optimisten vil glæde sig over denne udvikling, mens pessimisten vil sige, at den går for langsomt. Under alle omstændigheder betyder det stigende antal tværetniske partnerskaber, at flere og flere børn har en ”blandet” etnisk baggrund, hvilket vi skal se nærmere på i det næste [kapitel](#kap3). 
 
-
+\newpage
+\thispagestyle{empty}
