@@ -17,7 +17,7 @@ knitr::include_graphics("images/kap71.jpg")
 Bogen har indtil videre vist, at der i familier, skoler og på arbejdspladser er et stigende potentiale for, at majoriteten og minoriteter kan mødes ansigt-til-ansigt. I dette kapitel beskriver vi, hvorvidt det også afspejler sig i venskaber mellem majoritet og minoriteter. Jævnfør [kapitel 1](#kap1) er vores antagelse, at der er relativt mange tværetniske venskaber. 
 
 Kapitlet er opdelt i fire afsnit.  Det første afsnit definerer venskaber og diskuterer nogle af problemerne ved at måle venskaber. Det næste afsnit beskriver tværetniske venskaber målt fra majoritetsbefolkningens perspektiv. Specielt afrapporterer vi et studie, der undersøger sammenhængen mellem majoritetsbefolkningens alder og geografiske placering og det at have mindst én ven med indvandrerbaggrund [@larsen2023]. Det tredje afsnit beskriver tværetniske venskaber målt fra indvandreres/efterkommeres perspektiv. Kapitlet afsluttes med en kort opsummering og diskussionen, herunder kausalitetsproblemer.
-     
+
 ## Hvad er venskab og hvordan måles det 
 
 Venskab er et almindeligt træk ved menneskelivet og udtrykket ven findes på tværs af kulturer. Venskab defineres typisk som en social relation, der ligger imellem de stærke familiebånd og de svage bånd person, som man bare kender [@rybak2006]. Vores arbejdsdefinition er, at venskab er et frivilligt forhold mellem to personer uden for den nære familie med en vis grad af intimitet. Dermed også sagt, at nogle venskaber kan være ganske intime, mens andre kan være flygtige. 
@@ -28,8 +28,7 @@ Denne noget brede definition af venskab giver nogle problemer med at måle omfan
 
 Omfanget af majoritetsbefolkningen, der har venner med indvandrerbaggrund, er lidt afhængigt af, hvordan man måler. De danske ministerielle medborgerskabsundersøgelser fra 2012 til 2016 viser, at 55 procent af den voksne befolkning med dansk-dansk herkomst, se [kapitel 3](#kap3), angiver, at de har mindst én ven med indvandrerbaggrund @larsen2023. Denne ven med indvandrerbaggrund behøver ikke at være en ”nær ven” eller en ven, man kan tale fortroligt med, hvilket alt andet lige øger sandsynligheden for tværetniske venskaber. Målt på den måde vidner studiet om, at lidt over halvdelen af befolkningen med dansk-dansk herkomst har en venskabelig relation til en indvandrere/efterkommer, trods et grundlæggende ønske om at danne venskaber med ligesindede, se [kapitel 1](#kap1). Det er således kun 45 procent af majoritetsbefolkningen, der udelukkende har venner blandt majoritetsbefolkningen [@larsen2023]. 
 
-I en undersøgelse fra 2022 blev gruppen af voksne (18+ år) med dansk-dansk herkomst spurgt, hvor mange af deres ”nære” venner, der kom fra forskellige baggrunde. Resultat ses i tabel \@ref(tab:tab-6-01). Adspurgt om ”nære” venner angiver 59 procent, at ingen af deres nære venner har indvandrerbaggrund. 25 procent og 12 procent angiver henholdsvis ”1--2” og ”3 eller flere”. Tre procent angiver, at de ikke ved, hvorvidt nogle af deres nære venner har indvandrerbaggrund. Spørger man mere specifikt om nære venner med muslimsk baggrund viser undersøgelsen, at 66 procent af majoriteten ikke har et sådan nært venskab. 20 og 10 procent har henholdsvis ”1--2” og ”3 eller flere” nære venner med muslimsk baggrund. Spørger man til nære venner med østeuropæisk baggrund ses nogenlunde samme fordeling. Hvis man spørger til venner med afrikansk baggrund, stiger andelen uden nogen nære venner til 77 procent, se Tabel \@ref(tab:tab-6-01). 
-
+I en undersøgelse fra 2022 blev gruppen af voksne (18+ år) med dansk-dansk herkomst spurgt, hvor mange af deres ”nære” venner, der kom fra forskellige baggrunde. Resultat ses i tabel \@ref(tab:tab-6-01). Adspurgt om ”nære” venner angiver 59 procent, at ingen af deres nære venner har indvandrerbaggrund. 25 procent og 12 procent angiver henholdsvis ”1--2” og ”3 eller flere”. Tre procent angiver, at de ikke ved, hvorvidt nogle af deres nære venner har indvandrerbaggrund. Spørger man mere specifikt om nære venner med muslimsk baggrund viser undersøgelsen, at 66 procent af majoriteten ikke har et sådan nært venskab. 20 og 10 procent har henholdsvis ”1-2” og ”3 eller flere” nære venner med muslimsk baggrund. Spørger man til nære venner med østeuropæisk baggrund ses nogenlunde samme fordeling. Hvis man spørger til venner med afrikansk baggrund, stiger andelen uden nogen nære venner til 77 procent, se Tabel \@ref(tab:tab-6-01). 
 
 ```{r tab-6-01, echo=FALSE, message=FALSE, warning=FALSE}
 
@@ -82,7 +81,7 @@ if (knitr::is_html_output()) {
 \newpage
 
 Både medborgerskabsundersøgelserne og undersøgelsen fra 2022 viser et klart mønster mellem majoritetsbefolkningens alder og omfanget af venskaber med indvandrere og efterkommere. Det illustreres i figur \@ref(fig:fig-6-1). I 2022-undersøgelsen svarer cirka 70 procent af de 50-årige og derover, at de ikke har en nær ven med indvandrerbaggrund. Blandt de 40--49-årige og 30--39-årige er andelen uden en nær ven med indvandrerbaggrund henholdsvis 59 og 51 procent. Endeligt er det kun cirka hver tredje af de 18--29-årige, der ikke har en nær ven med indvandrerbaggrund, se figur \@ref(fig:fig-6-1).
-	
+
 ```{r fig-6-1, echo=FALSE, fig.cap="Sammenhængen mellem alder på majoritetsbefolkning og nære venskaber med personer med indvandrerbaggrund. 2022.", fig.topcaption=TRUE, message=FALSE, warning=FALSE, out.width="100%"}
 
 read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_1.csv") %>% 
@@ -111,8 +110,8 @@ if (knitr::is_html_output()) {
 
 ```
 
-En oplagt forklaring på mønsteret i figur \@ref(fig:fig-6-1) er, at den yngre del af majoritetsbefolkningen har bedre mulighedsbetingelser for at danne nære venskaber med indvandrere og efterkommere. I en dansk kontekst har @larsen2023 beregnet andelen af indvandrere og efterkommere i den mulige venskabspulje. Studiet beregner hver enkelt svarpersons mulige venskabspulje som antallet er personer af samme køn, der er fem år yngre/ældre end svarpersonen, og som er bosat i samme boligkvarter, sogn eller kommune som svarpersonen. Logikken er, at der skal være nogle af samme aldersgruppe og af samme køn i et geografisk område før tværetniske venskaber kan opstå.[^62] I figur \@ref(fig:fig-6-2) vises andele af indvandrere og efterkommere i venskabspuljen på tværs af kommunerne og aldersgrupper. De 18-39-årige svarpersoner, der bor i hovedstadskommunerne, har gode muligheder for at etablere tværetniske venskaber. Andelen af indvandrere/efterkommere i deres beregnede venskabspulje er i gennemsnit 31 procent, se venstre side i figur \@ref(fig:fig-6-1). Blandt disse unge har alle en indvandrer/efterkommer i deres mulighedspulje, dvs. der er ingen med nul procent indvandrere/efterkommere i mulighedspuljen, se figur \@ref(fig:fig-6-2). 
-	
+En oplagt forklaring på mønsteret i figur \@ref(fig:fig-6-1) er, at den yngre del af majoritetsbefolkningen har bedre mulighedsbetingelser for at danne nære venskaber med indvandrere og efterkommere. I en dansk kontekst har @larsen2023 beregnet andelen af indvandrere og efterkommere i den mulige venskabspulje. Studiet beregner hver enkelt svarpersons mulige venskabspulje som antallet er personer af samme køn, der er fem år yngre/ældre end svarpersonen, og som er bosat i samme boligkvarter, sogn eller kommune som svarpersonen. Logikken er, at der skal være nogle af samme aldersgruppe og af samme køn i et geografisk område før tværetniske venskaber kan opstå.[^62] I figur \@ref(fig:fig-6-2) vises andele af indvandrere og efterkommere i venskabspuljen på tværs af kommunerne og aldersgrupper. De 18-39-årige svarpersoner, der bor i hovedstadskommunerne, har gode muligheder for at etablere tværetniske venskaber. Andelen af indvandrere/efterkommere i deres beregnede venskabspulje er i gennemsnit 31 procent, se venstre side i figur \@ref(fig:fig-6-2). Blandt disse unge har alle en indvandrer/efterkommer i deres mulighedspulje, dvs. der er ingen med nul procent indvandrere/efterkommere i mulighedspuljen, se figur \@ref(fig:fig-6-2). 
+
 [^62]: Blau har udtrykt det på følgende måde: *”We cannot have Buddhist friends if there are no Buddhist around”* [@blau1997].
 
 \newpage
@@ -138,7 +137,7 @@ if (knitr::is_html_output()) {
 Omvendt ser det ud for de ældre svarpersoner (60 år eller derover), der bor i en landkommune, se højre side af figur \@ref(fig:fig-6-2) . Andelen af indvandrere og efterkommere i deres venskabspulje er i gennemsnit kun fire procent. Endvidere er fordelingen venstreskæv, hvilket medfører, at flertallet har under de fire procent---og mange essentielt ingen. Ældre i landkommuner har således begrænsede muligheder for at finde en ven, der er indvandrer eller efterkommer.  Konklusionen i studiet er således, at den voksne befolkning med dansk-dansk-herkomst har meget forskellige mulighedsstrukturer for at danne venskaber med indvandrere og efterkommere. Det skyldes både geografi og det faktum, at indvandrere og efterkommere i gennemsnit er yngre end gruppen med dansk-dansk-herkomst. 
 
 @larsen2023 viser også, at der er en sammenhæng mellem størrelsen af disse venskabspuljer og omfanget af majoritetsbefolkningens venskaber med indvandrere og efterkommere. Dette indikerer, at mulighedsstruktur har betydning for den voksne majoritetsbefolkning. Udtrykt anderledes, fraværet af tværetniske venskaber i nogle kontekster og demografiske segmenter af samfundet er en strukturel betingelse og ikke nødvendigvis et udtryk for bevidst ”venskabsisolation”.    
-   
+
 ## Indvandrere og efterkommeres venskaber med majoriteten 
 
 Mulighedsstrukturerne for at danne venskaber ser anderledes ud for indvandrere og efterkommere. For minoriteterne er det typiske, at der er rigeligt af mulige majoritetsmedlemmer at danne venskaber med. Det gør sig gældende på skoler, se [kapitel 4](#kap4), og arbejdspladser, se [kapitel 5](#kap5). ”Problemet” for indvandrere og efterkommere er snarere, at der kan være for få fra deres egen etniske gruppe til at danne sociale relationer med. Det kan gøre det svært at få opfyldt det naturlige ønsket om at finde venner, der ligner sig selv [@mcpherson2001].[^63] Ligesom for majoritetsbefolkningen er indvandreres/efterkommeres venskaber vanskelige at beskrive og studere. I den seneste danske ministerielle medborgerskabsundersøgelse fra 2024 bliver ikke-vestlige indvandrere og efterkommere spurgt om, hvor stor en del af deres nære venner er personer med dansk baggrund. Tabel 6.1 viser resultaterne opgjort på tværs af muslimske (MENAP-lande og Tyrkiet) og andre ikke-vestlige oprindelseslande og på tværs af yngre (18--29-årige) og ældre (30+). 
@@ -164,6 +163,22 @@ read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_4
   labs(y = " ", x = " ", fill = " ") +
   theme_classic() +
   theme(axis.text.x = element_text(angle = 50, hjust = 1, vjust = 1))
+
+```
+
+```{r, results="asis", echo=FALSE}
+
+if (knitr::is_html_output()) {
+  cat('<p style="text-align:left; font-style:italic; color:gray; font-size: 0.85em;">\n')
+  cat('Spørgsmålsformulering: Tænk på alle de venner du har, som bor i Danmark. Vi vil gerne vide, hvor mange af disse herboende venner der oprindeligt er fra Danmark.\n
+Note: Respondenterne har minimum boet et år Danmark. Ankomst som 16-årig eller ældre. Ikke-vægtet data. N mellem 195 og 400 per gruppe. Se Breidahl (2021, kapitel 3) for yderligere information om data\n')
+  cat('</p>\n')
+} else if (knitr::is_latex_output()) {
+  cat('\\begin{footnotesize}\\textit{\\textcolor{gray}{\n')
+  cat('Spørgsmålsformulering: Tænk på alle de venner du har, som bor i Danmark. Vi vil gerne vide, hvor mange af disse herboende venner der oprindeligt er fra Danmark.\n
+Note: Respondenterne har minimum boet et år Danmark. Ankomst som 16-årig eller ældre. Ikke-vægtet data. N mellem 195 og 400 per gruppe. Se Breidahl (2021, kapitel 3) for yderligere information om data\n')
+  cat('}}\n\\end{footnotesize}\n')
+}
 
 ```
 
@@ -214,6 +229,7 @@ read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_6
 Man skal dog tage sammenhænge mellem venskabsrelationer og fordomme med en række forbehold. Det vigtigste er, at kausaliteten kan gå begge veje. Venskaber kan lede til færre fordomme, for eksempel om muslimer i Danmark, men færre fordomme kan også lede til flere venskaber med den muslimske minoritet. Problemer med at isolere den kausale effekt fra venskabsrelationer diskuteres i næste [kapitel](#kap7). 
 
 Vi opfatter de præsenterede resultater som et første skridt i et spirende forskningsfelt. Det ydmyge bidrag er at påpege, at størrelsesforhold har effekt på tværetniske venskabsrelationer. På grund af alder og geografi har dele af majoritetsbefolkningen begrænsede muligheder for at etablere venskaber med indvandrere/efterkommere. Andre har bedre mulighedsstrukturer. Det gælder de unge og dem i byerne. Det gør (tilsyneladende) en forskel for sandsynligheden for at have en ven med indvandrerbaggrund. Selv blandt dem, der mener, at indvandring er et problem for Danmark [@larsen2023]. Indvandrere og efterkommere er ikke på samme måde begrænset af, at der ikke er danskere nok. Mens tværetniske partnerskaber er undtagelsen, se [kapitel 2](#kap2), så vidner ovenstående om, at tværetniske venskaber er typiske. Venskab er det naturlige første skridt. 
+
 
 
 

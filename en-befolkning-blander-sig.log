@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.9)  14 FEB 2025 11:20
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.1.9)  14 FEB 2025 11:30
  system commands enabled.
 **en-befolkning-blander-sig.tex
 (./en-befolkning-blander-sig.tex
@@ -3421,139 +3421,21 @@ File: en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf Graphic file (t
 <use en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf>
 Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf  used on input line 1336.
 (luatex.def)             Requested size: 380.69789pt x 263.56165pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[56<./en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf>]
-<en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf, id=1179, 469.755pt x 325.215pt>
-File: en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf Graphic file (type pdf)
-<use en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf  used on input line 1346.
-(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
-<en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf, id=1182, 469.755pt x 325.215pt>
-File: en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf Graphic file (type pdf)
-<use en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf  used on input line 1352.
-(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
-
-
-[57<./en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf>]
-
-[58<./en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf>]
-Chapter 7.
-<images/kap7.jpg, id=1207, 2616.174pt x 1744.116pt>
-File: images/kap7.jpg Graphic file (type jpg)
-<use images/kap7.jpg>
-Package luatex.def Info: images/kap7.jpg  used on input line 1367.
-(luatex.def)             Requested size: 380.69789pt x 253.78188pt.
-
-
-[59
-
-<./images/kap7.jpg>]
-
-[60]
-
-[61]
-
-[62]
-
-[63]
-
-[64]
-
-[65
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[66
-Missing character: There is no ‐ (U+2010) in font "name:Fira Sans:mode=node;script=latn;language=dflt;+tlig;"!
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[67]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[68]
-
-[69]
-
-[70
-
-]
-Bilag A.
-
-
-[71]
-
-[72]
-<en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf, id=1415, 469.755pt x 325.215pt>
-File: en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf Graphic file (type pdf)
-<use en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf  used on input line 1770.
-(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
-
-
-[73<./en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf>]
-
-[74]
-
-[75]
-<en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf, id=1475, 469.755pt x 325.215pt>
-File: en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf Graphic file (type pdf)
-<use en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf  used on input line 1813.
-(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
-<en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf, id=1476, 469.755pt x 325.215pt>
-File: en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf Graphic file (type pdf)
-<use en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf  used on input line 1817.
-(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
-
-
-[76]
-
-[77<./en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf><./en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf>]
-<en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf, id=1504, 469.755pt x 325.215pt>
-File: en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf Graphic file (type pdf)
-<use en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf  used on input line 1827.
-(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
-
-
-[78<./en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf>] (./en-befolkning-blander-sig.aux)
- ***********
-LaTeX2e <2024-11-01> patch level 1
-L3 programming layer <2024-12-25>
- ***********
-
-LaTeX Warning: There were undefined references.
-
-)
+Runaway argument?
+{\textcolor {gray}{ Spørgsmålsformulering: Tænk på alle de venner\ETC.
+! Paragraph ended before \text@command was complete.
+<to be read again> 
+\par 
+l.1343 }}
+       
 
 Here is how much of LuaTeX's memory you used:
- 28183 strings out of 475518
- 156365,1648299 words of node,token memory allocated
- 1613 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 local_par, 38 glue, 5 kern, 1 penalty, 1 margin_kern, 4 glyph, 167 attribute, 78 glue_spec, 85 attribute_list, 2 write, 36 pdf_action nodes
-   avail lists: 1:11,2:2134,3:484,4:304,5:2262,6:120,7:11781,8:57,9:1307,10:29,11:889
- 50175 multiletter control sequences out of 65536+600000
- 87 fonts using 31664791 bytes
- 94i,13n,131p,2715b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</Users/jeppefl/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></Users/jeppefl/Library/Fonts/FiraSans-SemiBoldItalic.ttf></Users/jeppefl/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></Users/jeppefl/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></Users/jeppefl/Library/Fonts/FiraSans-Bold.ttf></Users/jeppefl/Library/Fonts/FiraSans-Italic.ttf></Users/jeppefl/Library/Fonts/FiraSans-SemiBold.ttf></Users/jeppefl/Library/Fonts/FiraSans-Regular.ttf>
-Output written on en-befolkning-blander-sig.pdf (84 pages, 67533061 bytes).
-
-PDF statistics: 1727 PDF objects out of 1728 (max. 8388607)
- 1368 compressed objects within 14 object streams
- 297 named destinations out of 1000 (max. 131072)
- 400 words of extra memory for PDF output out of 10000 (max. 100000000)
-
+ 28007 strings out of 475518
+ 125086,1648299 words of node,token memory allocated
+ 9408 words of node memory still in use:
+   30 hlist, 9 vlist, 10 rule, 49 disc, 5 local_par, 1 dir, 203 glue, 136 kern, 15 penalty, 3 margin_kern, 702 glyph, 203 attribute, 85 glue_spec, 103 attribute_list, 1 temp, 1 if_stack, 2 write, 1 pdf_start_link, 1 pdf_end_link, 1 pdf_dest, 23 pdf_action, 10 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
+   avail lists: 1:9,2:2077,3:455,4:290,5:2120,6:129,7:10869,8:3,9:1267,10:29,11:830
+ 50087 multiletter control sequences out of 65536+600000
+ 87 fonts using 31664727 bytes
+ 94i,13n,131p,2229b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
