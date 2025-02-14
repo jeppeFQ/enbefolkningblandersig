@@ -34,7 +34,9 @@ Det er afgørende at forstå, at den sociologiske forskning, som undersøger kon
 
 ## Tværetniske partnerskaber i Danmark 
 
-I det følgende skal vi derfor se nærmere på omfanget af tværetniske partnerskaber i Danmark. I figur \@ref(fig:fig-2-1) vises sammensætningen af samtlige partnerskaber, hvor begge partnere er bosat i Danmark.  I 1985 bestod 94 procent af alle partnerskaber af to personer med dansk oprindelse (den røde farve). Heraf fyldte ægteskaber mellem to personer med dansk oprindelse 77 procent. I 1985 bestod 1,1 procent af alle partnerskaber af to indvandrere eller efterkommere fra samme oprindelsesland (den blå farve), mens 0,2 procent bestod af to indvandrere eller efterkommere fra forskellige oprindelseslande (den pink farve). Endeligt udgjorde partnerskaber mellem én med dansk herkomst og én med anden herkomst 4,3 procent af samtlige partnerskaber (den grønne farve). Det svarede til lidt over 54.000 partnerskaber mellem majoriteten og minoriteter i 1985.  
+I det følgende skal vi derfor se nærmere på omfanget af tværetniske partnerskaber i Danmark. I figur \@ref(fig:fig-2-1) vises sammensætningen af samtlige partnerskaber, hvor begge partnere er bosat i Danmark.[^002002]  I 1985 bestod 94 procent af alle partnerskaber af to personer med dansk oprindelse (den røde farve). Heraf fyldte ægteskaber mellem to personer med dansk oprindelse 77 procent. I 1985 bestod 1,1 procent af alle partnerskaber af to indvandrere eller efterkommere fra samme oprindelsesland (den blå farve), mens 0,2 procent bestod af to indvandrere eller efterkommere fra forskellige oprindelseslande (den pink farve). Endeligt udgjorde partnerskaber mellem én med dansk herkomst og én med anden herkomst 4,3 procent af samtlige partnerskaber (den grønne farve). Det svarede til lidt over 54.000 partnerskaber mellem majoriteten og minoriteter i 1985.  
+
+[^002002]: Vi anvender Danmark Statistisk standard, opgjort på FAMILIE_TYPE. 
 
 ```{r fig-2-1, echo=FALSE, out.width= "75%", fig.align = 'center', fig.cap=" Partnerskaber med samme og forskelligt oprindelsesland. Opgjort i 1985 og 2020.", fig.topcaption=TRUE}
 

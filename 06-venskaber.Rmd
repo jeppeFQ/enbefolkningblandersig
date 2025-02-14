@@ -170,13 +170,11 @@ read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_4
 
 if (knitr::is_html_output()) {
   cat('<p style="text-align:left; font-style:italic; color:gray; font-size: 0.85em;">\n')
-  cat('Spørgsmålsformulering: Tænk på alle de venner du har, som bor i Danmark. Vi vil gerne vide, hvor mange af disse herboende venner der oprindeligt er fra Danmark.\n
-Note: Respondenterne har minimum boet et år Danmark. Ankomst som 16-årig eller ældre. Ikke-vægtet data. N mellem 195 og 400 per gruppe. Se Breidahl (2021, kapitel 3) for yderligere information om data\n')
+  cat('Spørgsmålsformulering: Tænk på alle de venner du har, som bor i Danmark. Vi vil gerne vide, hvor mange af disse herboende venner der oprindeligt er fra Danmark. Note: Respondenterne har minimum boet et år Danmark. Ankomst som 16-årig eller ældre. Ikke-vægtet data. N mellem 195 og 400 per gruppe. Se Breidahl (2021, kapitel 3) for yderligere information om data\n')
   cat('</p>\n')
 } else if (knitr::is_latex_output()) {
   cat('\\begin{footnotesize}\\textit{\\textcolor{gray}{\n')
-  cat('Spørgsmålsformulering: Tænk på alle de venner du har, som bor i Danmark. Vi vil gerne vide, hvor mange af disse herboende venner der oprindeligt er fra Danmark.\n
-Note: Respondenterne har minimum boet et år Danmark. Ankomst som 16-årig eller ældre. Ikke-vægtet data. N mellem 195 og 400 per gruppe. Se Breidahl (2021, kapitel 3) for yderligere information om data\n')
+  cat('Spørgsmålsformulering: Tænk på alle de venner du har, som bor i Danmark. Vi vil gerne vide, hvor mange af disse herboende venner der oprindeligt er fra Danmark. Note: Respondenterne har minimum boet et år Danmark. Ankomst som 16-årig eller ældre. Ikke-vægtet data. N mellem 195 og 400 per gruppe. Se Breidahl (2021, kapitel 3) for yderligere information om data\n')
   cat('}}\n\\end{footnotesize}\n')
 }
 
