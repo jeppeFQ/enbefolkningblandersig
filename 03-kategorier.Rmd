@@ -115,7 +115,7 @@ Samtidigt er andelen, hvor begge forældre har dansk herkomst faldet. I bogen ar
 De andre gruppeklassificeringer baseret på begge forældres herkomst betegnes som: vestlig/vestlig (**E**), vestlig/ikke-vestlig (**F**), ikke-vestlig/ikke-vestlig (**G**) og øvrige (**H**). Her vil (**E**) typisk ikke være en synlig minoritet på hudfarve, mens det vil være tilfældet for **F** og **G**. På grund af det danske CPR-register kan man med rimelighed antage, at gruppe (**H**) udelukkende består af 0-16-årige, hvor forældrene ikke er født og opvokset i Danmark. Figur \@ref(fig:fig-3-01) viser denne langsomme transformation af børn og unge befolkningen i Danmark over tid.
 
 
-```{r fig-3-01, echo=FALSE, out.width= "100%", fig.cap=" Procentandel 0-16-årige inddelt efter ny inddeling.", fig.topcaption=TRUE}
+```{r fig-3-01, echo=FALSE, out.width= "75%", fig.cap=" Procentandel 0-16-årige inddelt efter ny inddeling.", fig.topcaption=TRUE}
 knitr::include_graphics("images/figur_3_1.png")
 ```
 

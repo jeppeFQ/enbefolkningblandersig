@@ -36,13 +36,13 @@
 \contentsline {section}{\numberline {6.3}Indvandrere og efterkommeres venskaber med majoriteten}{55}{section.6.3}%
 \contentsline {section}{\numberline {6.4}Tværetniske venskaber og deres effekter}{57}{section.6.4}%
 \contentsline {chapter}{\numberline {7}Integration i et kontaktperspektiv}{59}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Kontaktperspektivet og debatten om integration}{60}{section.7.1}%
-\contentsline {section}{\numberline {7.2}De svære ansigt-til-ansigts-møder}{62}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Effekter fra at mødes på arbejdspladsen}{63}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Kontaktperspektivets begrænsninger og videre forskning}{63}{section.7.4}%
-\contentsline {chapter}{Litteraturliste}{65}{chapter*.23}%
-\contentsline {chapter}{\numberline {A}Segregeringsmål}{71}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Dissimilaritetsindekset}{71}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Korrigeret D-indeks}{74}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Separationsindekset}{74}{section.A.3}%
-\contentsline {section}{\numberline {A.4}Sammenhæng mellem S og D}{78}{section.A.4}%
+\contentsline {section}{\numberline {7.1}De svære ansigt-til-ansigt møder}{60}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Effekter fra at mødes på arbejdspladsen}{62}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Kontaktperspektivets begrænsninger og videre forskning}{62}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Kontaktperspektivet og debatten om integration}{63}{section.7.4}%
+\contentsline {chapter}{Litteraturliste}{67}{chapter*.23}%
+\contentsline {chapter}{\numberline {A}Segregeringsmål}{73}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Dissimilaritetsindekset}{73}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Korrigeret D-indeks}{76}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Separationsindekset}{76}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Sammenhæng mellem S og D}{80}{section.A.4}%

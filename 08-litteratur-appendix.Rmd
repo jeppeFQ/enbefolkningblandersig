@@ -145,7 +145,7 @@ ggplot(results,
   scale_fill_manual(values = palette) +
   labs(x = "Dissimilarity Index",
        y = "Frekvens",
-       fill = "Gruppestørrelser\n(minoritet/majoritet)") +
+       fill = "Gruppeandele\n(minoritet/majoritet)") +
   theme_minimal()
 
 ```
@@ -279,7 +279,7 @@ ggplot(results, aes(x = Index, fill = Distribution)) +
   coord_cartesian(xlim = c(0, 1), ylim = c(0, 200)) + 
   geom_histogram(binwidth = 0.01, alpha = 0.7, position = 'identity') +
   scale_fill_manual(values = palette) +
-  labs(fill = "Gruppestørrelser\n(minoritet/majoritet)",
+  labs(fill = "Gruppeandele\n(minoritet/majoritet)",
        x = "Separation Index",
        y = "Frekvens") +
   theme_minimal()
@@ -374,7 +374,7 @@ ggplot(results, aes(x = Index, fill = Distribution)) +
   coord_cartesian(xlim = c(0, 1), ylim = c(0, 200)) + 
   geom_histogram(binwidth = 0.01, alpha = 0.7, position = 'identity') +
   scale_fill_manual(values = palette) +
-  labs(fill = "Gruppestørrelser\n(minoritet/majoritet)",
+  labs(fill = "Gruppeandele\n(minoritet/majoritet)",
        x = "Separation Index",
        y = "Frekvens") +
   theme_minimal()
