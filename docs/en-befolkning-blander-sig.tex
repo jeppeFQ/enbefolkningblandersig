@@ -36,6 +36,46 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -209,7 +249,7 @@
 \makeatother
 \subtitle{\emph{Kontakt mellem majoriteten og ethniske minoriteter i Danmark}}
 \author{Christian Albrekt Larsen (red.) \and Hans-Peter Y. Qvist (red.) \and Jeppe Fjeldgaard Qvist \and Lanciné Diop-Christensen \and Jeevitha Yogachandiran Qvist}
-\date{2025-02-17 09:49:02}
+\date{2025-02-17 10:22:47}
 
 \begin{document}
 
@@ -425,7 +465,7 @@ Endeligt diskuterer vi i det afsluttende \hyperref[kap7]{kapitel}, hvordan bogen
 
 \thispagestyle{empty}
 
-\emph{\href{https://vbn.aau.dk/da/persons/hpq}{Hans-Peter Y. Qvist}} og \emph{\href{https://vbn.aau.dk/da/persons/jy}{Jeevitha Yogachandiran Qvist}}
+\emph{\href{https://vbn.aau.dk/da/persons/hpq}{Hans-Peter Yogachandiran Qvist}} og \emph{\href{https://vbn.aau.dk/da/persons/jy}{Jeevitha Yogachandiran Qvist}}
 
 ~~~~
 
@@ -1330,6 +1370,123 @@ Mulighedsstrukturerne for at danne venskaber ser anderledes ud for indvandrere o
 INDSÆT TABEL 6.2 HER!
 \end{quote}
 
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{typology }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}
+  \AttributeTok{col\_keys =} \FunctionTok{c}\NormalTok{(}
+    \StringTok{"Oprindelse"}\NormalTok{, }\StringTok{"Næsten Ingen"}\NormalTok{, }\StringTok{"Under halvdelen"}\NormalTok{, }\StringTok{"Omkring Halvdelen"}\NormalTok{, }\StringTok{"Over halvdelen"}\NormalTok{, }\StringTok{"\%"}\NormalTok{, }\StringTok{"N"}
+\NormalTok{  ),}
+  \AttributeTok{what =} \FunctionTok{c}\NormalTok{(}\StringTok{"Oprindelse"}\NormalTok{, }\StringTok{"Antal nære venskaber med personer fra:"}\NormalTok{, }\StringTok{"Antal nære venskaber med personer fra:"}\NormalTok{, }\StringTok{"Antal nære venskaber med personer fra:"}\NormalTok{, }\StringTok{"Antal nære venskaber med personer fra:"}\NormalTok{, }\StringTok{"I alt"}\NormalTok{, }\StringTok{"I alt"}\NormalTok{),}
+  \AttributeTok{measure =} \FunctionTok{c}\NormalTok{(}\StringTok{"Oprindelse"}\NormalTok{, }\StringTok{"Næsten Ingen"}\NormalTok{, }\StringTok{"Under halvdelen"}\NormalTok{, }\StringTok{"Omkring Halvdelen"}\NormalTok{, }\StringTok{"Over halvdelen"}\NormalTok{, }\StringTok{"\%"}\NormalTok{, }\StringTok{"N"}\NormalTok{),}
+  \AttributeTok{stringsAsFactors =} \ConstantTok{FALSE}
+\NormalTok{)}
+
+\FunctionTok{read\_csv2}\NormalTok{(}\StringTok{"data/figur\_6\_2\_ny.csv"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{flextable}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{set\_header\_labels}\NormalTok{(}\AttributeTok{...1 =} \StringTok{" "}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{theme\_booktabs}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{bold}\NormalTok{(}\AttributeTok{j =} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{), }\AttributeTok{bold =} \ConstantTok{TRUE}\NormalTok{, }\AttributeTok{part =} \StringTok{"body"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{width}\NormalTok{(}\AttributeTok{j =} \FunctionTok{c}\NormalTok{(}\DecValTok{2}\SpecialCharTok{:}\DecValTok{7}\NormalTok{), }\AttributeTok{width =}\NormalTok{ .}\DecValTok{5}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{width}\NormalTok{(}\AttributeTok{j =} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{), }\AttributeTok{width =} \DecValTok{1}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{fontsize}\NormalTok{(}\AttributeTok{size =} \DecValTok{9}\NormalTok{, }\AttributeTok{part =} \StringTok{"header"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{fontsize}\NormalTok{(}\AttributeTok{size =} \DecValTok{9}\NormalTok{, }\AttributeTok{part =} \StringTok{"body"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{font}\NormalTok{(}\AttributeTok{fontname =} \StringTok{"Fira Sans"}\NormalTok{, }\AttributeTok{part =} \StringTok{"all"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{set\_caption}\NormalTok{(}\StringTok{"Andel af danskere blandt ikke{-}vestlige indvandrere og efterkommeres og nære venskaber. Procent.}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{align}\NormalTok{(}\AttributeTok{align =} \StringTok{"left"}\NormalTok{, }\AttributeTok{part =} \StringTok{"header"}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{align}\NormalTok{(}\AttributeTok{align =} \StringTok{"left"}\NormalTok{, }\AttributeTok{part =} \StringTok{"body"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## i Using "','" as decimal and "'.'" as grouping mark. Use `read_delim()` for more control.
+\end{verbatim}
+
+\begin{verbatim}
+## Rows: 4 Columns: 8
+## -- Column specification --------------------------------------------------------
+## Delimiter: ";"
+## chr (1): Oprindelse
+## dbl (7): Ingen, Næsten ingen, Under halvdelen, Omkring halvdelen, Over halvd...
+## 
+## i Use `spec()` to retrieve the full column specification for this data.
+## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
+\end{verbatim}
+
+\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}
+
+\global\setlength{\Oldtabcolsep}{\tabcolsep}
+
+\setlength{\tabcolsep}{2pt}
+
+\renewcommand*{\arraystretch}{1.5}
+
+
+
+\providecommand{\ascline}[3]{\noalign{\global\arrayrulewidth #1}\arrayrulecolor[HTML]{#2}\cline{#3}}
+
+\begin{longtable}[c]{|p{1.00in}|p{0.50in}|p{0.50in}|p{0.50in}|p{0.50in}|p{0.50in}|p{0.50in}|p{0.75in}}
+
+\caption{Andel\ af\ danskere\ blandt\ ikke-vestlige\ indvandrere\ og\ efterkommeres\ og\ nære\ venskaber.\ Procent.
+}\label{tab:unnamed-chunk-16}\\
+
+\ascline{1.5pt}{666666}{1-8}
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Oprindelse}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Ingen}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Næsten\ ingen}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Under\ halvdelen}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Omkring\ halvdelen}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Over\ halvdelen}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\%}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{N}}}} \\
+
+\ascline{1.5pt}{666666}{1-8}\endfirsthead \caption[]{Andel\ af\ danskere\ blandt\ ikke-vestlige\ indvandrere\ og\ efterkommeres\ og\ nære\ venskaber.\ Procent.
+}\label{tab:unnamed-chunk-16}\\
+
+\ascline{1.5pt}{666666}{1-8}
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Oprindelse}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Ingen}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Næsten\ ingen}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Under\ halvdelen}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Omkring\ halvdelen}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{Over\ halvdelen}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\%}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{N}}}} \\
+
+\ascline{1.5pt}{666666}{1-8}\endhead
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{MENAP-lande\ og\ Tyrkiet,\ 18-29-årige}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{7}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{13}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{22}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{29}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{28}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{100}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{458}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{Øvrige\ ikke-vestlige\ lande,\ 18-29-årige}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{8}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{10}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{18}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{23}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{41}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{100}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{449}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{MENAP-lande\ og\ Tyrkiet,\ +30\ årige}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{9}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{15}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{27}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{24}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{26}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{100}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{695}}}} \\
+
+
+
+
+
+\multicolumn{1}{>{\raggedright}m{\dimexpr 1in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{\textbf{Øvrige\ ikke-vestlige\ lande,\ +30\ årige}}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{7}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{17}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{22}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{21}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{33}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.5in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{100}}}} & \multicolumn{1}{>{\raggedright}m{\dimexpr 0.75in+0\tabcolsep}}{\textcolor[HTML]{000000}{\fontsize{9}{9}\selectfont{\global\setmainfont{Fira Sans}{883}}}} \\
+
+\ascline{1.5pt}{666666}{1-8}
+
+
+
+\end{longtable}
+
+
+
+\arrayrulecolor[HTML]{000000}
+
+\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}
+
+\global\setlength{\tabcolsep}{\Oldtabcolsep}
+
+\renewcommand*{\arraystretch}{1}
+
+\begin{footnotesize}\textit{\textcolor{gray}{
+\textit{\textbf{Spørgsmål}}: Hvor stor en del af dine nære venner er personer med dansk baggrund?
+\textit{\textbf{Note}}: ”Ved ikke” og ”ønsker ikke at svare” er ikke medtaget. Vejet data.
+\textit{\textbf{Kilde}}: Egne beregninger på Medborgerskabsundersøgelsen 2024
+}}
+\end{footnotesize}
+
 Langt de fleste ikke-vestlige indvandrere og efterkommere angiver, at de har en nær dansk ven. I undersøgelsens fire undergrupper er det under ti procent, der angiver, at de ingen nær dansk ven har, se tabel 6.2. Målt på den andel, er der ikke nogen nævneværdig forskel på, hvorvidt man er mellem 18-29 år eller 30+. Der er heller ikke nogen tydelig forskel på, hvorvidt man kommer fra et muslimsk oprindelsesland eller et andet ikke-vestligt land. I \hyperref[kap2]{kapitel 2} viste vi, at de fleste indvandrere ikke har en dansk partner, hvilket i særdeleshed gjorde sig gældende for indvandrere fra muslimske lande. Omvendt ser det ud for venskaber. Her er det atypisk ikke at have en nær dansk ven. Det gælder også for indvandrere og efterkommere fra muslimske lande. Inkluderer man gruppen, der angiver ''næsten igen nære danske venner'' udvides omfanget af, hvad man kunne venskabsisolation. Men det er stadig ikke mindre tal i de fire grupper, der angiver ingen eller næsten ingen danske venner, se tabel 6.2.
 
 \begin{figure}
@@ -1365,7 +1522,7 @@ Vi opfatter de præsenterede resultater som et første skridt i et spirende fors
 
 \thispagestyle{empty}
 
-\emph{\href{https://vbn.aau.dk/en/persons/albrekt}{Christian Albrekt Larsen}} og \emph{\href{https://vbn.aau.dk/en/persons/hpq}{Hans-Peter Y. Qvist}}
+\emph{\href{https://vbn.aau.dk/en/persons/albrekt}{Christian Albrekt Larsen}} og \emph{\href{https://vbn.aau.dk/en/persons/hpq}{Hans-Peter Yogachandiran Qvist}}
 
 ~~~~
 

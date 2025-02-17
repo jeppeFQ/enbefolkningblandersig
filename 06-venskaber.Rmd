@@ -144,6 +144,51 @@ Mulighedsstrukturerne for at danne venskaber ser anderledes ud for indvandrere o
 
 > INDSÆT TABEL 6.2 HER!
 
+```{r}
+
+typology <- data.frame(
+  col_keys = c(
+    "Oprindelse", "Næsten Ingen", "Under halvdelen", "Omkring Halvdelen", "Over halvdelen", "%", "N"
+  ),
+  what = c("Oprindelse", "Antal nære venskaber med personer fra:", "Antal nære venskaber med personer fra:", "Antal nære venskaber med personer fra:", "Antal nære venskaber med personer fra:", "I alt", "I alt"),
+  measure = c("Oprindelse", "Næsten Ingen", "Under halvdelen", "Omkring Halvdelen", "Over halvdelen", "%", "N"),
+  stringsAsFactors = FALSE
+)
+
+read_csv2("data/figur_6_2_ny.csv") %>%
+  flextable() %>% 
+  set_header_labels(...1 = " ") %>% 
+  theme_booktabs() %>% 
+  bold(j = c(1), bold = TRUE, part = "body") %>% 
+  width(j = c(2:7), width = .5) %>% 
+  width(j = c(1), width = 1) %>% 
+  fontsize(size = 9, part = "header") %>% 
+  fontsize(size = 9, part = "body") %>% 
+  font(fontname = "Fira Sans", part = "all") %>% 
+  set_caption("Andel af danskere blandt ikke-vestlige indvandrere og efterkommeres og nære venskaber. Procent.\n") %>% 
+  align(align = "left", part = "header") %>% 
+  align(align = "left", part = "body")
+```
+
+
+```{r, results="asis", echo=FALSE}
+
+if (knitr::is_html_output()) {
+  cat('<p style="text-align:left; font-style:italic; color:gray; font-size: 0.85em;">\n')
+  cat('***Spørgsmål***: Hvor stor en del af dine nære venner er personer med dansk baggrund??\n')
+  cat('***Note***: ”Ved ikke” og ”ønsker ikke at svare” er ikke medtaget. Vejet data.\n')
+  cat('***Kilde***: Egne beregninger på Medborgerskabsundersøgelsen 2024\n')
+  cat('</p>\n')
+} else if (knitr::is_latex_output()) {
+  cat('\\begin{footnotesize}\\textit{\\textcolor{gray}{\n')
+  cat('\\textit{\\textbf{Spørgsmål}}: Hvor stor en del af dine nære venner er personer med dansk baggrund?\n')
+  cat('\\textit{\\textbf{Note}}: ”Ved ikke” og ”ønsker ikke at svare” er ikke medtaget. Vejet data.\n')
+  cat('\\textit{\\textbf{Kilde}}: Egne beregninger på Medborgerskabsundersøgelsen 2024\n')
+  cat('}}\n\\end{footnotesize}\n')
+}
+
+```
+
 Langt de fleste ikke-vestlige indvandrere og efterkommere angiver, at de har en nær dansk ven. I undersøgelsens fire undergrupper er det under ti procent, der angiver, at de ingen nær dansk ven har, se tabel 6.2. Målt på den andel, er der ikke nogen nævneværdig forskel på, hvorvidt man er mellem 18-29 år eller 30+. Der er heller ikke nogen tydelig forskel på, hvorvidt man kommer fra et muslimsk oprindelsesland eller et andet ikke-vestligt land. I [kapitel 2](#kap2) viste vi, at de fleste indvandrere ikke har en dansk partner, hvilket i særdeleshed gjorde sig gældende for indvandrere fra muslimske lande. Omvendt ser det ud for venskaber. Her er det atypisk ikke at have en nær dansk ven. Det gælder også for indvandrere og efterkommere fra muslimske lande. Inkluderer man gruppen, der angiver ”næsten igen nære danske venner” udvides omfanget af, hvad man kunne venskabsisolation. Men det er stadig ikke mindre tal i de fire grupper, der angiver ingen eller næsten ingen danske venner, se tabel 6.2. 
 
 [^63]: Selvom det er et veletableret menneskeligt forhold, at mennesker har en præference for relationer med andre, der ligner en selv på et eller flere parametre, ved vi ikke hvorvidt indvandrere og efterkommere har større ønske om at etablere venskaber med majoriteten end omvendt. I udgangspunktet kunne man forvente et større ønske om tværetnisk venskab, da indvandrere og efterkommere har stærkere incitamenter til at danne sådanne venskaber, se [kapitel 1](#kap1).

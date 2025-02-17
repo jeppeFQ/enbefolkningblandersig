@@ -193,19 +193,16 @@ leaflet(dk_kom) %>%
 
 } else if (knitr::is_latex_output()) {
 
-leaflet(dk_kom) %>%
-  #addTiles() %>%
-  addPolygons(data = dk_kom %>% st_transform('+proj=longlat +datum=WGS84'),
-              stroke = FALSE,
-              smoothFactor = 0.2,
-              weight = 1,
-              fillOpacity = .7,
-              color= ~pal(non_native)) %>% 
-  addLegend("bottomright", pal = pal, values = ~dk_kom$non_native, 
-            title = "Personer med to</br>ikke-danskfødte</br>forældre",
-            labFormat = labelFormat(suffix = '%', between = '% - ',
-                                                  transform = function(x) 100 * x)) %>% 
-  setMapWidgetStyle(list(background= "white"))
+ggplot(dk_kom %>% st_transform('+proj=longlat +datum=WGS84')) +
+    geom_sf(aes(fill = non_native, alpha = .9), linewidth = 0.02, color = "white") +
+    labs(fill = "Personer med to\nikke-danskfødte\nforældre (%)") +
+    scale_fill_gradientn(colors = brewer.pal(11, "PiYG")) +
+    scale_alpha_identity() +
+    theme_void() +
+    theme(
+    legend.position = c(0.95, 0.95),  
+    legend.justification = c(1, 1)
+  )
   
 }
 
