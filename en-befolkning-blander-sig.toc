@@ -1,4 +1,5 @@
-\contentsline {chapter}{Forord}{i}{chapter*.1}%
+\contentsline {chapter}{\color {white} En befolkning blander sig}{i}{chapter*.1}%
+\contentsline {chapter}{Forord}{iii}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}En befolkning blander sig}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Integration og assimilering---en tovejsproces}{3}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Drivkraften mod sine egne og tvungne mødepladser}{5}{section.1.2}%
@@ -40,7 +41,7 @@
 \contentsline {section}{\numberline {7.2}Effekter fra at mødes på arbejdspladsen}{64}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Kontaktperspektivets begrænsninger og videre forskning}{64}{section.7.3}%
 \contentsline {section}{\numberline {7.4}Kontaktperspektivet og debatten om integration}{65}{section.7.4}%
-\contentsline {chapter}{Litteraturliste}{69}{chapter*.23}%
+\contentsline {chapter}{Litteraturliste}{69}{chapter*.24}%
 \contentsline {chapter}{\numberline {A}Segregeringsmål}{75}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Dissimilaritetsindekset}{75}{section.A.1}%
 \contentsline {section}{\numberline {A.2}Korrigeret D-indeks}{78}{section.A.2}%
