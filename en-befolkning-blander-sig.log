@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.2.14)  17 FEB 2025 14:33
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2025.2.14)  17 FEB 2025 14:39
  system commands enabled.
 **en-befolkning-blander-sig.tex
 (./en-befolkning-blander-sig.tex
@@ -1454,7 +1454,7 @@ LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
 (Font)              scaled to size 14.4pt on input line 266.
 
 warning  (file images/kap0.jpg) (readjpg): Exif resolution 600dpi x 600dpi differs from the input resolution 72dpi x 72dpi
-<images/kap0.jpg, id=181, 240.9pt x 160.55984pt>
+<images/kap0.jpg, id=184, 240.9pt x 160.55984pt>
 File: images/kap0.jpg Graphic file (type jpg)
 <use images/kap0.jpg>
 Package luatex.def Info: images/kap0.jpg  used on input line 276.
@@ -1476,20 +1476,20 @@ LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
 [3]
 
 [4]
-<en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf, id=244, 469.755pt x 325.215pt>
-File: en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf Graphic file (type pdf)
-<use en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf  used on input line 333.
-(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 333.
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 333.
-LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 333.
-
 
 [5]
+<en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf, id=255, 469.755pt x 325.215pt>
+File: en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf Graphic file (type pdf)
+<use en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf>
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf  used on input line 335.
+(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 335.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
+(Font)              scaled to size 9.0pt on input line 335.
+LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
+(Font)              scaled to size 9.0pt on input line 335.
+
 
 [6<./en-befolkning-blander-sig_files/figure-latex/fig-1-1-1.pdf>]
 
@@ -1498,83 +1498,87 @@ LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
 [8]
 
 [9]
-<en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf, id=320, 469.755pt x 325.215pt>
+
+[10]
+<en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf, id=331, 469.755pt x 325.215pt>
 File: en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf  used on input line 385.
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf  used on input line 388.
 (luatex.def)             Requested size: 380.69789pt x 263.56165pt.
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 390.
+(Font)              scaled to size 8.0pt on input line 393.
 
 
-[10<./en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf>]
+[11<./en-befolkning-blander-sig_files/figure-latex/fig-1-22-1.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[11]
-
 [12]
+
+[13]
+
+[14
+
+]
 Chapter 2.
 
 warning  (file images/kap2.jpg) (readjpg): Exif resolution 600dpi x 600dpi differs from the input resolution 72dpi x 72dpi
-<images/kap2.jpg, id=357, 240.9pt x 160.55984pt>
+<images/kap2.jpg, id=373, 240.9pt x 160.55984pt>
 File: images/kap2.jpg Graphic file (type jpg)
 <use images/kap2.jpg>
-Package luatex.def Info: images/kap2.jpg  used on input line 434.
+Package luatex.def Info: images/kap2.jpg  used on input line 437.
 (luatex.def)             Requested size: 380.69789pt x 253.76013pt.
 
 
-[13
-
-<./images/kap2.jpg
+[15<./images/kap2.jpg
 warning  (readjpg): Exif resolution 600dpi x 600dpi differs from the input resolution 72dpi x 72dpi
 >]
 
-[14]
-<images/figur_intergruppepartnerskaber_alle.pdf, id=378, 264.79929pt x 184.94093pt>
+[16]
+<images/figur_intergruppepartnerskaber_alle.pdf, id=393, 264.79929pt x 184.94093pt>
 File: images/figur_intergruppepartnerskaber_alle.pdf Graphic file (type pdf)
 <use images/figur_intergruppepartnerskaber_alle.pdf>
-Package luatex.def Info: images/figur_intergruppepartnerskaber_alle.pdf  used on input line 462.
+Package luatex.def Info: images/figur_intergruppepartnerskaber_alle.pdf  used on input line 465.
 (luatex.def)             Requested size: 285.5234pt x 199.42563pt.
 
 
-[15<./images/figur_intergruppepartnerskaber_alle.pdf>]
+[17<./images/figur_intergruppepartnerskaber_alle.pdf>]
 
-[16]
-<images/figur_intergruppepartnerskaber_2020.pdf, id=415, 312.97928pt x 376.42632pt>
+[18]
+<images/figur_intergruppepartnerskaber_2020.pdf, id=430, 312.97928pt x 376.42632pt>
 File: images/figur_intergruppepartnerskaber_2020.pdf Graphic file (type pdf)
 <use images/figur_intergruppepartnerskaber_2020.pdf>
-Package luatex.def Info: images/figur_intergruppepartnerskaber_2020.pdf  used on input line 485.
+Package luatex.def Info: images/figur_intergruppepartnerskaber_2020.pdf  used on input line 488.
 (luatex.def)             Requested size: 380.69789pt x 457.88388pt.
 
 
-[17<./images/figur_intergruppepartnerskaber_2020.pdf>]
+[19<./images/figur_intergruppepartnerskaber_2020.pdf>]
 
-[18]
+[20]
 
-[19]
+[21]
 
-[20
+[22
 
 ]
 Chapter 3.
 
 warning  (file images/kap3.jpg) (readjpg): Exif resolution 600dpi x 600dpi differs from the input resolution 72dpi x 72dpi
-<images/kap3.jpg, id=461, 240.9pt x 160.55984pt>
+<images/kap3.jpg, id=476, 240.9pt x 160.55984pt>
 File: images/kap3.jpg Graphic file (type jpg)
 <use images/kap3.jpg>
-Package luatex.def Info: images/kap3.jpg  used on input line 532.
+Package luatex.def Info: images/kap3.jpg  used on input line 535.
 (luatex.def)             Requested size: 380.69789pt x 253.76013pt.
 
 
-[21<./images/kap3.jpg
+[23<./images/kap3.jpg
 warning  (readjpg): Exif resolution 600dpi x 600dpi differs from the input resolution 72dpi x 72dpi
 >]
 
-[22]
+[24]
 
-[23]
+[25]
 
 Package fontspec Info: 
 (fontspec)             Fira Sans scale = 0.9999971046048366.
@@ -1679,7 +1683,7 @@ Package fontspec Info:
 (fontspec)             Sans/BI:mode=node;script=latn;language=dflt;+tlig;+smcp;"
 
 LaTeX Font Info:    Font shape `TU/FiraSans(2)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 575.
+(Font)              scaled to size 10.0pt on input line 578.
 
 Package fontspec Info: 
 (fontspec)             Fira Sans scale = 0.9999971046048366.
@@ -1761,9 +1765,9 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 LaTeX Font Info:    Font shape `TU/FiraSans(2)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 600.
+(Font)              scaled to size 9.0pt on input line 603.
 LaTeX Font Info:    Font shape `TU/FiraSans(2)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 600.
+(Font)              scaled to size 9.0pt on input line 603.
 
 Package fontspec Info: 
 (fontspec)             Fira Sans scale = 0.9999967828901227.
@@ -2014,7 +2018,7 @@ Package fontspec Info:
 
 
 
-[24]
+[26]
 
 Package fontspec Info: 
 (fontspec)             Fira Sans scale = 0.9999971046048366.
@@ -2488,16 +2492,16 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 
-LaTeX Warning: Reference `fig:fig-1-2' on page 25 undefined on input line 776.
+LaTeX Warning: Reference `fig:fig-1-2' on page 27 undefined on input line 779.
 
-<images/figur_3_1.png, id=505, 361.1091pt x 177.5433pt>
+<images/figur_3_1.png, id=520, 361.1091pt x 177.5433pt>
 File: images/figur_3_1.png Graphic file (type png)
 <use images/figur_3_1.png>
-Package luatex.def Info: images/figur_3_1.png  used on input line 783.
+Package luatex.def Info: images/figur_3_1.png  used on input line 786.
 (luatex.def)             Requested size: 285.5234pt x 140.38498pt.
 
 
-[25]
+[27]
 
 Package fontspec Info: 
 (fontspec)             Fira Sans scale = 0.9999971046048366.
@@ -2587,7 +2591,7 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 
-Overfull \hbox (1.62393pt too wide) in paragraph at lines 822--822
+Overfull \hbox (1.62393pt too wide) in paragraph at lines 825--825
  []|[]\TU/FiraSans(2)/m/n/9 29,967[]|
  []
 
@@ -2672,7 +2676,7 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 
-Overfull \hbox (0.72556pt too wide) in paragraph at lines 840--840
+Overfull \hbox (0.72556pt too wide) in paragraph at lines 843--843
  []|[]\TU/FiraSans(2)/m/n/9 27,057[]|
  []
 
@@ -2854,194 +2858,194 @@ Package fontspec Info:
 
 
 
-[26<./images/figur_3_1.png>]
+[28<./images/figur_3_1.png>]
 
-[27]
+[29]
 
-[28
+[30
 
 ]
 Chapter 4.
 
 warning  (file images/kap4.jpg) (readjpg): Exif resolution 600dpi x 600dpi differs from the input resolution 72dpi x 72dpi
-<images/kap4.jpg, id=534, 240.9pt x 179.10915pt>
+<images/kap4.jpg, id=549, 240.9pt x 179.10915pt>
 File: images/kap4.jpg Graphic file (type jpg)
 <use images/kap4.jpg>
-Package luatex.def Info: images/kap4.jpg  used on input line 919.
+Package luatex.def Info: images/kap4.jpg  used on input line 922.
 (luatex.def)             Requested size: 380.69789pt x 283.0768pt.
 
 
-[29<./images/kap4.jpg
+[31<./images/kap4.jpg
 warning  (readjpg): Exif resolution 600dpi x 600dpi differs from the input resolution 72dpi x 72dpi
 >]
 
-[30]
+[32]
 
-LaTeX Warning: Hyper reference `ux5cux2520https:ux2fux2fwww.retsinformation.dkux2feliux2fltaux2f2005ux2f393' on page 31 undefined on input line 943.
-
-
-
-[31]
-<images/figur_3_1c_distance_antal.pdf, id=597, 569.05598pt x 284.52296pt>
-File: images/figur_3_1c_distance_antal.pdf Graphic file (type pdf)
-<use images/figur_3_1c_distance_antal.pdf>
-Package luatex.def Info: images/figur_3_1c_distance_antal.pdf  used on input line 950.
-(luatex.def)             Requested size: 380.69789pt x 190.35152pt.
-
-
-[32<./images/figur_3_1c_distance_antal.pdf>]
-
-LaTeX Warning: Hyper reference `ux5cux2520bilag1' on page 33 undefined on input line 969.
+LaTeX Warning: Hyper reference `ux5cux2520https:ux2fux2fwww.retsinformation.dkux2feliux2fltaux2f2005ux2f393' on page 33 undefined on input line 946.
 
 
 
 [33]
+<images/figur_3_1c_distance_antal.pdf, id=613, 569.05598pt x 284.52296pt>
+File: images/figur_3_1c_distance_antal.pdf Graphic file (type pdf)
+<use images/figur_3_1c_distance_antal.pdf>
+Package luatex.def Info: images/figur_3_1c_distance_antal.pdf  used on input line 953.
+(luatex.def)             Requested size: 380.69789pt x 190.35152pt.
 
-[34]
-<images/figur_3_2.pdf, id=673, 551.99223pt x 240.35799pt>
+
+[34<./images/figur_3_1c_distance_antal.pdf>]
+
+LaTeX Warning: Hyper reference `ux5cux2520bilag1' on page 35 undefined on input line 972.
+
+
+
+[35]
+
+[36]
+<images/figur_3_2.pdf, id=688, 551.99223pt x 240.35799pt>
 File: images/figur_3_2.pdf Graphic file (type pdf)
 <use images/figur_3_2.pdf>
-Package luatex.def Info: images/figur_3_2.pdf  used on input line 988.
+Package luatex.def Info: images/figur_3_2.pdf  used on input line 991.
 (luatex.def)             Requested size: 380.69789pt x 165.77383pt.
 
 
-[35<./images/figur_3_2.pdf>]
-<images/Figur4-removebg-preview.png, id=704, 578.16pt x 435.6275pt>
+[37<./images/figur_3_2.pdf>]
+<images/Figur4-removebg-preview.png, id=719, 578.16pt x 435.6275pt>
 File: images/Figur4-removebg-preview.png Graphic file (type png)
 <use images/Figur4-removebg-preview.png>
-Package luatex.def Info: images/Figur4-removebg-preview.png  used on input line 1010.
+Package luatex.def Info: images/Figur4-removebg-preview.png  used on input line 1013.
 (luatex.def)             Requested size: 380.69789pt x 286.84367pt.
 
 
-[36]
-
-[37<./images/Figur4-removebg-preview.png>]
-
 [38]
-<images/Figur5-removebg-preview.png, id=749, 574.145pt x 437.635pt>
+
+[39<./images/Figur4-removebg-preview.png>]
+
+[40]
+<images/Figur5-removebg-preview.png, id=764, 574.145pt x 437.635pt>
 File: images/Figur5-removebg-preview.png Graphic file (type png)
 <use images/Figur5-removebg-preview.png>
-Package luatex.def Info: images/Figur5-removebg-preview.png  used on input line 1030.
+Package luatex.def Info: images/Figur5-removebg-preview.png  used on input line 1033.
 (luatex.def)             Requested size: 380.69789pt x 290.18889pt.
 
 
-[39<./images/Figur5-removebg-preview.png>]
+[41<./images/Figur5-removebg-preview.png>]
 
-[40
+[42
 
 ]
 Chapter 5.
 
 warning  (file images/kap5.jpg) (readjpg): Exif resolution 600dpi x 600dpi differs from the input resolution 72dpi x 72dpi
-<images/kap5.jpg, id=766, 240.9pt x 167.9073pt>
+<images/kap5.jpg, id=781, 240.9pt x 167.9073pt>
 File: images/kap5.jpg Graphic file (type jpg)
 <use images/kap5.jpg>
-Package luatex.def Info: images/kap5.jpg  used on input line 1052.
+Package luatex.def Info: images/kap5.jpg  used on input line 1055.
 (luatex.def)             Requested size: 380.69789pt x 265.37259pt.
 
 
-[41<./images/kap5.jpg
+[43<./images/kap5.jpg
 warning  (readjpg): Exif resolution 600dpi x 600dpi differs from the input resolution 72dpi x 72dpi
 >]
 
-LaTeX Warning: Hyper reference `bilagA' on page 42 undefined on input line 1068.
+LaTeX Warning: Hyper reference `bilagA' on page 44 undefined on input line 1071.
 
 
 
-[42]
-<en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf, id=819, 469.755pt x 325.215pt>
+[44]
+<en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf, id=836, 469.755pt x 325.215pt>
 File: en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf  used on input line 1075.
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf  used on input line 1078.
 (luatex.def)             Requested size: 380.69789pt x 263.56165pt.
 
-LaTeX Warning: Hyper reference `bilagA' on page 43 undefined on input line 1078.
+LaTeX Warning: Hyper reference `bilagA' on page 45 undefined on input line 1081.
 
 
 
-[43<./en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf>]
+[45<./en-befolkning-blander-sig_files/figure-latex/fig-5-1-1.pdf>]
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/n' will be
-(Font)              scaled to size 8.0pt on input line 1082.
+(Font)              scaled to size 8.0pt on input line 1085.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1084--1084
+Underfull \hbox (badness 10000) in paragraph at lines 1087--1087
 |[]\TU/FiraSans(0)/b/n/14.4 Gen-nem-snitlig ek-sponer-ing til in-d-van-drere og
  []
 
 
 
-[44]
-<images/Figur_4_1.png, id=982, 281.1303pt x 207.4149pt>
+[46]
+<images/Figur_4_1.png, id=997, 281.1303pt x 207.4149pt>
 File: images/Figur_4_1.png Graphic file (type png)
 <use images/Figur_4_1.png>
-Package luatex.def Info: images/Figur_4_1.png  used on input line 1095.
+Package luatex.def Info: images/Figur_4_1.png  used on input line 1098.
 (luatex.def)             Requested size: 266.48735pt x 196.6126pt.
 
 
-[45<./images/Figur_4_1.png>]
-<images/Figur_4_2.png, id=994, 283.0575pt x 208.6194pt>
+[47<./images/Figur_4_1.png>]
+<images/Figur_4_2.png, id=1009, 283.0575pt x 208.6194pt>
 File: images/Figur_4_2.png Graphic file (type png)
 <use images/Figur_4_2.png>
-Package luatex.def Info: images/Figur_4_2.png  used on input line 1112.
+Package luatex.def Info: images/Figur_4_2.png  used on input line 1115.
 (luatex.def)             Requested size: 266.48735pt x 196.42377pt.
 
 
-[46<./images/Figur_4_2.png>]
-<images/Figur_4_3.png, id=1002, 280.52805pt x 202.8378pt>
+[48<./images/Figur_4_2.png>]
+<images/Figur_4_3.png, id=1017, 280.52805pt x 202.8378pt>
 File: images/Figur_4_3.png Graphic file (type png)
 <use images/Figur_4_3.png>
-Package luatex.def Info: images/Figur_4_3.png  used on input line 1127.
+Package luatex.def Info: images/Figur_4_3.png  used on input line 1130.
 (luatex.def)             Requested size: 266.48735pt x 192.70409pt.
 
 
-[47<./images/Figur_4_3.png>]
-<images/Figur_4_4.png, id=1017, 281.49165pt x 207.77625pt>
+[49<./images/Figur_4_3.png>]
+<images/Figur_4_4.png, id=1032, 281.49165pt x 207.77625pt>
 File: images/Figur_4_4.png Graphic file (type png)
 <use images/Figur_4_4.png>
-Package luatex.def Info: images/Figur_4_4.png  used on input line 1144.
+Package luatex.def Info: images/Figur_4_4.png  used on input line 1147.
 (luatex.def)             Requested size: 266.48735pt x 196.71417pt.
 
-Underfull \hbox (badness 6396) in paragraph at lines 1144--1144
+Underfull \hbox (badness 6396) in paragraph at lines 1147--1147
 []\TU/FiraSans(0)/b/n/9 Figur 5.5: |\TU/FiraSans(0)/m/it/9 Beskæftigede in-d-van-dr-eres/efterkom-meres gen-nem-snitlige ek-sponer-ing til
  []
 
 
 
-[48<./images/Figur_4_4.png>]
-<images/Figur_4_5.png, id=1029, 282.0939pt x 207.53535pt>
+[50<./images/Figur_4_4.png>]
+<images/Figur_4_5.png, id=1044, 282.0939pt x 207.53535pt>
 File: images/Figur_4_5.png Graphic file (type png)
 <use images/Figur_4_5.png>
-Package luatex.def Info: images/Figur_4_5.png  used on input line 1163.
+Package luatex.def Info: images/Figur_4_5.png  used on input line 1166.
 (luatex.def)             Requested size: 266.48735pt x 196.07443pt.
 
-LaTeX Warning: Hyper reference `indledning' on page 49 undefined on input line 1177.
+LaTeX Warning: Hyper reference `indledning' on page 51 undefined on input line 1180.
 
 
 
-[49<./images/Figur_4_5.png>]
+[51<./images/Figur_4_5.png>]
 
-[50
+[52
 
 ]
 Chapter 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
 |\TU/FiraSans(0)/b/n/24.88 Tværet-niske ven-sk-aber --- det
  []
 
 
 warning  (file images/kap71.jpg) (readjpg): Exif resolution 600dpi x 600dpi differs from the input resolution 72dpi x 72dpi
-<images/kap71.jpg, id=1047, 240.9pt x 172.84575pt>
+<images/kap71.jpg, id=1062, 240.9pt x 172.84575pt>
 File: images/kap71.jpg Graphic file (type jpg)
 <use images/kap71.jpg>
-Package luatex.def Info: images/kap71.jpg  used on input line 1190.
+Package luatex.def Info: images/kap71.jpg  used on input line 1193.
 (luatex.def)             Requested size: 380.69789pt x 273.17766pt.
 
 
-[51<./images/kap71.jpg
+[53<./images/kap71.jpg
 warning  (readjpg): Exif resolution 600dpi x 600dpi differs from the input resolution 72dpi x 72dpi
 >]
 
-[52]
+[54]
 
 Package fontspec Info: 
 (fontspec)             Fira Sans scale = 0.9999967828901227.
@@ -3427,22 +3431,22 @@ Package fontspec Info:
 (fontspec)             Fira Sans scale = 1.
 
 LaTeX Font Info:    Font shape `TU/FiraSans(0)/b/it' will be
-(Font)              scaled to size 8.0pt on input line 1294.
+(Font)              scaled to size 8.0pt on input line 1297.
 
 
-[53]
-<en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf, id=1083, 469.755pt x 325.215pt>
+[55]
+<en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf, id=1098, 469.755pt x 325.215pt>
 File: en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf  used on input line 1302.
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf  used on input line 1305.
 (luatex.def)             Requested size: 380.69789pt x 263.56165pt.
 
 
-[54<./en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf>]
-<images/Figur_6_2.pdf, id=1103, 569.05598pt x 142.26149pt>
+[56<./en-befolkning-blander-sig_files/figure-latex/fig-6-1-1.pdf>]
+<images/Figur_6_2.pdf, id=1118, 569.05598pt x 142.26149pt>
 File: images/Figur_6_2.pdf Graphic file (type pdf)
 <use images/Figur_6_2.pdf>
-Package luatex.def Info: images/Figur_6_2.pdf  used on input line 1315.
+Package luatex.def Info: images/Figur_6_2.pdf  used on input line 1318.
 (luatex.def)             Requested size: 380.69789pt x 95.17575pt.
 
 Package fontspec Info: 
@@ -3830,136 +3834,136 @@ Package fontspec Info:
 
 
 
-[55<./images/Figur_6_2.pdf>]
-<en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf, id=1150, 469.755pt x 325.215pt>
+[57<./images/Figur_6_2.pdf>]
+<en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf, id=1165, 469.755pt x 325.215pt>
 File: en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf  used on input line 1409.
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf  used on input line 1412.
 (luatex.def)             Requested size: 380.69789pt x 263.56165pt.
 
 
-[56]
-<en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf, id=1161, 469.755pt x 325.215pt>
+[58]
+<en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf, id=1176, 469.755pt x 325.215pt>
 File: en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf  used on input line 1424.
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf  used on input line 1427.
 (luatex.def)             Requested size: 380.69789pt x 263.56165pt.
-<en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf, id=1164, 469.755pt x 325.215pt>
+<en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf, id=1179, 469.755pt x 325.215pt>
 File: en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf Graphic file (type pdf)
 <use en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf  used on input line 1430.
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf  used on input line 1433.
 (luatex.def)             Requested size: 380.69789pt x 263.56165pt.
 
 
-[57<./en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf>]
+[59<./en-befolkning-blander-sig_files/figure-latex/fig-6-3-1.pdf>]
 
-[58<./en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf><./en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf>]
+[60<./en-befolkning-blander-sig_files/figure-latex/fig-6-4-1.pdf><./en-befolkning-blander-sig_files/figure-latex/fig-6-5-1.pdf>]
 
-[59]
+[61]
 
-[60
+[62
 
 ]
 Chapter 7.
 
 warning  (file images/kap7.jpg) (readjpg): Exif resolution 600dpi x 600dpi differs from the input resolution 72dpi x 72dpi
-<images/kap7.jpg, id=1203, 240.9pt x 160.55984pt>
+<images/kap7.jpg, id=1218, 240.9pt x 160.55984pt>
 File: images/kap7.jpg Graphic file (type jpg)
 <use images/kap7.jpg>
-Package luatex.def Info: images/kap7.jpg  used on input line 1445.
+Package luatex.def Info: images/kap7.jpg  used on input line 1448.
 (luatex.def)             Requested size: 380.69789pt x 253.76013pt.
 
 
-[61<./images/kap7.jpg
+[63<./images/kap7.jpg
 warning  (readjpg): Exif resolution 600dpi x 600dpi differs from the input resolution 72dpi x 72dpi
 >]
-
-[62]
-
-[63]
 
 [64]
 
 [65]
-Underfull \hbox (badness 2293) in paragraph at lines 1509--1510
+
+[66]
+
+[67]
+Underfull \hbox (badness 2293) in paragraph at lines 1512--1513
 \TU/FiraSans(2)/m/n/10 In-te-gra-tions-barom-e-ter er, at det han-dler om mange forskel-lige di-men-sioner,
  []
 
 
 
-[66]
-
-[67]
-
-[68
-
-]
+[68]
 
 [69]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [70
-Missing character: There is no ‐ (U+2010) in font "name:Fira Sans:mode=node;script=latn;language=dflt;+tlig;"!
+
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [71]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[72]
+[72
+Missing character: There is no ‐ (U+2010) in font "name:Fira Sans:mode=node;script=latn;language=dflt;+tlig;"!
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [73]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[74
+
+
+[74]
+
+[75]
+
+[76
 
 ]
 Bilag A.
 
 
-[75]
-
-[76]
-<en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf, id=1417, 469.755pt x 325.215pt>
-File: en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf Graphic file (type pdf)
-<use en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf  used on input line 1872.
-(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
-
-
-[77<./en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf>]
+[77]
 
 [78]
-
-[79]
-<en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf, id=1476, 469.755pt x 325.215pt>
-File: en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf Graphic file (type pdf)
-<use en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf  used on input line 1915.
-(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
-<en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf, id=1477, 469.755pt x 325.215pt>
-File: en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf Graphic file (type pdf)
-<use en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf  used on input line 1919.
+<en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf, id=1432, 469.755pt x 325.215pt>
+File: en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf Graphic file (type pdf)
+<use en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf>
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf  used on input line 1875.
 (luatex.def)             Requested size: 380.69789pt x 263.56165pt.
 
+
+[79<./en-befolkning-blander-sig_files/figure-latex/fig-9-1-1.pdf>]
 
 [80]
 
-[81<./en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf><./en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf>]
-<en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf, id=1505, 469.755pt x 325.215pt>
-File: en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf Graphic file (type pdf)
-<use en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf>
-Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf  used on input line 1929.
+[81]
+<en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf, id=1491, 469.755pt x 325.215pt>
+File: en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf Graphic file (type pdf)
+<use en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf>
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf  used on input line 1918.
+(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
+<en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf, id=1492, 469.755pt x 325.215pt>
+File: en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf Graphic file (type pdf)
+<use en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf>
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf  used on input line 1922.
 (luatex.def)             Requested size: 380.69789pt x 263.56165pt.
 
 
-[82<./en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf>] (./en-befolkning-blander-sig.aux)
+[82]
+
+[83<./en-befolkning-blander-sig_files/figure-latex/fig-9-2-1.pdf><./en-befolkning-blander-sig_files/figure-latex/fig-9-3-1.pdf>]
+<en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf, id=1521, 469.755pt x 325.215pt>
+File: en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf Graphic file (type pdf)
+<use en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf>
+Package luatex.def Info: en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf  used on input line 1932.
+(luatex.def)             Requested size: 380.69789pt x 263.56165pt.
+
+
+[84<./en-befolkning-blander-sig_files/figure-latex/fig-9-4-1.pdf>] (./en-befolkning-blander-sig.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -3970,19 +3974,19 @@ LaTeX Warning: There were undefined references.
 )
 
 Here is how much of LuaTeX's memory you used:
- 28229 strings out of 475512
+ 28234 strings out of 475512
  156364,1648299 words of node,token memory allocated
- 1676 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 local_par, 41 glue, 5 kern, 1 penalty, 1 margin_kern, 4 glyph, 177 attribute, 78 glue_spec, 90 attribute_list, 2 write, 38 pdf_action nodes
-   avail lists: 1:6,2:2150,3:484,4:302,5:2310,6:123,7:12056,8:57,9:1307,10:29,11:879
- 50219 multiletter control sequences out of 65536+600000
+ 1700 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 local_par, 41 glue, 5 kern, 1 penalty, 1 margin_kern, 4 glyph, 181 attribute, 78 glue_spec, 92 attribute_list, 2 write, 40 pdf_action nodes
+   avail lists: 1:9,2:2150,3:484,4:304,5:2306,6:119,7:12056,8:57,9:1307,10:29,11:879
+ 50221 multiletter control sequences out of 65536+600000
  87 fonts using 31695639 bytes
  94i,13n,122p,2715b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/jeppefl/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></Users/jeppefl/Library/Fonts/FiraSans-SemiBoldItalic.ttf></Users/jeppefl/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></Users/jeppefl/Library/TinyTeX/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></Users/jeppefl/Library/Fonts/FiraSans-Bold.ttf></Users/jeppefl/Library/Fonts/FiraSans-Italic.ttf></Users/jeppefl/Library/Fonts/FiraSans-SemiBold.ttf></Users/jeppefl/Library/Fonts/FiraSans-Regular.ttf>
-Output written on en-befolkning-blander-sig.pdf (90 pages, 11097759 bytes).
+Output written on en-befolkning-blander-sig.pdf (92 pages, 11098929 bytes).
 
-PDF statistics: 1731 PDF objects out of 2073 (max. 8388607)
- 1380 compressed objects within 14 object streams
- 305 named destinations out of 1000 (max. 131072)
- 408 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1750 PDF objects out of 2073 (max. 8388607)
+ 1397 compressed objects within 14 object streams
+ 308 named destinations out of 1000 (max. 131072)
+ 416 words of extra memory for PDF output out of 10000 (max. 100000000)
 
