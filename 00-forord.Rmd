@@ -1,7 +1,5 @@
 
-<div style="color: white; opacity: 0.0;">
 # Forord {-}
-</div>
 
 \thispagestyle{empty}
 \pagenumbering{roman}
