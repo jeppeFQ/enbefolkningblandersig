@@ -46,11 +46,6 @@ Institut for Politik og Samfund
 Aalborg Universitet 
 
 © Copyright by author(s)
-   
-\newpage
-\thispagestyle{empty}
-
-\pagenumbering{roman}
 
 <div style="color: white; opacity: 0.0;">
 # \color{white} En befolkning blander sig {-}
@@ -66,4 +61,5 @@ if (knitr::is_html_output()) {
 
 
 ```
+
 
