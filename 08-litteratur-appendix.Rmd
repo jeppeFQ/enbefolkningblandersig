@@ -4,7 +4,9 @@
 
 <div id="refs"></div>
 
+<div style="opacity: 0; font-size: 0.1em; margin: 0; padding: 0; line-height: 0;">
 # (APPENDIX) Bilag {-} 
+</div>
 
 # Segregeringsmål {#bilag1}
 
@@ -25,7 +27,7 @@ Eftersom nærværende bilag er en bred introduktion til disse to mål for segreg
 I forskningslitteraturen er det mest anvendte mål for segregering dissimilaritetsindekset ($D$), der blev bredt introduceret af @duncan1955. Selvom $D$ oprindeligt blev udviklet til at beskrive boligsegregering, har indekset også siden i vidt omfang været anvendt til at beskrive skolesegregering og segregerings på arbejdsmarkedet samt andre former for fordeling af personer og grupper.
 
 Med @james1985 notationer er $D$ udregnet som: 
-
+ 
 \begin{equation}
 (\#eq:dissim)
 D=\frac{ {\textstyle \sum_{i=1}^{k} \left | p_{i} - P \right | } }{ 2TP \left ( 1-P \right ) }
@@ -45,15 +47,13 @@ Det er en central pointe, at $D$ måler, hvor ulige to grupper er fordelt mellem
 
 Sammensætningsinvariansen betyder dog ikke, at de relative andele, grupperne udgør i et område, er uden betydning for den overordnede forventede grad af segregering i det pågældende område. Særligt hvis minoritetsgruppen er markant mindre end majoritetsgruppen, og antallet af enheder sætter en strukturel betingelse for mulige fordelinger af de to grupper (se [kapitel 4](#kap4) for et empirisk eksempel). I figur \@ref(fig:fig-9-1) vises simuleringer af 1.000 tilfældige fordelinger ([iid](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables)) af en gruppe på 100 personer inddelt i 2 grupper mellem 10 enheder og fordelingen af de 1.000 målte $D$-scores for otte forskellige relative gruppeandele. Som vi ser, kan segregering variere relativt meget for en given befolkningssammensætning som resultatet af rene tilfældigheder, men spændet af forventede minimums- og maksimumsværdier er strukturelt betinget af de relative andele, som grupperne udgør, når der er et fast antal enheder, som populationen kan fordeles mellem. 
 
-
-
 ```{r fig-9-1, echo=FALSE, message=FALSE, out.width= "100%", fig.cap="Simuleret fordeling af D index under forskellige relative gruppestørrelser i population på 100 personer"}
 
-# Load necessary libraries
+# pck
 library(tidyverse)
 
 
-# Function to calculate the Dissimilarity Index
+# Udregning af Dissimilarity Index
 calculate_dissimilarity_index <- function(group_counts, total_counts) {
   total_population <- sum(total_counts)
   total_group_population <- sum(group_counts)
@@ -68,12 +68,12 @@ calculate_dissimilarity_index <- function(group_counts, total_counts) {
   return(0.5 * index)
 }
 
-# Parameters
+# Parametre
 n_simulations <- 1000
 total_population <- 100
 n_areas <- 10
 distributions <- list(
-  c(50, 50),   # Equal distribution
+  c(50, 50),   # lige fordeling; alle nedenfor, ulige fordelinger
   c(40, 60),
   c(30, 70),   
   c(20, 80),
@@ -83,10 +83,10 @@ distributions <- list(
   c(3, 97)
 )
 
-# Initialize dataframe to store results
+# dataframe
 results <- data.frame(Index = numeric(0), Distribution = factor())
 
-# Simulation for each distribution
+# Simulering af fordelinger
 for (distribution in distributions) {
   group_1_size <- distribution[1]
   group_2_size <- distribution[2]
@@ -94,10 +94,10 @@ for (distribution in distributions) {
   dissimilarity_indices <- numeric(n_simulations)
   
   for (sim in 1:n_simulations) {
-    # Randomly assign individuals to groups
+    # Tilfældig tilskrivning af personer til gruppe
     population <- c(rep(1, group_1_size), rep(2, group_2_size))
     
-    # Randomly assign individuals to areas
+    # Tilfældig tilskrivning af personer til area
     group_counts <- matrix(0, nrow = 2, ncol = n_areas)
     for (i in 1:total_population) {
       area <- sample(1:n_areas, 1)
@@ -105,14 +105,14 @@ for (distribution in distributions) {
       group_counts[group, area] <- group_counts[group, area] + 1
     }
     
-    # Calculate total counts per area
+    # Udregn count pr area
     total_counts <- colSums(group_counts)
     
-    # Calculate Dissimilarity Index
+    # Udregn Dissimilarity Index
     dissimilarity_indices[sim] <- calculate_dissimilarity_index(group_counts[1, ], total_counts)
   }
   
-  # Store results
+  # Gem resultater
   dist_label <- paste(group_1_size, ":", group_2_size)
   results <- rbind(results, data.frame(Index = dissimilarity_indices, 
                                        Distribution = dist_label))
@@ -128,7 +128,7 @@ results[["Distribution_sorted"]] <- factor(results[["Distribution"]],
                                              "5 : 95",
                                              "3 : 97"))
 
-# Visualize the distribution
+# Visualisering
 palette <- c("#1f77b4", "#ff7f0e", 
              "#2ca02c", "#d62728", 
              "#9467bd", "#8c564b", 
@@ -156,7 +156,7 @@ Opsummeret betyder det, at selvom $D$-indekset principielt kan variere fra 0 til
 
 ## Korrigeret D-indeks
  
-En måde at tilgå begrænsningen, at tilfældige fordelinger også kan producere relativt høje grader af segregering, er blevet præsenteret af @harris2017. Blandt Harris' metodiske bidrag til segregeringslitteraturen er en udvidelse af $D$-indekset, der korrigerer målet for det gennemsnitlige niveau af segregering under forudsætning af tilfældig fordeling ([iid](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables)), givet de faktiske gruppestørrelser og enheder. Dette gennemsnit er afledt af simulerede fordelinger af en population mellem enheder, efter samme logik som figur \@ref(fig:fig-9-1). Denne korrigering af $D$ tager altså højde for, at selvom segregering måles til at være høj, kunne denne grad af segregering være opstået under tilfældig fordeling af grupperne under de givne strukturelle forhold. @diopchristensen2024  anvender denne korrigering af den målte segregering for at kunne bidrage med en mere nuanceret beskrivelse af segregering på det danske arbejdsmarked i en kontekst med ændrende demografiske forhold over tid, se [kapitel 5](#kap5).   
+En måde at tilgå begrænsningen, at tilfældige fordelinger også kan producere relativt høje grader af segregering, er blevet præsenteret af @harris2017. Blandt Harris' metodiske bidrag til segregeringslitteraturen er en udvidelse af $D$-indekset, der korrigerer målet for det gennemsnitlige niveau af segregering under forudsætning af tilfældig fordeling ([iid](https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables)), givet de faktiske gruppestørrelser og enheder. Dette gennemsnit er afledt af simulerede fordelinger af en population mellem enheder, efter samme logik som figur \@ref(fig:fig-9-1). Denne korrigering af $D$ tager altså højde for, at selvom segregering måles til at være høj, kunne denne grad af segregering være opstået under tilfældig fordeling af grupperne under de givne strukturelle forhold. @diopchristensen2024  anvender denne korrigering af den målte segregering for at kunne bidrage med en mere nuanceret beskrivelse af segregering på det danske arbejdsmarked i en kontekst med ændrende demografiske forhold over tid, se [kapitel 5](#kap5).    
 
 ## Separationsindekset
 
@@ -166,11 +166,11 @@ For at kunne svare på, om grupperne ikke bare er ulige fordelt mellem enheder, 
 
 Implikationen er, at hvis ulige fordeling er spredt, vil der stadig være relativt høj gensidig eksponering mellem minoritets- og majoritetsgruppen i forhold til, hvor meget eksponering der strukturelt er muligt. I modsætning til ulige fordeling, der er koncentreret, hvor hver gruppe primært er eksponeret for deres egen gruppe. Det vil sige, at grupperne er isolerede og primært kun er eksponeret til personer fra deres egen gruppe. I det første tilfælde er grupperne altså ikke separerede da grupperne stadig er eksponerede for hinanden i det omfang, det kan lade sig gøre under de strukturelle forudsætninger givet ved populationssammensætningen og antallet og størrelsen af enheder. Med andre ord er den typiske enhed i et område befolkningsmæssigt homogen. $D$ kan ikke beskrive denne separation, idet ulige fordeling ikke per definition signalerer disproportional koncentration af grupper---hvilket til tider er en forfejlet opfattelse i segregeringsstudier [@fossett2017].
 
-Separering kan i stedet beskrives med *Separationsindekset*[^1] ($S$), som måler forskellen i den parvise majoritets-minoritets eksponering til majoritetsgruppen. Det vil sige at $S$ måler den vægtede forskel mellem gruppe $A$’s eksponering til gruppe $A$ (ind-gruppe isolation) og gruppe $B$’s eksponering til gruppe $A$ (ud-gruppe eksponering). $S$ er ligesom $D$ et to-gruppe mål for segregering, som måler den relative grad af segregering mellem to grupper. Men hvor $D$ udtrykker *fordeling*, udtrykker $S$ *sandsynlighed for eksponering* mellem to grupper.
+Separering kan i stedet beskrives med *Separationsindekset*[^1] ($S$), som måler forskellen i den parvise majoritets-minoritets eksponering til majoritetsgruppen. Det vil sige, at $S$ måler den vægtede forskel mellem gruppe $A$’s eksponering til gruppe $A$ (ind-gruppe isolation) og gruppe $B$’s eksponering til gruppe $A$ (ud-gruppe eksponering). $S$ er ligesom $D$ et to-gruppe mål for segregering, som måler den relative grad af segregering mellem to grupper. Men hvor $D$ udtrykker *fordeling*, udtrykker $S$ *sandsynlighed for eksponering* mellem to grupper.
 
 [^1]: Et problem gennem segregeringslitteraturen er, at Separationsindekset er kendt under mange navne [@fossett2017], da metodiske artikler ofte har valgt at give indekset et nyt navn, som de finder mere korrekt. Indekset er derfor også kendt som *The revised index of isolation*, *The correlation ratio* eller $eta^{2}$, $r_{ij}$, *The variance ratio* og *The segregation index*.  
 
-Med de samme notationer som i [foregående sektion](#dissimkap) kan $S$ udregnes som
+Med de samme notationer som i [foregående sektion](#dissimkap) kan $S$ udregnes som:
 
 \begin{equation}
 (\#eq:sep)
@@ -194,37 +194,35 @@ $S$ imødegår disse begrænsninger. Forskellen på $P^{*}$ og $S$ er, at $S$ er
 
 Denne korrigering for befolkningssammensætning har den implikation, at segregeringsmålets forventede spænd mellem minimum og maksimum ikke på samme måde er følsomt overfor relative gruppestørrelser (se figur \@ref(fig:fig-9-2)). $S$ forventede spænd er dog strukturelt påvirket af antallet af enheder, som en population kan blive sorteret mellem (se figur \@ref(fig:fig-9-3)). Som @fossett2017 har demonstreret, indeholder $S$, i kombination med mål for fordeling som $D$, dermed information om, hvorvidt ulige fordeling er koncentreret eller spredt. Hvis $S$ er lavt, mens $D$ er højt, vil den ulige fordeling være karakteriseret som spredt, mens et højt $S$ og højt $D$ indikerer en koncentreret *og* ulige fordeling. Som Fossett skriver, $S$ *tjener derfor som en indikation på 'prototypisk segregation,' hvilket repræsenterer en faktisk adskillelse mellem grupper snarere end blot en ujævn fordeling af en minoritetsgruppe”* [@fossett2017, s. 96, egen oversættelse].
 
-
-
 ```{r fig-9-2, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.cap="Simuleret fordeling af S index under forskellige relative gruppestørrelser i population på 100 personer (10 enheder)."}
 
-# Load necessary libraries
+# Pck
 library(tidyverse)
 set.seed(222)
 
-# Function to calculate the Eta-squared Index
+# Udregning af S Index
 calculate_eta_squared_index <- function(group_counts, total_counts) {
   total_population <- sum(total_counts)
   overall_group_proportion <- sum(group_counts) / total_population
   
-  # Calculate weighted mean square between groups
+  # Udregn weighted mean square mellem grupper
   between_group_variance <- sum((total_counts / total_population) * (group_counts / total_counts - overall_group_proportion)^2)
   
-  # Calculate the overall variance
+  # Udregn varians
   overall_variance <- overall_group_proportion * (1 - overall_group_proportion)
   
-  # Eta-squared index
+  # S index
   eta_squared <- between_group_variance / overall_variance
   
   return(eta_squared)
 }
 
-# Parameters
+# Parametre
 n_simulations <- 1000
 total_population <- 100
 n_areas <- 10
 distributions <- list(
-  c(50, 50),   # Equal distribution
+  c(50, 50),   
   c(40, 60),
   c(30, 70),   
   c(20, 80),
@@ -233,10 +231,10 @@ distributions <- list(
   c(5, 95),
   c(3, 97))
 
-# Initialize dataframe to store results
+# datafrane
 results <- data.frame(Index = numeric(0), Distribution = factor(levels = c()))
 
-# Simulation for each distribution
+# Simulering af fordelinger
 for (distribution in distributions) {
   group_1_size <- distribution[1]
   group_2_size <- distribution[2]
@@ -244,10 +242,10 @@ for (distribution in distributions) {
   eta_squared_indices <- numeric(n_simulations)
   
   for (sim in 1:n_simulations) {
-    # Randomly assign individuals to groups
+    # Tilfældig tilskrivning til gruppe
     population <- c(rep(1, group_1_size), rep(2, group_2_size))
     
-    # Randomly assign individuals to areas
+    # Tilfældig tilskrivning til area
     group_counts <- matrix(0, nrow = 2, ncol = n_areas)
     for (i in 1:total_population) {
       area <- sample(1:n_areas, 1)
@@ -255,26 +253,25 @@ for (distribution in distributions) {
       group_counts[group, area] <- group_counts[group, area] + 1
     }
     
-    # Calculate total counts per area
+    # Udregn count pr area
     total_counts <- colSums(group_counts)
     
-    # Calculate Eta-squared Index
+    # Udregn S index
     eta_squared_indices[sim] <- calculate_eta_squared_index(group_counts[1, ], total_counts)
   }
   
-  # Store results
+  # Gem resultater
   dist_label <- paste(group_1_size, ":", group_2_size)
   temp_df <- data.frame(Index = eta_squared_indices, Distribution = factor(dist_label, levels = paste0(sapply(distributions, function(x) paste(x, collapse = " : ")))))
   results <- rbind(results, temp_df)
 }
 
-# Define a color palette
+# Visualisering
 palette <- c("#1f77b4", "#ff7f0e", 
              "#2ca02c", "#d62728", 
              "#9467bd", "#8c564b", 
              "#e377c2", "#7f7f7f")
 
-# Visualize the distribution with log-scaled y-axis
 ggplot(results, aes(x = Index, fill = Distribution)) +
   coord_cartesian(xlim = c(0, 1), ylim = c(0, 200)) + 
   geom_histogram(binwidth = 0.01, alpha = 0.7, position = 'identity') +
@@ -293,33 +290,30 @@ ggplot(results, aes(x = Index, fill = Distribution)) +
 
 ```{r fig-9-3, echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.cap="Simuleret fordeling af S index under forskellige relative gruppestørrelser i population på 100 personer (30 enheder)."}
 
-# Load necessary libraries
+# Pck
 library(tidyverse)
 set.seed(222)
 
-# Function to calculate the Eta-squared Index
+# Udregn S Index
 calculate_eta_squared_index <- function(group_counts, total_counts) {
   total_population <- sum(total_counts)
   overall_group_proportion <- sum(group_counts) / total_population
   
-  # Calculate weighted mean square between groups
   between_group_variance <- sum((total_counts / total_population) * (group_counts / total_counts - overall_group_proportion)^2)
   
-  # Calculate the overall variance
   overall_variance <- overall_group_proportion * (1 - overall_group_proportion)
   
-  # Eta-squared index
   eta_squared <- between_group_variance / overall_variance
   
   return(eta_squared)
 }
 
-# Parameters
+# Parametre
 n_simulations <- 1000
 total_population <- 100
 n_areas <- 30
 distributions <- list(
-  c(50, 50),   # Equal distribution
+  c(50, 50),   
   c(40, 60),
   c(30, 70),   
   c(20, 80),
@@ -328,10 +322,10 @@ distributions <- list(
   c(5, 95),
   c(3, 97))
 
-# Initialize dataframe to store results
+# dataframe
 results <- data.frame(Index = numeric(0), Distribution = factor(levels = c()))
 
-# Simulation for each distribution
+# Simulering
 for (distribution in distributions) {
   group_1_size <- distribution[1]
   group_2_size <- distribution[2]
@@ -339,10 +333,9 @@ for (distribution in distributions) {
   eta_squared_indices <- numeric(n_simulations)
   
   for (sim in 1:n_simulations) {
-    # Randomly assign individuals to groups
+    
     population <- c(rep(1, group_1_size), rep(2, group_2_size))
     
-    # Randomly assign individuals to areas
     group_counts <- matrix(0, nrow = 2, ncol = n_areas)
     for (i in 1:total_population) {
       area <- sample(1:n_areas, 1)
@@ -350,26 +343,23 @@ for (distribution in distributions) {
       group_counts[group, area] <- group_counts[group, area] + 1
     }
     
-    # Calculate total counts per area
     total_counts <- colSums(group_counts)
     
-    # Calculate Eta-squared Index
     eta_squared_indices[sim] <- calculate_eta_squared_index(group_counts[1, ], total_counts)
   }
   
-  # Store results
+  # Gem resultater
   dist_label <- paste(group_1_size, ":", group_2_size)
   temp_df <- data.frame(Index = eta_squared_indices, Distribution = factor(dist_label, levels = paste0(sapply(distributions, function(x) paste(x, collapse = " : ")))))
   results <- rbind(results, temp_df)
 }
 
-# Define a color palette
+# Visualisering
 palette <- c("#1f77b4", "#ff7f0e", 
              "#2ca02c", "#d62728", 
              "#9467bd", "#8c564b", 
              "#e377c2", "#7f7f7f")
 
-# Visualize the distribution with log-scaled y-axis
 ggplot(results, aes(x = Index, fill = Distribution)) +
   coord_cartesian(xlim = c(0, 1), ylim = c(0, 200)) + 
   geom_histogram(binwidth = 0.01, alpha = 0.7, position = 'identity') +
@@ -386,7 +376,7 @@ ggplot(results, aes(x = Index, fill = Distribution)) +
 
 ## Sammenhæng mellem S og D {#forskel}
 
-I praksis ser vi ofte, at $S$ og $D$ korrelerer, men graden af korrelation kan variere betydeligt mellem områder, fordi $D$ ikke per definition signalerer polarisering og koncentreret fordeling mellem grupper. $S$ og $D$ kan have samme score, men kun i tilfælde hvor begge mål er $1$, hvilket udtrykker en situation, hvor begge grupper befinder sig i homogene enheder, hvor de udgør 100% af populationen. Altså, når koncentrationen mellem enheder i et område er ved deres maksimum vil $S=D$. Når $S$ og $D$ er identiske eller tilnærmelsesvis af samme størrelsesorden er segregering derfor karakteriseret som det, @fossett2017 kalder "prototypisk segregering.” Når $S$ og $D$ derimod divergerer med en høj $D$-score men lav $S$-score, er fordelingen af majoriteter og minoriteter mellem enheder karakteriseret som en "ulige men spredt fordeling". Det vil sige, at selvom minoritetsgruppen ikke er repræsenteret i alle enheder i et givent område, udgør de fortsat en numerisk minoritet i de enheder, hvor de er repræsenteret, se [kapitel 4](#kap4] for eksempel. Minoritetsgruppen er simpelthen for lille---eller for "tyndt spredt"---til at kunne udgøre numerisk overtal i nogen af enhederne i et område. I absolutte værdier kan $S$ derfor heller ikke være større end $D$. Derfor er tommelfingerreglen, at når grupper varierer meget i relative størrelser og/eller antallet af enheder er højt, kan $S$ strukturelt være nævneværdigt lavere end $D$ (se figur \@ref(fig:fig-9-2) og figur \@ref(fig:fig-9-3)). Se figur \@ref(fig:fig-9-4) for stiliserede beskrivelser af de tre mulige idealtypiske kombinationer af $S$ og $D$.
+I praksis ser vi ofte, at $S$ og $D$ korrelerer, men graden af korrelation kan variere betydeligt mellem områder, fordi $D$ ikke per definition signalerer polarisering og koncentreret fordeling mellem grupper. $S$ og $D$ kan have samme score, men kun i tilfælde, hvor begge mål er $1$, hvilket udtrykker en situation, hvor begge grupper befinder sig i homogene enheder, hvor de udgør 100% af populationen. Altså, når koncentrationen mellem enheder i et område er ved deres maksimum vil $S=D$. Når $S$ og $D$ er identiske eller tilnærmelsesvis af samme størrelsesorden er segregering derfor karakteriseret som det, @fossett2017 kalder "prototypisk segregering.” Når $S$ og $D$ derimod divergerer med en høj $D$-score men lav $S$-score, er fordelingen af majoriteter og minoriteter mellem enheder karakteriseret som en "ulige men spredt fordeling". Det vil sige, at selvom minoritetsgruppen ikke er repræsenteret i alle enheder i et givent område, udgør de fortsat en numerisk minoritet i de enheder, hvor de er repræsenteret, se [kapitel 4](#kap4] for eksempel. Minoritetsgruppen er simpelthen for lille---eller for "tyndt spredt"---til at kunne udgøre numerisk overtal i nogen af enhederne i et område. I absolutte værdier kan $S$ derfor heller ikke være større end $D$. Derfor er tommelfingerreglen, at når grupper varierer meget i relative størrelser og/eller antallet af enheder er højt, kan $S$ strukturelt være nævneværdigt lavere end $D$ (se figur \@ref(fig:fig-9-2) og figur \@ref(fig:fig-9-3)). Se figur \@ref(fig:fig-9-4) for stiliserede beskrivelser af de tre mulige idealtypiske kombinationer af $S$ og $D$.
 
 ```{r fig-9-4, echo=FALSE, warning=FALSE, out.width= "100%", fig.cap="Mulige kombinationer af (absolutte) S-D værdier efter Fossett (2017, s. 85)."}
 

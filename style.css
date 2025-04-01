@@ -50,14 +50,14 @@ pre {
 
 /* Logo in Table of Contents (TOC) */
 .toc-logo {
-  width: 200px !important;
+  width: 100px !important;
   object-fit: contain;
   margin: 0 auto;
   display: block;
 }
 
 .toc-logo img {
-  max-width: 100%;
+  max-width: 50%;
   margin-bottom: 10px;
 }
 

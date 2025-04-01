@@ -24,7 +24,6 @@ Forskningsleder på MNcontact. \
 Professor, Institut for Politik og Samfund\
 Aalborg Universitet\
 
-
 \newpage
 
 ```{=latex}

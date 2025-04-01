@@ -11,15 +11,22 @@ bookdown::gitbook:
       before: |
         <li class="toc-logo"><a href="./"><img src="images/AAU_logo_2012.png"></a></li>
       after: |
-        <br/>
-        <li><a href="https://vbn.aau.dk/da/organisations/ccws-centre-for-comparative-welfare-studies-2" target="blank"><strong>CCWS</strong></a></li>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <ul style="margin: 0; padding: 0; line-height: 0;">
-          <li style="margin: 0; padding: 0;"><a href="https://github.com/jeppeFQ" target="blank"><strong>Layout og opsætning:</strong></a></li>
-          <li style="margin: 0; padding: 0;"><a href="https://github.com/jeppeFQ" target="blank">Jeppe Fjeldgaard Qvist</a></li>
+        <ul style="margin: 0; padding: 0;">
+        <li><a href="https://www.politics-society.aau.dk/research/institutions-policy-and-behavior/ccws/projects/mncontact" target="_blank"><strong>MNcontact</strong></a></li>
         </ul>
         <br/>
-        <li><a href="https://vbn.aau.dk/da/organisations/ccws-centre-for-comparative-welfare-studies-2" target="blank"><strong>ISBN</strong>: 978-87-89383-85-9</a></li>
+        <ul style="margin-left: 12px; padding-left: 2px; line-height: 1.2;">
+          <li style="margin-left: 2px;">Institut for Politik og Samfund</li>
+          <li style="margin-left: 2px;">Aalborg Universitet</li>
+          <li style="margin-left: 2px;">© Copyright by author(s)</li>
+          <li style="margin-left: 2px;"><strong>ISBN</strong>: 978-87-89383-85-9</li>
+        </ul>
+        <br/>
+        <ul style="margin: 0; padding: 0; line-height: 0.2;">
+          <li><a href="https://github.com/jeppeFQ" target="_blank"><strong>Layout og opsætning:</strong></a></li>
+          <li><a href="https://github.com/jeppeFQ" target="_blank">Jeppe Fjeldgaard Qvist</a></li>
+        <br/>
+        </ul>
     sharing:
       github: no
       facebook: yes
@@ -38,6 +45,6 @@ bookdown::pdf_document2:
   pandoc_args: [ "--csl", "university-of-gothenburg-apa-7th-edition-swedish-legislations.csl", "--metadata", "title="]
   bibliography: ["book.bib"]
   link-citations: true
-  keep_tex: yes
+  keep_tex: no
   documentclass: book
   classoption: openright

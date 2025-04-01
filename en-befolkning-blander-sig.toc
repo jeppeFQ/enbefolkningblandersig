@@ -2,49 +2,49 @@
 \contentsline {chapter}{Forord}{i}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}En befolkning blander sig}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Integration og assimilering---en tovejsproces}{3}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Drivkraften mod sine egne og tvungne mødepladser}{5}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Det menneskelige møde og dets effekt på betydning af etniske distinktioner}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.2}Drivkraften mod sine egne og uundgåelige mødepladser}{5}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Det menneskelige møde og dets effekt på etniske distinktioner}{7}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Betydningen af størrelsesforholdene mellem majoritet og minoritet}{9}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Den danske versus den amerikanske kontekst}{11}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Bogens plan}{13}{section.1.6}%
-\contentsline {chapter}{\numberline {2}Tværetniske partnerskaber}{15}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Sociologien om de tværetniske partnerskaber}{16}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Tværetniske partnerskaber i Danmark}{17}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Forklaringer på mønstre i tværetniske partnerskaber}{20}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Er glasset halvt fuldt eller halvt tomt?}{21}{section.2.4}%
-\contentsline {chapter}{\numberline {3}De blandede børn}{23}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Hidtidige statistiske begreber}{24}{section.3.1}%
-\contentsline {section}{\numberline {3.2}En udvidet kategorisering baseret på forældre}{25}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Herkomst og fremtidige partnerskaber}{27}{section.3.3}%
-\contentsline {section}{\numberline {3.4}De blandede børn og integrationen}{29}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Grundskoler som mødested}{31}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Betydningen af intergruppe-eksponering}{32}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Den danske grundskole}{33}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Hvordan måler vi segrering?}{35}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Segregering på national skala}{36}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Segregering på kommunal skala}{38}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Skolesegregering som produkt af boligsegregering}{39}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Skolesegregering i Danmark}{41}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Arbejdspladser som mødested}{43}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Den etniske sammensætning af arbejdspladser}{44}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Gennemsnitlig eksponering til indvandrere og efterkommere på arbejdspladser}{46}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Majoritetens ''isolation'' fra minoriteterne}{48}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Minoriteters eksponering til majoritetsbefolkningen}{49}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Minoriteters ''isolation'' fra majoritetsbefolkningen}{50}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Arbejdspladsen som mødested}{51}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Tværetniske venskaber --- det første skridt}{53}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Hvad er venskab og hvordan måles det}{54}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Majoritetens venskaber med indvandrere og efterkommere}{54}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Indvandrere og efterkommeres venskaber med majoriteten}{57}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Tværetniske venskaber og deres effekter}{59}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Integration i et kontaktperspektiv}{63}{chapter.7}%
-\contentsline {section}{\numberline {7.1}De svære ansigt-til-ansigt møder}{64}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Effekter fra at mødes på arbejdspladsen}{66}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Kontaktperspektivets begrænsninger og videre forskning}{66}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Kontaktperspektivet og debatten om integration}{67}{section.7.4}%
-\contentsline {chapter}{Litteraturliste}{71}{chapter*.24}%
-\contentsline {chapter}{\numberline {A}Segregeringsmål}{77}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Dissimilaritetsindekset}{77}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Korrigeret D-indeks}{80}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Separationsindekset}{80}{section.A.3}%
-\contentsline {section}{\numberline {A.4}Sammenhæng mellem S og D}{84}{section.A.4}%
+\contentsline {section}{\numberline {1.5}Den danske versus den amerikanske kontekst}{10}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Bogens plan}{11}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Tværetniske partnerskaber}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Sociologien om de tværetniske partnerskaber}{14}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Tværetniske partnerskaber i Danmark}{15}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Forklaringer på mønstre i tværetniske partnerskaber}{18}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Er glasset halvt fuldt eller halvt tomt?}{19}{section.2.4}%
+\contentsline {chapter}{\numberline {3}De blandede børn}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Hidtidige statistiske begreber}{22}{section.3.1}%
+\contentsline {section}{\numberline {3.2}En udvidet kategorisering baseret på forældre}{23}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Herkomst og fremtidige partnerskaber}{25}{section.3.3}%
+\contentsline {section}{\numberline {3.4}De blandede børn og integrationen}{27}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Grundskoler som mødested}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Betydningen af at mødes i grundskolen}{30}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Den danske grundskole}{31}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Hvordan måler vi segregering?}{33}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Segregering på national skala}{34}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Segregering på kommunal skala}{36}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Skolesegregering som produkt af boligsegregering}{37}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Skolesegregering i Danmark}{39}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Arbejdspladser som mødested}{41}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Den etniske sammensætning af arbejdspladser}{42}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Gennemsnitlig eksponering til indvandrere og efterkommere på arbejdspladser}{44}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Majoritetens ''isolation'' fra minoriteterne}{46}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Minoriteters eksponering til majoritetsbefolkningen}{47}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Minoriteters ''isolation'' fra majoritetsbefolkningen}{48}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Arbejdspladsen som mødested}{49}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Tværetniske venskaber --- det første skridt}{51}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Hvad er venskab og hvordan måles det}{52}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Majoritetens venskaber med indvandrere og efterkommere}{52}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Indvandrere og efterkommeres venskaber med majoriteten}{55}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Tværetniske venskaber og deres effekter}{57}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Integration i et kontaktperspektiv}{61}{chapter.7}%
+\contentsline {section}{\numberline {7.1}De svære ansigt-til-ansigt møder}{62}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Effekter fra at mødes på arbejdspladsen}{63}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Kontaktperspektivets begrænsninger og videre forskning}{64}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Kontaktperspektivet og debatten om integration}{65}{section.7.4}%
+\contentsline {chapter}{Litteraturliste}{67}{chapter*.24}%
+\contentsline {chapter}{\numberline {A}Segregeringsmål}{73}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Dissimilaritetsindekset}{73}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Korrigeret D-indeks}{76}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Separationsindekset}{76}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Sammenhæng mellem S og D}{80}{section.A.4}%

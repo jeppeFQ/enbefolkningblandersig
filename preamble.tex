@@ -80,3 +80,7 @@
 
 \usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
 \AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+% Prevent footnote counter reset at each chapter
+\usepackage{chngcntr}
+\counterwithout{footnote}{chapter}
