@@ -77,7 +77,6 @@ For separationsindekset gælder det, at hvis $S$ = 0, vil et barn på en given s
 
 De to indeks måler altså to forskellige dimensioner af segregering[^0055] (se [Bilag A](# bilag1) for tekniske detaljer og @massey1988 eller @damm2022 for uddybende diskussioner af disse dimensioner). De to mål følger ofte hinanden, men det er ikke altid tilfældet.[^040] 
 
-
 [^40]: $S$ er også kendt under andre navne, såsom $\eta^2$, variansratioen eller korrelationsratioen. Se @fossett2017 for en detaljeret diskussion af forskellen mellem $S$ og andre mål for segregering.
 
 [^040]: $S$ er typisk noget lavere end $D$, da $S$ korrigerer for størrelsen af skoler og grupper, mens $D$ ikke gør (se [bilag A](#bilag1) for tekniske detaljer).
@@ -144,8 +143,6 @@ Der er stor variation i koncentrationen af familier med ikke-vestlig indvandrerb
 Betragter vi sammenhængen i mellem hhv. bolig- og skolemarkedet, målt som $D$, ser vi i figur \@ref(fig:fig-4-4), at der er en klar sammenhæng mellem graden af bolig- og skolesegregering i de fleste kommuner. De kommuner med høj boligsegregering har også typisk høj skolesegregering. I de seneste år ser vi en stærk sammenhæng mellem de to typer segregering i de fleste kommuner.[^48] Og når familier, der ligner hinanden, bor nærmere hinanden, end de gør med familier, der er forskellige fra dem, vil der være en tendens til, at børn, som ligner hinanden, også kommer til at gå i skole sammen. 
 
 [^48]: Denne korrelation er ydermere stigende over tid (Pearson's $r$ = 0,50 i 2020 mod $r$ = 0,29 i 1985). Jeg understøtter dette yderligere med en dekomponeringsanalyse i Larsen [@larsen2024b].
-
-\newpage
 
 ```{r fig-4-4, echo=FALSE, out.width= "100%", fig.cap="Etnisk skole- og boligsegregering i Danmark (D indeks).", fig.topcaption=TRUE}
 knitr::include_graphics("images/Figur5-removebg.png")

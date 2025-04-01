@@ -72,9 +72,6 @@ Udfaldsrummet har otte muligheder, hvis man ligesom Danmarks Statistik undlader 
 
 I 1985 var der 37.504 i alderen 0--16 år i C-gruppen, svarende til 3,48 procent af gruppen, se tabel \@ref(tab:tab-3-2). I 2019 var antallet vokset til 45.911, svarende til 4,22 procent af de 0--16-årige. Men det er imidlertid i D-gruppen, hvor store dele af den relative stigning har fundet sted; kun overgået af stigningen i G-gruppen. I 1985 var der 9.912 i D-gruppen, svarende til 0,9 procent af de 0--16-årige, hvilket i 2019 er vokset til 42.933, svarende til 3,9 procent af de 0--16-årige. 
 
-\newpage
-
-
 ```{r tab-3-2, echo=FALSE, message=FALSE, warning=FALSE}
 
 typology <- data.frame(

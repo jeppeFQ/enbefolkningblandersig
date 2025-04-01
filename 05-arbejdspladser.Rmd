@@ -1,5 +1,4 @@
 
-
 # Arbejdspladser som mødested {#kap5}
 
 \thispagestyle{empty}
@@ -184,7 +183,6 @@ if (knitr::is_html_output()) {
 
 En anden måde at opgøre det på, er at se på andelen af beskæftigede med dansk-dansk herkomst, der ikke har én eneste indvandrere eller efterkommere på deres arbejdsplads. En sådan ”isolation” er selvfølgelig langt mere sandsynlig på små end på store arbejdspladser. Ikke desto mindre giver andelen med *nul-eksponering* også en god fornemmelse af forandringer over tid. @diopchristensen2024 estimerer, at andelen af beskæftigede med dansk-dansk herkomst, som er ”isolerede” på deres arbejdsplads er faldet fra 45 procent i 1996 til 29 procent i 2019. 
 
-\newpage
 ```{r fig-5-4, echo=FALSE, out.width= "70%", fig.cap="Andelen af beskæftigede med dansk-dansk herkomst, der ikke er eksponeret til én eneste indvandrer eller efterkommer på deres arbejdsplads i 1996 (venstre) og 2019 (højre).", fig.topcaption=TRUE}
 knitr::include_graphics("images/Figur_4_2.png")
 ```
@@ -208,8 +206,6 @@ I figur \@ref(fig:fig-5-4) er ”isolationen” opdelt på tværs af kommunerne.
 ## Minoriteters eksponering til majoritetsbefolkningen 
 
 Beskæftigede indvandrere og efterkommere er i høj grad eksponeret til beskæftigede med dansk-dansk herkomst på deres arbejdsplads. @diopchristensen2024 estimerer, at den gennemsnitlige eksponering var 74 procent i 1996. Opdelt på kommuner viser den venstre del af figur \@ref(fig:fig-5-5), at den (gennemsnitlige) høje eksponering til majoritetsbefolkningen i 1996 gjorde sig gældende i hele landet. Med undtagelse af et par enkelte kommuner i hovedstadsområdet var den gennemsnitlige eksponering på 67 procent eller derover. Det er markeret med grønlige og gullige farver i figur \@ref(fig:fig-5-5). 
-
-\newpage
 
 ```{r fig-5-5, echo=FALSE, out.width= "70%", fig.cap="Beskæftigede indvandreres/efterkommeres gennemsnitlige eksponering til beskæftigede med dansk-dansk herkomst på deres arbejdsplads i 1996 (venstre) og 2019 (højre).", fig.topcaption=TRUE}
 knitr::include_graphics("images/Figur_4_4.png")
@@ -236,8 +232,6 @@ Efterhånden som der kommer flere og flere indvandrere og efterkommere ind på a
 Ligesom for majoriteten, beregner @diopchristensen2024 også andelen af beskæftigede indvandrere og efterkommere, der ikke er eksponeret til én eneste med dansk-dansk herkomst. Andelen af minoriteter i ”isolation” er markant mindre end det er tilfældet for majoriteten. Studiet estimerer andelen af ”isolerede” indvandrere/efterkommere til at være 13 procent i 1996 og 14 procent i 2019. Fra 1996 til 2019 er der således stort set ikke sket nogen stigning i andelen af indvandrere/efterkommere, der arbejder på en arbejdsplads, der ikke har én eneste ansat fra majoriteten. 
 
 I figur \@ref(fig:fig-5-6) vises andelen af ”isolerede” på tværs af kommuner i 1996 (venstre) og 2019 (højre). I 1996, det venstre kort, var der ikke noget klart mønster i, hvor der var en størst andel ”isolerede” indvandrere og efterkommere. I 2019 viser der sig en større andel på Sjælland og Fyn. 
-
-\newpage
 
 ```{r fig-5-6, echo=FALSE, out.width= "70%", fig.cap="Andelen af beskæftigede indvandrere/efterkommere der ikke er eksponeret til én eneste med dansk-dansk herkomst på deres arbejdsplads i 1996 (venstre) og 2019 (højre).", fig.topcaption=TRUE}
 knitr::include_graphics("images/Figur_4_5.png")

@@ -2,7 +2,9 @@
 \usepackage{booktabs}
 \usepackage{amsthm}
 \usepackage{svg}
-\usepackage[english]{babel}
+\usepackage[english,danish]{babel} % Danish for labels, English for hyphenation
+\selectlanguage{danish}
+
 \usepackage{longtable}
 \usepackage{array}
 \usepackage{multirow}
@@ -26,20 +28,39 @@
 \captionsetup[figure]{name=Figur, labelfont=bf, textfont=it, font=small}
 \captionsetup[table]{name=Tabel, labelfont=bf, textfont=it, font=small}
 
-% Customize chapter titles
+% Rename TOC and appendix heading
+\addto\captionsdanish{\renewcommand{\contentsname}{Indholdsfortegnelse}}
+\addto\captionsdanish{\renewcommand{\appendixname}{Bilag}}
+
+% Support for conditional formatting in appendix
+\usepackage{etoolbox}
+\makeatletter
+\newif\if@appendix
+\let\oldappendix\appendix
+\renewcommand{\appendix}{\@appendixtrue\oldappendix}
+\makeatother
+
+% Customize chapter titles for regular chapters
 \usepackage{titlesec}
 \titleformat{\chapter}[display]
-  {\normalfont\Huge\bfseries} % Formatting for the chapter block
-  {\Large\bfseries Kapitel \thechapter} % Small size for "Kapitel" and bold for consistency
-  {0pt} % Space between "Kapitel X" and the title
-  {\Huge} % Larger size for the title
-  [\vspace{-10pt}] % Adjust vertical spacing
+  {\normalfont\Huge\bfseries}
+  {}
+  {0pt}
+  {\Huge}
+  [\vspace{-10pt}]
 \titlespacing*{\chapter}{0pt}{0pt}{10pt}
 
-
-% Rename table of contents and appendix
-\addto\captionsenglish{\renewcommand{\contentsname}{Indholdsfortegnelse}}
-\addto\captionsenglish{\renewcommand{\appendixname}{Bilag}}
+% Redefine chapter title format for appendix ("Bilag A", etc.)
+\makeatletter
+\pretocmd{\appendix}{
+  \titleformat{\chapter}[display]
+    {\normalfont\Huge\bfseries}
+    {}
+    {0pt}
+    {\Huge}
+    [\vspace{-10pt}]
+}{}{}
+\makeatother
 
 % Page layout
 \usepackage[a4paper, top=1in, bottom=1in, left=1.5in, right=1in, bindingoffset=0.5in]{geometry}
@@ -66,19 +87,16 @@
     BoldItalicFont={Fira Sans SemiBold Italic}
 ]{Fira Sans}
 
-% Page format
+% Page format and headers
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-
-\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
-
-\fancyhead[L]{\footnotesize Kapitel \thechapter: \leftmark}
-\fancyhead[R]{\footnotesize \thepage} % Page number
+\fancyhead[L]{\footnotesize \leftmark}
+\fancyhead[R]{\footnotesize \thepage}
 
 % Roman page numbering before chapter 1
 \pagenumbering{gobble}
 
-\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\usepackage{atbegshi}
 \AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
 
 % Prevent footnote counter reset at each chapter

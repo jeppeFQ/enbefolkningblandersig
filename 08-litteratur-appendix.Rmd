@@ -1,12 +1,9 @@
 
-
 # Litteraturliste {-} 
 
 <div id="refs"></div>
 
-<div style="opacity: 0; font-size: 0.1em; margin: 0; padding: 0; line-height: 0;">
 # (APPENDIX) Bilag {-} 
-</div>
 
 # Segregeringsmål {#bilag1}
 
@@ -185,7 +182,6 @@ Vægtningen af indekset relaterer sig til, at $S$ er afledt af isolerings- og ek
 
 [^3]: *Eksponeringsindekse*t, $_{A}P^{*}_{B}$, udtrykker sandsynligheden for, at en tilfældig person fra $A$ befinder sig i en enhed med en person fra $B$. *Isoleringsindekset*, $_{A}P^{*}_{A}$, udtrykker derimod sandsynligheden for, at en tilfældig person fra $A$ befinder sig i en enhed med en anden fra $A$. To meget forsimplede antagelser er dog nødvendige i denne tolkning [@bell1954]. For det første antages det, at møder mellem personer foregår inden for den pågældende enhed (skoler, arbejdspladser, nabolag), og for det andet, at hver person i en pågældende enhed har lige sandsynlighed for at møde hver enkelt person inden for enheden. Det er veldokumenteret, at begge antagelser ikke er tilfældet i praksis [@mcpherson2001]. $P^{*}$ skal derfor tolkes som *den minimale sandsynlige eksponering mellem personer fra samme/forskellige grupper*, under antagelse af at den faktiske intragruppe eksponering er højere. Begge mål---isolering og eksponering---kan tage værdier fra 0 til 1, og hvis populationen er inddelt i kun to grupper, gælder det, at $_{A}P^{*}_{B} + _{A}P^{*}_{A} = 1$. Derudover er målene asymmetriske, hvilket betyder, at $_{A}P^{*}_{B} = _{B}P^{*}_{A}$ kun i tilfælde, hvor $A$ og $B$ udgør lige store andele af befolkningssammensætningen, eller $_{A}P^{*}_{B} \neq _{B}P^{*}_{A}$. Disse mål opfylder derfor ikke sammensætningsinvariansen, men er afhængige af størrelsen på de grupper, der sammenlignes [@massey1988], da sandsynligheden for eksponering eller isolering er summen af produktet af to sandsynligheder (se @bell1954): (1) sandsynligheden for, at en person fra gruppe $A$ møder en anden person fra gruppe $A$: $\left( n_{i}^{A} - 1 \right) / \left( n_{i}^{B} - 1 \right)$, og (2) sandsynligheden for, at en tilfældig person fra gruppe $A$ befinder sig i den pågældende enhed, $i$: $n_{i}^{A} / N^{A}$. Et produkt, der kan udtrykkes algebraisk som: $P^{*}=\frac{1}{A} {\textstyle \sum_{i=1}^{k}\frac{n_{i}^{A \space 2}}{n_{i}^{B}}}$. Sandsynligheden for intergruppeeksponering---eller relativ isolation---tager altså afsæt i befolkningssammensætningen. 
  
-
 Problemet ved at anvende $P^{*}$ ukorrigeret i bestemmelsen af den relative isolation af grupperne, er, at den mindste værdi $P^{*}$ kan tage, er den heterogene blanding af gruppe $A$ i et pågældende område, givet som $N^{A}/N^{B}$ [se @bell1954]. Derfor gælder det også, at sandsynligheden for intragruppeeksponering i gruppe $A$ er større end i gruppe $B$, hvis gruppe $A$ udgør en større andel af populationen, *selv hvis populationen er ligeligt fordelt mellem enheder*. Hvis der ikke korrigeres for populationsstørrelser ($T=N^{A}+N^{B}$), kan komparative beskrivelser af forventet eksponering, givet alene som $P^{*}$, mellem områder derfor være delvist vildledende i en substantiel tolkning. 
 
 Hvis vi forestiller os to kommuner: den ene kommune ($X$) består af 30% personer fra gruppe $B$, mens den anden kommune ($Y$) består af 2% personer fra gruppe $B$. Selv hvis minoritetsgruppen var ligeligt fordelt mellem alle enheder i hver kommune, således at alle enheder har den samme andel---altså ingen segregering målt som $D$---vil det i kommune $X$ gælde, at $P^{*}$ = 0.3, mens det i kommune $Y$ gælder at $P^{*}$ =0.02. Med disse "rå" mål for eksponering er høje/lave grader af eksponering ikke nødvendigvis et udtryk for segregering, men kan blot reflektere, at der er flere personer fra gruppe $B$ i den ene kommune sammenlignet med den anden. Med andre ord, med $D$ ser vi ingen forskelle i segregeringsniveau mellem $X$ og $Y$, selvom der tydeligvis er substantielle forskelle i graden af intergruppeeksponering, mens vi med $P^{*}$ kan ende med en beskrivelse, der grundlæggende ikke siger andet end "der er flere minoriteter i $X$ end i $Y$". En forskel, der ikke nødvendigvis udtrykker en forskel i segregeringsprocesser mellem kommunerne, kun potentialet for omfanget af segregering.  
@@ -413,4 +409,3 @@ if (knitr::is_html_output()) {
 }
 
 ```
-
