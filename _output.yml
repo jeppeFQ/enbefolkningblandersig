@@ -12,7 +12,7 @@ bookdown::gitbook:
         <li class="toc-logo"><a href="./"><img src="images/AAU_logo_2012.png"></a></li>
       after: |
         <ul style="margin: 0; padding: 0;">
-        <li><a href="https://www.politics-society.aau.dk/research/institutions-policy-and-behavior/ccws/projects/mncontact" target="_blank"><strong>MNcontact</strong></a></li>
+        <li><a href="https://vbn.aau.dk/en/projects/measuring-intense-migrant-native-contact-and-its-consequences" target="_blank"><strong>Forskningsprojektet</strong></a></li>
         </ul>
         <br/>
         <ul style="margin-left: 12px; padding-left: 2px; line-height: 1.2;">
