@@ -83,7 +83,7 @@ Både medborgerskabsundersøgelserne og undersøgelsen fra 2022 viser et klart m
 
 ```{r fig-6-1, echo=FALSE, fig.cap="Sammenhængen mellem alder på majoritetsbefolkning og nære venskaber med personer med indvandrerbaggrund. 2022.", fig.topcaption=TRUE, message=FALSE, warning=FALSE, out.width="100%"}
 
-read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_1.csv") %>% 
+read_csv2("data/figur_6_1.csv") %>% 
   pivot_longer(!gruppe, names_to = "kategori", values_to = "pct") %>% 
   ggplot(aes(x = gruppe, y = pct, fill = fct_rev(factor(kategori, levels = c("Ingen", "1-2 personer", "3 eller flere", "Ved ikke"))))) +
   geom_bar(stat = "identity", position = "fill") +
@@ -180,7 +180,7 @@ Langt de fleste ikke-vestlige indvandrere og efterkommere angiver, at de har en 
 
 ```{r fig-6-3, echo=FALSE, fig.cap="Andel af venner med dansk oprindelse blandt 10 forskellige indvandrergrupper. 2015.", fig.topcaption=TRUE, message=FALSE, warning=FALSE, out.width="100%"}
 
-read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_4.csv") %>% 
+read_csv2("data/figur_6_4.csv") %>% 
   pivot_longer(!Country, names_to = "kategori", values_to = "pct") %>% 
   ggplot(aes(x = factor(Country, levels = c("Tyrkiet", "Rumænien", "Spanien", "Rusland", "Filippinerne", "Kina", "Japan", "Polen", "USA", "Storbritannien")), 
              y = pct, 
@@ -219,7 +219,7 @@ Figur \@ref(fig:fig-6-4) viser, at majoritetsbefolkningen uden én eneste muslim
 
 ```{r fig-6-4, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Majoritetens vurdering af hvorvidt muslimer i Danmark identificerer sig mindre med landet end andre danskere. Opdelt på antal muslimske venner.", fig.topcaption=TRUE, out.width="75%"}
 
-read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_5.csv") %>% 
+read_csv2("data/figur_6_5.csv") %>% 
   pivot_longer(!Gruppe, names_to = "kategori", values_to = "pct") %>% 
   filter(Gruppe != "Don't know" & kategori %in% c("Meget mindre end andre danskere", "Noget mindre end andre danskere")) %>% 
   mutate(Gruppe = factor(Gruppe, levels = c("Ingen muslimske venner", "1-2 muslimske venner", "3 eller flere muslimske venner"))) %>% 
@@ -237,7 +237,7 @@ read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_5
 
 ```{r fig-6-5, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Majoritetens vurdering af hvorvidt muslimer i Danmark bekymrer sig mindre om andre danskernes anliggender og behov. Opdelt på antal muslimske venner.", fig.topcaption=TRUE, out.width="75%"}
 
-read_csv2("/Users/jeppefl/Documents/GitHub/enbefolkningblandersig/data/figur_6_6.csv") %>% 
+read_csv2("data/figur_6_6.csv") %>% 
   pivot_longer(!Gruppe, names_to = "kategori", values_to = "pct") %>% 
   filter(Gruppe != "Don't know" & kategori %in% c("Meget mindre end andre danskere", "Noget mindre end andre danskere")) %>% 
   mutate(Gruppe = factor(Gruppe, levels = c("Ingen muslimske venner", "1-2 muslimske venner", "3 eller flere muslimske venner"))) %>% 
