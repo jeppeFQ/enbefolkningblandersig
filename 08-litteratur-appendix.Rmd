@@ -13,11 +13,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;
 
-Et kendt og ofte anvendt citat, der definerer segregering, er fra Massey og Dentons [-@massey1988] klassiske artikel, hvor de skriver: 
-
-> *“At a general level, residential segregation is the degree to which two or more groups live separately from one another, in different parts of the urban environment”* (s. 282). 
-
-Citatet indfanger den centrale logik, når vi taler om segregering. Segregering er en situation, hvor folk i en given kontekst---være det uddannelsessystemer(t), arbejdsmarkedet eller boligmarkedet---ikke møder hinanden eller er eksponerede for hinanden. Det vil sige, at under absolut segregering går folk fra forskellige baggrunde ikke på de samme skoler, arbejder ikke på de samme arbejdspladser og bor ikke i de samme nabolag.
+Et kendt og ofte anvendt citat, der definerer segregering, er fra Massey og Dentons [-@massey1988] klassiske artikel, hvor de skriver: *“At a general level, residential segregation is the degree to which two or more groups live separately from one another, in different parts of the urban environment”* (s. 282). Citatet indfanger den centrale logik, når vi taler om segregering. Segregering er en situation, hvor folk i en given kontekst---være det uddannelsessystemer(t), arbejdsmarkedet eller boligmarkedet---ikke møder hinanden eller er eksponerede for hinanden. Det vil sige, at under absolut segregering går folk fra forskellige baggrunde ikke på de samme skoler, arbejder ikke på de samme arbejdspladser og bor ikke i de samme nabolag.
 
 Segregeringslitteraturen har en lang metodologisk tradition [@james1985; @reardon2002; @fossett2017]. Nogle mål for segregering er dog mere fremtrædende end andre i den empiriske litteratur. Mål for *ulige fordeling* og *eksponering*/*isolering* er generelt de mest anvendte. Det er også disse mål, der har mest substantiel relevans i studiet af (minoritets)gruppers fordeling mellem skoler, arbejdspladser og nabolag. Dette bilag beskriver og diskuterer to mål for segregering: et, der måler fordeling (**dissimilaritetsindekset**), og et, der måler eksponering eller isolation (**separationsindekset**).
 
