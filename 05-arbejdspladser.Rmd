@@ -135,7 +135,7 @@ I figur \@ref(fig:fig-5-2) er den gennemsnitlig eksponering opdelt på kommunalt
 
 \newpage
 
-```{r fig-5-2, echo=FALSE, out.width= "70%", fig.cap="Beskæftigedes med dansk-dansk herkomst gennemsnitlige eksponering til indvandrere/efterkommere på deres arbejdspladsen i 1996 (venstre) og 2019 (højre).", fig.topcaption=TRUE}
+```{r fig-5-2, echo=FALSE, out.width= "70%", fig.cap="Beskæftigedes med dansk-dansk herkomst gennemsnitlige eksponering til indvandrere/efterkommere på deres arbejdsplads i 1996 (venstre) og 2019 (højre).", fig.topcaption=TRUE}
 knitr::include_graphics("images/Figur_4_1.png")
 ```
 
